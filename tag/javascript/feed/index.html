@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Javascript &#8211; PullMonkey Blog</title>
+	<atom:link href="http://pullmonkey.com/tag/javascript/feed/" rel="self" type="application/rss+xml" />
+	<link>http://pullmonkey.com</link>
+	<description></description>
+	<lastBuildDate>Wed, 06 Jan 2010 23:49:14 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6</generator>
+	<item>
+		<title>Open Flash Chart II &#8211; Updates, Radar Charts and Scatter Lines</title>
+		<link>http://pullmonkey.com/2008/10/25/open-flash-chart-ii-updates-radar-charts-and-scatter-lines/</link>
+					<comments>http://pullmonkey.com/2008/10/25/open-flash-chart-ii-updates-radar-charts-and-scatter-lines/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Sat, 25 Oct 2008 05:53:00 +0000</pubDate>
+				<category><![CDATA[Home]]></category>
+		<category><![CDATA[Open Flash Chart Graphs]]></category>
+		<category><![CDATA[projects]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[charts]]></category>
+		<category><![CDATA[flash]]></category>
+		<category><![CDATA[graphs]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[open flash chart]]></category>
+		<category><![CDATA[ruby on rails]]></category>
+		<guid isPermaLink="false">/2008/10/28/open-flash-chart-ii-updates-radar-charts-and-scatter-lines</guid>
+
+					<description><![CDATA[Recently, some good work has gone into the Open Flash Chart plugin. First, it is now up to date with the official php version of OFC. That means we have Radar Charts and Scatter Line capabilities now. Also, some nice people have helped this plugin along to maturity. I would like to thank David and [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Recently, some good work has gone into the Open Flash Chart plugin.  First, it is now up to date with <a href="http://teethgrinder.co.uk/open-flash-chart-2">the official php version of OFC</a>.  That means we have <a href="http://teethgrinder.co.uk/open-flash-chart-2/radar-charts-menu.php">Radar Charts</a> and <a href="http://teethgrinder.co.uk/open-flash-chart-2/scatter-line-chart.php">Scatter Line</a> capabilities now.</p>
+<p>Also, some nice people have helped this plugin along to maturity.  I would like to thank <a href="http://github.com/dfl">David</a> and <a href="http://harryseldon.thinkosphere.com/">Harry</a> for their work.  </p>
+<p>David made some very much needed improvements and brought Open Flash Chart II plugin up to speed with Rails 2.x.<br />
+So take note, this is the &quot;modern&quot; way to work with the charts:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt>9<tt>
+</tt><strong>10</strong><tt>
+</tt>11<tt>
+</tt>12<tt>
+</tt>13<tt>
+</tt>14<tt>
+</tt><strong>15</strong><tt>
+</tt>16<tt>
+</tt>17<tt>
+</tt>18<tt>
+</tt>19<tt>
+</tt><strong>20</strong><tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><span class="r">class</span> <span class="cl">TestItController</span> &lt; <span class="co">ApplicationController</span><tt>
+</tt>  <span class="c">## EDIT dont need this line with the latest plugin.</span><tt>
+</tt>  <span class="c">#include OpenFlashChart</span><tt>
+</tt>  <tt>
+</tt>  <span class="r">def</span> <span class="fu">index</span><tt>
+</tt>    respond_to <span class="r">do</span> |wants|<tt>
+</tt>      wants.html {<tt>
+</tt>        <span class="iv">@graph</span> = open_flash_chart_object( <span class="i">600</span>, <span class="i">300</span>, url_for( <span class="sy">:action</span> =&gt; <span class="s"><span class="dl">'</span><span class="k">index</span><span class="dl">'</span></span>, <span class="sy">:format</span> =&gt; <span class="sy">:json</span> ) )<tt>
+</tt>      }<tt>
+</tt>      wants.json { <tt>
+</tt>        <span class="c"># Edit:: don't do the OpenFlashChart::Base stuff anymore</span><tt>
+</tt>        <span class="c">#chart = OpenFlashChart::Base.new( :title =&gt; Title.new(&quot;MY TITLE&quot;) ) do |c|</span><tt>
+</tt>        chart = <span class="co">OpenFlashChart</span>.new( <span class="sy">:title</span> =&gt; <span class="co">Title</span>.new(<span class="s"><span class="dl">&quot;</span><span class="k">MY TITLE</span><span class="dl">&quot;</span></span>) ) <span class="r">do</span> |c|<tt>
+</tt>          c &lt;&lt; <span class="co">BarGlass</span>.new( <span class="sy">:values</span> =&gt; (<span class="i">1</span>..<span class="i">10</span>).sort_by{rand} )<tt>
+</tt>        <span class="r">end</span><tt>
+</tt>        render <span class="sy">:text</span> =&gt; chart, <span class="sy">:layout</span> =&gt; <span class="pc">false</span><tt>
+</tt>      }<tt>
+</tt>    <span class="r">end</span><tt>
+</tt>  <span class="r">end</span><tt>
+</tt><span class="r">end</span></pre>
+</td>
+</tr>
+</table>
+<p>Open Flash Chart was put in to the appropriate OpenFlashChart namespace/module, to ensure we don't run into any conflicts.  It also now takes blocks which will be helpful.  The example above is courtesy of David.</p>
+<p>Harry, has done a great job of providing examples for the latest features of Open Flash Chart.<br />
+Check out his <a href="http://harryseldon.thinkosphere.com/2008/10/23/radar-chart-example-with-ofc2">Radar Chart Example</a>. <br />
+Also, check out his <a href="http://harryseldon.thinkosphere.com/2008/10/22/scatter-line-chart-example-with-ofc2">Scatter Line Chart Example</a>.</p>
+<p>
+Thank you for the great work guys.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2008/10/25/open-flash-chart-ii-updates-radar-charts-and-scatter-lines/feed/</wfw:commentRss>
+			<slash:comments>29</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Open Flash Chart II &#8211; Javascript (Part 3)</title>
+		<link>http://pullmonkey.com/2008/09/23/open-flash-chart-ii-javascript-part-3/</link>
+					<comments>http://pullmonkey.com/2008/09/23/open-flash-chart-ii-javascript-part-3/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Tue, 23 Sep 2008 14:13:00 +0000</pubDate>
+				<category><![CDATA[Home]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[Open Flash Chart Graphs]]></category>
+		<category><![CDATA[projects]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[charts]]></category>
+		<category><![CDATA[flash]]></category>
+		<category><![CDATA[graphs]]></category>
+		<category><![CDATA[open flash chart]]></category>
+		<category><![CDATA[ruby on rails]]></category>
+		<guid isPermaLink="false">/2008/09/25/open-flash-chart-ii-javascript-part-3</guid>
+
+					<description><![CDATA[This article is a follow on to Part 1 and Part 2. In this article, I will discuss how we can change between various charts on the fly - meaning, changing the SWFObject without rerendering the page but this time we can do it without storing everything in javascript variables initially. We will use an [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>This article is a follow on to <a href="http://pullmonkey.com/2008/9/21/open-flash-chart-ii-javascript-part-1">Part 1</a> and <a href="http://pullmonkey.com/2008/9/22/open-flash-chart-ii-javascript-part-2">Part 2</a>.  In this article, I will discuss how we can change between various charts on the fly - meaning, changing the SWFObject without rerendering the page but this time we can do it without storing everything in javascript variables initially.  We will use an Ajax request to grab our data off the server.<br />
+As promised there are still more topics to come on OFC and Javascript:</p>
+<ul>
+<li><a href="http://teethgrinder.co.uk/open-flash-chart-2/tutorial-5.php">Basics of OFC and Javascript</a>. - <b><a href="http://pullmonkey.com/2008/9/21/open-flash-chart-ii-javascript-part-1">Discussed in Part 1</a></b></li>
+<li><a href="http://teethgrinder.co.uk/open-flash-chart-2/tutorial-6.php">Change data on the fly with links</a>. - <b><a href="http://pullmonkey.com/2008/9/22/open-flash-chart-ii-javascript-part-2">Discussed in Part 2</a></b>.</li>
+<li><a href="http://teethgrinder.co.uk/open-flash-chart-2/tutorial-js.php">Update and Save data</a>.</li>
+<li><a href="http://teethgrinder.co.uk/open-flash-chart/gallery-js-ajax-2.php">Ajax calls to server</a> - <b>This article</b>.</li>
+<li><a href="http://teethgrinder.co.uk/open-flash-chart/gallery-js-2.php">Manipulate the data through an interface</a>.</li>
+<li><a href="http://ext-ux-ofcgxt.googlecode.com/svn/demo/Test.html">Some really cool interfaces</a>.</li>
+</ul>
+<p>
+Here is the graph and interface we are after in this example:<br />
+    <script src="/javascripts/prototype.js" type="text/javascript"></script><script type="text/javascript" src="/projects/javascripts/swfobject.js"></script><script type="text/javascript">
+        swfobject.embedSWF("/projects/open-flash-chart.swf", "my_chart_js_3", "550", "300", "9.0.0");
+      </script><script type="text/javascript">
+        function ofc_ready() {
+        }
+        function open_flash_chart_data() {
+          return Object.toJSON(data);
+        }
+        function findSWF(movieName) {
+          if (navigator.appName.indexOf("Microsoft")!= -1) {
+            return window[movieName];
+          } else {
+            return document[movieName];
+          }
+        }
+        var data = {"title": {"text": "MY TITLE - original"}, "elements": [{"type": "bar_glass", "values": [1, 2, 3, 4, 5, 6, 7, 8, 9]}]};
+      </script></p>
+<div id="my_chart_js_3"></div>
+<p>
+      <script type="text/javascript">
+        function load_Load_Original_Chart_my_chart_js_3() {
+          tmp = findSWF("my_chart_js_3");
+          x = tmp.load(Object.toJSON(data_Load_Original_Chart_my_chart_js_3));
+        }
+        var data_Load_Original_Chart_my_chart_js_3 = {"title": {"text": "MY TITLE - original"}, "elements": [{"type": "bar_glass", "values": [1, 2, 3, 4, 5, 6, 7, 8, 9]}]};
+      </script><a href="#" onclick="load_Load_Original_Chart_my_chart_js_3(); return false;">Load Original Chart (Bar Graph)</a>||<script type="text/javascript">
+        function reload_Load_Chart_from_server_data_my_chart_js_3() {
+          tmp = findSWF("my_chart_js_3");
+          new Ajax.Request('/projects/open_flash_chart2/lines', {
+            method    : 'get',
+            onSuccess : function(obj) {tmp.load(obj.responseText);},
+            onFailure : function(obj) {alert("Failed to request /projects/open_flash_chart2/lines");}});
+        }
+      </script><a href="#" onclick="reload_Load_Chart_from_server_data_my_chart_js_3(); return false;">Load Chart from server data (Line Graph)</a><br />
+<br />
+<a href="http://pullmonkey.com/projects/open_flash_chart2">More Open Flash Chart II examples.</a><br />
+And here is the code (the controller):</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt>9<tt>
+</tt><strong>10</strong><tt>
+</tt>11<tt>
+</tt>12<tt>
+</tt>13<tt>
+</tt>14<tt>
+</tt><strong>15</strong><tt>
+</tt>16<tt>
+</tt>17<tt>
+</tt>18<tt>
+</tt>19<tt>
+</tt><strong>20</strong><tt>
+</tt>21<tt>
+</tt>22<tt>
+</tt>23<tt>
+</tt>24<tt>
+</tt><strong>25</strong><tt>
+</tt>26<tt>
+</tt>27<tt>
+</tt>28<tt>
+</tt>29<tt>
+</tt><strong>30</strong><tt>
+</tt>31<tt>
+</tt>32<tt>
+</tt>33<tt>
+</tt>34<tt>
+</tt><strong>35</strong><tt>
+</tt>36<tt>
+</tt>37<tt>
+</tt>38<tt>
+</tt>39<tt>
+</tt><strong>40</strong><tt>
+</tt>41<tt>
+</tt>42<tt>
+</tt>43<tt>
+</tt>44<tt>
+</tt><strong>45</strong><tt>
+</tt>46<tt>
+</tt>47<tt>
+</tt>48<tt>
+</tt>49<tt>
+</tt><strong>50</strong><tt>
+</tt>51<tt>
+</tt>52<tt>
+</tt>53<tt>
+</tt>54<tt>
+</tt><strong>55</strong><tt>
+</tt>56<tt>
+</tt>57<tt>
+</tt>58<tt>
+</tt>59<tt>
+</tt><strong>60</strong><tt>
+</tt>61<tt>
+</tt>62<tt>
+</tt>63<tt>
+</tt>64<tt>
+</tt><strong>65</strong><tt>
+</tt>66<tt>
+</tt>67<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt><span class="r">class</span> <span class="cl">TestItController</span> &lt; <span class="co">ApplicationController</span><tt>
+</tt>  <span class="r">def</span> <span class="fu">index</span><tt>
+</tt>    title = <span class="co">Title</span>.new(<span class="s"><span class="dl">&quot;</span><span class="k">MY TITLE - original</span><span class="dl">&quot;</span></span>)<tt>
+</tt>    bar = <span class="co">BarGlass</span>.new<tt>
+</tt>    bar.set_values([<span class="i">1</span>,<span class="i">2</span>,<span class="i">3</span>,<span class="i">4</span>,<span class="i">5</span>,<span class="i">6</span>,<span class="i">7</span>,<span class="i">8</span>,<span class="i">9</span>])<tt>
+</tt>    <span class="iv">@chart</span> = <span class="co">OpenFlashChart</span>.new<tt>
+</tt>    <span class="iv">@chart</span>.set_title(title)<tt>
+</tt>    <span class="iv">@chart</span>.add_element(bar)<tt>
+</tt>  <span class="r">end</span><tt>
+</tt><tt>
+</tt>  <span class="r">def</span> <span class="fu">some_server_data</span><tt>
+</tt>     title = <span class="co">Title</span>.new(<span class="s"><span class="dl">&quot;</span><span class="k">Multiple Lines</span><span class="dl">&quot;</span></span>)<tt>
+</tt><tt>
+</tt>    data1 = []<tt>
+</tt>    data2 = []<tt>
+</tt>    data3 = []<tt>
+</tt><tt>
+</tt>    <span class="i">10</span>.times <span class="r">do</span> |x|<tt>
+</tt>      data1 &lt;&lt; rand(<span class="i">5</span>) + <span class="i">1</span><tt>
+</tt>      data2 &lt;&lt; rand(<span class="i">6</span>) + <span class="i">7</span><tt>
+</tt>      data3 &lt;&lt; rand(<span class="i">5</span>) + <span class="i">14</span><tt>
+</tt>    <span class="r">end</span><tt>
+</tt><tt>
+</tt>    line_dot = <span class="co">LineDot</span>.new<tt>
+</tt>    line_dot.text = <span class="s"><span class="dl">&quot;</span><span class="k">Line Dot</span><span class="dl">&quot;</span></span><tt>
+</tt>    line_dot.width = <span class="i">4</span><tt>
+</tt>    line_dot.colour = <span class="s"><span class="dl">'</span><span class="k">#DFC329</span><span class="dl">'</span></span><tt>
+</tt>    line_dot.dot_size = <span class="i">5</span><tt>
+</tt>    line_dot.values = data1<tt>
+</tt><tt>
+</tt>    line_hollow = <span class="co">LineHollow</span>.new<tt>
+</tt>    line_hollow.text = <span class="s"><span class="dl">&quot;</span><span class="k">Line Hollow</span><span class="dl">&quot;</span></span><tt>
+</tt>    line_hollow.width = <span class="i">1</span><tt>
+</tt>    line_hollow.colour = <span class="s"><span class="dl">'</span><span class="k">#6363AC</span><span class="dl">'</span></span><tt>
+</tt>    line_hollow.dot_size = <span class="i">5</span><tt>
+</tt>    line_hollow.values = data2<tt>
+</tt><tt>
+</tt>    line = <span class="co">Line</span>.new<tt>
+</tt>    line.text = <span class="s"><span class="dl">&quot;</span><span class="k">Line</span><span class="dl">&quot;</span></span><tt>
+</tt>    line.width = <span class="i">1</span><tt>
+</tt>    line.colour = <span class="s"><span class="dl">'</span><span class="k">#5E4725</span><span class="dl">'</span></span><tt>
+</tt>    line.dot_size = <span class="i">5</span><tt>
+</tt>    line.values = data3<tt>
+</tt><tt>
+</tt>    y = <span class="co">YAxis</span>.new<tt>
+</tt>    y.set_range(<span class="i">0</span>,<span class="i">20</span>,<span class="i">5</span>)<tt>
+</tt><tt>
+</tt>    x_legend = <span class="co">XLegend</span>.new(<span class="s"><span class="dl">&quot;</span><span class="k">MY X Legend</span><span class="dl">&quot;</span></span>)<tt>
+</tt>    x_legend.set_style(<span class="s"><span class="dl">'</span><span class="k">{font-size: 20px; color: #778877}</span><span class="dl">'</span></span>)<tt>
+</tt><tt>
+</tt>    y_legend = <span class="co">YLegend</span>.new(<span class="s"><span class="dl">&quot;</span><span class="k">MY Y Legend</span><span class="dl">&quot;</span></span>)<tt>
+</tt>    y_legend.set_style(<span class="s"><span class="dl">'</span><span class="k">{font-size: 20px; color: #770077}</span><span class="dl">'</span></span>)<tt>
+</tt><tt>
+</tt>    chart =<span class="co">OpenFlashChart</span>.new<tt>
+</tt>    chart.set_title(title)<tt>
+</tt>    chart.set_x_legend(x_legend)<tt>
+</tt>    chart.set_y_legend(y_legend)<tt>
+</tt>    chart.y_axis = y<tt>
+</tt><tt>
+</tt>    chart.add_element(line_dot)<tt>
+</tt>    chart.add_element(line_hollow)<tt>
+</tt>    chart.add_element(line)<tt>
+</tt><tt>
+</tt>    render <span class="sy">:text</span> =&gt; chart.to_s<tt>
+</tt>  <span class="r">end</span><tt>
+</tt><span class="r">end</span><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>
+And in your view (index.html.erb):</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt>9<tt>
+</tt><strong>10</strong><tt>
+</tt>11<tt>
+</tt>12<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt>&lt;html&gt;<tt>
+</tt>  &lt;head&gt;<tt>
+</tt>    &lt;%= javascript_include_tag <span class="sy">:defaults</span>, <span class="s"><span class="dl">'</span><span class="k">swfobject</span><span class="dl">'</span></span> <span class="s"><span class="dl">%&gt;</span><span class="k"><tt>
+</tt>  &lt;/head</span><span class="dl">&gt;</span></span><tt>
+</tt>  &lt;body&gt;<tt>
+</tt>    &lt;%= <span class="iv">@chart</span>.js_open_flash_chart_object(<span class="s"><span class="dl">&quot;</span><span class="k">my_chart_js_1</span><span class="dl">&quot;</span></span>, <span class="i">550</span>,<span class="i">300</span>) <span class="s"><span class="dl">%&gt;</span><span class="k"><tt>
+</tt>    &lt;br/</span><span class="dl">&gt;</span></span>&lt;br/&gt;<tt>
+</tt>    &lt;%= <span class="iv">@chart</span>.link_to_ofc_load(<span class="s"><span class="dl">&quot;</span><span class="k">Load Original Chart</span><span class="dl">&quot;</span></span>, <span class="s"><span class="dl">&quot;</span><span class="k">my_chart_js_1</span><span class="dl">&quot;</span></span>) <span class="s"><span class="dl">%&gt;</span><span class="k"> ||<tt>
+</tt>    &lt;%= @chart.link_to_remote_ofc_load(&quot;Load Chart from server data&quot;, &quot;my_chart_js_1&quot;, &quot;/test_it/some_server_data&quot;) %</span><span class="dl">&gt;</span></span><tt>
+</tt>  &lt;<span class="rx"><span class="dl">/</span><span class="k">body&gt;<tt>
+</tt>&lt;</span><span class="dl">/</span></span>html&gt;<tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>In this example, we make use of the <b>link_to_remote_ofc_load</b> method that basically creates a <i>link_to_remote</i> along with the function that we call to load the chart data into the swfobject chart from the server.  It takes three arguments, the link text, the id of the div whose swf we will load new data into and the url from which to fetch the data.<br />
+<br />
+For more information on the javascript callbacks that I setup here, you will want to view the page source and read about it further over at <a href="http://teethgrinder.co.uk/open-flash-chart/gallery-js-ajax-2.php">teethgrinder's tutorial</a>.<br />
+<br />
+Good Luck!</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2008/09/23/open-flash-chart-ii-javascript-part-3/feed/</wfw:commentRss>
+			<slash:comments>63</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Open Flash Chart II &#8211; Javascript (Part 2)</title>
+		<link>http://pullmonkey.com/2008/09/22/open-flash-chart-ii-javascript-part-2/</link>
+					<comments>http://pullmonkey.com/2008/09/22/open-flash-chart-ii-javascript-part-2/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Mon, 22 Sep 2008 15:17:00 +0000</pubDate>
+				<category><![CDATA[development]]></category>
+		<category><![CDATA[Home]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[Open Flash Chart Graphs]]></category>
+		<category><![CDATA[projects]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[charts]]></category>
+		<category><![CDATA[flash]]></category>
+		<category><![CDATA[graphs]]></category>
+		<category><![CDATA[open flash chart]]></category>
+		<category><![CDATA[ruby on rails]]></category>
+		<guid isPermaLink="false">/2008/09/23/open-flash-chart-ii-javascript-part-2</guid>
+
+					<description><![CDATA[This article is a follow on to Part 1. In this article, I will discuss how we can change between various charts on the fly - meaning, changing the SWFObject without sending a request or rerendering the page. As promised there are still more topics to come on OFC and Javascript: Basics of OFC and [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>This article is a follow on to <a href="http://pullmonkey.com/2008/9/21/open-flash-chart-ii-javascript-part-1">Part 1</a>.  In this article, I will discuss how we can change between various charts on the fly - meaning, changing the SWFObject without sending a request or rerendering the page.<br />
+As promised there are still more topics to come on OFC and Javascript:</p>
+<ul>
+<li><a href="http://teethgrinder.co.uk/open-flash-chart-2/tutorial-5.php">Basics of OFC and Javascript</a>. - <b><a href="http://pullmonkey.com/2008/9/21/open-flash-chart-ii-javascript-part-1">Last article (part 1)</a></b></li>
+<li><a href="http://teethgrinder.co.uk/open-flash-chart-2/tutorial-6.php">Change data on the fly with links</a>. - <b>This article</b>, see links under the graph.</li>
+<li><a href="http://teethgrinder.co.uk/open-flash-chart-2/tutorial-js.php">Update and Save data</a>.</li>
+<li><a href="http://teethgrinder.co.uk/open-flash-chart/gallery-js-ajax-2.php">Ajax calls to server</a> - <b><a href="http://pullmonkey.com/2008/9/23/open-flash-chart-ii-javascript-part-3">Discussed in Part 3</a></b>.</li>
+<li><a href="http://teethgrinder.co.uk/open-flash-chart/gallery-js-2.php">Manipulate the data through an interface</a>.</li>
+<li><a href="http://ext-ux-ofcgxt.googlecode.com/svn/demo/Test.html">Some really cool interfaces</a>.</li>
+</ul>
+<p>
+Here is the graph and interface we are after in this example:<br />
+    <script src="/javascripts/prototype.js?1222016421" type="text/javascript"></script><script type="text/javascript" src="/projects/javascripts/swfobject.js"></script><script type="text/javascript">
+        swfobject.embedSWF("/projects/open-flash-chart.swf", "my_chart_js_2", "550", "300", "9.0.0");
+      </script><script type="text/javascript">
+        function ofc_ready() {
+        }
+        function open_flash_chart_data() {
+          return Object.toJSON(data);
+        }
+        function findSWF(movieName) {
+          if (navigator.appName.indexOf("Microsoft")!= -1) {
+            return window[movieName];
+          } else {
+            return document[movieName];
+          }
+        }
+        var data = {"title": {"text": "MY TITLE"}, "elements": [{"type": "bar_glass", "values": [1, 2, 3, 4, 5, 6, 7, 8, 9]}]};
+      </script></p>
+<div id="my_chart_js_2"></div>
+<p>      <script type="text/javascript">
+        function load_Load_Chart_1_my_chart_js_2() {
+          tmp = findSWF("my_chart_js_2");
+          x = tmp.load(Object.toJSON(data_Load_Chart_1_my_chart_js_2));
+        }
+        var data_Load_Chart_1_my_chart_js_2 = {"title": {"text": "MY TITLE"}, "elements": [{"type": "bar_glass", "values": [1, 2, 3, 4, 5, 6, 7, 8, 9]}]};
+      </script><br />
+      <a href="#" onclick="load_Load_Chart_1_my_chart_js_2(); return false;">Load Chart 1</a>||<script type="text/javascript">
+        function load_Load_Chart_2_my_chart_js_2() {
+          tmp = findSWF("my_chart_js_2");
+          x = tmp.load(Object.toJSON(data_Load_Chart_2_my_chart_js_2));
+        }
+        var data_Load_Chart_2_my_chart_js_2 = {"title": {"text": "MY TITLE 2"}, "elements": [{"type": "bar_glass", "values": [9, 8, 7, 6, 5, 4, 3, 2, 1]}]};
+      </script><a href="#" onclick="load_Load_Chart_2_my_chart_js_2(); return false;">Load Chart 2</a>||<script type="text/javascript">
+        function load_Load_Chart_3_my_chart_js_2() {
+          tmp = findSWF("my_chart_js_2");
+          x = tmp.load(Object.toJSON(data_Load_Chart_3_my_chart_js_2));
+        }
+        var data_Load_Chart_3_my_chart_js_2 = {"title": {"text": "MY TITLE - some new data"}, "elements": [{"type": "bar_glass", "values": [1, 3, 2, 5, 4, 7, 6, 9, 8]}]};
+      </script><a href="#" onclick="load_Load_Chart_3_my_chart_js_2(); return false;">Load Chart 3</a></p>
+<p>
+<a href="http://pullmonkey.com/projects/open_flash_chart2">More Open Flash Chart II examples.</a><br />
+<br />
+And here is the code (the controller):</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt>9<tt>
+</tt><strong>10</strong><tt>
+</tt>11<tt>
+</tt>12<tt>
+</tt>13<tt>
+</tt>14<tt>
+</tt><strong>15</strong><tt>
+</tt>16<tt>
+</tt>17<tt>
+</tt>18<tt>
+</tt>19<tt>
+</tt><strong>20</strong><tt>
+</tt>21<tt>
+</tt>22<tt>
+</tt>23<tt>
+</tt>24<tt>
+</tt><strong>25</strong><tt>
+</tt>26<tt>
+</tt>27<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt><span class="r">class</span> <span class="cl">TestItController</span> &lt; <span class="co">ApplicationController</span><tt>
+</tt>  <span class="r">def</span> <span class="fu">index</span><tt>
+</tt>    title = <span class="co">Title</span>.new(<span class="s"><span class="dl">&quot;</span><span class="k">MY TITLE</span><span class="dl">&quot;</span></span>)<tt>
+</tt>    bar = <span class="co">BarGlass</span>.new<tt>
+</tt>    bar.set_values([<span class="i">1</span>,<span class="i">2</span>,<span class="i">3</span>,<span class="i">4</span>,<span class="i">5</span>,<span class="i">6</span>,<span class="i">7</span>,<span class="i">8</span>,<span class="i">9</span>])<tt>
+</tt>    chart1 = <span class="co">OpenFlashChart</span>.new<tt>
+</tt>    chart1.set_title(title)<tt>
+</tt>    chart1.add_element(bar)<tt>
+</tt><tt>
+</tt>    title = <span class="co">Title</span>.new(<span class="s"><span class="dl">&quot;</span><span class="k">MY TITLE 2</span><span class="dl">&quot;</span></span>)<tt>
+</tt>    bar = <span class="co">BarGlass</span>.new<tt>
+</tt>    bar.set_values([<span class="i">1</span>,<span class="i">2</span>,<span class="i">3</span>,<span class="i">4</span>,<span class="i">5</span>,<span class="i">6</span>,<span class="i">7</span>,<span class="i">8</span>,<span class="i">9</span>].reverse)<tt>
+</tt>    chart2 = <span class="co">OpenFlashChart</span>.new<tt>
+</tt>    chart2.set_title(title)<tt>
+</tt>    chart2.add_element(bar)<tt>
+</tt><tt>
+</tt>    title = <span class="co">Title</span>.new(<span class="s"><span class="dl">&quot;</span><span class="k">MY TITLE - some new data</span><span class="dl">&quot;</span></span>)<tt>
+</tt>    bar = <span class="co">BarGlass</span>.new<tt>
+</tt>    bar.set_values([<span class="i">1</span>,<span class="i">3</span>,<span class="i">2</span>,<span class="i">5</span>,<span class="i">4</span>,<span class="i">7</span>,<span class="i">6</span>,<span class="i">9</span>,<span class="i">8</span>])<tt>
+</tt>    chart3 = <span class="co">OpenFlashChart</span>.new<tt>
+</tt>    chart3.set_title(title)<tt>
+</tt>    chart3.add_element(bar)<tt>
+</tt><tt>
+</tt>    <span class="iv">@charts</span> = [chart1, chart2, chart3]<tt>
+</tt>  <span class="r">end</span><tt>
+</tt><span class="r">end</span><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>
+And in your view (index.html.erb):</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt>9<tt>
+</tt><strong>10</strong><tt>
+</tt>11<tt>
+</tt>12<tt>
+</tt>13<tt>
+</tt>14<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt>&lt;html&gt;<tt>
+</tt>  &lt;head&gt;<tt>
+</tt>    &lt;%= javascript_include_tag <span class="sy">:defaults</span>, <span class="s"><span class="dl">'</span><span class="k">swfobject</span><span class="dl">'</span></span> <span class="s"><span class="dl">%&gt;</span><span class="k"><tt>
+</tt>  &lt;/head</span><span class="dl">&gt;</span></span><tt>
+</tt>  &lt;body&gt;<tt>
+</tt>    &lt;%= <span class="iv">@charts</span>.first.js_open_flash_chart_object(<span class="s"><span class="dl">&quot;</span><span class="k">my_chart_js_2</span><span class="dl">&quot;</span></span>, <span class="i">550</span>,<span class="i">300</span>) <span class="s"><span class="dl">%&gt;</span><span class="k"><tt>
+</tt>    &lt;br/</span><span class="dl">&gt;</span></span>&lt;br/&gt;<tt>
+</tt>    &lt;% <span class="iv">@charts</span>.each_with_index <span class="r">do</span> |chart, i| <span class="s"><span class="dl">%&gt;</span><span class="k"><tt>
+</tt>      &lt;%= chart.link_to_ofc_load(&quot;Load Chart </span><span class="il"><span class="dl">#{</span>i + <span class="i">1</span><span class="dl">}</span></span><span class="k">&quot;, &quot;my_chart_js_2&quot;) %</span><span class="dl">&gt;</span></span><tt>
+</tt>      &lt;%= <span class="s"><span class="dl">&quot;</span><span class="k"> || </span><span class="dl">&quot;</span></span> <span class="r">if</span> i &lt; <span class="iv">@charts</span>.size - <span class="i">1</span> <span class="s"><span class="dl">%&gt;</span><span class="k"><tt>
+</tt>    &lt;% end %</span><span class="dl">&gt;</span></span><tt>
+</tt>  &lt;<span class="rx"><span class="dl">/</span><span class="k">body&gt;<tt>
+</tt>&lt;</span><span class="dl">/</span></span>html&gt;<tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>In this example, we make use of the <b>link_to_ofc_load</b> method that basically creates a <i>link_to_function</i> along with the function that we call to load the chart data into the swfobject chart.  It takes two arguments, the link text and the id of the div whose swf we will load new data into.<br />
+<br />
+For more information on the javascript callbacks that I setup here, you will want to view the page source and read about it further over at <a href="http://teethgrinder.co.uk/open-flash-chart-2/tutorial-6.php">teethgrinder's tutorial</a>.</p>
+<p>Good Luck!</p>
+<p></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2008/09/22/open-flash-chart-ii-javascript-part-2/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Open Flash Chart II &#8211; Javascript (Part 1)</title>
+		<link>http://pullmonkey.com/2008/09/21/open-flash-chart-ii-javascript-part-1/</link>
+					<comments>http://pullmonkey.com/2008/09/21/open-flash-chart-ii-javascript-part-1/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Sun, 21 Sep 2008 19:15:00 +0000</pubDate>
+				<category><![CDATA[development]]></category>
+		<category><![CDATA[Home]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[Open Flash Chart Graphs]]></category>
+		<category><![CDATA[projects]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[SimpleCMS]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[charts]]></category>
+		<category><![CDATA[flash]]></category>
+		<category><![CDATA[graphs]]></category>
+		<category><![CDATA[open flash chart]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[ruby on rails]]></category>
+		<guid isPermaLink="false">/2008/09/23/open-flash-chart-ii-javascript-part-1</guid>
+
+					<description><![CDATA[This article (and the work behind it -- meaning get the latest from github) is generously sponsored by Harry Seldon who wants to be able to pass data around using javascript. There are quite a few benefits to this, learn more from teethgrinder's tutorial on the same topic. This example opens up a lot of [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>This article (and the work behind it -- meaning <b>get the latest from <a href="http://github.com/pullmonkey/open_flash_chart/tree/master">github</a></b>) is generously sponsored by <a href="http://harryseldon.thinkosphere.com/">Harry Seldon</a> who wants to be able to pass data around using javascript.  There are quite a few benefits to this, learn more from <a href="http://teethgrinder.co.uk/open-flash-chart-2/tutorial-5.php">teethgrinder's tutorial on the same topic</a>.</p>
+<p>This example opens up a lot of possibilities and I thank Harry for pointing me to it.  So more to come on OFC and Javascript. For a taste of what is to come, check these out:</p>
+<ul>
+<li><a href="http://teethgrinder.co.uk/open-flash-chart-2/tutorial-5.php">The one I will go over in this article</a>.</li>
+<li><a href="http://teethgrinder.co.uk/open-flash-chart-2/tutorial-6.php">Change data on the fly with links</a> - <b><a href="http://pullmonkey.com/2008/9/22/open-flash-chart-ii-javascript-part-2">Discussed in Part2</a></b>.</li>
+<li><a href="http://teethgrinder.co.uk/open-flash-chart-2/tutorial-js.php">Update and Save data</a>.</li>
+<li><a href="http://teethgrinder.co.uk/open-flash-chart/gallery-js-ajax-2.php">Ajax calls to server</a> - <b><a href="http://pullmonkey.com/2008/9/23/open-flash-chart-ii-javascript-part-3">Discussed in Part 3</a></b>.</li>
+<li><a href="http://teethgrinder.co.uk/open-flash-chart/gallery-js-2.php">Manipulate the data through an interface</a>.</li>
+<li><a href="http://ext-ux-ofcgxt.googlecode.com/svn/demo/Test.html">Some really cool interfaces</a>.</li>
+</ul>
+<p>Here is the graph we are after in this example:<br />
+    <script src="/javascripts/prototype.js" type="text/javascript"></script><script type="text/javascript" src="/projects/javascripts/swfobject.js"></script><script type="text/javascript">
+      swfobject.embedSWF("/projects/open-flash-chart-lwc.swf", "flash_content_js_1", "550", "300", "9.0.0", "expressInstall.swf", {"get-data":"open_flash_chart_data"}); </script>    <script type="text/javascript">
+      function ofc_ready() {
+      }
+      function open_flash_chart_data() {
+        return Object.toJSON(data);
+      }
+      function findSWF(movieName) {
+        if (navigator.appName.indexOf("Microsoft")!= -1) {
+          return window[movieName];
+        } else {
+          return document[movieName];
+        }
+      }
+      var data = {"title": {"text": "MY TITLE"}, "elements":[{"type": "bar_glass", "values": [1, 2, 3, 4, 5, 6, 7, 8, 9]}]};
+    </script></p>
+<div id="flash_content_js_1"></div>
+<p>
+<a href="http://pullmonkey.com/projects/open_flash_chart2">More Open Flash Chart II examples.</a><br />
+<br />
+And here is the code (the controller):</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt>9<tt>
+</tt><strong>10</strong><tt>
+</tt>11<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt><span class="r">class</span> <span class="cl">TestItController</span> &lt; <span class="co">ApplicationController</span><tt>
+</tt>  <span class="r">def</span> <span class="fu">index</span><tt>
+</tt>    title = <span class="co">Title</span>.new(<span class="s"><span class="dl">&quot;</span><span class="k">MY TITLE</span><span class="dl">&quot;</span></span>)<tt>
+</tt>    bar = <span class="co">BarGlass</span>.new<tt>
+</tt>    bar.set_values([<span class="i">1</span>,<span class="i">2</span>,<span class="i">3</span>,<span class="i">4</span>,<span class="i">5</span>,<span class="i">6</span>,<span class="i">7</span>,<span class="i">8</span>,<span class="i">9</span>])<tt>
+</tt>    <span class="iv">@chart</span> = <span class="co">OpenFlashChart</span>.new<tt>
+</tt>    <span class="iv">@chart</span>.set_title(title)<tt>
+</tt>    <span class="iv">@chart</span>.add_element(bar)<tt>
+</tt>  <span class="r">end</span><tt>
+</tt><span class="r">end</span><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>
+Notice that I do not render the chart object, however I turn it into an instance variable for use in our javascript rendering of our chart.</p>
+<p>And in your view (index.html.erb):</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt>9<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt>&lt;html&gt;<tt>
+</tt>  &lt;head&gt;<tt>
+</tt>    &lt;%= javascript_include_tag <span class="sy">:defaults</span>, <span class="s"><span class="dl">&quot;</span><span class="k">swfobject</span><span class="dl">&quot;</span></span> <span class="s"><span class="dl">%&gt;</span><span class="k"><tt>
+</tt>  &lt;/head</span><span class="dl">&gt;</span></span><tt>
+</tt>  &lt;body&gt;<tt>
+</tt>    &lt;%= <span class="iv">@chart</span>.js_open_flash_chart_object(<span class="s"><span class="dl">&quot;</span><span class="k">my_chart_js_1</span><span class="dl">&quot;</span></span>, <span class="i">550</span>,<span class="i">300</span>) <span class="s"><span class="dl">%&gt;</span><span class="k"><tt>
+</tt>  &lt;/body</span><span class="dl">&gt;</span></span><tt>
+</tt>&lt;<span class="rx"><span class="dl">/</span><span class="k">html&gt;<tt>
+</tt></span></span></pre>
+</td>
+</tr>
+</table>
+<p>
+I do a lot behind the scenes but if you look, you will see a few new things here.</p>
+<ol>
+<li>The data comes from the @chart.js_open_flash_chart_object(...) call which sets up a few javascript callback methods to send the data to the SWF object.  It  takes 3 required arguments div_name (the id of the div that houses the chart), width and height and one optional argument base_url which defaults to "/".</li>
+<li>If you look at the HTML source, it is quite a bit different, we simply embed the SWF object.  We do not need to point to the data method since there actually isn't one.</li>
+<li>One difference between this Rails example and php example (from teethgrinder) is that prototype which comes standard with rails, has a JSON implementation for javascript, so we do not need the json2.js file, but make sure to include prototype.js in your apps.</li>
+</ol>
+<p>For more information on the javascript callbacks that I setup here, you will want to view the page source and read about it further over at <a href="http://teethgrinder.co.uk/open-flash-chart-2/tutorial-5.php">teethgrinder's tutorial</a>.</p>
+<p>Good Luck! and Harry, I hope this helps, otherwise please drop me a line.</p>
+<p></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2008/09/21/open-flash-chart-ii-javascript-part-1/feed/</wfw:commentRss>
+			<slash:comments>10</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

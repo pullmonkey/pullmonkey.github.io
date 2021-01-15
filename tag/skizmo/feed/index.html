@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>skizmo &#8211; PullMonkey Blog</title>
+	<atom:link href="http://pullmonkey.com/tag/skizmo/feed/" rel="self" type="application/rss+xml" />
+	<link>http://pullmonkey.com</link>
+	<description></description>
+	<lastBuildDate>Fri, 28 Oct 2011 15:57:16 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6</generator>
+	<item>
+		<title>VIN API &#8211; ignore checksum validation</title>
+		<link>http://pullmonkey.com/2011/10/28/vin-api-ignore-checksum-validation/</link>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Fri, 28 Oct 2011 15:55:35 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[project]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[ruby on rails]]></category>
+		<category><![CDATA[simple]]></category>
+		<category><![CDATA[skizmo]]></category>
+		<category><![CDATA[software]]></category>
+		<category><![CDATA[VIN]]></category>
+		<category><![CDATA[vin api]]></category>
+		<category><![CDATA[xml]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57615</guid>
+
+					<description><![CDATA[It's been mentioned a few times that there should be a way to skip the checksum validation. This means if the check digit calculation generally fails, VIN API will continue to process the VIN to see if there is a "like" VIN match. So here it is:]]></description>
+										<content:encoded><![CDATA[<p>It's been mentioned a few times that there should be a way to skip the checksum validation.   This means if the <a href="http://en.wikipedia.org/wiki/Vehicle_Identification_Number#Check_digit_calculation">check digit calculation</a> generally fails, <a href="http://vinapi.skizmo.com">VIN API</a> will continue to process the VIN to see if there is a "like" VIN match.  So here it is: </p>
+<p><script src="https://gist.github.com/1322591.js?file=gistfile1.rb"></script></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Vin API &#8211; Phase II</title>
+		<link>http://pullmonkey.com/2011/01/13/vin-api-phase-ii/</link>
+					<comments>http://pullmonkey.com/2011/01/13/vin-api-phase-ii/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Thu, 13 Jan 2011 22:42:14 +0000</pubDate>
+				<category><![CDATA[api]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[projects]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[.net]]></category>
+		<category><![CDATA[cost]]></category>
+		<category><![CDATA[mpg]]></category>
+		<category><![CDATA[msrp]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[price]]></category>
+		<category><![CDATA[skizmo]]></category>
+		<category><![CDATA[VIN]]></category>
+		<category><![CDATA[vin api]]></category>
+		<category><![CDATA[web service]]></category>
+		<category><![CDATA[xml]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57563</guid>
+
+					<description><![CDATA[We've just finished adding A LOT more details to VIN API's result set. This time we've added things like MPG, MSRP, cargo room/volumn, etc. See the full list below, it is very comprehensive. If you use ruby (look for a future post with .NET and PHP examples), and want the complete dataset, you would setup [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>We've just finished adding A LOT more details to <a href="http://vinapi.skizmo.com">VIN API</a>'s result set.  This time we've added things like MPG, MSRP, cargo room/volumn, etc.  See the full list below, it is very comprehensive.</p>
+<p>If you use ruby (look for a future post with .NET and PHP examples), and want the complete dataset, you would setup your ActiveResource like this:<br />
+<script src="https://gist.github.com/778735.js?file=gistfile1.rb"></script></p>
+<p>And then call our API like this:<br />
+<script src="https://gist.github.com/778747.js?file=gistfile1.rb"></script></p>
+<p>The only change (for those of you who have already implemented phase I) is to send in a "complete" parameter with value of "true" ... upon doing so, VIN API will send you the complete dataset versus the basic (and default) dataset.</p>
+<p>The results would look like this (in XML) and be prepared because it is lengthy:<br />
+<script src="https://gist.github.com/778755.js?file=gistfile1.xml"></script></p>
+<p>That's it, just thought I'd share <a href="http://vinapi.skizmo.com">VIN API</a>'s Phase II.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2011/01/13/vin-api-phase-ii/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>VIN API &#8211; VIN Decoder for anyone</title>
+		<link>http://pullmonkey.com/2010/02/19/vin-api-vin-decoder-for-anyone/</link>
+					<comments>http://pullmonkey.com/2010/02/19/vin-api-vin-decoder-for-anyone/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Fri, 19 Feb 2010 17:45:11 +0000</pubDate>
+				<category><![CDATA[api]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[projects]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[ActiveResource]]></category>
+		<category><![CDATA[curl]]></category>
+		<category><![CDATA[Make]]></category>
+		<category><![CDATA[Model]]></category>
+		<category><![CDATA[skizmo]]></category>
+		<category><![CDATA[vehicle]]></category>
+		<category><![CDATA[vehicle identification number]]></category>
+		<category><![CDATA[VIN]]></category>
+		<category><![CDATA[Year]]></category>
+		<category><![CDATA[Year Make Model]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57516</guid>
+
+					<description><![CDATA[UPDATES: See Phase II details for complete dataset information. Take a look at the PHP examples and the .NET examples. And ... while it's been great being able to give this information away freely for about a year now, we have to share some of the cost with our users, so please read about our [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><b>UPDATES:</b><br />
+See <a href="http://pullmonkey.com/2011/01/13/vin-api-phase-ii/">Phase II details</a> for complete dataset information.<br />
+Take a look at the <a href="http://pullmonkey.com/2011/01/17/vin-api-php-and-xml-parsing/">PHP examples</a> and the <a href="http://pullmonkey.com/2011/01/13/vin-api-examples-for-php-and-vb-net/">.NET examples</a>.<br />
+And ... while it's been great being able to give this information away freely for about a year now, we have to share some of the cost with our users, so please read about <a href="http://pullmonkey.com/2011/01/24/vin-api-fair-pricing-model/">our pricing model</a>.<br />
+<b>END UPDATES</b><br />
+<br /><a title="VIN API" href="http://vinapi.skizmo.com">VIN API</a> came about through lots of work on a current project of ours - <a title="Mr. Quotey" href="http://mrquotey.com">Mr. Quotey</a>.  We are dealing with auto insurance and wanted a way to decode VINs.  The other solutions we found (API-wise) were too expensive for our small, unfunded startup.  So like the way most great things come about, we decided to build <a title="VIN API" href="http://vinapi.skizmo.com">our own VIN decoding API</a>.</p>
+<h2>Using VIN API:</h2>
+<p>This is explained in detail at <a title="VIN API" href="http://vinapi.skizmo.com">VIN API's site</a>, but I will give you a look at what it does here.</p>
+<p>If you use Ruby on Rails like I do, then you have the option to use ActiveResource:</p>
+<p><script src="http://gist.github.com/308952.js?file=gistfile1.rb"></script> Then you can use it like this:  <script src="http://gist.github.com/308951.js?file=gistfile1.rb&gt;&lt;/mce:script&gt;&lt;/p&gt; &lt;p&gt;If you need to use curl or some alternative like curl then refer to &lt;a href="><!--
+VIN API's site.
+// --></script></p>
+<h2>Current Limitations:</h2>
+<p>Right now each account is limited to 20 VIN requests a month, we are looking to take it slow and prevent abuse.  If you do need more VIN decodings a month, feel free to let us know at <a title="Mr. Quotey" href="http://mrquotey.com">Mr. Quotey</a>, we'd be happy to up the max for your account.</p>
+<h2>Where to next?:</h2>
+<p>It is too soon to really tell.  We'd like your feedback and to know if this service is useful.  If it gets enough buzz, we would probably pursue it a bit more and drop the monthly limitations.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2010/02/19/vin-api-vin-decoder-for-anyone/feed/</wfw:commentRss>
+			<slash:comments>31</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Using Tumblr as a CMS</title>
+		<link>http://pullmonkey.com/2009/12/30/using-tumblr-as-a-cms/</link>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Wed, 30 Dec 2009 20:39:31 +0000</pubDate>
+				<category><![CDATA[development]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[SimpleCMS]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[CMS]]></category>
+		<category><![CDATA[content]]></category>
+		<category><![CDATA[data access]]></category>
+		<category><![CDATA[management]]></category>
+		<category><![CDATA[skizmo]]></category>
+		<category><![CDATA[tumblr]]></category>
+		<category><![CDATA[tumblr as cms]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57438</guid>
+
+					<description><![CDATA[Thought you all might like this - http://blog.skizmo.com/post/308406755/use-tumblr-as-your-cms It is something we sort of dreamed up and it works great as a partial CMS - very much like SimpleCMS where you can specify what exactly on the page needs to be managed by a CMS. This allows you to mix your CMS static content with [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Thought you all might like this - <a href="http://blog.skizmo.com/post/308406755/use-tumblr-as-your-cms">http://blog.skizmo.com/post/308406755/use-tumblr-as-your-cms</a></p>
+<p>It is something we sort of dreamed up and it works great as a partial CMS - very much like <a href="http://pullmonkey.com/tag/simplecms/">SimpleCMS</a> where you can specify what exactly on the page needs to be managed by a CMS.  This allows you to mix your CMS static content with your dynamic content.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

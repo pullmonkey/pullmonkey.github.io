@@ -1,0 +1,99 @@
+/*  
+Theme Name: Simple Paper
+Theme URI: http://www.blogohblog.com
+Description: Simple Paper is designed and built by Jai Nischal Verma of <a href="http://www.blogohblog.com/" title="free wordpress themes">Blog Oh Blog</a>. I love to hear of my work being used :). This work is licensed under a <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution 3.0 License</a>. This means you may use it for any purpose, and make any changes you like. Just leave my link under your footer.
+Author: Jai Nischal Verma
+Author URI: http://www.blogohblog.com
+*/
+
+/**************** Body *********************/
+*{margin:0; padding:0;}
+body{background-color:#323232; font-family:Helvetica, Georgia, "Times New Roman", Times, serif;}
+#container{background:#323232; width:1192px;}
+#wrapper{width:1072px; background:url(images/wrapper.gif) repeat-y; float:left; padding:0 0 10px 0;}
+#c1{width:751px; float:left; padding:18px 15px 0 20px;}
+#c2{float:right; width:253px; padding:5px 12px 0 17px;}
+
+/**************** Logo/Header *********************/
+#logo a{font-size:36px; color:#1d1d1d; text-decoration:none; text-transform:capitalize; letter-spacing:1px; font-weight:normal;}
+#description{font-size:14px; color:#8f8687; font-weight:normal;}
+
+/**************** Links *********************/
+a:link, a:visited {color:#0b9ec0; text-decoration:none;}
+
+/**************** Navigation *********************/
+#menu{width:120px; float:left; padding:1px 0 0 0; font-family:Arial, Helvetica, sans-serif; font-weight:bold;}
+#nav{position:fixed; width:120px;}
+#menu ul li{font-size:10px; list-style:none; margin:0 0 1px 0; text-transform:uppercase;}
+#menu ul li a{color:#999; text-decoration:none; display:block; padding:0 0 0 10px; line-height:26px;  background:#1d1d1d;}
+#menu ul li a:hover, #menu ul li.current_page_item a{color:#fff;}
+
+/**************** Entry *********************/
+#content{margin:40px 0 0 0; padding:0 0 20px 0;}
+.date{background:url(images/date.jpg); width:41px; height:51px; float:left; text-align:center; color:#fff; font-size:24px; margin:0 20px 15px 0;}
+.date span{font-size:13px; line-height:20px;}
+.post{margin:0 0 40px 0;}
+.post h2 a{color:#1d1d1d; font-size:24px; font-weight:normal; float:left; margin:10px 0 15px 0; text-decoration:underline;}
+.post h2 a:hover {color:#0b9ec0;}
+.post p{font-size:16px; color:#1d1d1d; line-height:28px; margin:0 0 5px 0;}
+.post p a{color:#0b9ec0; text-decoration:none;}
+.meta{background:#fafafa; border-top:1px solid #e9e9e9; border-bottom:1px solid #e9e9e9; line-height:20px; padding:4px 0 4px 0; font-size:10px; font-family:Arial, Helvetica, sans-serif;}
+.meta a{color:#0b9ec0; text-decoration:none;}
+.meta a:hover{color:#0b9ec0; text-decoration:underline;}
+.note{background:url(images/note.gif) no-repeat left; padding:0 0 0 16px; margin:0 15px 0 0;}
+.com{background:url(images/comment.gif) no-repeat left; padding:0 0 0 16px; margin:0 15px 0 2px;}
+.tags{background:url(images/tags.gif) no-repeat left; padding:0 0 0 16px;}
+.post ul, .post ol{margin:10px 0 10px 40px; font-size:15px; color:#1d1d1d; line-height:24px;}
+blockquote { margin: 15px 30px 15px 10px; padding-left: 20px; border-left: 1px dotted #0b9ec0; }
+blockquote cite { margin: 5px 0 0; display: block; }
+code {display:block; margin:10px; color:#0b9ec0; font-family:Arial; letter-spacing:2px; font-size:11px;}
+.post h2.center{text-align:center; float:none; margin:0; padding:0; color:#1d1d1d;}
+.alignleft a, .alignright a {font-size:11px;}
+
+/**************** Sidebar *********************/
+#subscribe{height:35px;}
+#subscribe a{color:#6e9193; font-size:13px; text-transform:uppercase; float:left; text-decoration:underline;}
+#rss{ margin:0 10px 0 0;}
+#ls{background:url(images/serach.gif); width:214px; height:26px; float:left; border:0; font-family:Georgia, "Times New Roman", Times, serif; font-size:16px; padding:5px 5px 0 5px; color:#777;}
+#submit{float:left;}
+#sidebar{padding:20px 0 0 0;}
+#sidebar ul, #sidebar ul ul{list-style:none;}
+#sidebar ul li h2{font-size:20px; font-family:Arial, Helvetica, sans-serif; color:#333; border-bottom:1px dotted #333; padding:0 0 5px 0; margin:0 0 7px 0;}
+#sidebar ul li ul{margin:0 0 20px 0;}
+#sidebar ul li ul li a{color:#6e9292; font-size:14px; text-decoration:none; line-height:25px;}
+#sidebar ul li ul li a:hover {color:#666666; background:url(images/tags.gif) right no-repeat; padding-right:22px;}
+
+/**************** Footer *********************/
+#footer {border-top:1px dotted #1d1d1d; padding:15px 0 0 0; width:550px; margin:0 0 0 20px;}
+#footer p{font-size:11px;} 
+#footer a{color:#0b9ec0; text-decoration:none;}
+
+/**************** Comments *********************/
+#comments, #comment h2, #pac{font-size:14px; color:#1d1d1d; margin:0 0 20px 0; border-bottom:1px dotted #666; padding:0 0 10px 0;}
+#comdiv{background:#eeeeee; width:500px; font-size:11px; margin:10px 0 20px 0;}
+#comtp{background:url(images/comment_top.gif) no-repeat top; width:460px; padding:15px 20px 0 20px;}
+#combt{background:url(images/comment_bot.gif); width:500px; height:13px;}
+#comdiv p{font-size:11px; line-height:20px; padding:10px 0 0 0;}
+.commentlist li{list-style:inside decimal; font-size:11px;}
+.commentlist li a{color:#0b9ec0;}
+#author, #email, #url{padding:5px; color:#6e9292; width:200px; margin:10px 0 0 0; font-size:12px; background:#eeeeee; border:0; font-family:Georgia, "Times New Roman", Times, serif;}
+#comment{width:500px; height:150px; margin:10px 0 20px 0; padding:5px; font-size:12px; background:#eee; border:0; font-family:Georgia, "Times New Roman", Times, serif; color:#6e9292;}
+small{font-size:11px;}
+.search{font-size:17px; color:#1d1d1d;}
+#submit2{padding:5px; font-family:Georgia, "Times New Roman", Times, serif; background:#f5f5f5; border:1px solid #ccc;}
+
+/**************** Gallery *********************/
+.gallery {text-align:center;}
+.gallery img {padding:2px; height:100px; width:100px;}
+.gallery a:hover {background-color:#ffffff;}
+.attachment {text-align:center;}
+.attachment img { padding:2px; border:1px solid #999999;}
+.attachment a:hover {background-color:#FFFFFF;}
+.imgnav {text-align:center;}
+.imgleft {float:left;}
+.imgleft a:hover {background-color:#FFFFFF;}
+.imgleft img{ padding:2px; border:1px solid #999999; height:100px; width:100px;}
+.imgright {float:right;}
+.imgright a:hover {background-color:#FFFFFF;}
+.imgright img{ padding:2px; border:1px solid #999999; height:100px; width:100px;}
+

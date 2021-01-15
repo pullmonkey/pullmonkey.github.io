@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>PullMonkey Blog</title>
+	<atom:link href="http://pullmonkey.com/feed/" rel="self" type="application/rss+xml" />
+	<link>http://pullmonkey.com</link>
+	<description></description>
+	<lastBuildDate>Thu, 16 Aug 2012 23:40:41 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6</generator>
+	<item>
+		<title>Dynamic Select Boxes &#8211; Ruby on Rails 3</title>
+		<link>http://pullmonkey.com/2012/08/11/dynamic-select-boxes-ruby-on-rails-3/</link>
+					<comments>http://pullmonkey.com/2012/08/11/dynamic-select-boxes-ruby-on-rails-3/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Sat, 11 Aug 2012 01:11:51 +0000</pubDate>
+				<category><![CDATA[development]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[cascading select boxes]]></category>
+		<category><![CDATA[dynamic]]></category>
+		<category><![CDATA[dynamic select boxes]]></category>
+		<category><![CDATA[jquery]]></category>
+		<category><![CDATA[rails 3]]></category>
+		<category><![CDATA[select boxes]]></category>
+		<category><![CDATA[unobtrusive javascript]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57726</guid>
+
+					<description><![CDATA[Over 4 years ago, I wrote a tutorial for doing dynamic (cascading) select boxes. Still getting comments and emails to this day. Mostly asking how to get this working with rails 3, which has moved from prototype to jquery. So here's a tutorial for getting 3 select boxes to trigger updates for each other. First [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Over 4 years ago, I wrote <a href="http://pullmonkey.com/2008/03/30/dynamic-select-boxes-ruby-on-rails/">a tutorial for doing dynamic (cascading) select boxes</a>.<br />
+Still getting comments and emails to this day.  Mostly asking how to get this working with rails 3, which has moved from prototype to jquery.<br />
+So here's a tutorial for getting 3 select boxes to trigger updates for each other.</p>
+<p>First set things up:<br />
+<script src="https://gist.github.com/3319671.js?file=gistfile1.sh"></script></p>
+<p>I just used the html5 haml twitter bootstrap, etc template.  Really useful.</p>
+<p>If you need data, here's what I used - put this in your db/seeds.rb file:<br />
+<script src="https://gist.github.com/3319679.js?file=gistfile1.rb"></script></p>
+<p>Next, setup your model associations:<br />
+<script src="https://gist.github.com/3319683.js?file=gistfile1.rb"></script></p>
+<p>Genres have many artists.<br />
+Artists have many songs.<br />
+Genres have many songs through artists.</p>
+<p>I'm just using a home controller to setup variables for the index page as well as setup variables for use in the dynamic updating:<br />
+<script src="https://gist.github.com/3319690.js?file=gistfile1.rb"></script></p>
+<p>Now the view just has the 3 select boxes and the unobtrusive javascript (triggered onchange) to make the ajax calls for updating:<br />
+<script src="https://gist.github.com/3319691.js?file=gistfile1.rb"></script></p>
+<p>We need our rjs files for updating the select boxes, one for the songs (when artist changes) and one for the artists and songs (when genre changes):<br />
+<script src="https://gist.github.com/3319706.js?file=gistfile1.rb"></script></p>
+<p>Our routes are simple:<br />
+<script src="https://gist.github.com/3319709.js?file=gistfile1.rb"></script></p>
+<p>That's it.  </p>
+<p><strong>UPDATE:</strong>  Here's an erb alternative for index.html.<br />
+<script src="https://gist.github.com/3366572.js?file=gistfile1.rhtml"></script></p>
+<p>And the js.haml can be converted to js.erb by taking #{...} and converting to <%= ... %> :<br />
+<script src="https://gist.github.com/3374533.js?file=gistfile1.rhtml"></script></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2012/08/11/dynamic-select-boxes-ruby-on-rails-3/feed/</wfw:commentRss>
+			<slash:comments>12</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>VIN API &#8211; Do you know about the complete data set?</title>
+		<link>http://pullmonkey.com/2012/08/04/vin-api-do-you-know-about-the-complete-data-set/</link>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Sat, 04 Aug 2012 15:42:04 +0000</pubDate>
+				<category><![CDATA[api]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[projects]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[basic data set]]></category>
+		<category><![CDATA[complete data set]]></category>
+		<category><![CDATA[fun]]></category>
+		<category><![CDATA[rich data]]></category>
+		<category><![CDATA[tutorial]]></category>
+		<category><![CDATA[VIN]]></category>
+		<category><![CDATA[vin api]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57715</guid>
+
+					<description><![CDATA[Looking at our data trends for VIN API, we show about 15% of all requests are for the complete data set. It's the same price as the basic data set and rich with a ton of data. Check out the data set from this post over 1 and half years ago. On top of the [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Looking at our data trends for <a href="http://vinapi.skizmo.com">VIN API</a>, we show about 15% of all requests are for the complete data set.  It's the same price as the basic data set and rich with a ton of data.</p>
+<p>Check out the data set from <a href="http://pullmonkey.com/2011/01/13/vin-api-phase-ii/">this post over 1 and half years ago</a>.  On top of the basic data set's year, make and model, the complete data set comes with data like MSRP, MPG (city and highway), dealer invoice, gas tank size, etc.   </p>
+<p>We get tons of hits for basic data, but at no additional charge we also provide the complete data set.  Just add a complete<br />
+=> "true" to your request.   So simple and there's no performance hit. </p>
+<p><script src="https://gist.github.com/854935.js?file=gistfile1.rb"></script></p>
+<p>For more information, check out or <a href="http://vinapi.skizmo.com/examples">examples</a> and <a href="http://vinapi.skizmo.com/faq">faq</a>.</p>
+<p>Enjoy!</p>
+<p>Here's another look at the data elements from a comprehensive query:<br />
+<script src="https://gist.github.com/778755.js?file=gistfile1.xml"></script></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Using Ruby to read from a MagTek USB Card Reader</title>
+		<link>http://pullmonkey.com/2012/07/27/using-ruby-to-read-from-a-magtek-usb-card-reader/</link>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Fri, 27 Jul 2012 15:39:59 +0000</pubDate>
+				<category><![CDATA[development]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[projects]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[card reader]]></category>
+		<category><![CDATA[card swipe]]></category>
+		<category><![CDATA[curb]]></category>
+		<category><![CDATA[httpi]]></category>
+		<category><![CDATA[magtek]]></category>
+		<category><![CDATA[USB]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57712</guid>
+
+					<description><![CDATA[Been playing around with a lot of USB devices lately, to get them to play nicely with some of our touch screen Rails apps. One of the devices is a card reader - specifically a MagTek reader, and the same code works for the ELO reader. I've tried a billion different ways to ensure we're [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Been playing around with a lot of USB devices lately, to get them to play nicely with some of our touch screen Rails apps.<br />
+One of the devices is a card reader - specifically a MagTek reader, and the same code works for the ELO reader.</p>
+<p>I've tried a billion different ways to ensure we're reading in all the data.  At first, I was just asking the usb stream to present me with a certain number of characters, b/c that's how all the examples do it.<br />
+But we're using a lot of different cards with the readers, so that didn't work too well.  So now I just read one character at a time until we find the new line.<br />
+Here's the code to find the device, open it, close it and read from it, all whilst finding and converting the data as required.</p>
+<p><script src="https://gist.github.com/3188668.js?file=gistfile1.rb"></script></p>
+<p>So using this code, we take the swiped data and send it to our server for storage.</p>
+<p><script src="https://gist.github.com/3188719.js?file=gistfile1.rb"></script></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Signature Pad in Linux</title>
+		<link>http://pullmonkey.com/2012/07/26/signature-pad-in-linux/</link>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Thu, 26 Jul 2012 16:57:56 +0000</pubDate>
+				<category><![CDATA[development]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[projects]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[HSB]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[signature pad]]></category>
+		<category><![CDATA[topaz]]></category>
+		<category><![CDATA[USB]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57708</guid>
+
+					<description><![CDATA[I'm using the topaz model T L462 HSB. It's nice now that it works. But what a PITA to get it going. The biggest problem with the device is the documentation. There is no low level documentation explaining the representation of the bytes coming in over usb. So you are stuck using their libraries which [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I'm using the topaz model T L462 HSB.  It's nice now that it works.  But what a PITA to get it going.  The biggest problem with the device is the documentation.  There is no low level documentation explaining the representation of the bytes coming in over usb. So you are stuck using their libraries which expose some poorly explained API.</p>
+<p>Anyway, like I said, great when it works.  So I'm working in linux which basically leaves me having to use java libs and a shared object file.</p>
+<p>Here's my code:</p>
+<p><script src="https://gist.github.com/3183134.js?file=gistfile1.java"></script></p>
+<p>It sits and waits until the sig pad gets some points on it.  Once we have points it waits for a lapse in time where there is no change in the number of points.<br />
+Once we've decided that we have captured a signature, we store it to a file.<br />
+Then we shell out to a ruby script - <a href="http://pullmonkey.com/2012/07/25/using-httpi-with-curb-to-do-multipart-file-uploads-with-spnego/">see the httpi and curb article</a> - which is how I get the file to our rails server for display and verification from the user.</p>
+<p>Now, you'll need a few files.  Most of which can be found in <a href="http://www.topazsystems.com/software/download/java/sigplusjava2_60.zip">the java zip download</a> from the vendor site.<br />
+From that zip, you should grab the following:<br />
+SigPlus2_60.jar<br />
+RXTXcomm.jar<br />
+libSigUsb.so - if you need the 64 bit version, go here - <a href="http://http://www.topazsystems.com/Software/libSigUsb7242012.zip">http://www.topazsystems.com/Software/libSigUsb7242012.zip</a></p>
+<p>Then I just used eclipse to set everything up and build.  Works well so far.<br />
+The only thing you may need to change is the model (I have mine set to SignatureGem1X5) and com port (I have mine set to HID1).</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Using HTTPI with Curb to do multipart file uploads with spnego</title>
+		<link>http://pullmonkey.com/2012/07/25/using-httpi-with-curb-to-do-multipart-file-uploads-with-spnego/</link>
+					<comments>http://pullmonkey.com/2012/07/25/using-httpi-with-curb-to-do-multipart-file-uploads-with-spnego/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Wed, 25 Jul 2012 22:25:11 +0000</pubDate>
+				<category><![CDATA[development]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[curb]]></category>
+		<category><![CDATA[curl]]></category>
+		<category><![CDATA[file upload]]></category>
+		<category><![CDATA[httpi]]></category>
+		<category><![CDATA[multipart upload]]></category>
+		<category><![CDATA[negotiate]]></category>
+		<category><![CDATA[spnego]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57705</guid>
+
+					<description><![CDATA[It took a while to find a library that handled spnego requests, as opposed to shelling out to a curl --negotiate. Found httpi to work well with the curb adapter. The problem was that the documentation didn't really explain how to do file uploads withing the httpi request block. Wasn't too much of a big [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>It took a while to find a library that handled spnego requests, as opposed to shelling out to a curl --negotiate.  Found httpi to work well with the curb adapter.<br />
+The problem was that the documentation didn't really explain how to do file uploads withing the httpi request block.<br />
+Wasn't too much of a big deal, but I thought it may save someone else some time.</p>
+<p><script src="https://gist.github.com/3179054.js?file=gistfile1.rb"></script></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2012/07/25/using-httpi-with-curb-to-do-multipart-file-uploads-with-spnego/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Rubygem version incompatability with older Rails versions</title>
+		<link>http://pullmonkey.com/2012/05/30/rubygem-version-incompatability-with-older-rails-versions/</link>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Wed, 30 May 2012 15:35:39 +0000</pubDate>
+				<category><![CDATA[development]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[incompatability]]></category>
+		<category><![CDATA[ruby on rails]]></category>
+		<category><![CDATA[rubygems]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57701</guid>
+
+					<description><![CDATA[We maintain a rails 2.3.8 application and haven't had to touch it in quite some time. But when we did, we came across this error: uninitialized constant ActiveSupport::Dependencies::Mutex (NameError) Then after applying the solution found here, we started getting this error: undefined method `name' for "actionmailer":String (NoMethodError) Both errors were resolved by using RVM to [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>We maintain a rails 2.3.8 application and haven't had to touch it in quite some time.  But when we did, we came across this error:</p>
+<pre>uninitialized constant ActiveSupport::Dependencies::Mutex (NameError)</pre>
+<p>Then after applying the solution found <a href="http://stackoverflow.com/questions/5176782/uninitialized-constant-activesupportdependenciesmutex-nameerror">here</a>, we started getting this error:</p>
+<pre>undefined method `name' for "actionmailer":String (NoMethodError)</pre>
+<p>Both errors were resolved by using RVM to specify the rubygem version best suited for this application.</p>
+<pre>rvm rubygems 1.3.7</pre>
+<p>So our .rvmrc file now looks like this:</p>
+<pre>rvm use <ruby>@<gemset>
+rvm rubygems 1.3.7</pre>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Headers and Footers in ruby&#8217;s Spreadsheet gem</title>
+		<link>http://pullmonkey.com/2012/04/26/headers-and-footers-in-rubys-spreadsheet-gem/</link>
+					<comments>http://pullmonkey.com/2012/04/26/headers-and-footers-in-rubys-spreadsheet-gem/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Thu, 26 Apr 2012 19:17:20 +0000</pubDate>
+				<category><![CDATA[api]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[plugins]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[excel]]></category>
+		<category><![CDATA[footer]]></category>
+		<category><![CDATA[gem]]></category>
+		<category><![CDATA[hack]]></category>
+		<category><![CDATA[header]]></category>
+		<category><![CDATA[spreadsheet]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57696</guid>
+
+					<description><![CDATA[Have you ever needed to add a header or footer to your spreadsheets in ruby? Yah, well, we have 🙁 Yes, you can do this with the Write Excel gem. But we've already written years worth of spreadsheet code with the spreadsheet gem and don't want to rewrite it all. Anyway, we thought we'd share [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Have you ever needed to add a header or footer to your spreadsheets in ruby?<br />
+Yah, well, we have <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /><br />
+Yes, you can do this with the <a href="https://rubygems.org/gems/writeexcel">Write Excel gem</a>.<br />
+But we've already written years worth of spreadsheet code with the <a href="https://rubygems.org/gems/spreadsheet">spreadsheet gem</a> and don't want to rewrite it all.</p>
+<p>Anyway, we thought we'd share our little trick to get page headers using the spreadsheet gem.</p>
+<p><script src="https://gist.github.com/2502027.js?file=gistfile1.rb"></script></p>
+<p>So what you see here (above) goes into a config/initializer, something like RAILS_ROOT/config/initializer/enable_headers_in_spreadsheet_gem.rb.  Here's what's going on:</p>
+<p>1) We know that the <em>write_from_scratch</em> method is called when everything is said and done and the data is ready to be written to the spreadsheet file.  So we make use of this and alias that method to <em>write_from_scratch_without_header</em>.  Which opens us up to call our <em>write_header</em> method inside our <em>write_from_scratch</em> method which, of course, will call the original <em>write_from_scratch</em> method.</p>
+<p>2) Our <em>write_header</em> method makes use of the already existing opcode for Header in the spreadsheet gem.  It's not being used, so my guess is the developers intend on solving this issue at some point.  We have to send the opcode, the length info and the string we want to write out.  This was the trickiest part to figure out.</p>
+<p>3) We expose an add_header method that simply takes a string and stores it in the header accessor.  This means, to set the header, you simply say <em>sheet.add_header("foo header")</em>.</p>
+<p>To implement the footer, you'd just do the same thing, create a footer accessor, add a method to update it.  Then build the <em>writer_footer</em> method with <em>opcode(:footer)</em> and append <em>write_footer</em> at the end of <em>write_from_scratch</em>.</p>
+<p>Well, that took us some time to figure out, so enjoy and let me know if you have any questions.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2012/04/26/headers-and-footers-in-rubys-spreadsheet-gem/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Ruby&#8217;s stacked conditionals &#8211; who knew?</title>
+		<link>http://pullmonkey.com/2012/03/10/rubys-stacked-conditionals-who-knew/</link>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Sat, 10 Mar 2012 23:40:59 +0000</pubDate>
+				<category><![CDATA[development]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57687</guid>
+
+					<description><![CDATA[puts "hello readers" if you_are_a_reader if you_can_read unless you_already_read_it I was playing around with some project euler code I'm working on (anyone else figure out the Pencils of Rays with code that executes in less than a minute??). Anyway - I was going through my code and adding "if debug" to the end of all [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><code>puts "hello readers" <span style="color:#8b8">if you_are_a_reader</span> <span style="color:#88b">if you_can_read</span> <span style="color:#b88">unless you_already_read_it</span></code></p>
+<p>I was playing around with some <a href="http://projecteuler.net/">project euler</a> code I'm working on (anyone else figure out the Pencils of Rays with code that executes in less than a minute??). Anyway - I was going through my code and adding "if debug" to the end of all my puts statements b/c I didn't want to see them for the next run through. So by mistake, I blindly added "if debug" at the end of 'puts "odd" if odd', giving me 'puts "odd" if odd if debug'.  Neat.  Then, going through trying to find the bottlenecks, I noticed it. So jumped into irb to make sure it was legit and it was.</p>
+<p>Interesting.  Not sure where I'd ever use it, though.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Formgen 0.3.0 and some generated examples</title>
+		<link>http://pullmonkey.com/2011/11/17/formgen-030-and-some-generated-examples/</link>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Thu, 17 Nov 2011 00:01:03 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57676</guid>
+
+					<description><![CDATA[Formgen generates views in erb and haml based on these keywords: has_many, belongs_to, accepts_nested_attributes_for, and has_attached_file. It follows best practice and standard patterns so you don't have to. Here is example of its usage: Doing this rails generate skizmo:form Foo Generates this app/helpers/foo_setup_helper.rb app/views/foos/new.html.erb app/views/foos/edit.html.erb app/views/foos/_form.html.erb app/views/foos/_bar_fields.html.erb app/views/foos/_baz_fields.html.erb That's it: Ok, so I say that, [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="https://github.com/pullmonkey/formgen">Formgen</a> generates views in erb and haml based on these keywords: has_many, belongs_to, accepts_nested_attributes_for, and has_attached_file.  It follows best practice and standard patterns so you don't have to.  Here is example of its usage:</p>
+<h1>Doing this</h1>
+<p>rails generate skizmo:form Foo</pre>
+<h1>Generates this</h1>
+<h3>app/helpers/foo_setup_helper.rb</h3>
+<p><script src="https://gist.github.com/1371354.js"> </script></p>
+<h3>app/views/foos/new.html.erb</h3>
+<p><script src="https://gist.github.com/1371360.js"> </script></p>
+<h3>app/views/foos/edit.html.erb</h3>
+<p><script src="https://gist.github.com/1371367.js"> </script></p>
+<h3>app/views/foos/_form.html.erb</h3>
+<p><script src="https://gist.github.com/1371372.js"> </script></p>
+<h3>app/views/foos/_bar_fields.html.erb</h3>
+<p><script src="https://gist.github.com/1371375.js"> </script></p>
+<h3>app/views/foos/_baz_fields.html.erb</h3>
+<p><script src="https://gist.github.com/1371377.js"> </script><br />
+</p>
+<h1>That's it:</h1>
+<p>Ok, so I say that, but there are a few things to note.  First, this probably only works with Rails 3, given some of the calls I make for figuring things out.  Next, you'll want to <em>yield :head</em>, somewhere in your layout so that the <em>content_for :head</em> that loads the add and remove jQuery will be useful.  Finally, you should note that the nested attributes are only processed from the first level, but that will soon change.  Anyway, enjoy it and if you have any problems, just let me know.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Form Gen &#8211; ruby on rails gem</title>
+		<link>http://pullmonkey.com/2011/11/16/form-gen-ruby-on-rails-gem/</link>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Wed, 16 Nov 2011 04:38:31 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57670</guid>
+
+					<description><![CDATA[I've always dreaded doing the view code for nested attributes, setting up the helpers, the javascript, partials etc. Just so tedious, so I thought, I'd try my hand at a form generator. This generator takes a class and then processes all the nested attributes of that class's has_many's and belongs_to's to generate the typical pattern [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I've always dreaded doing the view code for nested attributes, setting up the helpers, the javascript, partials etc.  Just so tedious, so I thought, I'd try my hand at <a href="https://github.com/pullmonkey/formgen">a form generator</a>.  This <a href="https://github.com/pullmonkey/formgen">generator</a> takes a class and then processes all the nested attributes of that class's has_many's and belongs_to's to generate the typical pattern of form partial and field partials you find <a href="http://railscasts.com/episodes/196-nested-model-form-part-1">here</a>.</p>
+<p><script src="https://gist.github.com/1369234.js"> </script></p>
+<p><em>Yah I did ruby syntax-highlighting ... so not the best for something like that, but eh ... it'll do.</em></p>
+<p>The <a href="https://rubygems.org/gems/formgen">formgen gem</a> is a 0.1.0 starting point, but has worked for all the things I've needed.  If you're feeling brave give it a shot:</p>
+<pre style="margin-bottom:10px;border:1px dashed black; padding: 4px; background-color: #ddd;"># In your Gemfile -
+gem 'formgen'
+# then from your rails projects -
+rails g skizmo:form SomeClass</pre>
+<p>That outta do it.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

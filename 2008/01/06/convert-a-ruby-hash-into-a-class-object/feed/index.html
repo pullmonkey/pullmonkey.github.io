@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Convert a Ruby hash into a class object	</title>
+	<atom:link href="http://pullmonkey.com/2008/01/06/convert-a-ruby-hash-into-a-class-object/feed/" rel="self" type="application/rss+xml" />
+	<link>http://pullmonkey.com/2008/01/06/convert-a-ruby-hash-into-a-class-object/</link>
+	<description></description>
+	<lastBuildDate>Fri, 25 May 2012 10:47:20 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6</generator>
+	<item>
+		<title>
+		By: zx12r		</title>
+		<link>http://pullmonkey.com/2008/01/06/convert-a-ruby-hash-into-a-class-object/comment-page-1/#comment-18935</link>
+
+		<dc:creator><![CDATA[zx12r]]></dc:creator>
+		<pubDate>Fri, 25 May 2012 10:47:20 +0000</pubDate>
+		<guid isPermaLink="false">/2008/08/06/convert-a-ruby-hash-into-a-class-object#comment-18935</guid>
+
+					<description><![CDATA[Found a class inside hashie gem called &quot;mash&quot; which does exactly this
+
+https://github.com/intridea/hashie#mash]]></description>
+			<content:encoded><![CDATA[<p>Found a class inside hashie gem called &#8220;mash&#8221; which does exactly this</p>
+<p><a href="https://github.com/intridea/hashie#mash" rel="nofollow ugc">https://github.com/intridea/hashie#mash</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Tom Cocca		</title>
+		<link>http://pullmonkey.com/2008/01/06/convert-a-ruby-hash-into-a-class-object/comment-page-1/#comment-18890</link>
+
+		<dc:creator><![CDATA[Tom Cocca]]></dc:creator>
+		<pubDate>Thu, 03 May 2012 20:26:57 +0000</pubDate>
+		<guid isPermaLink="false">/2008/08/06/convert-a-ruby-hash-into-a-class-object#comment-18890</guid>
+
+					<description><![CDATA[I found a much faster way to accomplish the same thing as your initialize method.  I was seeing very slow times initializing a set of objects so I re-wrote the #initialize method as follows:
+
+
+def initialize(hash)
+    hash.each do &#124;key, value&#124;
+        self.instance_variable_set(&quot;@#{key}&quot;, value)
+        self.class.send(:attr_reader, key)
+    end
+end
+
+That creates attr_reader methods to access the instance variables.  If you want to be able to read and write to those methods just use an attr_accessor:
+
+def initialize(hash)
+    hash.each do &#124;key, value&#124;
+        self.instance_variable_set(&quot;@#{key}&quot;, value)
+        self.class.send(:attr_accessor, key)
+    end
+end
+
+I found this code to run much faster than the:
+self.class.send(:define_method, k, proc{self.instance_variable_get(&quot;@#{k}&quot;)})
+self.class.send(:define_method, &quot;#{k}=&quot;, proc{&#124;v&#124; self.instance_variable_set(&quot;@#{k}&quot;, v)})
+
+Thanks,
+~ Tom]]></description>
+			<content:encoded><![CDATA[<p>I found a much faster way to accomplish the same thing as your initialize method.  I was seeing very slow times initializing a set of objects so I re-wrote the #initialize method as follows:</p>
+<p>def initialize(hash)<br />
+    hash.each do |key, value|<br />
+        self.instance_variable_set(&#8220;@#{key}&#8221;, value)<br />
+        self.class.send(:attr_reader, key)<br />
+    end<br />
+end</p>
+<p>That creates attr_reader methods to access the instance variables.  If you want to be able to read and write to those methods just use an attr_accessor:</p>
+<p>def initialize(hash)<br />
+    hash.each do |key, value|<br />
+        self.instance_variable_set(&#8220;@#{key}&#8221;, value)<br />
+        self.class.send(:attr_accessor, key)<br />
+    end<br />
+end</p>
+<p>I found this code to run much faster than the:<br />
+self.class.send(:define_method, k, proc{self.instance_variable_get(&#8220;@#{k}&#8221;)})<br />
+self.class.send(:define_method, &#8220;#{k}=&#8221;, proc{|v| self.instance_variable_set(&#8220;@#{k}&#8221;, v)})</p>
+<p>Thanks,<br />
+~ Tom</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: .jpg		</title>
+		<link>http://pullmonkey.com/2008/01/06/convert-a-ruby-hash-into-a-class-object/comment-page-1/#comment-18805</link>
+
+		<dc:creator><![CDATA[.jpg]]></dc:creator>
+		<pubDate>Fri, 17 Feb 2012 22:25:31 +0000</pubDate>
+		<guid isPermaLink="false">/2008/08/06/convert-a-ruby-hash-into-a-class-object#comment-18805</guid>
+
+					<description><![CDATA[Can this be accomplished with ActiveModel? It looks like you&#039;re already in rails.
+
+Thanks so much for these ideas! I took them and modified them a little to make them slightly more extendible/useable.
+
+https://gist.github.com/1855631
+
+Thoughts? Please comment on the gist...
+
+.jpg]]></description>
+			<content:encoded><![CDATA[<p>Can this be accomplished with ActiveModel? It looks like you&#8217;re already in rails.</p>
+<p>Thanks so much for these ideas! I took them and modified them a little to make them slightly more extendible/useable.</p>
+<p><a href="https://gist.github.com/1855631" rel="nofollow ugc">https://gist.github.com/1855631</a></p>
+<p>Thoughts? Please comment on the gist&#8230;</p>
+<p>.jpg</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Simone		</title>
+		<link>http://pullmonkey.com/2008/01/06/convert-a-ruby-hash-into-a-class-object/comment-page-1/#comment-18620</link>
+
+		<dc:creator><![CDATA[Simone]]></dc:creator>
+		<pubDate>Thu, 27 Oct 2011 14:49:05 +0000</pubDate>
+		<guid isPermaLink="false">/2008/08/06/convert-a-ruby-hash-into-a-class-object#comment-18620</guid>
+
+					<description><![CDATA[Hello,
+this is how I changed initialize() method to make it recurse on value that are hash themselves:
+
+class HashIt
+  def initialize(hash)
+    hash.each do &#124;k,v&#124;
+      case v
+      when Hash; self.instance_variable_set(&quot;@#{k}&quot;, HashIt.new(v))
+      else; self.instance_variable_set(&quot;@#{k}&quot;, v)
+      end
+      self.class.send(:define_method, k, proc{ self.instance_variable_get(&quot;@#{k}&quot;) })
+      self.class.send(:define_method, &quot;#{k}=&quot;, proc{ &#124;v&#124; self.instance_variable_set(&quot;@#{k}&quot;, v)})
+    end
+  end
+end
+
+thank you for your post :-)]]></description>
+			<content:encoded><![CDATA[<p>Hello,<br />
+this is how I changed initialize() method to make it recurse on value that are hash themselves:</p>
+<p>class HashIt<br />
+  def initialize(hash)<br />
+    hash.each do |k,v|<br />
+      case v<br />
+      when Hash; self.instance_variable_set(&#8220;@#{k}&#8221;, HashIt.new(v))<br />
+      else; self.instance_variable_set(&#8220;@#{k}&#8221;, v)<br />
+      end<br />
+      self.class.send(:define_method, k, proc{ self.instance_variable_get(&#8220;@#{k}&#8221;) })<br />
+      self.class.send(:define_method, &#8220;#{k}=&#8221;, proc{ |v| self.instance_variable_set(&#8220;@#{k}&#8221;, v)})<br />
+    end<br />
+  end<br />
+end</p>
+<p>thank you for your post 🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Sheldon Hearn		</title>
+		<link>http://pullmonkey.com/2008/01/06/convert-a-ruby-hash-into-a-class-object/comment-page-1/#comment-18578</link>
+
+		<dc:creator><![CDATA[Sheldon Hearn]]></dc:creator>
+		<pubDate>Tue, 27 Sep 2011 05:52:22 +0000</pubDate>
+		<guid isPermaLink="false">/2008/08/06/convert-a-ruby-hash-into-a-class-object#comment-18578</guid>
+
+					<description><![CDATA[I&#039;m keen to steal your idea of combining option splatting with accessor definition, into magic_options:
+
+http://github.com/sheldonh/magic_options
+
+So instead of
+
+class Cow
+  include MagicOptions
+  magic_initialize :only =&#062; respond_to?
+  attr_accessor :name, :color, :gender
+end
+
+we could support
+
+class Cow
+  include MagicOptions
+  magic_initialize :accessors =&#062; [:name, :color, :gender]
+end]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;m keen to steal your idea of combining option splatting with accessor definition, into magic_options:</p>
+<p><a href="http://github.com/sheldonh/magic_options" rel="nofollow ugc">http://github.com/sheldonh/magic_options</a></p>
+<p>So instead of</p>
+<p>class Cow<br />
+  include MagicOptions<br />
+  magic_initialize :only =&gt; respond_to?<br />
+  attr_accessor :name, :color, :gender<br />
+end</p>
+<p>we could support</p>
+<p>class Cow<br />
+  include MagicOptions<br />
+  magic_initialize :accessors =&gt; [:name, :color, :gender]<br />
+end</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Avram		</title>
+		<link>http://pullmonkey.com/2008/01/06/convert-a-ruby-hash-into-a-class-object/comment-page-1/#comment-18263</link>
+
+		<dc:creator><![CDATA[Avram]]></dc:creator>
+		<pubDate>Fri, 17 Dec 2010 19:57:16 +0000</pubDate>
+		<guid isPermaLink="false">/2008/08/06/convert-a-ruby-hash-into-a-class-object#comment-18263</guid>
+
+					<description><![CDATA[Somehow that code snippet got frotzed. Here it is again, without the prompts, and with &#060; instead of a less-than sign for for class inheritance, in opes that the server doesn&#039;t digest it:
+
+class Foo &#060; ActiveResource::Base
+  self.site = &#039;&#039;
+end
+f = Foo.new(:a=&#062;1,:b=&#062;2,:c=&#062;{:d=&#062;3,:e=&#062;4})
+(returns ruby object)
+f.c.d
+(returns 3)]]></description>
+			<content:encoded><![CDATA[<p>Somehow that code snippet got frotzed. Here it is again, without the prompts, and with &lt; instead of a less-than sign for for class inheritance, in opes that the server doesn&#8217;t digest it:</p>
+<p>class Foo &lt; ActiveResource::Base<br />
+  self.site = &#8221;<br />
+end<br />
+f = Foo.new(:a=&gt;1,:b=&gt;2,:c=&gt;{:d=&gt;3,:e=&gt;4})<br />
+(returns ruby object)<br />
+f.c.d<br />
+(returns 3)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Avram		</title>
+		<link>http://pullmonkey.com/2008/01/06/convert-a-ruby-hash-into-a-class-object/comment-page-1/#comment-18262</link>
+
+		<dc:creator><![CDATA[Avram]]></dc:creator>
+		<pubDate>Fri, 17 Dec 2010 19:53:54 +0000</pubDate>
+		<guid isPermaLink="false">/2008/08/06/convert-a-ruby-hash-into-a-class-object#comment-18262</guid>
+
+					<description><![CDATA[Hello,
+
+I didn&#039;t read this in too much detail because I found another solution. Perhaps this misses the point, if so I apologize.
+
+ActiveResource can actually do this for you. This is essentially what ARes already does when it gets a hash back from a ReST interface. You just need a dummy ARes-based model (or you can use a legit one if you have it). All you do is call #new on it, and pas the hash in. self.site is a required setting for ARes classes, but it can be empty.
+
+&#062;&#062; class Foo &#062; Foo.new(:a=&#062;1,:b=&#062;2,:c=&#062;{:d=&#062;3,:e=&#062;4})
+=&#062; #1, &quot;b&quot;=&#062;2, &quot;c&quot;=&#062;#3, &quot;e&quot;=&#062;4}&#062;}&#062;
+&#062;&#062; f.c.d
+=&#062; 3
+&#062;&#062;]]></description>
+			<content:encoded><![CDATA[<p>Hello,</p>
+<p>I didn&#8217;t read this in too much detail because I found another solution. Perhaps this misses the point, if so I apologize.</p>
+<p>ActiveResource can actually do this for you. This is essentially what ARes already does when it gets a hash back from a ReST interface. You just need a dummy ARes-based model (or you can use a legit one if you have it). All you do is call #new on it, and pas the hash in. self.site is a required setting for ARes classes, but it can be empty.</p>
+<p>&gt;&gt; class Foo &gt; Foo.new(:a=&gt;1,:b=&gt;2,:c=&gt;{:d=&gt;3,:e=&gt;4})<br />
+=&gt; #1, &#8220;b&#8221;=&gt;2, &#8220;c&#8221;=&gt;#3, &#8220;e&#8221;=&gt;4}&gt;}&gt;<br />
+&gt;&gt; f.c.d<br />
+=&gt; 3<br />
+&gt;&gt;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: zx12r		</title>
+		<link>http://pullmonkey.com/2008/01/06/convert-a-ruby-hash-into-a-class-object/comment-page-1/#comment-15604</link>
+
+		<dc:creator><![CDATA[zx12r]]></dc:creator>
+		<pubDate>Fri, 22 Oct 2010 11:13:45 +0000</pubDate>
+		<guid isPermaLink="false">/2008/08/06/convert-a-ruby-hash-into-a-class-object#comment-15604</guid>
+
+					<description><![CDATA[made a small change in the save method for address nested ones too
+
+def save(object = self)
+        hash_to_return = {}
+        object.instance_variables.each do &#124;var&#124;
+            instance_variable_value = object.instance_variable_get(var)
+            if instance_variable_value.is_a?(HashToObject)
+                hash_value = get_hash(instance_variable_value)
+                hash_to_return[var.gsub(&quot;@&quot;,&quot;&quot;)] = hash_value
+            else
+                hash_to_return[var.gsub(&quot;@&quot;,&quot;&quot;)] = instance_variable_value
+            end     
+        end  
+        return hash_to_return
+    end]]></description>
+			<content:encoded><![CDATA[<p>made a small change in the save method for address nested ones too</p>
+<p>def save(object = self)<br />
+        hash_to_return = {}<br />
+        object.instance_variables.each do |var|<br />
+            instance_variable_value = object.instance_variable_get(var)<br />
+            if instance_variable_value.is_a?(HashToObject)<br />
+                hash_value = get_hash(instance_variable_value)<br />
+                hash_to_return[var.gsub(&#8220;@&#8221;,&#8221;&#8221;)] = hash_value<br />
+            else<br />
+                hash_to_return[var.gsub(&#8220;@&#8221;,&#8221;&#8221;)] = instance_variable_value<br />
+            end<br />
+        end<br />
+        return hash_to_return<br />
+    end</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: taobao		</title>
+		<link>http://pullmonkey.com/2008/01/06/convert-a-ruby-hash-into-a-class-object/comment-page-1/#comment-13499</link>
+
+		<dc:creator><![CDATA[taobao]]></dc:creator>
+		<pubDate>Wed, 08 Sep 2010 16:37:56 +0000</pubDate>
+		<guid isPermaLink="false">/2008/08/06/convert-a-ruby-hash-into-a-class-object#comment-13499</guid>
+
+					<description><![CDATA[class Hashit &#060; OpenStruct
+module DummyMethodMissing
+def method_missing(*args, &#038;block)
+raise NoMethodError
+end
+end]]></description>
+			<content:encoded><![CDATA[<p>class Hashit &lt; OpenStruct<br />
+module DummyMethodMissing<br />
+def method_missing(*args, &amp;block)<br />
+raise NoMethodError<br />
+end<br />
+end</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Emmanuel		</title>
+		<link>http://pullmonkey.com/2008/01/06/convert-a-ruby-hash-into-a-class-object/comment-page-1/#comment-11566</link>
+
+		<dc:creator><![CDATA[Emmanuel]]></dc:creator>
+		<pubDate>Wed, 21 Jul 2010 02:26:34 +0000</pubDate>
+		<guid isPermaLink="false">/2008/08/06/convert-a-ruby-hash-into-a-class-object#comment-11566</guid>
+
+					<description><![CDATA[how about:
+
+require &#039;ostruct&#039;
+class Hashit &#060; OpenStruct
+  def save
+    self.class.new(@table)
+  end
+end
+
+Although it has the annoying property of returning nil to all methods that are not defined. You could &quot;fix&quot; that like this:
+
+require &#039;ostruct&#039;
+
+class Hashit &#060; OpenStruct
+  module DummyMethodMissing
+    def method_missing(*args, &#038;block)
+      raise NoMethodError
+    end
+  end
+
+  def initialize(*args)
+    super(*args)
+    extend DummyMethodMissing
+  end
+end]]></description>
+			<content:encoded><![CDATA[<p>how about:</p>
+<p>require &#8216;ostruct&#8217;<br />
+class Hashit &lt; OpenStruct<br />
+  def save<br />
+    self.class.new(@table)<br />
+  end<br />
+end</p>
+<p>Although it has the annoying property of returning nil to all methods that are not defined. You could &#8220;fix&#8221; that like this:</p>
+<p>require &#8216;ostruct&#8217;</p>
+<p>class Hashit &lt; OpenStruct<br />
+  module DummyMethodMissing<br />
+    def method_missing(*args, &amp;block)<br />
+      raise NoMethodError<br />
+    end<br />
+  end</p>
+<p>  def initialize(*args)<br />
+    super(*args)<br />
+    extend DummyMethodMissing<br />
+  end<br />
+end</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

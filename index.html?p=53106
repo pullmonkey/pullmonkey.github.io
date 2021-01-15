@@ -1,0 +1,824 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>PullMonkey Blog  &raquo; Blog Archive   &raquo; Open Flash Chart II &#8211; fully automated</title>
+<meta name="generator" content="WordPress 5.6" /> <!-- leave this for stats -->
+<link rel="stylesheet" href="wp-content/themes/simple&#32;paper/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="wp-content/themes/simple&#32;paper/code_highlighter.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="PullMonkey Blog RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="http://pullmonkey.com/xmlrpc.php" />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="PullMonkey Blog &raquo; Open Flash Chart II &#8211; fully automated Comments Feed" href="2009/04/30/open-flash-chart-ii-fully-automated/feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/pullmonkey.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='wp-includes/css/dist/block-library/style.min.css?ver=5.6' type='text/css' media='all' />
+<link rel="https://api.w.org/" href="wp-json/index.html" /><link rel="alternate" type="application/json" href="wp-json/wp/v2/posts/53106" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://pullmonkey.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.6" />
+<link rel="canonical" href="index.html?p=53106" />
+<link rel='shortlink' href='index.html?p=53106' />
+<link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed?url=http:%252F%252Fpullmonkey.com%252F2009%252F04%252F30%252Fopen-flash-chart-ii-fully-automated%252F" />
+<link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed?url=http:%252F%252Fpullmonkey.com%252F2009%252F04%252F30%252Fopen-flash-chart-ii-fully-automated%252F&amp;format=xml" />
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style></head>
+<body>
+
+<div id="container">
+
+<div id="menu">
+
+        <ul id="nav">
+        <li class="current_page_item"><a href="index.html">Home</a></li>
+                       	</ul>
+
+</div><!-- Menu -->
+
+<div id="wrapper">
+
+<div id="c1">
+
+<h1 id="logo"><a href="index.html">PullMonkey Blog</a></h1>
+<h2 id="description"></h2>
+
+<div id="content">
+
+
+<div class="post" id="post-53106">
+
+<div class="date">30 <span>Apr</span></div>
+
+<h2><a href="index.html?p=53106" rel="bookmark" title="Permanent Link to Open Flash Chart II &#8211; fully automated">Open Flash Chart II &#8211; fully automated</a></h2><br clear="all" />
+
+<p>Just as an attention grabber - we are going after this example in this article:<br />
+<script type="text/javascript" src="projects/javascripts/swfobject.js"></script></p>
+<div id="flash_content_blog_01"></div>
+<p><script type="text/javascript">
+  swfobject.embedSWF("/projects/open-flash-chart-ichor.swf", "flash_content_blog_01", "600", "300", "9.0.0", "expressInstall.swf",{"data-file":"/projects/open_flash_chart22/area_hollow"}, {"wmode":"transparent"});
+</script></p>
+<h2>Keeping up</h2>
+<p>Ok, seeing that the <a href="http://teethgrinder.co.uk/open-flash-chart-2/">php versions of open flash chart</a> and open flash chart swf files continually change along with with the API (not saying this is a bad thing), I wanted to come up with an even more abstract solution.   The goal is to not have to worry when the swf file is released with the latest set of graphs or changes its API.  I simply don't want to worry about this method or that method, or this class or that class. </p>
+<h2>Feedback</h2>
+<p>This article will sort of act as a tutorial for those interested in metaprogramming and as a set of instructions for those looking to experiment with the <a href="http://github.com/pullmonkey/open_flash_chart/tree/test">latest version of the OFC II Rails Plugin that I am currently toying with</a>.  I would like to hear feedback, but just remember that phase 1 of this release will be very basic, meaning none of the ajaxy stuff.  It will come, just not yet.</p>
+<h2>Let's see what we can get away with</h2>
+<p>I am already using method_missing() for pretty much everything in the <a href="http://github.com/pullmonkey/open_flash_chart/tree/master">OFC II Rails Plugin that is being used now</a>.  But every time new classes are added, I have to sit down and basically convert the php class to ruby - just plain tedious, not really what I had planned when I started all this.  Ok, so method_missing() was great, but let me introduce (or possibly reintroduce) you to const_missing(), basically method_missing() but instead of methods, we can create classes or modules or other objects on the fly.  This will definitely help when the php version gets a new class.  Instead of getting hounded to update the rails version to be 100% like the php version, everything will just work, no updates to code required.  Well, we hope !   So check this out:</p>
+<p>Here is what we did with method_missing():</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt>9<tt>
+</tt><strong>10</strong><tt>
+</tt>11<tt>
+</tt>12<tt>
+</tt>13<tt>
+</tt>14<tt>
+</tt><strong>15</strong><tt>
+</tt>16<tt>
+</tt>17<tt>
+</tt>18<tt>
+</tt>19<tt>
+</tt><strong>20</strong><tt>
+</tt>21<tt>
+</tt>22<tt>
+</tt>23<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt><span class="r">module</span> <span class="cl">OFC</span><tt>
+</tt>  <span class="r">class</span> <span class="cl">Base</span><tt>
+</tt>    <span class="r">def</span> <span class="fu">method_missing</span>(method_name, *args, &amp;blk)<tt>
+</tt>      <span class="r">case</span> method_name.to_s<tt>
+</tt>      <span class="r">when</span> <span class="rx"><span class="dl">/</span><span class="k">(.*)=</span><span class="dl">/</span></span>   <span class="c"># i.e., if it is something x_legend=</span><tt>
+</tt>        <span class="c"># if the user wants to set an instance variable then let them</span><tt>
+</tt>        <span class="c"># the other args (args[0]) are ignored since it is a set method</span><tt>
+</tt>        <span class="pc">self</span>.instance_variable_set(<span class="s"><span class="dl">&quot;</span><span class="k">@</span><span class="il"><span class="dl">#{</span><span class="gv">$1</span><span class="dl">}</span></span><span class="dl">&quot;</span></span>, args[<span class="i">0</span>])<tt>
+</tt>      <span class="r">when</span> <span class="rx"><span class="dl">/</span><span class="k">^set_(.*)</span><span class="dl">/</span></span><tt>
+</tt>        <span class="c"># backwards compatible ... the user can still use the same set_y_legend methods if they want</span><tt>
+</tt>        <span class="pc">self</span>.instance_variable_set(<span class="s"><span class="dl">&quot;</span><span class="k">@</span><span class="il"><span class="dl">#{</span><span class="gv">$1</span><span class="dl">}</span></span><span class="dl">&quot;</span></span>, args[<span class="i">0</span>])<tt>
+</tt>      <span class="r">else</span><tt>
+</tt>          <span class="r">if</span> inst = <span class="pc">self</span>.instance_variable_get(<span class="s"><span class="dl">&quot;</span><span class="k">@</span><span class="il"><span class="dl">#{</span>method_name<span class="dl">}</span></span><span class="dl">&quot;</span></span>)<tt>
+</tt>            inst<tt>
+</tt>          <span class="r">else</span><tt>
+</tt>            <span class="c"># if the method/attribute is missing and it is not a set method then hmmmm better let the user know</span><tt>
+</tt>            <span class="r">super</span><tt>
+</tt>          <span class="r">end</span><tt>
+</tt>      <span class="r">end</span><tt>
+</tt>    <span class="r">end</span><tt>
+</tt>  <span class="r">end</span><tt>
+</tt><span class="r">end</span><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>This just basically allows me to do this:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt>9<tt>
+</tt><strong>10</strong><tt>
+</tt>11<tt>
+</tt>12<tt>
+</tt>13<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt>  <span class="r">class</span> <span class="cl">Foo</span> &lt; <span class="co">OFC</span>::<span class="co">Base</span><tt>
+</tt>  <span class="r">end</span><tt>
+</tt><tt>
+</tt>  foo = <span class="co">Foo</span>.new<tt>
+</tt><tt>
+</tt>  foo.some_random_attribute = <span class="s"><span class="dl">&quot;</span><span class="k">Hello</span><span class="dl">&quot;</span></span>  <span class="c">#=&gt; &quot;Hello&quot;</span><tt>
+</tt>  foo.some_random_attribute  <span class="c">#=&gt; &quot;Hello&quot;</span><tt>
+</tt>  foo.some_random_undefined_attribute  <span class="c">#=&gt; Method Missing error (calls super)</span><tt>
+</tt><tt>
+</tt>  <span class="c"># too be like php, for easier conversion</span><tt>
+</tt>  foo.set_some_random_attribute(<span class="s"><span class="dl">&quot;</span><span class="k">Good Bye</span><span class="dl">&quot;</span></span>)  <span class="c">#=&gt; &quot;Good Bye&quot;</span><tt>
+</tt>  foo.some_random_attribute  <span class="c">#=&gt; &quot;Good Bye&quot;</span><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>Along the same lines, I have created an initialize method that takes any argument hash of variable/value pairs and calls variable=() which is handled by method missing as we saw above:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt>  <span class="r">class</span> <span class="cl">Foo</span> &lt; <span class="co">OFC</span>::<span class="co">Base</span><tt>
+</tt>  <span class="r">end</span><tt>
+</tt><tt>
+</tt>  foo = <span class="co">Foo</span>.new(<span class="sy">:x_axis</span> =&gt; <span class="i">5</span>, <span class="sy">:min</span> =&gt; <span class="i">10</span>, <span class="sy">:max</span> =&gt; <span class="i">90</span>, <span class="sy">:steps</span> =&gt; <span class="i">5</span>, <span class="sy">:elements</span> =&gt; [<span class="s"><span class="dl">&quot;</span><span class="k">one</span><span class="dl">&quot;</span></span>, <span class="s"><span class="dl">&quot;</span><span class="k">two</span><span class="dl">&quot;</span></span>])<tt>
+</tt>  <tt>
+</tt>  foo.x_axis <span class="c">#=&gt; 5</span><tt>
+</tt>  foo.min <span class="c">#=&gt; 10</span><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>Ok, so on to const_missing() and what we can do with that:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt>  <span class="r">def</span> <span class="co">OFC</span>.const_missing(const)<tt>
+</tt>    klass = <span class="co">Class</span>.new <span class="co">OFC</span>::<span class="co">Base</span><tt>
+</tt>    <span class="co">Object</span>.const_set const, klass<tt>
+</tt>    <span class="r">return</span> klass<tt>
+</tt>  <span class="r">end</span><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>This says that any undefined (missing) constant of OFC should be defined as a new class that inherits from OFC::Base.</p>
+<p>So when we say OFC::Foo, that has not been defined, so we will get back class OFC::Foo < OFC::Base;end; which will give us the initialize() method and method_missing() method from above.  Let's see how this works:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt>9<tt>
+</tt><strong>10</strong><tt>
+</tt>11<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt>  line = <span class="co">OFC</span>::<span class="co">Line</span>.new(<span class="sy">:values</span> =&gt; [<span class="i">1</span>,<span class="i">2</span>,<span class="i">3</span>,<span class="pc">nil</span>,<span class="pc">nil</span>,<span class="i">5</span>,<span class="i">6</span>,<span class="i">7</span>])<tt>
+</tt>  line.values <span class="c">#=&gt; [1,2,3,nil,nil,5,6,7]</span><tt>
+</tt>  line.some_random_variable = <span class="s"><span class="dl">&quot;</span><span class="k">Hello</span><span class="dl">&quot;</span></span> <span class="c">#=&gt; &quot;Hello&quot;</span><tt>
+</tt>  line.some_random_variable <span class="c">#=&gt; &quot;Hello&quot;</span><tt>
+</tt><tt>
+</tt>  stacked_bar_chart = <span class="co">OFC</span>::<span class="co">BarStack</span>.new<tt>
+</tt>  stacked_bar_chart.values = []<tt>
+</tt>  stacked_bar_chart.values &lt;&lt; [<span class="i">2</span>,<span class="i">3</span>,<span class="i">4</span>]<tt>
+</tt>  stacked_bar_chart.values &lt;&lt; [<span class="i">5</span>, {<span class="s"><span class="dl">&quot;</span><span class="k">val</span><span class="dl">&quot;</span></span> =&gt; <span class="i">5</span>, <span class="s"><span class="dl">&quot;</span><span class="k">colour</span><span class="dl">&quot;</span></span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">#ff0000</span><span class="dl">&quot;</span></span>}]<tt>
+</tt>  stacked_bar_chart.keys = [{ <span class="s"><span class="dl">&quot;</span><span class="k">colour</span><span class="dl">&quot;</span></span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">#C4D318</span><span class="dl">&quot;</span></span>, <span class="s"><span class="dl">&quot;</span><span class="k">text</span><span class="dl">&quot;</span></span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">Kiting</span><span class="dl">&quot;</span></span>, <span class="s"><span class="dl">&quot;</span><span class="k">font-size</span><span class="dl">&quot;</span></span> =&gt; <span class="i">13</span> } ...]<tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>So it all sort of came together right there.  I've shown you all the code that comes with the Rails Open Flash Chart plugin now.   No more definining idividual classes, no more trying to keep up with the never ending php version, and no more late nights converting php to ruby (!).  About dang time.</p>
+<p>Ok, but this is just the beginning, nothing has been set in stone, so like I said, give me your feedback, what works for you and what does not.  And, hopefully, I will have solutions for you or you for me.</p>
+<p></p>
+<h2>Example with new version (test version)</h2>
+<p>I am using rails 2.3.2, but I don't think it will matter what version you are using.</p>
+<h3>Create your new rails project</h3>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt><span class="c"># create a new rails project </span><tt>
+</tt>&gt; pullmonkey<span class="er">$</span> rails testing_it<tt>
+</tt><span class="c">#&lt;Bunch of stuff is created ....&gt;</span><tt>
+</tt>&gt; pullmonkey<span class="er">$</span> cd testing_it/<tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<h3>Install the plugin from the test branch</h3>
+<p>Note the -r test in this next step.  The new version (test version) I am playing with is under the test branch and -r says what branch to pull from.</p>
+<p>Also, you can use git:// instead of http:// below, but depending on your firewall restrictions http:// will probably work out best for you.</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt>&gt; pullmonkey<span class="er">$</span> ./script/plugin install http<span class="sy">:/</span>/github.com/pullmonkey/open_flash_chart.git -r test<tt>
+</tt><span class="c"># &lt;Bunch more stuff ...&gt;</span><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<h3>Create a controller to play in</h3>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt>&gt; pullmonkey<span class="er">$</span> ./script/generate controller test_it<tt>
+</tt><span class="c"># &lt;And more stuff &gt;</span><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<h3>Get our assets</h3>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt><span class="c"># first we will get swfobject.js</span><tt>
+</tt>&gt; pullmonkey<span class="er">$</span> cp vendor/plugins/open_flash_chart/assets/javascripts/swfobject.js public/javascripts/<tt>
+</tt><span class="c"># next the open flash chart swf (GET whatever is the latest version), right now that is here: http://teethgrinder.co.uk/open-flash-chart-2/open-flash-chart.swf</span><tt>
+</tt>&gt; pullmonkey<span class="er">$</span> cd public/<tt>
+</tt>&gt; pullmonkey<span class="er">$</span> wget http<span class="sy">:/</span>/teethgrinder.co.uk/open-flash-chart<span class="i">-2</span>/open-flash-chart.swf<tt>
+</tt>&gt; pullmonkey<span class="er">$</span> cd ..<tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<h3>Edit our controller</h3>
+<p>Notice here that I just include one of the many examples from the <a href="http://github.com/pullmonkey/open_flash_chart/tree/7ca9f9dbea795431aafdcc3a20dd4b73900f6fba/lib/ofc/examples">plugin's examples directory</a>.  Definitely more to follow.</p>
+<p>One thing you will notice about the examples, is that the php code is in the comments, so you can see how I would convert from the php examples to ruby.  Please feel free to add your own examples, just fork the project.</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt>9<tt>
+</tt><strong>10</strong><tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt>&gt; pullmonkey<span class="er">$</span> vi app/controllers/test_it_controller.rb<tt>
+</tt><span class="c"># mine looks like this:</span><tt>
+</tt><span class="r">class</span> <span class="cl">TestItController</span> &lt; <span class="co">ApplicationController</span><tt>
+</tt>  include <span class="co">OFC</span>::<span class="co">Examples</span>::<span class="co">AreaHollow</span><tt>
+</tt><tt>
+</tt>  <span class="r">def</span> <span class="fu">index</span><tt>
+</tt>    <span class="iv">@graph</span> = open_flash_chart_object(<span class="i">600</span>,<span class="i">300</span>, <span class="s"><span class="dl">&quot;</span><span class="k">/test_it/area_hollow</span><span class="dl">&quot;</span></span>)<tt>
+</tt>  <span class="r">end</span><tt>
+</tt><span class="r">end</span><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<h3>Edit our view</h3>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt>&gt; pullmonkey<span class="er">$</span> vi app/views/test_it/index.html.erb<tt>
+</tt><span class="c"># mine looks like this:</span><tt>
+</tt>&lt;%= javascript_include_tag <span class="s"><span class="dl">'</span><span class="k">swfobject</span><span class="dl">'</span></span> <span class="s"><span class="dl">%&gt;</span><span class="k"><tt>
+</tt>&lt;%= @graph %</span><span class="dl">&gt;</span></span><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<h3>Start 'er up</h3>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt>&gt; pullmonkey<span class="er">$</span> ./script/server<tt>
+</tt><tt>
+</tt><span class="c"># browse to the test_it index</span><tt>
+</tt>http<span class="sy">:/</span>/localhost:<span class="i">3000</span>/test_it<tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<h2>Our example</h2>
+<div id="flash_content_blog_1"></div>
+<p><script type="text/javascript">
+  swfobject.embedSWF("/projects/open-flash-chart-ichor.swf", "flash_content_blog_1", "600", "300", "9.0.0", "expressInstall.swf",{"data-file":"/projects/open_flash_chart22/area_hollow"}, {"wmode":"transparent"});
+</script></p>
+
+<br />
+
+<div class="meta">
+<span class="note">Filed under: <a href="category/development/index.html" rel="category tag">development</a>, <a href="category/home/index.html" rel="category tag">Home</a>, <a href="category/open-flash-chart-graphs/index.html" rel="category tag">Open Flash Chart Graphs</a>, <a href="category/projects/index.html" rel="category tag">projects</a>, <a href="category/rails/index.html" rel="category tag">rails</a>, <a href="category/ruby/index.html" rel="category tag">ruby</a>, <a href="category/tutorials/index.html" rel="category tag">tutorials</a></span>
+<span class="tags">Tags: <a href="tag/charts/index.html" rel="tag">charts</a>, <a href="tag/flash/index.html" rel="tag">flash</a>, <a href="tag/graphs/index.html" rel="tag">graphs</a>, <a href="tag/open-flash-chart/index.html" rel="tag">open flash chart</a>, <a href="tag/rails/index.html" rel="tag">rails</a>, <a href="tag/ruby/index.html" rel="tag">ruby</a>, <a href="tag/ruby-on-rails/index.html" rel="tag">ruby on rails</a></span><br /></div><!--Meta -->
+
+
+<!-- You can start editing here. -->
+
+<div id="commentsbox">
+
+
+
+<h2 id="comments">
+	 <br /> 8 Responses 
+	  to &#8220;Open Flash Chart II &#8211; fully automated&#8221;</h2>
+	
+	<ol class="commentlist">
+		
+
+<li class="odd" id="comment-938">
+
+By <strong><a href='http://harryseldon.thinkosphere.com' rel='external nofollow ugc' class='url'>Harry Seldon</a></strong> on <a href="index.html?p=53106#comment-938" title="">Apr 30, 2009</a> | <a href="index.html?p=53106#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Very cool! Thx for this new version of OFC and thx for these explanations.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-939">
+
+By <strong><a href='http://www.noexpectations.com.au' rel='external nofollow ugc' class='url'>Kip</a></strong> on <a href="index.html?p=53106#comment-939" title="">Apr 30, 2009</a> | <a href="index.html?p=53106#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Charlie, thanks for a very useful plugin.  After some messing around I decided I wanted to leverage the &#8216;get-data&#8217; model of OFC (not just &#8216;data-file&#8217;).  This lets me embed the json data in the html output and avoid another request cycle for ofc to fetch the data.  Not needed in all situations, but handy in many.  My git-patching-fu isn&#8217;t great so the very simple addition of one method to open_flash_chart_object.rb OpenFlashChart::Controller is here for anyone interested:</p>
+<p>&lt;filter:code attributes=lang=&quot;ruby&quot;&gt;<br />
+    def open_flash_chart_embedded(width, height, div_name, json_data, use_swfobject=true, base=&quot;/&quot;, swf_file_name=&quot;open-flash-chart.swf&quot;)<br />
+      &lt;&lt;-HTML<br />
+      &lt;div id=&quot;#{div_name}&quot;&gt;&lt;/div&gt;<br />
+      &lt;script type=&quot;text/javascript&quot;&gt;<br />
+        swfobject.embedSWF(&quot;#{base}#{swf_file_name}&quot;, &quot;#{div_name}&quot;, &quot;#{width}&quot;, &quot;#{height}&quot;, &quot;9.0.0&quot;, &quot;expressInstall.swf&quot;,<br />
+                          {&quot;get-data&quot;:&quot;chartData#{div_name}&quot;});</p>
+<p>        function chartData#{div_name}() {<br />
+          return &quot;#{json_data.gsub(&#8216;&quot;&#8217;,&#8217;\&quot;&#8217;)}&quot;;<br />
+        }<br />
+      &lt;/script&gt;<br />
+      HTML<br />
+    end<br />
+&lt;/filter:code&gt;</p>
+<p>Note this method requires you provide a div_name but it would be trivial to hook it up to the existing div_name generator.</p>
+<p>Cheers, &#8211;Kip</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-940">
+
+By <strong>rob</strong> on <a href="index.html?p=53106#comment-940" title="">Apr 30, 2009</a> | <a href="index.html?p=53106#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hey, first off, incredible work on this plugin. I have used it for numerous projects, and I absolutely love it. I cant thank you enough for your tireless work on this project&#8230;</p>
+<p>I have a question that Id normally email you to ask, but I can&#8217;t find your email, so I&#8217;m settling for a comment.</p>
+<p>I have graphs that occasionally have no data in them, so what Id like to do is display a &quot;NO DATA AVAILABLE&quot; message in the same style as the &quot;LOADING&quot; bubble that appears when the graph first loads&#8230;.is there any way to achieve this? I&#8217;ve been searching high and low for a way to figure it out. Right now, it just display a blank space when no data is available, but Id really like to display a message to the user instead of just a white box.</p>
+<p>Again, thanks for your hard work.<br />
+Best,<br />
+Rob</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-941">
+
+By <strong>Rain</strong> on <a href="index.html?p=53106#comment-941" title="">Apr 30, 2009</a> | <a href="index.html?p=53106#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hi, Charlie , with test branch plugin installed, I can successfully make my line chart. But there is still an issue that is I CANNOT make the X Axis Labels display?</p>
+<p>Can you make X axis labels display? Any suggestions for this?</p>
+<p>Thanks for the great plugin!</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-1169">
+
+By <strong><a href='http://binarydoodles.blogspot.com/' rel='external nofollow ugc' class='url'>Nithin Bekal</a></strong> on <a href="index.html?p=53106#comment-1169" title="">Sep 18, 2009</a> | <a href="index.html?p=53106#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hey, thanks for creating this great plugin. I&#8217;ve tried using the older version of this plugin and it worked great. But when I try installing OFC II, I get a &#8220;plugin not found&#8221; message for either of the URLs that you&#8217;ve given.</p>
+<p>Am I doing something wrong there? I used the same procedure for installing the older version and that worked fine.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-1175">
+
+By <strong>charlie</strong> on <a href="index.html?p=53106#comment-1175" title="">Sep 18, 2009</a> | <a href="index.html?p=53106#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hey Nithin,</p>
+<p>Which urls are you trying?  I did a quick check of all the clickable links on the page, they all seem to be fine.  Are you having problems with a plugin/install?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-1177">
+
+By <strong><a href='http://binarydoodles.blogspot.com/' rel='external nofollow ugc' class='url'>Nithin Bekal</a></strong> on <a href="index.html?p=53106#comment-1177" title="">Sep 18, 2009</a> | <a href="index.html?p=53106#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hi Charlie,</p>
+<p>Yes, I was having a problem with installing the OFC II plugin, but I finally managed to get it to work with this:</p>
+<p>ruby script/plugin install <a href="http://github.com/pullmonkey/open_flash_chart.git/" rel="nofollow ugc">http://github.com/pullmonkey/open_flash_chart.git/</a></p>
+<p>&#8230;with the trailing slash after .git because apparently you need that while installing a plugin on a Windows machine.</p>
+<p>Sorry about commenting on the wrong page. I had this page open in another tab and so ended up leaving the comment here, which probably caused you the confusion about what URLs I was talking about. And thanks again for the great plugin. 🙂</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-1214">
+
+By <strong>Leftblank</strong> on <a href="index.html?p=53106#comment-1214" title="">Sep 20, 2009</a> | <a href="index.html?p=53106#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Awesome plugin, however, one think I&#8217;m failing to see is how I&#8217;d make a graph like the one shown here; <a href="http://teethgrinder.co.uk/open-flash-chart-2/x-axis-date.php" rel="nofollow ugc">http://teethgrinder.co.uk/open-flash-chart-2/x-axis-date.php</a> . Since there isnt much of an API I find it hard to figure out how to build it &#8211; could someone perhaps enlighten me here?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		</ol>
+	
+	
+	
+
+	<p id="comments-closed">Sorry, comments for this entry are closed at this time.</p>
+</div>
+</div><!-- Post -->
+
+		        
+  
+
+	
+</div><!-- Content -->
+
+</div><!-- LeftColumn -->
+
+<div id="c2">
+
+   
+    <div id="sidebar">
+
+<div id="subscribe">
+<a href="feed/index.html"><img src="wp-content/themes/simple&#32;paper/images/rss.gif" alt="RSS-FEED" border="0" id="rss" /></a>
+<a href="feed/index.html">subscribe to the feed</a><br clear="all" />
+</div><!-- subscribe rss -->
+
+<div id="topsearch">
+<form action="index.html" method="post">
+<input type="text" value="Search..." name="s" id="ls" class="searchfield" onfocus="if (this.value == 'Search...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search...';}" />
+<input type="image" src="wp-content/themes/simple&#32;paper/images/click.gif" id="submit" />
+</form>
+<br clear="all" />
+<br clear="all" />
+</div>
+    
+    	<ul>
+	<li id="tag_cloud-2" class="widget widget_tag_cloud"><h2 class="widgettitle">Tags</h2>
+<div class="tagcloud"><a href="tag/net/index.html" class="tag-cloud-link tag-link-166 tag-link-position-1" style="font-size: 8pt;" aria-label=".net (2 items)">.net</a>
+<a href="tag/activerecord/index.html" class="tag-cloud-link tag-link-54 tag-link-position-2" style="font-size: 8pt;" aria-label="activerecord (2 items)">activerecord</a>
+<a href="tag/api/index.html" class="tag-cloud-link tag-link-220 tag-link-position-3" style="font-size: 10.40625pt;" aria-label="api (4 items)">api</a>
+<a href="tag/biking/index.html" class="tag-cloud-link tag-link-219 tag-link-position-4" style="font-size: 10.40625pt;" aria-label="biking (4 items)">biking</a>
+<a href="tag/business/index.html" class="tag-cloud-link tag-link-213 tag-link-position-5" style="font-size: 8pt;" aria-label="business (2 items)">business</a>
+<a href="tag/c/index.html" class="tag-cloud-link tag-link-33 tag-link-position-6" style="font-size: 10.40625pt;" aria-label="c++ (4 items)">c++</a>
+<a href="tag/charts/index.html" class="tag-cloud-link tag-link-42 tag-link-position-7" style="font-size: 18.171875pt;" aria-label="charts (25 items)">charts</a>
+<a href="tag/cms/index.html" class="tag-cloud-link tag-link-60 tag-link-position-8" style="font-size: 12.046875pt;" aria-label="CMS (6 items)">CMS</a>
+<a href="tag/curb/index.html" class="tag-cloud-link tag-link-190 tag-link-position-9" style="font-size: 8pt;" aria-label="curb (2 items)">curb</a>
+<a href="tag/curl/index.html" class="tag-cloud-link tag-link-120 tag-link-position-10" style="font-size: 8pt;" aria-label="curl (2 items)">curl</a>
+<a href="tag/dynamic/index.html" class="tag-cloud-link tag-link-56 tag-link-position-11" style="font-size: 8pt;" aria-label="dynamic (2 items)">dynamic</a>
+<a href="tag/ece231/index.html" class="tag-cloud-link tag-link-34 tag-link-position-12" style="font-size: 10.40625pt;" aria-label="ece231 (4 items)">ece231</a>
+<a href="tag/editor/index.html" class="tag-cloud-link tag-link-61 tag-link-position-13" style="font-size: 11.28125pt;" aria-label="editor (5 items)">editor</a>
+<a href="tag/error/index.html" class="tag-cloud-link tag-link-46 tag-link-position-14" style="font-size: 9.3125pt;" aria-label="error (3 items)">error</a>
+<a href="tag/flash/index.html" class="tag-cloud-link tag-link-41 tag-link-position-15" style="font-size: 17.84375pt;" aria-label="flash (23 items)">flash</a>
+<a href="tag/fun/index.html" class="tag-cloud-link tag-link-23 tag-link-position-16" style="font-size: 11.28125pt;" aria-label="fun (5 items)">fun</a>
+<a href="tag/gems/index.html" class="tag-cloud-link tag-link-44 tag-link-position-17" style="font-size: 8pt;" aria-label="gems (2 items)">gems</a>
+<a href="tag/graphs/index.html" class="tag-cloud-link tag-link-52 tag-link-position-18" style="font-size: 18.390625pt;" aria-label="graphs (26 items)">graphs</a>
+<a href="tag/httpi/index.html" class="tag-cloud-link tag-link-191 tag-link-position-19" style="font-size: 8pt;" aria-label="httpi (2 items)">httpi</a>
+<a href="tag/java/index.html" class="tag-cloud-link tag-link-177 tag-link-position-20" style="font-size: 9.3125pt;" aria-label="java (3 items)">java</a>
+<a href="tag/javascript/index.html" class="tag-cloud-link tag-link-215 tag-link-position-21" style="font-size: 10.40625pt;" aria-label="Javascript (4 items)">Javascript</a>
+<a href="tag/linux/index.html" class="tag-cloud-link tag-link-221 tag-link-position-22" style="font-size: 8pt;" aria-label="Linux (2 items)">Linux</a>
+<a href="tag/macromovers/index.html" class="tag-cloud-link tag-link-66 tag-link-position-23" style="font-size: 8pt;" aria-label="macromovers (2 items)">macromovers</a>
+<a href="tag/mirah/index.html" class="tag-cloud-link tag-link-176 tag-link-position-24" style="font-size: 8pt;" aria-label="mirah (2 items)">mirah</a>
+<a href="tag/ofc/index.html" class="tag-cloud-link tag-link-105 tag-link-position-25" style="font-size: 8pt;" aria-label="OFC (2 items)">OFC</a>
+<a href="tag/open-flash-chart/index.html" class="tag-cloud-link tag-link-40 tag-link-position-26" style="font-size: 18.609375pt;" aria-label="open flash chart (27 items)">open flash chart</a>
+<a href="tag/php/index.html" class="tag-cloud-link tag-link-216 tag-link-position-27" style="font-size: 9.3125pt;" aria-label="php (3 items)">php</a>
+<a href="tag/plugin/index.html" class="tag-cloud-link tag-link-65 tag-link-position-28" style="font-size: 12.59375pt;" aria-label="plugin (7 items)">plugin</a>
+<a href="tag/plugins/index.html" class="tag-cloud-link tag-link-218 tag-link-position-29" style="font-size: 9.3125pt;" aria-label="plugins (3 items)">plugins</a>
+<a href="tag/prog/index.html" class="tag-cloud-link tag-link-35 tag-link-position-30" style="font-size: 9.3125pt;" aria-label="prog (3 items)">prog</a>
+<a href="tag/project/index.html" class="tag-cloud-link tag-link-47 tag-link-position-31" style="font-size: 10.40625pt;" aria-label="project (4 items)">project</a>
+<a href="tag/rails/index.html" class="tag-cloud-link tag-link-210 tag-link-position-32" style="font-size: 20.90625pt;" aria-label="rails (45 items)">rails</a>
+<a href="tag/ruby/index.html" class="tag-cloud-link tag-link-211 tag-link-position-33" style="font-size: 22pt;" aria-label="ruby (57 items)">ruby</a>
+<a href="tag/ruby-on-rails/index.html" class="tag-cloud-link tag-link-43 tag-link-position-34" style="font-size: 20.359375pt;" aria-label="ruby on rails (40 items)">ruby on rails</a>
+<a href="tag/select-boxes/index.html" class="tag-cloud-link tag-link-57 tag-link-position-35" style="font-size: 8pt;" aria-label="select boxes (2 items)">select boxes</a>
+<a href="tag/simple/index.html" class="tag-cloud-link tag-link-62 tag-link-position-36" style="font-size: 10.40625pt;" aria-label="simple (4 items)">simple</a>
+<a href="tag/simplecms/index.html" class="tag-cloud-link tag-link-214 tag-link-position-37" style="font-size: 11.28125pt;" aria-label="SimpleCMS (5 items)">SimpleCMS</a>
+<a href="tag/skizmo/index.html" class="tag-cloud-link tag-link-102 tag-link-position-38" style="font-size: 10.40625pt;" aria-label="skizmo (4 items)">skizmo</a>
+<a href="tag/software/index.html" class="tag-cloud-link tag-link-48 tag-link-position-39" style="font-size: 8pt;" aria-label="software (2 items)">software</a>
+<a href="tag/spreadsheet/index.html" class="tag-cloud-link tag-link-45 tag-link-position-40" style="font-size: 8pt;" aria-label="spreadsheet (2 items)">spreadsheet</a>
+<a href="tag/tutorial/index.html" class="tag-cloud-link tag-link-50 tag-link-position-41" style="font-size: 16.75pt;" aria-label="tutorial (18 items)">tutorial</a>
+<a href="tag/ubuntu/index.html" class="tag-cloud-link tag-link-150 tag-link-position-42" style="font-size: 8pt;" aria-label="ubuntu (2 items)">ubuntu</a>
+<a href="tag/vin/index.html" class="tag-cloud-link tag-link-119 tag-link-position-43" style="font-size: 12.59375pt;" aria-label="VIN (7 items)">VIN</a>
+<a href="tag/vin-api/index.html" class="tag-cloud-link tag-link-159 tag-link-position-44" style="font-size: 12.046875pt;" aria-label="vin api (6 items)">vin api</a>
+<a href="tag/xml/index.html" class="tag-cloud-link tag-link-165 tag-link-position-45" style="font-size: 9.3125pt;" aria-label="xml (3 items)">xml</a></div>
+</li>
+<li id="categories-524386351" class="widget widget_categories"><h2 class="widgettitle">Topics</h2>
+
+			<ul>
+					<li class="cat-item cat-item-179"><a href="category/android/index.html">Android</a>
+</li>
+	<li class="cat-item cat-item-118"><a href="category/api/index.html">api</a>
+</li>
+	<li class="cat-item cat-item-67"><a href="category/biking/index.html">biking</a>
+</li>
+	<li class="cat-item cat-item-37"><a href="category/blog/index.html">blog</a>
+</li>
+	<li class="cat-item cat-item-27"><a href="category/business/index.html">business</a>
+</li>
+	<li class="cat-item cat-item-32"><a href="category/c-c/index.html">C / C++</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="category/development/index.html">development</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="category/games/index.html">games</a>
+</li>
+	<li class="cat-item cat-item-139"><a href="category/graphics/index.html">Graphics</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="category/home/index.html">Home</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="category/ie-hacks/index.html">IE hacks</a>
+</li>
+	<li class="cat-item cat-item-31"><a href="category/javascript/index.html">Javascript</a>
+</li>
+	<li class="cat-item cat-item-149"><a href="category/linux/index.html">Linux</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="category/me/index.html">me</a>
+</li>
+	<li class="cat-item cat-item-26"><a href="category/open-flash-chart-graphs/index.html">Open Flash Chart Graphs</a>
+</li>
+	<li class="cat-item cat-item-29"><a href="category/opengl/index.html">opengl</a>
+</li>
+	<li class="cat-item cat-item-36"><a href="category/php/index.html">php</a>
+</li>
+	<li class="cat-item cat-item-51"><a href="category/plugins/index.html">plugins</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="category/projects/index.html">projects</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="category/rails/index.html">rails</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="category/railsconf/index.html">railsconf</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="category/ruby/index.html">ruby</a>
+</li>
+	<li class="cat-item cat-item-28"><a href="category/simplecms/index.html">SimpleCMS</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="category/tutorials/index.html">tutorials</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="category/uncategorized/index.html">Uncategorized</a>
+</li>
+			</ul>
+
+			</li>
+
+		<li id="recent-posts-2" class="widget widget_recent_entries">
+		<h2 class="widgettitle">Recent Posts</h2>
+
+		<ul>
+											<li>
+					<a href="index.html?p=57726">Dynamic Select Boxes &#8211; Ruby on Rails 3</a>
+									</li>
+											<li>
+					<a href="index.html?p=57715">VIN API &#8211; Do you know about the complete data set?</a>
+									</li>
+											<li>
+					<a href="index.html?p=57712">Using Ruby to read from a MagTek USB Card Reader</a>
+									</li>
+											<li>
+					<a href="index.html?p=57708">Signature Pad in Linux</a>
+									</li>
+											<li>
+					<a href="index.html?p=57705">Using HTTPI with Curb to do multipart file uploads with spnego</a>
+									</li>
+					</ul>
+
+		</li>
+<li id="recent-comments-2" class="widget widget_recent_comments"><h2 class="widgettitle">Recent Comments</h2>
+<ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">`Drew</span> on <a href="2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/index.html#comment-24291">Dynamic Select Boxes &#8211; Ruby on Rails 3</a></li><li class="recentcomments"><span class="comment-author-link">Bardach</span> on <a href="2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/index.html#comment-24290">Dynamic Select Boxes &#8211; Ruby on Rails 3</a></li><li class="recentcomments"><span class="comment-author-link">Bardach</span> on <a href="2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/index.html#comment-24289">Dynamic Select Boxes &#8211; Ruby on Rails 3</a></li><li class="recentcomments"><span class="comment-author-link">Dar_bok</span> on <a href="2007/04/30/how-i-got-gta-san-andreas-to-work-with-a-crappy-os-vista/comment-page-2/index.html#comment-20844">How I got GTA San Andreas to Work with (a crappy OS) Vista</a></li><li class="recentcomments"><span class="comment-author-link">Anirudha Pendakur</span> on <a href="2012/07/25/using-httpi-with-curb-to-do-multipart-file-uploads-with-spnego/comment-page-1/index.html#comment-19583">Using HTTPI with Curb to do multipart file uploads with spnego</a></li></ul></li>
+<li id="archives-2" class="widget widget_archive"><h2 class="widgettitle">Archives</h2>
+
+			<ul>
+					<li><a href='2012/08/index.html'>August 2012</a></li>
+	<li><a href='2012/07/index.html'>July 2012</a></li>
+	<li><a href='2012/05/index.html'>May 2012</a></li>
+	<li><a href='2012/04/index.html'>April 2012</a></li>
+	<li><a href='2012/03/index.html'>March 2012</a></li>
+	<li><a href='2011/11/index.html'>November 2011</a></li>
+	<li><a href='2011/10/index.html'>October 2011</a></li>
+	<li><a href='2011/05/index.html'>May 2011</a></li>
+	<li><a href='2011/03/index.html'>March 2011</a></li>
+	<li><a href='2011/02/index.html'>February 2011</a></li>
+	<li><a href='2011/01/index.html'>January 2011</a></li>
+	<li><a href='2010/11/index.html'>November 2010</a></li>
+	<li><a href='2010/09/index.html'>September 2010</a></li>
+	<li><a href='2010/04/index.html'>April 2010</a></li>
+	<li><a href='2010/02/index.html'>February 2010</a></li>
+	<li><a href='2010/01/index.html'>January 2010</a></li>
+	<li><a href='2009/12/index.html'>December 2009</a></li>
+	<li><a href='2009/10/index.html'>October 2009</a></li>
+	<li><a href='2009/09/index.html'>September 2009</a></li>
+	<li><a href='2009/08/index.html'>August 2009</a></li>
+	<li><a href='2009/04/index.html'>April 2009</a></li>
+	<li><a href='2009/03/index.html'>March 2009</a></li>
+	<li><a href='2009/02/index.html'>February 2009</a></li>
+	<li><a href='2009/01/index.html'>January 2009</a></li>
+	<li><a href='2008/10/index.html'>October 2008</a></li>
+	<li><a href='2008/09/index.html'>September 2008</a></li>
+	<li><a href='2008/08/index.html'>August 2008</a></li>
+	<li><a href='2008/07/index.html'>July 2008</a></li>
+	<li><a href='2008/04/index.html'>April 2008</a></li>
+	<li><a href='2008/03/index.html'>March 2008</a></li>
+	<li><a href='2008/02/index.html'>February 2008</a></li>
+	<li><a href='2008/01/index.html'>January 2008</a></li>
+	<li><a href='2007/12/index.html'>December 2007</a></li>
+	<li><a href='2007/10/index.html'>October 2007</a></li>
+	<li><a href='2007/09/index.html'>September 2007</a></li>
+	<li><a href='2007/08/index.html'>August 2007</a></li>
+	<li><a href='2007/06/index.html'>June 2007</a></li>
+	<li><a href='2007/05/index.html'>May 2007</a></li>
+	<li><a href='2007/04/index.html'>April 2007</a></li>
+			</ul>
+
+			</li>
+	</ul>
+    
+    </div><!-- Sidebar -->
+
+</div><!-- Rightcolumn -->
+
+
+
+<br clear="all" />
+
+<div id="footer">
+<p>Copyright 2009, powered by <a href="http://www.wordpress.org/">WordPress</a></p>
+</div><!-- Footer -->
+
+</div><!-- Wrapper -->
+
+<br clear="all" />
+</div><!-- Container -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3308745-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

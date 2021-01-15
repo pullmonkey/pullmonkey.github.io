@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>png &#8211; PullMonkey Blog</title>
+	<atom:link href="http://pullmonkey.com/tag/png/feed/" rel="self" type="application/rss+xml" />
+	<link>http://pullmonkey.com</link>
+	<description></description>
+	<lastBuildDate>Wed, 06 Jan 2010 21:20:06 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6</generator>
+	<item>
+		<title>POST OFC Graph as Image</title>
+		<link>http://pullmonkey.com/2010/01/06/post_ofc_graph_as_image/</link>
+					<comments>http://pullmonkey.com/2010/01/06/post_ofc_graph_as_image/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Wed, 06 Jan 2010 21:17:57 +0000</pubDate>
+				<category><![CDATA[development]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[me]]></category>
+		<category><![CDATA[Open Flash Chart Graphs]]></category>
+		<category><![CDATA[plugins]]></category>
+		<category><![CDATA[projects]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[SimpleCMS]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[charts]]></category>
+		<category><![CDATA[graphs]]></category>
+		<category><![CDATA[image]]></category>
+		<category><![CDATA[open flash chart]]></category>
+		<category><![CDATA[png]]></category>
+		<category><![CDATA[ruby on rails]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57469</guid>
+
+					<description><![CDATA[I was asked recently (well sort of) to give an example of saving an image to the server. If you look at teethgrinder's example for this, you will see that he has made available an external interface to do just that - POST your graph as png raw data to your server for storage. This [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I was <a href="http://github.com/inbox/365812#reply">asked recently (well sort of) to give an example of saving an image to the server</a>.  If you look at <a href="http://teethgrinder.co.uk/open-flash-chart-2/adv-upload-image.php">teethgrinder's example for this</a>, you will see that he has made available an external interface to do just that - POST your graph as png raw data to your server for storage.  This has many benefits such as saving the image for use in a PDF report or for printing, since we know at times it is a bit troublesome to print the embedded flash object.<br />
+I think the main problem people are having with this is the receiving of the image data post - see the upload_image method below.  Also, teethgrinder's example never really says where to make the post_image() call.  So I touch on both in the code below.<br />
+Here is an example of the png that is saved when I did this for the chart in the previous example:<br />
+<img loading="lazy" src="http://pullmonkey.com/wp-content/uploads/2010/01/tmp_image.png" alt="OFC Saved Image" title="OFC Saved Image" width="550" height="300" class="aligncenter size-full wp-image-57468" srcset="http://pullmonkey.com/wp-content/uploads/2010/01/tmp_image.png 550w, http://pullmonkey.com/wp-content/uploads/2010/01/tmp_image-300x163.png 300w" sizes="(max-width: 550px) 100vw, 550px" /></p>
+<p>Well, let's just get right in to the code.<br />
+The controller contains the same code as <a href="http://pullmonkey.com/2010/01/05/open-flash-chart-ii-x-axis-date-and-time/">my last post</a> with only a few minor changes to the index method and the addition of the upload_image method.<br />
+In the <b>controller</b>, I have this:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt>5<tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt>9<tt>
+</tt><strong>10</strong><tt>
+</tt>11<tt>
+</tt>12<tt>
+</tt>13<tt>
+</tt>14<tt>
+</tt>15<tt>
+</tt>16<tt>
+</tt>17<tt>
+</tt>18<tt>
+</tt>19<tt>
+</tt><strong>20</strong><tt>
+</tt>21<tt>
+</tt>22<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">TestItController</span> &lt; <span style="color:#036;font-weight:bold">ApplicationController</span><tt>
+</tt>  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">index</span><tt>
+</tt>    <span style="color:#888"># note the user of open_flash_chart_object_from_hash instead of just open_flash_chart_object</span><tt>
+</tt>    <span style="color:#888"># this allows you to pass in the id of the div you want the the chart to be in</span><tt>
+</tt>    <span style="color:#888"># this is useful for when we need to findSWF by this id</span><tt>
+</tt>    <span style="color:#33B">@graph</span> = open_flash_chart_object_from_hash(<span style="background-color:#fff0f0;color:#D20"><span style="color:#710">&quot;</span><span style="">/test_it/chart</span><span style="color:#710">&quot;</span></span>, <span style="color:#A60">:div_name</span> =&gt; <span style="background-color:#fff0f0;color:#D20"><span style="color:#710">&quot;</span><span style="">my_chart</span><span style="color:#710">&quot;</span></span>)<tt>
+</tt>  <span style="color:#080;font-weight:bold">end</span><tt>
+</tt><tt>
+</tt>  <span style="color:#888"># added to recieve the post data for the OFC png image of the OFC graph</span><tt>
+</tt>  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">upload_image</span><tt>
+</tt>    name = <span style="background-color:#fff0f0;color:#D20"><span style="color:#710">&quot;</span><span style="">tmp_image.png</span><span style="color:#710">&quot;</span></span> || params[<span style="color:#A60">:name</span>]<tt>
+</tt>    <span style="color:#888"># the save_image method that is provided by the OFC swf file sends raw post data, so get to it like this</span><tt>
+</tt>    data = request.raw_post<tt>
+</tt>    <span style="color:#036;font-weight:bold">File</span>.open(<span style="background-color:#fff0f0;color:#D20"><span style="color:#710">&quot;</span><span style="background:#ddd;color:black"><span style="background:#ddd;font-weight:bold;color:#666">#{</span><span style="color:#036;font-weight:bold">RAILS_ROOT</span><span style="background:#ddd;font-weight:bold;color:#666">}</span></span><span style="">/tmp/</span><span style="background:#ddd;color:black"><span style="background:#ddd;font-weight:bold;color:#666">#{</span>name<span style="background:#ddd;font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>, <span style="background-color:#fff0f0;color:#D20"><span style="color:#710">&quot;</span><span style="">wb</span><span style="color:#710">&quot;</span></span>) { |f| f.write(data) } <span style="color:#080;font-weight:bold">if</span> data<tt>
+</tt>    render <span style="color:#A60">:nothing</span> =&gt; <span style="color:#038;font-weight:bold">true</span><tt>
+</tt>  <span style="color:#080;font-weight:bold">end</span><tt>
+</tt><tt>
+</tt>  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">chart</span><tt>
+</tt>    <span style="color:#888"># same code from here - http://pullmonkey.com/2010/01/05/open-flash-chart-ii-x-axis-date-and-time/ </span><tt>
+</tt>    ...<tt>
+</tt>  <span style="color:#080;font-weight:bold">end</span><tt>
+</tt><span style="color:#080;font-weight:bold">end</span></pre>
+</td>
+</tr>
+</table>
+<p>So just <b>note</b> the use of open_flash_chart_object_from_hash() in the index method, this way we can pass in the id of the div.<br />
+In the <b>view</b>, I have this:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt>5<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }">&lt;<span style="background-color:#fff0f0;color:#D20"><span style="color:#710">%=</span><span style=""> javascript_include_tag 'swfobject.js' %&gt;<tt>
+</tt>&lt;%</span><span style="color:#710">=</span></span> <span style="color:#33B">@graph</span> %&gt;<tt>
+</tt>&lt;<span style="background-color:#fff0f0;color:#D20"><span style="color:#710">%=</span><span style=""> save_as_image(&quot;http://localhost:3000/test_it/upload_image?name</span><span style="color:#710">=</span></span>tmp.png<span style="background-color:#fff0f0;color:#D20"><span style="color:#710">&quot;</span><span style="">, :id =&gt; </span><span style="color:#710">&quot;</span></span>my_chart<span style="background-color:#fff0f0;color:#D20"><span style="color:#710">&quot;</span><span style="">) %&gt;<tt>
+</tt>&lt;br/&gt;<tt>
+</tt>&lt;%= button_to_function </span><span style="color:#710">&quot;</span></span><span style="color:#036;font-weight:bold">Save</span> <span style="color:#036;font-weight:bold">Image</span><span style="background-color:#fff0f0;color:#D20"><span style="color:#710">&quot;</span><span style="">, </span><span style="color:#710">&quot;</span></span>post_image()<span style="background-color:#fff0f0;color:#D20"><span style="color:#710">&quot;</span><span style=""> %&gt;</span></span></pre>
+</td>
+</tr>
+</table>
+<p>
+Really the only difference from what we would normally have in our view is that I am using the save image setup method that was added to the <a href="http://github.com/pullmonkey/open_flash_chart/commit/14ff9735c67e9b424caa129e8e06dc910e73681f">open flash chart ruby on rails plugin</a> in the last couple hours (as of this post).  The save_image method takes some arguments, mainly the url to post the image data to and the id of the chart we setup in the controller.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2010/01/06/post_ofc_graph_as_image/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

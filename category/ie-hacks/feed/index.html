@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>IE hacks &#8211; PullMonkey Blog</title>
+	<atom:link href="http://pullmonkey.com/category/ie-hacks/feed/" rel="self" type="application/rss+xml" />
+	<link>http://pullmonkey.com</link>
+	<description></description>
+	<lastBuildDate>Sat, 28 Apr 2007 18:52:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6</generator>
+	<item>
+		<title>PNG Transparency in IE</title>
+		<link>http://pullmonkey.com/2007/04/28/png-transparency-in-ie/</link>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Sat, 28 Apr 2007 18:52:00 +0000</pubDate>
+				<category><![CDATA[Home]]></category>
+		<category><![CDATA[IE hacks]]></category>
+		<guid isPermaLink="false">/2007/09/11/png-transparency-in-ie</guid>
+
+					<description><![CDATA[For the last few days I have been trying to figure out the best way to handle png transparency in IE. (my logo is a png) Of course I checked Google and went to the following sites: http://alistapart.com/stories/pngopacity/ http://www.pcmag.com/article2/0,1759,1645331,00.asp http://support.microsoft.com/kb/294714 to pretty much learn that IE does not support png transparency and that you have [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>For the last few days I have been trying to figure out the best way to handle png transparency in IE.  (my logo is a png)<br />
+Of course I checked Google and went to the following sites:</p>
+<ul>
+<li><a href="http://alistapart.com/stories/pngopacity/">http://alistapart.com/stories/pngopacity/</a></li>
+<li><a href="http://www.pcmag.com/article2/0,1759,1645331,00.asp">http://www.pcmag.com/article2/0,1759,1645331,00.asp</a></li>
+<li><a href="http://support.microsoft.com/kb/294714">http://support.microsoft.com/kb/294714</a></li>
+</ul>
+<p>to pretty much learn that IE does not support png transparency and that you have to use a directx filter on your pngs to get them to show correclty in IE.</p>
+<p>So first an example.  If you have IE then you will see that this png (should be transparent) does not show correctly (note it works in firefox):</p>
+<pre class="code">
+  <img src="/images/pullmonkey_logo.png">
+</pre>
+<p>The code:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre><tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }">&lt;img src=<span class="s"><span class="dl">&quot;</span><span class="k">/images/pullmonkey_logo.png</span><span class="dl">&quot;</span></span>&gt;</pre>
+</td>
+</tr>
+</table>
+<p>Applying the fix for IE (note that unfortunately this does not work in firefox):</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt>&lt;<span class="co">DIV</span> <span class="co">ID</span>=<span class="s"><span class="dl">&quot;</span><span class="k">oDiv</span><span class="dl">&quot;</span></span> <span class="co">STYLE</span>=<span class="s"><span class="dl">&quot;</span><span class="k">position:relative; height:78px; width:353px;<tt>
+</tt>     filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/pullmonkey_logo.png', sizingMethod='scale');</span><span class="dl">&quot;</span></span> &gt;<tt>
+</tt>&lt;<span class="rx"><span class="dl">/</span><span class="k">DIV&gt;<tt>
+</tt></span></span></pre>
+</td>
+</tr>
+</table>
+<p>The code:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }">      &lt;<span class="co">DIV</span> <span class="co">ID</span>=<span class="s"><span class="dl">&quot;</span><span class="k">oDiv</span><span class="dl">&quot;</span></span> <tt>
+</tt>        <span class="co">STYLE</span>=<span class="s"><span class="dl">&quot;</span><span class="k">position:relative; <tt>
+</tt>               height:78px; <tt>
+</tt>               width:353px;<tt>
+</tt>        filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(<tt>
+</tt>          src='/images/pullmonkey_logo.png', sizingMethod='scale');</span><span class="dl">&quot;</span></span> &gt;<tt>
+</tt>      &lt;<span class="rx"><span class="dl">/</span><span class="k">DIV&gt;<tt>
+</tt></span></span></pre>
+</td>
+</tr>
+</table>
+<p>Ok good, so we can make it work in IE and firefox but with different solutions.<br />
+The fix in IE does not work in firefox and likewise the firefox solution does not handle transparencies in IE.</p>
+<p>The solution is to put everything in CSS and use the * html IE hack:<br />
+Here is my solution:<br />
+<b>The header where the image is displayed:</b></p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt>9<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }">    &lt;div id=<span class="s"><span class="dl">&quot;</span><span class="k">header</span><span class="dl">&quot;</span></span>&gt;<tt>
+</tt>      &lt;h1&gt;<tt>
+</tt>        &lt;a href=<span class="s"><span class="dl">&quot;</span><span class="k">/</span><span class="dl">&quot;</span></span>&gt;<tt>
+</tt>          &lt;img src=<span class="s"><span class="dl">&quot;</span><span class="k">/images/pullmonkey_logo.png</span><span class="dl">&quot;</span></span> /&gt;<tt>
+</tt>        &lt;<span class="rx"><span class="dl">/</span><span class="k">a&gt;<tt>
+</tt>      &lt;</span><span class="dl">/</span></span>h1&gt;<tt>
+</tt>      &lt;div <span class="co">ID</span>=<span class="s"><span class="dl">&quot;</span><span class="k">pullmonkey_logo_ie</span><span class="dl">&quot;</span></span>&gt;<tt>
+</tt>      &lt;<span class="rx"><span class="dl">/</span><span class="k">div&gt;<tt>
+</tt>    &lt;</span><span class="dl">/</span></span>div&gt;</pre>
+</td>
+</tr>
+</table>
+<p><b>The CSS to hide the regular image from IE:</b></p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }">    * html <span class="c">#header img {</span><tt>
+</tt>      display: none;<tt>
+</tt>    }</pre>
+</td>
+</tr>
+</table>
+<p><b>The CSS to do the directx transparency:</b></p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }">  * html div<span class="c">#pullmonkey_logo_ie {</span><tt>
+</tt>    position<span class="sy">:relative</span>;<tt>
+</tt>    height:<span class="i">78</span>px;<tt>
+</tt>    width:<span class="i">353</span>px;<tt>
+</tt>    filter<span class="sy">:progid</span><span class="sy">:DXImageTransform</span>.<span class="co">Microsoft</span>.AlphaImageLoader(<tt>
+</tt>      src=<span class="s"><span class="dl">'</span><span class="k">/images/pullmonkey_logo.png</span><span class="dl">'</span></span>);<tt>
+</tt>  }</pre>
+</td>
+</tr>
+</table>
+<p><b>Applying the stylesheet:</b></p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre><tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }">&lt;div id=<span class="s"><span class="dl">&quot;</span><span class="k">header_demo</span><span class="dl">&quot;</span></span>&gt;&lt;a href=<span class="s"><span class="dl">&quot;</span><span class="k">/</span><span class="dl">&quot;</span></span>&gt;&lt;img src=<span class="s"><span class="dl">&quot;</span><span class="k">/images/pullmonkey_logo.png</span><span class="dl">&quot;</span></span> /&gt;&lt;div <span class="co">ID</span>=<span class="s"><span class="dl">&quot;</span><span class="k">pullmonkey_logo_ie</span><span class="dl">&quot;</span></span>&gt;&lt;<span class="rx"><span class="dl">/</span><span class="k">div&gt;&lt;</span><span class="dl">/</span></span>a&gt;&lt;<span class="rx"><span class="dl">/</span><span class="k">div&gt;</span></span></pre>
+</td>
+</tr>
+</table>
+<p>
+So there it is, see that it shows up transparently in both IE and Firefox.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

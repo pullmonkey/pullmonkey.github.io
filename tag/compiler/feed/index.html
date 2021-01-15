@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>compiler &#8211; PullMonkey Blog</title>
+	<atom:link href="http://pullmonkey.com/tag/compiler/feed/" rel="self" type="application/rss+xml" />
+	<link>http://pullmonkey.com</link>
+	<description></description>
+	<lastBuildDate>Thu, 10 Nov 2011 06:23:18 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6</generator>
+	<item>
+		<title>Playing with Mirah</title>
+		<link>http://pullmonkey.com/2011/11/10/playing-with-mirah/</link>
+					<comments>http://pullmonkey.com/2011/11/10/playing-with-mirah/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Thu, 10 Nov 2011 06:14:37 +0000</pubDate>
+				<category><![CDATA[development]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[compiler]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[mirah]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57622</guid>
+
+					<description><![CDATA[Mirah (formally duby) is pretty freaking cool.   Plans are to scrap java and use mirah for future android development, we'll see.  Here's a rough example of some pretty basic mirah. To get started, you'll need jruby and the mirah gem: rvm install jruby rvm use jruby (or put in your .rvmrc) gem install mirah [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Mirah (formally duby) is pretty freaking cool.   Plans are to scrap java and use mirah for future android development, we'll see.  Here's a rough example of some pretty basic mirah.</p>
+<h3><strong>To get started, you'll need jruby and the mirah gem:</strong></h3>
+<pre style="border:1px dashed black; padding: 4px; background-color: #ddd;">rvm install jruby
+rvm use jruby (or put in your .rvmrc)
+gem install mirah</pre>
+<p></p>
+<h3><strong>Then create an example:</strong></h3>
+<pre style="border:1px dashed black; padding: 4px; background-color: #ddd;">puts "hello world!!"
+500.times do |x|
+  puts x
+end</pre>
+<p></p>
+<h3><strong>Time in ruby:</strong></h3>
+<pre style="border:1px dashed black; padding: 4px; background-color: #ddd;">time ruby test.mirah</pre>
+<p>...<br />
+=&gt; .457s</p>
+<h3><strong>Compile to Java and time:</strong></h3>
+<pre style="border:1px dashed black; padding: 4px; background-color: #ddd;">mirahc test.mirah
+time java Test</pre>
+<p>....<br />
+=&gt; .081s</p>
+<h3><strong>Less than 1/5 the time and it compiles to Java ... neat <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></strong></h3>
+<pre style="border:1px dashed black; padding: 4px; background-color: #ddd;">mirahc -j test.mirah
+
+// Generated from test.mirah
+public class Test extends java.lang.Object {
+  public static void main(java.lang.String[] argv) {
+    int __xform_tmp_1 = 0;
+    int __xform_tmp_2 = 0;
+    int x = 0;
+    java.io.PrintStream temp$1 = java.lang.System.out;
+    temp$1.println("hello world");
+    __xform_tmp_1 = 0;
+    __xform_tmp_2 = 500;
+    label2:
+    while ((__xform_tmp_1 &lt; __xform_tmp_2)) {
+      x = __xform_tmp_1;
+      label3:
+       {
+        java.io.PrintStream temp$4 = java.lang.System.out;
+        temp$4.println(x);
+      }
+      __xform_tmp_1 = (__xform_tmp_1 + 1);
+    }
+  }
+}</pre>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2011/11/10/playing-with-mirah/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

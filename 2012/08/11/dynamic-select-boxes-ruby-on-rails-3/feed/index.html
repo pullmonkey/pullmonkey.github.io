@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Dynamic Select Boxes &#8211; Ruby on Rails 3	</title>
+	<atom:link href="http://pullmonkey.com/2012/08/11/dynamic-select-boxes-ruby-on-rails-3/feed/" rel="self" type="application/rss+xml" />
+	<link>http://pullmonkey.com/2012/08/11/dynamic-select-boxes-ruby-on-rails-3/</link>
+	<description></description>
+	<lastBuildDate>Tue, 05 Feb 2013 04:29:28 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6</generator>
+	<item>
+		<title>
+		By: `Drew		</title>
+		<link>http://pullmonkey.com/2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/#comment-24291</link>
+
+		<dc:creator><![CDATA[`Drew]]></dc:creator>
+		<pubDate>Tue, 05 Feb 2013 04:29:28 +0000</pubDate>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57726#comment-24291</guid>
+
+					<description><![CDATA[First of all, thanks for this. It has been an excellent teaching tool for the collection_select dropdown box method for me. That being said, I&#039;m stuck. My dropdown menus aren&#039;t populated with any data! I followed the tutorial exactly the first two times through. THEN I copied and pasted your code to make sure it wasn&#039;t my mistyping that had screwed things up. No luck still. Any suggestions for where my hangup might be?]]></description>
+			<content:encoded><![CDATA[<p>First of all, thanks for this. It has been an excellent teaching tool for the collection_select dropdown box method for me. That being said, I&#8217;m stuck. My dropdown menus aren&#8217;t populated with any data! I followed the tutorial exactly the first two times through. THEN I copied and pasted your code to make sure it wasn&#8217;t my mistyping that had screwed things up. No luck still. Any suggestions for where my hangup might be?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Bardach		</title>
+		<link>http://pullmonkey.com/2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/#comment-24290</link>
+
+		<dc:creator><![CDATA[Bardach]]></dc:creator>
+		<pubDate>Thu, 31 Jan 2013 02:57:00 +0000</pubDate>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57726#comment-24290</guid>
+
+					<description><![CDATA[Hi Charlie,
+Thanks for this useful tutorial.
+How can  use  it with simple_form?
+Bardach]]></description>
+			<content:encoded><![CDATA[<p>Hi Charlie,<br />
+Thanks for this useful tutorial.<br />
+How can  use  it with simple_form?<br />
+Bardach</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Bardach		</title>
+		<link>http://pullmonkey.com/2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/#comment-24289</link>
+
+		<dc:creator><![CDATA[Bardach]]></dc:creator>
+		<pubDate>Thu, 31 Jan 2013 02:56:40 +0000</pubDate>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57726#comment-24289</guid>
+
+					<description><![CDATA[Hi Charlie,
+Thanks for this useful tutorial.
+How can  used  it with simple_form?
+Bardach5]]></description>
+			<content:encoded><![CDATA[<p>Hi Charlie,<br />
+Thanks for this useful tutorial.<br />
+How can  used  it with simple_form?<br />
+Bardach5</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: charlie		</title>
+		<link>http://pullmonkey.com/2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/#comment-19235</link>
+
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Wed, 05 Sep 2012 13:56:53 +0000</pubDate>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57726#comment-19235</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;http://pullmonkey.com/2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/#comment-19108&quot;&gt;Bob Hazlewood&lt;/a&gt;.
+
+You can do this many ways.
+1) In the models: You can set the default order of all the models.  Plus for the has_many associations, you could add an order clause: has_many :songs, :order =&#062; :title
+2) In the controller: Instead of Genre.all, you would do Genre.order(:name), or instead of artist.songs, you would do artist.songs.order(:title)
+
+Then the map just acts on the ordered collection.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="http://pullmonkey.com/2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/#comment-19108">Bob Hazlewood</a>.</p>
+<p>You can do this many ways.<br />
+1) In the models: You can set the default order of all the models.  Plus for the has_many associations, you could add an order clause: has_many :songs, :order =&gt; :title<br />
+2) In the controller: Instead of Genre.all, you would do Genre.order(:name), or instead of artist.songs, you would do artist.songs.order(:title)</p>
+<p>Then the map just acts on the ordered collection.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Bob Hazlewood		</title>
+		<link>http://pullmonkey.com/2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/#comment-19108</link>
+
+		<dc:creator><![CDATA[Bob Hazlewood]]></dc:creator>
+		<pubDate>Wed, 29 Aug 2012 05:05:16 +0000</pubDate>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57726#comment-19108</guid>
+
+					<description><![CDATA[hahaha back again with another question.
+
+In your example, the elements come back in the order in which they are in the database (song1, then song2, then song3).  Of course, in the &quot;real world&quot; the data would be more like &quot;Good Vibrations&quot;, &quot;Surfer Girl&quot;, and &quot;I Get Around&quot;.  What if you want the select list to be in alphabetical order?  Normally I would pull the data like @songs = Song.find(:all, :order =&#062; &#039;title ASC&#039;) - how would you do that with the .map?]]></description>
+			<content:encoded><![CDATA[<p>hahaha back again with another question.</p>
+<p>In your example, the elements come back in the order in which they are in the database (song1, then song2, then song3).  Of course, in the &#8220;real world&#8221; the data would be more like &#8220;Good Vibrations&#8221;, &#8220;Surfer Girl&#8221;, and &#8220;I Get Around&#8221;.  What if you want the select list to be in alphabetical order?  Normally I would pull the data like @songs = Song.find(:all, :order =&gt; &#8216;title ASC&#8217;) &#8211; how would you do that with the .map?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Bob Hazlewood		</title>
+		<link>http://pullmonkey.com/2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/#comment-19041</link>
+
+		<dc:creator><![CDATA[Bob Hazlewood]]></dc:creator>
+		<pubDate>Tue, 21 Aug 2012 16:28:00 +0000</pubDate>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57726#comment-19041</guid>
+
+					<description><![CDATA[I figured it out.
+
+When I select the third element, it executes a render partial with a link_to , :controller =&#062; &#039;controller_name&#039;, :action =&#062; &#039;action_name&#039;,  :parameter1 =&#062; params[:select_name1], :parameter2 =&#062; params[:select_name2] 
+
+Thanks again for a great learning tool.]]></description>
+			<content:encoded><![CDATA[<p>I figured it out.</p>
+<p>When I select the third element, it executes a render partial with a link_to , :controller =&gt; &#8216;controller_name&#8217;, :action =&gt; &#8216;action_name&#8217;,  :parameter1 =&gt; params[:select_name1], :parameter2 =&gt; params[:select_name2] </p>
+<p>Thanks again for a great learning tool.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Bob Hazlewood		</title>
+		<link>http://pullmonkey.com/2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/#comment-19034</link>
+
+		<dc:creator><![CDATA[Bob Hazlewood]]></dc:creator>
+		<pubDate>Mon, 20 Aug 2012 21:49:11 +0000</pubDate>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57726#comment-19034</guid>
+
+					<description><![CDATA[I know this is beyond the scope of your tutorial, but -- let&#039;s say I want to take the results of all three selects, and pass those as parameters to a controller?  On the final select, render a partial with the params ?]]></description>
+			<content:encoded><![CDATA[<p>I know this is beyond the scope of your tutorial, but &#8212; let&#8217;s say I want to take the results of all three selects, and pass those as parameters to a controller?  On the final select, render a partial with the params ?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: charlie		</title>
+		<link>http://pullmonkey.com/2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/#comment-19020</link>
+
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Thu, 16 Aug 2012 23:41:55 +0000</pubDate>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57726#comment-19020</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;http://pullmonkey.com/2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/#comment-19019&quot;&gt;Foluso&lt;/a&gt;.
+
+Thanks Foluso, updated post with the converted erb - at the bottom.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="http://pullmonkey.com/2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/#comment-19019">Foluso</a>.</p>
+<p>Thanks Foluso, updated post with the converted erb &#8211; at the bottom.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Foluso		</title>
+		<link>http://pullmonkey.com/2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/#comment-19019</link>
+
+		<dc:creator><![CDATA[Foluso]]></dc:creator>
+		<pubDate>Thu, 16 Aug 2012 21:02:45 +0000</pubDate>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57726#comment-19019</guid>
+
+					<description><![CDATA[Thank you very much Charlie for your help. I eventually got it to work though I had to adjust the following files too 
+
+# app/views/home/update_artists.js.erb
+$(&#039;#artists_select&#039;).html(&quot;&quot;);
+$(&#039;#songs_select&#039;).html(&quot;&quot;);
+
+
+# app/views/home/update_songs.js.erb
+$(&#039;#songs_select&#039;).html(&quot;&quot;);]]></description>
+			<content:encoded><![CDATA[<p>Thank you very much Charlie for your help. I eventually got it to work though I had to adjust the following files too </p>
+<p># app/views/home/update_artists.js.erb<br />
+$(&#8216;#artists_select&#8217;).html(&#8220;&#8221;);<br />
+$(&#8216;#songs_select&#8217;).html(&#8220;&#8221;);</p>
+<p># app/views/home/update_songs.js.erb<br />
+$(&#8216;#songs_select&#8217;).html(&#8220;&#8221;);</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: charlie		</title>
+		<link>http://pullmonkey.com/2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/#comment-19018</link>
+
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Thu, 16 Aug 2012 03:57:25 +0000</pubDate>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57726#comment-19018</guid>
+
+					<description><![CDATA[Foluso - the only file you&#039;ll want to convert to use erb is going to be the index.html.haml.
+The others, you can just rename to .js.erb.
+
+For the index.html.erb, just wrap the lines starting with &quot;=&quot; with &lt;% and %&gt;
+And instead of :javascript, just wrap with &lt;script&gt; and &lt;/script&gt;.
+
+I&#039;ve updated the post to have the erb example for that file.]]></description>
+			<content:encoded><![CDATA[<p>Foluso &#8211; the only file you&#8217;ll want to convert to use erb is going to be the index.html.haml.<br />
+The others, you can just rename to .js.erb.</p>
+<p>For the index.html.erb, just wrap the lines starting with &#8220;=&#8221; with <% and %><br />
+And instead of :javascript, just wrap with <script> and </script>.</p>
+<p>I&#8217;ve updated the post to have the erb example for that file.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>database &#8211; PullMonkey Blog</title>
+	<atom:link href="http://pullmonkey.com/tag/database/feed/" rel="self" type="application/rss+xml" />
+	<link>http://pullmonkey.com</link>
+	<description></description>
+	<lastBuildDate>Sun, 30 Aug 2009 04:43:31 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6</generator>
+	<item>
+		<title>Ruby on Rails &#8211; Multiple database connections</title>
+		<link>http://pullmonkey.com/2008/04/21/ruby-on-rails-multiple-database-connections/</link>
+					<comments>http://pullmonkey.com/2008/04/21/ruby-on-rails-multiple-database-connections/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Mon, 21 Apr 2008 14:53:00 +0000</pubDate>
+				<category><![CDATA[development]]></category>
+		<category><![CDATA[Home]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[activerecord]]></category>
+		<category><![CDATA[database]]></category>
+		<category><![CDATA[ruby on rails]]></category>
+		<guid isPermaLink="false">/2008/04/21/ruby-on-rails-multiple-database-connections</guid>
+
+					<description><![CDATA[Found a need for this information while answering questions on railsforum. So, let's say that we want to use two databases and let's even say that we want to use an Oracle database and a MySQL database. How can this be done? To start, we must decide which database will be our default database. In [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Found a need for this information while answering questions on railsforum.<br />
+So, let's say that we want to use two databases and let's even say that we want to use an Oracle database and a MySQL database.  How can this be done?  To start, we must decide which database will be our default database.  In this scenario, I chose MySQL.  Let's see what that looks like:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><span class="c"># in your database.yml file</span><tt>
+</tt>development:<tt>
+</tt>  adapter: mysql<tt>
+</tt>  username: root<tt>
+</tt>  password: <tt>
+</tt>  database: example_development<tt>
+</tt><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>So we have all seen that before.  Now all of our active record models will use this mysql connection.<br />
+But, I need to use data from an oracle database, so let's setup that connection:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt>9<tt>
+</tt><strong>10</strong><tt>
+</tt>11<tt>
+</tt>12<tt>
+</tt>13<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><span class="c"># in your database.yml file</span><tt>
+</tt>development:<tt>
+</tt>  adapter: mysql<tt>
+</tt>  username: root<tt>
+</tt>  password: <tt>
+</tt>  database: example_development<tt>
+</tt><tt>
+</tt>oracle_development:<tt>
+</tt>  adapter: oracle<tt>
+</tt>  username: root<tt>
+</tt>  password: <tt>
+</tt>  database: example_oracle_development<tt>
+</tt><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>Neat, we have two development connections.  Now we have to tell which models to use which connection.  Well, actually, we just need to tell the oracle models to connect to oracle_development, all the other models will default to development.  I have a model named user, and it's records are kept in an oracle database.  Our user model looks like this initially:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><span class="c">#RAILSROOT/app/models/user.rb</span><tt>
+</tt><span class="r">class</span> <span class="cl">User</span> &lt; <span class="co">ActiveRecord</span>::<span class="co">Base</span> <tt>
+</tt><span class="r">end</span><tt>
+</tt><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>The line we need to add is this:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }">establish_connection <span class="sy">:oracle_development</span><tt>
+</tt><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>Even better, we can make this dynamic, so when we are in the test or production environment, we don't need to change the establish_connection line.</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><span class="c"># use RAILS_ENV where RAILS_ENV is generally development, test or production</span><tt>
+</tt>establish_connection <span class="s"><span class="dl">&quot;</span><span class="k">oracle_</span><span class="il"><span class="dl">#{</span><span class="co">RAILS_ENV</span><span class="dl">}</span></span><span class="dl">&quot;</span></span><tt>
+</tt><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>So the final product could look something like this:</p>
+<h3>database.yml</h3>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt>9<tt>
+</tt><strong>10</strong><tt>
+</tt>11<tt>
+</tt>12<tt>
+</tt>13<tt>
+</tt>14<tt>
+</tt><strong>15</strong><tt>
+</tt>16<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }">dev_basics: &amp;dev_basics<tt>
+</tt>  username: root<tt>
+</tt>  password: <tt>
+</tt><tt>
+</tt>&lt;% <span class="s"><span class="dl">%w(</span><span class="k">development test production</span><span class="dl">)</span></span>.each <span class="r">do</span> |env| <span class="s"><span class="dl">%&gt;</span><span class="k"><tt>
+</tt>&lt;%= env %</span><span class="dl">&gt;</span></span>:<tt>
+</tt>  &lt;&lt;: *dev_basics<tt>
+</tt>  adapter: mysql<tt>
+</tt>  database: example_&lt;%= env <span class="s"><span class="dl">%&gt;</span><span class="k"><tt>
+</tt><tt>
+</tt>oracle_&lt;%= env %</span><span class="dl">&gt;</span></span>:<tt>
+</tt>  &lt;&lt;: *dev_basics<tt>
+</tt>  adapter: oracle<tt>
+</tt>  database: example_oracle_&lt;%= env <span class="s"><span class="dl">%&gt;</span><span class="k"><tt>
+</tt>&lt;% end %</span><span class="dl">&gt;</span></span><tt>
+</tt><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<h3>Oracle model example</h3>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><span class="r">class</span> <span class="cl">User</span> &lt; <span class="co">ActiveRecord</span>::<span class="co">Base</span> <tt>
+</tt>  establish_connection <span class="s"><span class="dl">&quot;</span><span class="k">oracle_</span><span class="il"><span class="dl">#{</span><span class="co">RAILS_ENV</span><span class="dl">}</span></span><span class="dl">&quot;</span></span><tt>
+</tt><span class="r">end</span><tt>
+</tt><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>
+That should be it.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2008/04/21/ruby-on-rails-multiple-database-connections/feed/</wfw:commentRss>
+			<slash:comments>5</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,1225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>PullMonkey Blog  &raquo; Blog Archive   &raquo; Using a database to populate an Open Flash Chart graph</title>
+<meta name="generator" content="WordPress 5.6" /> <!-- leave this for stats -->
+<link rel="stylesheet" href="wp-content/themes/simple&#32;paper/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="wp-content/themes/simple&#32;paper/code_highlighter.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="PullMonkey Blog RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="http://pullmonkey.com/xmlrpc.php" />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="PullMonkey Blog &raquo; Using a database to populate an Open Flash Chart graph Comments Feed" href="2008/07/25/using-a-database-to-populate-an-open-flash-chart-graph/feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/pullmonkey.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='wp-includes/css/dist/block-library/style.min.css?ver=5.6' type='text/css' media='all' />
+<link rel="https://api.w.org/" href="wp-json/index.html" /><link rel="alternate" type="application/json" href="wp-json/wp/v2/posts/45838" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://pullmonkey.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.6" />
+<link rel="canonical" href="index.html?p=45838" />
+<link rel='shortlink' href='index.html?p=45838' />
+<link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed?url=http:%252F%252Fpullmonkey.com%252F2008%252F07%252F25%252Fusing-a-database-to-populate-an-open-flash-chart-graph%252F" />
+<link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed?url=http:%252F%252Fpullmonkey.com%252F2008%252F07%252F25%252Fusing-a-database-to-populate-an-open-flash-chart-graph%252F&amp;format=xml" />
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style></head>
+<body>
+
+<div id="container">
+
+<div id="menu">
+
+        <ul id="nav">
+        <li class="current_page_item"><a href="index.html">Home</a></li>
+                       	</ul>
+
+</div><!-- Menu -->
+
+<div id="wrapper">
+
+<div id="c1">
+
+<h1 id="logo"><a href="index.html">PullMonkey Blog</a></h1>
+<h2 id="description"></h2>
+
+<div id="content">
+
+
+<div class="post" id="post-45838">
+
+<div class="date">25 <span>Jul</span></div>
+
+<h2><a href="index.html?p=45838" rel="bookmark" title="Permanent Link to Using a database to populate an Open Flash Chart graph">Using a database to populate an Open Flash Chart graph</a></h2><br clear="all" />
+
+<p>Just got <a href="2008/7/23/open-flash-chart-ii-plugin-for-ruby-on-rails-ofc2#comment-45837">Archie Smuts comment asking how to populate a Open Flash Chart graph using results from a database</a>. </p>
+<p>Just for reference, the code that follows represents this graph:<br />
+<script type="text/javascript" src="projects/javascripts/swfobject.js"></script></p>
+<div id="flash_content_1217004188.58147"></div>
+<p>    <script type="text/javascript">
+      swfobject.embedSWF("/projects/open-flash-chart.swf", "flash_content_1217004188.58147", "600", "300", "9.0.0", "expressInstall.swf",{"data-file":"%2Fprojects%2Fopen_flash_chart2%2Fusing_database"});
+    </script><br />
+    <noscript><br />
+      <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="600" height="300" id="chart_1217004188.58145" align="middle"><param name="allowScriptAccess" value="sameDomain" /><param name="movie" value="/projects/open-flash-chart.swf?data=%2Fprojects%2Fopen_flash_chart2%2Fusing_database" /><param name="quality" value="high" /><param name="bgcolor" value="#FFFFFF" /><embed src="projects/open-flash-chart.swf?data=%252Fprojects%252Fopen_flash_chart2%252Fusing_database" quality="high" bgcolor="#FFFFFF" width="600" height="300" name="chart_1217004188.58145" align="middle"  allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" id="chart_1217004188.58145" /></object><br />
+    </noscript></p>
+<p>Examples for version 2 are <a href="http://pullmonkey.com/projects/open_flash_chart2/">here</a>.</b></p>
+<p>Using the new version of Open Flash Chart, here is an example for you to follow:</p>
+<ul>
+<li>Start a rails app and install the plugin per <a href="2008/7/23/open-flash-chart-ii-plugin-for-ruby-on-rails-ofc2">these instructions</a>.</li>
+<li>The results table that I am working with has these rows:<br />
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt><span class="co">Result</span>.create(<span class="sy">:student_name</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">Jack</span><span class="dl">&quot;</span></span>, <span class="sy">:subject</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">History</span><span class="dl">&quot;</span></span>, <span class="sy">:test_score</span> =&gt; <span class="i">97</span><tt>
+</tt><span class="co">Result</span>.create(<span class="sy">:student_name</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">Jack</span><span class="dl">&quot;</span></span>, <span class="sy">:subject</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">Science</span><span class="dl">&quot;</span></span>, <span class="sy">:test_score</span> =&gt; <span class="i">85</span>)<tt>
+</tt><span class="co">Result</span>.create(<span class="sy">:student_name</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">Jill</span><span class="dl">&quot;</span></span>, <span class="sy">:subject</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">History</span><span class="dl">&quot;</span></span>, <span class="sy">:test_score</span> =&gt; <span class="i">92</span>)<tt>
+</tt><span class="co">Result</span>.create(<span class="sy">:student_name</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">Jill</span><span class="dl">&quot;</span></span>, <span class="sy">:subject</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">Science</span><span class="dl">&quot;</span></span>, <span class="sy">:test_score</span> =&gt; <span class="i">57</span>)<tt>
+</tt><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+</li>
+<li>Create a controller, mine is test_it:<br />
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt>9<tt>
+</tt><strong>10</strong><tt>
+</tt>11<tt>
+</tt>12<tt>
+</tt>13<tt>
+</tt>14<tt>
+</tt><strong>15</strong><tt>
+</tt>16<tt>
+</tt>17<tt>
+</tt>18<tt>
+</tt>19<tt>
+</tt><strong>20</strong><tt>
+</tt>21<tt>
+</tt>22<tt>
+</tt>23<tt>
+</tt>24<tt>
+</tt><strong>25</strong><tt>
+</tt>26<tt>
+</tt>27<tt>
+</tt>28<tt>
+</tt>29<tt>
+</tt><strong>30</strong><tt>
+</tt>31<tt>
+</tt>32<tt>
+</tt>33<tt>
+</tt>34<tt>
+</tt><strong>35</strong><tt>
+</tt>36<tt>
+</tt>37<tt>
+</tt>38<tt>
+</tt>39<tt>
+</tt><strong>40</strong><tt>
+</tt>41<tt>
+</tt>42<tt>
+</tt>43<tt>
+</tt>44<tt>
+</tt><strong>45</strong><tt>
+</tt>46<tt>
+</tt>47<tt>
+</tt>48<tt>
+</tt>49<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt><span class="r">class</span> <span class="cl">TestItController</span> &lt; <span class="co">ApplicationController</span><tt>
+</tt>  <span class="r">def</span> <span class="fu">index</span><tt>
+</tt>    <span class="iv">@graph</span> = open_flash_chart_object(<span class="i">600</span>,<span class="i">300</span>,<span class="s"><span class="dl">&quot;</span><span class="k">/test_it/graph_code</span><span class="dl">&quot;</span></span>)<tt>
+</tt>  <span class="r">end</span><tt>
+</tt><tt>
+</tt>  <span class="r">def</span> <span class="fu">graph_code</span><tt>
+</tt>    <span class="c"># we will have bars for each student subject combo</span><tt>
+</tt>    bars   = []<tt>
+</tt><tt>
+</tt>    <span class="c"># random colors to chose from</span><tt>
+</tt>    colours = [<span class="s"><span class="dl">&quot;</span><span class="k">#459a89</span><span class="dl">&quot;</span></span>, <span class="s"><span class="dl">&quot;</span><span class="k">#9a89f9</span><span class="dl">&quot;</span></span>]<tt>
+</tt><tt>
+</tt>    <span class="c"># the results</span><tt>
+</tt>    results = <span class="co">Result</span>.find(<span class="sy">:all</span>)<tt>
+</tt><tt>
+</tt>    <span class="c"># group by subject and use subject as the key</span><tt>
+</tt>    results.group_by(&amp;<span class="sy">:subject</span>).each <span class="r">do</span> |subject, result|<tt>
+</tt>      <span class="c"># 3d bar graph, could be any bar graph though</span><tt>
+</tt>      bar = <span class="co">Bar3d</span>.new<tt>
+</tt>      bar.set_key(subject, <span class="i">3</span>)<tt>
+</tt>      bar.colour = colours[bars.size]<tt>
+</tt>      bar.values = result.map(&amp;<span class="sy">:test_score</span>)<tt>
+</tt>      bars &lt;&lt; bar<tt>
+</tt>    <span class="r">end</span><tt>
+</tt><tt>
+</tt>    <span class="c"># some title</span><tt>
+</tt>    title = <span class="co">Title</span>.new(<span class="s"><span class="dl">&quot;</span><span class="k">Test Results</span><span class="dl">&quot;</span></span>)<tt>
+</tt><tt>
+</tt>    <span class="c"># labels along the x axis, just hard code for now, but you would want to dynamically do this</span><tt>
+</tt>    x_axis = <span class="co">XAxis</span>.new<tt>
+</tt>    x_axis.labels = [<span class="s"><span class="dl">&quot;</span><span class="k">Jack</span><span class="dl">&quot;</span></span>, <span class="s"><span class="dl">&quot;</span><span class="k">Jill</span><span class="dl">&quot;</span></span>]<tt>
+</tt><tt>
+</tt>    <span class="c"># go to 100% since we are dealing with test results</span><tt>
+</tt>    y_axis = <span class="co">YAxis</span>.new<tt>
+</tt>    y_axis.set_range(<span class="i">0</span>, <span class="i">100</span>, <span class="i">10</span>)<tt>
+</tt><tt>
+</tt>    <span class="c"># setup the graph</span><tt>
+</tt>    graph = <span class="co">OpenFlashChart</span>.new<tt>
+</tt>    graph.bg_colour = <span class="s"><span class="dl">'</span><span class="k">#ffffcc</span><span class="dl">'</span></span><tt>
+</tt>    graph.title = title<tt>
+</tt>    graph.x_axis = x_axis<tt>
+</tt>    graph.y_axis = y_axis<tt>
+</tt>    graph.elements = bars<tt>
+</tt><tt>
+</tt>    render <span class="sy">:text</span> =&gt; graph.to_s<tt>
+</tt>  <span class="r">end</span><tt>
+</tt><span class="r">end</span><tt>
+</tt><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+</li>
+<li>Create a view, mine is index.html.erb for the test_it controller:<br />
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt>&lt;script type=<span class="s"><span class="dl">&quot;</span><span class="k">text/javascript</span><span class="dl">&quot;</span></span> src=<span class="s"><span class="dl">&quot;</span><span class="k">/javascripts/swfobject.js</span><span class="dl">&quot;</span></span>&gt;&lt;<span class="rx"><span class="dl">/</span><span class="k">script&gt;<tt>
+</tt>&lt;%= @graph %&gt;<tt>
+</tt><tt>
+</tt></span></span></pre>
+</td>
+</tr>
+</table>
+</li>
+<p>
+Hope that helps.<br /></p>
+
+<br />
+
+<div class="meta">
+<span class="note">Filed under: <a href="category/development/index.html" rel="category tag">development</a>, <a href="category/home/index.html" rel="category tag">Home</a>, <a href="category/open-flash-chart-graphs/index.html" rel="category tag">Open Flash Chart Graphs</a>, <a href="category/projects/index.html" rel="category tag">projects</a>, <a href="category/rails/index.html" rel="category tag">rails</a>, <a href="category/ruby/index.html" rel="category tag">ruby</a>, <a href="category/tutorials/index.html" rel="category tag">tutorials</a></span>
+<span class="tags">Tags: <a href="tag/charts/index.html" rel="tag">charts</a>, <a href="tag/flash/index.html" rel="tag">flash</a>, <a href="tag/graphs/index.html" rel="tag">graphs</a>, <a href="tag/open-flash-chart/index.html" rel="tag">open flash chart</a>, <a href="tag/rails/index.html" rel="tag">rails</a>, <a href="tag/ruby/index.html" rel="tag">ruby</a>, <a href="tag/ruby-on-rails/index.html" rel="tag">ruby on rails</a>, <a href="tag/tutorial/index.html" rel="tag">tutorial</a></span><br /></div><!--Meta -->
+
+
+<!-- You can start editing here. -->
+
+<div id="commentsbox">
+
+
+
+<h2 id="comments">
+	 <br /> 25 Responses 
+	  to &#8220;Using a database to populate an Open Flash Chart graph&#8221;</h2>
+	
+	<ol class="commentlist">
+		
+
+<li class="odd" id="comment-632">
+
+By <strong>Cecci</strong> on <a href="index.html?p=45838#comment-632" title="">Jul 25, 2008</a> | <a href="index.html?p=45838#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hello, the first example worked. But in this example with database, I don&#8217;t know where it goes or where I create the first part: result.create(&#8230;) The others, know: view and controller, but this I don&#8217;t know</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-633">
+
+By <strong><a href='index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="index.html?p=45838#comment-633" title="">Jul 25, 2008</a> | <a href="index.html?p=45838#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Cecci &#8211; good question 🙂  When I did it, I opened up script/console and ran each line one at a time.  You could also place it in a migration if you wish.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-634">
+
+By <strong>Cecci</strong> on <a href="index.html?p=45838#comment-634" title="">Jul 25, 2008</a> | <a href="index.html?p=45838#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hi, It worked! Thank you&#8230; Now I am trying to do the graph of pie, but I do not know that receives |open_flash_chart_object()| I do not know where from are those folders. Might you make clear to me that it receives?</p>
+<p>Sorry, but I don&#8217;t speak english very well</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-635">
+
+By <strong><a href='index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="index.html?p=45838#comment-635" title="">Jul 25, 2008</a> | <a href="index.html?p=45838#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Cecci &#8211; Sorry but I am not exactly clear what you are after, but this example of a pie chart may help &#8211; <a href="2008/7/29/open-flash-chart-ii-pie-chart" rel="nofollow ugc">http://pullmonkey.com/2008/7/29/open-flash-chart-ii-pie-chart</a></p>
+<p>Also, you may want to know what parameters to pass to open_flash_chart_object().  It takes these parameters:<br />
+open_flash_chart_object(width, height, url, use_swfobject, base)<br />
+o  width is the px width of the graph<br />
+o  height is the px height of the graph<br />
+o  url is the path to your graph_code action<br />
+o  use_swfobject is always true, it is legacy and used to determine if you were going to use the javascript swfobject.js or not<br />
+o  base is the path to your open-flash-chart.swf file if it is not right under your RAILS_ROOT/public directory</p>
+<p>The file that contains the code is under:<br />
+RAILS_ROOT/vendor/plugins/open_flash_chart/lib/open_flash_chart_object.rb</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-636">
+
+By <strong>Nathan Leavitt</strong> on <a href="index.html?p=45838#comment-636" title="">Jul 25, 2008</a> | <a href="index.html?p=45838#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hey&#8230; So I have a collection of payments with two different months (Oct 07 and Aug 08).  I&#8217;m trying to get a collection for each month graphed.  Everything is working great except the fact that I have to bars for each month.  Both have the right values but I just need on bar for each month.  Please help.</p>
+<p>&lt;filter:code attributes=lang=&quot;ruby&quot;&gt;<br />
+def graph_code<br />
+    # we will have bars for each student subject combo<br />
+    bars   = []<br />
+    months = []<br />
+    monthly_totals =[]</p>
+<p>    # random colors to chose from<br />
+    colours = [&quot;#459a89&quot;, &quot;#9a89f9&quot;]</p>
+<p>    # the results<br />
+    @payments = Payment.find(:all, :conditions =&gt; {<br />
+      :account_id =&gt; current_account.id,<br />
+      :created_at =&gt; (11.months.ago.beginning_of_month..Time.now)<br />
+      })</p>
+<p>    # group by subject and use subject as the key<br />
+    @payments.group_by(&amp;:month).each do |month, payments|<br />
+      month_total = 0<br />
+      for payment in payments<br />
+        month_total += payment.amount<br />
+      end<br />
+      monthly_totals &lt;&lt; month_total</p>
+<p>      # 3d bar graph, could be any bar graph though<br />
+      bar = Bar3d.new<br />
+      # bar.set_key(month, 3)<br />
+      bar.colour = &quot;#459a89&quot;<br />
+      bar.values = monthly_totals<br />
+      bars &lt;&lt; bar<br />
+      months &lt;&lt; month<br />
+    end<br />
+    @max = monthly_totals.max.to_i + 100 &#8211; (monthly_totals.max.to_i % 100)</p>
+<p>    # some title<br />
+    title = Title.new(&quot;Payments&quot;)</p>
+<p>    # labels along the x axis, just hard code for now, but you would want to dynamically do this<br />
+    x_axis = XAxis.new<br />
+    x_axis.labels = months</p>
+<p>    # go to 100% since we are dealing with test results<br />
+    y_axis = YAxis.new<br />
+    y_axis.set_range(0, @max, @max/10)</p>
+<p>    # setup the graph<br />
+    graph = OpenFlashChart.new<br />
+    graph.bg_colour = &#8216;#ffffff&#8217;<br />
+    graph.title = title<br />
+    graph.x_axis = x_axis<br />
+    graph.y_axis = y_axis<br />
+    graph.elements = bars</p>
+<p>    render :text =&gt; graph.to_s</p>
+<p>  end<br />
+&lt; /filter:code&gt;</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-637">
+
+By <strong>Nathan Leavitt</strong> on <a href="index.html?p=45838#comment-637" title="">Jul 25, 2008</a> | <a href="index.html?p=45838#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Oops&#8230;here it is:</p>
+<p>&lt;filter:code attributes=lang=&quot;ruby&quot;&gt;<br />
+def graph_code<br />
+    # we will have bars for each student subject combo<br />
+    bars   = []<br />
+    months = []<br />
+    monthly_totals =[]</p>
+<p>    # random colors to chose from<br />
+    colours = [&quot;#459a89&quot;, &quot;#9a89f9&quot;]</p>
+<p>    # the results<br />
+    @payments = Payment.find(:all, :conditions =&gt; {<br />
+      :account_id =&gt; current_account.id,<br />
+      :created_at =&gt; (11.months.ago.beginning_of_month..Time.now)<br />
+      })</p>
+<p>    # group by subject and use subject as the key<br />
+    @payments.group_by(&amp;:month).each do |month, payments|<br />
+      month_total = 0<br />
+      for payment in payments<br />
+        month_total += payment.amount<br />
+      end<br />
+      monthly_totals &lt;&lt; month_total</p>
+<p>      # 3d bar graph, could be any bar graph though<br />
+      bar = Bar3d.new<br />
+      # bar.set_key(month, 3)<br />
+      bar.colour = &quot;#459a89&quot;<br />
+      bar.values = monthly_totals<br />
+      bars &lt;&lt; bar<br />
+      months &lt;&lt; month<br />
+    end<br />
+    @max = monthly_totals.max.to_i + 100 &#8211; (monthly_totals.max.to_i % 100)</p>
+<p>    # some title<br />
+    title = Title.new(&quot;Payments&quot;)</p>
+<p>    # labels along the x axis, just hard code for now, but you would want to dynamically do this<br />
+    x_axis = XAxis.new<br />
+    x_axis.labels = months</p>
+<p>    # go to 100% since we are dealing with test results<br />
+    y_axis = YAxis.new<br />
+    y_axis.set_range(0, @max, @max/10)</p>
+<p>    # setup the graph<br />
+    graph = OpenFlashChart.new<br />
+    graph.bg_colour = &#8216;#ffffff&#8217;<br />
+    graph.title = title<br />
+    graph.x_axis = x_axis<br />
+    graph.y_axis = y_axis<br />
+    graph.elements = bars</p>
+<p>    render :text =&gt; graph.to_s</p>
+<p>  end<br />
+&lt;/filter:code&gt;</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-638">
+
+By <strong>Nathan Leavitt</strong> on <a href="index.html?p=45838#comment-638" title="">Jul 25, 2008</a> | <a href="index.html?p=45838#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Actually&#8230; I just solved it.  I guess I only need to make one bar instance. I was assuming I needed to create a bar for each month.  So I pulled out the bar from the loop.  Now it looks like this:</p>
+<p>&lt;filter:code attributes=lang=&quot;ruby&quot;&gt;<br />
+# group by subject and use subject as the key<br />
+    @payments.group_by(&amp;:month).each do |month, payments|<br />
+      month_total = 0<br />
+      for payment in payments<br />
+        month_total += payment.amount<br />
+      end<br />
+      monthly_totals &lt;&lt; month_total</p>
+<p>      months &lt;&lt; month<br />
+    end</p>
+<p>    # 3d bar graph, could be any bar graph though<br />
+    bar = Bar3d.new<br />
+    # bar.set_key(month, 3)<br />
+    bar.colour = &quot;#459a89&quot;<br />
+    bar.values = monthly_totals<br />
+    bars &lt;&lt; bar<br />
+&lt;/filter:code&gt;</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-639">
+
+By <strong><a href='http://www.google.com' rel='external nofollow ugc' class='url'>Ganesh</a></strong> on <a href="index.html?p=45838#comment-639" title="">Jul 25, 2008</a> | <a href="index.html?p=45838#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>{&quot;y_axis&quot;: {&quot;steps&quot;: 10, &quot;max&quot;: 100, &quot;min&quot;: 0}, &quot;title&quot;: {&quot;text&quot;: &quot;Test Results&quot;}, &quot;elements&quot;: [{&quot;text&quot;</p>
+<p>: &quot;Anti-Money Laundering (WestLB)&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;colour&quot;: &quot;#459a89&quot;, &quot;values&quot;: &quot;10&quot;, &quot;font-size&quot;</p>
+<p>: &quot;4&quot;}, {&quot;text&quot;: &quot;Conflicts of Interest&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;colour&quot;: &quot;#9a89f9&quot;, &quot;values&quot;: &quot;12&quot;, &quot;font-size&quot;</p>
+<p>: &quot;4&quot;}, {&quot;text&quot;: &quot;Anti-Money Laundering Training&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;colour&quot;: &quot;#9a89f9&quot;, &quot;values&quot;: &quot;51&quot;</p>
+<p>, &quot;font-size&quot;: &quot;4&quot;}, {&quot;text&quot;: &quot;Compliance Essentials&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;colour&quot;: &quot;#9a89f9&quot;, &quot;values&quot;</p>
+<p>: &quot;50&quot;, &quot;font-size&quot;: &quot;4&quot;}], &quot;bg_colour&quot;: &quot;#ffffcc&quot;}</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-640">
+
+By <strong>Petros</strong> on <a href="index.html?p=45838#comment-640" title="">Jul 25, 2008</a> | <a href="index.html?p=45838#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>I am trying to use this plugin, but the chart is not loading. I did everything i found in these places but nothing.</p>
+<p>downloaded plugin in vendor/plugins<br />
+i copied the flash file to public and the javascript in public/javascripts/&#8230;<br />
+i put &lt;% javascript_include_tag :all %&gt; in the applications layout.</p>
+<p>****Routes*****</p>
+<p>map.with_options :controller =&gt; &#8216;stats&#8217; do |t|<br />
+		t.monthly_graph &#8216;/:id/monthly_graph&#8217;, :action =&gt; &#8216;monthly_graph&#8217;<br />
+		t.yearly_graph &#8216;/:id/yearly_graph&#8217;, :action =&gt; &#8216;yearly_graph&#8217;<br />
+		t.statistics &#8216;/statistics/:id&#8217;, :action =&gt; :show<br />
+end</p>
+<p>*** stats controller ***</p>
+<p>class StatsController &lt; ApplicationController</p>
+<p>	def show<br />
+		@post = Post.find(params[:id])<br />
+		session[:time] ||= Time.now<br />
+		@m_graph = open_flash_chart_object(550, 400, monthly_graph_path(@post.id))</p>
+<p>	end</p>
+<p>	def monthly_graph<br />
+		  @post = Post.find(params[:id])<br />
+			session[:time] ||= Time.now<br />
+			title = Title.new(&quot;Κόστος καταχώρησης ανά μήνα&quot;)</p>
+<p>			media_costs=[]<br />
+			media_titles =[]</p>
+<p>			media_counts=[]</p>
+<p>			Media.find :all, :order =&gt; &quot;title&quot; do |media|<br />
+				costs=[]<br />
+				counts=[]<br />
+				(1..days_in_month(session[:time].year, session[:time].month)).each do |day|<br />
+					costs &lt;&lt; media.trades.sum(:cost, :conditions =&gt; &quot;created_at between &#8216;#{DateTime.new(session[:time].year, session[:time].month, day).to_formatted_s(:db)}&#8217; AND &#8216;#{(DateTime.new(session[:time].year, session[:time].month, day) + 1.day).to_formatted_s(:db)}&#8217;&quot;)<br />
+					counts &lt;&lt; media.trades.count(:conditions =&gt; &quot;created_at between &#8216;#{DateTime.new(session[:time].year, session[:time].month, day).to_formatted_s(:db)}&#8217; AND &#8216;#{(DateTime.new(session[:time].year, session[:time].month, day) + 1.day).to_formatted_s(:db)}&#8217;&quot;)<br />
+				end<br />
+				media_costs &lt;&lt; costs<br />
+				media_counts &lt;&lt; counts<br />
+				media_title &lt;&lt; media.title<br />
+			end</p>
+<p>			lines =[]<br />
+			media_costs.each_with_index do |x, index|<br />
+				lines[index] = LineDot.new<br />
+				lines[index].text = media_titles[index]<br />
+				lines[index].width = 4<br />
+				lines[index].colour = &#8216;#6363AC&#8217;<br />
+				lines[index].values = x<br />
+			end</p>
+<p>		 	y = YAxis.new<br />
+			y.set_range(0,10000,5)</p>
+<p>			x_legend = XLegend.new(&quot;Ημέρες&quot;)<br />
+			x_legend.set_style(&#8216;{font-size: 20px; color: #778877}&#8217;)</p>
+<p>			y_legend = YLegend.new(&quot;Κόστος&quot;)<br />
+			y_legend.set_style(&#8216;{font-size: 20px; color: #770077}&#8217;)</p>
+<p>		  tmp = []<br />
+		  (0..days_in_month(session[:time].year, session[:time].month)).to_a.each do |x|<br />
+		          tmp &lt;&lt; x<br />
+		  end</p>
+<p>			chart = OpenFlashChart.new<br />
+			chart.set_title(title)<br />
+			chart.set_x_legend(x_legend)<br />
+			chart.set_y_legend(y_legend)<br />
+			chart.y_axis = y</p>
+<p>		  lines.each {|x| chart.add_element(x)}</p>
+<p>	    render :text =&gt; chart.to_s</p>
+<p>  end</p>
+<p>*** VIEW show.html.erb ****</p>
+<p>&lt;%= @m_graph %&gt;</p>
+<p>I am using rails 2.2.2 but i tried older version but nothing the flash doesn&#8217;t render</p>
+<p>Can anynone help?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-641">
+
+By <strong><a href='index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="index.html?p=45838#comment-641" title="">Jul 25, 2008</a> | <a href="index.html?p=45838#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Pedros &#8211; Your implementation looks good.  Any javascript errors.  You need the &lt;%= for your javascript_include_tag</p>
+<p>&lt;%= javascript_include_tag :all %&gt;</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-642">
+
+By <strong>Dalf</strong> on <a href="index.html?p=45838#comment-642" title="">Jul 25, 2008</a> | <a href="index.html?p=45838#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hi,<br />
+I tried this code but the chart doesn&#8217;t show up, I just have a &quot;white&quot; screen (no error message).<br />
+Here is my chart.to_s :<br />
+&lt;filter:code attributes=lang=&quot;json&quot;&gt;<br />
+{&quot;y_axis&quot;: {&quot;steps&quot;: 10, &quot;max&quot;: 100, &quot;min&quot;: 0}, &quot;title&quot;: {&quot;text&quot;: &quot;Test Results&quot;}, &quot;elements&quot;: [{&quot;text&quot;: &quot;history&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;colour&quot;: &quot;#459a89&quot;, &quot;font-size&quot;: 3, &quot;values&quot;: [85, 78]}], &quot;x_axis&quot;: {&quot;labels&quot;: {&quot;labels&quot;: [&quot;Jack&quot;]}}, &quot;bg_colour&quot;: &quot;#ffffcc&quot;}<br />
+&lt; /filter:code&gt;</p>
+<p>Is my chart.to_s valid ?</p>
+<p>I also tried with what Ganesh said above =&gt; same result&#8230;</p>
+<p>Does anyone has any idea?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-643">
+
+By <strong>WIehann</strong> on <a href="index.html?p=45838#comment-643" title="">Jul 25, 2008</a> | <a href="index.html?p=45838#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>For some strange reason the values of my y-axis labels doesn&#8217;t display.  I don&#8217;t specifically set any labels for Y-axis like I do for X-axis (x_labels = XAxisLabels.new).  Is this needed for Y-axis or should it display the values set by y.set_range(min, max, step)?</p>
+<p>Thank You.</p>
+<p>&lt;filter:code attributes=lang=&quot;ruby&quot;&gt;<br />
+def progression<br />
+  # person id is<br />
+  if params[:person_id]<br />
+    person_id = params[:person_id].to_i<br />
+  else<br />
+    person_id = session[:loginuser].id<br />
+  end<br />
+  person = Person.find(person_id)</p>
+<p>  # data values (points)<br />
+  quarter = Point.find(:all, :conditions =&gt; {:userlogin_id =&gt; person_id, :year =&gt; &#8217;09&#8217;})<br />
+  points = quarter.map{ |r| r.points }</p>
+<p>  # build line<br />
+  title = Title.new(&quot;Your Progression&quot;)<br />
+  line = Line.new<br />
+  line.set_tooltip(&quot;&lt;br&gt;qty = #val#&quot;)<br />
+  line.width = 2<br />
+  line.colour = &quot;#597AFF&quot;<br />
+  line.dot_size = 5<br />
+  line.values = points</p>
+<p>  x_labels = XAxisLabels.new<br />
+  x_labels.set_vertical()<br />
+  labels = []<br />
+  labels &lt;&lt; XAxisLabel.new(&quot;08&quot;, &#8216;#BBBBE3&#8217;, 16, &#8216;horizontal&#8217;)<br />
+  labels &lt;&lt; XAxisLabel.new(&quot;Q1&quot;, &#8216;#BBBBE3&#8217;, 16, &#8216;horizontal&#8217;)<br />
+  labels &lt;&lt; XAxisLabel.new(&quot;Q2&quot;, &#8216;#BBBBE3&#8217;, 16, &#8216;horizontal&#8217;)<br />
+  labels &lt;&lt; XAxisLabel.new(&quot;Q3&quot;, &#8216;#BBBBE3&#8217;, 16, &#8216;horizontal&#8217;)<br />
+  labels &lt;&lt; XAxisLabel.new(&quot;Q4&quot;, &#8216;#BBBBE3&#8217;, 16, &#8216;horizontal&#8217;)<br />
+  x_labels.labels = labels</p>
+<p>  x = XAxis.new<br />
+  x.set_labels(x_labels)<br />
+  x.colour = &quot;#E8E8E8&quot;<br />
+  x.grid_colour = &quot;#E8E8E8&quot;</p>
+<p>  y = YAxis.new<br />
+  y.colour = &quot;#E8E8E8&quot;<br />
+  y.grid_colour = &quot;#E8E8E8&quot;</p>
+<p>  # This sets min, max and step for y-axis<br />
+  min = data.min { |a, b|  a &lt;=&gt; b }<br />
+  max = data.max { |a, b| a &lt;=&gt; b }<br />
+  step = (max-min)/10<br />
+  min -= step unless min == 0<br />
+  max += step<br />
+  if max == min<br />
+    max = 100<br />
+    min =0<br />
+    step = 20<br />
+  end<br />
+  y.set_range(min, max, step)</p>
+<p>  x_legend = XLegend.new(&quot;Quarters&quot;)<br />
+  x_legend.set_style(&#8216;{font-size: 22px; color: #E3BBD8}&#8217;)</p>
+<p>  y_legend = YLegend.new(&quot;Points&quot;)<br />
+  y_legend.set_style(&#8216;{font-size: 22px; color:#E3BBD8}&#8217;)</p>
+<p>  chart = OpenFlashChart.new<br />
+  chart.bg_colour = &#8216;#FFFFFF&#8217;<br />
+  chart.title = title<br />
+  chart.set_x_legend(x_legend)<br />
+  chart.set_y_legend(y_legend)<br />
+  chart.x_axis = x<br />
+  chart.y_axis = y</p>
+<p>  chart.add_element(line)<br />
+  render :text =&gt; chart.to_s</p>
+<p>end<br />
+&lt;/filter:code&gt;</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-644">
+
+By <strong><a href='index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="index.html?p=45838#comment-644" title="">Jul 25, 2008</a> | <a href="index.html?p=45838#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Dalf &#8211; just for comparison, this is my chart.to_s:<br />
+&lt;filter:code&gt;<br />
+{&quot;y_axis&quot;: {&quot;steps&quot;: 10, &quot;max&quot;: 100, &quot;min&quot;: 0}, &quot;title&quot;: {&quot;text&quot;: &quot;Test Results&quot;}, &quot;elements&quot;: [{&quot;text&quot;: &quot;History&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;colour&quot;: &quot;#459a89&quot;, &quot;values&quot;: [97, 92], &quot;font-size&quot;: 3}, {&quot;text&quot;: &quot;Science&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;colour&quot;: &quot;#9a89f9&quot;, &quot;values&quot;: [85, 57], &quot;font-size&quot;: 3}], &quot;x_axis&quot;: {&quot;labels&quot;: {&quot;labels&quot;: [&quot;Jack&quot;, &quot;Jill&quot;]}}, &quot;bg_colour&quot;: &quot;#ffffcc&quot;}<br />
+&lt;/filter:code&gt;</p>
+<p>Other than your missing label and bar, they look the same to me.  Do you have javascript enabled?  Do you have the swfobject.js loaded? What is the generated HTML for the page?  Did you render :text =&gt; chart.to_s?  If you think of anything let me know.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-645">
+
+By <strong><a href='index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="index.html?p=45838#comment-645" title="">Jul 25, 2008</a> | <a href="index.html?p=45838#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@WIehann &#8211; Maybe your color choice is too faint compared to your background color?  What swf file are you using?  The bundled one or the new one.  Everything looks fine from here.  What is the JSON output (chart.to_s)?  What is the generated HTML?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-646">
+
+By <strong>Enno</strong> on <a href="index.html?p=45838#comment-646" title="">Jul 25, 2008</a> | <a href="index.html?p=45838#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Pedros I had a similar problem when i used a rails helper for the url.</p>
+<p>Assume that you have something like this in your controller action:</p>
+<p>&lt;filter:code attributes=lang=&quot;ruby&quot;&gt;<br />
+# results_bar_chart_path(@result) returns /result/1/bar_chart<br />
+@chart = ofc2(600,300,bar_chart_path(@result))<br />
+&lt; /filter:code&gt;</p>
+<p>The problem is that ofc2 assumes by default to be &quot;/&quot; the base directoy and appends the url to it, which will result in //result/1/bar_chart<br />
+To fix this, just pass an empty string as fourth param like this:</p>
+<p>&lt;filter:code attributes=lang=&quot;ruby&quot;&gt;<br />
+# in your controller action<br />
+# results_bar_chart_path(@result) returns /result/1/bar_chart<br />
+@chart = ofc2(600,300,bar_chart_path(@result),&quot;&quot;)<br />
+&lt; /filter:code&gt;</p>
+<p>You may have already fixed the problem, but I hope that it will help anyone who runs into this problem.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-647">
+
+By <strong>Enno</strong> on <a href="index.html?p=45838#comment-647" title="">Jul 25, 2008</a> | <a href="index.html?p=45838#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>I&#8217;ve got to excuse me because i&#8217;ve mistaken the plugin that is discussed here with this one:<br />
+<a href="http://openflashchart2.sentor.pl/" rel="nofollow ugc">http://openflashchart2.sentor.pl/</a></p>
+<p>Sorry for that.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-648">
+
+By <strong>Andrew</strong> on <a href="index.html?p=45838#comment-648" title="">Jul 25, 2008</a> | <a href="index.html?p=45838#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hi, thanks for the great charts.</p>
+<p>I&#8217;m having trouble with the database example. I&#8217;ve inserted the results into a Mysql database and have a results migration.</p>
+<p>At <a href="http://localhost:3000/test_it/" rel="nofollow ugc">http://localhost:3000/test_it/</a> I get the following;</p>
+<p>Open Flash Chart<br />
+IO ERROR<br />
+Loading test data<br />
+Error #2032<br />
+This is the URL that I tried to open:/test_it/graph_code</p>
+<p>And at <a href="http://localhost:3000/test_it/graph_code" rel="nofollow ugc">http://localhost:3000/test_it/graph_code</a> I get;</p>
+<p>uninitialized constant TestItController::Result<br />
+RAILS_ROOT: /home/andrew/Projects/ofc2_test_app</p>
+<p>Any help is greatly appreciated. I&#8217;ve been working through it for a few days now.</p>
+<p>Andrew</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-649">
+
+By <strong>Ryan</strong> on <a href="index.html?p=45838#comment-649" title="">Jul 25, 2008</a> | <a href="index.html?p=45838#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>I am having trouble displaying data from a database. I am trying to loop through my &quot;Asset_Types table and display the count of the nmber of assets that belong to each asset_type.</p>
+<p>Can someone please point me in the right direction?</p>
+<p>&lt;filter:code attributes=lang=&quot;ruby&quot;&gt;<br />
+def graphcode<br />
+      # we will have bars for each student subject combo<br />
+      bars   = []</p>
+<p>      # random colors to chose from<br />
+      colours = [&quot;#459a89&quot;, &quot;#9a89f9&quot;]</p>
+<p>      # the results<br />
+      results = AssetType.all :order =&gt; &quot;name&quot;</p>
+<p>      results.each do |at|<br />
+        bar = Bar3d.new<br />
+        bar.set_key(at.name, 2) #the number is the fone size<br />
+        bar.values = at.assets.count<br />
+        bars &lt;&lt; bar<br />
+      end</p>
+<p>      # some title<br />
+      title = Title.new(&quot;Assets by Type&quot;)</p>
+<p>      # labels along the x axis, just hard code for now, but you would want to dynamically do this<br />
+      x_axis = XAxis.new<br />
+      x_axis.labels = [&quot;Jack&quot;, &quot;Jill&quot;]</p>
+<p>      # go to 100% since we are dealing with test results<br />
+      y_axis = YAxis.new<br />
+      y_axis.set_range(0, 500, 10)</p>
+<p>      # setup the graph<br />
+      graph = OpenFlashChart.new<br />
+      graph.bg_colour = &#8216;#ffffcc&#8217;<br />
+      graph.title = title<br />
+      graph.x_axis = x_axis<br />
+      graph.y_axis = y_axis<br />
+      graph.elements = bars</p>
+<p>      render :text =&gt; graph.to_s<br />
+    end<br />
+&lt; /filter:code&gt;</p>
+<p>The relevant json that is being generated is:</p>
+<p>{&quot;y_axis&quot;: {&quot;steps&quot;: 10, &quot;max&quot;: 500, &quot;min&quot;: 0}, &quot;title&quot;: {&quot;text&quot;: &quot;Assets by Type&quot;}, &quot;elements&quot;: [{&quot;text&quot;: &quot;Adviser Central&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;values&quot;: 2, &quot;font-size&quot;: 2}, {&quot;text&quot;: &quot;BES Server&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;values&quot;: 0, &quot;font-size&quot;: 2}, {&quot;text&quot;: &quot;Backup&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;values&quot;: 1, &quot;font-size&quot;: 2}, {&quot;text&quot;: &quot;Backup Tape Drive&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;values&quot;: 0, &quot;font-size&quot;: 2}, {&quot;text&quot;: &quot;Blackberry&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;values&quot;: 0, &quot;font-size&quot;: 2}, {&quot;text&quot;: &quot;Camera&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;values&quot;: 0, &quot;font-size&quot;: 2}, {&quot;text&quot;: &quot;DHCP&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;values&quot;: 0, &quot;font-size&quot;: 2}, {&quot;text&quot;: &quot;Database Server&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;values&quot;: 0, &quot;font-size&quot;: 2}, {&quot;text&quot;: &quot;Desktop&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;values&quot;: 136, &quot;font-size&quot;: 2}, {&quot;text&quot;: &quot;Domain Name Hosting&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;values&quot;: 0, &quot;font-size&quot;: 2}, {&quot;text&quot;: &quot;Domain Name Registration&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;values&quot;: 0, &quot;font-size&quot;: 2}, {&quot;text&quot;: &quot;Email Server&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;values&quot;: 0, &quot;font-size&quot;: 2}, {&quot;text&quot;: &quot;Email Server&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;values&quot;: 0, &quot;font-size&quot;: 2}, {&quot;text&quot;: &quot;Fax&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;values&quot;: 0, &quot;font-size&quot;: 2}, {&quot;text&quot;: &quot;Firewall&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;values&quot;: 0, &quot;font-size&quot;: 2}, {&quot;text&quot;: &quot;Internal Domain&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;values&quot;: 0, &quot;font-size&quot;: 2}, {&quot;text&quot;: &quot;Internet Service Provider&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;values&quot;: 0, &quot;font-size&quot;: 2}, {&quot;text&quot;: &quot;Label Printer&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;values&quot;: 0, &quot;font-size&quot;: 2}, {&quot;text&quot;: &quot;Laptop&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;values&quot;: 14, &quot;font-size&quot;: 2}, {&quot;text&quot;: &quot;Leap&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;values&quot;: 0, &quot;font-size&quot;: 2}, {&quot;text&quot;: &quot;Linux&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;values&quot;: 6, &quot;font-size&quot;: 2}, {&quot;text&quot;: &quot;MDF&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;values&quot;: 0, &quot;font-size&quot;: 2}, {&quot;text&quot;: &quot;ManagePoint&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;values&quot;: 0, &quot;font-size&quot;: 2}, {&quot;text&quot;: &quot;Other&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;values&quot;: 7, &quot;font-size&quot;: 2}, {&quot;text&quot;: &quot;Other&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;values&quot;: 0, &quot;font-size&quot;: 2}, {&quot;text&quot;: &quot;Printer&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;values&quot;: 24, &quot;font-size&quot;: 2}, {&quot;text&quot;: &quot;Router/Modem&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;values&quot;: 16, &quot;font-size&quot;: 2}, {&quot;text&quot;: &quot;Scanner&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;values&quot;: 0, &quot;font-size&quot;: 2}, {&quot;text&quot;: &quot;StorageCraft&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;values&quot;: 0, &quot;font-size&quot;: 2}, {&quot;text&quot;: &quot;Switch&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;values&quot;: 0, &quot;font-size&quot;: 2}, {&quot;text&quot;: &quot;Trendmicro Antivirus&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;values&quot;: 0, &quot;font-size&quot;: 2}, {&quot;text&quot;: &quot;Trixbox&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;values&quot;: 0, &quot;font-size&quot;: 2}, {&quot;text&quot;: &quot;UPS&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;values&quot;: 0, &quot;font-size&quot;: 2}, {&quot;text&quot;: &quot;Web Hosting&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;values&quot;: 0, &quot;font-size&quot;: 2}, {&quot;text&quot;: &quot;Website&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;values&quot;: 6, &quot;font-size&quot;: 2}, {&quot;text&quot;: &quot;Windows&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;values&quot;: 29, &quot;font-size&quot;: 2}, {&quot;text&quot;: &quot;iPhone&quot;, &quot;type&quot;: &quot;bar_3d&quot;, &quot;values&quot;: 0, &quot;font-size&quot;: 2}], &quot;x_axis&quot;: {&quot;labels&quot;: {&quot;labels&quot;: [&quot;Jack&quot;, &quot;Jill&quot;]}}, &quot;bg_colour&quot;: &quot;#ffffcc&quot;}</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-1259">
+
+By <strong><a href='http://binarydoodles.blogspot.com/' rel='external nofollow ugc' class='url'>Nithin Bekal</a></strong> on <a href="index.html?p=45838#comment-1259" title="">Sep 22, 2009</a> | <a href="index.html?p=45838#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hi. I wan wondering how I could send some parameters to the graph_code method. For example, if I wanted to send a parameter called &#8216;year&#8217;, I could send it this way:</p>
+<p>@graph = open_flash_chart_object(600, 300,&#8221;/test_it/graph_code?year=2008&#8243;)</p>
+<p>But is there a better way to do this?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-3119">
+
+By <strong>Ting</strong> on <a href="index.html?p=45838#comment-3119" title="">Dec 6, 2009</a> | <a href="index.html?p=45838#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Works locally, but failed on <a href="http://strongsummer.heroku.com/test_it" rel="nofollow ugc">http://strongsummer.heroku.com/test_it</a><br />
+===================================</p>
+<p>This app looks good!</p>
+<p>I implemented 3 graphs ( first graph, pie chart and test result)  on 1 page. </p>
+<p>Runs fine locally on rails. But test result gave an error deployed on heroku (The other 2 graph looks fine.) here :- <a href="http://strongsummer.heroku.com/test_it" rel="nofollow ugc">http://strongsummer.heroku.com/test_it</a></p>
+<p>Error message :<br />
+Open Flash Chart<br />
+IO ERROR<br />
+Loading test data<br />
+Error #2032<br />
+This is the URL that I tried to open:/test_it/graph_three</p>
+<p>I&#8217;d suspect this may be a flash link to or database error. I changed a few parameters in database.yml but to no avail.  (Now i am just sticking to what i know is the best working config here from previous.) :-</p>
+<p>development:<br />
+  adapter: sqlite3<br />
+  database: db/development.sqlite3<br />
+  pool: 5<br />
+  timeout: 5000</p>
+<p>test:<br />
+  adapter: sqlite3<br />
+  database: db/test.sqlite3<br />
+  pool: 5<br />
+  timeout: 5000</p>
+<p>production:<br />
+  adapter: postgresql<br />
+  database: db/development.sqlite3<br />
+  pool: 5<br />
+  timeout: 5000</p>
+<p>Basically, i did a<br />
+&gt; rake db:setup<br />
+&gt; rake db:migrate<br />
+&gt; rake db:seed</p>
+<p>and the git and heroku commands.</p>
+<p>Any advice would be good!</p>
+<p>Thanks!</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-3121">
+
+By <strong>Ting</strong> on <a href="index.html?p=45838#comment-3121" title="">Dec 6, 2009</a> | <a href="index.html?p=45838#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>These changes have the same result.</p>
+<p>development:<br />
+  adapter: sqlite3<br />
+  database: db/allresults.db<br />
+  pool: 5<br />
+  timeout: 5000</p>
+<p>production:<br />
+  adapter: postgresql<br />
+  database: db/allresults.db<br />
+  pool: 5<br />
+  timeout: 5000</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-3122">
+
+By <strong>charlie</strong> on <a href="index.html?p=45838#comment-3122" title="">Dec 6, 2009</a> | <a href="index.html?p=45838#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>What&#8217;s the error in the log?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-3125">
+
+By <strong>Ting</strong> on <a href="index.html?p=45838#comment-3125" title="">Dec 6, 2009</a> | <a href="index.html?p=45838#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Thanks for asking charlie!</p>
+<p>The problem is solved in 2 steps :-<br />
+&gt; gem install taps<br />
+&gt; heroku db:push (As advised by heroku staff)</p>
+<p><a href="http://strongsummer.heroku.com/test_it" rel="nofollow ugc">http://strongsummer.heroku.com/test_it</a> is working fine now 🙂</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18272">
+
+By <strong>xue</strong> on <a href="index.html?p=45838#comment-18272" title="">Jan 13, 2011</a> | <a href="index.html?p=45838#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hi,<br />
+how are you setting the tooltip like that (with the xlabel and value)? Is it automatic? I&#8217;m just making a simple bar chart and #x_label# is not working, so I was wondering if there is a workaround. Thanks</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-19521">
+
+By <strong><a href='http://www.google.com/' rel='external nofollow ugc' class='url'>Constance</a></strong> on <a href="index.html?p=45838#comment-19521" title="">Sep 23, 2012</a> | <a href="index.html?p=45838#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Learnnig a ton from these neat articles.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		</ol>
+	
+	
+	
+
+	<p id="comments-closed">Sorry, comments for this entry are closed at this time.</p>
+</div>
+</div><!-- Post -->
+
+		        
+  
+
+	
+</div><!-- Content -->
+
+</div><!-- LeftColumn -->
+
+<div id="c2">
+
+   
+    <div id="sidebar">
+
+<div id="subscribe">
+<a href="feed/index.html"><img src="wp-content/themes/simple&#32;paper/images/rss.gif" alt="RSS-FEED" border="0" id="rss" /></a>
+<a href="feed/index.html">subscribe to the feed</a><br clear="all" />
+</div><!-- subscribe rss -->
+
+<div id="topsearch">
+<form action="index.html" method="post">
+<input type="text" value="Search..." name="s" id="ls" class="searchfield" onfocus="if (this.value == 'Search...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search...';}" />
+<input type="image" src="wp-content/themes/simple&#32;paper/images/click.gif" id="submit" />
+</form>
+<br clear="all" />
+<br clear="all" />
+</div>
+    
+    	<ul>
+	<li id="tag_cloud-2" class="widget widget_tag_cloud"><h2 class="widgettitle">Tags</h2>
+<div class="tagcloud"><a href="tag/net/index.html" class="tag-cloud-link tag-link-166 tag-link-position-1" style="font-size: 8pt;" aria-label=".net (2 items)">.net</a>
+<a href="tag/activerecord/index.html" class="tag-cloud-link tag-link-54 tag-link-position-2" style="font-size: 8pt;" aria-label="activerecord (2 items)">activerecord</a>
+<a href="tag/api/index.html" class="tag-cloud-link tag-link-220 tag-link-position-3" style="font-size: 10.40625pt;" aria-label="api (4 items)">api</a>
+<a href="tag/biking/index.html" class="tag-cloud-link tag-link-219 tag-link-position-4" style="font-size: 10.40625pt;" aria-label="biking (4 items)">biking</a>
+<a href="tag/business/index.html" class="tag-cloud-link tag-link-213 tag-link-position-5" style="font-size: 8pt;" aria-label="business (2 items)">business</a>
+<a href="tag/c/index.html" class="tag-cloud-link tag-link-33 tag-link-position-6" style="font-size: 10.40625pt;" aria-label="c++ (4 items)">c++</a>
+<a href="tag/charts/index.html" class="tag-cloud-link tag-link-42 tag-link-position-7" style="font-size: 18.171875pt;" aria-label="charts (25 items)">charts</a>
+<a href="tag/cms/index.html" class="tag-cloud-link tag-link-60 tag-link-position-8" style="font-size: 12.046875pt;" aria-label="CMS (6 items)">CMS</a>
+<a href="tag/curb/index.html" class="tag-cloud-link tag-link-190 tag-link-position-9" style="font-size: 8pt;" aria-label="curb (2 items)">curb</a>
+<a href="tag/curl/index.html" class="tag-cloud-link tag-link-120 tag-link-position-10" style="font-size: 8pt;" aria-label="curl (2 items)">curl</a>
+<a href="tag/dynamic/index.html" class="tag-cloud-link tag-link-56 tag-link-position-11" style="font-size: 8pt;" aria-label="dynamic (2 items)">dynamic</a>
+<a href="tag/ece231/index.html" class="tag-cloud-link tag-link-34 tag-link-position-12" style="font-size: 10.40625pt;" aria-label="ece231 (4 items)">ece231</a>
+<a href="tag/editor/index.html" class="tag-cloud-link tag-link-61 tag-link-position-13" style="font-size: 11.28125pt;" aria-label="editor (5 items)">editor</a>
+<a href="tag/error/index.html" class="tag-cloud-link tag-link-46 tag-link-position-14" style="font-size: 9.3125pt;" aria-label="error (3 items)">error</a>
+<a href="tag/flash/index.html" class="tag-cloud-link tag-link-41 tag-link-position-15" style="font-size: 17.84375pt;" aria-label="flash (23 items)">flash</a>
+<a href="tag/fun/index.html" class="tag-cloud-link tag-link-23 tag-link-position-16" style="font-size: 11.28125pt;" aria-label="fun (5 items)">fun</a>
+<a href="tag/gems/index.html" class="tag-cloud-link tag-link-44 tag-link-position-17" style="font-size: 8pt;" aria-label="gems (2 items)">gems</a>
+<a href="tag/graphs/index.html" class="tag-cloud-link tag-link-52 tag-link-position-18" style="font-size: 18.390625pt;" aria-label="graphs (26 items)">graphs</a>
+<a href="tag/httpi/index.html" class="tag-cloud-link tag-link-191 tag-link-position-19" style="font-size: 8pt;" aria-label="httpi (2 items)">httpi</a>
+<a href="tag/java/index.html" class="tag-cloud-link tag-link-177 tag-link-position-20" style="font-size: 9.3125pt;" aria-label="java (3 items)">java</a>
+<a href="tag/javascript/index.html" class="tag-cloud-link tag-link-215 tag-link-position-21" style="font-size: 10.40625pt;" aria-label="Javascript (4 items)">Javascript</a>
+<a href="tag/linux/index.html" class="tag-cloud-link tag-link-221 tag-link-position-22" style="font-size: 8pt;" aria-label="Linux (2 items)">Linux</a>
+<a href="tag/macromovers/index.html" class="tag-cloud-link tag-link-66 tag-link-position-23" style="font-size: 8pt;" aria-label="macromovers (2 items)">macromovers</a>
+<a href="tag/mirah/index.html" class="tag-cloud-link tag-link-176 tag-link-position-24" style="font-size: 8pt;" aria-label="mirah (2 items)">mirah</a>
+<a href="tag/ofc/index.html" class="tag-cloud-link tag-link-105 tag-link-position-25" style="font-size: 8pt;" aria-label="OFC (2 items)">OFC</a>
+<a href="tag/open-flash-chart/index.html" class="tag-cloud-link tag-link-40 tag-link-position-26" style="font-size: 18.609375pt;" aria-label="open flash chart (27 items)">open flash chart</a>
+<a href="tag/php/index.html" class="tag-cloud-link tag-link-216 tag-link-position-27" style="font-size: 9.3125pt;" aria-label="php (3 items)">php</a>
+<a href="tag/plugin/index.html" class="tag-cloud-link tag-link-65 tag-link-position-28" style="font-size: 12.59375pt;" aria-label="plugin (7 items)">plugin</a>
+<a href="tag/plugins/index.html" class="tag-cloud-link tag-link-218 tag-link-position-29" style="font-size: 9.3125pt;" aria-label="plugins (3 items)">plugins</a>
+<a href="tag/prog/index.html" class="tag-cloud-link tag-link-35 tag-link-position-30" style="font-size: 9.3125pt;" aria-label="prog (3 items)">prog</a>
+<a href="tag/project/index.html" class="tag-cloud-link tag-link-47 tag-link-position-31" style="font-size: 10.40625pt;" aria-label="project (4 items)">project</a>
+<a href="tag/rails/index.html" class="tag-cloud-link tag-link-210 tag-link-position-32" style="font-size: 20.90625pt;" aria-label="rails (45 items)">rails</a>
+<a href="tag/ruby/index.html" class="tag-cloud-link tag-link-211 tag-link-position-33" style="font-size: 22pt;" aria-label="ruby (57 items)">ruby</a>
+<a href="tag/ruby-on-rails/index.html" class="tag-cloud-link tag-link-43 tag-link-position-34" style="font-size: 20.359375pt;" aria-label="ruby on rails (40 items)">ruby on rails</a>
+<a href="tag/select-boxes/index.html" class="tag-cloud-link tag-link-57 tag-link-position-35" style="font-size: 8pt;" aria-label="select boxes (2 items)">select boxes</a>
+<a href="tag/simple/index.html" class="tag-cloud-link tag-link-62 tag-link-position-36" style="font-size: 10.40625pt;" aria-label="simple (4 items)">simple</a>
+<a href="tag/simplecms/index.html" class="tag-cloud-link tag-link-214 tag-link-position-37" style="font-size: 11.28125pt;" aria-label="SimpleCMS (5 items)">SimpleCMS</a>
+<a href="tag/skizmo/index.html" class="tag-cloud-link tag-link-102 tag-link-position-38" style="font-size: 10.40625pt;" aria-label="skizmo (4 items)">skizmo</a>
+<a href="tag/software/index.html" class="tag-cloud-link tag-link-48 tag-link-position-39" style="font-size: 8pt;" aria-label="software (2 items)">software</a>
+<a href="tag/spreadsheet/index.html" class="tag-cloud-link tag-link-45 tag-link-position-40" style="font-size: 8pt;" aria-label="spreadsheet (2 items)">spreadsheet</a>
+<a href="tag/tutorial/index.html" class="tag-cloud-link tag-link-50 tag-link-position-41" style="font-size: 16.75pt;" aria-label="tutorial (18 items)">tutorial</a>
+<a href="tag/ubuntu/index.html" class="tag-cloud-link tag-link-150 tag-link-position-42" style="font-size: 8pt;" aria-label="ubuntu (2 items)">ubuntu</a>
+<a href="tag/vin/index.html" class="tag-cloud-link tag-link-119 tag-link-position-43" style="font-size: 12.59375pt;" aria-label="VIN (7 items)">VIN</a>
+<a href="tag/vin-api/index.html" class="tag-cloud-link tag-link-159 tag-link-position-44" style="font-size: 12.046875pt;" aria-label="vin api (6 items)">vin api</a>
+<a href="tag/xml/index.html" class="tag-cloud-link tag-link-165 tag-link-position-45" style="font-size: 9.3125pt;" aria-label="xml (3 items)">xml</a></div>
+</li>
+<li id="categories-524386351" class="widget widget_categories"><h2 class="widgettitle">Topics</h2>
+
+			<ul>
+					<li class="cat-item cat-item-179"><a href="category/android/index.html">Android</a>
+</li>
+	<li class="cat-item cat-item-118"><a href="category/api/index.html">api</a>
+</li>
+	<li class="cat-item cat-item-67"><a href="category/biking/index.html">biking</a>
+</li>
+	<li class="cat-item cat-item-37"><a href="category/blog/index.html">blog</a>
+</li>
+	<li class="cat-item cat-item-27"><a href="category/business/index.html">business</a>
+</li>
+	<li class="cat-item cat-item-32"><a href="category/c-c/index.html">C / C++</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="category/development/index.html">development</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="category/games/index.html">games</a>
+</li>
+	<li class="cat-item cat-item-139"><a href="category/graphics/index.html">Graphics</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="category/home/index.html">Home</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="category/ie-hacks/index.html">IE hacks</a>
+</li>
+	<li class="cat-item cat-item-31"><a href="category/javascript/index.html">Javascript</a>
+</li>
+	<li class="cat-item cat-item-149"><a href="category/linux/index.html">Linux</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="category/me/index.html">me</a>
+</li>
+	<li class="cat-item cat-item-26"><a href="category/open-flash-chart-graphs/index.html">Open Flash Chart Graphs</a>
+</li>
+	<li class="cat-item cat-item-29"><a href="category/opengl/index.html">opengl</a>
+</li>
+	<li class="cat-item cat-item-36"><a href="category/php/index.html">php</a>
+</li>
+	<li class="cat-item cat-item-51"><a href="category/plugins/index.html">plugins</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="category/projects/index.html">projects</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="category/rails/index.html">rails</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="category/railsconf/index.html">railsconf</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="category/ruby/index.html">ruby</a>
+</li>
+	<li class="cat-item cat-item-28"><a href="category/simplecms/index.html">SimpleCMS</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="category/tutorials/index.html">tutorials</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="category/uncategorized/index.html">Uncategorized</a>
+</li>
+			</ul>
+
+			</li>
+
+		<li id="recent-posts-2" class="widget widget_recent_entries">
+		<h2 class="widgettitle">Recent Posts</h2>
+
+		<ul>
+											<li>
+					<a href="index.html?p=57726">Dynamic Select Boxes &#8211; Ruby on Rails 3</a>
+									</li>
+											<li>
+					<a href="index.html?p=57715">VIN API &#8211; Do you know about the complete data set?</a>
+									</li>
+											<li>
+					<a href="index.html?p=57712">Using Ruby to read from a MagTek USB Card Reader</a>
+									</li>
+											<li>
+					<a href="index.html?p=57708">Signature Pad in Linux</a>
+									</li>
+											<li>
+					<a href="index.html?p=57705">Using HTTPI with Curb to do multipart file uploads with spnego</a>
+									</li>
+					</ul>
+
+		</li>
+<li id="recent-comments-2" class="widget widget_recent_comments"><h2 class="widgettitle">Recent Comments</h2>
+<ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">`Drew</span> on <a href="2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/index.html#comment-24291">Dynamic Select Boxes &#8211; Ruby on Rails 3</a></li><li class="recentcomments"><span class="comment-author-link">Bardach</span> on <a href="2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/index.html#comment-24290">Dynamic Select Boxes &#8211; Ruby on Rails 3</a></li><li class="recentcomments"><span class="comment-author-link">Bardach</span> on <a href="2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/index.html#comment-24289">Dynamic Select Boxes &#8211; Ruby on Rails 3</a></li><li class="recentcomments"><span class="comment-author-link">Dar_bok</span> on <a href="2007/04/30/how-i-got-gta-san-andreas-to-work-with-a-crappy-os-vista/comment-page-2/index.html#comment-20844">How I got GTA San Andreas to Work with (a crappy OS) Vista</a></li><li class="recentcomments"><span class="comment-author-link">Anirudha Pendakur</span> on <a href="2012/07/25/using-httpi-with-curb-to-do-multipart-file-uploads-with-spnego/comment-page-1/index.html#comment-19583">Using HTTPI with Curb to do multipart file uploads with spnego</a></li></ul></li>
+<li id="archives-2" class="widget widget_archive"><h2 class="widgettitle">Archives</h2>
+
+			<ul>
+					<li><a href='2012/08/index.html'>August 2012</a></li>
+	<li><a href='2012/07/index.html'>July 2012</a></li>
+	<li><a href='2012/05/index.html'>May 2012</a></li>
+	<li><a href='2012/04/index.html'>April 2012</a></li>
+	<li><a href='2012/03/index.html'>March 2012</a></li>
+	<li><a href='2011/11/index.html'>November 2011</a></li>
+	<li><a href='2011/10/index.html'>October 2011</a></li>
+	<li><a href='2011/05/index.html'>May 2011</a></li>
+	<li><a href='2011/03/index.html'>March 2011</a></li>
+	<li><a href='2011/02/index.html'>February 2011</a></li>
+	<li><a href='2011/01/index.html'>January 2011</a></li>
+	<li><a href='2010/11/index.html'>November 2010</a></li>
+	<li><a href='2010/09/index.html'>September 2010</a></li>
+	<li><a href='2010/04/index.html'>April 2010</a></li>
+	<li><a href='2010/02/index.html'>February 2010</a></li>
+	<li><a href='2010/01/index.html'>January 2010</a></li>
+	<li><a href='2009/12/index.html'>December 2009</a></li>
+	<li><a href='2009/10/index.html'>October 2009</a></li>
+	<li><a href='2009/09/index.html'>September 2009</a></li>
+	<li><a href='2009/08/index.html'>August 2009</a></li>
+	<li><a href='2009/04/index.html'>April 2009</a></li>
+	<li><a href='2009/03/index.html'>March 2009</a></li>
+	<li><a href='2009/02/index.html'>February 2009</a></li>
+	<li><a href='2009/01/index.html'>January 2009</a></li>
+	<li><a href='2008/10/index.html'>October 2008</a></li>
+	<li><a href='2008/09/index.html'>September 2008</a></li>
+	<li><a href='2008/08/index.html'>August 2008</a></li>
+	<li><a href='2008/07/index.html'>July 2008</a></li>
+	<li><a href='2008/04/index.html'>April 2008</a></li>
+	<li><a href='2008/03/index.html'>March 2008</a></li>
+	<li><a href='2008/02/index.html'>February 2008</a></li>
+	<li><a href='2008/01/index.html'>January 2008</a></li>
+	<li><a href='2007/12/index.html'>December 2007</a></li>
+	<li><a href='2007/10/index.html'>October 2007</a></li>
+	<li><a href='2007/09/index.html'>September 2007</a></li>
+	<li><a href='2007/08/index.html'>August 2007</a></li>
+	<li><a href='2007/06/index.html'>June 2007</a></li>
+	<li><a href='2007/05/index.html'>May 2007</a></li>
+	<li><a href='2007/04/index.html'>April 2007</a></li>
+			</ul>
+
+			</li>
+	</ul>
+    
+    </div><!-- Sidebar -->
+
+</div><!-- Rightcolumn -->
+
+
+
+<br clear="all" />
+
+<div id="footer">
+<p>Copyright 2009, powered by <a href="http://www.wordpress.org/">WordPress</a></p>
+</div><!-- Footer -->
+
+</div><!-- Wrapper -->
+
+<br clear="all" />
+</div><!-- Container -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3308745-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

@@ -1,0 +1,1356 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>PullMonkey Blog  &raquo; Blog Archive   &raquo; Open Flash Chart II &#8211; OFC Object Creators</title>
+<meta name="generator" content="WordPress 5.6" /> <!-- leave this for stats -->
+<link rel="stylesheet" href="wp-content/themes/simple&#32;paper/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="wp-content/themes/simple&#32;paper/code_highlighter.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="PullMonkey Blog RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="http://pullmonkey.com/xmlrpc.php" />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="PullMonkey Blog &raquo; Open Flash Chart II &#8211; OFC Object Creators Comments Feed" href="2009/01/12/open-flash-chart-ii-ofc-object-creators/feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/pullmonkey.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='wp-includes/css/dist/block-library/style.min.css?ver=5.6' type='text/css' media='all' />
+<link rel="https://api.w.org/" href="wp-json/index.html" /><link rel="alternate" type="application/json" href="wp-json/wp/v2/posts/51580" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://pullmonkey.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.6" />
+<link rel="canonical" href="index.html?p=51580" />
+<link rel='shortlink' href='index.html?p=51580' />
+<link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed?url=http:%252F%252Fpullmonkey.com%252F2009%252F01%252F12%252Fopen-flash-chart-ii-ofc-object-creators%252F" />
+<link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed?url=http:%252F%252Fpullmonkey.com%252F2009%252F01%252F12%252Fopen-flash-chart-ii-ofc-object-creators%252F&amp;format=xml" />
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style></head>
+<body>
+
+<div id="container">
+
+<div id="menu">
+
+        <ul id="nav">
+        <li class="current_page_item"><a href="index.html">Home</a></li>
+                       	</ul>
+
+</div><!-- Menu -->
+
+<div id="wrapper">
+
+<div id="c1">
+
+<h1 id="logo"><a href="index.html">PullMonkey Blog</a></h1>
+<h2 id="description"></h2>
+
+<div id="content">
+
+
+<div class="post" id="post-51580">
+
+<div class="date">12 <span>Jan</span></div>
+
+<h2><a href="index.html?p=51580" rel="bookmark" title="Permanent Link to Open Flash Chart II &#8211; OFC Object Creators">Open Flash Chart II &#8211; OFC Object Creators</a></h2><br clear="all" />
+
+<p>Thought I would try and make things a little more flexible.  In doing so, two new OFC Object creators came to life.  You all may recall the very basic: <b></p>
+<pre>open_flash_chart_object(600,300,'/test_it/graph_test')</pre>
+<p></b><br />
+And maybe not, well either way, I am going to describe its functionality here plus the functionality of the two new object creators.</p>
+<h2 style="color:#557799">open_flash_chart_object()</h2>
+<h3>Usage:</h3>
+<p>This method returns only the graph html:</p>
+<pre>@graph = open_flash_chart_object(....)</pre>
+<h3>Arguments</h3>
+<ul>
+<li>width (<b>required</b>)</li>
+<li>height (<b>required</b>)</li>
+<li>url (<b>required</b>)</li>
+<li>use_swfobject (optional and defaults to true)</li>
+<li>base (optional and defaults to "/")</li>
+<li>swf_file_name (optional and defaults to "open-flash-chart.swf")</li>
+</ul>
+<h2 style="color:#557799">open_flash_chart_object_and_div_name()</h2>
+<h3>Usage:</h3>
+<p>This method will return, not only the html for the graph but also the div_name for use with javascript manipulation:</p>
+<pre>@graph, @div_name = open_flash_chart_object_and_div_name(...)</pre>
+<h3>Arguments</h3>
+<ul>
+<li>width (<b>required</b>)</li>
+<li>height (<b>required</b>)</li>
+<li>url (<b>required</b>)</li>
+<li>use_swfobject (optional and defaults to true)</li>
+<li>base (optional and defaults to "/")</li>
+<li>swf_file_name (optional and defaults to "open-flash-chart.swf")</li>
+</ul>
+<h2 style="color:#557799">open_flash_chart_object_from_hash()</h2>
+<h3>Usage:</h3>
+<p>This method will return the graph html, but gives you absolute control over quite a few things, most importantly div_name.</p>
+<pre>@graph = open_flash_chart_object_from_hash(...)</pre>
+<h3>Additional Usage:</h3>
+<pre>@graph = open_flash_chart_object_from_hash("/test_it/graph_code", :div_name => 'my_div_name', :width => 600)</pre>
+<pre>@graph = open_flash_chart_object_from_hash("/test_it/graph_code", :base => '/projects', :height => 600)</pre>
+<h3>Arguments</h3>
+<ul>
+<li>url (<b>required</b>)</li>
+<li>options (optional)
+<ul>
+<li>div_name (defaults to "flash_content_[random string]")</li>
+<li>base (defaults to "/")</li>
+<li>swf_file_name (defaults to "open-flash-chart.swf")</li>
+<li>width (defaults to 550)</li>
+<li>height (defaults to 300)</li>
+<li>protocol (defaults to "http")</li>
+<li>obj_id (defaults to "chart_[random string]")</li>
+</ul>
+</li>
+</ul>
+<p>
+Well, there it is, good luck and have fun.</p>
+
+<br />
+
+<div class="meta">
+<span class="note">Filed under: <a href="category/development/index.html" rel="category tag">development</a>, <a href="category/home/index.html" rel="category tag">Home</a>, <a href="category/open-flash-chart-graphs/index.html" rel="category tag">Open Flash Chart Graphs</a>, <a href="category/projects/index.html" rel="category tag">projects</a>, <a href="category/rails/index.html" rel="category tag">rails</a>, <a href="category/ruby/index.html" rel="category tag">ruby</a>, <a href="category/tutorials/index.html" rel="category tag">tutorials</a></span>
+<span class="tags">Tags: <a href="tag/charts/index.html" rel="tag">charts</a>, <a href="tag/flash/index.html" rel="tag">flash</a>, <a href="tag/graphs/index.html" rel="tag">graphs</a>, <a href="tag/open-flash-chart/index.html" rel="tag">open flash chart</a>, <a href="tag/rails/index.html" rel="tag">rails</a>, <a href="tag/ruby/index.html" rel="tag">ruby</a>, <a href="tag/ruby-on-rails/index.html" rel="tag">ruby on rails</a></span><br /></div><!--Meta -->
+
+
+<!-- You can start editing here. -->
+
+<div id="commentsbox">
+
+
+
+<h2 id="comments">
+	 <br /> 28 Responses 
+	  to &#8220;Open Flash Chart II &#8211; OFC Object Creators&#8221;</h2>
+	
+	<ol class="commentlist">
+		
+
+<li class="odd" id="comment-905">
+
+By <strong>diarmuid</strong> on <a href="index.html?p=51580#comment-905" title="">Jan 12, 2009</a> | <a href="index.html?p=51580#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hi</p>
+<p> Unsure where else to post any questions about the OFC I figured I would try here. If I am wrong please point me to the correct location.</p>
+<p>I am a beginner but I have a basic test_it controller up and running. When I tried to integrate it into some existing code I came up against some issues.</p>
+<p>First all errors now see to result in</p>
+<p>&quot;undefined method `rewrite&#8217; for &quot;%2Fhome%2Fgraph_code&quot;:String&quot;</p>
+<p>It took me a while to figure out that the error was some where else but once I figured out that I was able to debug.</p>
+<p>It seems in my code I had some non-RESTful link_to statements which were previously working:</p>
+<p>&lt;filter:code attributes=lang=&quot;ruby&quot;&gt;<br />
+&lt;%= link_to &#8216;Add workout&#8217;, {:controller =&gt; &#8216;traininglogs&#8217; , :action =&gt; :new } %&gt;<br />
+&lt; /filter:code&gt;</p>
+<p>Once I changed this to :<br />
+&lt;filter:code attributes=lang=&quot;ruby&quot;&gt;<br />
+&lt;%= link_to &#8216;Add workout&#8217;, new_traininglog_path %&gt;<br />
+&lt; /filter:code&gt;</p>
+<p>This error disappeared. Why would the former syntax be an issue?</p>
+<p>Unfortunately this did not completely fix my code. I also had a similar syntax but inside a loop</p>
+<p>&lt;filter:code attributes=lang=&quot;ruby&quot;&gt;<br />
+&lt;% @traininglogs.sort_by{ |i| i[:dateandtime]}.reverse.each do |traininglog| %&gt;<br />
+&lt;tr&gt;<br />
+  &lt;td&gt;&lt;%=h traininglog.duration %&gt;&lt;/td&gt;<br />
+  &lt;td&gt;&lt;%= link_to &#8216;Edit&#8217;, {:controller =&gt; &#8216;traininglogs&#8217; , :action =&gt; :edit , :id =&gt; traininglog.id } %&gt;&lt;/td&gt;<br />
+&lt;/tr&gt;<br />
+&lt;% end %&gt;<br />
+&lt; /filter:code&gt;</p>
+<p>I cannot for the life of me figure out how to &quot;correct&quot; this syntax.<br />
+I tried</p>
+<p>&lt;filter:code attributes=lang=&quot;ruby&quot;&gt;<br />
+  &lt;td&gt;&lt;%= link_to &#8216;Edit&#8217;, edit_traininglog_path  %&gt;&lt;/td&gt;<br />
+&lt; /filter:code&gt;<br />
+and 101 other combinations but I cannot get remove the error (same as above)</p>
+<p>Any ideas or thoughts?</p>
+<p>Good work on the code !</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-906">
+
+By <strong><a href='index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="index.html?p=51580#comment-906" title="">Jan 12, 2009</a> | <a href="index.html?p=51580#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@diarmuid &#8211; this is fine &#8211; I am not sure this is OFC related, but nevertheless &#8211;</p>
+<p>The basics:<br />
+1) What version of rails ?<br />
+2) Are you using the latest version of OFC II ?</p>
+<p>As for the edit_traininglog_path(), you need to pass in the object that will require editing &#8211; edit_traininglog_path(traininglog).</p>
+<p>I am not sure how the OFC plugin would be effecting this?  Can you post the output of rake routes?</p>
+<p>Also, when you use filter:code, make sure to remove the space between &lt; and /filter:code&gt; at the end of your code blocks 😉</p>
+<p>Good luck, let me know what you find.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-907">
+
+By <strong>diarmuid</strong> on <a href="index.html?p=51580#comment-907" title="">Jan 12, 2009</a> | <a href="index.html?p=51580#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Charlie</p>
+<p> I am using Rails 2.2.2 on Mac OSX 10.5.6. I installed OFC from git 2 days ago and according to the readme it&#8217;s &quot;OpenFlashChart  Version 2.0.0  11/14/2008 &quot;</p>
+<p>I was passing the traininglog as an argument but that didn&#8217;t work either.</p>
+<p>The routes is one area that I am not confident in so it&#8217;s quite possible the error is there</p>
+<p>&lt;filter:code&gt;<br />
+$ rake routes<br />
+(in /Users/diarmuid/Documents/Rails/coachconnect)<br />
+                      root        /                                {:controller=&gt;&quot;home&quot;, :action=&gt;&quot;index&quot;}<br />
+                    logout        /logout                          {:controller=&gt;&quot;sessions&quot;, :action=&gt;&quot;destroy&quot;}<br />
+                     login        /login                           {:controller=&gt;&quot;sessions&quot;, :action=&gt;&quot;new&quot;}<br />
+                  register        /register                        {:controller=&gt;&quot;users&quot;, :action=&gt;&quot;create&quot;}<br />
+                    signup        /signup                          {:controller=&gt;&quot;users&quot;, :action=&gt;&quot;new&quot;}<br />
+                     users GET    /users                           {:controller=&gt;&quot;users&quot;, :action=&gt;&quot;index&quot;}<br />
+           formatted_users GET    /users.:format                   {:controller=&gt;&quot;users&quot;, :action=&gt;&quot;index&quot;}<br />
+                           POST   /users                           {:controller=&gt;&quot;users&quot;, :action=&gt;&quot;create&quot;}<br />
+                           POST   /users.:format                   {:controller=&gt;&quot;users&quot;, :action=&gt;&quot;create&quot;}<br />
+                  new_user GET    /users/new                       {:controller=&gt;&quot;users&quot;, :action=&gt;&quot;new&quot;}<br />
+        formatted_new_user GET    /users/new.:format               {:controller=&gt;&quot;users&quot;, :action=&gt;&quot;new&quot;}<br />
+                 edit_user GET    /users/:id/edit                  {:controller=&gt;&quot;users&quot;, :action=&gt;&quot;edit&quot;}<br />
+       formatted_edit_user GET    /users/:id/edit.:format          {:controller=&gt;&quot;users&quot;, :action=&gt;&quot;edit&quot;}<br />
+                      user GET    /users/:id                       {:controller=&gt;&quot;users&quot;, :action=&gt;&quot;show&quot;}<br />
+            formatted_user GET    /users/:id.:format               {:controller=&gt;&quot;users&quot;, :action=&gt;&quot;show&quot;}<br />
+                           PUT    /users/:id                       {:controller=&gt;&quot;users&quot;, :action=&gt;&quot;update&quot;}<br />
+                           PUT    /users/:id.:format               {:controller=&gt;&quot;users&quot;, :action=&gt;&quot;update&quot;}<br />
+                           DELETE /users/:id                       {:controller=&gt;&quot;users&quot;, :action=&gt;&quot;destroy&quot;}<br />
+                           DELETE /users/:id.:format               {:controller=&gt;&quot;users&quot;, :action=&gt;&quot;destroy&quot;}<br />
+                   session POST   /session                         {:controller=&gt;&quot;sessions&quot;, :action=&gt;&quot;create&quot;}<br />
+         formatted_session POST   /session.:format                 {:controller=&gt;&quot;sessions&quot;, :action=&gt;&quot;create&quot;}<br />
+               new_session GET    /session/new                     {:controller=&gt;&quot;sessions&quot;, :action=&gt;&quot;new&quot;}<br />
+     formatted_new_session GET    /session/new.:format             {:controller=&gt;&quot;sessions&quot;, :action=&gt;&quot;new&quot;}<br />
+              edit_session GET    /session/edit                    {:controller=&gt;&quot;sessions&quot;, :action=&gt;&quot;edit&quot;}<br />
+    formatted_edit_session GET    /session/edit.:format            {:controller=&gt;&quot;sessions&quot;, :action=&gt;&quot;edit&quot;}<br />
+                           GET    /session                         {:controller=&gt;&quot;sessions&quot;, :action=&gt;&quot;show&quot;}<br />
+                           GET    /session.:format                 {:controller=&gt;&quot;sessions&quot;, :action=&gt;&quot;show&quot;}<br />
+                           PUT    /session                         {:controller=&gt;&quot;sessions&quot;, :action=&gt;&quot;update&quot;}<br />
+                           PUT    /session.:format                 {:controller=&gt;&quot;sessions&quot;, :action=&gt;&quot;update&quot;}<br />
+                           DELETE /session                         {:controller=&gt;&quot;sessions&quot;, :action=&gt;&quot;destroy&quot;}<br />
+                           DELETE /session.:format                 {:controller=&gt;&quot;sessions&quot;, :action=&gt;&quot;destroy&quot;}<br />
+                  athletes GET    /athletes                        {:controller=&gt;&quot;athletes&quot;, :action=&gt;&quot;index&quot;}<br />
+        formatted_athletes GET    /athletes.:format                {:controller=&gt;&quot;athletes&quot;, :action=&gt;&quot;index&quot;}<br />
+                           POST   /athletes                        {:controller=&gt;&quot;athletes&quot;, :action=&gt;&quot;create&quot;}<br />
+                           POST   /athletes.:format                {:controller=&gt;&quot;athletes&quot;, :action=&gt;&quot;create&quot;}<br />
+               new_athlete GET    /athletes/new                    {:controller=&gt;&quot;athletes&quot;, :action=&gt;&quot;new&quot;}<br />
+     formatted_new_athlete GET    /athletes/new.:format            {:controller=&gt;&quot;athletes&quot;, :action=&gt;&quot;new&quot;}<br />
+              edit_athlete GET    /athletes/:id/edit               {:controller=&gt;&quot;athletes&quot;, :action=&gt;&quot;edit&quot;}<br />
+    formatted_edit_athlete GET    /athletes/:id/edit.:format       {:controller=&gt;&quot;athletes&quot;, :action=&gt;&quot;edit&quot;}<br />
+                   athlete GET    /athletes/:id                    {:controller=&gt;&quot;athletes&quot;, :action=&gt;&quot;show&quot;}<br />
+         formatted_athlete GET    /athletes/:id.:format            {:controller=&gt;&quot;athletes&quot;, :action=&gt;&quot;show&quot;}<br />
+                           PUT    /athletes/:id                    {:controller=&gt;&quot;athletes&quot;, :action=&gt;&quot;update&quot;}<br />
+                           PUT    /athletes/:id.:format            {:controller=&gt;&quot;athletes&quot;, :action=&gt;&quot;update&quot;}<br />
+                           DELETE /athletes/:id                    {:controller=&gt;&quot;athletes&quot;, :action=&gt;&quot;destroy&quot;}<br />
+                           DELETE /athletes/:id.:format            {:controller=&gt;&quot;athletes&quot;, :action=&gt;&quot;destroy&quot;}<br />
+              traininglogs GET    /traininglogs                    {:controller=&gt;&quot;traininglogs&quot;, :action=&gt;&quot;index&quot;}<br />
+    formatted_traininglogs GET    /traininglogs.:format            {:controller=&gt;&quot;traininglogs&quot;, :action=&gt;&quot;index&quot;}<br />
+                           POST   /traininglogs                    {:controller=&gt;&quot;traininglogs&quot;, :action=&gt;&quot;create&quot;}<br />
+                           POST   /traininglogs.:format            {:controller=&gt;&quot;traininglogs&quot;, :action=&gt;&quot;create&quot;}<br />
+           new_traininglog GET    /traininglogs/new                {:controller=&gt;&quot;traininglogs&quot;, :action=&gt;&quot;new&quot;}<br />
+ formatted_new_traininglog GET    /traininglogs/new.:format        {:controller=&gt;&quot;traininglogs&quot;, :action=&gt;&quot;new&quot;}<br />
+          edit_traininglog GET    /traininglogs/:id/edit           {:controller=&gt;&quot;traininglogs&quot;, :action=&gt;&quot;edit&quot;}<br />
+formatted_edit_traininglog GET    /traininglogs/:id/edit.:format   {:controller=&gt;&quot;traininglogs&quot;, :action=&gt;&quot;edit&quot;}<br />
+               traininglog GET    /traininglogs/:id                {:controller=&gt;&quot;traininglogs&quot;, :action=&gt;&quot;show&quot;}<br />
+     formatted_traininglog GET    /traininglogs/:id.:format        {:controller=&gt;&quot;traininglogs&quot;, :action=&gt;&quot;show&quot;}<br />
+                           PUT    /traininglogs/:id                {:controller=&gt;&quot;traininglogs&quot;, :action=&gt;&quot;update&quot;}<br />
+                           PUT    /traininglogs/:id.:format        {:controller=&gt;&quot;traininglogs&quot;, :action=&gt;&quot;update&quot;}<br />
+                           DELETE /traininglogs/:id                {:controller=&gt;&quot;traininglogs&quot;, :action=&gt;&quot;destroy&quot;}<br />
+                           DELETE /traininglogs/:id.:format        {:controller=&gt;&quot;traininglogs&quot;, :action=&gt;&quot;destroy&quot;}<br />
+                   coaches GET    /coaches                         {:controller=&gt;&quot;coaches&quot;, :action=&gt;&quot;index&quot;}<br />
+         formatted_coaches GET    /coaches.:format                 {:controller=&gt;&quot;coaches&quot;, :action=&gt;&quot;index&quot;}<br />
+                           POST   /coaches                         {:controller=&gt;&quot;coaches&quot;, :action=&gt;&quot;create&quot;}<br />
+                           POST   /coaches.:format                 {:controller=&gt;&quot;coaches&quot;, :action=&gt;&quot;create&quot;}<br />
+                 new_coach GET    /coaches/new                     {:controller=&gt;&quot;coaches&quot;, :action=&gt;&quot;new&quot;}<br />
+       formatted_new_coach GET    /coaches/new.:format             {:controller=&gt;&quot;coaches&quot;, :action=&gt;&quot;new&quot;}<br />
+                edit_coach GET    /coaches/:id/edit                {:controller=&gt;&quot;coaches&quot;, :action=&gt;&quot;edit&quot;}<br />
+      formatted_edit_coach GET    /coaches/:id/edit.:format        {:controller=&gt;&quot;coaches&quot;, :action=&gt;&quot;edit&quot;}<br />
+                     coach GET    /coaches/:id                     {:controller=&gt;&quot;coaches&quot;, :action=&gt;&quot;show&quot;}<br />
+           formatted_coach GET    /coaches/:id.:format             {:controller=&gt;&quot;coaches&quot;, :action=&gt;&quot;show&quot;}<br />
+                           PUT    /coaches/:id                     {:controller=&gt;&quot;coaches&quot;, :action=&gt;&quot;update&quot;}<br />
+                           PUT    /coaches/:id.:format             {:controller=&gt;&quot;coaches&quot;, :action=&gt;&quot;update&quot;}<br />
+                           DELETE /coaches/:id                     {:controller=&gt;&quot;coaches&quot;, :action=&gt;&quot;destroy&quot;}<br />
+                           DELETE /coaches/:id.:format             {:controller=&gt;&quot;coaches&quot;, :action=&gt;&quot;destroy&quot;}<br />
+                      home        /                                {:controller=&gt;&quot;home&quot;, :action=&gt;&quot;index&quot;}<br />
+                                  /:controller/:action/:id<br />
+                                  /:controller/:action/:id.:format</p>
+<p>&lt;/filter:code&gt;</p>
+<p>and just for completeness, here is the error :</p>
+<p>&lt;filter:code&gt;<br />
+ NoMethodError in Home#index</p>
+<p>Showing app/views/home/index.html.erb where line #46 raised:</p>
+<p>undefined method `rewrite&#8217; for &quot;%2Fhome%2Fgraph_code&quot;:String</p>
+<p>Extracted source (around line #46):</p>
+<p>43:   &lt;td&gt;&lt;%=h traininglog.activity %&gt;&lt;/td&gt;<br />
+44:   &lt;td&gt;&lt;%=h traininglog.length %&gt;&lt;/td&gt;<br />
+45:   &lt;td&gt;&lt;%=h traininglog.duration %&gt;&lt;/td&gt;<br />
+46:   &lt;td&gt;&lt;%= link_to &#8216;Edit&#8217;, edit_traininglog_path  %&gt;&lt;/td&gt;<br />
+47: &lt;/tr&gt;<br />
+48: &lt;% end %&gt;<br />
+49: &lt;/table&gt;</p>
+<p>RAILS_ROOT: /Users/diarmuid/Documents/Rails/coachconnect<br />
+Application Trace | Framework Trace | Full Trace</p>
+<p>/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:626:in `url_for&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/helpers/url_helper.rb:85:in `send&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/helpers/url_helper.rb:85:in `url_for&#8217;<br />
+(eval):16:in `edit_traininglog_path&#8217;<br />
+app/views/home/index.html.erb:46<br />
+app/views/home/index.html.erb:40:in `each&#8217;<br />
+app/views/home/index.html.erb:40<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:39:in `send&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:39:in `render&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/template.rb:73:in `render_template&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:256:in `render&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1174:in `render_for_file&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:896:in `render_without_benchmark&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:868:in `render_without_benchmark&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1248:in `default_render&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1254:in `perform_action_without_filters&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64<br />
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49</p>
+<p>/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:76:in `process&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `synchronize&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `process&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281<br />
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require&#8217;<br />
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require&#8217;<br />
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require&#8217;<br />
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require&#8217;<br />
+script/server:3</p>
+<p>/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:626:in `url_for&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/helpers/url_helper.rb:85:in `send&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/helpers/url_helper.rb:85:in `url_for&#8217;<br />
+(eval):16:in `edit_traininglog_path&#8217;<br />
+app/views/home/index.html.erb:46<br />
+app/views/home/index.html.erb:40:in `each&#8217;<br />
+app/views/home/index.html.erb:40<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:39:in `send&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:39:in `render&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/template.rb:73:in `render_template&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:256:in `render&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1174:in `render_for_file&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:896:in `render_without_benchmark&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:868:in `render_without_benchmark&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1248:in `default_render&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1254:in `perform_action_without_filters&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:76:in `process&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `synchronize&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `process&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281<br />
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64<br />
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require&#8217;<br />
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49<br />
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require&#8217;<br />
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require&#8217;<br />
+script/server:3</p>
+<p>Request</p>
+<p>Parameters:</p>
+<p>None</p>
+<p>Show session dump</p>
+<p>&#8212;<br />
+:return_to:<br />
+:user_id: 9<br />
+:csrf_id: 9260c4aabafa1933eb7be31c1ca026f2<br />
+flash: !map:ActionController::Flash::FlashHash {}</p>
+<p>Response</p>
+<p>Headers:</p>
+<p>{&quot;cookie&quot;=&gt;[],<br />
+ &quot;Content-Type&quot;=&gt;&quot;text/html&quot;,<br />
+ &quot;Cache-Control&quot;=&gt;&quot;no-cache&quot;}<br />
+&lt;/filter:code&gt;</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-908">
+
+By <strong>Imanel</strong> on <a href="index.html?p=51580#comment-908" title="">Jan 12, 2009</a> | <a href="index.html?p=51580#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>It&#8217;s because of newest commit (afb727753d4895730ec24220ca831f73122251cf) &#8211; new creators use @url instance variable that&#8217;s restricted for rails. Just revert this commit and wait until it&#8217;s repaired.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-909">
+
+By <strong>diarmuid</strong> on <a href="index.html?p=51580#comment-909" title="">Jan 12, 2009</a> | <a href="index.html?p=51580#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Charlie</p>
+<p> It seems there is either some problem with the the mac os version of rails or more likely , with my installation.</p>
+<p>I setup rails on my linux machine and ran the server there and I get more sensible errors. I will work from there.</p>
+<p>thanks and I&#8217;ll let you know how I get on</p>
+<p>D</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-910">
+
+By <strong>diarmuid</strong> on <a href="index.html?p=51580#comment-910" title="">Jan 12, 2009</a> | <a href="index.html?p=51580#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Spoke too soon. Problem remains on the linux machine</p>
+<p>I&#8217;ll try Imanel&#8217;s recommendations</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-911">
+
+By <strong>Imanel</strong> on <a href="index.html?p=51580#comment-911" title="">Jan 12, 2009</a> | <a href="index.html?p=51580#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Or create evil twin of plugin with modified name of @url in &quot;/vendor/plugins/open_flash_chart/lib/open_flash_chart/open_flash_chart_object.rb&quot; (just tested with @c_url and everything works fine now)</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-912">
+
+By <strong>Imanel</strong> on <a href="index.html?p=51580#comment-912" title="">Jan 12, 2009</a> | <a href="index.html?p=51580#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Sorry for spam &#8211; there are no &quot;edit&quot; option and I&#8217;m in work so thinking about 3 other things 😉</p>
+<p>diff &#8211;git a/vendor/plugins/open_flash_chart/lib/open_flash_chart/open_flash_chart_object.rb b/vendor/plugins/open_flash_cha<br />
+index 6c94cfd..7efe7c0 100644<br />
+&#8212; a/vendor/plugins/open_flash_chart/lib/open_flash_chart/open_flash_chart_object.rb<br />
++++ b/vendor/plugins/open_flash_chart/lib/open_flash_chart/open_flash_chart_object.rb<br />
+@@ -4,19 +4,19 @@ module OpenFlashChart<br />
+   module Controller<br />
+     def open_flash_chart_object(width, height, url, use_swfobject=true, base=&quot;/&quot;, swf_file_name=&quot;open-flash-chart.swf&quot;)<br />
+       get_object_values(url)<br />
+&#8211;      get_html(@url, @div_name, base, swf_file_name, width, height, @protocol, @obj_id)<br />
++      get_html(@c_url, @div_name, base, swf_file_name, width, height, @protocol, @obj_id)<br />
+     end</p>
+<p>     # if you want the div name back for working with js, this is the ticket<br />
+     def open_flash_chart_object_and_div_name(width, height, url, use_swfobject=true, base=&quot;/&quot;, swf_file_name=&quot;open-flash-ch<br />
+       get_object_values(url)<br />
+&#8211;      html = get_html(@url, @div_name, base, swf_file_name, width, height, @protocol, @obj_id)<br />
++      html = get_html(@c_url, @div_name, base, swf_file_name, width, height, @protocol, @obj_id)<br />
+       return [html, @div_name]<br />
+     end</p>
+<p>     def open_flash_chart_object_from_hash(url, options={})<br />
+       get_object_values(url)<br />
+&#8211;      get_html(@url,<br />
++      get_html(@c_url,<br />
+                options[:div_name]      || @div_name,<br />
+                options[:base]          || &quot;/&quot;,<br />
+                options[:swf_file_name] || &quot;open-flash-chart.swf&quot;,<br />
+@@ -27,9 +27,9 @@ module OpenFlashChart<br />
+     end</p>
+<p>     def get_object_values(url)<br />
+&#8211;      @url      = CGI::escape(url)<br />
++      @c_url      = CGI::escape(url)<br />
+       # need something that will not be repeated on the same request<br />
+&#8211;      @special_hash = Base64.encode64(Digest::SHA1.digest(&quot;#{rand(1&lt;&lt;64)}/#{Time.now.to_f}/#{Process.pid}/#{@url}&quot;))[0..7]<br />
++      @special_hash = Base64.encode64(Digest::SHA1.digest(&quot;#{rand(1&lt;&lt;64)}/#{Time.now.to_f}/#{Process.pid}/#{@c_url}&quot;))[0..7<br />
+       # only good characters for our div<br />
+       @special_hash = @special_hash.gsub(/[^a-zA-Z0-9]/,rand(10).to_s)<br />
+       @obj_id   = &quot;chart_#{@special_hash}&quot;  # some sequencing without all the work of tracking it</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-913">
+
+By <strong><a href='index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="index.html?p=51580#comment-913" title="">Jan 12, 2009</a> | <a href="index.html?p=51580#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Imanel &#8211; thanks for the help, I fixed with your suggestion and pushed to the repo.</p>
+<p>@diarmuid &#8211; Give it a shot with the latest commit.</p>
+<p>I changed @url to @ofc_url, hope it helps.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-914">
+
+By <strong>diarmuid</strong> on <a href="index.html?p=51580#comment-914" title="">Jan 12, 2009</a> | <a href="index.html?p=51580#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>all working now. Thanks guys</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="mycomment" id="comment-915">
+
+By <strong>golfer</strong> on <a href="index.html?p=51580#comment-915" title="">Jan 12, 2009</a> | <a href="index.html?p=51580#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Question for you, I have:<br />
+Multiple charts on one page, as per your 2008/8/4 entry<br />
+A periodically_call_remote statement that is intended to update my graphs with new data, which has an associated rjs file which is called correctly.</p>
+<p>First question: Am I doing this in an unnecessary roundabout way where there&#8217;s something easier?  Please explain the periodically_call_to_remote_ofc_load if it&#8217;s appropriate here.</p>
+<p>Second question: How do I get at the data to update it?  I hope this is something obvious I&#8217;m missing since I&#8217;m new to this, but I&#8217;m basically trying to get this example <a href="http://teethgrinder.co.uk/open-flash-chart-2/tutorial-js.php" rel="nofollow ugc">http://teethgrinder.co.uk/open-flash-chart-2/tutorial-js.php</a> to work with auto-update.</p>
+<p>I&#8217;m sure I could get it to work if I could get at the data as in teethgrinder&#8217;s example, so second question is first priority 🙂</p>
+<p>Thanks for this great resource.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="mycomment" id="comment-916">
+
+By <strong>golfer</strong> on <a href="index.html?p=51580#comment-916" title="">Jan 12, 2009</a> | <a href="index.html?p=51580#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>So,<br />
+the fourth time I looked at your AJAX example, I finally realized that it wasn&#8217;t just loading a second pre-built chart.  Going off of that, and using periodically_call_to_remote_ofc_load I have what I&#8217;m looking for.</p>
+<p>The problem I have now is with three charts on one page, they all load showing the same thing.  I went away from your multiple charts on one page example because I think I need to use js_open_flash_chart_object in the view to the my OFC load periodical call.  Please let me know if this is correct or not, and if there&#8217;s a way I can have multiple charts on the same page using js_open&#8230;</p>
+<p>Thanks again</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="mycomment" id="comment-917">
+
+By <strong>golfer</strong> on <a href="index.html?p=51580#comment-917" title="">Jan 12, 2009</a> | <a href="index.html?p=51580#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Update:<br />
+I looked over at teethgrinder&#8217;s tutorial:<br />
+<a href="http://teethgrinder.co.uk/open-flash-chart-2/adv-js-2-charts.php" rel="nofollow ugc">http://teethgrinder.co.uk/open-flash-chart-2/adv-js-2-charts.php</a><br />
+It looks like I need to be able to override get-data and specify something different.  I&#8217;m sure this is what your example with multiple charts on one page did behind the scenes, but is that same functionality available when using js_open_flash_chart_object in the view?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-918">
+
+By <strong><a href='index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="index.html?p=51580#comment-918" title="">Jan 12, 2009</a> | <a href="index.html?p=51580#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@golfer &#8211; I am not sure which example you are referring to, but let&#8217;s see if I can point you in the right direction &#8211;<br />
+In this example, all the charts are pre loaded on the page and the links just show/hide the right ones:<br />
+<a href="2008/9/22/open-flash-chart-ii-javascript-part-2" rel="nofollow ugc">http://pullmonkey.com/2008/9/22/open-flash-chart-ii-javascript-part-2</a></p>
+<p>In this example, the links actually go fetch data (get-data) from the specified url:<br />
+<a href="2008/9/23/open-flash-chart-ii-javascript-part-3" rel="nofollow ugc">http://pullmonkey.com/2008/9/23/open-flash-chart-ii-javascript-part-3</a></p>
+<p>Any luck with those?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="mycomment" id="comment-919">
+
+By <strong>golfer</strong> on <a href="index.html?p=51580#comment-919" title="">Jan 12, 2009</a> | <a href="index.html?p=51580#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@charlie<br />
+Looked over the links (again), but still am not sure why my charts aren&#8217;t loading correctly.</p>
+<p>Problem: All three charts load the same content until they are refreshed.  Right now, even though the first two are pie charts and the third is a bar chart, they both initially load the image of the bar chart until they are reloaded by clicking on the remote_ofc_load link, at which point they load their correct content.</p>
+<p>View snip:<br />
+&lt;filter:code attributes=lang=&quot;html&quot;&gt;<br />
+&lt;td&gt;<br />
+&lt;%= @chart1.js_open_flash_chart_object(&quot;div1&quot;, 250,200) %&gt;<br />
+&lt;br /&gt;<br />
+&lt;%= @chart1.link_to_remote_ofc_load(&quot;refresh 1&quot;, &quot;div1&quot;, &quot;/example/chart1_code&quot;) %&gt;<br />
+&lt;br /&gt;&lt;br /&gt;<br />
+&lt;%= @chart2.js_open_flash_chart_object(&quot;div2&quot;, 250,200) %&gt;<br />
+&lt;br /&gt;<br />
+&lt;%= @chart2.link_to_remote_ofc_load(&quot;refresh 2&quot;, &quot;div2&quot;, &quot;/example/chart2_code&quot;) %&gt;<br />
+&lt;/td&gt;<br />
+&lt;td&gt;<br />
+&lt;br /&gt;<br />
+&lt;%= @bar.js_open_flash_chart_object(&quot;div3&quot;, 100,300) %&gt;<br />
+&lt;br /&gt;<br />
+&lt;%= @bar.periodically_call_to_remote_ofc_load(&quot;div3&quot;, &quot;/example/bar_code&quot;, :frequency =&gt; 2.0) %&gt;<br />
+&lt;/td&gt;<br />
+&lt;/filter:code&gt;</p>
+<p>Controller snip:<br />
+&lt;filter:code attributes=lang=&quot;ruby&quot;&gt;<br />
+def index<br />
+  &#8230;<br />
+  @bar = bar_obj<br />
+  &#8230;<br />
+end</p>
+<p>def bar_obj<br />
+  &#8230;<br />
+  bar = OpenFlashChart.new<br />
+  &#8230;<br />
+  return bar<br />
+end</p>
+<p>def bar_code<br />
+  &#8230;<br />
+  render :text =&gt; bar.to_s<br />
+end<br />
+&lt;/filter:code&gt;</p>
+<p>I know it doesn&#8217;t look too DRY with bar_code and bar_obj doing the same thing with one returning the code and the other the obj, but I was trying to see if some combination of the two would work.  Let me know if you have any idea as to why all three initially load the same chart until refreshed.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-920">
+
+By <strong><a href='index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="index.html?p=51580#comment-920" title="">Jan 12, 2009</a> | <a href="index.html?p=51580#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@golfer &#8211; You are saying that @chart1, @chart2 and @bar are all showing the same graph?</p>
+<p>Where are chart1 and chart2 defined?</p>
+<p>Can you post the generated html of the graph before it is refreshed?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="mycomment" id="comment-921">
+
+By <strong>golfer</strong> on <a href="index.html?p=51580#comment-921" title="">Jan 12, 2009</a> | <a href="index.html?p=51580#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Yes, they are all showing the same graph.  I think it has to do with the objects being named the same (open-flash-chart.swf).  Here&#8217;s a trimmed down version of the code that works and the generated html before page is refreshed:</p>
+<p>View:<br />
+&lt;filter:code attributes=lang=&quot;html&quot;&gt;<br />
+&lt;%= javascript_include_tag :defaults, &#8216;swfobject&#8217; %&gt;</p>
+<p>&lt;%= @chart1.js_open_flash_chart_object(&quot;div1&quot;, 250,200) %&gt;<br />
+&lt;br /&gt;<br />
+&lt;%= @chart1.link_to_remote_ofc_load(&quot;refresh1&quot;, &quot;div1&quot;, &quot;/test/chart1_code&quot;) %&gt;<br />
+&lt;br /&gt;&lt;br /&gt;<br />
+&lt;%= @chart2.js_open_flash_chart_object(&quot;div2&quot;, 250,200) %&gt;<br />
+&lt;br /&gt;<br />
+&lt;%= @chart2.link_to_remote_ofc_load(&quot;refresh2&quot;, &quot;div2&quot;, &quot;/test/chart2_code&quot;) %&gt;<br />
+&lt;/filter:code&gt;</p>
+<p>Controller:<br />
+&lt;filter:code attributes=lang=&quot;ruby&quot;&gt;<br />
+  def index<br />
+    @chart1 = chart1_obj<br />
+    @chart2 = chart2_obj</p>
+<p>    respond_to do |format|<br />
+      format.html<br />
+    end<br />
+  end</p>
+<p>  def chart1_code<br />
+    # build chart1<br />
+    render :text =&gt; chart.to_s<br />
+  end</p>
+<p>  def chart1_obj<br />
+    # build chart1<br />
+    return chart<br />
+  end</p>
+<p>  def chart2_code<br />
+    # build chart2<br />
+    render :text =&gt; chart.to_s<br />
+  end</p>
+<p>  def chart2_obj<br />
+    # build chart2<br />
+    return chart<br />
+  end<br />
+&lt;/filter:code&gt;</p>
+<p>HTML before refresh:<br />
+&lt;filter:code attributes=lang=&quot;html&quot;&gt;<br />
+&lt;script type=&quot;text/javascript&quot;&gt;<br />
+  swfobject.embedSWF(&quot;/open-flash-chart.swf&quot;, &quot;div1&quot;, &quot;250&quot;, &quot;200&quot;, &quot;9.0.0&quot;);<br />
+&lt;/script&gt;<br />
+&lt;script type=&quot;text/javascript&quot;&gt;<br />
+  function ofc_ready() {<br />
+  }<br />
+  function open_flash_chart_data() {<br />
+  return Object.toJSON(data);<br />
+  }<br />
+  function findSWF(movieName) {<br />
+    if (navigator.appName.indexOf(&quot;Microsoft&quot;)!= -1) {<br />
+      return window[movieName];<br />
+    } else {<br />
+      return document[movieName];<br />
+    }<br />
+  }<br />
+  var data = {&quot;elements&quot;: [{&quot;start-angle&quot;: 35, &quot;type&quot;: &quot;pie&quot;, &quot;border&quot;: 2, &quot;tip&quot;: &quot;#val# of #total#&lt;br&gt;#percent#&quot;, &quot;animate&quot;: true, &quot;values&quot;: [{&quot;value&quot;: 1, &quot;label&quot;: &quot;Unassigned&quot;}, {&quot;value&quot;: 2, &quot;label&quot;: &quot;Offline&quot;}, {&quot;value&quot;: 5, &quot;label&quot;: &quot;Online&quot;}, {&quot;value&quot;: 0, &quot;label&quot;: &quot;Away&quot;}], &quot;colours&quot;: [&quot;#ff0000&quot;, &quot;#d01f3c&quot;, &quot;#8aa967&quot;, &quot;#C79810&quot;]}], &quot;x_axis&quot;: null};<br />
+&lt;/script&gt;</p>
+<p>&lt;div id=&quot;div1&quot;&gt;&lt;/div&gt;</p>
+<p>&lt;br /&gt;<br />
+&lt;script type=&quot;text/javascript&quot;&gt;<br />
+  function reload_refresh1_div1() {<br />
+    tmp_div1 = findSWF(&quot;div1&quot;);<br />
+    new Ajax.Request(&#8216;/test/chart1_code&#8217;, {<br />
+      method    : &#8216;get&#8217;,<br />
+      onSuccess : function(obj) {tmp_div1.load(obj.responseText);},<br />
+      onFailure : function(obj) {alert(&quot;Failed to request /test/chart1_code&quot;);}});<br />
+  }<br />
+&lt;/script&gt;</p>
+<p>&lt;a href=&quot;#&quot; onclick=&quot;reload_refresh1_div1(); return false;&quot;&gt;refresh1&lt;/a&gt;</p>
+<p>&lt;br /&gt;&lt;br /&gt;<br />
+&lt;script type=&quot;text/javascript&quot;&gt;<br />
+  swfobject.embedSWF(&quot;/open-flash-chart.swf&quot;, &quot;div2&quot;, &quot;250&quot;, &quot;200&quot;, &quot;9.0.0&quot;);<br />
+&lt;/script&gt;<br />
+&lt;script type=&quot;text/javascript&quot;&gt;<br />
+  function ofc_ready() {<br />
+  }<br />
+  function open_flash_chart_data() {<br />
+    return Object.toJSON(data);<br />
+  }<br />
+  function findSWF(movieName) {<br />
+    if (navigator.appName.indexOf(&quot;Microsoft&quot;)!= -1) {<br />
+      return window[movieName];<br />
+    } else {<br />
+      return document[movieName];<br />
+    }<br />
+  }<br />
+  var data = {&quot;elements&quot;: [{&quot;start-angle&quot;: 35, &quot;type&quot;: &quot;pie&quot;, &quot;border&quot;: 2, &quot;tip&quot;: &quot;#val# of #total#&lt;br&gt;#percent#&quot;, &quot;animate&quot;: true, &quot;values&quot;: [{&quot;value&quot;: 1, &quot;label&quot;: &quot;Offense&quot;}, {&quot;value&quot;: 2, &quot;label&quot;: &quot;Defense&quot;}], &quot;colours&quot;: [&quot;#856767&quot;, &quot;#627ba2&quot;]}], &quot;x_axis&quot;: null};<br />
+&lt;/script&gt;</p>
+<p>&lt;div id=&quot;div2&quot;&gt;&lt;/div&gt;</p>
+<p>&lt;br /&gt;<br />
+&lt;script type=&quot;text/javascript&quot;&gt;<br />
+  function reload_refresh2_div2() {<br />
+    tmp_div2 = findSWF(&quot;div2&quot;);<br />
+    new Ajax.Request(&#8216;/test/chart2_code&#8217;, {<br />
+      method    : &#8216;get&#8217;,<br />
+      onSuccess : function(obj) {tmp_div2.load(obj.responseText);},<br />
+      onFailure : function(obj) {alert(&quot;Failed to request /test/chart2_code&quot;);}});<br />
+  }<br />
+&lt;/script&gt;</p>
+<p>&lt;a href=&quot;#&quot; onclick=&quot;reload_refresh2_div2(); return false;&quot;&gt;refresh2&lt;/a&gt;<br />
+&lt;/filter:code&gt;</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-922">
+
+By <strong><a href='index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="index.html?p=51580#comment-922" title="">Jan 12, 2009</a> | <a href="index.html?p=51580#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@golfer &#8212; how long ago did you get the ofc2 plugin?  The generated code seems a bit outdated.  Well, let me know.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="mycomment" id="comment-923">
+
+By <strong>golfer</strong> on <a href="index.html?p=51580#comment-923" title="">Jan 12, 2009</a> | <a href="index.html?p=51580#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@charlie &#8211; I pulled it within the last couple of weeks.  Any idea why the charts are coming up the same?  Does it do this in the version you have?</p>
+<p>When was the last update to the plugin?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="mycomment" id="comment-924">
+
+By <strong>golfer</strong> on <a href="index.html?p=51580#comment-924" title="">Jan 12, 2009</a> | <a href="index.html?p=51580#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@charlie &#8211; Looks to me like the last thing went in on Jan 19th, and I have updated since then.</p>
+<p>My open-flash-chart.swf in my public folder is 257KB.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-925">
+
+By <strong>khelal</strong> on <a href="index.html?p=51580#comment-925" title="">Jan 12, 2009</a> | <a href="index.html?p=51580#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hi there,</p>
+<p>I am having a problem with the plugin. I&#8217;ve followed the instructions to the letter, and the flash does appear in the view, but instead of showing me a graph, I get the following error in the flash element:</p>
+<p>Open Flash Chart<br />
+IO ERROR<br />
+Loading test data<br />
+Error #2032: Stream Error. URL: <a href="http://monaqasat14.local/guru/dashboard/graph_code" rel="nofollow ugc">http://monaqasat14.local/guru/dashboard/graph_code</a></p>
+<p>in effect, when opening the URL in question, I get the following Rails error:</p>
+<p>Open Flash Chart<br />
+IO ERROR<br />
+Loading test data<br />
+Error #2032: Stream Error. URL: <a href="http://monaqasat14.local/guru/dashboard/graph_code" rel="nofollow ugc">http://monaqasat14.local/guru/dashboard/graph_code</a></p>
+<p>The funny thing is that I can access <a href="http://monaqasat14.local/guru/dashboard" rel="nofollow ugc">http://monaqasat14.local/guru/dashboard</a> without any problems???</p>
+<p>Can anybody help?</p>
+<p>Thanks.</p>
+<p>BTW, I&#8217;m running Rails 2.2.2 and i just got the plugin today.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-926">
+
+By <strong><a href='index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="index.html?p=51580#comment-926" title="">Jan 12, 2009</a> | <a href="index.html?p=51580#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@khelal &#8211; Error 2032 is very general and indicates a problem in your rails code.  When you encounter this error is there anything useful in your rails error logs &#8230; either development.log or production.log?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-927">
+
+By <strong>Rob R</strong> on <a href="index.html?p=51580#comment-927" title="">Jan 12, 2009</a> | <a href="index.html?p=51580#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Can OFC make log plots?  I need to make plots where the y-axis is log based and the x-axis is normal.</p>
+<p>Thanks,</p>
+<p>RPR</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-928">
+
+By <strong><a href='index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="index.html?p=51580#comment-928" title="">Jan 12, 2009</a> | <a href="index.html?p=51580#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Rob R &#8211; you can set the labels yourself, as text.  &quot;10&quot;, &quot;100&quot;, &quot;1000&quot;, etc.  Then you will need to do a little extra work to display points where needed to correspond with the text values you set for the y-axis.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-929">
+
+By <strong>Ed Murray</strong> on <a href="index.html?p=51580#comment-929" title="">Jan 12, 2009</a> | <a href="index.html?p=51580#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hi Charlie,<br />
+I&#8217;m seeing the same thing as @Golfer &amp; I was wondering if that was ever resolved.  I created three test charts and loaded each.  The image of the last chart is shown for all graphs until I hit the refresh link.  (I was going to try and use this to get around my other issue. 🙂 )</p>
+<p>Thanks,<br />
+Ed</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-930">
+
+By <strong><a href='http://vlandham.wordpress.com/' rel='external nofollow ugc' class='url'>vlandham</a></strong> on <a href="index.html?p=51580#comment-930" title="">Jan 12, 2009</a> | <a href="index.html?p=51580#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Well, This may or may not be the correct way to implement this feature, but I&#8217;ve had some success in displaying multiple graphs on a page by creating a custom method that is a modified version of js_open_flash_chart_object.</p>
+<p>So in my copy of the ofc_ajax.rb file &#8211; in the lib/open_flash_chart directory of the plugin, I&#8217;ve just added another method that looks like:</p>
+<p>&lt;filter:code attributes=lang=&quot;ruby&quot;&gt;<br />
+def js_open_flash_chart_object_mult(div_name, width, height, base=&quot;/&quot;)<br />
+  data_name = &quot;#{div_name.gsub(&quot; &quot;,&quot;_&quot;)}&quot;<br />
+  &lt;&lt;-OUTPUT<br />
+    &lt;script type=&quot;text/javascript&quot;&gt;<br />
+    swfobject.embedSWF(&quot;#{base}open-flash-chart.swf&quot;, &quot;#{div_name}&quot;, &quot;#{width}&quot;, &quot;#{height}&quot;, &quot;9.0.0&quot;, &quot;expressInstall.swf&quot;, {&quot;get-data&quot;:&quot;get_data_#{data_name}&quot;});<br />
+    function get_data_#{data_name}()<br />
+    {<br />
+      var data = #{self.render};<br />
+      return Object.toJSON(data);<br />
+    }<br />
+    &lt;/script&gt;<br />
+    &lt;div id=&quot;#{div_name}&quot;&gt;&lt;/div&gt;<br />
+  OUTPUT<br />
+end<br />
+&lt; /filter:code&gt;</p>
+<p>This is based off of the ofc example found here:</p>
+<p><a href="http://teethgrinder.co.uk/open-flash-chart-2/adv-js-2-charts.php" rel="nofollow ugc">http://teethgrinder.co.uk/open-flash-chart-2/adv-js-2-charts.php</a></p>
+<p>don&#8217;t know if this is the best way / right way to do this, but it seems to be working, at least for now.</p>
+<p>I can call this method like:</p>
+<p>&lt;filter:code attributes=lang=&quot;ruby&quot;&gt;<br />
+&lt;% @charts.each_with_index do |chart, i| %&gt;<br />
+  &lt;%= chart.js_open_flash_chart_object_mult(&quot;another_chart_js_#{i+1}&quot;, 550,300) %&gt;<br />
+&lt;% end %&gt;<br />
+&lt; /filter:code&gt;</p>
+<p>I think a better name is in order, but perhaps something like this could be useful to others.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-931">
+
+By <strong>Davis</strong> on <a href="index.html?p=51580#comment-931" title="">Jan 12, 2009</a> | <a href="index.html?p=51580#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>I&#8217;m having trouble getting a yAxisRight working with proper steps.</p>
+<p>It seems it wants to put every number between the range, regardless of what steps it set to</p>
+<p>I&#8217;m using the following code in a scatterLine chart</p>
+<p>y2 = YAxisRight.new<br />
+        y2.set_range(35,55)<br />
+        y2.set_steps(5)<br />
+        y2.set_stroke(3)<br />
+        y2.colour = &#8216;#FF0000&#8217;<br />
+        y2.set_grid_colour(&#8216;#FF00FF&#8217;)<br />
+        chart.set_y_axis_right(y2)</p>
+<p>and it&#8217;s putting 35, 36, 37, 38&#8230; up the y-right axis</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-10822">
+
+By <strong>Wheat</strong> on <a href="index.html?p=51580#comment-10822" title="">Jul 15, 2010</a> | <a href="index.html?p=51580#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hi,<br />
+How can I set tooltip in following situation<br />
+In Rails App<br />
+I have a controll and write some codes like<br />
+ def graph_code<br />
+ chart = OpenFlashChart.new<br />
+ line = Line.new<br />
+ &#8230;.<br />
+ chart.add_element(line)<br />
+ chart.set_tooltip(&#8220;#x_label#&#8221;)<br />
+&#8230;<br />
+end</p>
+<p>How can I set the tip to the value of x_label<br />
+I get some like<br />
+&#8230;&#8230;.<br />
+&#8220;tip&#8221;: &#8220;#x_label#&#8221;<br />
+&#8230;.<br />
+And it just doesn&#8217;t work.<br />
+What should I do?</p>
+<p>Thanks~</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		</ol>
+	
+	
+	
+
+	<p id="comments-closed">Sorry, comments for this entry are closed at this time.</p>
+</div>
+</div><!-- Post -->
+
+		        
+  
+
+	
+</div><!-- Content -->
+
+</div><!-- LeftColumn -->
+
+<div id="c2">
+
+   
+    <div id="sidebar">
+
+<div id="subscribe">
+<a href="feed/index.html"><img src="wp-content/themes/simple&#32;paper/images/rss.gif" alt="RSS-FEED" border="0" id="rss" /></a>
+<a href="feed/index.html">subscribe to the feed</a><br clear="all" />
+</div><!-- subscribe rss -->
+
+<div id="topsearch">
+<form action="index.html" method="post">
+<input type="text" value="Search..." name="s" id="ls" class="searchfield" onfocus="if (this.value == 'Search...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search...';}" />
+<input type="image" src="wp-content/themes/simple&#32;paper/images/click.gif" id="submit" />
+</form>
+<br clear="all" />
+<br clear="all" />
+</div>
+    
+    	<ul>
+	<li id="tag_cloud-2" class="widget widget_tag_cloud"><h2 class="widgettitle">Tags</h2>
+<div class="tagcloud"><a href="tag/net/index.html" class="tag-cloud-link tag-link-166 tag-link-position-1" style="font-size: 8pt;" aria-label=".net (2 items)">.net</a>
+<a href="tag/activerecord/index.html" class="tag-cloud-link tag-link-54 tag-link-position-2" style="font-size: 8pt;" aria-label="activerecord (2 items)">activerecord</a>
+<a href="tag/api/index.html" class="tag-cloud-link tag-link-220 tag-link-position-3" style="font-size: 10.40625pt;" aria-label="api (4 items)">api</a>
+<a href="tag/biking/index.html" class="tag-cloud-link tag-link-219 tag-link-position-4" style="font-size: 10.40625pt;" aria-label="biking (4 items)">biking</a>
+<a href="tag/business/index.html" class="tag-cloud-link tag-link-213 tag-link-position-5" style="font-size: 8pt;" aria-label="business (2 items)">business</a>
+<a href="tag/c/index.html" class="tag-cloud-link tag-link-33 tag-link-position-6" style="font-size: 10.40625pt;" aria-label="c++ (4 items)">c++</a>
+<a href="tag/charts/index.html" class="tag-cloud-link tag-link-42 tag-link-position-7" style="font-size: 18.171875pt;" aria-label="charts (25 items)">charts</a>
+<a href="tag/cms/index.html" class="tag-cloud-link tag-link-60 tag-link-position-8" style="font-size: 12.046875pt;" aria-label="CMS (6 items)">CMS</a>
+<a href="tag/curb/index.html" class="tag-cloud-link tag-link-190 tag-link-position-9" style="font-size: 8pt;" aria-label="curb (2 items)">curb</a>
+<a href="tag/curl/index.html" class="tag-cloud-link tag-link-120 tag-link-position-10" style="font-size: 8pt;" aria-label="curl (2 items)">curl</a>
+<a href="tag/dynamic/index.html" class="tag-cloud-link tag-link-56 tag-link-position-11" style="font-size: 8pt;" aria-label="dynamic (2 items)">dynamic</a>
+<a href="tag/ece231/index.html" class="tag-cloud-link tag-link-34 tag-link-position-12" style="font-size: 10.40625pt;" aria-label="ece231 (4 items)">ece231</a>
+<a href="tag/editor/index.html" class="tag-cloud-link tag-link-61 tag-link-position-13" style="font-size: 11.28125pt;" aria-label="editor (5 items)">editor</a>
+<a href="tag/error/index.html" class="tag-cloud-link tag-link-46 tag-link-position-14" style="font-size: 9.3125pt;" aria-label="error (3 items)">error</a>
+<a href="tag/flash/index.html" class="tag-cloud-link tag-link-41 tag-link-position-15" style="font-size: 17.84375pt;" aria-label="flash (23 items)">flash</a>
+<a href="tag/fun/index.html" class="tag-cloud-link tag-link-23 tag-link-position-16" style="font-size: 11.28125pt;" aria-label="fun (5 items)">fun</a>
+<a href="tag/gems/index.html" class="tag-cloud-link tag-link-44 tag-link-position-17" style="font-size: 8pt;" aria-label="gems (2 items)">gems</a>
+<a href="tag/graphs/index.html" class="tag-cloud-link tag-link-52 tag-link-position-18" style="font-size: 18.390625pt;" aria-label="graphs (26 items)">graphs</a>
+<a href="tag/httpi/index.html" class="tag-cloud-link tag-link-191 tag-link-position-19" style="font-size: 8pt;" aria-label="httpi (2 items)">httpi</a>
+<a href="tag/java/index.html" class="tag-cloud-link tag-link-177 tag-link-position-20" style="font-size: 9.3125pt;" aria-label="java (3 items)">java</a>
+<a href="tag/javascript/index.html" class="tag-cloud-link tag-link-215 tag-link-position-21" style="font-size: 10.40625pt;" aria-label="Javascript (4 items)">Javascript</a>
+<a href="tag/linux/index.html" class="tag-cloud-link tag-link-221 tag-link-position-22" style="font-size: 8pt;" aria-label="Linux (2 items)">Linux</a>
+<a href="tag/macromovers/index.html" class="tag-cloud-link tag-link-66 tag-link-position-23" style="font-size: 8pt;" aria-label="macromovers (2 items)">macromovers</a>
+<a href="tag/mirah/index.html" class="tag-cloud-link tag-link-176 tag-link-position-24" style="font-size: 8pt;" aria-label="mirah (2 items)">mirah</a>
+<a href="tag/ofc/index.html" class="tag-cloud-link tag-link-105 tag-link-position-25" style="font-size: 8pt;" aria-label="OFC (2 items)">OFC</a>
+<a href="tag/open-flash-chart/index.html" class="tag-cloud-link tag-link-40 tag-link-position-26" style="font-size: 18.609375pt;" aria-label="open flash chart (27 items)">open flash chart</a>
+<a href="tag/php/index.html" class="tag-cloud-link tag-link-216 tag-link-position-27" style="font-size: 9.3125pt;" aria-label="php (3 items)">php</a>
+<a href="tag/plugin/index.html" class="tag-cloud-link tag-link-65 tag-link-position-28" style="font-size: 12.59375pt;" aria-label="plugin (7 items)">plugin</a>
+<a href="tag/plugins/index.html" class="tag-cloud-link tag-link-218 tag-link-position-29" style="font-size: 9.3125pt;" aria-label="plugins (3 items)">plugins</a>
+<a href="tag/prog/index.html" class="tag-cloud-link tag-link-35 tag-link-position-30" style="font-size: 9.3125pt;" aria-label="prog (3 items)">prog</a>
+<a href="tag/project/index.html" class="tag-cloud-link tag-link-47 tag-link-position-31" style="font-size: 10.40625pt;" aria-label="project (4 items)">project</a>
+<a href="tag/rails/index.html" class="tag-cloud-link tag-link-210 tag-link-position-32" style="font-size: 20.90625pt;" aria-label="rails (45 items)">rails</a>
+<a href="tag/ruby/index.html" class="tag-cloud-link tag-link-211 tag-link-position-33" style="font-size: 22pt;" aria-label="ruby (57 items)">ruby</a>
+<a href="tag/ruby-on-rails/index.html" class="tag-cloud-link tag-link-43 tag-link-position-34" style="font-size: 20.359375pt;" aria-label="ruby on rails (40 items)">ruby on rails</a>
+<a href="tag/select-boxes/index.html" class="tag-cloud-link tag-link-57 tag-link-position-35" style="font-size: 8pt;" aria-label="select boxes (2 items)">select boxes</a>
+<a href="tag/simple/index.html" class="tag-cloud-link tag-link-62 tag-link-position-36" style="font-size: 10.40625pt;" aria-label="simple (4 items)">simple</a>
+<a href="tag/simplecms/index.html" class="tag-cloud-link tag-link-214 tag-link-position-37" style="font-size: 11.28125pt;" aria-label="SimpleCMS (5 items)">SimpleCMS</a>
+<a href="tag/skizmo/index.html" class="tag-cloud-link tag-link-102 tag-link-position-38" style="font-size: 10.40625pt;" aria-label="skizmo (4 items)">skizmo</a>
+<a href="tag/software/index.html" class="tag-cloud-link tag-link-48 tag-link-position-39" style="font-size: 8pt;" aria-label="software (2 items)">software</a>
+<a href="tag/spreadsheet/index.html" class="tag-cloud-link tag-link-45 tag-link-position-40" style="font-size: 8pt;" aria-label="spreadsheet (2 items)">spreadsheet</a>
+<a href="tag/tutorial/index.html" class="tag-cloud-link tag-link-50 tag-link-position-41" style="font-size: 16.75pt;" aria-label="tutorial (18 items)">tutorial</a>
+<a href="tag/ubuntu/index.html" class="tag-cloud-link tag-link-150 tag-link-position-42" style="font-size: 8pt;" aria-label="ubuntu (2 items)">ubuntu</a>
+<a href="tag/vin/index.html" class="tag-cloud-link tag-link-119 tag-link-position-43" style="font-size: 12.59375pt;" aria-label="VIN (7 items)">VIN</a>
+<a href="tag/vin-api/index.html" class="tag-cloud-link tag-link-159 tag-link-position-44" style="font-size: 12.046875pt;" aria-label="vin api (6 items)">vin api</a>
+<a href="tag/xml/index.html" class="tag-cloud-link tag-link-165 tag-link-position-45" style="font-size: 9.3125pt;" aria-label="xml (3 items)">xml</a></div>
+</li>
+<li id="categories-524386351" class="widget widget_categories"><h2 class="widgettitle">Topics</h2>
+
+			<ul>
+					<li class="cat-item cat-item-179"><a href="category/android/index.html">Android</a>
+</li>
+	<li class="cat-item cat-item-118"><a href="category/api/index.html">api</a>
+</li>
+	<li class="cat-item cat-item-67"><a href="category/biking/index.html">biking</a>
+</li>
+	<li class="cat-item cat-item-37"><a href="category/blog/index.html">blog</a>
+</li>
+	<li class="cat-item cat-item-27"><a href="category/business/index.html">business</a>
+</li>
+	<li class="cat-item cat-item-32"><a href="category/c-c/index.html">C / C++</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="category/development/index.html">development</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="category/games/index.html">games</a>
+</li>
+	<li class="cat-item cat-item-139"><a href="category/graphics/index.html">Graphics</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="category/home/index.html">Home</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="category/ie-hacks/index.html">IE hacks</a>
+</li>
+	<li class="cat-item cat-item-31"><a href="category/javascript/index.html">Javascript</a>
+</li>
+	<li class="cat-item cat-item-149"><a href="category/linux/index.html">Linux</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="category/me/index.html">me</a>
+</li>
+	<li class="cat-item cat-item-26"><a href="category/open-flash-chart-graphs/index.html">Open Flash Chart Graphs</a>
+</li>
+	<li class="cat-item cat-item-29"><a href="category/opengl/index.html">opengl</a>
+</li>
+	<li class="cat-item cat-item-36"><a href="category/php/index.html">php</a>
+</li>
+	<li class="cat-item cat-item-51"><a href="category/plugins/index.html">plugins</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="category/projects/index.html">projects</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="category/rails/index.html">rails</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="category/railsconf/index.html">railsconf</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="category/ruby/index.html">ruby</a>
+</li>
+	<li class="cat-item cat-item-28"><a href="category/simplecms/index.html">SimpleCMS</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="category/tutorials/index.html">tutorials</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="category/uncategorized/index.html">Uncategorized</a>
+</li>
+			</ul>
+
+			</li>
+
+		<li id="recent-posts-2" class="widget widget_recent_entries">
+		<h2 class="widgettitle">Recent Posts</h2>
+
+		<ul>
+											<li>
+					<a href="index.html?p=57726">Dynamic Select Boxes &#8211; Ruby on Rails 3</a>
+									</li>
+											<li>
+					<a href="index.html?p=57715">VIN API &#8211; Do you know about the complete data set?</a>
+									</li>
+											<li>
+					<a href="index.html?p=57712">Using Ruby to read from a MagTek USB Card Reader</a>
+									</li>
+											<li>
+					<a href="index.html?p=57708">Signature Pad in Linux</a>
+									</li>
+											<li>
+					<a href="index.html?p=57705">Using HTTPI with Curb to do multipart file uploads with spnego</a>
+									</li>
+					</ul>
+
+		</li>
+<li id="recent-comments-2" class="widget widget_recent_comments"><h2 class="widgettitle">Recent Comments</h2>
+<ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">`Drew</span> on <a href="2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/index.html#comment-24291">Dynamic Select Boxes &#8211; Ruby on Rails 3</a></li><li class="recentcomments"><span class="comment-author-link">Bardach</span> on <a href="2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/index.html#comment-24290">Dynamic Select Boxes &#8211; Ruby on Rails 3</a></li><li class="recentcomments"><span class="comment-author-link">Bardach</span> on <a href="2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/index.html#comment-24289">Dynamic Select Boxes &#8211; Ruby on Rails 3</a></li><li class="recentcomments"><span class="comment-author-link">Dar_bok</span> on <a href="2007/04/30/how-i-got-gta-san-andreas-to-work-with-a-crappy-os-vista/comment-page-2/index.html#comment-20844">How I got GTA San Andreas to Work with (a crappy OS) Vista</a></li><li class="recentcomments"><span class="comment-author-link">Anirudha Pendakur</span> on <a href="2012/07/25/using-httpi-with-curb-to-do-multipart-file-uploads-with-spnego/comment-page-1/index.html#comment-19583">Using HTTPI with Curb to do multipart file uploads with spnego</a></li></ul></li>
+<li id="archives-2" class="widget widget_archive"><h2 class="widgettitle">Archives</h2>
+
+			<ul>
+					<li><a href='2012/08/index.html'>August 2012</a></li>
+	<li><a href='2012/07/index.html'>July 2012</a></li>
+	<li><a href='2012/05/index.html'>May 2012</a></li>
+	<li><a href='2012/04/index.html'>April 2012</a></li>
+	<li><a href='2012/03/index.html'>March 2012</a></li>
+	<li><a href='2011/11/index.html'>November 2011</a></li>
+	<li><a href='2011/10/index.html'>October 2011</a></li>
+	<li><a href='2011/05/index.html'>May 2011</a></li>
+	<li><a href='2011/03/index.html'>March 2011</a></li>
+	<li><a href='2011/02/index.html'>February 2011</a></li>
+	<li><a href='2011/01/index.html'>January 2011</a></li>
+	<li><a href='2010/11/index.html'>November 2010</a></li>
+	<li><a href='2010/09/index.html'>September 2010</a></li>
+	<li><a href='2010/04/index.html'>April 2010</a></li>
+	<li><a href='2010/02/index.html'>February 2010</a></li>
+	<li><a href='2010/01/index.html'>January 2010</a></li>
+	<li><a href='2009/12/index.html'>December 2009</a></li>
+	<li><a href='2009/10/index.html'>October 2009</a></li>
+	<li><a href='2009/09/index.html'>September 2009</a></li>
+	<li><a href='2009/08/index.html'>August 2009</a></li>
+	<li><a href='2009/04/index.html'>April 2009</a></li>
+	<li><a href='2009/03/index.html'>March 2009</a></li>
+	<li><a href='2009/02/index.html'>February 2009</a></li>
+	<li><a href='2009/01/index.html'>January 2009</a></li>
+	<li><a href='2008/10/index.html'>October 2008</a></li>
+	<li><a href='2008/09/index.html'>September 2008</a></li>
+	<li><a href='2008/08/index.html'>August 2008</a></li>
+	<li><a href='2008/07/index.html'>July 2008</a></li>
+	<li><a href='2008/04/index.html'>April 2008</a></li>
+	<li><a href='2008/03/index.html'>March 2008</a></li>
+	<li><a href='2008/02/index.html'>February 2008</a></li>
+	<li><a href='2008/01/index.html'>January 2008</a></li>
+	<li><a href='2007/12/index.html'>December 2007</a></li>
+	<li><a href='2007/10/index.html'>October 2007</a></li>
+	<li><a href='2007/09/index.html'>September 2007</a></li>
+	<li><a href='2007/08/index.html'>August 2007</a></li>
+	<li><a href='2007/06/index.html'>June 2007</a></li>
+	<li><a href='2007/05/index.html'>May 2007</a></li>
+	<li><a href='2007/04/index.html'>April 2007</a></li>
+			</ul>
+
+			</li>
+	</ul>
+    
+    </div><!-- Sidebar -->
+
+</div><!-- Rightcolumn -->
+
+
+
+<br clear="all" />
+
+<div id="footer">
+<p>Copyright 2009, powered by <a href="http://www.wordpress.org/">WordPress</a></p>
+</div><!-- Footer -->
+
+</div><!-- Wrapper -->
+
+<br clear="all" />
+</div><!-- Container -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3308745-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

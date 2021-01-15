@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Rounding to the nearest number in Ruby	</title>
+	<atom:link href="http://pullmonkey.com/2008/01/31/rounding-to-the-nearest-number-in-ruby/feed/" rel="self" type="application/rss+xml" />
+	<link>http://pullmonkey.com/2008/01/31/rounding-to-the-nearest-number-in-ruby/</link>
+	<description></description>
+	<lastBuildDate>Sat, 05 Feb 2011 19:38:40 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6</generator>
+	<item>
+		<title>
+		By: Ben		</title>
+		<link>http://pullmonkey.com/2008/01/31/rounding-to-the-nearest-number-in-ruby/comment-page-1/#comment-18291</link>
+
+		<dc:creator><![CDATA[Ben]]></dc:creator>
+		<pubDate>Sat, 05 Feb 2011 19:38:40 +0000</pubDate>
+		<guid isPermaLink="false">/2008/01/31/rounding-to-the-nearest-number-in-ruby#comment-18291</guid>
+
+					<description><![CDATA[Thanks for this, exactly what I needed to round an int up to nearest 500 :)]]></description>
+			<content:encoded><![CDATA[<p>Thanks for this, exactly what I needed to round an int up to nearest 500 🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Henrik N		</title>
+		<link>http://pullmonkey.com/2008/01/31/rounding-to-the-nearest-number-in-ruby/comment-page-1/#comment-1031</link>
+
+		<dc:creator><![CDATA[Henrik N]]></dc:creator>
+		<pubDate>Thu, 03 Sep 2009 12:22:37 +0000</pubDate>
+		<guid isPermaLink="false">/2008/01/31/rounding-to-the-nearest-number-in-ruby#comment-1031</guid>
+
+					<description><![CDATA[Tim, I think for rounding to nearest, you&#039;ll find this is easier :)
+
+&lt;pre&gt;&lt;code&gt;
+def roundnearest(multiple=10)
+  (self/multiple.to_f).round * multiple
+end
+&lt;/code&gt;&lt;/pre&gt;]]></description>
+			<content:encoded><![CDATA[<p>Tim, I think for rounding to nearest, you&#8217;ll find this is easier 🙂</p>
+<pre><code>
+def roundnearest(multiple=10)
+  (self/multiple.to_f).round * multiple
+end
+</code></pre>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Tim Harrison		</title>
+		<link>http://pullmonkey.com/2008/01/31/rounding-to-the-nearest-number-in-ruby/comment-page-1/#comment-192</link>
+
+		<dc:creator><![CDATA[Tim Harrison]]></dc:creator>
+		<pubDate>Thu, 31 Jan 2008 17:29:00 +0000</pubDate>
+		<guid isPermaLink="false">/2008/01/31/rounding-to-the-nearest-number-in-ruby#comment-192</guid>
+
+					<description><![CDATA[How about this addition?
+
+  def roundnearest(nearest=10)
+    up = roundup(nearest)
+    down = rounddown(nearest)
+    if (up-self) &#060; (self-down)
+      return up
+    else
+      return down
+    end
+  end]]></description>
+			<content:encoded><![CDATA[<p>How about this addition?</p>
+<p>  def roundnearest(nearest=10)<br />
+    up = roundup(nearest)<br />
+    down = rounddown(nearest)<br />
+    if (up-self) &lt; (self-down)<br />
+      return up<br />
+    else<br />
+      return down<br />
+    end<br />
+  end</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: charlie		</title>
+		<link>http://pullmonkey.com/2008/01/31/rounding-to-the-nearest-number-in-ruby/comment-page-1/#comment-193</link>
+
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Thu, 31 Jan 2008 17:29:00 +0000</pubDate>
+		<guid isPermaLink="false">/2008/01/31/rounding-to-the-nearest-number-in-ruby#comment-193</guid>
+
+					<description><![CDATA[@Tim - great addition, thanks for posting it :)]]></description>
+			<content:encoded><![CDATA[<p>@Tim &#8211; great addition, thanks for posting it 🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hamoth		</title>
+		<link>http://pullmonkey.com/2008/01/31/rounding-to-the-nearest-number-in-ruby/comment-page-1/#comment-194</link>
+
+		<dc:creator><![CDATA[Hamoth]]></dc:creator>
+		<pubDate>Thu, 31 Jan 2008 17:29:00 +0000</pubDate>
+		<guid isPermaLink="false">/2008/01/31/rounding-to-the-nearest-number-in-ruby#comment-194</guid>
+
+					<description><![CDATA[What is modulus and where are you putting this code?]]></description>
+			<content:encoded><![CDATA[<p>What is modulus and where are you putting this code?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: charlie		</title>
+		<link>http://pullmonkey.com/2008/01/31/rounding-to-the-nearest-number-in-ruby/comment-page-1/#comment-195</link>
+
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Thu, 31 Jan 2008 17:29:00 +0000</pubDate>
+		<guid isPermaLink="false">/2008/01/31/rounding-to-the-nearest-number-in-ruby#comment-195</guid>
+
+					<description><![CDATA[@Hamoth - modulus returns the remainder of a division.  For example if I have modulus(5/2) I will get 1.  modulus(10/7), I will get 3.  In rails, this code would go in its own file under RAILS_ROOT/config/initializers/.  Otherwise, you would just put this code in its own file and require it in your other source code.]]></description>
+			<content:encoded><![CDATA[<p>@Hamoth &#8211; modulus returns the remainder of a division.  For example if I have modulus(5/2) I will get 1.  modulus(10/7), I will get 3.  In rails, this code would go in its own file under RAILS_ROOT/config/initializers/.  Otherwise, you would just put this code in its own file and require it in your other source code.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

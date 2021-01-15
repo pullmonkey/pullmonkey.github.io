@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>HSB &#8211; PullMonkey Blog</title>
+	<atom:link href="http://pullmonkey.com/tag/hsb/feed/" rel="self" type="application/rss+xml" />
+	<link>http://pullmonkey.com</link>
+	<description></description>
+	<lastBuildDate>Thu, 26 Jul 2012 16:57:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6</generator>
+	<item>
+		<title>Signature Pad in Linux</title>
+		<link>http://pullmonkey.com/2012/07/26/signature-pad-in-linux/</link>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Thu, 26 Jul 2012 16:57:56 +0000</pubDate>
+				<category><![CDATA[development]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[projects]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[HSB]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[signature pad]]></category>
+		<category><![CDATA[topaz]]></category>
+		<category><![CDATA[USB]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57708</guid>
+
+					<description><![CDATA[I'm using the topaz model T L462 HSB. It's nice now that it works. But what a PITA to get it going. The biggest problem with the device is the documentation. There is no low level documentation explaining the representation of the bytes coming in over usb. So you are stuck using their libraries which [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I'm using the topaz model T L462 HSB.  It's nice now that it works.  But what a PITA to get it going.  The biggest problem with the device is the documentation.  There is no low level documentation explaining the representation of the bytes coming in over usb. So you are stuck using their libraries which expose some poorly explained API.</p>
+<p>Anyway, like I said, great when it works.  So I'm working in linux which basically leaves me having to use java libs and a shared object file.</p>
+<p>Here's my code:</p>
+<p><script src="https://gist.github.com/3183134.js?file=gistfile1.java"></script></p>
+<p>It sits and waits until the sig pad gets some points on it.  Once we have points it waits for a lapse in time where there is no change in the number of points.<br />
+Once we've decided that we have captured a signature, we store it to a file.<br />
+Then we shell out to a ruby script - <a href="http://pullmonkey.com/2012/07/25/using-httpi-with-curb-to-do-multipart-file-uploads-with-spnego/">see the httpi and curb article</a> - which is how I get the file to our rails server for display and verification from the user.</p>
+<p>Now, you'll need a few files.  Most of which can be found in <a href="http://www.topazsystems.com/software/download/java/sigplusjava2_60.zip">the java zip download</a> from the vendor site.<br />
+From that zip, you should grab the following:<br />
+SigPlus2_60.jar<br />
+RXTXcomm.jar<br />
+libSigUsb.so - if you need the 64 bit version, go here - <a href="http://http://www.topazsystems.com/Software/libSigUsb7242012.zip">http://www.topazsystems.com/Software/libSigUsb7242012.zip</a></p>
+<p>Then I just used eclipse to set everything up and build.  Works well so far.<br />
+The only thing you may need to change is the model (I have mine set to SignatureGem1X5) and com port (I have mine set to HID1).</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

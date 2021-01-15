@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Dynamic Select Boxes &#8211; Ruby on Rails	</title>
+	<atom:link href="http://pullmonkey.com/2008/03/30/dynamic-select-boxes-ruby-on-rails/feed/" rel="self" type="application/rss+xml" />
+	<link>http://pullmonkey.com/2008/03/30/dynamic-select-boxes-ruby-on-rails/</link>
+	<description></description>
+	<lastBuildDate>Sat, 11 Aug 2012 01:21:59 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6</generator>
+	<item>
+		<title>
+		By: charlie		</title>
+		<link>http://pullmonkey.com/2008/03/30/dynamic-select-boxes-ruby-on-rails/comment-page-3/#comment-19014</link>
+
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Sat, 11 Aug 2012 01:21:59 +0000</pubDate>
+		<guid isPermaLink="false">/2008/03/31/dynamic-select-boxes-ruby-on-rails#comment-19014</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;http://pullmonkey.com/2008/03/30/dynamic-select-boxes-ruby-on-rails/comment-page-3/#comment-19012&quot;&gt;Bob Hazlewood&lt;/a&gt;.
+
+The &lt;a href=&quot;http://pullmonkey.com/2012/08/11/dynamic-select-boxes-ruby-on-rails-3/&quot; rel=&quot;nofollow&quot;&gt;updated version&lt;/a&gt; is now available, go check it out.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="http://pullmonkey.com/2008/03/30/dynamic-select-boxes-ruby-on-rails/comment-page-3/#comment-19012">Bob Hazlewood</a>.</p>
+<p>The <a href="http://pullmonkey.com/2012/08/11/dynamic-select-boxes-ruby-on-rails-3/" rel="nofollow">updated version</a> is now available, go check it out.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Bob Hazlewood		</title>
+		<link>http://pullmonkey.com/2008/03/30/dynamic-select-boxes-ruby-on-rails/comment-page-3/#comment-19012</link>
+
+		<dc:creator><![CDATA[Bob Hazlewood]]></dc:creator>
+		<pubDate>Thu, 09 Aug 2012 03:05:12 +0000</pubDate>
+		<guid isPermaLink="false">/2008/03/31/dynamic-select-boxes-ruby-on-rails#comment-19012</guid>
+
+					<description><![CDATA[An updated version of this tutorial would be GREATLY appreciated.  With so many of the &quot;examples&quot; I see on the web, I can&#039;t tell what&#039;s &quot;actual&quot; code and what is someone&#039;s pseudo-code.]]></description>
+			<content:encoded><![CDATA[<p>An updated version of this tutorial would be GREATLY appreciated.  With so many of the &#8220;examples&#8221; I see on the web, I can&#8217;t tell what&#8217;s &#8220;actual&#8221; code and what is someone&#8217;s pseudo-code.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Akerele Foluso		</title>
+		<link>http://pullmonkey.com/2008/03/30/dynamic-select-boxes-ruby-on-rails/comment-page-3/#comment-19010</link>
+
+		<dc:creator><![CDATA[Akerele Foluso]]></dc:creator>
+		<pubDate>Mon, 06 Aug 2012 18:19:04 +0000</pubDate>
+		<guid isPermaLink="false">/2008/03/31/dynamic-select-boxes-ruby-on-rails#comment-19010</guid>
+
+					<description><![CDATA[Thank you for your reply Charlie, could you kindly elaborate in clear terms on what changes to make and in which files to do I need to make these changes using your code as guide because I am a rails learner and thus cannot figure out your explanation in the previous post. I will really appreciate if you could start from the controller action or better still  provide us a new tutorial as you opined that clearly explains this concept.
+
+This has been giving me real though time for more than a week now and I will really appreciate your help in this regard and I am pretty sure it will be helpful to lots of people out there too.
+
+Thanks.]]></description>
+			<content:encoded><![CDATA[<p>Thank you for your reply Charlie, could you kindly elaborate in clear terms on what changes to make and in which files to do I need to make these changes using your code as guide because I am a rails learner and thus cannot figure out your explanation in the previous post. I will really appreciate if you could start from the controller action or better still  provide us a new tutorial as you opined that clearly explains this concept.</p>
+<p>This has been giving me real though time for more than a week now and I will really appreciate your help in this regard and I am pretty sure it will be helpful to lots of people out there too.</p>
+<p>Thanks.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: charlie		</title>
+		<link>http://pullmonkey.com/2008/03/30/dynamic-select-boxes-ruby-on-rails/comment-page-2/#comment-19008</link>
+
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Sat, 04 Aug 2012 15:22:43 +0000</pubDate>
+		<guid isPermaLink="false">/2008/03/31/dynamic-select-boxes-ruby-on-rails#comment-19008</guid>
+
+					<description><![CDATA[Foluso - &quot;remote_function&quot; was the old way, this tutorial is over 4 years old :)
+
+Everything has moved away from prototype and to unobtrusive JS with jquery.
+
+So now you would do something like $(&#039;#artist_id&#039;).change(function() { do your jquery ajax call here }); 
+Also, you&#039;ll need to change the render :update bits.  Just create a actionname.js.erb file in your views path for the controller.  Then move the code from within the render :update block to the js.erb file, making whatever necessary changes.  
+
+I&#039;ll see about doing a 2012 version of this tutorial.]]></description>
+			<content:encoded><![CDATA[<p>Foluso &#8211; &#8220;remote_function&#8221; was the old way, this tutorial is over 4 years old 🙂</p>
+<p>Everything has moved away from prototype and to unobtrusive JS with jquery.</p>
+<p>So now you would do something like $(&#8216;#artist_id&#8217;).change(function() { do your jquery ajax call here });<br />
+Also, you&#8217;ll need to change the render :update bits.  Just create a actionname.js.erb file in your views path for the controller.  Then move the code from within the render :update block to the js.erb file, making whatever necessary changes.  </p>
+<p>I&#8217;ll see about doing a 2012 version of this tutorial.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Foluso		</title>
+		<link>http://pullmonkey.com/2008/03/30/dynamic-select-boxes-ruby-on-rails/comment-page-2/#comment-19002</link>
+
+		<dc:creator><![CDATA[Foluso]]></dc:creator>
+		<pubDate>Mon, 30 Jul 2012 15:17:33 +0000</pubDate>
+		<guid isPermaLink="false">/2008/03/31/dynamic-select-boxes-ruby-on-rails#comment-19002</guid>
+
+					<description><![CDATA[Thanks for this tutorial.
+I am working on rails 3.2 and I got this error when I navigated to http://localhost:3000/dynamic (dynamic is the name given to the controller)
+
+undefined method `remote_function&#039; for #&#060;#:0xa033f68&#062;
+
+What should I do?]]></description>
+			<content:encoded><![CDATA[<p>Thanks for this tutorial.<br />
+I am working on rails 3.2 and I got this error when I navigated to <a href="http://localhost:3000/dynamic" rel="nofollow ugc">http://localhost:3000/dynamic</a> (dynamic is the name given to the controller)</p>
+<p>undefined method `remote_function&#8217; for #&lt;#:0xa033f68&gt;</p>
+<p>What should I do?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: ramya		</title>
+		<link>http://pullmonkey.com/2008/03/30/dynamic-select-boxes-ruby-on-rails/comment-page-2/#comment-18610</link>
+
+		<dc:creator><![CDATA[ramya]]></dc:creator>
+		<pubDate>Tue, 18 Oct 2011 17:09:30 +0000</pubDate>
+		<guid isPermaLink="false">/2008/03/31/dynamic-select-boxes-ruby-on-rails#comment-18610</guid>
+
+					<description><![CDATA[Thanks a lot Charlie. I have made all the necessary  jquery modifications.
+I am getting error due to this line.
+
+
+ page.replace_html &#039;artists&#039;, :partial =&#062; &#039;artists&#039;, :object =&#062; artists
+      page.replace_html &#039;songs&#039;,   :partial =&#062; &#039;songs&#039;,   :object =&#062; songs
+
+&quot;Element doesn&#039;t support this property or method&quot; error is seen  which is displayed as a pop up on changing the value of the drop down list box.]]></description>
+			<content:encoded><![CDATA[<p>Thanks a lot Charlie. I have made all the necessary  jquery modifications.<br />
+I am getting error due to this line.</p>
+<p> page.replace_html &#8216;artists&#8217;, :partial =&gt; &#8216;artists&#8217;, :object =&gt; artists<br />
+      page.replace_html &#8216;songs&#8217;,   :partial =&gt; &#8216;songs&#8217;,   :object =&gt; songs</p>
+<p>&#8220;Element doesn&#8217;t support this property or method&#8221; error is seen  which is displayed as a pop up on changing the value of the drop down list box.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: charlie		</title>
+		<link>http://pullmonkey.com/2008/03/30/dynamic-select-boxes-ruby-on-rails/comment-page-2/#comment-18609</link>
+
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Tue, 18 Oct 2011 16:53:42 +0000</pubDate>
+		<guid isPermaLink="false">/2008/03/31/dynamic-select-boxes-ruby-on-rails#comment-18609</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;http://pullmonkey.com/2008/03/30/dynamic-select-boxes-ruby-on-rails/comment-page-2/#comment-18607&quot;&gt;ramya&lt;/a&gt;.
+
+This article was also written at a time when prototype was included.  You&#039;ll need to make jQuery modifications.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="http://pullmonkey.com/2008/03/30/dynamic-select-boxes-ruby-on-rails/comment-page-2/#comment-18607">ramya</a>.</p>
+<p>This article was also written at a time when prototype was included.  You&#8217;ll need to make jQuery modifications.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: charlie		</title>
+		<link>http://pullmonkey.com/2008/03/30/dynamic-select-boxes-ruby-on-rails/comment-page-2/#comment-18608</link>
+
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Tue, 18 Oct 2011 16:51:41 +0000</pubDate>
+		<guid isPermaLink="false">/2008/03/31/dynamic-select-boxes-ruby-on-rails#comment-18608</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;http://pullmonkey.com/2008/03/30/dynamic-select-boxes-ruby-on-rails/comment-page-2/#comment-18606&quot;&gt;ramya&lt;/a&gt;.
+
+Yes, you do need to specify the routes now.  At the time of writing, there was a catch-all mapping for any :controller/:action that was not previously handled.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="http://pullmonkey.com/2008/03/30/dynamic-select-boxes-ruby-on-rails/comment-page-2/#comment-18606">ramya</a>.</p>
+<p>Yes, you do need to specify the routes now.  At the time of writing, there was a catch-all mapping for any :controller/:action that was not previously handled.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: ramya		</title>
+		<link>http://pullmonkey.com/2008/03/30/dynamic-select-boxes-ruby-on-rails/comment-page-2/#comment-18607</link>
+
+		<dc:creator><![CDATA[ramya]]></dc:creator>
+		<pubDate>Tue, 18 Oct 2011 13:34:31 +0000</pubDate>
+		<guid isPermaLink="false">/2008/03/31/dynamic-select-boxes-ruby-on-rails#comment-18607</guid>
+
+					<description><![CDATA[Hi, 
+
+I added the route through routes.erb. Now I am getting the error &quot;Ajax undefined&quot;. I am not able to the code hitting the update_releases in my controller.
+I have projects which contains releases which in turn contains cycles.]]></description>
+			<content:encoded><![CDATA[<p>Hi, </p>
+<p>I added the route through routes.erb. Now I am getting the error &#8220;Ajax undefined&#8221;. I am not able to the code hitting the update_releases in my controller.<br />
+I have projects which contains releases which in turn contains cycles.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: ramya		</title>
+		<link>http://pullmonkey.com/2008/03/30/dynamic-select-boxes-ruby-on-rails/comment-page-2/#comment-18606</link>
+
+		<dc:creator><![CDATA[ramya]]></dc:creator>
+		<pubDate>Tue, 18 Oct 2011 11:50:42 +0000</pubDate>
+		<guid isPermaLink="false">/2008/03/31/dynamic-select-boxes-ruby-on-rails#comment-18606</guid>
+
+					<description><![CDATA[Hi,
+
+Please let me know if routes are to be created for update_artists and update_songs.I am getting No route matches error.]]></description>
+			<content:encoded><![CDATA[<p>Hi,</p>
+<p>Please let me know if routes are to be created for update_artists and update_songs.I am getting No route matches error.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

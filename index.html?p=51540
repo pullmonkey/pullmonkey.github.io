@@ -1,0 +1,958 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>PullMonkey Blog  &raquo; Blog Archive   &raquo; Open Flash Chart II &#8211; Bar Graphs with on-click</title>
+<meta name="generator" content="WordPress 5.6" /> <!-- leave this for stats -->
+<link rel="stylesheet" href="wp-content/themes/simple&#32;paper/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="wp-content/themes/simple&#32;paper/code_highlighter.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="PullMonkey Blog RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="http://pullmonkey.com/xmlrpc.php" />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="PullMonkey Blog &raquo; Open Flash Chart II &#8211; Bar Graphs with on-click Comments Feed" href="2009/01/08/open-flash-chart-ii-bar-graphs-with-on-click/feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/pullmonkey.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='wp-includes/css/dist/block-library/style.min.css?ver=5.6' type='text/css' media='all' />
+<link rel="https://api.w.org/" href="wp-json/index.html" /><link rel="alternate" type="application/json" href="wp-json/wp/v2/posts/51540" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://pullmonkey.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.6" />
+<link rel="canonical" href="index.html?p=51540" />
+<link rel='shortlink' href='index.html?p=51540' />
+<link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed?url=http:%252F%252Fpullmonkey.com%252F2009%252F01%252F08%252Fopen-flash-chart-ii-bar-graphs-with-on-click%252F" />
+<link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed?url=http:%252F%252Fpullmonkey.com%252F2009%252F01%252F08%252Fopen-flash-chart-ii-bar-graphs-with-on-click%252F&amp;format=xml" />
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style></head>
+<body>
+
+<div id="container">
+
+<div id="menu">
+
+        <ul id="nav">
+        <li class="current_page_item"><a href="index.html">Home</a></li>
+                       	</ul>
+
+</div><!-- Menu -->
+
+<div id="wrapper">
+
+<div id="c1">
+
+<h1 id="logo"><a href="index.html">PullMonkey Blog</a></h1>
+<h2 id="description"></h2>
+
+<div id="content">
+
+
+<div class="post" id="post-51540">
+
+<div class="date">08 <span>Jan</span></div>
+
+<h2><a href="index.html?p=51540" rel="bookmark" title="Permanent Link to Open Flash Chart II &#8211; Bar Graphs with on-click">Open Flash Chart II &#8211; Bar Graphs with on-click</a></h2><br clear="all" />
+
+<p>Building on <a href="http://teethgrinder.co.uk/open-flash-chart-2/line-on-click.php">line graph clicking</a>, thanks to the support of a few other people (mentioned throughout the article) we now have bar graph clicking as well.  The only down side (if you want to call it that) is that it is experimental in the sense that the open flash chart swf object had to be updated, and the update is not part of the official OFC release (at least not at the time of this writing).  No big deal though, just be aware.  It is however part of the <a href="http://github.com/pullmonkey/open_flash_chart/tree/master">OFC rails plugin release</a>.<br />
+Big thanks goes to <a href="2008/7/23/open-flash-chart-ii-plugin-for-ruby-on-rails-ofc2#comment-51524">Eric</a> for his work on the action script for the bar clicking open-flash-chart swf file - see <a href="http://forums.openflashchart.com/viewtopic.php?f=5&t=305&p=1922#p1922">this forum entry</a> for more details.<br />
+Obvious thanks also goes to <a href="http://teethgrinder.co.uk/open-flash-chart-2/">monk.e.boy</a>.</p>
+<p>Ok, so two things to note for this to work:</p>
+<ol>
+<li>Pull the latest from github and make sure to get Eric's swf file (under the assets directory - <a href="http://github.com/pullmonkey/open_flash_chart/tree/master/assets/open-flash-chart-bar-clicking.swf">open-flash-chart-bar-clicking.swf</a> ) and place it under RAILS_ROOT/public</li>
+<li>The call to open_flash_chart_object() has changed to accept an optional parameter for the swf file name. I am leaving the original for use as open-flash-chart.swf (which is the default for the swf_file_name param) and added Eric's as open-flash-chart-bar-clicking.swf.  See the example below for usage.</li>
+</ol>
+<p>
+The changes that were made can be found <a href="http://github.com/pullmonkey/open_flash_chart/commit/57776d00e70020b50e6b1a6e2204a5718414b1c0">here</a>.</p>
+<p>Here is the graph we are after in this example (click the bars to see what happens):<br />
+<script type="text/javascript" src="projects/javascripts/swfobject.js"></script></p>
+<div id="flash_content_1219079970.558889"></div>
+<p>    <script type="text/javascript">
+      swfobject.embedSWF("/projects/open-flash-chart-bar-clicking.swf", "flash_content_1219079970.558889", "600", "300", "9.0.0", "expressInstall.swf",{"data-file":"%2Fprojects%2Fopen_flash_chart2%2Fbar_clicking"});
+    </script><br />
+    <noscript><br />
+      <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="600" height="300" id="flash_content_1219079970.558889" align="middle"><param name="allowScriptAccess" value="sameDomain" /><param name="movie" value="/projects/open-flash-chart-bar-clicking.swf?data=%2Fprojects%2Fopen_flash_chart2%2Fbar_clicking" /><param name="quality" value="high" /><param name="bgcolor" value="#FFFFFF" /><embed src="projects/open-flash-chart-bar-clicking.swf?data=%252Fprojects%252Fopen_flash_chart2%252Fbar_clicking" quality="high" bgcolor="#FFFFFF" width="600" height="300" name="chart_1219079970.558889" align="middle"  allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" id="chart_1219079970.558889" /></object><br />
+    </noscript></p>
+<p><a href="http://pullmonkey.com/projects/open_flash_chart2">More Open Flash Chart II examples.</a></p>
+<p>And here is the code (the controller):</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt>9<tt>
+</tt><strong>10</strong><tt>
+</tt>11<tt>
+</tt>12<tt>
+</tt>13<tt>
+</tt>14<tt>
+</tt><strong>15</strong><tt>
+</tt>16<tt>
+</tt>17<tt>
+</tt>18<tt>
+</tt>19<tt>
+</tt><strong>20</strong><tt>
+</tt>21<tt>
+</tt>22<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt><span class="r">class</span> <span class="cl">TestItController</span> &lt; <span class="co">ApplicationController</span><tt>
+</tt>  <span class="r">def</span> <span class="fu">index</span><tt>
+</tt>    <span class="iv">@graph</span> = open_flash_chart_object(<span class="i">600</span>,<span class="i">300</span>,<span class="s"><span class="dl">&quot;</span><span class="k">/test_it/graph_code</span><span class="dl">&quot;</span></span>, <span class="pc">true</span>, <span class="s"><span class="dl">&quot;</span><span class="k">/</span><span class="dl">&quot;</span></span>, <span class="s"><span class="dl">&quot;</span><span class="k">open-flash-chart-bar-clicking.swf</span><span class="dl">&quot;</span></span>)<tt>
+</tt>  <span class="r">end</span><tt>
+</tt><tt>
+</tt>  <span class="r">def</span> <span class="fu">graph_code</span><tt>
+</tt>    title = <span class="co">Title</span>.new(<span class="s"><span class="dl">&quot;</span><span class="k">Bar on-click Example</span><span class="dl">&quot;</span></span>)<tt>
+</tt>    bar = <span class="co">BarGlass</span>.new<tt>
+</tt>    <span class="c"># NOTE ... the next two lines are if you want each bar to have a different response when clicked</span><tt>
+</tt>    bar_values = (<span class="i">1</span>..<span class="i">9</span>).to_a.map{|x| bv = <span class="co">BarValue</span>.new(x); bv.on_click = <span class="s"><span class="dl">&quot;</span><span class="k">alert('hello, my value is </span><span class="il"><span class="dl">#{</span>x<span class="dl">}</span></span><span class="k">')</span><span class="dl">&quot;</span></span>; bv}<tt>
+</tt>    bar.set_values(bar_values)<tt>
+</tt>    <span class="c"># if you want a more generic response across all bars, then the following lines would do:</span><tt>
+</tt>    <span class="c"># bar.on_click = &quot;alert('hello there')&quot;</span><tt>
+</tt>    <span class="c"># bar.set_values((1..9).to_a)</span><tt>
+</tt>    chart = <span class="co">OpenFlashChart</span>.new<tt>
+</tt>    chart.set_title(title)<tt>
+</tt>    chart.add_element(bar)<tt>
+</tt>    render <span class="sy">:text</span> =&gt; chart.to_s<tt>
+</tt>  <span class="r">end</span><tt>
+</tt><span class="r">end</span><tt>
+</tt><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>
+And in your view (index.html.erb):</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt>&lt;script type=<span class="s"><span class="dl">&quot;</span><span class="k">text/javascript</span><span class="dl">&quot;</span></span> src=<span class="s"><span class="dl">&quot;</span><span class="k">/javascripts/swfobject.js</span><span class="dl">&quot;</span></span>&gt;&lt;<span class="rx"><span class="dl">/</span><span class="k">script&gt;<tt>
+</tt>&lt;%= @graph %&gt;<tt>
+</tt><tt>
+</tt></span></span></pre>
+</td>
+</tr>
+</table>
+<p>Good Luck!</p>
+<p></p>
+
+<br />
+
+<div class="meta">
+<span class="note">Filed under: <a href="category/development/index.html" rel="category tag">development</a>, <a href="category/home/index.html" rel="category tag">Home</a>, <a href="category/open-flash-chart-graphs/index.html" rel="category tag">Open Flash Chart Graphs</a>, <a href="category/projects/index.html" rel="category tag">projects</a>, <a href="category/rails/index.html" rel="category tag">rails</a>, <a href="category/ruby/index.html" rel="category tag">ruby</a>, <a href="category/tutorials/index.html" rel="category tag">tutorials</a></span>
+<span class="tags">Tags: <a href="tag/charts/index.html" rel="tag">charts</a>, <a href="tag/flash/index.html" rel="tag">flash</a>, <a href="tag/graphs/index.html" rel="tag">graphs</a>, <a href="tag/open-flash-chart/index.html" rel="tag">open flash chart</a>, <a href="tag/rails/index.html" rel="tag">rails</a>, <a href="tag/ruby/index.html" rel="tag">ruby</a>, <a href="tag/ruby-on-rails/index.html" rel="tag">ruby on rails</a></span><br /></div><!--Meta -->
+
+
+<!-- You can start editing here. -->
+
+<div id="commentsbox">
+
+
+
+<h2 id="comments">
+	 <br /> 27 Responses 
+	  to &#8220;Open Flash Chart II &#8211; Bar Graphs with on-click&#8221;</h2>
+	
+	<ol class="commentlist">
+		
+
+<li class="odd" id="comment-888">
+
+By <strong><a href='http://teethgrinder.co.uk/open-flash-chart/' rel='external nofollow ugc' class='url'>monk.e.boy</a></strong> on <a href="index.html?p=51540#comment-888" title="">Jan 8, 2009</a> | <a href="index.html?p=51540#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Thanks for posting this. I love that there is more than one build of OFC2.x, it really makes sense.</p>
+<p>It is easy to mix 1.x, 2.x and other charts by naming them differently and putting the libraries in different folders. So you can mix and match to your hearts content.</p>
+<p>If you have any ideas on how to make the bars more obviously clickable, post on the forums, cos we are all struggling with how to show some bars can be clicked&#8230;.</p>
+<p>monk.e.boy</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-889">
+
+By <strong><a href='index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="index.html?p=51540#comment-889" title="">Jan 8, 2009</a> | <a href="index.html?p=51540#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@monk.e.boy &#8211; will do.</p>
+<p>For those that wish to comment on making the bars more obviously clickable &#8211; go to the &lt;a href=&quot;<a href="http://forums.openflashchart.com/&quot;&gt;OFC" rel="nofollow ugc">http://forums.openflashchart.com/&quot;&gt;OFC</a> forums&lt;/a&gt;</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-890">
+
+By <strong>Fabian</strong> on <a href="index.html?p=51540#comment-890" title="">Jan 8, 2009</a> | <a href="index.html?p=51540#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hey,<br />
+this addition is really great. I have a problem however: it doesn&#8217;t seem to recognize the &quot;rotate&quot;: &quot;vertical&quot; property for the x_axis labels anymore. If I use the &#8216;normal&#8217; swf it works. Any suggestions?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-891">
+
+By <strong><a href='index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="index.html?p=51540#comment-891" title="">Jan 8, 2009</a> | <a href="index.html?p=51540#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Fabian &#8211; that is the one problem you will run into with this sort of capability.  The author of the new swf may not take everything into consideration and it is possible that this functionality is missing.</p>
+<p>Just to be sure &#8211; when the problem occurs it is the same exact code, you are just simply switching the swf files?</p>
+<p>I would mention it to Eric on the &lt;a href=&quot;<a href="http://forums.openflashchart.com/viewtopic.php?f=5&#038;t=305&#038;p=1922#p1922&quot;&gt;OFC" rel="nofollow ugc">http://forums.openflashchart.com/viewtopic.php?f=5&#038;t=305&#038;p=1922#p1922&quot;&gt;OFC</a> Forum thread&lt;/a&gt; where I got the new swf build.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-892">
+
+By <strong>Mitja</strong> on <a href="index.html?p=51540#comment-892" title="">Jan 8, 2009</a> | <a href="index.html?p=51540#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>I had same problem with vertical labels.<br />
+I tried different thing and eventually replacing &#8216;vertical&#8217; with angle value was enough: 270 &#8211; is OK 🙂</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-893">
+
+By <strong>Albee</strong> on <a href="index.html?p=51540#comment-893" title="">Jan 8, 2009</a> | <a href="index.html?p=51540#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Is it possible, in a ruby way, to enable on_click for BarStack?  Where do I modify the code?  What methods, models, or controllers do I change?  Pardon my newbie-ness.<br />
+Thanks in advance!</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-894">
+
+By <strong><a href='index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="index.html?p=51540#comment-894" title="">Jan 8, 2009</a> | <a href="index.html?p=51540#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Albee &#8212; I am not sure I know what you mean exactly.  Does this tutorial not work for you?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-895">
+
+By <strong>Albee</strong> on <a href="index.html?p=51540#comment-895" title="">Jan 8, 2009</a> | <a href="index.html?p=51540#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>I am unable to apply this example to the Class BarStack.  Would it be possible to have a super simple example, say two stacked bars with the on_click option?  I am just not seeing how to do it.  I either get an error or nothing not even a message in my logs.  So, that is why, if you could please give a super simple two stacked bars example that would be awesome!</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-896">
+
+By <strong>Albee</strong> on <a href="index.html?p=51540#comment-896" title="">Jan 8, 2009</a> | <a href="index.html?p=51540#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Ok, now I get no error.  But now I also get no graph at all.</p>
+<p>this is the json that is passed out.<br />
+&lt;filter:code attributes=lang=&quot;ruby&quot;&gt;<br />
+{&quot;title&quot;: {&quot;text&quot;: &quot;test&quot;}, &quot;elements&quot;: [{&quot;type&quot;: &quot;bar_stack&quot;, &quot;values&quot;: [[{&quot;val&quot;: 2, &quot;colour&quot;: &quot;#ff0000&quot;, &quot;on-click&quot;: &quot;line_1&quot;}, {&quot;val&quot;: 4, &quot;colour&quot;: &quot;#00ff00&quot;, &quot;on-click&quot;: &quot;line_1&quot;}, {&quot;val&quot;: 6, &quot;colour&quot;: &quot;#0000ff&quot;, &quot;on-click&quot;: &quot;line_1&quot;}, {&quot;val&quot;: 8, &quot;colour&quot;: &quot;#abcdef&quot;, &quot;on-click&quot;: &quot;line_1&quot;}], [5, 3, 1, 7]]}]}<br />
+&lt;/filter:code&gt;</p>
+<p>this is the code creating it:<br />
+&lt;filter:code attributes=lang=&quot;ruby&quot;&gt;<br />
+        def stack( options={} )<br />
+                title = Title.new( &#8216;test&#8217; )<br />
+                chart = OpenFlashChart.new</p>
+<p># Create the type of graph to be displayed.<br />
+                bar_stack = BarStack.new<br />
+                #bar_stack.on_click = &quot;hello&quot;<br />
+                #bar_stack.on_click_text = &quot;hello&quot;<br />
+                clickers = []<br />
+                clickers &lt;&lt; BarStackValue.new(2, &quot;#ff0000&quot;)<br />
+                clickers &lt;&lt; BarStackValue.new(4, &quot;#00ff00&quot;)<br />
+                clickers &lt;&lt; BarStackValue.new(6, &quot;#0000ff&quot;)<br />
+                clickers &lt;&lt; BarStackValue.new(8, &quot;#abcdef&quot;)<br />
+                clickers.length.times do |index|<br />
+                        clickers[index].on_click = &quot;line_1&quot;<br />
+                        #clickers[index].tip =  &quot;Hi10 &lt;br&gt; Peak [64] &lt;br&gt; Average [#val#]&lt;br&gt;Total [#total#]&quot;<br />
+                end<br />
+                bar_stack.append_stack( clickers )<br />
+                bar_stack.append_stack( [5,3,1,7] )<br />
+                #x_axis = XAxis.new<br />
+                #y_axis = YAxis.new</p>
+<p># Set the direction and values of the x axis labels.<br />
+                #x_labels = XAxisLabels.new<br />
+                #x_labels.set_vertical( )<br />
+                #x_labels.labels = [&#8216;one&#8217;,&#8217;two&#8217;]</p>
+<p>#Create an array with the list of items they are looking for<br />
+                #x_axis.set_labels( x_labels )</p>
+<p>#Now set the min, max, and the step<br />
+                #y_axis.set_range( 0, 30, 2)</p>
+<p>#Create a chart object and fill in the blanks<br />
+                chart.set_title( title )<br />
+                chart.add_element( bar_stack )<br />
+                #chart.x_axis = x_axis<br />
+                #chart.y_axis = y_axis<br />
+                RAILS_DEFAULT_LOGGER.error(&quot;\n##################################################\n&quot;)<br />
+                RAILS_DEFAULT_LOGGER.error(&quot;\n#{chart.to_s}\n&quot;)<br />
+                RAILS_DEFAULT_LOGGER.error(&quot;\n##################################################\n&quot;)<br />
+                render :text =&gt; chart.to_s</p>
+<p>        end<br />
+&lt;/filter:code&gt;<br />
+Finally, the code which is initializing the<br />
+&lt;filter:code attributes=lang=&quot;ruby&quot;&gt;<br />
+        def show<br />
+                graph_url = url_for( :overwrite_params =&gt; { :controller =&gt; &#8216;dash_board&#8217;,<br />
+                                                                                                        :action =&gt; &#8216;graph_code&#8217; },<br />
+                                                                                                        :only_path =&gt; true)</p>
+<p>                @graph = open_flash_chart_object_from_hash( graph_url,<br />
+                                                                                                        :height =&gt; params[ :height ] || 1000,<br />
+                                                                                                        :width =&gt; params[ :width ] || 1000,<br />
+                                                                                                        :div_name =&gt; &#8216;super_cool&#8217;,<br />
+                                                                                                        :swf_file_name =&gt; &quot;open-flash-chart-bar-clicking.swf&quot;<br />
+                                                                                                        )</p>
+<p>                #I must remember not to mess with the actual values, it will mess things up!!!<br />
+                @x, cache, users = ConsultantMvDm.email_sla(params)<br />
+                render :partial =&gt; &#8216;chart&#8217;, :locals =&gt; {:x =&gt; @x, :cache =&gt; cache, :users =&gt; users, :graph =&gt; @graph}</p>
+<p>        end</p>
+<p>&lt;/filter:code&gt;<br />
+Any help would be much appreciated!</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-897">
+
+By <strong>Albee</strong> on <a href="index.html?p=51540#comment-897" title="">Jan 8, 2009</a> | <a href="index.html?p=51540#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Last comment, I have been able to get all other charts to work with the on click options, but barstack.  I hope this will help to find a possible bug.  Thanks, kaleb</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-898">
+
+By <strong><a href='index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="index.html?p=51540#comment-898" title="">Jan 8, 2009</a> | <a href="index.html?p=51540#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Albee &#8211; thank you for taking time to document all this for everyone 🙂</p>
+<p>The bar graph clicking functionality was added on to the original .swf file.  I would contact Eric through this forum &#8211; &lt;a href=&quot;<a href="http://forums.openflashchart.com/viewtopic.php?f=5&#038;t=305&#038;p=1922#p1922&quot;&gt;http://forums.openflashchart.com/viewtopic.php?f=5&#038;t=305&#038;p=1922#p1922&lt;/a&#038;gt" rel="nofollow ugc">http://forums.openflashchart.com/viewtopic.php?f=5&#038;t=305&#038;p=1922#p1922&quot;&gt;http://forums.openflashchart.com/viewtopic.php?f=5&#038;t=305&#038;p=1922#p1922&lt;/a&#038;gt</a>; and see if he went to the lengths of supporting stacked bar graphs as well.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-899">
+
+By <strong>Albee</strong> on <a href="index.html?p=51540#comment-899" title="">Jan 8, 2009</a> | <a href="index.html?p=51540#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hello,<br />
+     I wanted to share how I got the onclick event to work with StackedBar.  I had to use DZ&#8217;s swf (<a href="http://www.ofc2dz.com/OFC2/examples/OnClickEvents.html" rel="nofollow ugc">http://www.ofc2dz.com/OFC2/examples/OnClickEvents.html</a>) and modify StackedBarValue to allow arguments to be passed to the super.  In my version, I had in the initialize (forgive me, this may not be exactly the wording) super<br />
+Colour = colour<br />
+value = value</p>
+<p>I had to change it to:<br />
+ super args<br />
+Colour = colour<br />
+value = value</p>
+<p>And one last thing, the ofc2 using DZ&#8217;s swf version behaved badly when passed nil to it.  After catching those three things, it worked like a charm!</p>
+<p>I hope this helps someone,</p>
+<p>Have a good day!  🙂</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="mycomment" id="comment-900">
+
+By <strong>lakai</strong> on <a href="index.html?p=51540#comment-900" title="">Jan 8, 2009</a> | <a href="index.html?p=51540#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hi,</p>
+<p>is there any chance to show datetime-values in the diagramm? sitting here for hours but can&#8217;t get the bars shown correctly &#8230; does anyone have any example?</p>
+<p>this is my code:</p>
+<p>title = Title.new(&quot;MY TITLE&quot;)<br />
+bar = BarGlass.new<br />
+xlabels = []<br />
+x = XAxis.new<br />
+x.set_offset(true)</p>
+<p>chart = OpenFlashChart.new<br />
+chart.set_title(title)</p>
+<p>y = YAxis.new<br />
+y.set_offset(false)</p>
+<p>ylabels = []<br />
+bar_values = []<br />
+@laps.each do |lap|<br />
+  xlabels &lt;&lt; lap.end_time.to_s(:db)<br />
+  t = lap.end_time &#8211; lap.start_time<br />
+  bar_values &lt;&lt; Time.at(t)<br />
+end<br />
+x.set_labels(xlabels)<br />
+chart.set_x_axis(x)<br />
+bar.set_values(bar_values)<br />
+chart.add_element(bar)<br />
+render :text =&gt; chart.to_s</p>
+<p>best regards and thx in advance!</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-901">
+
+By <strong>Frank</strong> on <a href="index.html?p=51540#comment-901" title="">Jan 8, 2009</a> | <a href="index.html?p=51540#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hi again!  I&#8217;m trying to implement a stacked bar chart, but am running into 2 problems.  The first is that although I&#8217;ve set 5 bar_stack.colours, the stacked bars only use 2 default colors.  Here&#8217;s the JSON that I&#8217;ve generated:</p>
+<p>{&quot;x_legend&quot;: {&quot;text&quot;: &quot;Week&quot;, &quot;style&quot;: &quot;{font-size: 20px; color: #778877}&quot;}, &quot;title&quot;: {&quot;text&quot;: &quot;Memory Performance Over Time&quot;}, &quot;elements&quot;: [{&quot;colours&quot;: [&quot;#C21E1E&quot;, &quot;#EA5F12&quot;, &quot;#DCE233&quot;, &quot;#7ECB2B&quot;, &quot;#36CB2B&quot;], &quot;values&quot;: [[4, 20, 12, 16, 48], [9, 35, 3, 20, 30]], &quot;type&quot;: &quot;bar_stack&quot;}], &quot;y_axis&quot;: {&quot;steps&quot;: 10, &quot;max&quot;: 100, &quot;min&quot;: 0}, &quot;y_legend&quot;: {&quot;text&quot;: &quot;Percent&quot;, &quot;style&quot;: &quot;{font-size: 20px; color: #770077}&quot;}, &quot;x_axis&quot;: {&quot;labels&quot;: {&quot;rotate&quot;: &quot;vertical&quot;, &quot;labels&quot;: [{&quot;size&quot;: 14, &quot;text&quot;: &quot;03/30/09&quot;, &quot;colour&quot;: &quot;#000000&quot;, &quot;rotate&quot;: &quot;diagonal&quot;}, {&quot;size&quot;: 14, &quot;text&quot;: &quot;04/06/09&quot;, &quot;colour&quot;: &quot;#000000&quot;, &quot;rotate&quot;: &quot;diagonal&quot;}]}}}</p>
+<p>The second problem is that I can&#8217;t set the keys.  I&#8217;ve tried several variations (not all at the same time).</p>
+<p>bar_stack = BarStack.new<br />
+bar_stack.set_keys(<br />
+   BarStackKey.new(COLOR1, &#8216;Level 1&#8217;)<br />
+)</p>
+<p>bar_stack.set_keys(<br />
+   bar_stack.set_key(COLOR1, &#8216;Level 1&#8217;)<br />
+)</p>
+<p>bar_stack.set_keys(<br />
+   BarStackKey.new(COLOR1, &#8216;Level 1&#8217;)<br />
+)</p>
+<p>bar_stack.set_keys(<br />
+   BarStack.key.new(COLOR1, &#8216;Level 1&#8217;)<br />
+)</p>
+<p>Any assistance would be wonderful.  Thanks again for creating this plugin!!!</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-902">
+
+By <strong><a href='index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="index.html?p=51540#comment-902" title="">Jan 8, 2009</a> | <a href="index.html?p=51540#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Frank &#8211;<br />
+issue #1 (colors) is new and requires the latest swf file<br />
+issue #2 (keys) not yet supported</p>
+<p>Although, I do have an example using &lt;a href=&quot;<a href="http://github.com/pullmonkey/open_flash_chart/tree/test&quot;&gt;my" rel="nofollow ugc">http://github.com/pullmonkey/open_flash_chart/tree/test&quot;&gt;my</a> latest branch of OFC 2&lt;/a&gt;  Browse through the examples directory to see how I do it.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-903">
+
+By <strong><a href='index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="index.html?p=51540#comment-903" title="">Jan 8, 2009</a> | <a href="index.html?p=51540#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@lakai &#8211; you pretty much have it.</p>
+<p>Just need to put t in as BarValue.new(t) like this:</p>
+<p>bar_values &lt;&lt; BarValue.new(t)</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-904">
+
+By <strong>Phil Dubuc</strong> on <a href="index.html?p=51540#comment-904" title="">Jan 8, 2009</a> | <a href="index.html?p=51540#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Found this site via google while searching for charts. Great Tool. Although its a bit more technical than what I&#8217;m used to.</p>
+<p>Also found the &lt;a href=&quot;nces.ed.gov/nceskids/createAgraph&quot;&gt; National Center for Education&lt;/a&gt; chart website and &lt;a href=&quot;<a href="http://www.chartgo.com&quot;&#038;gt" rel="nofollow ugc">http://www.chartgo.com&quot;&#038;gt</a>; ChartGo&lt;/a&gt; They&#8217;re both pretty useful.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-2724">
+
+By <strong>Fulatoro</strong> on <a href="index.html?p=51540#comment-2724" title="">Nov 22, 2009</a> | <a href="index.html?p=51540#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>I am having trouble getting the BarStack example to work, I am trying add values as such</p>
+<p>val_array = []</p>
+<p>l1value.each do |name,value|<br />
+   val_array &lt;&lt; BarStackValue.new(value,colors[name])<br />
+end</p>
+<p>I am getting the following error on the val_array &lt;&lt; line</p>
+<p>wrong number of arguments (3 for 1)</p>
+<p>I suspect it is happening in the bar_stack.rb, I changed line 16 from</p>
+<p>super<br />
+to</p>
+<p>super args</p>
+<p>THank you.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+			
+
+<li class="odd" id="comment-5543">
+
+By <strong><a href='http://evontech.com' rel='external nofollow ugc' class='url'>dinesh</a></strong> on <a href="index.html?p=51540#comment-5543" title="">Feb 19, 2010</a> | <a href="index.html?p=51540#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>How i reload new bar chart in ruby side without page redirecting.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-14087">
+
+By <strong>Ahren</strong> on <a href="index.html?p=51540#comment-14087" title="">Sep 21, 2010</a> | <a href="index.html?p=51540#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>I realize this post is a bit dated, but I&#8217;m looking for help with an issue.</p>
+<p>When I click these chart links (on_click), if the result is a javascript function like you have here, firefox completely locks up.  It works fine in internet explorer.</p>
+<p>It happens on more than one computer, so it&#8217;s not my local firefox.  Has anyone experienced this?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-15859">
+
+By <strong><a href='http://www.eyesandfeet.com' rel='external nofollow ugc' class='url'>Muni</a></strong> on <a href="index.html?p=51540#comment-15859" title="">Oct 27, 2010</a> | <a href="index.html?p=51540#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hello every one, </p>
+<p>Thanks for nice plugin for Graphs. Is there any way that I can generate the vertical Bar Graph with  this Plugin? I have tried looked at the Plugin code, but helpless.</p>
+<p>Can any one help me?</p>
+<p>Munendra Chevuru (Muni).</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-15889">
+
+By <strong>charlie</strong> on <a href="index.html?p=51540#comment-15889" title="">Oct 27, 2010</a> | <a href="index.html?p=51540#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Don&#8217;t look at the plugin code, it is all metaprogrammed.<br />
+For examples, use what&#8217;s on my site <a href="http://pullmonkey.com/projects/open_flash_chart2" rel="nofollow">here</a>.<br />
+A vertical bar graph can be found <a href="2008/7/23/open-flash-chart-ii-plugin-for-ruby-on-rails-ofc2" rel="nofollow">here</a>.</p>
+<p>Or convert the php examples <a href="http://teethgrinder.co.uk/open-flash-chart-2/bar-charts-menu.php" rel="nofollow">here</a> to ruby.<br />
+Horizontal bar graph example can be found <a href="http://teethgrinder.co.uk/open-flash-chart-2/horizontal-bar-chart.php" rel="nofollow">here</a>.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-15906">
+
+By <strong><a href='http://www.eyesandfeet.com' rel='external nofollow ugc' class='url'>Muni</a></strong> on <a href="index.html?p=51540#comment-15906" title="">Oct 28, 2010</a> | <a href="index.html?p=51540#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Thanks for your Help! I have tried that.. However I have couple of questions and posted the same on that page..</p>
+<p>Thanks,<br />
+Munendra Chevuru (Muni)</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18765">
+
+By <strong>krace</strong> on <a href="index.html?p=51540#comment-18765" title="">Jan 6, 2012</a> | <a href="index.html?p=51540#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>thanks a lot for this!</p>
+<p>having a bit of a problem here: i&#8217;mtrying to get the bar-clicking functionality up in by graph and hitting a snag. in your example, <a href="http://pullmonkey.com/projects/open_flash_chart2/bar_clicking" rel="nofollow ugc">http://pullmonkey.com/projects/open_flash_chart2/bar_clicking</a>, onclick events are named &#8220;on-click&#8221; (with a dash), and they obviously work (as the example demonstrates). however, lest i&#8217;m missing something, dash is not a valid symbol to have in an instance variable. your code sample shows &#8220;on_click&#8221; (with underscore), however this doesn&#8217;t work for me, i.e. the graph displays, but it&#8217;s not clickable.</p>
+<p>anything i&#8217;m missing?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18766">
+
+By <strong>charlie</strong> on <a href="index.html?p=51540#comment-18766" title="">Jan 6, 2012</a> | <a href="index.html?p=51540#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>You&#8217;re right, the instance variables all use underscores.<br />
+The code here &#8211; <a href="https://github.com/pullmonkey/open_flash_chart/blob/master/lib/open_flash_chart/base.rb" rel="nofollow ugc">https://github.com/pullmonkey/open_flash_chart/blob/master/lib/open_flash_chart/base.rb</a> is what converts on_click back to on-click for the JSON that you pointed to.</p>
+<p>What JSON do you get as output?   Do you see on_click instead of on-click?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18767">
+
+By <strong>krace</strong> on <a href="index.html?p=51540#comment-18767" title="">Jan 6, 2012</a> | <a href="index.html?p=51540#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>well, DUH, figures! [doofus_face.png]</p>
+<p>I&#8217;ve been using an older version of the code. updated from git, things look much better now.</p>
+<p>thanks a ton! =)</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		</ol>
+	
+	
+
+	<ol class="tblist" style="list-style:none;">
+
+<li><h2>1 Trackback(s)</h2></li>
+	
+
+	<li id="comment-4312">
+	<small class="commentmetadata">Jan 16, 2010:</small> <font style="font-size:11px;"><a href='http://www.ericsal.com/2010/01/on-click-events-for-bar-charts-in-ofc2/' rel='external nofollow ugc' class='url'>On-click Events for Bar Charts in OFC2 | Eric Salczynski</a></font>
+			</li>
+	
+		
+
+	</ol>
+
+	
+
+	<p id="comments-closed">Sorry, comments for this entry are closed at this time.</p>
+</div>
+</div><!-- Post -->
+
+		        
+  
+
+	
+</div><!-- Content -->
+
+</div><!-- LeftColumn -->
+
+<div id="c2">
+
+   
+    <div id="sidebar">
+
+<div id="subscribe">
+<a href="feed/index.html"><img src="wp-content/themes/simple&#32;paper/images/rss.gif" alt="RSS-FEED" border="0" id="rss" /></a>
+<a href="feed/index.html">subscribe to the feed</a><br clear="all" />
+</div><!-- subscribe rss -->
+
+<div id="topsearch">
+<form action="index.html" method="post">
+<input type="text" value="Search..." name="s" id="ls" class="searchfield" onfocus="if (this.value == 'Search...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search...';}" />
+<input type="image" src="wp-content/themes/simple&#32;paper/images/click.gif" id="submit" />
+</form>
+<br clear="all" />
+<br clear="all" />
+</div>
+    
+    	<ul>
+	<li id="tag_cloud-2" class="widget widget_tag_cloud"><h2 class="widgettitle">Tags</h2>
+<div class="tagcloud"><a href="tag/net/index.html" class="tag-cloud-link tag-link-166 tag-link-position-1" style="font-size: 8pt;" aria-label=".net (2 items)">.net</a>
+<a href="tag/activerecord/index.html" class="tag-cloud-link tag-link-54 tag-link-position-2" style="font-size: 8pt;" aria-label="activerecord (2 items)">activerecord</a>
+<a href="tag/api/index.html" class="tag-cloud-link tag-link-220 tag-link-position-3" style="font-size: 10.40625pt;" aria-label="api (4 items)">api</a>
+<a href="tag/biking/index.html" class="tag-cloud-link tag-link-219 tag-link-position-4" style="font-size: 10.40625pt;" aria-label="biking (4 items)">biking</a>
+<a href="tag/business/index.html" class="tag-cloud-link tag-link-213 tag-link-position-5" style="font-size: 8pt;" aria-label="business (2 items)">business</a>
+<a href="tag/c/index.html" class="tag-cloud-link tag-link-33 tag-link-position-6" style="font-size: 10.40625pt;" aria-label="c++ (4 items)">c++</a>
+<a href="tag/charts/index.html" class="tag-cloud-link tag-link-42 tag-link-position-7" style="font-size: 18.171875pt;" aria-label="charts (25 items)">charts</a>
+<a href="tag/cms/index.html" class="tag-cloud-link tag-link-60 tag-link-position-8" style="font-size: 12.046875pt;" aria-label="CMS (6 items)">CMS</a>
+<a href="tag/curb/index.html" class="tag-cloud-link tag-link-190 tag-link-position-9" style="font-size: 8pt;" aria-label="curb (2 items)">curb</a>
+<a href="tag/curl/index.html" class="tag-cloud-link tag-link-120 tag-link-position-10" style="font-size: 8pt;" aria-label="curl (2 items)">curl</a>
+<a href="tag/dynamic/index.html" class="tag-cloud-link tag-link-56 tag-link-position-11" style="font-size: 8pt;" aria-label="dynamic (2 items)">dynamic</a>
+<a href="tag/ece231/index.html" class="tag-cloud-link tag-link-34 tag-link-position-12" style="font-size: 10.40625pt;" aria-label="ece231 (4 items)">ece231</a>
+<a href="tag/editor/index.html" class="tag-cloud-link tag-link-61 tag-link-position-13" style="font-size: 11.28125pt;" aria-label="editor (5 items)">editor</a>
+<a href="tag/error/index.html" class="tag-cloud-link tag-link-46 tag-link-position-14" style="font-size: 9.3125pt;" aria-label="error (3 items)">error</a>
+<a href="tag/flash/index.html" class="tag-cloud-link tag-link-41 tag-link-position-15" style="font-size: 17.84375pt;" aria-label="flash (23 items)">flash</a>
+<a href="tag/fun/index.html" class="tag-cloud-link tag-link-23 tag-link-position-16" style="font-size: 11.28125pt;" aria-label="fun (5 items)">fun</a>
+<a href="tag/gems/index.html" class="tag-cloud-link tag-link-44 tag-link-position-17" style="font-size: 8pt;" aria-label="gems (2 items)">gems</a>
+<a href="tag/graphs/index.html" class="tag-cloud-link tag-link-52 tag-link-position-18" style="font-size: 18.390625pt;" aria-label="graphs (26 items)">graphs</a>
+<a href="tag/httpi/index.html" class="tag-cloud-link tag-link-191 tag-link-position-19" style="font-size: 8pt;" aria-label="httpi (2 items)">httpi</a>
+<a href="tag/java/index.html" class="tag-cloud-link tag-link-177 tag-link-position-20" style="font-size: 9.3125pt;" aria-label="java (3 items)">java</a>
+<a href="tag/javascript/index.html" class="tag-cloud-link tag-link-215 tag-link-position-21" style="font-size: 10.40625pt;" aria-label="Javascript (4 items)">Javascript</a>
+<a href="tag/linux/index.html" class="tag-cloud-link tag-link-221 tag-link-position-22" style="font-size: 8pt;" aria-label="Linux (2 items)">Linux</a>
+<a href="tag/macromovers/index.html" class="tag-cloud-link tag-link-66 tag-link-position-23" style="font-size: 8pt;" aria-label="macromovers (2 items)">macromovers</a>
+<a href="tag/mirah/index.html" class="tag-cloud-link tag-link-176 tag-link-position-24" style="font-size: 8pt;" aria-label="mirah (2 items)">mirah</a>
+<a href="tag/ofc/index.html" class="tag-cloud-link tag-link-105 tag-link-position-25" style="font-size: 8pt;" aria-label="OFC (2 items)">OFC</a>
+<a href="tag/open-flash-chart/index.html" class="tag-cloud-link tag-link-40 tag-link-position-26" style="font-size: 18.609375pt;" aria-label="open flash chart (27 items)">open flash chart</a>
+<a href="tag/php/index.html" class="tag-cloud-link tag-link-216 tag-link-position-27" style="font-size: 9.3125pt;" aria-label="php (3 items)">php</a>
+<a href="tag/plugin/index.html" class="tag-cloud-link tag-link-65 tag-link-position-28" style="font-size: 12.59375pt;" aria-label="plugin (7 items)">plugin</a>
+<a href="tag/plugins/index.html" class="tag-cloud-link tag-link-218 tag-link-position-29" style="font-size: 9.3125pt;" aria-label="plugins (3 items)">plugins</a>
+<a href="tag/prog/index.html" class="tag-cloud-link tag-link-35 tag-link-position-30" style="font-size: 9.3125pt;" aria-label="prog (3 items)">prog</a>
+<a href="tag/project/index.html" class="tag-cloud-link tag-link-47 tag-link-position-31" style="font-size: 10.40625pt;" aria-label="project (4 items)">project</a>
+<a href="tag/rails/index.html" class="tag-cloud-link tag-link-210 tag-link-position-32" style="font-size: 20.90625pt;" aria-label="rails (45 items)">rails</a>
+<a href="tag/ruby/index.html" class="tag-cloud-link tag-link-211 tag-link-position-33" style="font-size: 22pt;" aria-label="ruby (57 items)">ruby</a>
+<a href="tag/ruby-on-rails/index.html" class="tag-cloud-link tag-link-43 tag-link-position-34" style="font-size: 20.359375pt;" aria-label="ruby on rails (40 items)">ruby on rails</a>
+<a href="tag/select-boxes/index.html" class="tag-cloud-link tag-link-57 tag-link-position-35" style="font-size: 8pt;" aria-label="select boxes (2 items)">select boxes</a>
+<a href="tag/simple/index.html" class="tag-cloud-link tag-link-62 tag-link-position-36" style="font-size: 10.40625pt;" aria-label="simple (4 items)">simple</a>
+<a href="tag/simplecms/index.html" class="tag-cloud-link tag-link-214 tag-link-position-37" style="font-size: 11.28125pt;" aria-label="SimpleCMS (5 items)">SimpleCMS</a>
+<a href="tag/skizmo/index.html" class="tag-cloud-link tag-link-102 tag-link-position-38" style="font-size: 10.40625pt;" aria-label="skizmo (4 items)">skizmo</a>
+<a href="tag/software/index.html" class="tag-cloud-link tag-link-48 tag-link-position-39" style="font-size: 8pt;" aria-label="software (2 items)">software</a>
+<a href="tag/spreadsheet/index.html" class="tag-cloud-link tag-link-45 tag-link-position-40" style="font-size: 8pt;" aria-label="spreadsheet (2 items)">spreadsheet</a>
+<a href="tag/tutorial/index.html" class="tag-cloud-link tag-link-50 tag-link-position-41" style="font-size: 16.75pt;" aria-label="tutorial (18 items)">tutorial</a>
+<a href="tag/ubuntu/index.html" class="tag-cloud-link tag-link-150 tag-link-position-42" style="font-size: 8pt;" aria-label="ubuntu (2 items)">ubuntu</a>
+<a href="tag/vin/index.html" class="tag-cloud-link tag-link-119 tag-link-position-43" style="font-size: 12.59375pt;" aria-label="VIN (7 items)">VIN</a>
+<a href="tag/vin-api/index.html" class="tag-cloud-link tag-link-159 tag-link-position-44" style="font-size: 12.046875pt;" aria-label="vin api (6 items)">vin api</a>
+<a href="tag/xml/index.html" class="tag-cloud-link tag-link-165 tag-link-position-45" style="font-size: 9.3125pt;" aria-label="xml (3 items)">xml</a></div>
+</li>
+<li id="categories-524386351" class="widget widget_categories"><h2 class="widgettitle">Topics</h2>
+
+			<ul>
+					<li class="cat-item cat-item-179"><a href="category/android/index.html">Android</a>
+</li>
+	<li class="cat-item cat-item-118"><a href="category/api/index.html">api</a>
+</li>
+	<li class="cat-item cat-item-67"><a href="category/biking/index.html">biking</a>
+</li>
+	<li class="cat-item cat-item-37"><a href="category/blog/index.html">blog</a>
+</li>
+	<li class="cat-item cat-item-27"><a href="category/business/index.html">business</a>
+</li>
+	<li class="cat-item cat-item-32"><a href="category/c-c/index.html">C / C++</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="category/development/index.html">development</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="category/games/index.html">games</a>
+</li>
+	<li class="cat-item cat-item-139"><a href="category/graphics/index.html">Graphics</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="category/home/index.html">Home</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="category/ie-hacks/index.html">IE hacks</a>
+</li>
+	<li class="cat-item cat-item-31"><a href="category/javascript/index.html">Javascript</a>
+</li>
+	<li class="cat-item cat-item-149"><a href="category/linux/index.html">Linux</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="category/me/index.html">me</a>
+</li>
+	<li class="cat-item cat-item-26"><a href="category/open-flash-chart-graphs/index.html">Open Flash Chart Graphs</a>
+</li>
+	<li class="cat-item cat-item-29"><a href="category/opengl/index.html">opengl</a>
+</li>
+	<li class="cat-item cat-item-36"><a href="category/php/index.html">php</a>
+</li>
+	<li class="cat-item cat-item-51"><a href="category/plugins/index.html">plugins</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="category/projects/index.html">projects</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="category/rails/index.html">rails</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="category/railsconf/index.html">railsconf</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="category/ruby/index.html">ruby</a>
+</li>
+	<li class="cat-item cat-item-28"><a href="category/simplecms/index.html">SimpleCMS</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="category/tutorials/index.html">tutorials</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="category/uncategorized/index.html">Uncategorized</a>
+</li>
+			</ul>
+
+			</li>
+
+		<li id="recent-posts-2" class="widget widget_recent_entries">
+		<h2 class="widgettitle">Recent Posts</h2>
+
+		<ul>
+											<li>
+					<a href="index.html?p=57726">Dynamic Select Boxes &#8211; Ruby on Rails 3</a>
+									</li>
+											<li>
+					<a href="index.html?p=57715">VIN API &#8211; Do you know about the complete data set?</a>
+									</li>
+											<li>
+					<a href="index.html?p=57712">Using Ruby to read from a MagTek USB Card Reader</a>
+									</li>
+											<li>
+					<a href="index.html?p=57708">Signature Pad in Linux</a>
+									</li>
+											<li>
+					<a href="index.html?p=57705">Using HTTPI with Curb to do multipart file uploads with spnego</a>
+									</li>
+					</ul>
+
+		</li>
+<li id="recent-comments-2" class="widget widget_recent_comments"><h2 class="widgettitle">Recent Comments</h2>
+<ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">`Drew</span> on <a href="2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/index.html#comment-24291">Dynamic Select Boxes &#8211; Ruby on Rails 3</a></li><li class="recentcomments"><span class="comment-author-link">Bardach</span> on <a href="2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/index.html#comment-24290">Dynamic Select Boxes &#8211; Ruby on Rails 3</a></li><li class="recentcomments"><span class="comment-author-link">Bardach</span> on <a href="2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/index.html#comment-24289">Dynamic Select Boxes &#8211; Ruby on Rails 3</a></li><li class="recentcomments"><span class="comment-author-link">Dar_bok</span> on <a href="2007/04/30/how-i-got-gta-san-andreas-to-work-with-a-crappy-os-vista/comment-page-2/index.html#comment-20844">How I got GTA San Andreas to Work with (a crappy OS) Vista</a></li><li class="recentcomments"><span class="comment-author-link">Anirudha Pendakur</span> on <a href="2012/07/25/using-httpi-with-curb-to-do-multipart-file-uploads-with-spnego/comment-page-1/index.html#comment-19583">Using HTTPI with Curb to do multipart file uploads with spnego</a></li></ul></li>
+<li id="archives-2" class="widget widget_archive"><h2 class="widgettitle">Archives</h2>
+
+			<ul>
+					<li><a href='2012/08/index.html'>August 2012</a></li>
+	<li><a href='2012/07/index.html'>July 2012</a></li>
+	<li><a href='2012/05/index.html'>May 2012</a></li>
+	<li><a href='2012/04/index.html'>April 2012</a></li>
+	<li><a href='2012/03/index.html'>March 2012</a></li>
+	<li><a href='2011/11/index.html'>November 2011</a></li>
+	<li><a href='2011/10/index.html'>October 2011</a></li>
+	<li><a href='2011/05/index.html'>May 2011</a></li>
+	<li><a href='2011/03/index.html'>March 2011</a></li>
+	<li><a href='2011/02/index.html'>February 2011</a></li>
+	<li><a href='2011/01/index.html'>January 2011</a></li>
+	<li><a href='2010/11/index.html'>November 2010</a></li>
+	<li><a href='2010/09/index.html'>September 2010</a></li>
+	<li><a href='2010/04/index.html'>April 2010</a></li>
+	<li><a href='2010/02/index.html'>February 2010</a></li>
+	<li><a href='2010/01/index.html'>January 2010</a></li>
+	<li><a href='2009/12/index.html'>December 2009</a></li>
+	<li><a href='2009/10/index.html'>October 2009</a></li>
+	<li><a href='2009/09/index.html'>September 2009</a></li>
+	<li><a href='2009/08/index.html'>August 2009</a></li>
+	<li><a href='2009/04/index.html'>April 2009</a></li>
+	<li><a href='2009/03/index.html'>March 2009</a></li>
+	<li><a href='2009/02/index.html'>February 2009</a></li>
+	<li><a href='2009/01/index.html'>January 2009</a></li>
+	<li><a href='2008/10/index.html'>October 2008</a></li>
+	<li><a href='2008/09/index.html'>September 2008</a></li>
+	<li><a href='2008/08/index.html'>August 2008</a></li>
+	<li><a href='2008/07/index.html'>July 2008</a></li>
+	<li><a href='2008/04/index.html'>April 2008</a></li>
+	<li><a href='2008/03/index.html'>March 2008</a></li>
+	<li><a href='2008/02/index.html'>February 2008</a></li>
+	<li><a href='2008/01/index.html'>January 2008</a></li>
+	<li><a href='2007/12/index.html'>December 2007</a></li>
+	<li><a href='2007/10/index.html'>October 2007</a></li>
+	<li><a href='2007/09/index.html'>September 2007</a></li>
+	<li><a href='2007/08/index.html'>August 2007</a></li>
+	<li><a href='2007/06/index.html'>June 2007</a></li>
+	<li><a href='2007/05/index.html'>May 2007</a></li>
+	<li><a href='2007/04/index.html'>April 2007</a></li>
+			</ul>
+
+			</li>
+	</ul>
+    
+    </div><!-- Sidebar -->
+
+</div><!-- Rightcolumn -->
+
+
+
+<br clear="all" />
+
+<div id="footer">
+<p>Copyright 2009, powered by <a href="http://www.wordpress.org/">WordPress</a></p>
+</div><!-- Footer -->
+
+</div><!-- Wrapper -->
+
+<br clear="all" />
+</div><!-- Container -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3308745-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

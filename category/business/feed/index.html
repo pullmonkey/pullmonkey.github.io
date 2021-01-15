@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>business &#8211; PullMonkey Blog</title>
+	<atom:link href="http://pullmonkey.com/category/business/feed/" rel="self" type="application/rss+xml" />
+	<link>http://pullmonkey.com</link>
+	<description></description>
+	<lastBuildDate>Sun, 05 Aug 2012 00:10:47 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6</generator>
+	<item>
+		<title>VIN API &#8211; Do you know about the complete data set?</title>
+		<link>http://pullmonkey.com/2012/08/04/vin-api-do-you-know-about-the-complete-data-set/</link>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Sat, 04 Aug 2012 15:42:04 +0000</pubDate>
+				<category><![CDATA[api]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[projects]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[basic data set]]></category>
+		<category><![CDATA[complete data set]]></category>
+		<category><![CDATA[fun]]></category>
+		<category><![CDATA[rich data]]></category>
+		<category><![CDATA[tutorial]]></category>
+		<category><![CDATA[VIN]]></category>
+		<category><![CDATA[vin api]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57715</guid>
+
+					<description><![CDATA[Looking at our data trends for VIN API, we show about 15% of all requests are for the complete data set. It's the same price as the basic data set and rich with a ton of data. Check out the data set from this post over 1 and half years ago. On top of the [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Looking at our data trends for <a href="http://vinapi.skizmo.com">VIN API</a>, we show about 15% of all requests are for the complete data set.  It's the same price as the basic data set and rich with a ton of data.</p>
+<p>Check out the data set from <a href="http://pullmonkey.com/2011/01/13/vin-api-phase-ii/">this post over 1 and half years ago</a>.  On top of the basic data set's year, make and model, the complete data set comes with data like MSRP, MPG (city and highway), dealer invoice, gas tank size, etc.   </p>
+<p>We get tons of hits for basic data, but at no additional charge we also provide the complete data set.  Just add a complete<br />
+=> "true" to your request.   So simple and there's no performance hit. </p>
+<p><script src="https://gist.github.com/854935.js?file=gistfile1.rb"></script></p>
+<p>For more information, check out or <a href="http://vinapi.skizmo.com/examples">examples</a> and <a href="http://vinapi.skizmo.com/faq">faq</a>.</p>
+<p>Enjoy!</p>
+<p>Here's another look at the data elements from a comprehensive query:<br />
+<script src="https://gist.github.com/778755.js?file=gistfile1.xml"></script></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Azilink is working again !</title>
+		<link>http://pullmonkey.com/2011/11/15/azilink-is-working-again/</link>
+					<comments>http://pullmonkey.com/2011/11/15/azilink-is-working-again/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Tue, 15 Nov 2011 05:04:40 +0000</pubDate>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[biking]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[projects]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57655</guid>
+
+					<description><![CDATA[If the apk is not available for download yet, you can build it yourself with the fix from here. Step 1 - Grab the source from svn - svn checkout http://azilink.googlecode.com/svn/trunk/ azilink-read-only Step 2 - Update the UdpDriver.java per this azilink issue. Step 3 - Build and install the apk # this will give you a [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><em>If the apk is not available for download yet, you can build it yourself with <a href="http://code.google.com/p/azilink/issues/detail?id=43">the fix from here</a>.</em><br />
+<strong>Step 1</strong> - Grab the source from svn -</p>
+<pre style="margin-bottom:10px;border:1px dashed black; padding: 4px; background-color: #ddd;">svn checkout http://azilink.googlecode.com/svn/trunk/ azilink-read-only</pre>
+<p><strong>Step 2</strong> - Update the UdpDriver.java per <a href="http://code.google.com/p/azilink/issues/detail?id=43">this azilink issue</a>.</p>
+<p><strong>Step 3</strong> - Build and install the apk</p>
+<pre style="margin-bottom:10px;border:1px dashed black; padding: 4px; background-color: #ddd;"># this will give you a build.xml file
+android update project --target 2 --path /path/to/your/azilinkdownload/
+# after plugging in your device and from your azilink project directory
+ant debug install</pre>
+<p><strong>Step 4</strong> - Install Open VPN</p>
+<pre style="margin-bottom:10px;border:1px dashed black; padding: 4px; background-color: #ddd;">sudo apt-get install openvpn</pre>
+<p><strong>Step 5</strong> - Grab the azilnk.ovpn file from <a href="http://azilink.googlecode.com/files/azilink.ovpn">the downloads section</a>.<br />
+Place somewhere you won't lose it.</p>
+<p><strong>Step 6</strong> - Copy this resolv.azilink file to the same place as the azilink.ovpn<br />
+ <script src="https://gist.github.com/1366168.js"> </script></p>
+<p><strong>Step 7</strong> - Copy this azilink script to somewhere you can get to it<br />
+<script src="https://gist.github.com/1366175.js"> </script></p>
+<p><strong>Step 8</strong> - Start azilink on your phone.</p>
+<p><strong>Step 9</strong> - Run the script from step 7.<br />
+<br />
+That's it.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2011/11/15/azilink-is-working-again/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>MacroMovers, Inc.</title>
+		<link>http://pullmonkey.com/2007/10/07/macromovers/</link>
+					<comments>http://pullmonkey.com/2007/10/07/macromovers/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Sun, 07 Oct 2007 21:46:00 +0000</pubDate>
+				<category><![CDATA[business]]></category>
+		<category><![CDATA[Home]]></category>
+		<category><![CDATA[me]]></category>
+		<category><![CDATA[macromovers]]></category>
+		<guid isPermaLink="false">/2007/10/07/macromovers</guid>
+
+					<description><![CDATA[I own a small moving company that does local moves in Albuquerque, NM and the surrounding areas. We are approaching the end of our first year, and will soon be one year old 🙂 I run this business on the side with two friends and we have successfully grown it from the ground up. When [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I own a small moving company that does local moves in Albuquerque, NM and the surrounding areas.<br />
+We are approaching the end of our first year, and will soon be one year old <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /><br />
+I run this business on the side with two friends and we have successfully grown it from the ground up.<br />
+When we first started it was just the three of us, trying to get a few extra bucks and have some fun.<br />
+We started out just doing jobs on the weekend, and over the holidays.<br />
+We soon realized how much work it really was and decided that the first order of business would be to hire a couple of guys to do the work for us :).  We hired people rather quickly, all through the paper and craigslist.  Over this year we have hired, fired, and promoted over 40 people in the Albuquerque area, believe it or not, there is a huge turn around rate.  <br />
+We have one scheduler, they have been with us since day one, I think the first or second guy we hired.  He is awesome and has brought a lot of success our way.  He handles the customers, the workers, and tracks all of our day to day, he has taken over EVERYTHING, well except for sending out paychecks, we continue to meet and pay our workers every couple weeks, or in some cases when necessary.</p>
+<p>If you are looking to move to, from or within Albuquerque, go to <a href="http://macromovers.com">MacroMovers.com</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2007/10/07/macromovers/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

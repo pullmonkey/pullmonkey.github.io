@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>httpi &#8211; PullMonkey Blog</title>
+	<atom:link href="http://pullmonkey.com/tag/httpi/feed/" rel="self" type="application/rss+xml" />
+	<link>http://pullmonkey.com</link>
+	<description></description>
+	<lastBuildDate>Fri, 27 Jul 2012 15:39:59 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6</generator>
+	<item>
+		<title>Using Ruby to read from a MagTek USB Card Reader</title>
+		<link>http://pullmonkey.com/2012/07/27/using-ruby-to-read-from-a-magtek-usb-card-reader/</link>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Fri, 27 Jul 2012 15:39:59 +0000</pubDate>
+				<category><![CDATA[development]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[projects]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[card reader]]></category>
+		<category><![CDATA[card swipe]]></category>
+		<category><![CDATA[curb]]></category>
+		<category><![CDATA[httpi]]></category>
+		<category><![CDATA[magtek]]></category>
+		<category><![CDATA[USB]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57712</guid>
+
+					<description><![CDATA[Been playing around with a lot of USB devices lately, to get them to play nicely with some of our touch screen Rails apps. One of the devices is a card reader - specifically a MagTek reader, and the same code works for the ELO reader. I've tried a billion different ways to ensure we're [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Been playing around with a lot of USB devices lately, to get them to play nicely with some of our touch screen Rails apps.<br />
+One of the devices is a card reader - specifically a MagTek reader, and the same code works for the ELO reader.</p>
+<p>I've tried a billion different ways to ensure we're reading in all the data.  At first, I was just asking the usb stream to present me with a certain number of characters, b/c that's how all the examples do it.<br />
+But we're using a lot of different cards with the readers, so that didn't work too well.  So now I just read one character at a time until we find the new line.<br />
+Here's the code to find the device, open it, close it and read from it, all whilst finding and converting the data as required.</p>
+<p><script src="https://gist.github.com/3188668.js?file=gistfile1.rb"></script></p>
+<p>So using this code, we take the swiped data and send it to our server for storage.</p>
+<p><script src="https://gist.github.com/3188719.js?file=gistfile1.rb"></script></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Using HTTPI with Curb to do multipart file uploads with spnego</title>
+		<link>http://pullmonkey.com/2012/07/25/using-httpi-with-curb-to-do-multipart-file-uploads-with-spnego/</link>
+					<comments>http://pullmonkey.com/2012/07/25/using-httpi-with-curb-to-do-multipart-file-uploads-with-spnego/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Wed, 25 Jul 2012 22:25:11 +0000</pubDate>
+				<category><![CDATA[development]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[curb]]></category>
+		<category><![CDATA[curl]]></category>
+		<category><![CDATA[file upload]]></category>
+		<category><![CDATA[httpi]]></category>
+		<category><![CDATA[multipart upload]]></category>
+		<category><![CDATA[negotiate]]></category>
+		<category><![CDATA[spnego]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57705</guid>
+
+					<description><![CDATA[It took a while to find a library that handled spnego requests, as opposed to shelling out to a curl --negotiate. Found httpi to work well with the curb adapter. The problem was that the documentation didn't really explain how to do file uploads withing the httpi request block. Wasn't too much of a big [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>It took a while to find a library that handled spnego requests, as opposed to shelling out to a curl --negotiate.  Found httpi to work well with the curb adapter.<br />
+The problem was that the documentation didn't really explain how to do file uploads withing the httpi request block.<br />
+Wasn't too much of a big deal, but I thought it may save someone else some time.</p>
+<p><script src="https://gist.github.com/3179054.js?file=gistfile1.rb"></script></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2012/07/25/using-httpi-with-curb-to-do-multipart-file-uploads-with-spnego/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

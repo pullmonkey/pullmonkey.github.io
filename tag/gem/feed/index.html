@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>gem &#8211; PullMonkey Blog</title>
+	<atom:link href="http://pullmonkey.com/tag/gem/feed/" rel="self" type="application/rss+xml" />
+	<link>http://pullmonkey.com</link>
+	<description></description>
+	<lastBuildDate>Thu, 26 Apr 2012 19:17:20 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6</generator>
+	<item>
+		<title>Headers and Footers in ruby&#8217;s Spreadsheet gem</title>
+		<link>http://pullmonkey.com/2012/04/26/headers-and-footers-in-rubys-spreadsheet-gem/</link>
+					<comments>http://pullmonkey.com/2012/04/26/headers-and-footers-in-rubys-spreadsheet-gem/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Thu, 26 Apr 2012 19:17:20 +0000</pubDate>
+				<category><![CDATA[api]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[plugins]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[excel]]></category>
+		<category><![CDATA[footer]]></category>
+		<category><![CDATA[gem]]></category>
+		<category><![CDATA[hack]]></category>
+		<category><![CDATA[header]]></category>
+		<category><![CDATA[spreadsheet]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57696</guid>
+
+					<description><![CDATA[Have you ever needed to add a header or footer to your spreadsheets in ruby? Yah, well, we have 🙁 Yes, you can do this with the Write Excel gem. But we've already written years worth of spreadsheet code with the spreadsheet gem and don't want to rewrite it all. Anyway, we thought we'd share [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Have you ever needed to add a header or footer to your spreadsheets in ruby?<br />
+Yah, well, we have <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /><br />
+Yes, you can do this with the <a href="https://rubygems.org/gems/writeexcel">Write Excel gem</a>.<br />
+But we've already written years worth of spreadsheet code with the <a href="https://rubygems.org/gems/spreadsheet">spreadsheet gem</a> and don't want to rewrite it all.</p>
+<p>Anyway, we thought we'd share our little trick to get page headers using the spreadsheet gem.</p>
+<p><script src="https://gist.github.com/2502027.js?file=gistfile1.rb"></script></p>
+<p>So what you see here (above) goes into a config/initializer, something like RAILS_ROOT/config/initializer/enable_headers_in_spreadsheet_gem.rb.  Here's what's going on:</p>
+<p>1) We know that the <em>write_from_scratch</em> method is called when everything is said and done and the data is ready to be written to the spreadsheet file.  So we make use of this and alias that method to <em>write_from_scratch_without_header</em>.  Which opens us up to call our <em>write_header</em> method inside our <em>write_from_scratch</em> method which, of course, will call the original <em>write_from_scratch</em> method.</p>
+<p>2) Our <em>write_header</em> method makes use of the already existing opcode for Header in the spreadsheet gem.  It's not being used, so my guess is the developers intend on solving this issue at some point.  We have to send the opcode, the length info and the string we want to write out.  This was the trickiest part to figure out.</p>
+<p>3) We expose an add_header method that simply takes a string and stores it in the header accessor.  This means, to set the header, you simply say <em>sheet.add_header("foo header")</em>.</p>
+<p>To implement the footer, you'd just do the same thing, create a footer accessor, add a method to update it.  Then build the <em>writer_footer</em> method with <em>opcode(:footer)</em> and append <em>write_footer</em> at the end of <em>write_from_scratch</em>.</p>
+<p>Well, that took us some time to figure out, so enjoy and let me know if you have any questions.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2012/04/26/headers-and-footers-in-rubys-spreadsheet-gem/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

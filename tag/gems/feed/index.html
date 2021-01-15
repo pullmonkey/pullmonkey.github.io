@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>gems &#8211; PullMonkey Blog</title>
+	<atom:link href="http://pullmonkey.com/tag/gems/feed/" rel="self" type="application/rss+xml" />
+	<link>http://pullmonkey.com</link>
+	<description></description>
+	<lastBuildDate>Fri, 19 Nov 2010 21:52:14 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6</generator>
+	<item>
+		<title>2D Vector Graphics in Ruby / Rails</title>
+		<link>http://pullmonkey.com/2010/11/19/2d-vector-graphics-in-ruby-rails/</link>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Fri, 19 Nov 2010 21:42:27 +0000</pubDate>
+				<category><![CDATA[development]]></category>
+		<category><![CDATA[Graphics]]></category>
+		<category><![CDATA[plugins]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[2d]]></category>
+		<category><![CDATA[2d graphics]]></category>
+		<category><![CDATA[cairo]]></category>
+		<category><![CDATA[gems]]></category>
+		<category><![CDATA[graphis]]></category>
+		<category><![CDATA[simple]]></category>
+		<category><![CDATA[tutorial]]></category>
+		<category><![CDATA[vector]]></category>
+		<category><![CDATA[vector graphics]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57544</guid>
+
+					<description><![CDATA[I've been working with Cairo the last day or two to build a sign generator.   I chose Cairo because it seemed like a good fit for building a sign that had to be loss-less in detail and scalable, this rang vector graphics.   I found a few good examples here and there, but they were very [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I've been working with <a title="Cairo Graphics" href="http://cairographics.org/" target="_blank">Cairo</a> the last day or two to build a sign generator.   I chose Cairo because it seemed like a good fit for building a sign that had to be loss-less in detail and scalable, this rang vector graphics.   I found a few good examples here and there, but they were very few and the documentation was not exactly ruby-friendly.</p>
+<p>So I'm going to do a few posts about what I learned and I am going to start with the very basics, since all I could find were completed and elaborate images, way too complicated for a beginner.</p>
+<p>Let's start with rotating a square box by 45 degrees.  Very simple.</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-57553" title="rotated_square" src="http://pullmonkey.com/wp-content/uploads/2010/11/rotated_square.png" alt="rotated_square" width="500" height="500" srcset="http://pullmonkey.com/wp-content/uploads/2010/11/rotated_square.png 500w, http://pullmonkey.com/wp-content/uploads/2010/11/rotated_square-150x150.png 150w, http://pullmonkey.com/wp-content/uploads/2010/11/rotated_square-300x300.png 300w" sizes="(max-width: 500px) 100vw, 500px" /></p>
+<p><script src="https://gist.github.com/707183.js?file=simple_rotated_box_using_cairo.rb"></script></p>
+<p>That's it, pretty simple, right?  </p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Spreadsheet Gem &#8211; data may have been lost</title>
+		<link>http://pullmonkey.com/2009/04/30/spreadsheet-gem-data-may-have-been-lost/</link>
+					<comments>http://pullmonkey.com/2009/04/30/spreadsheet-gem-data-may-have-been-lost/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Thu, 30 Apr 2009 14:48:00 +0000</pubDate>
+				<category><![CDATA[Home]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[error]]></category>
+		<category><![CDATA[gems]]></category>
+		<category><![CDATA[ruby on rails]]></category>
+		<category><![CDATA[spreadsheet]]></category>
+		<guid isPermaLink="false">/2009/04/30/spreadsheet-gem-data-may-have-been-lost</guid>
+
+					<description><![CDATA[I've been using the spreadsheet gem lately for a couple projects I am working on to modify existing spreadsheets. I have quite often stumbled upon this error when opening modified spreadsheets in excel: File error: data may have been lost Like most microsoft errors, it was useless and the spreadsheet came up just fine. But [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I've been using the <a href="http://spreadsheet.rubyforge.org/">spreadsheet gem</a> lately for a couple projects I am working on to modify existing spreadsheets.  I have quite often stumbled upon this error when opening modified spreadsheets in excel:</p>
+<h2>File error: data may have been lost</h2>
+<p>Like most microsoft errors, it was useless and the spreadsheet came up just fine.  But that error was just so annoying, other spreadsheet applications (open office, excel on mac) opened without any problems.  So after quite a bit of hacking and digging around, I finally tried setting the encoding, which defaults to UTF-8.  Well it just so happens that the spreadsheet being modified was encoded with UTF-16LE.  </p>
+<p>So part one of my solution became this:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt><span class="co">Spreadsheet</span>.client_encoding = <span class="s"><span class="dl">'</span><span class="k">UTF-16LE</span><span class="dl">'</span></span><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>Then doing a little more digging I decided that this would be a better long-term solution:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt>book = <span class="co">Spreadsheet</span>.open spreadsheet_file<tt>
+</tt><span class="co">Spreadsheet</span>.client_encoding = book.encoding<tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>Well, hopefully it wasn't just me and someone will be able to save a bit of time with this.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2009/04/30/spreadsheet-gem-data-may-have-been-lost/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

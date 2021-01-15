@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>select &#8211; PullMonkey Blog</title>
+	<atom:link href="http://pullmonkey.com/tag/select/feed/" rel="self" type="application/rss+xml" />
+	<link>http://pullmonkey.com</link>
+	<description></description>
+	<lastBuildDate>Sun, 30 Aug 2009 04:40:55 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6</generator>
+	<item>
+		<title>Dynamic Select Boxes (many to many) &#8211; Ruby on Rails</title>
+		<link>http://pullmonkey.com/2008/08/05/dynamic-select-boxes-many-to-many-ruby-on-rails/</link>
+					<comments>http://pullmonkey.com/2008/08/05/dynamic-select-boxes-many-to-many-ruby-on-rails/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Tue, 05 Aug 2008 04:59:00 +0000</pubDate>
+				<category><![CDATA[development]]></category>
+		<category><![CDATA[Home]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[cascading]]></category>
+		<category><![CDATA[dynamic]]></category>
+		<category><![CDATA[ruby on rails]]></category>
+		<category><![CDATA[select]]></category>
+		<category><![CDATA[select boxes]]></category>
+		<guid isPermaLink="false">/2008/08/05/dynamic-select-boxes-many-to-many-ruby-on-rails</guid>
+
+					<description><![CDATA[I just got comment asking how one would go about doing a many to many relation in this dynamic select box example. For example, what if an artist belongs to multiple genres. Here we go: The original tutorial. Create your models and build your migrations: 1 2 3 4 5 ruby script/generate model genre name:string [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I just got <a href="http://pullmonkey.com/2008/3/30/dynamic-select-boxes-ruby-on-rails#comment-46369">comment asking how one would go about doing a many to many relation in this dynamic select box example</a>.  For example, what if an artist belongs to multiple genres. Here we go:<br />
+<a href="http://pullmonkey.com/2008/3/30/dynamic-select-boxes-ruby-on-rails">The original tutorial</a>.<br />
+Create your models and build your migrations:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt>ruby script/generate model genre name<span class="sy">:string</span><tt>
+</tt>ruby script/generate model artist name<span class="sy">:string</span>   <span class="c"># no genre_id here, moved to association table</span><tt>
+</tt>ruby script/generate model song title<span class="sy">:string</span> artist_id<span class="sy">:integer</span><tt>
+</tt>ruby script/generate model artist_association artist_id<span class="sy">:integer</span> genre_id<span class="sy">:integer</span><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>Populate your genres, artists and songs through a migration:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt>ruby script/generate migration create_hierarchy<tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>Contents of migration:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt>9<tt>
+</tt><strong>10</strong><tt>
+</tt>11<tt>
+</tt>12<tt>
+</tt>13<tt>
+</tt>14<tt>
+</tt><strong>15</strong><tt>
+</tt>16<tt>
+</tt>17<tt>
+</tt>18<tt>
+</tt>19<tt>
+</tt><strong>20</strong><tt>
+</tt>21<tt>
+</tt>22<tt>
+</tt>23<tt>
+</tt>24<tt>
+</tt><strong>25</strong><tt>
+</tt>26<tt>
+</tt>27<tt>
+</tt>28<tt>
+</tt>29<tt>
+</tt><strong>30</strong><tt>
+</tt>31<tt>
+</tt>32<tt>
+</tt>33<tt>
+</tt>34<tt>
+</tt><strong>35</strong><tt>
+</tt>36<tt>
+</tt>37<tt>
+</tt>38<tt>
+</tt>39<tt>
+</tt><strong>40</strong><tt>
+</tt>41<tt>
+</tt>42<tt>
+</tt>43<tt>
+</tt>44<tt>
+</tt><strong>45</strong><tt>
+</tt>46<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt><span class="r">class</span> <span class="cl">CreateHierarchy</span> &lt; <span class="co">ActiveRecord</span>::<span class="co">Migration</span><tt>
+</tt>  <span class="r">def</span> <span class="pc">self</span>.up<tt>
+</tt>    <span class="c"># same genres as before</span><tt>
+</tt>    g1 = <span class="co">Genre</span>.create(<span class="sy">:name</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">Genre 1</span><span class="dl">&quot;</span></span>)<tt>
+</tt>    g2 = <span class="co">Genre</span>.create(<span class="sy">:name</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">Genre 2</span><span class="dl">&quot;</span></span>)<tt>
+</tt>    g3 = <span class="co">Genre</span>.create(<span class="sy">:name</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">Genre 3</span><span class="dl">&quot;</span></span>)<tt>
+</tt><tt>
+</tt>    <span class="c"># same artists as before, but without a genre_id</span><tt>
+</tt>    a1 = <span class="co">Artist</span>.create(<span class="sy">:name</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">Artist 1</span><span class="dl">&quot;</span></span>)<tt>
+</tt>    a2 = <span class="co">Artist</span>.create(<span class="sy">:name</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">Artist 2</span><span class="dl">&quot;</span></span>)<tt>
+</tt>    a3 = <span class="co">Artist</span>.create(<span class="sy">:name</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">Artist 3</span><span class="dl">&quot;</span></span>)<tt>
+</tt>    a4 = <span class="co">Artist</span>.create(<span class="sy">:name</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">Artist 4</span><span class="dl">&quot;</span></span>)<tt>
+</tt>    a5 = <span class="co">Artist</span>.create(<span class="sy">:name</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">Artist 5</span><span class="dl">&quot;</span></span>)<tt>
+</tt>    a6 = <span class="co">Artist</span>.create(<span class="sy">:name</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">Artist 6</span><span class="dl">&quot;</span></span>)<tt>
+</tt><tt>
+</tt>    <span class="c"># now set which artists belong to which genres</span><tt>
+</tt>    <span class="c"># Artist 1 belongs to all three genres</span><tt>
+</tt>    <span class="co">ArtistAssociation</span>.create(<span class="sy">:genre_id</span> =&gt; g1.id, <span class="sy">:artist_id</span> =&gt; a1.id)<tt>
+</tt>    <span class="co">ArtistAssociation</span>.create(<span class="sy">:genre_id</span> =&gt; g2.id, <span class="sy">:artist_id</span> =&gt; a1.id)<tt>
+</tt>    <span class="co">ArtistAssociation</span>.create(<span class="sy">:genre_id</span> =&gt; g3.id, <span class="sy">:artist_id</span> =&gt; a1.id)<tt>
+</tt>   <span class="c"># the rest of the artists only belong to one association</span><tt>
+</tt>    <span class="co">ArtistAssociation</span>.create(<span class="sy">:genre_id</span> =&gt; g1.id, <span class="sy">:artist_id</span> =&gt; a2.id)<tt>
+</tt>    <span class="co">ArtistAssociation</span>.create(<span class="sy">:genre_id</span> =&gt; g2.id, <span class="sy">:artist_id</span> =&gt; a3.id)<tt>
+</tt>    <span class="co">ArtistAssociation</span>.create(<span class="sy">:genre_id</span> =&gt; g2.id, <span class="sy">:artist_id</span> =&gt; a4.id)<tt>
+</tt>    <span class="co">ArtistAssociation</span>.create(<span class="sy">:genre_id</span> =&gt; g3.id, <span class="sy">:artist_id</span> =&gt; a5.id)<tt>
+</tt>    <span class="co">ArtistAssociation</span>.create(<span class="sy">:genre_id</span> =&gt; g3.id, <span class="sy">:artist_id</span> =&gt; a6.id)<tt>
+</tt><tt>
+</tt>    <span class="co">Song</span>.create(<span class="sy">:title</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">Song 1</span><span class="dl">&quot;</span></span>,  <span class="sy">:artist_id</span> =&gt; a1.id)<tt>
+</tt>    <span class="co">Song</span>.create(<span class="sy">:title</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">Song 2</span><span class="dl">&quot;</span></span>,  <span class="sy">:artist_id</span> =&gt; a1.id)<tt>
+</tt>    <span class="co">Song</span>.create(<span class="sy">:title</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">Song 3</span><span class="dl">&quot;</span></span>,  <span class="sy">:artist_id</span> =&gt; a2.id)<tt>
+</tt>    <span class="co">Song</span>.create(<span class="sy">:title</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">Song 4</span><span class="dl">&quot;</span></span>,  <span class="sy">:artist_id</span> =&gt; a2.id)<tt>
+</tt>    <span class="co">Song</span>.create(<span class="sy">:title</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">Song 5</span><span class="dl">&quot;</span></span>,  <span class="sy">:artist_id</span> =&gt; a3.id)<tt>
+</tt>    <span class="co">Song</span>.create(<span class="sy">:title</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">Song 6</span><span class="dl">&quot;</span></span>,  <span class="sy">:artist_id</span> =&gt; a3.id)<tt>
+</tt>    <span class="co">Song</span>.create(<span class="sy">:title</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">Song 7</span><span class="dl">&quot;</span></span>,  <span class="sy">:artist_id</span> =&gt; a4.id)<tt>
+</tt>    <span class="co">Song</span>.create(<span class="sy">:title</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">Song 8</span><span class="dl">&quot;</span></span>,  <span class="sy">:artist_id</span> =&gt; a4.id)<tt>
+</tt>    <span class="co">Song</span>.create(<span class="sy">:title</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">Song 9</span><span class="dl">&quot;</span></span>,  <span class="sy">:artist_id</span> =&gt; a5.id)<tt>
+</tt>    <span class="co">Song</span>.create(<span class="sy">:title</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">Song 10</span><span class="dl">&quot;</span></span>, <span class="sy">:artist_id</span> =&gt; a5.id)<tt>
+</tt>    <span class="co">Song</span>.create(<span class="sy">:title</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">Song 11</span><span class="dl">&quot;</span></span>, <span class="sy">:artist_id</span> =&gt; a6.id)<tt>
+</tt>    <span class="co">Song</span>.create(<span class="sy">:title</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">Song 12</span><span class="dl">&quot;</span></span>, <span class="sy">:artist_id</span> =&gt; a6.id)<tt>
+</tt>  <span class="r">end</span><tt>
+</tt><tt>
+</tt>  <span class="r">def</span> <span class="pc">self</span>.down<tt>
+</tt><span class="c"># you can fill this in if you want.</span><tt>
+</tt>  <span class="r">end</span><tt>
+</tt><span class="r">end</span><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>So now we need to populate the database:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt>rake db<span class="sy">:migrate</span><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>Now we need to modify our models to set up the associations.</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt>9<tt>
+</tt><strong>10</strong><tt>
+</tt>11<tt>
+</tt>12<tt>
+</tt>13<tt>
+</tt>14<tt>
+</tt><strong>15</strong><tt>
+</tt>16<tt>
+</tt>17<tt>
+</tt>18<tt>
+</tt>19<tt>
+</tt><strong>20</strong><tt>
+</tt>21<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt><span class="r">class</span> <span class="cl">Genre</span> &lt; <span class="co">ActiveRecord</span>::<span class="co">Base</span><tt>
+</tt>  has_many <span class="sy">:artist_associations</span><tt>
+</tt>  has_many <span class="sy">:artists</span>, <span class="sy">:through</span> =&gt; <span class="sy">:artist_associations</span><tt>
+</tt>  <span class="c"># CAN&quot;T NEST HMTs .....  has_many :songs, :through =&gt; :artists</span><tt>
+</tt>  <span class="c"># do it by hand ... argh</span><tt>
+</tt>  <span class="r">def</span> <span class="fu">songs</span><tt>
+</tt>    artists.map{|a| a.songs}.flatten<tt>
+</tt>  <span class="r">end</span><tt>
+</tt><span class="r">end</span><tt>
+</tt><tt>
+</tt><span class="r">class</span> <span class="cl">Artist</span> &lt; <span class="co">ActiveRecord</span>::<span class="co">Base</span><tt>
+</tt>  has_many <span class="sy">:artist_associations</span><tt>
+</tt>  has_many <span class="sy">:genres</span>, <span class="sy">:through</span> =&gt; <span class="sy">:artist_associations</span><tt>
+</tt>  has_many <span class="sy">:songs</span><tt>
+</tt><span class="r">end</span><tt>
+</tt><tt>
+</tt><span class="r">class</span> <span class="cl">ArtistAssociation</span> &lt; <span class="co">ActiveRecord</span>::<span class="co">Base</span><tt>
+</tt>  belongs_to <span class="sy">:artist</span><tt>
+</tt>  belongs_to <span class="sy">:genre</span><tt>
+</tt><span class="r">end</span><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>That should be it for the many to many relationship.</p>
+<p>Everything else is the same as in <a href="http://pullmonkey.com/2008/3/30/dynamic-select-boxes-ruby-on-rails">the last tutorial</a>.<br />
+# the controller</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt>9<tt>
+</tt><strong>10</strong><tt>
+</tt>11<tt>
+</tt>12<tt>
+</tt>13<tt>
+</tt>14<tt>
+</tt><strong>15</strong><tt>
+</tt>16<tt>
+</tt>17<tt>
+</tt>18<tt>
+</tt>19<tt>
+</tt><strong>20</strong><tt>
+</tt>21<tt>
+</tt>22<tt>
+</tt>23<tt>
+</tt>24<tt>
+</tt><strong>25</strong><tt>
+</tt>26<tt>
+</tt>27<tt>
+</tt>28<tt>
+</tt>29<tt>
+</tt><strong>30</strong><tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt><span class="r">class</span> <span class="cl">TestItController</span> &lt; <span class="co">ApplicationController</span><tt>
+</tt>  <span class="r">def</span> <span class="fu">index</span><tt>
+</tt>    <span class="iv">@genres</span>  = <span class="co">Genre</span>.find(<span class="sy">:all</span>)<tt>
+</tt>    <span class="iv">@artists</span> = <span class="co">Artist</span>.find(<span class="sy">:all</span>)<tt>
+</tt>    <span class="iv">@songs</span>   = <span class="co">Song</span>.find(<span class="sy">:all</span>)<tt>
+</tt>  <span class="r">end</span><tt>
+</tt><tt>
+</tt>  <span class="r">def</span> <span class="fu">update_artists</span><tt>
+</tt>    <span class="c"># updates artists and songs based on genre selected</span><tt>
+</tt>    genre = <span class="co">Genre</span>.find(params[<span class="sy">:genre_id</span>])<tt>
+</tt>    artists = genre.artists<tt>
+</tt>    songs   = genre.songs<tt>
+</tt><tt>
+</tt>    render <span class="sy">:update</span> <span class="r">do</span> |page|<tt>
+</tt>      page.replace_html <span class="s"><span class="dl">'</span><span class="k">artists</span><span class="dl">'</span></span>, <span class="sy">:partial</span> =&gt; <span class="s"><span class="dl">'</span><span class="k">artists</span><span class="dl">'</span></span>, <span class="sy">:object</span> =&gt; artists<tt>
+</tt>      page.replace_html <span class="s"><span class="dl">'</span><span class="k">songs</span><span class="dl">'</span></span>,   <span class="sy">:partial</span> =&gt; <span class="s"><span class="dl">'</span><span class="k">songs</span><span class="dl">'</span></span>,   <span class="sy">:object</span> =&gt; songs<tt>
+</tt>    <span class="r">end</span><tt>
+</tt>  <span class="r">end</span><tt>
+</tt><tt>
+</tt>  <span class="r">def</span> <span class="fu">update_songs</span><tt>
+</tt>    <span class="c"># updates songs based on artist selected</span><tt>
+</tt>    artist = <span class="co">Artist</span>.find(params[<span class="sy">:artist_id</span>])<tt>
+</tt>    songs  = artist.songs<tt>
+</tt><tt>
+</tt>    render <span class="sy">:update</span> <span class="r">do</span> |page|<tt>
+</tt>      page.replace_html <span class="s"><span class="dl">'</span><span class="k">songs</span><span class="dl">'</span></span>, <span class="sy">:partial</span> =&gt; <span class="s"><span class="dl">'</span><span class="k">songs</span><span class="dl">'</span></span>, <span class="sy">:object</span> =&gt; songs<tt>
+</tt>    <span class="r">end</span><tt>
+</tt>  <span class="r">end</span><tt>
+</tt><span class="r">end</span><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>Now as far as views go we have one view (index.html.erb) and two partials (_songs and _artists).  Let's take a look at those:<br />
+# the _songs partial (_songs.html.erb):</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt>&lt;%= collection_select(<span class="pc">nil</span>, <span class="sy">:song_id</span>, songs, <span class="sy">:id</span>, <span class="sy">:title</span>,<tt>
+</tt>                     {<span class="sy">:prompt</span>   =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">Select a Song</span><span class="dl">&quot;</span></span>}) <span class="s"><span class="dl">%&gt;</span><span class="k"><tt>
+</tt></span></span></pre>
+</td>
+</tr>
+</table>
+<p># the _artists partial (_artists.html.erb):</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt>&lt;%= collection_select(<span class="pc">nil</span>, <span class="sy">:artist_id</span>, artists, <span class="sy">:id</span>, <span class="sy">:name</span>,<tt>
+</tt>                     {<span class="sy">:prompt</span>   =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">Select an Artist</span><span class="dl">&quot;</span></span>},<tt>
+</tt>                     {<span class="sy">:onchange</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="il"><span class="dl">#{</span>remote_function(<span class="sy">:url</span>  =&gt; {<span class="sy">:action</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">update_songs</span><span class="dl">&quot;</span></span>},<tt>
+</tt>                                                      <span class="sy">:with</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">'artist_id='+value</span><span class="dl">&quot;</span></span>)<span class="dl">}</span></span><span class="dl">&quot;</span></span>}) <span class="s"><span class="dl">%&gt;</span><span class="k"><tt>
+</tt>&lt;br/</span><span class="dl">&gt;</span></span><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p># and last, but not least, the index view (index.html.erb):</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt>9<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt>&lt;%= javascript_include_tag <span class="sy">:defaults</span> <span class="s"><span class="dl">%&gt;</span><span class="k"><tt>
+</tt>&lt;%= collection_select(nil, :genre_id,  @genres,  :id, :name,<tt>
+</tt>                      {:prompt   =</span><span class="dl">&gt;</span></span> <span class="s"><span class="dl">&quot;</span><span class="k">Select a Genre</span><span class="dl">&quot;</span></span>},<tt>
+</tt>                      {<span class="sy">:onchange</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="il"><span class="dl">#{</span>remote_function(<span class="sy">:url</span>  =&gt; {<span class="sy">:action</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">update_artists</span><span class="dl">&quot;</span></span>},<tt>
+</tt>                                                       <span class="sy">:with</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">'genre_id='+value</span><span class="dl">&quot;</span></span>)<span class="dl">}</span></span><span class="dl">&quot;</span></span>}) <span class="s"><span class="dl">%&gt;</span><span class="k"><tt>
+</tt>&lt;br/</span><span class="dl">&gt;</span></span><tt>
+</tt>&lt;div id=<span class="s"><span class="dl">&quot;</span><span class="k">artists</span><span class="dl">&quot;</span></span>&gt;&lt;%= render <span class="sy">:partial</span> =&gt; <span class="s"><span class="dl">'</span><span class="k">artists</span><span class="dl">'</span></span>, <span class="sy">:object</span> =&gt; <span class="iv">@artists</span> <span class="s"><span class="dl">%&gt;</span><span class="k">&lt;/div</span><span class="dl">&gt;</span></span><tt>
+</tt>&lt;div id=<span class="s"><span class="dl">&quot;</span><span class="k">songs</span><span class="dl">&quot;</span></span>&gt;&lt;%= render <span class="sy">:partial</span> =&gt; <span class="s"><span class="dl">'</span><span class="k">songs</span><span class="dl">'</span></span>,   <span class="sy">:object</span> =&gt; <span class="iv">@songs</span> <span class="s"><span class="dl">%&gt;</span><span class="k">&lt;/div</span><span class="dl">&gt;</span></span><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2008/08/05/dynamic-select-boxes-many-to-many-ruby-on-rails/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,1476 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>PullMonkey Blog  &raquo; Blog Archive   &raquo; Open Flash Chart II Plugin for Ruby on Rails (OFC2)</title>
+<meta name="generator" content="WordPress 5.6" /> <!-- leave this for stats -->
+<link rel="stylesheet" href="wp-content/themes/simple&#32;paper/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="wp-content/themes/simple&#32;paper/code_highlighter.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="PullMonkey Blog RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="http://pullmonkey.com/xmlrpc.php" />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="PullMonkey Blog &raquo; Open Flash Chart II Plugin for Ruby on Rails (OFC2) Comments Feed" href="2008/07/23/open-flash-chart-ii-plugin-for-ruby-on-rails-ofc2/feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/pullmonkey.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='wp-includes/css/dist/block-library/style.min.css?ver=5.6' type='text/css' media='all' />
+<link rel="https://api.w.org/" href="wp-json/index.html" /><link rel="alternate" type="application/json" href="wp-json/wp/v2/posts/45791" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://pullmonkey.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.6" />
+<link rel="canonical" href="index.html?p=45791" />
+<link rel='shortlink' href='index.html?p=45791' />
+<link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed?url=http:%252F%252Fpullmonkey.com%252F2008%252F07%252F23%252Fopen-flash-chart-ii-plugin-for-ruby-on-rails-ofc2%252F" />
+<link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed?url=http:%252F%252Fpullmonkey.com%252F2008%252F07%252F23%252Fopen-flash-chart-ii-plugin-for-ruby-on-rails-ofc2%252F&amp;format=xml" />
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style></head>
+<body>
+
+<div id="container">
+
+<div id="menu">
+
+        <ul id="nav">
+        <li class="current_page_item"><a href="index.html">Home</a></li>
+                       	</ul>
+
+</div><!-- Menu -->
+
+<div id="wrapper">
+
+<div id="c1">
+
+<h1 id="logo"><a href="index.html">PullMonkey Blog</a></h1>
+<h2 id="description"></h2>
+
+<div id="content">
+
+
+<div class="post" id="post-45791">
+
+<div class="date">23 <span>Jul</span></div>
+
+<h2><a href="index.html?p=45791" rel="bookmark" title="Permanent Link to Open Flash Chart II Plugin for Ruby on Rails (OFC2)">Open Flash Chart II Plugin for Ruby on Rails (OFC2)</a></h2><br clear="all" />
+
+<p>Ok, already, I heard ya 🙂  The open flash chart (version 2 - OFC2) plugin is done (really just started) and it is out on <a href="http://github.com/pullmonkey/open_flash_chart/tree/master">github</a>.</p>
+<p>Examples for version 2 are <a href="http://pullmonkey.com/projects/open_flash_chart2/">here</a>.</p>
+<p>I rewrote the open flash chart plugin (started from scratch) to work with json like teethgrinder does <a href="http://teethgrinder.co.uk/open-flash-chart-2/">here</a>.</p>
+<p>This time I think it is much slicker and a lot easier to work with.</p>
+<p>I haven't tried much more than bar graphs, all the functionality is there for other types of graphs, just not tested.</p>
+<p>Graph that this example produces:</p>
+<div id="flash_content_1217006545.4401"></div>
+<p><script src="projects/javascripts/swfobject.js" type="text/javascript"></script></p>
+<p><script type="text/javascript">
+      swfobject.embedSWF("/projects/open-flash-chart.swf", "flash_content_1217006545.4401", "600", "300", "9.0.0", "expressInstall.swf",{"data-file":"%2Fprojects%2Fopen_flash_chart2%2Fbasic_starter"});
+</script></p>
+<p>So it is out there, and if you are willing to try it out, here is how:</p>
+<ol>
+<li>rails testing_ofc_2</li>
+<li>cd testing_ofc_2</li>
+<li>script/plugin install git://github.com/pullmonkey/open_flash_chart.git</li>
+<li>script/generate controller test_it</li>
+<li>Add the following to the test_it_controller.rb in RAILS_ROOT/app/controllers:<br />
+<table class="CodeRay" border="0">
+<tbody>
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt>9<tt>
+</tt><strong>10</strong><tt>
+</tt>11<tt>
+</tt>12<tt>
+</tt>13<tt>
+</tt>14<tt>
+</tt><strong>15</strong><tt>
+</tt>16<tt>
+</tt>17<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt><span class="r">class</span> <span class="cl">TestItController</span> &lt; <span class="co">ApplicationController</span><tt>
+</tt>  <span class="r">def</span> <span class="fu">index</span><tt>
+</tt>    <span class="iv">@graph</span> = open_flash_chart_object(<span class="i">600</span>,<span class="i">300</span>,<span class="s"><span class="dl">"</span><span class="k">/test_it/graph_code</span><span class="dl">"</span></span>)<tt>
+</tt>  <span class="r">end</span><tt>
+</tt><tt>
+</tt>  <span class="r">def</span> <span class="fu">graph_code</span><tt>
+</tt>    title = <span class="co">Title</span>.new(<span class="s"><span class="dl">"</span><span class="k">MY TITLE</span><span class="dl">"</span></span>)<tt>
+</tt>    bar = <span class="co">BarGlass</span>.new<tt>
+</tt>    bar.set_values([<span class="i">1</span>,<span class="i">2</span>,<span class="i">3</span>,<span class="i">4</span>,<span class="i">5</span>,<span class="i">6</span>,<span class="i">7</span>,<span class="i">8</span>,<span class="i">9</span>])<tt>
+</tt>    chart = <span class="co">OpenFlashChart</span>.new<tt>
+</tt>    chart.set_title(title)<tt>
+</tt>    chart.add_element(bar)<tt>
+</tt>    render <span class="sy">:text</span> =&gt; chart.to_s<tt>
+</tt>  <span class="r">end</span><tt>
+</tt><span class="r">end</span><tt>
+</tt><tt>
+</tt></pre>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>Add the following to index.html.erb in RAILS_ROOT/app/views/test_it/:<br />
+<table class="CodeRay" border="0">
+<tbody>
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt>&lt;script type=<span class="s"><span class="dl">"</span><span class="k">text/javascript</span><span class="dl">"</span></span> src=<span class="s"><span class="dl">"</span><span class="k">/javascripts/swfobject.js</span><span class="dl">"</span></span>&gt;&lt;<span class="rx"><span class="dl">/</span><span class="k">script&gt;<tt>
+</tt>&lt;%= @graph %&gt;<tt>
+</tt><tt>
+</tt>  </span></span></pre>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>Copy swfobject.js from the plugin's assets/ directory (will make this happen at install time later) to your RAILS_ROOT/public/javascripts directory</li>
+<li>Copy open-flash-chart.swf from the plugin's assets/ director to your RAILS_ROOT/public/ directory</li>
+<li>script/server</li>
+<li>Browse to http://localhost:3000/test_it</li>
+<li>Let me know how it goes, thanks.</li>
+</ol>
+
+<br />
+
+<div class="meta">
+<span class="note">Filed under: <a href="category/development/index.html" rel="category tag">development</a>, <a href="category/home/index.html" rel="category tag">Home</a>, <a href="category/open-flash-chart-graphs/index.html" rel="category tag">Open Flash Chart Graphs</a>, <a href="category/projects/index.html" rel="category tag">projects</a>, <a href="category/rails/index.html" rel="category tag">rails</a>, <a href="category/ruby/index.html" rel="category tag">ruby</a>, <a href="category/tutorials/index.html" rel="category tag">tutorials</a></span>
+<span class="tags">Tags: <a href="tag/charts/index.html" rel="tag">charts</a>, <a href="tag/flash/index.html" rel="tag">flash</a>, <a href="tag/graphs/index.html" rel="tag">graphs</a>, <a href="tag/open-flash-chart/index.html" rel="tag">open flash chart</a>, <a href="tag/rails/index.html" rel="tag">rails</a>, <a href="tag/ruby/index.html" rel="tag">ruby</a>, <a href="tag/ruby-on-rails/index.html" rel="tag">ruby on rails</a>, <a href="tag/tutorial/index.html" rel="tag">tutorial</a></span><br /></div><!--Meta -->
+
+
+<!-- You can start editing here. -->
+
+<div id="commentsbox">
+
+
+
+<h2 id="comments">
+	 <br /> 306 Responses 
+	  to &#8220;Open Flash Chart II Plugin for Ruby on Rails (OFC2)&#8221;</h2>
+	
+	<ol class="commentlist">
+		
+
+<li class="odd" id="comment-3654">
+
+By <strong><a href='http://strongsummer.heroku.com/test_it' rel='external nofollow ugc' class='url'>Ad</a></strong> on <a href="index.html?p=45791#comment-3654" title="">Dec 24, 2009</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Like to implement this on Sinatra instead of Rails.  Is it possible?</p>
+<p>Copied over the .swf and .js files to public and Javascript directory.<br />
+The codes for file ofc2.rb in the top level main dir :-</p>
+<p>    require &#8216;rubygems&#8217;<br />
+    require &#8216;sinatra&#8217;</p>
+<p>    get &#8216;/&#8217; do<br />
+    @graph = open_flash_chart_object(600,300, graph_code)<br />
+    haml &#8216;%script{:type =&gt; &#8220;text/javascript&#8221;,<br />
+        :src  =&gt; &#8220;/javascripts/swfobject.js&#8221;}<br />
+        %p= @graph&#8217;<br />
+    end</p>
+<p>    def graph_code<br />
+      title = Title.new(&#8220;MY TITLE&#8221;)<br />
+      bar = BarGlass.new<br />
+      bar.set_values([1,2,3,4,5,6,7,8,9])<br />
+      chart = OpenFlashChart.new<br />
+      chart.set_title(title)<br />
+      chart.add_element(bar)<br />
+      render :text =&gt; chart.to_s<br />
+    end</p>
+<p>Basically ofc2.rb runs and <a href="http://localhost:4567/" rel="nofollow ugc">http://localhost:4567/</a>  generates below error msg:-</p>
+<p>NameError at /<br />
+uninitialized constant Title<br />
+    *  file:  ofc2.rb<br />
+    * location: graph_code<br />
+    * line: 13</p>
+<p>What was missed?<br />
+Thanks for any suggestions!<br />
+Ad</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-3946">
+
+By <strong>charlie</strong> on <a href="index.html?p=45791#comment-3946" title="">Jan 4, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Ad &#8211; I am not too familiar with Sinatra, but you might have to include OpenFlashChart if the plugin&#8217;s init.rb file does not get processed.  Test that theory by doing OpenFlashChart::Title.new instead of just Title.new. </p>
+<p>Let me know how it goes.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-3985">
+
+By <strong><a href='http://strongsummer.heroku.com/test_it' rel='external nofollow ugc' class='url'>Ad</a></strong> on <a href="index.html?p=45791#comment-3985" title="">Jan 5, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>I guess you are right.</p>
+<p>The error on the browser now becomes<br />
+NameError at /<br />
+uninitialized constant OpenFlashChart</p>
+<p>The ruby file simply doesn&#8217;t recognize Title or OpenFlashChart. </p>
+<p>If i copied the plugin file and runs, this is the error i got on console:-<br />
+$ sudo script/plugin install <a href="http://github.com/pullmonkey/open_flash_chart.git" rel="nofollow ugc">http://github.com/pullmonkey/open_flash_chart.git</a><br />
+script/plugin:2:in `require&#8217;: no such file to load &#8212; script/../config/boot (LoadError)<br />
+	from script/plugin:2</p>
+<p>Apparently,  i am neither a rails not sinatra expert, just s.o figuring out. So, thanks Charlie for your help anyway.</p>
+<p>Any more ideas?</p>
+<p>🙂</p>
+<p>(Sinatra is pretty straightforward compared to rails, it&#8217;s like just a one page readup here <a href="http://www.sinatrarb.com/intro.html" rel="nofollow ugc">http://www.sinatrarb.com/intro.html</a> but figuring the transition from rails may not&#8230;)</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-4035">
+
+By <strong>charlie</strong> on <a href="index.html?p=45791#comment-4035" title="">Jan 7, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Ok, I looked at sinatra a bit.   The feeling that I get is that you won&#8217;t be able to use many plugins with sinatra since they usually provide mixins for activerecord, actioncontroller and actionview.  </p>
+<p>But that doesn&#8217;t mean you can&#8217;t try  &#8211;</p>
+<p>The very first thing would be to explicitly require the init.rb file of the plugin.<br />
+That would be like this &#8211; require &#8220;path_to_ofc_plugin/init&#8221; </p>
+<p>Before that, you will need to get the plugin, you can not use ./script/plugin that does not exist for sinatra, just in a rails root directory.  So, instead,  you can just download it from my github.</p>
+<p>Next, you should probably edit the init.rb file and remove all the includes, lines 3 &#8211; 9.  Since in sinatra I don&#8217;t thikn you have actionview or AR or actioncontroller.  If you do then you can leave those lines.</p>
+<p>NOW, everywhere I do stuff like Title, or what not, you will do OpenFlashChart::Title.</p>
+<p>Give that a shot and keep us updated.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-4827">
+
+By <strong><a href='http://www.jetthoughts.com' rel='external nofollow ugc' class='url'>Michael Nikitochkin</a></strong> on <a href="index.html?p=45791#comment-4827" title="">Jan 30, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>I have updated to latest release Open Flash Chart (version 2) and found many bugs:<br />
+1. Many Lines and dots be not shown by swf(example LineHollow and other except Line).<br />
+2. Tooltip is not shown for open-flash-chart.swf. but open-flash-chart-bar-clciking.swf it is shown, but Y-Right-axis is not working.</p>
+<p>Thanks</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-4859">
+
+By <strong>charlie</strong> on <a href="index.html?p=45791#comment-4859" title="">Jan 31, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Interesting &#8211; do you have a couple examples that break?  Either post them here, on gist or pastie.<br />
+Thanks.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-4964">
+
+By <strong><a href='http://hi.im/helmut' rel='external nofollow ugc' class='url'>Helmut</a></strong> on <a href="index.html?p=45791#comment-4964" title="">Feb 3, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>thanks for this plugin! is really great but i have one little problem here&#8230; i&#8217;m having this trouble trying to display my x label into my tooltip, this is my code:</p>
+<p>def show<br />
+    @graph = open_flash_chart_object(520,300,&#8221;/dashboard/graph_code&#8221;)<br />
+end</p>
+<p>def graph_code<br />
+    @bills = current_user.bills.all(:order =&gt; &#8216;previous_meter_reading_date DESC&#8217;, :limit =&gt; 12).reverse<br />
+    bar = BarGlass.new<br />
+    bar.values  = current_user.consumption_per_day_history.map { |b| b[:value] }<br />
+    bar.set_key(&#8216;My consumption&#8217;,10)<br />
+    bar.tooltip = &#8220;[#x_label#] #key#:#val# kWh/day&#8221;<br />
+    bar.colour  = &#8216;#89C33E&#8217;</p>
+<p>    vals = current_user.consumption_per_day_history.map { |b| b[:value] }.reverse</p>
+<p>    #set the chart style and chart settings<br />
+    title = Title.new(&#8220;Consumption kWh/day&#8221;)<br />
+    x_axis = XAxis.new<br />
+    x_axis.set_range(0, @bills.size, 1) # set the number o<br />
+    x_axis.colour = &#8216;#C0C0C0&#8217;<br />
+    x_axis.set_grid_colour(&#8216;#FFFFFF&#8217;)</p>
+<p>    labels = XAxisLabels.new<br />
+    labels.labels = current_user.consumption_per_day_history.map { |b| &#8220;#{Date::ABBR_MONTHNAMES[b[:month]]}  #{b[:year]}&#8221;  }<br />
+    labels.rotate = 320<br />
+    x_axis.labels = labels</p>
+<p>    max = 0<br />
+    @bills.each do |bill|<br />
+      max = bill.consumption_per_day if bill.consumption_per_day &gt; max<br />
+    end</p>
+<p>    y_axis = YAxis.new<br />
+    y_axis.set_inner_bg_colour( &#8216;#E3F0FD&#8217;, &#8216;#CBD7E6&#8217;, 90 )<br />
+    y_axis.set_range(0, max, 2)<br />
+    y_axis.colour = &#8216;#C0C0C0&#8217;<br />
+    y_axis.set_grid_colour(&#8216;#C0C0C0&#8217;)</p>
+<p>    # x and y leyends<br />
+    x_legend = XLegend.new(&#8216;Month and year&#8217;)<br />
+    x_legend.set_style(&#8216;{font-size: 14px; color: #89C33E}&#8217;)<br />
+    y_legend = YLegend.new(&#8220;kWh&#8221;)<br />
+    y_legend.set_style(&#8216;{font-size: 20px; color: #89C33E}&#8217;)</p>
+<p>    t = Tooltip.new<br />
+    t.set_shadow(true)<br />
+    t.stroke = 4<br />
+    t.colour = &#8216;#89c33e&#8217;<br />
+    t.set_background_colour(&#8220;#EEEEEE&#8221;)<br />
+    t.set_title_style(&#8220;{font-size: 13px; font-weight: bold; color: #89C33E;}&#8221;)<br />
+    t.set_body_style(&#8220;{font-size: 11px; color: #000000;}&#8221;)</p>
+<p>    chart = OpenFlashChart.new<br />
+    chart.title = title<br />
+    chart.bg_colour = &#8216;#FFFFFF&#8217;<br />
+    chart.add_element(bar)<br />
+    chart.set_tooltip(t)<br />
+    chart.x_axis = x_axis<br />
+    chart.y_axis = y_axis</p>
+<p>    render :text =&gt; chart.to_s<br />
+  end</p>
+<p>so the tooltip&#8217;s [x_label#] is always returning blank, can somebody  please help me????</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-4971">
+
+By <strong>charlie</strong> on <a href="index.html?p=45791#comment-4971" title="">Feb 4, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Dang, that should work.  Can you remove the square brackets, see if that helps?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-4973">
+
+By <strong><a href='http://hi.im/helmut' rel='external nofollow ugc' class='url'>Helmut</a></strong> on <a href="index.html?p=45791#comment-4973" title="">Feb 4, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@charlie thanks for your reply but anyway i tried what you said (removing the brackets) so my tooltip now looks like:</p>
+<p>     bar.tooltip = &#8220;#key#: #x_label# #val# kWh/day&#8221;</p>
+<p>also tried just with&#8230;</p>
+<p>     bar.tooltip = &#8220;#x_label#&#8221;</p>
+<p>and still can&#8217;t get the x_label shown on the tooltip.</p>
+<p>any ideas???</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-5273">
+
+By <strong>wadner</strong> on <a href="index.html?p=45791#comment-5273" title="">Feb 12, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Ad &#8211; I just got it working in Sinatra.</p>
+<p>in my main.rb file &#8211; I had the following &#8211;</p>
+<p>require &#8216;active_support&#8217; #there&#8217;s a instance_values that&#8217;s called<br />
+require &#8216;open_flash_chart&#8217;<br />
+require &#8216;json&#8217;<br />
+require &#8216;ofco&#8217; #This is the open_flash_chart_object.rb file renamed and moved up as ofco.rb<br />
+include OpenFlash Chart</p>
+<p>the open_flash_chart/ directory was also moved up.</p>
+<p>Another notable change was when calling the chart &#8211;</p>
+<p>@chart = OpenFlashChart::Base.new </p>
+<p>Besides that &#8211; it&#8217;s just rendering to an empty template.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-5311">
+
+By <strong>alex</strong> on <a href="index.html?p=45791#comment-5311" title="">Feb 13, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Here&#8217;s the sample code for a working Sinatra version &#8211; </p>
+<p><a href="http://github.com/alexlam/Open-Flash-Chart---Sinatra" rel="nofollow ugc">http://github.com/alexlam/Open-Flash-Chart&#8212;Sinatra</a></p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-5482">
+
+By <strong>sankar</strong> on <a href="index.html?p=45791#comment-5482" title="">Feb 18, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>I&#8217;m trying to load basic bar chart in ror env .<br />
+But it end with below error . My ruby version-1.8.6</p>
+<p>Webpage error details</p>
+<p>User Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB6.4; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.04506.648)<br />
+Timestamp: Thu, 18 Feb 2010 00:32:21 UTC</p>
+<p>Message: &#8216;null&#8217; is null or not an object<br />
+Line: 117<br />
+Char: 4<br />
+Code: 0<br />
+URI: <a href="http://localhost/javascripts/swfobject.js" rel="nofollow ugc">http://localhost/javascripts/swfobject.js</a></p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-5523">
+
+By <strong>charlie</strong> on <a href="index.html?p=45791#comment-5523" title="">Feb 18, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Make sure you copied over the open-flash-chart.swf file to RAILS_ROOT/public/.  It sounds like that isn&#8217;t being found.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-5541">
+
+By <strong><a href='http://evontech.com' rel='external nofollow ugc' class='url'>dinesh</a></strong> on <a href="index.html?p=45791#comment-5541" title="">Feb 19, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Is it possible to use the link_to_remote function to link back to the controller and generate a new graph? If so, could you possibly post or reply with a code snippet to get me started?</p>
+<p>Please provide me solution.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-5556">
+
+By <strong>charlie</strong> on <a href="index.html?p=45791#comment-5556" title="">Feb 19, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p><a href="2008/9/22/open-flash-chart-ii-javascript-part-2" rel="nofollow">This</a> should get you started.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-5557">
+
+By <strong>charlie</strong> on <a href="index.html?p=45791#comment-5557" title="">Feb 19, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p><a href="2008/9/23/open-flash-chart-ii-javascript-part-3" rel="nofollow">This</a> may even be better for you.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-5750">
+
+By <strong>Ponni</strong> on <a href="index.html?p=45791#comment-5750" title="">Feb 24, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>I read this blog completely and try to generate the chart. But i am unsuccessful.<br />
+I am getting blank page.<br />
+Here is the HTML output :</p>
+<p>Loading Openflash Chart</p>
+<p>        swfobject.embedSWF(&#8220;/open-flash-chart.swf&#8221;, &#8220;flash_content_6Gjb1ZI6&#8221;, &#8220;600&#8221;, &#8220;600&#8221;, &#8220;9.0.0&#8221;, &#8220;expressInstall.swf&#8221;,{&#8220;data-file&#8221;:&#8221;%2Fgantt%2Fgraph_code&#8221;});</p>
+<p>Here is the json data<br />
+{&#8220;title&#8221;: {&#8220;text&#8221;: &#8220;MYTITLE&#8221;}, &#8220;elements&#8221;: [{&#8220;type&#8221;: &#8220;bar_glass&#8221;, &#8220;values&#8221;: [1, 2, 3, 4, 5, 6, 7, 8, 9]}]}</p>
+<p>Please let me know what is the problem here.</p>
+<p>My rails version is 2.0.1 and ruby is 1.8.6<br />
+Is the version problem.</p>
+<p>I tried all the possibilities from this blog. Could anyone tell me the problem here.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-5757">
+
+By <strong>charlie</strong> on <a href="index.html?p=45791#comment-5757" title="">Feb 24, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Three things to check &#8211;<br />
+1) open-flash-chart.swf is in your public dir<br />
+2) do you have a div with an id of “flash_content_6Gjb1ZI6″ or whatever is being generated?  Maybe it got cut out by the comment parser.<br />
+3) no javascript errors and you put the swfobject.js in your public/javascripts</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-5759">
+
+By <strong>Ponni</strong> on <a href="index.html?p=45791#comment-5759" title="">Feb 24, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Charlie,</p>
+<p>I checked the following and it&#8217;s fine.</p>
+<p>1.  open-flash-chart.swf is in your public dir<br />
+2. div is there for flash content.<br />
+3. swfobject.js is in public/javascripts</p>
+<p>I am using rails version 2.0.1 and ruby is 1.8.6, is there any gem I have to update for this. Also my application is running on redhat linux with mongrel server. Any thing has to be taken care. I am getting the blank page in both IE and Firefox.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-5806">
+
+By <strong>charlie</strong> on <a href="index.html?p=45791#comment-5806" title="">Feb 25, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>pastie or gist your code so I can take a look, we will get to the bottom of this.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-5768">
+
+By <strong>Eric</strong> on <a href="index.html?p=45791#comment-5768" title="">Feb 24, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>I am trying to get this to work in one of my projects. If I follow your example it works just perfect. If however, I chance the routes.rb to have RESTful type routes it fails and I can&#8217;t figure out why.</p>
+<p>I have a controller named dashboards_controller.rb with the exact code that you detail above. The index view works fine with the default routes. When I change the routes.rb to remove the standard routes and add in a line:<br />
+    map.resource :dashboards</p>
+<p>I then change the controller from an index to show method and rename the index.html.erb to show.html.erb and then I get the Error #2032 error. Trying to debug the application and when I set a break point inside the graph_code block the application never stops. It is bailing out on the call to create the instance variable @graph.</p>
+<p>Any ideas why this crashes with RESTful routes and not the normal routes? My theory is that there needs to be a change in the call to url inside the open_flash_object call, but I am too new to Ruby/Rails to figure it out and I was hoping someone else might have an idea.</p>
+<p>Thanks,<br />
+-Eric</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-5803">
+
+By <strong>charlie</strong> on <a href="index.html?p=45791#comment-5803" title="">Feb 25, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>In your log, you will likely see some error staging no action responded to &#8220;graph_code&#8221;, possible actions are &#8230;. or some form of that.<br />
+So see if you can find anything like that, I am sure it is trying to call the graph_code action, just no route to it.</p>
+<p>one of two things you can do:<br />
+1) Like you said, you think you need to change the call to the url in the open flash chart call &#8230; if you really want to get restful with this, then you might need a graph controller with a show action accepting a js format for json, then instead of calling /dashboards/graph_code, you could call /graphs/show/.js (this does not mean it has to be in the DB).<br />
+2) You can add member and/or collection actions to your resource &#8230; <a href="http://api.rubyonrails.org/classes/ActionController/Resources.html" rel="nofollow ugc">http://api.rubyonrails.org/classes/ActionController/Resources.html</a></p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-5784">
+
+By <strong>Ponni</strong> on <a href="index.html?p=45791#comment-5784" title="">Feb 25, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Problem with plugin installation. It works in IE but not in Fire fox . Any thing i am missing here.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-6029">
+
+By <strong><a href='http://www.intinno.com' rel='external nofollow ugc' class='url'>Umang</a></strong> on <a href="index.html?p=45791#comment-6029" title="">Mar 4, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hi,</p>
+<p>I am getting the following error-:</p>
+<p>&#8220;Open Flash Chart<br />
+IO Error<br />
+Loading Test Data<br />
+Error @2032</p>
+<p>This is the url I tried to open /data-files/y-axis-auto-step.txt&#8221;</p>
+<p>My controller code is(from the example)-:</p>
+<p>title = Title.new(&#8220;MY TITLE&#8221;)<br />
+bar = BarGlass.new<br />
+bar.set_values([1,2,3,4,5,6,7,8,9])<br />
+@chart = OpenFlashChart.new<br />
+@chart.set_title(title)<br />
+@chart.add_element(bar)</p>
+<p>The view code is-:</p>
+<p> I get the following on inspecting @chart  -:<br />
+#&lt;OpenFlashChart::OpenFlashChart:0xb5c37cf0 @title=#, @elements=[#]&gt;</p>
+<p>I have included the swfobject.js file in the head, the open_flash_chart.swf file is also accessible.<br />
+I am able to get the graph working elsewhere in my code. I am absolutely clueless why it is not<br />
+working in this particular instance.</p>
+<p>Please help!</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-6030">
+
+By <strong><a href='http://www.intinno.com' rel='external nofollow ugc' class='url'>Umang</a></strong> on <a href="index.html?p=45791#comment-6030" title="">Mar 4, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>View code -: </p>
+<p>@chart.js_open_flash_chart_object(&#8220;average_graph_div&#8221;, 550,300)</p>
+<p>I am not able to post the json, but it seems just fine</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-6207">
+
+By <strong>abhishek</strong> on <a href="index.html?p=45791#comment-6207" title="">Mar 10, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>hi,<br />
+I want to make horizontal bar chart and want to show 1 or2 bar in a row. How can I make this by open flash chart.<br />
+Thanks in advance</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-6298">
+
+By <strong>Sankar</strong> on <a href="index.html?p=45791#comment-6298" title="">Mar 13, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hi,</p>
+<p>I&#8217;m trying chart with Bar+Dot and I want to disable Tooltip for DOT in ROR.<br />
+Is it possible to disable tooltip  ? </p>
+<p>..<br />
+Thanks in Advance</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-6309">
+
+By <strong><a href='http://thewatchesoutlet.biz' rel='external nofollow ugc' class='url'>Arleth</a></strong> on <a href="index.html?p=45791#comment-6309" title="">Mar 13, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>View ckde -: </p>
+<p>@chart.js_open_flash_chart_object(&#8220;average_graph_div&#8221;, 550,300)</p>
+<p>I am not able to post the json, but it seems j7st fine;</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-6484">
+
+By <strong>MrTibs</strong> on <a href="index.html?p=45791#comment-6484" title="">Mar 18, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>The way I pass parameters is:<br />
+h = {}<br />
+h[:action]= &#8220;graph_code&#8221;<br />
+h[:p1] = v1<br />
+h[:p2] = v2<br />
+&#8230;<br />
+h[:only_path] =&gt; true<br />
+url_str = url_for(h)<br />
+open_flash_chart_object(&#8230;, &#8220;/test_it/#{url_str})</p>
+<p>Of course you can pass the name&amp;value pairs directly to url_for</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-6548">
+
+By <strong>MrTibs</strong> on <a href="index.html?p=45791#comment-6548" title="">Mar 19, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>I do have on question: how do you return other data (in addition to the json string) to your view?</p>
+<p>I would think the following situation is very common: you query your database and you return data in tabular format and a graph. So, I want to run a find_by_sql query in the data-file action, but I want to return the actual query object as well, not just chart.to_s.</p>
+<p>I can only think to implement this in a session, e.g.<br />
+def index<br />
+  session[:records] = Blah.find_by_sql(&#8216;SELECT&#8230;<br />
+  @graph = open_flash_chart_object(600,300,&#8221;/test_it/graph_code&#8221;)<br />
+end<br />
+def graph_code<br />
+    chart = OpenFlashChart.new<br />
+    #&#8230; use session[:records] to build chart<br />
+    render :text =&gt; chart.to_s<br />
+end</p>
+<p>&lt;% records.each { |r|<br />
+&#8230;</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-10442">
+
+By <strong>Abder-Rahman</strong> on <a href="index.html?p=45791#comment-10442" title="">Jun 28, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>I&#8217;m having an issue with this point: </p>
+<p>7. Copy swfobject.js from the plugin&#8217;s assets/ directory (will make this happen at install time later) to your RAILS_ROOT/public/javascripts directory</p>
+<p>I couldn&#8217;t find  swfobject.js </p>
+<p>Why is that?</p>
+<p>Thanks.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-10445">
+
+By <strong>charlie</strong> on <a href="index.html?p=45791#comment-10445" title="">Jun 28, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>It&#8217;s here &#8211; <a href="http://github.com/pullmonkey/open_flash_chart/tree/master/assets/javascripts/" rel="nofollow ugc">http://github.com/pullmonkey/open_flash_chart/tree/master/assets/javascripts/</a>, under assets/javascripts.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-10813">
+
+By <strong>Wheat</strong> on <a href="index.html?p=45791#comment-10813" title="">Jul 14, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hi~<br />
+I&#8217;d like to show a graph, when I select a date .<br />
+Showing a graph related to the date.<br />
+And how can I send date as a param to graph_code method?<br />
+set the date in session? or ?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-11017">
+
+By <strong>badnaam</strong> on <a href="index.html?p=45791#comment-11017" title="">Jul 16, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>General questions.</p>
+<p>1 &#8211; Why do I see 10 instances of open-flash-chart.swf being downloaded by the browser when the view only has 3 instances of @graph object</p>
+<p>2 &#8211; If I specify a expire max header for open-flash-chart.swf, so that the browser caches it (I show 3 charts for every model instance), will the chart get the latest data everytime its loaded? I basically want to cache the flash file but get refreshed data for every view.</p>
+<p>Thanks</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-11859">
+
+By <strong>arvind</strong> on <a href="index.html?p=45791#comment-11859" title="">Jul 29, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>i want to retrive data from database and show the graphs.<br />
+i want to show data from single table which has no grouping values.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-12563">
+
+By <strong><a href='http://www.liguande.com' rel='external nofollow ugc' class='url'>denny</a></strong> on <a href="index.html?p=45791#comment-12563" title="">Aug 10, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>why can not use &#8220;set_x_legend&#8221; and &#8220;set_y_legend&#8221; for bar</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-13068">
+
+By <strong>jayaseelan</strong> on <a href="index.html?p=45791#comment-13068" title="">Aug 28, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>i have installted graph and chart plugin but not able to view in IE the graph.</p>
+<p>let me know what will be issue i am using redmine 0.9.0</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-17150">
+
+By <strong>agathe</strong> on <a href="index.html?p=45791#comment-17150" title="">Nov 25, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hello,</p>
+<p>Thank you for this very useful plugin ! </p>
+<p>I have two questions about it.<br />
+ For a chart like the one above, how can i make the labels of the x_axis vertivcals when it&#8217;s not a date ? I tried to modify the example with the dates but it just write a label for the fist column and nothing for the others. </p>
+<p>Here is my second question: can  i have a legend (like x_legend) om two or three lines ? Is it possible to make something like  in html ?</p>
+<p>Thank you again</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-17339">
+
+By <strong><a href='http://www.meupost.com' rel='external nofollow ugc' class='url'>RicardoSEP</a></strong> on <a href="index.html?p=45791#comment-17339" title="">Nov 30, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Works like a charm!</p>
+<p>But, in Rails 3, we have to use in the view and remove the comment at routes.rb in the following line:</p>
+<p># match &#8216;:controller(/:action(/:id(.:format)))&#8217;</p>
+<p>Thank you!</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-17531">
+
+By <strong>czajson</strong> on <a href="index.html?p=45791#comment-17531" title="">Dec 5, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hi,<br />
+How to make a simple candle stick chart?<br />
+Could you provide me a sample code?<br />
+Thanks, Czajson</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-17544">
+
+By <strong>charlie</strong> on <a href="index.html?p=45791#comment-17544" title="">Dec 6, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Examples can be easily converted from the original PHP examples.<br />
+Try this one &#8211; <a href="http://teethgrinder.co.uk/open-flash-chart-2/candle-chart.php" rel="nofollow ugc">http://teethgrinder.co.uk/open-flash-chart-2/candle-chart.php</a></p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-17603">
+
+By <strong>czajson</strong> on <a href="index.html?p=45791#comment-17603" title="">Dec 7, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Charlie,<br />
+I want to draw one candlestick.<br />
+I can&#8217;t force it to work:</p>
+<p>def graph_code<br />
+    data1 = []</p>
+<p>#insert data to data1<br />
+data1 &lt;&lt;    high =  7<br />
+data1 &lt;&lt;    open = 6<br />
+data1 &lt;&lt;    close = 5<br />
+data1 &lt;&gt; set_values(data1)</p>
+<p>    title = Title.new(&#8220;MY TITLE&#8221;)<br />
+    chart = OpenFlashChart.new<br />
+    chart.set_title(title)<br />
+    chart.set_x_legend(x_legend)<br />
+    chart.set_y_legend(y_legend)<br />
+    chart.y_axis = y</p>
+<p>    chart.add_element(candle)<br />
+    render :text =&gt; chart.to_s<br />
+  end</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18265">
+
+By <strong>Jérémy Courbat</strong> on <a href="index.html?p=45791#comment-18265" title="">Dec 20, 2010</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hi,</p>
+<p>I follow your tuto step by step but I have some problem.<br />
+First, I can&#8217;t install the git(no error but the plugin/open_flash_chart is empty)I try git and http but nothing work. I have to copy the folder of your example in mine.<br />
+After that. I see the following in the browser when I start the program :</p>
+<p>  swfobject.embedSWF(&#8220;/open-flash-chart.swf&#8221;, &#8220;flash_content_RwqB7nve&#8221;, &#8220;600&#8221;, &#8220;300&#8221;, &#8220;9.0.0&#8221;, &#8220;expressInstall.swf&#8221;,{&#8220;data-file&#8221;:&#8221;http%3A%2F%2Flocalhost%3A3000%2Ftest%2Ftest.json&#8221;});  </p>
+<p>What is wrong?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18527">
+
+By <strong>David</strong> on <a href="index.html?p=45791#comment-18527" title="">Aug 17, 2011</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hi I am trying to implement open flash into my rails 3 app. I’ve followed this tutorial and get the following error, why is this?</p>
+<p>swfobject.embedSWF(”/open-flash-chart.swf”, “flash_content_N388l0nV”, “600″, “300″, “9.0.0″, “expressInstall.swf”,{”data-file”:”%2Ftest_it%2Fgraph_code”});</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18561">
+
+By <strong>CJ Gregory</strong> on <a href="index.html?p=45791#comment-18561" title="">Sep 13, 2011</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>I am also seeing the error that both Jeremy and David are getting.</p>
+<p>I believe its because in Rails 3, the strings are HTML encoded by default. So, I change the line in the view from:</p>
+<p>to</p>
+<p>Well, this only parially works as the url parameter in open_flash_chart_object() is encoded as well. I&#8217;ve tried to get around it using raw, but to no avail. </p>
+<p>Anyone figure this out?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18727">
+
+By <strong>RichieRich</strong> on <a href="index.html?p=45791#comment-18727" title="">Dec 20, 2011</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hi, Thanks for the plugin.</p>
+<p>I managed to get the barchart example working. But i cannot seem to get any of the other examples working.</p>
+<p><a href="http://pullmonkey.com/projects/open_flash_chart/view_source_code/one" rel="nofollow ugc">http://pullmonkey.com/projects/open_flash_chart/view_source_code/one</a></p>
+<p>I dont have a massive knowledge of RoR, the error message im on the page that is meant to be displaying the json.</p>
+<p>uninitialized constant Graph</p>
+<p>Which is assume is the controller not being able to find the function. What would i do to correct this?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18728">
+
+By <strong>charlie</strong> on <a href="index.html?p=45791#comment-18728" title="">Dec 20, 2011</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>The link you provided is an OFC version 1 example:<br />
+<a href="http://pullmonkey.com/projects/open_flash_chart/view_source_code/one" rel="nofollow ugc">http://pullmonkey.com/projects/open_flash_chart/view_source_code/one</a></p>
+<p>For 2.0 examples, start here:<br />
+<a href="http://pullmonkey.com/projects/open_flash_chart2/" rel="nofollow ugc">http://pullmonkey.com/projects/open_flash_chart2/</a></p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18729">
+
+By <strong>RichieRich</strong> on <a href="index.html?p=45791#comment-18729" title="">Dec 20, 2011</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Ok my bad thanks for the reply, should really have seen that big box with the warning in it</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18921">
+
+By <strong>Eli</strong> on <a href="index.html?p=45791#comment-18921" title="">May 17, 2012</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hi,<br />
+Thank you for the great post.<br />
+I&#8217;m new to ROR. I need to provide a dashboard for a project. I installed the plug in and provide a controller named &#8220;dashboard&#8221;. here is the code in the controller:<br />
+==========Code in the Controller==========================<br />
+class DashboardController  chart.to_s<br />
+  end<br />
+end<br />
+==============================================</p>
+<p>here is the code in the view which is named &#8220;dashboard_visits.html&#8221;:</p>
+<p>========== Code in view page &#8220;dashboard_visits.html&#8221;==============</p>
+<p>  role:</p>
+<p>=====================================================<br />
+but in the webpage I&#8217;m getting this line without any chart!!!</p>
+<p>dashboard_visits</p>
+<p>role: ALFP staff</p>
+<p>  swfobject.embedSWF(&#8220;/open-flash-chart.swf&#8221;, &#8220;flash_content_bQv0Ai8x&#8221;, &#8220;600&#8221;, &#8220;300&#8221;, &#8220;9.0.0&#8221;, &#8220;expressInstall.swf&#8221;,{&#8220;data-file&#8221;:&#8221;%2Fdashboard%2Fgraph_code&#8221;});  </p>
+<p>would you please help me to fix it!<br />
+any help is highly appreciated.</p>
+<p>eli.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18922">
+
+By <strong>Eli</strong> on <a href="index.html?p=45791#comment-18922" title="">May 17, 2012</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Sorry, I realized the code is not appeared!<br />
+here is the code in the controller:</p>
+<p>&#8212; class DashboardController  chart.to_s<br />
+&#8212;  end  </p>
+<p>&#8211;end</p>
+<p>and here is the code in the view :</p>
+<p>  role:</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18923">
+
+By <strong>Zara</strong> on <a href="index.html?p=45791#comment-18923" title="">May 17, 2012</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Thanks for plug in.<br />
+I&#8217;m getting the same error as Jeremy and David got.</p>
+<p>swfobject.embedSWF(&#8220;/open-flash-chart.swf&#8221;, &#8220;flash_content_JGR046at&#8221;, &#8220;600&#8221;, &#8220;300&#8221;, &#8220;9.0.0&#8221;, &#8220;expressInstall.swf&#8221;,{&#8220;data-file&#8221;:&#8221;%2Fdashboard%2Fgraph_code&#8221;});</p>
+<p>Can not figure it out why?<br />
+any help in highly appreciated.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-19003">
+
+By <strong>Asantoya</strong> on <a href="index.html?p=45791#comment-19003" title="">Aug 1, 2012</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>I haven`t the /public/directory/script/server how I can do it?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-19004">
+
+By <strong>Asantoya</strong> on <a href="index.html?p=45791#comment-19004" title="">Aug 1, 2012</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>also I got this error undefined method `open_flash_chart_object&#8217;</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-19007">
+
+By <strong>charlie</strong> on <a href="index.html?p=45791#comment-19007" title="">Aug 4, 2012</a> | <a href="index.html?p=45791#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Asantoya &#8211; This example is over 4 years old 🙂  A lot has changed with rails.  The old way to start the webrick server was to use ./script/server, it&#8217;s now rails s.</p>
+<p>How do you have the plugin installed and are you using the latest from github?  Need to make sure the init.rb file is being run.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		</ol>
+	
+	
+	
+
+	<p id="comments-closed">Sorry, comments for this entry are closed at this time.</p>
+</div>
+</div><!-- Post -->
+
+		        
+  
+
+	
+</div><!-- Content -->
+
+</div><!-- LeftColumn -->
+
+<div id="c2">
+
+   
+    <div id="sidebar">
+
+<div id="subscribe">
+<a href="feed/index.html"><img src="wp-content/themes/simple&#32;paper/images/rss.gif" alt="RSS-FEED" border="0" id="rss" /></a>
+<a href="feed/index.html">subscribe to the feed</a><br clear="all" />
+</div><!-- subscribe rss -->
+
+<div id="topsearch">
+<form action="index.html" method="post">
+<input type="text" value="Search..." name="s" id="ls" class="searchfield" onfocus="if (this.value == 'Search...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search...';}" />
+<input type="image" src="wp-content/themes/simple&#32;paper/images/click.gif" id="submit" />
+</form>
+<br clear="all" />
+<br clear="all" />
+</div>
+    
+    	<ul>
+	<li id="tag_cloud-2" class="widget widget_tag_cloud"><h2 class="widgettitle">Tags</h2>
+<div class="tagcloud"><a href="tag/net/index.html" class="tag-cloud-link tag-link-166 tag-link-position-1" style="font-size: 8pt;" aria-label=".net (2 items)">.net</a>
+<a href="tag/activerecord/index.html" class="tag-cloud-link tag-link-54 tag-link-position-2" style="font-size: 8pt;" aria-label="activerecord (2 items)">activerecord</a>
+<a href="tag/api/index.html" class="tag-cloud-link tag-link-220 tag-link-position-3" style="font-size: 10.40625pt;" aria-label="api (4 items)">api</a>
+<a href="tag/biking/index.html" class="tag-cloud-link tag-link-219 tag-link-position-4" style="font-size: 10.40625pt;" aria-label="biking (4 items)">biking</a>
+<a href="tag/business/index.html" class="tag-cloud-link tag-link-213 tag-link-position-5" style="font-size: 8pt;" aria-label="business (2 items)">business</a>
+<a href="tag/c/index.html" class="tag-cloud-link tag-link-33 tag-link-position-6" style="font-size: 10.40625pt;" aria-label="c++ (4 items)">c++</a>
+<a href="tag/charts/index.html" class="tag-cloud-link tag-link-42 tag-link-position-7" style="font-size: 18.171875pt;" aria-label="charts (25 items)">charts</a>
+<a href="tag/cms/index.html" class="tag-cloud-link tag-link-60 tag-link-position-8" style="font-size: 12.046875pt;" aria-label="CMS (6 items)">CMS</a>
+<a href="tag/curb/index.html" class="tag-cloud-link tag-link-190 tag-link-position-9" style="font-size: 8pt;" aria-label="curb (2 items)">curb</a>
+<a href="tag/curl/index.html" class="tag-cloud-link tag-link-120 tag-link-position-10" style="font-size: 8pt;" aria-label="curl (2 items)">curl</a>
+<a href="tag/dynamic/index.html" class="tag-cloud-link tag-link-56 tag-link-position-11" style="font-size: 8pt;" aria-label="dynamic (2 items)">dynamic</a>
+<a href="tag/ece231/index.html" class="tag-cloud-link tag-link-34 tag-link-position-12" style="font-size: 10.40625pt;" aria-label="ece231 (4 items)">ece231</a>
+<a href="tag/editor/index.html" class="tag-cloud-link tag-link-61 tag-link-position-13" style="font-size: 11.28125pt;" aria-label="editor (5 items)">editor</a>
+<a href="tag/error/index.html" class="tag-cloud-link tag-link-46 tag-link-position-14" style="font-size: 9.3125pt;" aria-label="error (3 items)">error</a>
+<a href="tag/flash/index.html" class="tag-cloud-link tag-link-41 tag-link-position-15" style="font-size: 17.84375pt;" aria-label="flash (23 items)">flash</a>
+<a href="tag/fun/index.html" class="tag-cloud-link tag-link-23 tag-link-position-16" style="font-size: 11.28125pt;" aria-label="fun (5 items)">fun</a>
+<a href="tag/gems/index.html" class="tag-cloud-link tag-link-44 tag-link-position-17" style="font-size: 8pt;" aria-label="gems (2 items)">gems</a>
+<a href="tag/graphs/index.html" class="tag-cloud-link tag-link-52 tag-link-position-18" style="font-size: 18.390625pt;" aria-label="graphs (26 items)">graphs</a>
+<a href="tag/httpi/index.html" class="tag-cloud-link tag-link-191 tag-link-position-19" style="font-size: 8pt;" aria-label="httpi (2 items)">httpi</a>
+<a href="tag/java/index.html" class="tag-cloud-link tag-link-177 tag-link-position-20" style="font-size: 9.3125pt;" aria-label="java (3 items)">java</a>
+<a href="tag/javascript/index.html" class="tag-cloud-link tag-link-215 tag-link-position-21" style="font-size: 10.40625pt;" aria-label="Javascript (4 items)">Javascript</a>
+<a href="tag/linux/index.html" class="tag-cloud-link tag-link-221 tag-link-position-22" style="font-size: 8pt;" aria-label="Linux (2 items)">Linux</a>
+<a href="tag/macromovers/index.html" class="tag-cloud-link tag-link-66 tag-link-position-23" style="font-size: 8pt;" aria-label="macromovers (2 items)">macromovers</a>
+<a href="tag/mirah/index.html" class="tag-cloud-link tag-link-176 tag-link-position-24" style="font-size: 8pt;" aria-label="mirah (2 items)">mirah</a>
+<a href="tag/ofc/index.html" class="tag-cloud-link tag-link-105 tag-link-position-25" style="font-size: 8pt;" aria-label="OFC (2 items)">OFC</a>
+<a href="tag/open-flash-chart/index.html" class="tag-cloud-link tag-link-40 tag-link-position-26" style="font-size: 18.609375pt;" aria-label="open flash chart (27 items)">open flash chart</a>
+<a href="tag/php/index.html" class="tag-cloud-link tag-link-216 tag-link-position-27" style="font-size: 9.3125pt;" aria-label="php (3 items)">php</a>
+<a href="tag/plugin/index.html" class="tag-cloud-link tag-link-65 tag-link-position-28" style="font-size: 12.59375pt;" aria-label="plugin (7 items)">plugin</a>
+<a href="tag/plugins/index.html" class="tag-cloud-link tag-link-218 tag-link-position-29" style="font-size: 9.3125pt;" aria-label="plugins (3 items)">plugins</a>
+<a href="tag/prog/index.html" class="tag-cloud-link tag-link-35 tag-link-position-30" style="font-size: 9.3125pt;" aria-label="prog (3 items)">prog</a>
+<a href="tag/project/index.html" class="tag-cloud-link tag-link-47 tag-link-position-31" style="font-size: 10.40625pt;" aria-label="project (4 items)">project</a>
+<a href="tag/rails/index.html" class="tag-cloud-link tag-link-210 tag-link-position-32" style="font-size: 20.90625pt;" aria-label="rails (45 items)">rails</a>
+<a href="tag/ruby/index.html" class="tag-cloud-link tag-link-211 tag-link-position-33" style="font-size: 22pt;" aria-label="ruby (57 items)">ruby</a>
+<a href="tag/ruby-on-rails/index.html" class="tag-cloud-link tag-link-43 tag-link-position-34" style="font-size: 20.359375pt;" aria-label="ruby on rails (40 items)">ruby on rails</a>
+<a href="tag/select-boxes/index.html" class="tag-cloud-link tag-link-57 tag-link-position-35" style="font-size: 8pt;" aria-label="select boxes (2 items)">select boxes</a>
+<a href="tag/simple/index.html" class="tag-cloud-link tag-link-62 tag-link-position-36" style="font-size: 10.40625pt;" aria-label="simple (4 items)">simple</a>
+<a href="tag/simplecms/index.html" class="tag-cloud-link tag-link-214 tag-link-position-37" style="font-size: 11.28125pt;" aria-label="SimpleCMS (5 items)">SimpleCMS</a>
+<a href="tag/skizmo/index.html" class="tag-cloud-link tag-link-102 tag-link-position-38" style="font-size: 10.40625pt;" aria-label="skizmo (4 items)">skizmo</a>
+<a href="tag/software/index.html" class="tag-cloud-link tag-link-48 tag-link-position-39" style="font-size: 8pt;" aria-label="software (2 items)">software</a>
+<a href="tag/spreadsheet/index.html" class="tag-cloud-link tag-link-45 tag-link-position-40" style="font-size: 8pt;" aria-label="spreadsheet (2 items)">spreadsheet</a>
+<a href="tag/tutorial/index.html" class="tag-cloud-link tag-link-50 tag-link-position-41" style="font-size: 16.75pt;" aria-label="tutorial (18 items)">tutorial</a>
+<a href="tag/ubuntu/index.html" class="tag-cloud-link tag-link-150 tag-link-position-42" style="font-size: 8pt;" aria-label="ubuntu (2 items)">ubuntu</a>
+<a href="tag/vin/index.html" class="tag-cloud-link tag-link-119 tag-link-position-43" style="font-size: 12.59375pt;" aria-label="VIN (7 items)">VIN</a>
+<a href="tag/vin-api/index.html" class="tag-cloud-link tag-link-159 tag-link-position-44" style="font-size: 12.046875pt;" aria-label="vin api (6 items)">vin api</a>
+<a href="tag/xml/index.html" class="tag-cloud-link tag-link-165 tag-link-position-45" style="font-size: 9.3125pt;" aria-label="xml (3 items)">xml</a></div>
+</li>
+<li id="categories-524386351" class="widget widget_categories"><h2 class="widgettitle">Topics</h2>
+
+			<ul>
+					<li class="cat-item cat-item-179"><a href="category/android/index.html">Android</a>
+</li>
+	<li class="cat-item cat-item-118"><a href="category/api/index.html">api</a>
+</li>
+	<li class="cat-item cat-item-67"><a href="category/biking/index.html">biking</a>
+</li>
+	<li class="cat-item cat-item-37"><a href="category/blog/index.html">blog</a>
+</li>
+	<li class="cat-item cat-item-27"><a href="category/business/index.html">business</a>
+</li>
+	<li class="cat-item cat-item-32"><a href="category/c-c/index.html">C / C++</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="category/development/index.html">development</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="category/games/index.html">games</a>
+</li>
+	<li class="cat-item cat-item-139"><a href="category/graphics/index.html">Graphics</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="category/home/index.html">Home</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="category/ie-hacks/index.html">IE hacks</a>
+</li>
+	<li class="cat-item cat-item-31"><a href="category/javascript/index.html">Javascript</a>
+</li>
+	<li class="cat-item cat-item-149"><a href="category/linux/index.html">Linux</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="category/me/index.html">me</a>
+</li>
+	<li class="cat-item cat-item-26"><a href="category/open-flash-chart-graphs/index.html">Open Flash Chart Graphs</a>
+</li>
+	<li class="cat-item cat-item-29"><a href="category/opengl/index.html">opengl</a>
+</li>
+	<li class="cat-item cat-item-36"><a href="category/php/index.html">php</a>
+</li>
+	<li class="cat-item cat-item-51"><a href="category/plugins/index.html">plugins</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="category/projects/index.html">projects</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="category/rails/index.html">rails</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="category/railsconf/index.html">railsconf</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="category/ruby/index.html">ruby</a>
+</li>
+	<li class="cat-item cat-item-28"><a href="category/simplecms/index.html">SimpleCMS</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="category/tutorials/index.html">tutorials</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="category/uncategorized/index.html">Uncategorized</a>
+</li>
+			</ul>
+
+			</li>
+
+		<li id="recent-posts-2" class="widget widget_recent_entries">
+		<h2 class="widgettitle">Recent Posts</h2>
+
+		<ul>
+											<li>
+					<a href="index.html?p=57726">Dynamic Select Boxes &#8211; Ruby on Rails 3</a>
+									</li>
+											<li>
+					<a href="index.html?p=57715">VIN API &#8211; Do you know about the complete data set?</a>
+									</li>
+											<li>
+					<a href="index.html?p=57712">Using Ruby to read from a MagTek USB Card Reader</a>
+									</li>
+											<li>
+					<a href="index.html?p=57708">Signature Pad in Linux</a>
+									</li>
+											<li>
+					<a href="index.html?p=57705">Using HTTPI with Curb to do multipart file uploads with spnego</a>
+									</li>
+					</ul>
+
+		</li>
+<li id="recent-comments-2" class="widget widget_recent_comments"><h2 class="widgettitle">Recent Comments</h2>
+<ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">`Drew</span> on <a href="2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/index.html#comment-24291">Dynamic Select Boxes &#8211; Ruby on Rails 3</a></li><li class="recentcomments"><span class="comment-author-link">Bardach</span> on <a href="2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/index.html#comment-24290">Dynamic Select Boxes &#8211; Ruby on Rails 3</a></li><li class="recentcomments"><span class="comment-author-link">Bardach</span> on <a href="2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/index.html#comment-24289">Dynamic Select Boxes &#8211; Ruby on Rails 3</a></li><li class="recentcomments"><span class="comment-author-link">Dar_bok</span> on <a href="2007/04/30/how-i-got-gta-san-andreas-to-work-with-a-crappy-os-vista/comment-page-2/index.html#comment-20844">How I got GTA San Andreas to Work with (a crappy OS) Vista</a></li><li class="recentcomments"><span class="comment-author-link">Anirudha Pendakur</span> on <a href="2012/07/25/using-httpi-with-curb-to-do-multipart-file-uploads-with-spnego/comment-page-1/index.html#comment-19583">Using HTTPI with Curb to do multipart file uploads with spnego</a></li></ul></li>
+<li id="archives-2" class="widget widget_archive"><h2 class="widgettitle">Archives</h2>
+
+			<ul>
+					<li><a href='2012/08/index.html'>August 2012</a></li>
+	<li><a href='2012/07/index.html'>July 2012</a></li>
+	<li><a href='2012/05/index.html'>May 2012</a></li>
+	<li><a href='2012/04/index.html'>April 2012</a></li>
+	<li><a href='2012/03/index.html'>March 2012</a></li>
+	<li><a href='2011/11/index.html'>November 2011</a></li>
+	<li><a href='2011/10/index.html'>October 2011</a></li>
+	<li><a href='2011/05/index.html'>May 2011</a></li>
+	<li><a href='2011/03/index.html'>March 2011</a></li>
+	<li><a href='2011/02/index.html'>February 2011</a></li>
+	<li><a href='2011/01/index.html'>January 2011</a></li>
+	<li><a href='2010/11/index.html'>November 2010</a></li>
+	<li><a href='2010/09/index.html'>September 2010</a></li>
+	<li><a href='2010/04/index.html'>April 2010</a></li>
+	<li><a href='2010/02/index.html'>February 2010</a></li>
+	<li><a href='2010/01/index.html'>January 2010</a></li>
+	<li><a href='2009/12/index.html'>December 2009</a></li>
+	<li><a href='2009/10/index.html'>October 2009</a></li>
+	<li><a href='2009/09/index.html'>September 2009</a></li>
+	<li><a href='2009/08/index.html'>August 2009</a></li>
+	<li><a href='2009/04/index.html'>April 2009</a></li>
+	<li><a href='2009/03/index.html'>March 2009</a></li>
+	<li><a href='2009/02/index.html'>February 2009</a></li>
+	<li><a href='2009/01/index.html'>January 2009</a></li>
+	<li><a href='2008/10/index.html'>October 2008</a></li>
+	<li><a href='2008/09/index.html'>September 2008</a></li>
+	<li><a href='2008/08/index.html'>August 2008</a></li>
+	<li><a href='2008/07/index.html'>July 2008</a></li>
+	<li><a href='2008/04/index.html'>April 2008</a></li>
+	<li><a href='2008/03/index.html'>March 2008</a></li>
+	<li><a href='2008/02/index.html'>February 2008</a></li>
+	<li><a href='2008/01/index.html'>January 2008</a></li>
+	<li><a href='2007/12/index.html'>December 2007</a></li>
+	<li><a href='2007/10/index.html'>October 2007</a></li>
+	<li><a href='2007/09/index.html'>September 2007</a></li>
+	<li><a href='2007/08/index.html'>August 2007</a></li>
+	<li><a href='2007/06/index.html'>June 2007</a></li>
+	<li><a href='2007/05/index.html'>May 2007</a></li>
+	<li><a href='2007/04/index.html'>April 2007</a></li>
+			</ul>
+
+			</li>
+	</ul>
+    
+    </div><!-- Sidebar -->
+
+</div><!-- Rightcolumn -->
+
+
+
+<br clear="all" />
+
+<div id="footer">
+<p>Copyright 2009, powered by <a href="http://www.wordpress.org/">WordPress</a></p>
+</div><!-- Footer -->
+
+</div><!-- Wrapper -->
+
+<br clear="all" />
+</div><!-- Container -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3308745-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

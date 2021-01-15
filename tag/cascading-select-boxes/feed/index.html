@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>cascading select boxes &#8211; PullMonkey Blog</title>
+	<atom:link href="http://pullmonkey.com/tag/cascading-select-boxes/feed/" rel="self" type="application/rss+xml" />
+	<link>http://pullmonkey.com</link>
+	<description></description>
+	<lastBuildDate>Thu, 16 Aug 2012 23:40:41 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6</generator>
+	<item>
+		<title>Dynamic Select Boxes &#8211; Ruby on Rails 3</title>
+		<link>http://pullmonkey.com/2012/08/11/dynamic-select-boxes-ruby-on-rails-3/</link>
+					<comments>http://pullmonkey.com/2012/08/11/dynamic-select-boxes-ruby-on-rails-3/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Sat, 11 Aug 2012 01:11:51 +0000</pubDate>
+				<category><![CDATA[development]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[cascading select boxes]]></category>
+		<category><![CDATA[dynamic]]></category>
+		<category><![CDATA[dynamic select boxes]]></category>
+		<category><![CDATA[jquery]]></category>
+		<category><![CDATA[rails 3]]></category>
+		<category><![CDATA[select boxes]]></category>
+		<category><![CDATA[unobtrusive javascript]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57726</guid>
+
+					<description><![CDATA[Over 4 years ago, I wrote a tutorial for doing dynamic (cascading) select boxes. Still getting comments and emails to this day. Mostly asking how to get this working with rails 3, which has moved from prototype to jquery. So here's a tutorial for getting 3 select boxes to trigger updates for each other. First [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Over 4 years ago, I wrote <a href="http://pullmonkey.com/2008/03/30/dynamic-select-boxes-ruby-on-rails/">a tutorial for doing dynamic (cascading) select boxes</a>.<br />
+Still getting comments and emails to this day.  Mostly asking how to get this working with rails 3, which has moved from prototype to jquery.<br />
+So here's a tutorial for getting 3 select boxes to trigger updates for each other.</p>
+<p>First set things up:<br />
+<script src="https://gist.github.com/3319671.js?file=gistfile1.sh"></script></p>
+<p>I just used the html5 haml twitter bootstrap, etc template.  Really useful.</p>
+<p>If you need data, here's what I used - put this in your db/seeds.rb file:<br />
+<script src="https://gist.github.com/3319679.js?file=gistfile1.rb"></script></p>
+<p>Next, setup your model associations:<br />
+<script src="https://gist.github.com/3319683.js?file=gistfile1.rb"></script></p>
+<p>Genres have many artists.<br />
+Artists have many songs.<br />
+Genres have many songs through artists.</p>
+<p>I'm just using a home controller to setup variables for the index page as well as setup variables for use in the dynamic updating:<br />
+<script src="https://gist.github.com/3319690.js?file=gistfile1.rb"></script></p>
+<p>Now the view just has the 3 select boxes and the unobtrusive javascript (triggered onchange) to make the ajax calls for updating:<br />
+<script src="https://gist.github.com/3319691.js?file=gistfile1.rb"></script></p>
+<p>We need our rjs files for updating the select boxes, one for the songs (when artist changes) and one for the artists and songs (when genre changes):<br />
+<script src="https://gist.github.com/3319706.js?file=gistfile1.rb"></script></p>
+<p>Our routes are simple:<br />
+<script src="https://gist.github.com/3319709.js?file=gistfile1.rb"></script></p>
+<p>That's it.  </p>
+<p><strong>UPDATE:</strong>  Here's an erb alternative for index.html.<br />
+<script src="https://gist.github.com/3366572.js?file=gistfile1.rhtml"></script></p>
+<p>And the js.haml can be converted to js.erb by taking #{...} and converting to <%= ... %> :<br />
+<script src="https://gist.github.com/3374533.js?file=gistfile1.rhtml"></script></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2012/08/11/dynamic-select-boxes-ruby-on-rails-3/feed/</wfw:commentRss>
+			<slash:comments>12</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

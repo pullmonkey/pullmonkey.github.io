@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>incompatability &#8211; PullMonkey Blog</title>
+	<atom:link href="http://pullmonkey.com/tag/incompatability/feed/" rel="self" type="application/rss+xml" />
+	<link>http://pullmonkey.com</link>
+	<description></description>
+	<lastBuildDate>Wed, 30 May 2012 15:35:39 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6</generator>
+	<item>
+		<title>Rubygem version incompatability with older Rails versions</title>
+		<link>http://pullmonkey.com/2012/05/30/rubygem-version-incompatability-with-older-rails-versions/</link>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Wed, 30 May 2012 15:35:39 +0000</pubDate>
+				<category><![CDATA[development]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[incompatability]]></category>
+		<category><![CDATA[ruby on rails]]></category>
+		<category><![CDATA[rubygems]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57701</guid>
+
+					<description><![CDATA[We maintain a rails 2.3.8 application and haven't had to touch it in quite some time. But when we did, we came across this error: uninitialized constant ActiveSupport::Dependencies::Mutex (NameError) Then after applying the solution found here, we started getting this error: undefined method `name' for "actionmailer":String (NoMethodError) Both errors were resolved by using RVM to [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>We maintain a rails 2.3.8 application and haven't had to touch it in quite some time.  But when we did, we came across this error:</p>
+<pre>uninitialized constant ActiveSupport::Dependencies::Mutex (NameError)</pre>
+<p>Then after applying the solution found <a href="http://stackoverflow.com/questions/5176782/uninitialized-constant-activesupportdependenciesmutex-nameerror">here</a>, we started getting this error:</p>
+<pre>undefined method `name' for "actionmailer":String (NoMethodError)</pre>
+<p>Both errors were resolved by using RVM to specify the rubygem version best suited for this application.</p>
+<pre>rvm rubygems 1.3.7</pre>
+<p>So our .rvmrc file now looks like this:</p>
+<pre>rvm use <ruby>@<gemset>
+rvm rubygems 1.3.7</pre>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

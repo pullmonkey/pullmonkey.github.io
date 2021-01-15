@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Open Flash Chart Graphing for Ruby on Rails &#8211; Updates	</title>
+	<atom:link href="http://pullmonkey.com/2008/04/05/open-flash-chart-graphing-for-ruby-on-rails-updates/feed/" rel="self" type="application/rss+xml" />
+	<link>http://pullmonkey.com/2008/04/05/open-flash-chart-graphing-for-ruby-on-rails-updates/</link>
+	<description></description>
+	<lastBuildDate>Sun, 30 Aug 2009 04:39:04 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6</generator>
+	<item>
+		<title>
+		By: Andrew Kuklewicz		</title>
+		<link>http://pullmonkey.com/2008/04/05/open-flash-chart-graphing-for-ruby-on-rails-updates/comment-page-1/#comment-377</link>
+
+		<dc:creator><![CDATA[Andrew Kuklewicz]]></dc:creator>
+		<pubDate>Sat, 05 Apr 2008 23:25:00 +0000</pubDate>
+		<guid isPermaLink="false">/2008/07/25/open-flash-chart-graphing-for-ruby-on-rails-updates#comment-377</guid>
+
+					<description><![CDATA[I&#039;ve been using the plugin, and found one problem with it.
+I wanted to use js to cause the flash chart to reload data, but in order to do so, I need the id of the flash obj.  There is no way currently to get this that I could find, as the  _ofc method throws a seq # in as  part of the id, so I changed these methods a bit to add a final param to pass in the id.  I did it as an extra param, probably would be more extensible to pass in a hash of options, and have one of them be the id of the flash obj. What do you think, is there a better way to do this?
+-Andrew]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;ve been using the plugin, and found one problem with it.<br />
+I wanted to use js to cause the flash chart to reload data, but in order to do so, I need the id of the flash obj.  There is no way currently to get this that I could find, as the  _ofc method throws a seq # in as  part of the id, so I changed these methods a bit to add a final param to pass in the id.  I did it as an extra param, probably would be more extensible to pass in a hash of options, and have one of them be the id of the flash obj. What do you think, is there a better way to do this?<br />
+-Andrew</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: charlie		</title>
+		<link>http://pullmonkey.com/2008/04/05/open-flash-chart-graphing-for-ruby-on-rails-updates/comment-page-1/#comment-378</link>
+
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Sat, 05 Apr 2008 23:25:00 +0000</pubDate>
+		<guid isPermaLink="false">/2008/07/25/open-flash-chart-graphing-for-ruby-on-rails-updates#comment-378</guid>
+
+					<description><![CDATA[@Andrew - I think I see what you are saying.  You want to reload the data that is in the div, where the div has an id like my_chart and some string?  I think a solution would be to give the div a css class, then you can use prototype&#039;s css selector like this $$(&#039;.ofc_chart&#039;) to get all the open flash chart divs on the page and you can reload each one or get the id of each one and go from there.  Thoughts?]]></description>
+			<content:encoded><![CDATA[<p>@Andrew &#8211; I think I see what you are saying.  You want to reload the data that is in the div, where the div has an id like my_chart and some string?  I think a solution would be to give the div a css class, then you can use prototype&#8217;s css selector like this $$(&#8216;.ofc_chart&#8217;) to get all the open flash chart divs on the page and you can reload each one or get the id of each one and go from there.  Thoughts?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Scott Derrick		</title>
+		<link>http://pullmonkey.com/2008/04/05/open-flash-chart-graphing-for-ruby-on-rails-updates/comment-page-1/#comment-379</link>
+
+		<dc:creator><![CDATA[Scott Derrick]]></dc:creator>
+		<pubDate>Sat, 05 Apr 2008 23:25:00 +0000</pubDate>
+		<guid isPermaLink="false">/2008/07/25/open-flash-chart-graphing-for-ruby-on-rails-updates#comment-379</guid>
+
+					<description><![CDATA[Can the line charts be oriented vertically?
+
+Thanks, Scott]]></description>
+			<content:encoded><![CDATA[<p>Can the line charts be oriented vertically?</p>
+<p>Thanks, Scott</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: charlie		</title>
+		<link>http://pullmonkey.com/2008/04/05/open-flash-chart-graphing-for-ruby-on-rails-updates/comment-page-1/#comment-380</link>
+
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Sat, 05 Apr 2008 23:25:00 +0000</pubDate>
+		<guid isPermaLink="false">/2008/07/25/open-flash-chart-graphing-for-ruby-on-rails-updates#comment-380</guid>
+
+					<description><![CDATA[@Scott - There is probably a trick to it, but not anything off the top of my head.  I am using the swf from http://teethgrinder.co.uk/open-flash-chart/, and from what I can tell, it is not supported.  But again, maybe there is a way to rotate the flash after the fact or some other trick?]]></description>
+			<content:encoded><![CDATA[<p>@Scott &#8211; There is probably a trick to it, but not anything off the top of my head.  I am using the swf from <a href="http://teethgrinder.co.uk/open-flash-chart/" rel="nofollow ugc">http://teethgrinder.co.uk/open-flash-chart/</a>, and from what I can tell, it is not supported.  But again, maybe there is a way to rotate the flash after the fact or some other trick?</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

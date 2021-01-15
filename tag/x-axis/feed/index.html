@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>X Axis &#8211; PullMonkey Blog</title>
+	<atom:link href="http://pullmonkey.com/tag/x-axis/feed/" rel="self" type="application/rss+xml" />
+	<link>http://pullmonkey.com</link>
+	<description></description>
+	<lastBuildDate>Fri, 19 Feb 2010 20:31:32 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6</generator>
+	<item>
+		<title>Open Flash Chart II &#8211; X Axis Date and Time</title>
+		<link>http://pullmonkey.com/2010/01/05/open-flash-chart-ii-x-axis-date-and-time/</link>
+					<comments>http://pullmonkey.com/2010/01/05/open-flash-chart-ii-x-axis-date-and-time/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Tue, 05 Jan 2010 02:09:16 +0000</pubDate>
+				<category><![CDATA[development]]></category>
+		<category><![CDATA[Open Flash Chart Graphs]]></category>
+		<category><![CDATA[plugins]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[charts]]></category>
+		<category><![CDATA[Date and Time]]></category>
+		<category><![CDATA[example]]></category>
+		<category><![CDATA[graphs]]></category>
+		<category><![CDATA[OFC]]></category>
+		<category><![CDATA[OFC II]]></category>
+		<category><![CDATA[open flash chart]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[X Axis]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57443</guid>
+
+					<description><![CDATA[I was asked how to display date and time for the x axis as seen in this teethgrinder example - So here it goes. Here is the graph we are after in this example: More Open Flash Chart II examples. And here is the code (the controller): 1 2 3 4 5 6 7 8 [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I was <a href="http://github.com/pullmonkey/open_flash_chart/issues#issue/3">asked how to display date and time for the x axis</a> as seen in <a href="http://teethgrinder.co.uk/open-flash-chart-2/x-axis-date.php">this teethgrinder example</a> - So here it goes.</p>
+<p>Here is the graph we are after in this example:<br />
+<script src="/projects/javascripts/swfobject.js" type="text/javascript"></script></p>
+<p><script type="text/javascript"><!--
+      swfobject.embedSWF("/projects/open-flash-chart-lwc.swf", "flash_content_x_axis_date_and_time", "600", "300", "9.0.0", "expressInstall.swf",{"data-file":"/projects/open_flash_chart2/x_axis_date_and_time"});
+
+// --></script></p>
+<p><a href="http://pullmonkey.com/projects/open_flash_chart2">More Open Flash Chart II examples.</a></p>
+<p>And here is the code (the controller):</p>
+<table class="CodeRay" border="0">
+<tbody>
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt>5<tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt>9<tt>
+</tt><strong>10</strong><tt>
+</tt>11<tt>
+</tt>12<tt>
+</tt>13<tt>
+</tt>14<tt>
+</tt>15<tt>
+</tt>16<tt>
+</tt>17<tt>
+</tt>18<tt>
+</tt>19<tt>
+</tt><strong>20</strong><tt>
+</tt>21<tt>
+</tt>22<tt>
+</tt>23<tt>
+</tt>24<tt>
+</tt>25<tt>
+</tt>26<tt>
+</tt>27<tt>
+</tt>28<tt>
+</tt>29<tt>
+</tt><strong>30</strong><tt>
+</tt>31<tt>
+</tt>32<tt>
+</tt>33<tt>
+</tt>34<tt>
+</tt>35<tt>
+</tt>36<tt>
+</tt>37<tt>
+</tt>38<tt>
+</tt>39<tt>
+</tt><strong>40</strong><tt>
+</tt>41<tt>
+</tt>42<tt>
+</tt>43<tt>
+</tt>44<tt>
+</tt>45<tt>
+</tt>46<tt>
+</tt>47<tt>
+</tt>48<tt>
+</tt>49<tt>
+</tt><strong>50</strong><tt>
+</tt>51<tt>
+</tt>52<tt>
+</tt>53<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt><span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">TestItController</span> &lt; <span style="color:#036;font-weight:bold">ApplicationController</span><tt>
+</tt>  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">index</span><tt>
+</tt>    <span style="color:#33B">@graph</span> = open_flash_chart_object(<span style="color:#00D;font-weight:bold">550</span>,<span style="color:#00D;font-weight:bold">300</span>,<span style="background-color:#fff0f0;color:#D20"><span style="color:#710">"</span><span>/test_it/chart</span><span style="color:#710">"</span></span>)<tt>
+</tt>  <span style="color:#080;font-weight:bold">end</span><tt>
+</tt>  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">chart</span><tt>
+</tt>    data1 = []<tt>
+</tt>    data2 = []<tt>
+</tt>    year = <span style="color:#036;font-weight:bold">Time</span>.now.year<tt>
+</tt><tt>
+</tt>    <span style="color:#00D;font-weight:bold">31</span>.times <span style="color:#080;font-weight:bold">do</span> |i|<tt>
+</tt>      x = <span style="background-color:#fff0f0;color:#D20"><span style="color:#710">"</span><span style="background:#eee;color:black"><span style="font-weight:bold;color:#777">#{</span>year<span style="font-weight:bold;color:#777">}</span></span><span>-1-</span><span style="background:#eee;color:black"><span style="font-weight:bold;color:#777">#{</span>i+<span style="color:#00D;font-weight:bold">1</span><span style="font-weight:bold;color:#777">}</span></span><span style="color:#710">"</span></span>.to_time.to_i<tt>
+</tt>      y = (<span style="color:#036;font-weight:bold">Math</span>.sin(i+<span style="color:#00D;font-weight:bold">1</span>) * <span style="color:#60E;font-weight:bold">2.5</span>) + <span style="color:#00D;font-weight:bold">10</span><tt>
+</tt><tt>
+</tt>      data1 &lt;&lt; <span style="color:#036;font-weight:bold">ScatterValue</span>.new(x,y)<tt>
+</tt>      data2 &lt;&lt; (<span style="color:#036;font-weight:bold">Math</span>.cos(i+<span style="color:#00D;font-weight:bold">1</span>) * <span style="color:#60E;font-weight:bold">1.9</span>) + <span style="color:#00D;font-weight:bold">4</span><tt>
+</tt>    <span style="color:#080;font-weight:bold">end</span><tt>
+</tt><tt>
+</tt>    dot = <span style="color:#036;font-weight:bold">HollowDot</span>.new<tt>
+</tt>    dot.size = <span style="color:#00D;font-weight:bold">3</span><tt>
+</tt>    dot.halo_size = <span style="color:#00D;font-weight:bold">2</span><tt>
+</tt>    dot.tooltip = <span style="background-color:#fff0f0;color:#D20"><span style="color:#710">"</span><span>#date:d M y#&lt;br&gt;Value: #val#</span><span style="color:#710">"</span></span><tt>
+</tt><tt>
+</tt>    line = <span style="color:#036;font-weight:bold">ScatterLine</span>.new(<span style="background-color:#fff0f0;color:#D20"><span style="color:#710">"</span><span>#DB1750</span><span style="color:#710">"</span></span>, <span style="color:#00D;font-weight:bold">3</span>)<tt>
+</tt>    line.values = data1<tt>
+</tt>    line.default_dot_style = dot<tt>
+</tt><tt>
+</tt>    x = <span style="color:#036;font-weight:bold">XAxis</span>.new<tt>
+</tt>    x.set_range(<span style="background-color:#fff0f0;color:#D20"><span style="color:#710">"</span><span style="background:#eee;color:black"><span style="font-weight:bold;color:#777">#{</span>year<span style="font-weight:bold;color:#777">}</span></span><span>-1-1</span><span style="color:#710">"</span></span>.to_time.to_i, <span style="background-color:#fff0f0;color:#D20"><span style="color:#710">"</span><span style="background:#eee;color:black"><span style="font-weight:bold;color:#777">#{</span>year<span style="font-weight:bold;color:#777">}</span></span><span>-1-31</span><span style="color:#710">"</span></span>.to_time.to_i)<tt>
+</tt>    x.steps = <span style="color:#00D;font-weight:bold">86400</span><tt>
+</tt><tt>
+</tt>    labels = <span style="color:#036;font-weight:bold">XAxisLabels</span>.new<tt>
+</tt>    labels.text = <span style="background-color:#fff0f0;color:#D20"><span style="color:#710">"</span><span>#date: l jS, M Y#</span><span style="color:#710">"</span></span><tt>
+</tt>    labels.steps = <span style="color:#00D;font-weight:bold">86400</span><tt>
+</tt>    labels.visible_steps = <span style="color:#00D;font-weight:bold">2</span><tt>
+</tt>    labels.rotate = <span style="color:#00D;font-weight:bold">90</span><tt>
+</tt><tt>
+</tt>    x.labels = labels<tt>
+</tt><tt>
+</tt>    y = <span style="color:#036;font-weight:bold">YAxis</span>.new<tt>
+</tt>    y.set_range(<span style="color:#00D;font-weight:bold">0</span>,<span style="color:#00D;font-weight:bold">15</span>,<span style="color:#00D;font-weight:bold">5</span>)<tt>
+</tt><tt>
+</tt>    chart = <span style="color:#036;font-weight:bold">OpenFlashChart</span>.new<tt>
+</tt>    title = <span style="color:#036;font-weight:bold">Title</span>.new(data2.size)<tt>
+</tt><tt>
+</tt>    chart.title = title<tt>
+</tt>    chart.add_element(line)<tt>
+</tt>    chart.x_axis = x<tt>
+</tt>    chart.y_axis = y<tt>
+</tt><tt>
+</tt>    render <span style="color:#A60">:text</span> =&gt; chart, <span style="color:#A60">:layout</span> =&gt; <span style="color:#038;font-weight:bold">false</span><tt>
+</tt>  <span style="color:#080;font-weight:bold">end</span><tt>
+</tt><span style="color:#080;font-weight:bold">end</span></pre>
+</td>
+</tr>
+</tbody>
+</table>
+<p>And in your view (index.html.erb):</p>
+<table class="CodeRay" border="0">
+<tbody>
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt>&lt;script type=<span class="s"><span class="dl">"</span><span class="k">text/javascript</span><span class="dl">"</span></span> src=<span class="s"><span class="dl">"</span><span class="k">/javascripts/swfobject.js</span><span class="dl">"</span></span>&gt;&lt;<span class="rx"><span class="dl">/</span><span class="k">script&gt;<tt>
+</tt>&lt;%= @graph %&gt;<tt>
+</tt><tt>
+</tt></span></span></pre>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Good Luck!</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2010/01/05/open-flash-chart-ii-x-axis-date-and-time/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

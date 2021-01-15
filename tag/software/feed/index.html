@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>software &#8211; PullMonkey Blog</title>
+	<atom:link href="http://pullmonkey.com/tag/software/feed/" rel="self" type="application/rss+xml" />
+	<link>http://pullmonkey.com</link>
+	<description></description>
+	<lastBuildDate>Fri, 28 Oct 2011 15:57:16 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6</generator>
+	<item>
+		<title>VIN API &#8211; ignore checksum validation</title>
+		<link>http://pullmonkey.com/2011/10/28/vin-api-ignore-checksum-validation/</link>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Fri, 28 Oct 2011 15:55:35 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[project]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[ruby on rails]]></category>
+		<category><![CDATA[simple]]></category>
+		<category><![CDATA[skizmo]]></category>
+		<category><![CDATA[software]]></category>
+		<category><![CDATA[VIN]]></category>
+		<category><![CDATA[vin api]]></category>
+		<category><![CDATA[xml]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57615</guid>
+
+					<description><![CDATA[It's been mentioned a few times that there should be a way to skip the checksum validation. This means if the check digit calculation generally fails, VIN API will continue to process the VIN to see if there is a "like" VIN match. So here it is:]]></description>
+										<content:encoded><![CDATA[<p>It's been mentioned a few times that there should be a way to skip the checksum validation.   This means if the <a href="http://en.wikipedia.org/wiki/Vehicle_Identification_Number#Check_digit_calculation">check digit calculation</a> generally fails, <a href="http://vinapi.skizmo.com">VIN API</a> will continue to process the VIN to see if there is a "like" VIN match.  So here it is: </p>
+<p><script src="https://gist.github.com/1322591.js?file=gistfile1.rb"></script></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Compilation failed: this version of PCRE is not compiled with PCRE_UTF8 support</title>
+		<link>http://pullmonkey.com/2009/03/10/compilation-failed-this-version-of-pcre-is-not-compiled-with-pcre_utf8-support/</link>
+					<comments>http://pullmonkey.com/2009/03/10/compilation-failed-this-version-of-pcre-is-not-compiled-with-pcre_utf8-support/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Tue, 10 Mar 2009 06:26:00 +0000</pubDate>
+				<category><![CDATA[development]]></category>
+		<category><![CDATA[Home]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[error]]></category>
+		<category><![CDATA[pcre]]></category>
+		<category><![CDATA[software]]></category>
+		<guid isPermaLink="false">/2009/03/10/compilation-failed-this-version-of-pcre-is-not-compiled-with-pcre_utf8-support</guid>
+
+					<description><![CDATA[I don't do too much with php these days, and really haven't since I found rails many years ago. But I figured I would give magento a try, just for fun. Most of it worked, but I continually came across this PCRE error - the full error that I go was: Warning: preg_match_all() [function.preg-match-all]: Compilation [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I don't do too much with php these days, and really haven't since I found rails many years ago.  But I figured I would give <a href="http://www.magentocommerce.com/">magento</a> a try, just for fun.  Most of it worked, but I continually came across this PCRE error - the full error that I go was:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre><tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }">Warning: preg_match_all() [function.preg-match-all]: Compilation failed: this version of PCRE is not compiled with PCRE_UTF8 support at offset 0  ...</pre>
+</td>
+</tr>
+</table>
+<p>Ok, loads and loads of research led no where, or at least no where that I was willing to go.  I tried so hard to find a solution that didn't require me recompiling apache ... well no such luck.  I am using slicehost's ubuntu 8.04, so I took the dpkg approach to help make things simple. </p>
+<p>Well, I am sure you have found out by now that apache comes with its own version of pcre built in (version 5).  This version does not come with UTF-8 support.  The trick is to tell apache to use an external system package of pcre.   This requires the slightest bit of reconfiguring of apache.   <br />
+Initially, my pcre looked like this (notice the version of 5.0...):<br />
+<img src="/assets/2009/3/10/default_apache_pcre.png" /><br />
+As mentioned earlier this is a pretty good indicator that your pcre is the built-in apache version.  This is not good.</p>
+<p>Ok, the solution is not too bad.  Compared to <a href="https://help.ubuntu.com/community/UpgradeApacheHTTPServer">this article</a>, which I learned a few things from, it is much simpler.  One thing, you will note in the article is the use of <tt>--with-pcre=/usr</tt> - this is quite different than the <tt>--with-pcre=yes</tt> that apache2 comes configured with from gusty.  <br />
+So the solution is to make that change by doing this:<br />
+1) Get the source code:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }">mkdir apache_src<tt>
+</tt>cd apache_src/<tt>
+</tt>apt-get source apache2</pre>
+</td>
+</tr>
+</table>
+<p>2) Modify the configuration (specifically the AP2_COMMON_CONFARGS in debian/rules)<br />
+Once the source is downloaded you should have several files and a directory.  Edit the debian/rules files from within the apache directory.  The only change that is needed is to find the line that says --with-pcre=yes and change it to say --with-pcre=/usr.<br />
+This, of course, assumes that you installed pcre and it lives in /usr/(bin,lib ...):</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }">vi apache2-2.2.4/debian/rules # make those changes<tt>
+</tt>./apache2-2.2.4/debian/rules</pre>
+</td>
+</tr>
+</table>
+<p>3) Install build dependencies for apache:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre><tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }">sudo apt-get build-dep apache2</pre>
+</td>
+</tr>
+</table>
+<p>4) Now build the package:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }">cd apache2-2.2.4/<tt>
+</tt># you may need to install fakeroot for this:<tt>
+</tt>sudo apt-get install fakeroot <tt>
+</tt>dpkg-buildpackage -rfakeroot -uc -b<tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>5) Install the new apache package:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }">cd ..<tt>
+</tt>sudo dpkg -i apache2_2.2.4-3ubuntu0.1_all.deb</pre>
+</td>
+</tr>
+</table>
+<p>
+Voila, now look what I have:<br />
+<img src="/assets/2009/3/10/reconfigured_apache_pcre.png" /><br />
+That should be it. </p>
+<p>Good luck.<br /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2009/03/10/compilation-failed-this-version-of-pcre-is-not-compiled-with-pcre_utf8-support/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

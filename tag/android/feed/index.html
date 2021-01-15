@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Android &#8211; PullMonkey Blog</title>
+	<atom:link href="http://pullmonkey.com/tag/android/feed/" rel="self" type="application/rss+xml" />
+	<link>http://pullmonkey.com</link>
+	<description></description>
+	<lastBuildDate>Sun, 13 Nov 2011 04:47:47 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6</generator>
+	<item>
+		<title>Hello Android &#8211; Pindah (with Mirah) Application</title>
+		<link>http://pullmonkey.com/2011/11/13/hello-android-pindah-with-mirah-application/</link>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Sun, 13 Nov 2011 04:38:08 +0000</pubDate>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[mirah]]></category>
+		<category><![CDATA[pindah]]></category>
+		<category><![CDATA[tutorial]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57638</guid>
+
+					<description><![CDATA[Did you install the Android SDK / JDK, etc?  If not, start here - http://developer.android.com/sdk/index.html. If you're running 64-bit like me, make sure to install the ia32-libs, since the SDK is 32-bit. This is completely based on the Hello Android tutorial - I didn't really do a whole lot, but the hope is that this will help [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Did you install the Android SDK / JDK, etc?  If not, start here - <a href="http://developer.android.com/sdk/index.html">http://developer.android.com/sdk/index.html</a>.<br />
+If you're running 64-bit like me, make sure to install the ia32-libs, since the SDK is 32-bit.</p>
+<p></p>
+<p>This is completely based on <a href="http://developer.android.com/resources/tutorials/hello-world.html">the Hello Android tutorial</a> - I didn't really do a whole lot, but the hope is that this will help get some more ruby devs into android development with a simple how-to.<br />
+</p>
+<h3>Step 1 - Setup RVM with jruby</h3>
+<p></p>
+<p><strong>Note:</strong> RVM is awesome, if you don't use it or don't know about it - read more <a href="http://beginrescueend.com/">here</a>.</p>
+<p></p>
+<pre style="border:1px dashed black; padding: 4px; background-color: #ddd;">rvm install jruby
+cd /path/to/your/android/pindah/mirah/project/dir/
+# using your .rvmrc will trigger `rvm use jruby` when you cd into your project dir.
+echo "rvm use jruby" &gt; .rvmrc
+# this will make sure your .rvmrc is working, you should then be able 
+# to use rvm info and see jruby
+cd .</pre>
+<p></p>
+<h3>Step 2 - Install the mirah and pindah gems</h3>
+<p></p>
+<pre style="border:1px dashed black; padding: 4px; background-color: #ddd;"># too easy
+gem install mirah pindah</pre>
+<p></p>
+<h3>Step 3 - Create your first pindah app</h3>
+<p></p>
+<pre style="border:1px dashed black; padding: 4px; background-color: #ddd;">pindah create com.example.android.hello_world
+cd hello_world</pre>
+<p></p>
+<h3>Step 4 - Create your activity - HelloAndroid.mirah</h3>
+<p></p>
+<pre style="border:1px dashed black; padding: 4px; background-color: #ddd;"># from your project dir and inside your pindah app dir 
+&lt;editor&gt; src/com/example/android/hello_world/HelloWorld.mirah</pre>
+<p>This is the code I used:<br />
+<script src="https://gist.github.com/1361596.js"> </script></p>
+<p></p>
+<h3>Step 5 - Setup your AndroidManifest.xml file</h3>
+<p></p>
+<p>This is where you define your app, version, name, etc, but more importantly for this example - what activity will handle your main intent.<br />
+Mine looks like this:<br />
+<script src="https://gist.github.com/1361597.js"> </script></p>
+<p></p>
+<h3>Step 6 - Install to your device</h3>
+<p></p>
+<pre style="border:1px dashed black; padding: 4px; background-color: #ddd;"># make sure a device is recognized  ... 
+# and make sure adb is in your path (platform-tools in the SDK)
+adb devices
+rake install</pre>
+<p></p>
+<p></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

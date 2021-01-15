@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>pdf reader &#8211; PullMonkey Blog</title>
+	<atom:link href="http://pullmonkey.com/tag/pdf-reader/feed/" rel="self" type="application/rss+xml" />
+	<link>http://pullmonkey.com</link>
+	<description></description>
+	<lastBuildDate>Mon, 18 Jan 2010 19:51:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6</generator>
+	<item>
+		<title>Ruby PDF Reader Gem Tutorial</title>
+		<link>http://pullmonkey.com/2010/01/18/ruby-pdf-reader-gem-tutorial/</link>
+					<comments>http://pullmonkey.com/2010/01/18/ruby-pdf-reader-gem-tutorial/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Mon, 18 Jan 2010 17:06:00 +0000</pubDate>
+				<category><![CDATA[development]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[move_text_position]]></category>
+		<category><![CDATA[parser]]></category>
+		<category><![CDATA[pdf]]></category>
+		<category><![CDATA[pdf reader]]></category>
+		<category><![CDATA[show_text]]></category>
+		<category><![CDATA[text matrix]]></category>
+		<category><![CDATA[text_matrix]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57505</guid>
+
+					<description><![CDATA[I've been doing a lot of work these days dealing with PDFs and for the most part I've been happy with using poppler-utils' pdftohtml. And that is great if you don't care about positioning or formatting and just care about the content. But for those of you who, like me, have run across the need [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I've been doing a lot of work these days dealing with PDFs and for the most part I've been happy with using poppler-utils' pdftohtml.  And that is great if you don't care about positioning or formatting and just care about the content.  But for those of you who, like me, have run across the need to know text positioning, font size, indentation, coloring, etc., then we will have to use something more.</p>
+<p>I had given just about every other option a chance before I finally found <a href="http://github.com/yob/pdf-reader">the pdf reader gem</a>.  But when I found pdf reader, it didn't have much documentation and it wasn't entirely clear how to get started using it and if it would work.  Well, I can tell you that it will work and after playing with the examples a lot of it became much clearer.  I learned a lot that would probably be useful for a few other people out there, hence this post.<br />
+Ok, well to get started, take a look at the <a href="http://github.com/yob/pdf-reader">github repository for pdf reader</a>.  You don't need to spend too much time, but just note a few places like <a href="http://github.com/yob/pdf-reader/tree/master/examples/">the examples directory</a> and the <a href="http://github.com/yob/pdf-reader/blob/master/lib/pdf/reader/content.rb">list of callbacks</a>.</p>
+<p>You should probably familiarize yourself with <a href="http://www.adobe.com/devnet/acrobat/pdfs/PDF32000_2008.pdf">this PDF specification</a> too - found <a href="http://www.adobe.com/devnet/pdf/pdf_reference.html">here</a>.  It really came in handly when trying to figure out what arguments are being passed around what they represent.</p>
+<p>Let's get started -</p>
+<h3>Step 1:  Install the gem</h3>
+<p>Yah, this is a pretty easy step, but it is required <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /><br />
+sudo gem install pdf-reader</p>
+<h3>Step 2:  Find a PDF (or PDFs) to use</h3>
+<p>It would be best to have several PDFs for you to work with since the callbacks could vary depending on the PDF.<br />
+NOTE: For these examples, I'm using a really simple PDF, pdf reader could take a while on some PDFs and seem as though it is hanging but it is not, it is just chugging away right <a href="http://github.com/yob/pdf-reader/blob/43f328a41f42a365a3582fad7df7cae374ef1d96/lib/pdf/reader/buffer.rb">around line 283 of this file</a>, reading each byte of your PDF.</p>
+<h3>Step 3: List the possible callbacks and their args for one of your PDFs</h3>
+<p>The point of this is to find out what methods we can write for pdf reader to call when it encounters the various parts of our PDF.<br />
+The BIG One that you will most likely use is show_text() or some form of it like show_text_with_positioning().<br />
+But, for now, THIS all depends on the PDF file you are using, so we need to find out what your PDF uses and go from there.</p>
+<p>The easiest way to do this is to follow <a href="http://github.com/yob/pdf-reader/blob/master/examples/callbacks.rb">this example</a> and just substitute "somefile.pdf" with the path to your pdf file.</p>
+<p>Run it and you will see a long list of possible callbacks and their arguments.  It is likely all squished together, so you can simply change the line of your code that says <code>puts cb</code> to <code>puts cb.inspect</code> and get a MUCH better look at everything.</p>
+<p>We will start with show_text, so <code>grep</code> for show_text and see what you get.  For my PDF, I have mostly show_text_with_positioning.</p>
+<h3>Step 4: Do some lookups</h3>
+<p>What are the args they are showing me for my callbacks and how do we find out?<br />
+You can do this two ways, try your luck at searching the pdf file for "show text" or "show text with positioning" and see what you get.  Or you can lookup the token used to represent show_text or show_text_with_positioning.<br />
+The first way is pretty obvious, so on to the second - look in the <a href="http://github.com/yob/pdf-reader/blob/master/lib/pdf/reader/content.rb">list of callbacks</a> I had your familiarize yourself with earlier, starting on line 172.  Looking through we can find show_text and show_text_with_positioning, having Tj and TJ as their operators.  Alright, now we have something to look up - "TJ".  Well, I found it on page 251 of the PDF Specification from earlier.  Some of descriptions for the operators will require rereading but you will get the hang of it.</p>
+<h3>Step 5: Use what we found</h3>
+<p>Now that we know how the show_text_with_positioning works and what args it brings in, we can write our code.<br />
+We need an instance of a receiver to pass to the PDF Reader.  This is just a class that has methods likes show_text() of show_text_with_positioning().  Our receiver could look something like this:</p>
+<p><script src="http://gist.github.com/280305.js?file=test_it_receiver.rb"></script></p>
+<p>Now we just need to create our receiver instance an pass our PDF file to pdf reader:<br />
+<script src="http://gist.github.com/280307.js?file=gistfile1.rb"></script></p>
+<p>Don't forget to require the pdf reader at the top of your script like this:<br />
+<code>require 'rubygems'<br />
+require 'pdf/reader'</code></p>
+<h3>Step 6: Check out the results</h3>
+<p>If we run our script, we will see all the text that uses Tj or TJ print out.</p>
+<p>This is just the beginning and you can pick and choose any of the callbacks from that list (list of operators) and implement just about anything.</p>
+<p>At the beginning of this post, I mentioned that I was concerned about positioning.  This means I had to get very familiar with the text matrix operator (Tm), found on page 250 of the specification.  It takes six arguments (a-f) all representing one thing or another and it is not very well documented.  From what I can gather, the first four (a through d) are for things like scale and rotation, the last two e and f are for position on the page, where e is along the x axis and f along the y axis.</p>
+<p>There is another text positioning operator that I saw quite often and that is move_text_position (Td operator, page 249 of the specification) that actually provides the x and y (unscaled) text space units coordinates.  So if y is -1, that just means go to the next line and if y is 0, stay on the same line, -2, move down two lines, 2, move up two lines, etc.  x is for indentation or horizontal spacing and represents the number of characters (spaces) to offset the text position by.</p>
+<p>I hope this helps and a huge thanks goes to <a href="http://github.com/yob">James Healy</a> for his grand work on <a href="http://github.com/yob/pdf-reader">pdf reader</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2010/01/18/ruby-pdf-reader-gem-tutorial/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

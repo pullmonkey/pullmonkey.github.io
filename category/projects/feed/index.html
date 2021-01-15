@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>projects &#8211; PullMonkey Blog</title>
+	<atom:link href="http://pullmonkey.com/category/projects/feed/" rel="self" type="application/rss+xml" />
+	<link>http://pullmonkey.com</link>
+	<description></description>
+	<lastBuildDate>Sun, 05 Aug 2012 00:10:47 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6</generator>
+	<item>
+		<title>VIN API &#8211; Do you know about the complete data set?</title>
+		<link>http://pullmonkey.com/2012/08/04/vin-api-do-you-know-about-the-complete-data-set/</link>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Sat, 04 Aug 2012 15:42:04 +0000</pubDate>
+				<category><![CDATA[api]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[projects]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[basic data set]]></category>
+		<category><![CDATA[complete data set]]></category>
+		<category><![CDATA[fun]]></category>
+		<category><![CDATA[rich data]]></category>
+		<category><![CDATA[tutorial]]></category>
+		<category><![CDATA[VIN]]></category>
+		<category><![CDATA[vin api]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57715</guid>
+
+					<description><![CDATA[Looking at our data trends for VIN API, we show about 15% of all requests are for the complete data set. It's the same price as the basic data set and rich with a ton of data. Check out the data set from this post over 1 and half years ago. On top of the [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Looking at our data trends for <a href="http://vinapi.skizmo.com">VIN API</a>, we show about 15% of all requests are for the complete data set.  It's the same price as the basic data set and rich with a ton of data.</p>
+<p>Check out the data set from <a href="http://pullmonkey.com/2011/01/13/vin-api-phase-ii/">this post over 1 and half years ago</a>.  On top of the basic data set's year, make and model, the complete data set comes with data like MSRP, MPG (city and highway), dealer invoice, gas tank size, etc.   </p>
+<p>We get tons of hits for basic data, but at no additional charge we also provide the complete data set.  Just add a complete<br />
+=> "true" to your request.   So simple and there's no performance hit. </p>
+<p><script src="https://gist.github.com/854935.js?file=gistfile1.rb"></script></p>
+<p>For more information, check out or <a href="http://vinapi.skizmo.com/examples">examples</a> and <a href="http://vinapi.skizmo.com/faq">faq</a>.</p>
+<p>Enjoy!</p>
+<p>Here's another look at the data elements from a comprehensive query:<br />
+<script src="https://gist.github.com/778755.js?file=gistfile1.xml"></script></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Using Ruby to read from a MagTek USB Card Reader</title>
+		<link>http://pullmonkey.com/2012/07/27/using-ruby-to-read-from-a-magtek-usb-card-reader/</link>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Fri, 27 Jul 2012 15:39:59 +0000</pubDate>
+				<category><![CDATA[development]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[projects]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[card reader]]></category>
+		<category><![CDATA[card swipe]]></category>
+		<category><![CDATA[curb]]></category>
+		<category><![CDATA[httpi]]></category>
+		<category><![CDATA[magtek]]></category>
+		<category><![CDATA[USB]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57712</guid>
+
+					<description><![CDATA[Been playing around with a lot of USB devices lately, to get them to play nicely with some of our touch screen Rails apps. One of the devices is a card reader - specifically a MagTek reader, and the same code works for the ELO reader. I've tried a billion different ways to ensure we're [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Been playing around with a lot of USB devices lately, to get them to play nicely with some of our touch screen Rails apps.<br />
+One of the devices is a card reader - specifically a MagTek reader, and the same code works for the ELO reader.</p>
+<p>I've tried a billion different ways to ensure we're reading in all the data.  At first, I was just asking the usb stream to present me with a certain number of characters, b/c that's how all the examples do it.<br />
+But we're using a lot of different cards with the readers, so that didn't work too well.  So now I just read one character at a time until we find the new line.<br />
+Here's the code to find the device, open it, close it and read from it, all whilst finding and converting the data as required.</p>
+<p><script src="https://gist.github.com/3188668.js?file=gistfile1.rb"></script></p>
+<p>So using this code, we take the swiped data and send it to our server for storage.</p>
+<p><script src="https://gist.github.com/3188719.js?file=gistfile1.rb"></script></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Signature Pad in Linux</title>
+		<link>http://pullmonkey.com/2012/07/26/signature-pad-in-linux/</link>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Thu, 26 Jul 2012 16:57:56 +0000</pubDate>
+				<category><![CDATA[development]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[projects]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[HSB]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[signature pad]]></category>
+		<category><![CDATA[topaz]]></category>
+		<category><![CDATA[USB]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57708</guid>
+
+					<description><![CDATA[I'm using the topaz model T L462 HSB. It's nice now that it works. But what a PITA to get it going. The biggest problem with the device is the documentation. There is no low level documentation explaining the representation of the bytes coming in over usb. So you are stuck using their libraries which [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I'm using the topaz model T L462 HSB.  It's nice now that it works.  But what a PITA to get it going.  The biggest problem with the device is the documentation.  There is no low level documentation explaining the representation of the bytes coming in over usb. So you are stuck using their libraries which expose some poorly explained API.</p>
+<p>Anyway, like I said, great when it works.  So I'm working in linux which basically leaves me having to use java libs and a shared object file.</p>
+<p>Here's my code:</p>
+<p><script src="https://gist.github.com/3183134.js?file=gistfile1.java"></script></p>
+<p>It sits and waits until the sig pad gets some points on it.  Once we have points it waits for a lapse in time where there is no change in the number of points.<br />
+Once we've decided that we have captured a signature, we store it to a file.<br />
+Then we shell out to a ruby script - <a href="http://pullmonkey.com/2012/07/25/using-httpi-with-curb-to-do-multipart-file-uploads-with-spnego/">see the httpi and curb article</a> - which is how I get the file to our rails server for display and verification from the user.</p>
+<p>Now, you'll need a few files.  Most of which can be found in <a href="http://www.topazsystems.com/software/download/java/sigplusjava2_60.zip">the java zip download</a> from the vendor site.<br />
+From that zip, you should grab the following:<br />
+SigPlus2_60.jar<br />
+RXTXcomm.jar<br />
+libSigUsb.so - if you need the 64 bit version, go here - <a href="http://http://www.topazsystems.com/Software/libSigUsb7242012.zip">http://www.topazsystems.com/Software/libSigUsb7242012.zip</a></p>
+<p>Then I just used eclipse to set everything up and build.  Works well so far.<br />
+The only thing you may need to change is the model (I have mine set to SignatureGem1X5) and com port (I have mine set to HID1).</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Azilink is working again !</title>
+		<link>http://pullmonkey.com/2011/11/15/azilink-is-working-again/</link>
+					<comments>http://pullmonkey.com/2011/11/15/azilink-is-working-again/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Tue, 15 Nov 2011 05:04:40 +0000</pubDate>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[biking]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[projects]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57655</guid>
+
+					<description><![CDATA[If the apk is not available for download yet, you can build it yourself with the fix from here. Step 1 - Grab the source from svn - svn checkout http://azilink.googlecode.com/svn/trunk/ azilink-read-only Step 2 - Update the UdpDriver.java per this azilink issue. Step 3 - Build and install the apk # this will give you a [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><em>If the apk is not available for download yet, you can build it yourself with <a href="http://code.google.com/p/azilink/issues/detail?id=43">the fix from here</a>.</em><br />
+<strong>Step 1</strong> - Grab the source from svn -</p>
+<pre style="margin-bottom:10px;border:1px dashed black; padding: 4px; background-color: #ddd;">svn checkout http://azilink.googlecode.com/svn/trunk/ azilink-read-only</pre>
+<p><strong>Step 2</strong> - Update the UdpDriver.java per <a href="http://code.google.com/p/azilink/issues/detail?id=43">this azilink issue</a>.</p>
+<p><strong>Step 3</strong> - Build and install the apk</p>
+<pre style="margin-bottom:10px;border:1px dashed black; padding: 4px; background-color: #ddd;"># this will give you a build.xml file
+android update project --target 2 --path /path/to/your/azilinkdownload/
+# after plugging in your device and from your azilink project directory
+ant debug install</pre>
+<p><strong>Step 4</strong> - Install Open VPN</p>
+<pre style="margin-bottom:10px;border:1px dashed black; padding: 4px; background-color: #ddd;">sudo apt-get install openvpn</pre>
+<p><strong>Step 5</strong> - Grab the azilnk.ovpn file from <a href="http://azilink.googlecode.com/files/azilink.ovpn">the downloads section</a>.<br />
+Place somewhere you won't lose it.</p>
+<p><strong>Step 6</strong> - Copy this resolv.azilink file to the same place as the azilink.ovpn<br />
+ <script src="https://gist.github.com/1366168.js"> </script></p>
+<p><strong>Step 7</strong> - Copy this azilink script to somewhere you can get to it<br />
+<script src="https://gist.github.com/1366175.js"> </script></p>
+<p><strong>Step 8</strong> - Start azilink on your phone.</p>
+<p><strong>Step 9</strong> - Run the script from step 7.<br />
+<br />
+That's it.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2011/11/15/azilink-is-working-again/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>VIN API &#8211; fair pricing model</title>
+		<link>http://pullmonkey.com/2011/01/24/vin-api-fair-pricing-model/</link>
+					<comments>http://pullmonkey.com/2011/01/24/vin-api-fair-pricing-model/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Mon, 24 Jan 2011 22:02:39 +0000</pubDate>
+				<category><![CDATA[api]]></category>
+		<category><![CDATA[biking]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[me]]></category>
+		<category><![CDATA[Open Flash Chart Graphs]]></category>
+		<category><![CDATA[projects]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[SimpleCMS]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[project]]></category>
+		<category><![CDATA[ruby on rails]]></category>
+		<category><![CDATA[tutorial]]></category>
+		<category><![CDATA[VIN]]></category>
+		<category><![CDATA[vin api]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57570</guid>
+
+					<description><![CDATA[It can't be a shock to any of you that after many months (wait - more like a full year) of running VIN API completely free and out-of-pocket, it is time to monetize. As I am sure most of you know, the back-end data is quite pricey. For example, a monthly subscription for a "lite" [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>It can't be a shock to any of you that after many months (wait - more like <a href="http://pullmonkey.com/2010/02/19/vin-api-vin-decoder-for-anyone/">a full year</a>) of running <a href="http://vinapi.skizmo.com">VIN API</a> completely free and out-of-pocket, it is time to monetize.  As I am sure most of you know, the back-end data is quite pricey. For example, a monthly subscription for a "lite" data set (your typical year, make, model, engine type, etc) at one of the better known distributors would run you about $260.00 a month for ~800 VIN decodings.  This is some <strong>very</strong> expensive data at 32.5 cents a VIN.  Some of you that use our API are running 50,000+ VINs through in a weekend, that is $16,000!  Wow!  </p>
+<p> Ok, so what did we decide to do?  Well first, and most importantly, we decided to keep the service up and running; for a while there it was looking pretty bleak and if you take a second to look at the numbers (financially) you can understand why.  Anyway, to be as fair as possible, we did not feel this could be monetized as a subscription-based product, some months you need 500,000 VINs and some only a 1,000.  Looking at the data for year, we had many questions - what plan would you pick?  should the plan rollover it's unused decodings?  </p>
+<p> We discovered a lot of complexity in the subscription model, so we decided to setup the pay as you go plan, where you buy your decodings at various bulk levels.  For instance, you could buy in groups of 1,000 or 10,000 or 100,000 such that you would realize savings on a price-per-VIN basis the larger the group you purchase.  There is no use policy either, so you can sit on the VINs for as long as you want, or you can even buy decodings the day (even the minute) before you need them.  No monthly credit card bill, no rollovers, just simple "buy what you need," and if you buy in bulk, you save. </p>
+<p>Another consideration in doing this was having to maintain soft limits. For example, if the user purchases the 5,000 VINs per month plan, and the their site does well this month and they need 6000 VINs, should they have chosen the 10,000 VIN plan?  We didn't think so, we figured no hard limit, just soft limits, and after the soft limit is hit, we would charge the additional VINs at the current rate per VIN to the user's next month's bill.  We tried to explain this to a few current users that are helping us come up with reasonable rates and they were not all that thrilled about it.  So we had a problem, we did not want users to pay for what they did not need, but at the same time we did not want to cut users off in the middle of a month when they hit their limit.  That entire idea had to be scrapped and along with it went the idea behind the subscription plan itself.  We like it though, it's simple now - buy your decodings and use your decodings, we will email you if you are getting low and may want to add decodings to your account.</p>
+<p>Subscription models are great for static resources and static services, but not a single one of our customers decodes the same number of VINs each month, so it just won't work.  So onward and upward, pay as you go and regardless of how the other API providers offer their service, we are excited to be a little different and lot cheaper as you will soon find out.</p>
+<p>Enjoy!</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2011/01/24/vin-api-fair-pricing-model/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>VIN API &#8211; PHP and XML Parsing</title>
+		<link>http://pullmonkey.com/2011/01/17/vin-api-php-and-xml-parsing/</link>
+					<comments>http://pullmonkey.com/2011/01/17/vin-api-php-and-xml-parsing/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Mon, 17 Jan 2011 21:58:46 +0000</pubDate>
+				<category><![CDATA[api]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[projects]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[parsing]]></category>
+		<category><![CDATA[tutorial]]></category>
+		<category><![CDATA[VIN]]></category>
+		<category><![CDATA[vin api]]></category>
+		<category><![CDATA[vin decoder]]></category>
+		<category><![CDATA[vin decoding]]></category>
+		<category><![CDATA[xml]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57568</guid>
+
+					<description><![CDATA[Thanks go to Michael for sharing his hard work with the rest of you VIN API and PHP developers 🙂 I hope this helps -]]></description>
+										<content:encoded><![CDATA[<p>Thanks go to Michael for sharing his hard work with the rest of you VIN API and PHP developers <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /><br />
+I hope this helps -</p>
+<p><script src="https://gist.github.com/783562.js?file=gistfile1.php"></script></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2011/01/17/vin-api-php-and-xml-parsing/feed/</wfw:commentRss>
+			<slash:comments>22</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>VIN API Examples for PHP and VB .NET</title>
+		<link>http://pullmonkey.com/2011/01/13/vin-api-examples-for-php-and-vb-net/</link>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Thu, 13 Jan 2011 23:03:40 +0000</pubDate>
+				<category><![CDATA[api]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[projects]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[.net]]></category>
+		<category><![CDATA[examples]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[tutorial]]></category>
+		<category><![CDATA[VIN]]></category>
+		<category><![CDATA[vin api]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57566</guid>
+
+					<description><![CDATA[A few of our VIN API customers have been kind enough to take our Ruby and curl examples and come up with .NET and PHP implementations. Here is a VB .NET example: And for PHP, you have this: Hope this helps and if you have examples for other programming languages, please let us know.]]></description>
+										<content:encoded><![CDATA[<p>A few of our <a href="http://vinapi.skizmo.com">VIN API</a> customers have been kind enough to take our Ruby and curl examples and come up with .NET and PHP implementations.<br />
+Here is a VB .NET example:<br />
+<script src="https://gist.github.com/778789.js?file=gistfile1.bas"></script></p>
+<p>And for PHP, you have this:<br />
+<script src="https://gist.github.com/701379.js?file=vinapi.php"></script></p>
+<p>Hope this helps and if you have examples for other programming languages, please let us know.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Vin API &#8211; Phase II</title>
+		<link>http://pullmonkey.com/2011/01/13/vin-api-phase-ii/</link>
+					<comments>http://pullmonkey.com/2011/01/13/vin-api-phase-ii/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Thu, 13 Jan 2011 22:42:14 +0000</pubDate>
+				<category><![CDATA[api]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[projects]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[.net]]></category>
+		<category><![CDATA[cost]]></category>
+		<category><![CDATA[mpg]]></category>
+		<category><![CDATA[msrp]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[price]]></category>
+		<category><![CDATA[skizmo]]></category>
+		<category><![CDATA[VIN]]></category>
+		<category><![CDATA[vin api]]></category>
+		<category><![CDATA[web service]]></category>
+		<category><![CDATA[xml]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57563</guid>
+
+					<description><![CDATA[We've just finished adding A LOT more details to VIN API's result set. This time we've added things like MPG, MSRP, cargo room/volumn, etc. See the full list below, it is very comprehensive. If you use ruby (look for a future post with .NET and PHP examples), and want the complete dataset, you would setup [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>We've just finished adding A LOT more details to <a href="http://vinapi.skizmo.com">VIN API</a>'s result set.  This time we've added things like MPG, MSRP, cargo room/volumn, etc.  See the full list below, it is very comprehensive.</p>
+<p>If you use ruby (look for a future post with .NET and PHP examples), and want the complete dataset, you would setup your ActiveResource like this:<br />
+<script src="https://gist.github.com/778735.js?file=gistfile1.rb"></script></p>
+<p>And then call our API like this:<br />
+<script src="https://gist.github.com/778747.js?file=gistfile1.rb"></script></p>
+<p>The only change (for those of you who have already implemented phase I) is to send in a "complete" parameter with value of "true" ... upon doing so, VIN API will send you the complete dataset versus the basic (and default) dataset.</p>
+<p>The results would look like this (in XML) and be prepared because it is lengthy:<br />
+<script src="https://gist.github.com/778755.js?file=gistfile1.xml"></script></p>
+<p>That's it, just thought I'd share <a href="http://vinapi.skizmo.com">VIN API</a>'s Phase II.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2011/01/13/vin-api-phase-ii/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>USB drive disconnecting and reconnecting randomly</title>
+		<link>http://pullmonkey.com/2011/01/05/usb-drive-disconnecting-and-reconnecting-randomly/</link>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Wed, 05 Jan 2011 00:27:26 +0000</pubDate>
+				<category><![CDATA[biking]]></category>
+		<category><![CDATA[Home]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[projects]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[2tb drive]]></category>
+		<category><![CDATA[2TB seagate drive]]></category>
+		<category><![CDATA[disconnecting]]></category>
+		<category><![CDATA[external drive]]></category>
+		<category><![CDATA[reconnecting]]></category>
+		<category><![CDATA[sdparm]]></category>
+		<category><![CDATA[STANDBY]]></category>
+		<category><![CDATA[ubuntu]]></category>
+		<category><![CDATA[usb drive]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57559</guid>
+
+					<description><![CDATA[It was very strange, I got a new 2 TB external USB drive for Christmas and I noticed a number of windows (nautilus windows) opening up throughout the night.  So I would wake up to find 20 - 30 windows opened to the media mount directory (/media).  Overtime and watching the logs, I noticed that [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>It was very strange, I got a new 2 TB external USB drive for Christmas and I noticed a number of windows (nautilus windows) opening up throughout the night.  So I would wake up to find 20 - 30 windows opened to the media mount directory (/media).  Overtime and watching the logs, I noticed that the new USB drive was disconnecting itself and then reconnecting.  As it would reconnect and mount, the new mount point /media/&lt;some long character string&gt; would pop open in a  nautilus window.  When the drive would eventually disconnect, the opened nautilus window would no longer have access to the data and would display contents from one directory up (/media).  After a couple days I finally found the answer and tried it and it worked as advertised.</p>
+<p>For those having the same problem, <a href="http://efreedom.com/Question/3-153381/NTFS-Partition-Keeps-Becoming-Unusable-Ubuntu-Ideas" target="_blank">this</a> is where I found the solution you see below.</p>
+<pre>$ <strong>sudo sdparm --clear STANDBY -6 /dev/sdb</strong>
+# note that your device could be something else, for example - /dev/sd&lt;something&gt;</pre>
+<p>
+And if you get an error, something like this:</p>
+<pre>change_mode_page: failed fetching page: Power condition</pre>
+<p>Then you should be able to use hdparm instead, like this:</p>
+<pre>sudo hdparm -S 0 /dev/sdb</pre>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Open Flash Chart II and Rails 3</title>
+		<link>http://pullmonkey.com/2010/09/07/open-flash-chart-ii-and-rails-3/</link>
+					<comments>http://pullmonkey.com/2010/09/07/open-flash-chart-ii-and-rails-3/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Tue, 07 Sep 2010 17:06:49 +0000</pubDate>
+				<category><![CDATA[development]]></category>
+		<category><![CDATA[Open Flash Chart Graphs]]></category>
+		<category><![CDATA[projects]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[open flash chart]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[project]]></category>
+		<category><![CDATA[ruby on rails]]></category>
+		<category><![CDATA[tutorial]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57537</guid>
+
+					<description><![CDATA[Just a quick note about the Open Flash Chart II plugin for Rails and Rails 3.  Rails 3 did a 180 with regards to ERB tags and security.  Everything is now considered unsafe HTML.  So where we used to be able to do &#60;%= @graph %&#62;, we have to now do &#60;%= @graph.html_safe %&#62;. Thanks [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Just a quick note about the Open Flash Chart II plugin for Rails and Rails 3.  Rails 3 did a 180 with regards to ERB tags and security.  Everything is now considered unsafe HTML.  So where we used to be able to do &lt;%= @graph %&gt;, we have to now do &lt;%= @graph.html_safe %&gt;.</p>
+<p>Thanks go to <a href="http://github.com/pullmonkey/open_flash_chart/issues#issue/12">kendagriff</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2010/09/07/open-flash-chart-ii-and-rails-3/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

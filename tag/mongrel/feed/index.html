@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>mongrel &#8211; PullMonkey Blog</title>
+	<atom:link href="http://pullmonkey.com/tag/mongrel/feed/" rel="self" type="application/rss+xml" />
+	<link>http://pullmonkey.com</link>
+	<description></description>
+	<lastBuildDate>Sat, 19 Sep 2009 16:38:37 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6</generator>
+	<item>
+		<title>THINning it out</title>
+		<link>http://pullmonkey.com/2009/09/14/thinning-it-out/</link>
+					<comments>http://pullmonkey.com/2009/09/14/thinning-it-out/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Mon, 14 Sep 2009 21:02:13 +0000</pubDate>
+				<category><![CDATA[development]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[capistrano]]></category>
+		<category><![CDATA[mongrel]]></category>
+		<category><![CDATA[ruby on rails]]></category>
+		<category><![CDATA[thin]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57393</guid>
+
+					<description><![CDATA[Been having problems with swap space and memory on my slicehost servers.  And it is all apache's and mongrel's fault.  That used to be the cool combination and now it is an ugly, sluggish beast.  Just recently, I switched to nginx (to replace apache) and thin (to replace mongrel).  So far so good, major speed [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Been having problems with swap space and memory on my slicehost servers.  And it is all apache's and mongrel's fault.  That used to be the cool combination and now it is an ugly, sluggish beast.  Just recently, I switched to nginx (to replace apache) and thin (to replace mongrel).  So far so good, major speed improvements and definitely memory consumption improvements.</p>
+<p>I started out by switching everything over the nginx while keeping the mongrels alive, that was actually pretty easy.  Information was available everywhere.</p>
+<p>Thinning everything via capistrano took a while, that wasn't as well documented.  Thin was documented, capistrano was documented, but easy solutions as to how to combine the two were difficult to find.</p>
+<p>Here's the solution I was able to come up with -</p>
+<h2>Capistrano</h2>
+<p>My config for using mongrel used to look something like this -</p>
+<p>[code lang="ruby"]<br />
+set :stages, %w(staging production)<br />
+set :default_stage, "production"</p>
+<p>require "capistrano/ext/multistage"<br />
+require "mongrel_cluster/recipes"</p>
+<p>set :application, "myapplication.com"<br />
+set :user, "appuser"set :repository,  "http://svn.myapplication.com/myapp/trunk"<br />
+set :deploy_to, "/var/www/#{application}"</p>
+<p>role :app, application<br />
+role :web, application<br />
+role :db,  application, :primary => true</p>
+<p>set :runner, user<br />
+set :keep_releases, 3<br />
+set(:mongrel_conf) { "#{current_path}/config/mongrel_cluster.yml" }</p>
+<p>deploy.task :after_update_code, :roles => [:web] do<br />
+desc "Copying the right mongrel cluster config for the current stage environment."<br />
+run "cp -f #{release_path}/config/mongrel_#{stage}.yml #{release_path}/config/mongrel_cluster.yml"<br />
+end</p>
+<p>... <other things like symlinks><br />
+[/code]</p>
+<p>Now that we are moving from mongrel to thin, no need for two lines in particular, one being the line that requires mongrel_cluster recipes and the other that sets the mongrel_cluster yaml config path.  A third line changes from mongrel_cluster.yml to thin_cluster.yml.  You get something like this:</p>
+<p>[code lang="ruby"]<br />
+set :stages, %w(staging production)<br />
+set :default_stage, "production"</p>
+<p>require "capistrano/ext/multistage"</p>
+<p>set :application, "myapplication.com"<br />
+set :user, "appuser"</p>
+<p>set :repository,  "http://svn.myapplication.com/myapp/trunk"<br />
+set :deploy_to, "/var/www/#{application}"</p>
+<p>role :app, application<br />
+role :web, application<br />
+role :db,  application, :primary => true</p>
+<p>set :runner, user<br />
+set :keep_releases, 3</p>
+<p>deploy.task :after_update_code, :roles => [:web] do<br />
+desc "Copying the right mongrel cluster config for the current stage environment."<br />
+run "cp -f #{release_path}/config/thin_#{stage}.yml #{release_path}/config/thin_cluster.yml"<br />
+end<br />
+... <other things like symlinks><br />
+[/code]</p>
+<p>Now we need to implement what mongrel recipes was doing for us, start, stop and restart but in terms of thin (added this to the bottom of my deploy.rb):</p>
+<p>[code lang="ruby"]<br />
+namespace :deploy do<br />
+desc "Restart the Thin processes on the app server."<br />
+task :restart do<br />
+run "thin restart -C #{release_path}/config/thin_cluster.yml"<br />
+end<br />
+desc "Start the Thin processes on the app server."<br />
+task :start do<br />
+run "thin start -C #{release_path}/config/thin_cluster.yml"<br />
+end<br />
+desc "Stop the Thin processes on the app server."<br />
+task :stop do<br />
+run "thin stop -C #{release_path}/config/thin_cluster.yml"<br />
+end<br />
+end<br />
+[/code]</p>
+<p>Here's what my thin_cluster.yml looks like:</p>
+<p>[code lang="ruby"]</p>
+<p>---<br />
+log: log/thin.log<br />
+address: 127.0.0.1<br />
+port: 9000<br />
+chdir: /var/www/myapp.com/current<br />
+environment: production<br />
+pid: tmp/pids/thin.pid<br />
+user: www-user<br />
+group: www-data<br />
+servers: 3<br />
+[/code]</p>
+<p>That's it and it has worked out nicely so far.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2009/09/14/thinning-it-out/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Uncategorized &#8211; PullMonkey Blog</title>
+	<atom:link href="http://pullmonkey.com/category/uncategorized/feed/" rel="self" type="application/rss+xml" />
+	<link>http://pullmonkey.com</link>
+	<description></description>
+	<lastBuildDate>Wed, 16 Nov 2011 21:09:19 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6</generator>
+	<item>
+		<title>Formgen 0.3.0 and some generated examples</title>
+		<link>http://pullmonkey.com/2011/11/17/formgen-030-and-some-generated-examples/</link>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Thu, 17 Nov 2011 00:01:03 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57676</guid>
+
+					<description><![CDATA[Formgen generates views in erb and haml based on these keywords: has_many, belongs_to, accepts_nested_attributes_for, and has_attached_file. It follows best practice and standard patterns so you don't have to. Here is example of its usage: Doing this rails generate skizmo:form Foo Generates this app/helpers/foo_setup_helper.rb app/views/foos/new.html.erb app/views/foos/edit.html.erb app/views/foos/_form.html.erb app/views/foos/_bar_fields.html.erb app/views/foos/_baz_fields.html.erb That's it: Ok, so I say that, [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="https://github.com/pullmonkey/formgen">Formgen</a> generates views in erb and haml based on these keywords: has_many, belongs_to, accepts_nested_attributes_for, and has_attached_file.  It follows best practice and standard patterns so you don't have to.  Here is example of its usage:</p>
+<h1>Doing this</h1>
+<p>rails generate skizmo:form Foo</pre>
+<h1>Generates this</h1>
+<h3>app/helpers/foo_setup_helper.rb</h3>
+<p><script src="https://gist.github.com/1371354.js"> </script></p>
+<h3>app/views/foos/new.html.erb</h3>
+<p><script src="https://gist.github.com/1371360.js"> </script></p>
+<h3>app/views/foos/edit.html.erb</h3>
+<p><script src="https://gist.github.com/1371367.js"> </script></p>
+<h3>app/views/foos/_form.html.erb</h3>
+<p><script src="https://gist.github.com/1371372.js"> </script></p>
+<h3>app/views/foos/_bar_fields.html.erb</h3>
+<p><script src="https://gist.github.com/1371375.js"> </script></p>
+<h3>app/views/foos/_baz_fields.html.erb</h3>
+<p><script src="https://gist.github.com/1371377.js"> </script><br />
+</p>
+<h1>That's it:</h1>
+<p>Ok, so I say that, but there are a few things to note.  First, this probably only works with Rails 3, given some of the calls I make for figuring things out.  Next, you'll want to <em>yield :head</em>, somewhere in your layout so that the <em>content_for :head</em> that loads the add and remove jQuery will be useful.  Finally, you should note that the nested attributes are only processed from the first level, but that will soon change.  Anyway, enjoy it and if you have any problems, just let me know.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Form Gen &#8211; ruby on rails gem</title>
+		<link>http://pullmonkey.com/2011/11/16/form-gen-ruby-on-rails-gem/</link>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Wed, 16 Nov 2011 04:38:31 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57670</guid>
+
+					<description><![CDATA[I've always dreaded doing the view code for nested attributes, setting up the helpers, the javascript, partials etc. Just so tedious, so I thought, I'd try my hand at a form generator. This generator takes a class and then processes all the nested attributes of that class's has_many's and belongs_to's to generate the typical pattern [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I've always dreaded doing the view code for nested attributes, setting up the helpers, the javascript, partials etc.  Just so tedious, so I thought, I'd try my hand at <a href="https://github.com/pullmonkey/formgen">a form generator</a>.  This <a href="https://github.com/pullmonkey/formgen">generator</a> takes a class and then processes all the nested attributes of that class's has_many's and belongs_to's to generate the typical pattern of form partial and field partials you find <a href="http://railscasts.com/episodes/196-nested-model-form-part-1">here</a>.</p>
+<p><script src="https://gist.github.com/1369234.js"> </script></p>
+<p><em>Yah I did ruby syntax-highlighting ... so not the best for something like that, but eh ... it'll do.</em></p>
+<p>The <a href="https://rubygems.org/gems/formgen">formgen gem</a> is a 0.1.0 starting point, but has worked for all the things I've needed.  If you're feeling brave give it a shot:</p>
+<pre style="margin-bottom:10px;border:1px dashed black; padding: 4px; background-color: #ddd;"># In your Gemfile -
+gem 'formgen'
+# then from your rails projects -
+rails g skizmo:form SomeClass</pre>
+<p>That outta do it.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>VIN API &#8211; ignore checksum validation</title>
+		<link>http://pullmonkey.com/2011/10/28/vin-api-ignore-checksum-validation/</link>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Fri, 28 Oct 2011 15:55:35 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[project]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[ruby on rails]]></category>
+		<category><![CDATA[simple]]></category>
+		<category><![CDATA[skizmo]]></category>
+		<category><![CDATA[software]]></category>
+		<category><![CDATA[VIN]]></category>
+		<category><![CDATA[vin api]]></category>
+		<category><![CDATA[xml]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57615</guid>
+
+					<description><![CDATA[It's been mentioned a few times that there should be a way to skip the checksum validation. This means if the check digit calculation generally fails, VIN API will continue to process the VIN to see if there is a "like" VIN match. So here it is:]]></description>
+										<content:encoded><![CDATA[<p>It's been mentioned a few times that there should be a way to skip the checksum validation.   This means if the <a href="http://en.wikipedia.org/wiki/Vehicle_Identification_Number#Check_digit_calculation">check digit calculation</a> generally fails, <a href="http://vinapi.skizmo.com">VIN API</a> will continue to process the VIN to see if there is a "like" VIN match.  So here it is: </p>
+<p><script src="https://gist.github.com/1322591.js?file=gistfile1.rb"></script></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Capybara does not trigger JS change event with celertiy driver</title>
+		<link>http://pullmonkey.com/2011/03/03/capybara-does-not-trigger-js-change-event-with-celertiy-driver/</link>
+					<comments>http://pullmonkey.com/2011/03/03/capybara-does-not-trigger-js-change-event-with-celertiy-driver/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Thu, 03 Mar 2011 22:52:58 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57599</guid>
+
+					<description><![CDATA[I've never had so much to write about ... these last few days with cucumber and culerity have been great ... Just a couple days ago, I was using cucumber and culerity to test some select box interaction and none of my tests were passing but everything I did manually worked as expected. After tons [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I've never had so much to write about ... these last few days with cucumber and culerity have been great ...<br />
+Just a couple days ago, I was using cucumber and culerity to test some select box interaction and none of my tests were passing but everything I did manually worked as expected.<br />
+After tons of digging through the various gems, I found out that only a click event is actually being triggered, no change event.<br />
+So this is what I came up with for the step definition -<br />
+<script src="https://gist.github.com/853786.js?file=trigger_capybara_js_change_event.rb"></script></p>
+<p>See improvement?, let me know.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2011/03/03/capybara-does-not-trigger-js-change-event-with-celertiy-driver/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Rack application timed out during boot &#8211; capybara</title>
+		<link>http://pullmonkey.com/2011/03/03/rack-application-timed-out-during-boot-capybara/</link>
+					<comments>http://pullmonkey.com/2011/03/03/rack-application-timed-out-during-boot-capybara/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Thu, 03 Mar 2011 03:04:28 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57597</guid>
+
+					<description><![CDATA[I've been doing lots and lots of cucumber testing these days. I would get this error every so often and there's really search results for it, so here's what you do - 1) Edit your features/support/env.rb file 2) Add "Capybara.server_boot_timeout = 50" #... the default is 10 3) Save and rerun your tests.]]></description>
+										<content:encoded><![CDATA[<p>I've been doing lots and lots of cucumber testing these days.  I would get this error every so often and there's really search results for it, so here's what you do -</p>
+<p>1) Edit your features/support/env.rb file<br />
+2) Add "Capybara.server_boot_timeout = 50" #... the default is 10<br />
+3) Save and rerun your tests.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2011/03/03/rack-application-timed-out-during-boot-capybara/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Cucumber and Pickle &#8211; find_latest_model!</title>
+		<link>http://pullmonkey.com/2011/03/02/cucumber-and-pickle-find_latest_model/</link>
+					<comments>http://pullmonkey.com/2011/03/02/cucumber-and-pickle-find_latest_model/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Wed, 02 Mar 2011 16:39:07 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57593</guid>
+
+					<description><![CDATA[I've been working with cucumber, capybara and pickle quite a bit recently and came across a problem. I wanted to be able to tag a record for later reuse.  The way pickle does this is to use find_model, which gets the very first record and associates this to the tag you use to name the [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I've been working with cucumber, capybara and pickle quite a bit recently and came across a problem.</p>
+<p>I wanted to be able to tag a record for later reuse.  The way pickle does this is to use find_model, which gets the very first record and associates this to the tag you use to name the record.</p>
+<p>I want to get the latest record, the most recent record and tag that for reuse, there does not seem to be a way to do this currently.</p>
+<p>So here is what I did.</p>
+<p>Added this to my features/support/pickle.rb:<br />
+<script src="https://gist.github.com/851207.js?file=pickle_record_just_created.rb"></script></p>
+<p>And can now use this as my step definition:<br />
+<script src="https://gist.github.com/851209.js?file=just_created_step_definition.rb"></script></p>
+<p>And now I have a reference I can use later for things like show and edit pages:</p>
+<p>Then a product: "test" was just created<br />
+And I should be on product: "test"'s page</p>
+<p>This has really helped my tests, maybe there is an alternative to having to do this?</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2011/03/02/cucumber-and-pickle-find_latest_model/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>A Million Trees &#8211; Ecobold.com</title>
+		<link>http://pullmonkey.com/2011/02/23/a-million-trees-ecoboldcom/</link>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Wed, 23 Feb 2011 02:24:15 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57583</guid>
+
+					<description><![CDATA[I recently completed a project for EcoBold.com to help support their mission to plant 1,000,000 trees (that's 1 Million). They are asking for support from the community and came up with an idea to help business owners (and the like) kill two birds with one stone. That is - EcoBold decided to take the million [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p style="text-align: center;"><a href="http://ecobold.com/one_million_trees/new"><img loading="lazy" class="size-full wp-image-57587 aligncenter" title="Ecobold - Million Trees" src="http://pullmonkey.com/wp-content/uploads/2011/02/screenshot.png" alt="Ecobold - Million Trees" width="543" height="256" srcset="http://pullmonkey.com/wp-content/uploads/2011/02/screenshot.png 543w, http://pullmonkey.com/wp-content/uploads/2011/02/screenshot-300x141.png 300w" sizes="(max-width: 543px) 100vw, 543px" /></a></p>
+<p>I recently completed a <a href="http://ecobold.com/one_million_trees">project</a> for <a href="http://ecobold.com">EcoBold.com</a> to help support their mission to plant 1,000,000 trees (that's 1 Million).  They are asking for support from the community and came up with an idea to help business owners (and the like) kill two birds with one stone.  That is - EcoBold decided to take <a href="http://en.wikipedia.org/wiki/The_Million_Dollar_Homepage">the million dollar homepage</a> approach and offer businesses (and individuals) a way to promote their business while at the same time planting trees and helping our environment.</p>
+<p>Supporting the cause is simple, you visit <a href="http://ecobold.com/one_million_trees/new">the million tree project page</a> and select a group of pixels to purchase.  Each pixel is 1 dollar and helps plant one tree.  After selecting your group of pixels, you are presented with a slide down modal to provide your company's information, things like the url, an image, a tag line, etc.  After that confirm your selection, make your purchase and own a piece of history.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

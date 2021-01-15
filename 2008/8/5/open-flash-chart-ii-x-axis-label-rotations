@@ -1,0 +1,996 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>PullMonkey Blog  &raquo; Blog Archive   &raquo; Open Flash Chart II &#8211; X Axis Label rotations</title>
+<meta name="generator" content="WordPress 5.6" /> <!-- leave this for stats -->
+<link rel="stylesheet" href="../../../wp-content/themes/simple&#32;paper/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../../../wp-content/themes/simple&#32;paper/code_highlighter.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="PullMonkey Blog RSS Feed" href="../../../feed/index.html" />
+<link rel="pingback" href="http://pullmonkey.com/xmlrpc.php" />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="PullMonkey Blog &raquo; Open Flash Chart II &#8211; X Axis Label rotations Comments Feed" href="../../08/05/open-flash-chart-ii-x-axis-label-rotations/feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/pullmonkey.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='../../../wp-includes/css/dist/block-library/style.min.css?ver=5.6' type='text/css' media='all' />
+<link rel="https://api.w.org/" href="../../../wp-json/index.html" /><link rel="alternate" type="application/json" href="../../../wp-json/wp/v2/posts/46393" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://pullmonkey.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../../wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.6" />
+<link rel="canonical" href="../../../index.html?p=46393" />
+<link rel='shortlink' href='../../../index.html?p=46393' />
+<link rel="alternate" type="application/json+oembed" href="../../../wp-json/oembed/1.0/embed?url=http:%252F%252Fpullmonkey.com%252F2008%252F08%252F05%252Fopen-flash-chart-ii-x-axis-label-rotations%252F" />
+<link rel="alternate" type="text/xml+oembed" href="../../../wp-json/oembed/1.0/embed?url=http:%252F%252Fpullmonkey.com%252F2008%252F08%252F05%252Fopen-flash-chart-ii-x-axis-label-rotations%252F&amp;format=xml" />
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style></head>
+<body>
+
+<div id="container">
+
+<div id="menu">
+
+        <ul id="nav">
+        <li class="current_page_item"><a href="../../../index.html">Home</a></li>
+                       	</ul>
+
+</div><!-- Menu -->
+
+<div id="wrapper">
+
+<div id="c1">
+
+<h1 id="logo"><a href="../../../index.html">PullMonkey Blog</a></h1>
+<h2 id="description"></h2>
+
+<div id="content">
+
+
+<div class="post" id="post-46393">
+
+<div class="date">05 <span>Aug</span></div>
+
+<h2><a href="../../../index.html?p=46393" rel="bookmark" title="Permanent Link to Open Flash Chart II &#8211; X Axis Label rotations">Open Flash Chart II &#8211; X Axis Label rotations</a></h2><br clear="all" />
+
+<p>Got another <a href="../1/open-flash-chart-ii-line-graph#comment-46391">comment asking about diagonal x axis labels</a>.  This example is based on <a href="http://teethgrinder.co.uk/open-flash-chart-2/data-lines-2.php">teethgrinder's line graph example</a> and the new portions are based on <a href="http://teethgrinder.co.uk/open-flash-chart-2/x-axis-labels-3.php">teethgrinder's x-axis rotation example</a>.  </p>
+<p>Here is the graph we are after in this example:</p>
+<p><script type="text/javascript" src="../../../projects/javascripts/swfobject.js"></script></p>
+<div id="flash_content_1217006545.44033112_line_x_axis_stuff"></div>
+<p>    <script type="text/javascript">
+      swfobject.embedSWF("/projects/open-flash-chart.swf", "flash_content_1217006545.44033112_line_x_axis_stuff", "600", "300", "9.0.0", "expressInstall.swf",{"data-file":"%2Fprojects%2Fopen_flash_chart2%2Flines_and_x_axis_rotation"});
+    </script><br />
+    <noscript><br />
+      <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="600" height="300" id="chart_1217006545.44033112_line_x_axis_stuff" align="middle"><param name="allowScriptAccess" value="sameDomain" /><param name="movie" value="/projects/open-flash-chart.swf?data=%2Fprojects%2Fopen_flash_chart2%2Flines_and_x_axis_rotation" /><param name="quality" value="high" /><param name="bgcolor" value="#FFFFFF" /><embed src="../../../projects/open-flash-chart.swf?data=%252Fprojects%252Fopen_flash_chart2%252Flines_and_x_axis_rotation" quality="high" bgcolor="#FFFFFF" width="600" height="300" name="chart_1217006545.44033112_line" align="middle"  allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" id="chart_1217006545.44033112_line_x_axis_stuff" /></object><br />
+    </noscript></p>
+<p><a href="http://pullmonkey.com/projects/open_flash_chart2">More Open Flash Chart II examples.</a></p>
+<p>And here is the code (the controller):</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt>9<tt>
+</tt><strong>10</strong><tt>
+</tt>11<tt>
+</tt>12<tt>
+</tt>13<tt>
+</tt>14<tt>
+</tt><strong>15</strong><tt>
+</tt>16<tt>
+</tt>17<tt>
+</tt>18<tt>
+</tt>19<tt>
+</tt><strong>20</strong><tt>
+</tt>21<tt>
+</tt>22<tt>
+</tt>23<tt>
+</tt>24<tt>
+</tt><strong>25</strong><tt>
+</tt>26<tt>
+</tt>27<tt>
+</tt>28<tt>
+</tt>29<tt>
+</tt><strong>30</strong><tt>
+</tt>31<tt>
+</tt>32<tt>
+</tt>33<tt>
+</tt>34<tt>
+</tt><strong>35</strong><tt>
+</tt>36<tt>
+</tt>37<tt>
+</tt>38<tt>
+</tt>39<tt>
+</tt><strong>40</strong><tt>
+</tt>41<tt>
+</tt>42<tt>
+</tt>43<tt>
+</tt>44<tt>
+</tt><strong>45</strong><tt>
+</tt>46<tt>
+</tt>47<tt>
+</tt>48<tt>
+</tt>49<tt>
+</tt><strong>50</strong><tt>
+</tt>51<tt>
+</tt>52<tt>
+</tt>53<tt>
+</tt>54<tt>
+</tt><strong>55</strong><tt>
+</tt>56<tt>
+</tt>57<tt>
+</tt>58<tt>
+</tt>59<tt>
+</tt><strong>60</strong><tt>
+</tt>61<tt>
+</tt>62<tt>
+</tt>63<tt>
+</tt>64<tt>
+</tt><strong>65</strong><tt>
+</tt>66<tt>
+</tt>67<tt>
+</tt>68<tt>
+</tt>69<tt>
+</tt><strong>70</strong><tt>
+</tt>71<tt>
+</tt>72<tt>
+</tt>73<tt>
+</tt>74<tt>
+</tt><strong>75</strong><tt>
+</tt>76<tt>
+</tt>77<tt>
+</tt>78<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt><span class="r">class</span> <span class="cl">TestItController</span> &lt; <span class="co">ApplicationController</span><tt>
+</tt>  <span class="r">def</span> <span class="fu">index</span><tt>
+</tt>    <span class="iv">@graph</span> = open_flash_chart_object(<span class="i">600</span>,<span class="i">300</span>,<span class="s"><span class="dl">&quot;</span><span class="k">/test_it/graph_code</span><span class="dl">&quot;</span></span>)<tt>
+</tt>  <span class="r">end</span><tt>
+</tt><tt>
+</tt>  <span class="r">def</span> <span class="fu">graph_code</span><tt>
+</tt>    <span class="c"># based on this example - http://teethgrinder.co.uk/open-flash-chart-2/data-lines-2.php</span><tt>
+</tt>    <span class="c"># and parts from this example - http://teethgrinder.co.uk/open-flash-chart-2/x-axis-labels-3.php</span><tt>
+</tt>    title = <span class="co">Title</span>.new(<span class="s"><span class="dl">&quot;</span><span class="k">Multiple Lines</span><span class="dl">&quot;</span></span>)<tt>
+</tt><tt>
+</tt>    data1 = []<tt>
+</tt>    data2 = []<tt>
+</tt>    data3 = []<tt>
+</tt><tt>
+</tt>    <span class="i">10</span>.times <span class="r">do</span> |x|<tt>
+</tt>    data1 &lt;&lt; rand(<span class="i">5</span>) + <span class="i">1</span><tt>
+</tt>    data2 &lt;&lt; rand(<span class="i">6</span>) + <span class="i">7</span><tt>
+</tt>    data3 &lt;&lt; rand(<span class="i">5</span>) + <span class="i">14</span><tt>
+</tt>    <span class="r">end</span><tt>
+</tt><tt>
+</tt>    line_dot = <span class="co">LineDot</span>.new<tt>
+</tt>    line_dot.width = <span class="i">4</span><tt>
+</tt>    line_dot.colour = <span class="s"><span class="dl">'</span><span class="k">#DFC329</span><span class="dl">'</span></span><tt>
+</tt>    line_dot.dot_size = <span class="i">5</span><tt>
+</tt>    line_dot.values = data1<tt>
+</tt><tt>
+</tt>    line_hollow = <span class="co">LineHollow</span>.new<tt>
+</tt>    line_hollow.width = <span class="i">1</span><tt>
+</tt>    line_hollow.colour = <span class="s"><span class="dl">'</span><span class="k">#6363AC</span><span class="dl">'</span></span><tt>
+</tt>    line_hollow.dot_size = <span class="i">5</span><tt>
+</tt>    line_hollow.values = data2<tt>
+</tt><tt>
+</tt>    line = <span class="co">Line</span>.new<tt>
+</tt>    line.width = <span class="i">1</span><tt>
+</tt>    line.colour = <span class="s"><span class="dl">'</span><span class="k">#5E4725</span><span class="dl">'</span></span><tt>
+</tt>    line.dot_size = <span class="i">5</span><tt>
+</tt>    line.values = data3<tt>
+</tt><tt>
+</tt>    <span class="c"># Added these lines since the previous tutorial</span><tt>
+</tt>    tmp = []<tt>
+</tt>    x_labels = <span class="co">XAxisLabels</span>.new<tt>
+</tt>    x_labels.set_vertical()<tt>
+</tt><tt>
+</tt>    <span class="s"><span class="dl">%w(</span><span class="k">one two three four five six seven eight nine ten</span><span class="dl">)</span></span>.each <span class="r">do</span> |text|<tt>
+</tt>      tmp &lt;&lt; <span class="co">XAxisLabel</span>.new(text, <span class="s"><span class="dl">'</span><span class="k">#0000ff</span><span class="dl">'</span></span>, <span class="i">20</span>, <span class="s"><span class="dl">'</span><span class="k">diagonal</span><span class="dl">'</span></span>)<tt>
+</tt>    <span class="r">end</span><tt>
+</tt><tt>
+</tt>    x_labels.labels = tmp<tt>
+</tt><tt>
+</tt>    x = <span class="co">XAxis</span>.new<tt>
+</tt>    x.set_labels(x_labels)<tt>
+</tt>    <span class="c"># new up to here ...</span><tt>
+</tt><tt>
+</tt>    y = <span class="co">YAxis</span>.new<tt>
+</tt>    y.set_range(<span class="i">0</span>,<span class="i">20</span>,<span class="i">5</span>)<tt>
+</tt><tt>
+</tt>    x_legend = <span class="co">XLegend</span>.new(<span class="s"><span class="dl">&quot;</span><span class="k">MY X Legend</span><span class="dl">&quot;</span></span>)<tt>
+</tt>    x_legend.set_style(<span class="s"><span class="dl">'</span><span class="k">{font-size: 20px; color: #778877}</span><span class="dl">'</span></span>)<tt>
+</tt><tt>
+</tt>    y_legend = <span class="co">YLegend</span>.new(<span class="s"><span class="dl">&quot;</span><span class="k">MY Y Legend</span><span class="dl">&quot;</span></span>)<tt>
+</tt>    y_legend.set_style(<span class="s"><span class="dl">'</span><span class="k">{font-size: 20px; color: #770077}</span><span class="dl">'</span></span>)<tt>
+</tt><tt>
+</tt>    chart =<span class="co">OpenFlashChart</span>.new<tt>
+</tt>    chart.set_title(title)<tt>
+</tt>    chart.set_x_legend(x_legend)<tt>
+</tt>    chart.set_y_legend(y_legend)<tt>
+</tt>    chart.x_axis = x <span class="c"># Added this line since the previous tutorial</span><tt>
+</tt>    chart.y_axis = y<tt>
+</tt><tt>
+</tt>    chart.add_element(line_dot)<tt>
+</tt>    chart.add_element(line_hollow)<tt>
+</tt>    chart.add_element(line)<tt>
+</tt><tt>
+</tt>    render <span class="sy">:text</span> =&gt; chart.to_s<tt>
+</tt>  <span class="r">end</span><tt>
+</tt><span class="r">end</span><tt>
+</tt><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>
+And in your view (index.html.erb):</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt>&lt;script type=<span class="s"><span class="dl">&quot;</span><span class="k">text/javascript</span><span class="dl">&quot;</span></span> src=<span class="s"><span class="dl">&quot;</span><span class="k">/javascripts/swfobject.js</span><span class="dl">&quot;</span></span>&gt;&lt;<span class="rx"><span class="dl">/</span><span class="k">script&gt;<tt>
+</tt>&lt;%= @graph %&gt;<tt>
+</tt><tt>
+</tt></span></span></pre>
+</td>
+</tr>
+</table>
+<p>Good Luck!</p>
+<p></p>
+
+<br />
+
+<div class="meta">
+<span class="note">Filed under: <a href="../../../category/development/index.html" rel="category tag">development</a>, <a href="../../../category/home/index.html" rel="category tag">Home</a>, <a href="../../../category/open-flash-chart-graphs/index.html" rel="category tag">Open Flash Chart Graphs</a>, <a href="../../../category/projects/index.html" rel="category tag">projects</a>, <a href="../../../category/rails/index.html" rel="category tag">rails</a>, <a href="../../../category/ruby/index.html" rel="category tag">ruby</a>, <a href="../../../category/tutorials/index.html" rel="category tag">tutorials</a></span>
+<span class="tags">Tags: <a href="../../../tag/charts/index.html" rel="tag">charts</a>, <a href="../../../tag/flash/index.html" rel="tag">flash</a>, <a href="../../../tag/graphs/index.html" rel="tag">graphs</a>, <a href="../../../tag/open-flash-chart/index.html" rel="tag">open flash chart</a>, <a href="../../../tag/rails/index.html" rel="tag">rails</a>, <a href="../../../tag/ruby/index.html" rel="tag">ruby</a>, <a href="../../../tag/ruby-on-rails/index.html" rel="tag">ruby on rails</a></span><br /></div><!--Meta -->
+
+
+<!-- You can start editing here. -->
+
+<div id="commentsbox">
+
+
+
+<h2 id="comments">
+	 <br /> 27 Responses 
+	  to &#8220;Open Flash Chart II &#8211; X Axis Label rotations&#8221;</h2>
+	
+	<ol class="commentlist">
+		
+
+<li class="odd" id="comment-747">
+
+By <strong>Mike Nicholaides</strong> on <a href="open-flash-chart-ii-x-axis-label-rotations#comment-747" title="">Aug 5, 2008</a> | <a href="open-flash-chart-ii-x-axis-label-rotations#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>I copied and pasted this example, and it looks like this:<br />
+<a href="http://tinypic.com/view.php?pic=2pskn6s&#038;s=4" rel="nofollow ugc">http://tinypic.com/view.php?pic=2pskn6s&#038;s=4</a><br />
+Note the X Axis Labels don&#8217;t show.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-748">
+
+By <strong><a href='../../../index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="open-flash-chart-ii-x-axis-label-rotations#comment-748" title="">Aug 5, 2008</a> | <a href="open-flash-chart-ii-x-axis-label-rotations#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Mike &#8211; do you have the latest version of the plugin?<br />
+If so, can you post the JSON that is being produced?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="mycomment" id="comment-749">
+
+By <strong>Mike Nicholaides</strong> on <a href="open-flash-chart-ii-x-axis-label-rotations#comment-749" title="">Aug 5, 2008</a> | <a href="open-flash-chart-ii-x-axis-label-rotations#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hey charlie,<br />
+I think I forgot to restart my server after updating to the latest plugin.  Sorry for the false alarm!</p>
+<p>Thanks for the awesome plugin!</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-750">
+
+By <strong>Arj</strong> on <a href="open-flash-chart-ii-x-axis-label-rotations#comment-750" title="">Aug 5, 2008</a> | <a href="open-flash-chart-ii-x-axis-label-rotations#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Man these charts are the grooviest thing I have seen in a while. Spent a few hours putting some in my app and they are delicious.</p>
+<p>One thing though, they are all fixed size. Is there any plan on changing it so that instead of specifying a size you just use percentages of the parent div?</p>
+<p>This will allow the charts to resize with the screen. Or am I missing something</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-751">
+
+By <strong><a href='../../../index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="open-flash-chart-ii-x-axis-label-rotations#comment-751" title="">Aug 5, 2008</a> | <a href="open-flash-chart-ii-x-axis-label-rotations#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Arj &#8211; Look into this for right now &#8211; <a href="http://teethgrinder.co.uk/open-flash-chart/gallery-js-moo.php" rel="nofollow ugc">http://teethgrinder.co.uk/open-flash-chart/gallery-js-moo.php</a></p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-752">
+
+By <strong><a href='http://jai.ism.googlepages.com' rel='external nofollow ugc' class='url'>Jaikishan Jalan</a></strong> on <a href="open-flash-chart-ii-x-axis-label-rotations#comment-752" title="">Aug 5, 2008</a> | <a href="open-flash-chart-ii-x-axis-label-rotations#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hello,</p>
+<p>This is little bit offtrack but I am trying to get extra tool tip information in OFC 2 with help from how it was done in version 1. Here is my sample piece of code:</p>
+<p>&lt;filter:code attributes=lang=&quot;ruby&quot;&gt;</p>
+<p>    overallPerformanceGraph = OpenFlashChart.new</p>
+<p>    label= []<br />
+    value=[]</p>
+<p>    // Value and label get popluated</p>
+<p>    line_hollow = LineHollow.new<br />
+    line_hollow.width = 1<br />
+    line_hollow.colour = &#8216;#6363AC&#8217;<br />
+    line_hollow.dot_size = 4<br />
+    line_hollow.values=value</p>
+<p>   (0..12).each do |i|<br />
+     line_hollow.add_data_tip(rand(5) + 14, &quot;(Extra: #{i})&quot;)<br />
+   end</p>
+<p>    y = YAxis.new<br />
+    y.set_offset(true)<br />
+    y.set_grid_colour(&#8216;#d1d1d1&#8217;)<br />
+    y.set_range(0,100,50)<br />
+    y.colour = &#8216;#FFFFFF&#8217;</p>
+<p>    x = XAxis.new<br />
+    x.set_grid_colour(&#8216;#d1d1d1&#8217;)<br />
+    x.set_offset(true)<br />
+    x.set_labels(label)</p>
+<p>    overallPerformanceGraph.data_sets &lt;&lt; line_hollow<br />
+    overallPerformanceGraph.set_tool_tip(&#8216;Marks: #val#%&lt;br&gt;#tip#&#8217;)<br />
+    overallPerformanceGraph.set_x_axis(x)<br />
+    overallPerformanceGraph.set_y_axis(y)<br />
+    overallPerformanceGraph.add_element(line_hollow)<br />
+    render :text=&gt; overallPerformanceGraph.to_s</p>
+<p>&lt;/filter:code&gt;<br />
+But I get an error:</p>
+<p>ArgumentError (no id given):<br />
+ /vendor/plugins/pullmonkey-open_flash_chart-72bea010d081117e7c60bd0c1517a21c9b202f7d/lib/open_flash_chart.rb:84:in `method_missing&#8217;<br />
+    /app/controllers/dashboard_controller.rb:34:in `GenerateOverallPerformanceGraph&#8217;<br />
+.<br />
+.<br />
+.<br />
+.</p>
+<p>I am clueless. Any help will be greatly appreciated. Note that to install OFC 2, I have downloaded the folder from github, unzipped it and then placed the necessary files to their relevant place. If I remove line_hollow.add_data_tip, the graphs render perfectly.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-753">
+
+By <strong><a href='../../../index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="open-flash-chart-ii-x-axis-label-rotations#comment-753" title="">Aug 5, 2008</a> | <a href="open-flash-chart-ii-x-axis-label-rotations#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Jaikishan Jalan &#8211; I checked for you and lines do not have the ability to have special tooltips &#8211; see this page: <a href="http://teethgrinder.co.uk/open-flash-chart-2/data-lines.php" rel="nofollow ugc">http://teethgrinder.co.uk/open-flash-chart-2/data-lines.php</a></p>
+<p>It says &quot;Draws a line. This does not have tool tips. This is a bug, and at the moment I&#8217;m not sure if it needs fixing.&quot;</p>
+<p>The only charts that I know of to have tooltips are: Area*, Bar*, and Pie.</p>
+<p>Sorry about that &#8211; you may want to ask if there is an ETA on the bug fix for Line* Tooltips in the OFC II Forums &#8211; <a href="http://sourceforge.net/forum/?group_id=201148" rel="nofollow ugc">http://sourceforge.net/forum/?group_id=201148</a></p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-754">
+
+By <strong>John</strong> on <a href="open-flash-chart-ii-x-axis-label-rotations#comment-754" title="">Aug 5, 2008</a> | <a href="open-flash-chart-ii-x-axis-label-rotations#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>I am using this on Rails 2.2.2.  It was all working after I walked through the basic setup (had to extract the components from the tar file).  I then started playing with the charts &#8212; titles, layouts, etc.  and it stopped working. I get a javascript error about a bad argument when the page loads.</p>
+<p> After undoing all my changes, still no workey.  So&#8230; created a new sample just like the first time in a new dir.  Also doesn&#8217;t work.  So what could I have done to bonk my environment to prevent this from working?</p>
+<p>(I&#8217;m new to rails and I&#8217;m on Windows if that matters).</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-755">
+
+By <strong><a href='../../../index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="open-flash-chart-ii-x-axis-label-rotations#comment-755" title="">Aug 5, 2008</a> | <a href="open-flash-chart-ii-x-axis-label-rotations#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@John &#8211; That (bad argument) is too broad for me to tell too much.  Can you post your layout or maybe the HTML (view source) that is produced in your example.  swfobject.js is the only javascript file you need.  So make sure that is included by your javascript_include_tag in your layout.  It may be a JSON error, if so then you can check your development.log the graphing action may have failed.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-756">
+
+By <strong>John</strong> on <a href="open-flash-chart-ii-x-axis-label-rotations#comment-756" title="">Aug 5, 2008</a> | <a href="open-flash-chart-ii-x-axis-label-rotations#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>I debugged inside VS2008 from IE.  The error is here in the swfobject.js file:</p>
+<p>if(typeof i.addRule==P){i.addRule(m,j)}}</p>
+<p>the i.addRule call is failing.  Looking at the definition for addRule (by inspecting in the debugger), it shows 3 parameters, not 2 (selector, style, index).</p>
+<p>If I tell the debugger to eat the exception, then it runs.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-757">
+
+By <strong><a href='../../../index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="open-flash-chart-ii-x-axis-label-rotations#comment-757" title="">Aug 5, 2008</a> | <a href="open-flash-chart-ii-x-axis-label-rotations#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@John &#8211; There may be a conflict with one of the other js libraries that you have included.  Find where addRule is being defined.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-758">
+
+By <strong>Paul</strong> on <a href="open-flash-chart-ii-x-axis-label-rotations#comment-758" title="">Aug 5, 2008</a> | <a href="open-flash-chart-ii-x-axis-label-rotations#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Continuing the question about adding tooltips to line dots. According to this page: <a href="http://teethgrinder.co.uk/open-flash-chart-2/adv-line-dot.php" rel="nofollow ugc">http://teethgrinder.co.uk/open-flash-chart-2/adv-line-dot.php</a>, the following PHP code adds a custom tooltip to an OFC2 chart.<br />
+&lt;filter:code attributes=lang=&quot;php&quot;&gt;<br />
+    $tmp = new dot_value( $val, &#8216;#D02020&#8217; );<br />
+    $tmp-&gt;set_tooltip(&#8216;#val#&lt;br&gt;Your text here&#8217;);<br />
+    $data[] = $tmp;<br />
+&lt;/filter:code&gt;<br />
+Problem is, this doesn&#8217;t seem to be working in Rails, because the following line gives an error:<br />
+&lt;filter:code attributes=lang=&quot;ruby&quot;&gt;<br />
+    tmp = DotValue.new(0,&#8217;#000000&#8242;)<br />
+&lt;/filter:code&gt;<br />
+The error is:<br />
+wrong number of arguments (3 for 1)<br />
+and the trace shows:<br />
+vendor/plugins/open_flash_chart/lib/open_flash_chart/line_dot.rb:14:in `initialize&#8217;<br />
+vendor/plugins/open_flash_chart/lib/open_flash_chart/line_dot.rb:14:in `initialize&#8217;</p>
+<p>Any ideas? Maybe a Rails version of the Advanced Line Chart would help!</p>
+<p>Thanks!</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-759">
+
+By <strong><a href='../../../index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="open-flash-chart-ii-x-axis-label-rotations#comment-759" title="">Aug 5, 2008</a> | <a href="open-flash-chart-ii-x-axis-label-rotations#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Paul &#8211; committed the fix.  The call to super needed to only pass in args &#8230; super(args).</p>
+<p>Diff is &lt;a href=&quot;<a href="http://github.com/pullmonkey/open_flash_chart/commit/77e73682bce4a6868299e06b53e3d769e5d33230&quot;&gt;here&lt;/a&#038;gt" rel="nofollow ugc">http://github.com/pullmonkey/open_flash_chart/commit/77e73682bce4a6868299e06b53e3d769e5d33230&quot;&gt;here&lt;/a&#038;gt</a>;.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-760">
+
+By <strong>Paul</strong> on <a href="open-flash-chart-ii-x-axis-label-rotations#comment-760" title="">Aug 5, 2008</a> | <a href="open-flash-chart-ii-x-axis-label-rotations#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@charlie &#8212; Thanks! I was actually just coming back here to mention that I had found that very issue. It&#8217;s all working now!</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-761">
+
+By <strong>Chris</strong> on <a href="open-flash-chart-ii-x-axis-label-rotations#comment-761" title="">Aug 5, 2008</a> | <a href="open-flash-chart-ii-x-axis-label-rotations#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hi,</p>
+<p>when I copy and paste the above tutorial I get the following output:</p>
+<p>{&quot;y_axis&quot;: {&quot;steps&quot;: 5, &quot;max&quot;: 20, &quot;min&quot;: 0}, &quot;y_legend&quot;: {&quot;text&quot;: &quot;MY Y Legend&quot;, &quot;style&quot;: &quot;{font-size: 20px; color: #770077}&quot;}, &quot;x_legend&quot;: {&quot;text&quot;: &quot;MY X Legend&quot;, &quot;style&quot;: &quot;{font-size: 20px; color: #778877}&quot;}, &quot;title&quot;: {&quot;text&quot;: &quot;Multiple Lines&quot;}, &quot;elements&quot;: [{&quot;text&quot;: &quot;Page Views&quot;, &quot;type&quot;: &quot;line_dot&quot;, &quot;dot-size&quot;: 5, &quot;colour&quot;: &quot;#DFC329&quot;, &quot;font-size&quot;: 10, &quot;values&quot;: [4, 5, 3, 2, 5, 3, 4, 1, 2, 4], &quot;width&quot;: 4}, {&quot;text&quot;: &quot;Page Views&quot;, &quot;type&quot;: &quot;line_hollow&quot;, &quot;dot-size&quot;: 5, &quot;colour&quot;: &quot;#6363AC&quot;, &quot;font-size&quot;: 10, &quot;values&quot;: [9, 7, 8, 10, 7, 7, 11, 10, 7, 10], &quot;width&quot;: 1}, {&quot;text&quot;: &quot;Page Views&quot;, &quot;type&quot;: &quot;line&quot;, &quot;dot-size&quot;: 5, &quot;colour&quot;: &quot;#5E4725&quot;, &quot;font-size&quot;: 10, &quot;values&quot;: [18, 18, 18, 18, 16, 16, 15, 17, 14, 15], &quot;width&quot;: 1}], &quot;x_axis&quot;: {&quot;labels&quot;: {&quot;labels&quot;: [{&quot;bottom&quot;: null, &quot;top&quot;: &quot;one&quot;}, {&quot;bottom&quot;: null, &quot;top&quot;: &quot;two&quot;}, {&quot;bottom&quot;: null, &quot;top&quot;: &quot;three&quot;}, {&quot;bottom&quot;: null, &quot;top&quot;: &quot;four&quot;}, {&quot;bottom&quot;: null, &quot;top&quot;: &quot;five&quot;}, {&quot;bottom&quot;: null, &quot;top&quot;: &quot;six&quot;}, {&quot;bottom&quot;: null, &quot;top&quot;: &quot;seven&quot;}, {&quot;bottom&quot;: null, &quot;top&quot;: &quot;eight&quot;}, {&quot;bottom&quot;: null, &quot;top&quot;: &quot;nine&quot;}, {&quot;bottom&quot;: null, &quot;top&quot;: &quot;ten&quot;}], &quot;rotate&quot;: &quot;vertical&quot;}}}</p>
+<p>but if I look at the code your example puts out on your site it should be:</p>
+<p>{&quot;y_axis&quot;: {&quot;steps&quot;: 5, &quot;max&quot;: 20, &quot;min&quot;: 0}, &quot;y_legend&quot;: {&quot;text&quot;: &quot;MY Y Legend&quot;, &quot;style&quot;: &quot;{font-size: 20px; color: #770077}&quot;}, &quot;title&quot;: {&quot;text&quot;: &quot;Multiple Lines&quot;}, &quot;x_legend&quot;: {&quot;text&quot;: &quot;MY X Legend&quot;, &quot;style&quot;: &quot;{font-size: 20px; color: #778877}&quot;}, &quot;elements&quot;: [{&quot;type&quot;: &quot;line_dot&quot;, &quot;colour&quot;: &quot;#DFC329&quot;, &quot;dot-size&quot;: 5, &quot;values&quot;: [1, 2, 1, 5, 2, 4, 1, 2, 3, 1], &quot;width&quot;: 4}, {&quot;type&quot;: &quot;line_hollow&quot;, &quot;colour&quot;: &quot;#6363AC&quot;, &quot;dot-size&quot;: 5, &quot;values&quot;: [8, 12, 9, 9, 9, 9, 8, 10, 12, 8], &quot;width&quot;: 1}, {&quot;type&quot;: &quot;line&quot;, &quot;colour&quot;: &quot;#5E4725&quot;, &quot;dot-size&quot;: 5, &quot;values&quot;: [17, 18, 14, 15, 14, 17, 14, 15, 16, 15], &quot;width&quot;: 1}], &quot;x_axis&quot;: {&quot;labels&quot;: {&quot;labels&quot;: [{&quot;size&quot;: 20, &quot;text&quot;: &quot;one&quot;, &quot;colour&quot;: &quot;#0000ff&quot;, &quot;rotate&quot;: &quot;diagonal&quot;}, {&quot;size&quot;: 20, &quot;text&quot;: &quot;two&quot;, &quot;colour&quot;: &quot;#0000ff&quot;, &quot;rotate&quot;: &quot;diagonal&quot;}, {&quot;size&quot;: 20, &quot;text&quot;: &quot;three&quot;, &quot;colour&quot;: &quot;#0000ff&quot;, &quot;rotate&quot;: &quot;diagonal&quot;}, {&quot;size&quot;: 20, &quot;text&quot;: &quot;four&quot;, &quot;colour&quot;: &quot;#0000ff&quot;, &quot;rotate&quot;: &quot;diagonal&quot;}, {&quot;size&quot;: 20, &quot;text&quot;: &quot;five&quot;, &quot;colour&quot;: &quot;#0000ff&quot;, &quot;rotate&quot;: &quot;diagonal&quot;}, {&quot;size&quot;: 20, &quot;text&quot;: &quot;six&quot;, &quot;colour&quot;: &quot;#0000ff&quot;, &quot;rotate&quot;: &quot;diagonal&quot;}, {&quot;size&quot;: 20, &quot;text&quot;: &quot;seven&quot;, &quot;colour&quot;: &quot;#0000ff&quot;, &quot;rotate&quot;: &quot;diagonal&quot;}, {&quot;size&quot;: 20, &quot;text&quot;: &quot;eight&quot;, &quot;colour&quot;: &quot;#0000ff&quot;, &quot;rotate&quot;: &quot;diagonal&quot;}, {&quot;size&quot;: 20, &quot;text&quot;: &quot;nine&quot;, &quot;colour&quot;: &quot;#0000ff&quot;, &quot;rotate&quot;: &quot;diagonal&quot;}, {&quot;size&quot;: 20, &quot;text&quot;: &quot;ten&quot;, &quot;colour&quot;: &quot;#0000ff&quot;, &quot;rotate&quot;: &quot;diagonal&quot;}], &quot;rotate&quot;: &quot;vertical&quot;}}}</p>
+<p>I&#8217;ve tried reinstalling the plugin via git but it still is giving me this incorrect output.  I&#8217;m trying to get vertical/diagonal labels but they came out all wrong.</p>
+<p>Any idea why this is happening?</p>
+<p>Regards,<br />
+Chris.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-762">
+
+By <strong><a href='../../../index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="open-flash-chart-ii-x-axis-label-rotations#comment-762" title="">Aug 5, 2008</a> | <a href="open-flash-chart-ii-x-axis-label-rotations#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Chris &#8211; just tried it on a different box &#8230; with Rails 2.2.2</p>
+<p>Can you give me more details?</p>
+<p>Here is my output again for comparison &#8212;</p>
+<p>{&quot;y_axis&quot;: {&quot;steps&quot;: 5, &quot;max&quot;: 20, &quot;min&quot;: 0}, &quot;y_legend&quot;: {&quot;text&quot;: &quot;MY Y Legend&quot;, &quot;style&quot;: &quot;{font-size: 20px; color: #770077}&quot;}, &quot;x_legend&quot;: {&quot;text&quot;: &quot;MY X Legend&quot;, &quot;style&quot;: &quot;{font-size: 20px; color: #778877}&quot;}, &quot;title&quot;: {&quot;text&quot;: &quot;Multiple Lines&quot;}, &quot;elements&quot;: [{&quot;text&quot;: &quot;Page Views&quot;, &quot;type&quot;: &quot;line_dot&quot;, &quot;colour&quot;: &quot;#DFC329&quot;, &quot;dot-size&quot;: 5, &quot;font-size&quot;: 10, &quot;values&quot;: [3, 1, 3, 1, 2, 2, 1, 2, 2, 3], &quot;width&quot;: 4}, {&quot;text&quot;: &quot;Page Views&quot;, &quot;type&quot;: &quot;line_hollow&quot;, &quot;colour&quot;: &quot;#6363AC&quot;, &quot;dot-size&quot;: 5, &quot;font-size&quot;: 10, &quot;values&quot;: [12, 8, 12, 9, 8, 12, 12, 12, 9, 9], &quot;width&quot;: 1}, {&quot;text&quot;: &quot;Page Views&quot;, &quot;type&quot;: &quot;line&quot;, &quot;colour&quot;: &quot;#5E4725&quot;, &quot;dot-size&quot;: 5, &quot;font-size&quot;: 10, &quot;values&quot;: [16, 16, 18, 17, 14, 16, 17, 14, 14, 14], &quot;width&quot;: 1}], &quot;x_axis&quot;: {&quot;labels&quot;: {&quot;rotate&quot;: &quot;vertical&quot;, &quot;labels&quot;: [{&quot;size&quot;: 20, &quot;text&quot;: &quot;one&quot;, &quot;colour&quot;: &quot;#0000ff&quot;, &quot;rotate&quot;: &quot;diagonal&quot;}, {&quot;size&quot;: 20, &quot;text&quot;: &quot;two&quot;, &quot;colour&quot;: &quot;#0000ff&quot;, &quot;rotate&quot;: &quot;diagonal&quot;}, {&quot;size&quot;: 20, &quot;text&quot;: &quot;three&quot;, &quot;colour&quot;: &quot;#0000ff&quot;, &quot;rotate&quot;: &quot;diagonal&quot;}, {&quot;size&quot;: 20, &quot;text&quot;: &quot;four&quot;, &quot;colour&quot;: &quot;#0000ff&quot;, &quot;rotate&quot;: &quot;diagonal&quot;}, {&quot;size&quot;: 20, &quot;text&quot;: &quot;five&quot;, &quot;colour&quot;: &quot;#0000ff&quot;, &quot;rotate&quot;: &quot;diagonal&quot;}, {&quot;size&quot;: 20, &quot;text&quot;: &quot;six&quot;, &quot;colour&quot;: &quot;#0000ff&quot;, &quot;rotate&quot;: &quot;diagonal&quot;}, {&quot;size&quot;: 20, &quot;text&quot;: &quot;seven&quot;, &quot;colour&quot;: &quot;#0000ff&quot;, &quot;rotate&quot;: &quot;diagonal&quot;}, {&quot;size&quot;: 20, &quot;text&quot;: &quot;eight&quot;, &quot;colour&quot;: &quot;#0000ff&quot;, &quot;rotate&quot;: &quot;diagonal&quot;}, {&quot;size&quot;: 20, &quot;text&quot;: &quot;nine&quot;, &quot;colour&quot;: &quot;#0000ff&quot;, &quot;rotate&quot;: &quot;diagonal&quot;}, {&quot;size&quot;: 20, &quot;text&quot;: &quot;ten&quot;, &quot;colour&quot;: &quot;#0000ff&quot;, &quot;rotate&quot;: &quot;diagonal&quot;}]}}}</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-763">
+
+By <strong>Alex</strong> on <a href="open-flash-chart-ii-x-axis-label-rotations#comment-763" title="">Aug 5, 2008</a> | <a href="open-flash-chart-ii-x-axis-label-rotations#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>I&#8217;m trying to get this example running:<br />
+<a href="open-flash-chart-ii-x-axis-label-rotations" rel="nofollow ugc">http://pullmonkey.com/2008/8/5/open-flash-chart-ii-x-axis-label-rotations</a></p>
+<p>And I keep getting this error:<br />
+wrong number of arguments (4 for 3)</p>
+<p>Which appears to be triggered by the line:<br />
+     tmp &lt;&lt; XAxisLabel.new(text, &#8216;#0000ff&#8217;, 20, &#8216;diagonal&#8217;)</p>
+<p>Is there any kind of API documentation I can refer to?  I would really like to use this in my app.</p>
+<p>Thanks!</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-764">
+
+By <strong><a href='../../../index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="open-flash-chart-ii-x-axis-label-rotations#comment-764" title="">Aug 5, 2008</a> | <a href="open-flash-chart-ii-x-axis-label-rotations#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Alex &#8211; All of the documentation is &lt;a href=&quot;<a href="http://teethgrinder.co.uk/open-flash-chart-2/&quot;&gt;here&lt;/a&#038;gt" rel="nofollow ugc">http://teethgrinder.co.uk/open-flash-chart-2/&quot;&gt;here&lt;/a&#038;gt</a>;.  It is the PHP version and can easily be translated &#8212; see &lt;a href=&quot;<a href="http://harryseldon.thinkosphere.com/2008/10/23/radar-chart-example-with-ofc2#comment-667&quot;&gt;this" rel="nofollow ugc">http://harryseldon.thinkosphere.com/2008/10/23/radar-chart-example-with-ofc2#comment-667&quot;&gt;this</a> post&lt;/a&gt; for a nice example.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-765">
+
+By <strong>Allen</strong> on <a href="open-flash-chart-ii-x-axis-label-rotations#comment-765" title="">Aug 5, 2008</a> | <a href="open-flash-chart-ii-x-axis-label-rotations#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>I can&#8217;t get the labels to be diagonal or vertical on x axis. No matter what I try it&#8217;s always horizontal. Any ideas?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-766">
+
+By <strong>Mike</strong> on <a href="open-flash-chart-ii-x-axis-label-rotations#comment-766" title="">Aug 5, 2008</a> | <a href="open-flash-chart-ii-x-axis-label-rotations#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>I can&#8217;t get the labels to be diagonal or vertical on x axis too, please help</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-1020">
+
+By <strong>Piyush</strong> on <a href="open-flash-chart-ii-x-axis-label-rotations#comment-1020" title="">Sep 3, 2009</a> | <a href="open-flash-chart-ii-x-axis-label-rotations#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>I always run into trouble doing something which is not described in your examples. If there was a an api doc. it would have made all our lives very easy. Is there any chance of having an api doc here ?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-1021">
+
+By <strong>charlie</strong> on <a href="open-flash-chart-ii-x-axis-label-rotations#comment-1021" title="">Sep 3, 2009</a> | <a href="open-flash-chart-ii-x-axis-label-rotations#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Piyush &#8211; Everything is based on the examples here &#8211; <a href="http://teethgrinder.co.uk/open-flash-chart-2/" rel="nofollow">http://teethgrinder.co.uk/open-flash-chart-2/</a><br />
+The whole idea is to not have to duplicate documentation.  Is there anything in particular you need help with?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-1215">
+
+By <strong>Leftblank</strong> on <a href="open-flash-chart-ii-x-axis-label-rotations#comment-1215" title="">Sep 20, 2009</a> | <a href="open-flash-chart-ii-x-axis-label-rotations#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Any chance the failing diagonal x-axis labels will be fixed? Even the example here fails sadly&#8230; 🙁</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-1216">
+
+By <strong>Leftblank</strong> on <a href="open-flash-chart-ii-x-axis-label-rotations#comment-1216" title="">Sep 20, 2009</a> | <a href="open-flash-chart-ii-x-axis-label-rotations#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Doh, just use an integer (degrees) when making the XAxisLabel, like this;<br />
+tmp &lt;&lt; XAxisLabel.new(text, &#8216;#808080&#8217;, 10, 270)</p>
+<p>Just update your code and it *finally* works.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-3082">
+
+By <strong>The Ultimation</strong> on <a href="open-flash-chart-ii-x-axis-label-rotations#comment-3082" title="">Dec 4, 2009</a> | <a href="open-flash-chart-ii-x-axis-label-rotations#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>yeahhh good call Leftblank</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-5425">
+
+By <strong>Max</strong> on <a href="open-flash-chart-ii-x-axis-label-rotations#comment-5425" title="">Feb 16, 2010</a> | <a href="open-flash-chart-ii-x-axis-label-rotations#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hi there, i run this example but&#8230; Values of dots can be integers only? i need to output the created_at date and usernames, all this stuff is in a model &#8220;price_dynamics&#8221;. Any tips? How to output strings instead of integers? Please&#8230;</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-5432">
+
+By <strong>Max</strong> on <a href="open-flash-chart-ii-x-axis-label-rotations#comment-5432" title="">Feb 16, 2010</a> | <a href="open-flash-chart-ii-x-axis-label-rotations#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Ok, i&#8217;m done with labels</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		</ol>
+	
+	
+	
+
+	<p id="comments-closed">Sorry, comments for this entry are closed at this time.</p>
+</div>
+</div><!-- Post -->
+
+		        
+  
+
+	
+</div><!-- Content -->
+
+</div><!-- LeftColumn -->
+
+<div id="c2">
+
+   
+    <div id="sidebar">
+
+<div id="subscribe">
+<a href="../../../feed/index.html"><img src="../../../wp-content/themes/simple&#32;paper/images/rss.gif" alt="RSS-FEED" border="0" id="rss" /></a>
+<a href="../../../feed/index.html">subscribe to the feed</a><br clear="all" />
+</div><!-- subscribe rss -->
+
+<div id="topsearch">
+<form action="../../../index.html" method="post">
+<input type="text" value="Search..." name="s" id="ls" class="searchfield" onfocus="if (this.value == 'Search...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search...';}" />
+<input type="image" src="../../../wp-content/themes/simple&#32;paper/images/click.gif" id="submit" />
+</form>
+<br clear="all" />
+<br clear="all" />
+</div>
+    
+    	<ul>
+	<li id="tag_cloud-2" class="widget widget_tag_cloud"><h2 class="widgettitle">Tags</h2>
+<div class="tagcloud"><a href="../../../tag/net/index.html" class="tag-cloud-link tag-link-166 tag-link-position-1" style="font-size: 8pt;" aria-label=".net (2 items)">.net</a>
+<a href="../../../tag/activerecord/index.html" class="tag-cloud-link tag-link-54 tag-link-position-2" style="font-size: 8pt;" aria-label="activerecord (2 items)">activerecord</a>
+<a href="../../../tag/api/index.html" class="tag-cloud-link tag-link-220 tag-link-position-3" style="font-size: 10.40625pt;" aria-label="api (4 items)">api</a>
+<a href="../../../tag/biking/index.html" class="tag-cloud-link tag-link-219 tag-link-position-4" style="font-size: 10.40625pt;" aria-label="biking (4 items)">biking</a>
+<a href="../../../tag/business/index.html" class="tag-cloud-link tag-link-213 tag-link-position-5" style="font-size: 8pt;" aria-label="business (2 items)">business</a>
+<a href="../../../tag/c/index.html" class="tag-cloud-link tag-link-33 tag-link-position-6" style="font-size: 10.40625pt;" aria-label="c++ (4 items)">c++</a>
+<a href="../../../tag/charts/index.html" class="tag-cloud-link tag-link-42 tag-link-position-7" style="font-size: 18.171875pt;" aria-label="charts (25 items)">charts</a>
+<a href="../../../tag/cms/index.html" class="tag-cloud-link tag-link-60 tag-link-position-8" style="font-size: 12.046875pt;" aria-label="CMS (6 items)">CMS</a>
+<a href="../../../tag/curb/index.html" class="tag-cloud-link tag-link-190 tag-link-position-9" style="font-size: 8pt;" aria-label="curb (2 items)">curb</a>
+<a href="../../../tag/curl/index.html" class="tag-cloud-link tag-link-120 tag-link-position-10" style="font-size: 8pt;" aria-label="curl (2 items)">curl</a>
+<a href="../../../tag/dynamic/index.html" class="tag-cloud-link tag-link-56 tag-link-position-11" style="font-size: 8pt;" aria-label="dynamic (2 items)">dynamic</a>
+<a href="../../../tag/ece231/index.html" class="tag-cloud-link tag-link-34 tag-link-position-12" style="font-size: 10.40625pt;" aria-label="ece231 (4 items)">ece231</a>
+<a href="../../../tag/editor/index.html" class="tag-cloud-link tag-link-61 tag-link-position-13" style="font-size: 11.28125pt;" aria-label="editor (5 items)">editor</a>
+<a href="../../../tag/error/index.html" class="tag-cloud-link tag-link-46 tag-link-position-14" style="font-size: 9.3125pt;" aria-label="error (3 items)">error</a>
+<a href="../../../tag/flash/index.html" class="tag-cloud-link tag-link-41 tag-link-position-15" style="font-size: 17.84375pt;" aria-label="flash (23 items)">flash</a>
+<a href="../../../tag/fun/index.html" class="tag-cloud-link tag-link-23 tag-link-position-16" style="font-size: 11.28125pt;" aria-label="fun (5 items)">fun</a>
+<a href="../../../tag/gems/index.html" class="tag-cloud-link tag-link-44 tag-link-position-17" style="font-size: 8pt;" aria-label="gems (2 items)">gems</a>
+<a href="../../../tag/graphs/index.html" class="tag-cloud-link tag-link-52 tag-link-position-18" style="font-size: 18.390625pt;" aria-label="graphs (26 items)">graphs</a>
+<a href="../../../tag/httpi/index.html" class="tag-cloud-link tag-link-191 tag-link-position-19" style="font-size: 8pt;" aria-label="httpi (2 items)">httpi</a>
+<a href="../../../tag/java/index.html" class="tag-cloud-link tag-link-177 tag-link-position-20" style="font-size: 9.3125pt;" aria-label="java (3 items)">java</a>
+<a href="../../../tag/javascript/index.html" class="tag-cloud-link tag-link-215 tag-link-position-21" style="font-size: 10.40625pt;" aria-label="Javascript (4 items)">Javascript</a>
+<a href="../../../tag/linux/index.html" class="tag-cloud-link tag-link-221 tag-link-position-22" style="font-size: 8pt;" aria-label="Linux (2 items)">Linux</a>
+<a href="../../../tag/macromovers/index.html" class="tag-cloud-link tag-link-66 tag-link-position-23" style="font-size: 8pt;" aria-label="macromovers (2 items)">macromovers</a>
+<a href="../../../tag/mirah/index.html" class="tag-cloud-link tag-link-176 tag-link-position-24" style="font-size: 8pt;" aria-label="mirah (2 items)">mirah</a>
+<a href="../../../tag/ofc/index.html" class="tag-cloud-link tag-link-105 tag-link-position-25" style="font-size: 8pt;" aria-label="OFC (2 items)">OFC</a>
+<a href="../../../tag/open-flash-chart/index.html" class="tag-cloud-link tag-link-40 tag-link-position-26" style="font-size: 18.609375pt;" aria-label="open flash chart (27 items)">open flash chart</a>
+<a href="../../../tag/php/index.html" class="tag-cloud-link tag-link-216 tag-link-position-27" style="font-size: 9.3125pt;" aria-label="php (3 items)">php</a>
+<a href="../../../tag/plugin/index.html" class="tag-cloud-link tag-link-65 tag-link-position-28" style="font-size: 12.59375pt;" aria-label="plugin (7 items)">plugin</a>
+<a href="../../../tag/plugins/index.html" class="tag-cloud-link tag-link-218 tag-link-position-29" style="font-size: 9.3125pt;" aria-label="plugins (3 items)">plugins</a>
+<a href="../../../tag/prog/index.html" class="tag-cloud-link tag-link-35 tag-link-position-30" style="font-size: 9.3125pt;" aria-label="prog (3 items)">prog</a>
+<a href="../../../tag/project/index.html" class="tag-cloud-link tag-link-47 tag-link-position-31" style="font-size: 10.40625pt;" aria-label="project (4 items)">project</a>
+<a href="../../../tag/rails/index.html" class="tag-cloud-link tag-link-210 tag-link-position-32" style="font-size: 20.90625pt;" aria-label="rails (45 items)">rails</a>
+<a href="../../../tag/ruby/index.html" class="tag-cloud-link tag-link-211 tag-link-position-33" style="font-size: 22pt;" aria-label="ruby (57 items)">ruby</a>
+<a href="../../../tag/ruby-on-rails/index.html" class="tag-cloud-link tag-link-43 tag-link-position-34" style="font-size: 20.359375pt;" aria-label="ruby on rails (40 items)">ruby on rails</a>
+<a href="../../../tag/select-boxes/index.html" class="tag-cloud-link tag-link-57 tag-link-position-35" style="font-size: 8pt;" aria-label="select boxes (2 items)">select boxes</a>
+<a href="../../../tag/simple/index.html" class="tag-cloud-link tag-link-62 tag-link-position-36" style="font-size: 10.40625pt;" aria-label="simple (4 items)">simple</a>
+<a href="../../../tag/simplecms/index.html" class="tag-cloud-link tag-link-214 tag-link-position-37" style="font-size: 11.28125pt;" aria-label="SimpleCMS (5 items)">SimpleCMS</a>
+<a href="../../../tag/skizmo/index.html" class="tag-cloud-link tag-link-102 tag-link-position-38" style="font-size: 10.40625pt;" aria-label="skizmo (4 items)">skizmo</a>
+<a href="../../../tag/software/index.html" class="tag-cloud-link tag-link-48 tag-link-position-39" style="font-size: 8pt;" aria-label="software (2 items)">software</a>
+<a href="../../../tag/spreadsheet/index.html" class="tag-cloud-link tag-link-45 tag-link-position-40" style="font-size: 8pt;" aria-label="spreadsheet (2 items)">spreadsheet</a>
+<a href="../../../tag/tutorial/index.html" class="tag-cloud-link tag-link-50 tag-link-position-41" style="font-size: 16.75pt;" aria-label="tutorial (18 items)">tutorial</a>
+<a href="../../../tag/ubuntu/index.html" class="tag-cloud-link tag-link-150 tag-link-position-42" style="font-size: 8pt;" aria-label="ubuntu (2 items)">ubuntu</a>
+<a href="../../../tag/vin/index.html" class="tag-cloud-link tag-link-119 tag-link-position-43" style="font-size: 12.59375pt;" aria-label="VIN (7 items)">VIN</a>
+<a href="../../../tag/vin-api/index.html" class="tag-cloud-link tag-link-159 tag-link-position-44" style="font-size: 12.046875pt;" aria-label="vin api (6 items)">vin api</a>
+<a href="../../../tag/xml/index.html" class="tag-cloud-link tag-link-165 tag-link-position-45" style="font-size: 9.3125pt;" aria-label="xml (3 items)">xml</a></div>
+</li>
+<li id="categories-524386351" class="widget widget_categories"><h2 class="widgettitle">Topics</h2>
+
+			<ul>
+					<li class="cat-item cat-item-179"><a href="../../../category/android/index.html">Android</a>
+</li>
+	<li class="cat-item cat-item-118"><a href="../../../category/api/index.html">api</a>
+</li>
+	<li class="cat-item cat-item-67"><a href="../../../category/biking/index.html">biking</a>
+</li>
+	<li class="cat-item cat-item-37"><a href="../../../category/blog/index.html">blog</a>
+</li>
+	<li class="cat-item cat-item-27"><a href="../../../category/business/index.html">business</a>
+</li>
+	<li class="cat-item cat-item-32"><a href="../../../category/c-c/index.html">C / C++</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="../../../category/development/index.html">development</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="../../../category/games/index.html">games</a>
+</li>
+	<li class="cat-item cat-item-139"><a href="../../../category/graphics/index.html">Graphics</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="../../../category/home/index.html">Home</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="../../../category/ie-hacks/index.html">IE hacks</a>
+</li>
+	<li class="cat-item cat-item-31"><a href="../../../category/javascript/index.html">Javascript</a>
+</li>
+	<li class="cat-item cat-item-149"><a href="../../../category/linux/index.html">Linux</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="../../../category/me/index.html">me</a>
+</li>
+	<li class="cat-item cat-item-26"><a href="../../../category/open-flash-chart-graphs/index.html">Open Flash Chart Graphs</a>
+</li>
+	<li class="cat-item cat-item-29"><a href="../../../category/opengl/index.html">opengl</a>
+</li>
+	<li class="cat-item cat-item-36"><a href="../../../category/php/index.html">php</a>
+</li>
+	<li class="cat-item cat-item-51"><a href="../../../category/plugins/index.html">plugins</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="../../../category/projects/index.html">projects</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="../../../category/rails/index.html">rails</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="../../../category/railsconf/index.html">railsconf</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="../../../category/ruby/index.html">ruby</a>
+</li>
+	<li class="cat-item cat-item-28"><a href="../../../category/simplecms/index.html">SimpleCMS</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="../../../category/tutorials/index.html">tutorials</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="../../../category/uncategorized/index.html">Uncategorized</a>
+</li>
+			</ul>
+
+			</li>
+
+		<li id="recent-posts-2" class="widget widget_recent_entries">
+		<h2 class="widgettitle">Recent Posts</h2>
+
+		<ul>
+											<li>
+					<a href="../../../index.html?p=57726">Dynamic Select Boxes &#8211; Ruby on Rails 3</a>
+									</li>
+											<li>
+					<a href="../../../index.html?p=57715">VIN API &#8211; Do you know about the complete data set?</a>
+									</li>
+											<li>
+					<a href="../../../index.html?p=57712">Using Ruby to read from a MagTek USB Card Reader</a>
+									</li>
+											<li>
+					<a href="../../../index.html?p=57708">Signature Pad in Linux</a>
+									</li>
+											<li>
+					<a href="../../../index.html?p=57705">Using HTTPI with Curb to do multipart file uploads with spnego</a>
+									</li>
+					</ul>
+
+		</li>
+<li id="recent-comments-2" class="widget widget_recent_comments"><h2 class="widgettitle">Recent Comments</h2>
+<ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">`Drew</span> on <a href="../../../2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/index.html#comment-24291">Dynamic Select Boxes &#8211; Ruby on Rails 3</a></li><li class="recentcomments"><span class="comment-author-link">Bardach</span> on <a href="../../../2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/index.html#comment-24290">Dynamic Select Boxes &#8211; Ruby on Rails 3</a></li><li class="recentcomments"><span class="comment-author-link">Bardach</span> on <a href="../../../2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/index.html#comment-24289">Dynamic Select Boxes &#8211; Ruby on Rails 3</a></li><li class="recentcomments"><span class="comment-author-link">Dar_bok</span> on <a href="../../../2007/04/30/how-i-got-gta-san-andreas-to-work-with-a-crappy-os-vista/comment-page-2/index.html#comment-20844">How I got GTA San Andreas to Work with (a crappy OS) Vista</a></li><li class="recentcomments"><span class="comment-author-link">Anirudha Pendakur</span> on <a href="../../../2012/07/25/using-httpi-with-curb-to-do-multipart-file-uploads-with-spnego/comment-page-1/index.html#comment-19583">Using HTTPI with Curb to do multipart file uploads with spnego</a></li></ul></li>
+<li id="archives-2" class="widget widget_archive"><h2 class="widgettitle">Archives</h2>
+
+			<ul>
+					<li><a href='../../../2012/08/index.html'>August 2012</a></li>
+	<li><a href='../../../2012/07/index.html'>July 2012</a></li>
+	<li><a href='../../../2012/05/index.html'>May 2012</a></li>
+	<li><a href='../../../2012/04/index.html'>April 2012</a></li>
+	<li><a href='../../../2012/03/index.html'>March 2012</a></li>
+	<li><a href='../../../2011/11/index.html'>November 2011</a></li>
+	<li><a href='../../../2011/10/index.html'>October 2011</a></li>
+	<li><a href='../../../2011/05/index.html'>May 2011</a></li>
+	<li><a href='../../../2011/03/index.html'>March 2011</a></li>
+	<li><a href='../../../2011/02/index.html'>February 2011</a></li>
+	<li><a href='../../../2011/01/index.html'>January 2011</a></li>
+	<li><a href='../../../2010/11/index.html'>November 2010</a></li>
+	<li><a href='../../../2010/09/index.html'>September 2010</a></li>
+	<li><a href='../../../2010/04/index.html'>April 2010</a></li>
+	<li><a href='../../../2010/02/index.html'>February 2010</a></li>
+	<li><a href='../../../2010/01/index.html'>January 2010</a></li>
+	<li><a href='../../../2009/12/index.html'>December 2009</a></li>
+	<li><a href='../../../2009/10/index.html'>October 2009</a></li>
+	<li><a href='../../../2009/09/index.html'>September 2009</a></li>
+	<li><a href='../../../2009/08/index.html'>August 2009</a></li>
+	<li><a href='../../../2009/04/index.html'>April 2009</a></li>
+	<li><a href='../../../2009/03/index.html'>March 2009</a></li>
+	<li><a href='../../../2009/02/index.html'>February 2009</a></li>
+	<li><a href='../../../2009/01/index.html'>January 2009</a></li>
+	<li><a href='../../10/index.html'>October 2008</a></li>
+	<li><a href='../../09/index.html'>September 2008</a></li>
+	<li><a href='../../08/index.html'>August 2008</a></li>
+	<li><a href='../../07/index.html'>July 2008</a></li>
+	<li><a href='../../04/index.html'>April 2008</a></li>
+	<li><a href='../../03/index.html'>March 2008</a></li>
+	<li><a href='../../02/index.html'>February 2008</a></li>
+	<li><a href='../../01/index.html'>January 2008</a></li>
+	<li><a href='../../../2007/12/index.html'>December 2007</a></li>
+	<li><a href='../../../2007/10/index.html'>October 2007</a></li>
+	<li><a href='../../../2007/09/index.html'>September 2007</a></li>
+	<li><a href='../../../2007/08/index.html'>August 2007</a></li>
+	<li><a href='../../../2007/06/index.html'>June 2007</a></li>
+	<li><a href='../../../2007/05/index.html'>May 2007</a></li>
+	<li><a href='../../../2007/04/index.html'>April 2007</a></li>
+			</ul>
+
+			</li>
+	</ul>
+    
+    </div><!-- Sidebar -->
+
+</div><!-- Rightcolumn -->
+
+
+
+<br clear="all" />
+
+<div id="footer">
+<p>Copyright 2009, powered by <a href="http://www.wordpress.org/">WordPress</a></p>
+</div><!-- Footer -->
+
+</div><!-- Wrapper -->
+
+<br clear="all" />
+</div><!-- Container -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3308745-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Open Flash Chart II &#8211; OFC Object Creators	</title>
+	<atom:link href="http://pullmonkey.com/2009/01/12/open-flash-chart-ii-ofc-object-creators/feed/" rel="self" type="application/rss+xml" />
+	<link>http://pullmonkey.com/2009/01/12/open-flash-chart-ii-ofc-object-creators/</link>
+	<description></description>
+	<lastBuildDate>Thu, 15 Jul 2010 02:22:59 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6</generator>
+	<item>
+		<title>
+		By: Wheat		</title>
+		<link>http://pullmonkey.com/2009/01/12/open-flash-chart-ii-ofc-object-creators/comment-page-1/#comment-10822</link>
+
+		<dc:creator><![CDATA[Wheat]]></dc:creator>
+		<pubDate>Thu, 15 Jul 2010 02:22:59 +0000</pubDate>
+		<guid isPermaLink="false">/2009/01/12/open-flash-chart-ii-ofc-object-creators#comment-10822</guid>
+
+					<description><![CDATA[Hi,
+How can I set tooltip in following situation
+In Rails App
+I have a controll and write some codes like 
+ def graph_code 
+ chart = OpenFlashChart.new
+ line = Line.new
+ ....
+ chart.add_element(line)
+ chart.set_tooltip(&quot;#x_label#&quot;)
+...
+end
+
+How can I set the tip to the value of x_label 
+I get some like 
+.......  
+&quot;tip&quot;: &quot;#x_label#&quot;
+....
+And it just doesn&#039;t work.
+What should I do?
+
+Thanks~]]></description>
+			<content:encoded><![CDATA[<p>Hi,<br />
+How can I set tooltip in following situation<br />
+In Rails App<br />
+I have a controll and write some codes like<br />
+ def graph_code<br />
+ chart = OpenFlashChart.new<br />
+ line = Line.new<br />
+ &#8230;.<br />
+ chart.add_element(line)<br />
+ chart.set_tooltip(&#8220;#x_label#&#8221;)<br />
+&#8230;<br />
+end</p>
+<p>How can I set the tip to the value of x_label<br />
+I get some like<br />
+&#8230;&#8230;.<br />
+&#8220;tip&#8221;: &#8220;#x_label#&#8221;<br />
+&#8230;.<br />
+And it just doesn&#8217;t work.<br />
+What should I do?</p>
+<p>Thanks~</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: diarmuid		</title>
+		<link>http://pullmonkey.com/2009/01/12/open-flash-chart-ii-ofc-object-creators/comment-page-1/#comment-905</link>
+
+		<dc:creator><![CDATA[diarmuid]]></dc:creator>
+		<pubDate>Mon, 12 Jan 2009 17:50:00 +0000</pubDate>
+		<guid isPermaLink="false">/2009/01/12/open-flash-chart-ii-ofc-object-creators#comment-905</guid>
+
+					<description><![CDATA[Hi
+
+ Unsure where else to post any questions about the OFC I figured I would try here. If I am wrong please point me to the correct location.
+
+I am a beginner but I have a basic test_it controller up and running. When I tried to integrate it into some existing code I came up against some issues.
+
+First all errors now see to result in
+
+&#034;undefined method `rewrite&#039; for &#034;%2Fhome%2Fgraph_code&#034;:String&#034;
+
+It took me a while to figure out that the error was some where else but once I figured out that I was able to debug.
+
+It seems in my code I had some non-RESTful link_to statements which were previously working:
+
+&#060;filter:code attributes=lang=&#034;ruby&#034;&#062;
+&#060;%= link_to &#039;Add workout&#039;, {:controller =&#062; &#039;traininglogs&#039; , :action =&#062; :new } %&#062;
+&#060; /filter:code&#062;
+
+Once I changed this to :
+&#060;filter:code attributes=lang=&#034;ruby&#034;&#062;
+&#060;%= link_to &#039;Add workout&#039;, new_traininglog_path %&#062;
+&#060; /filter:code&#062;
+
+This error disappeared. Why would the former syntax be an issue?
+
+Unfortunately this did not completely fix my code. I also had a similar syntax but inside a loop
+
+&#060;filter:code attributes=lang=&#034;ruby&#034;&#062;
+&#060;% @traininglogs.sort_by{ &#124;i&#124; i[:dateandtime]}.reverse.each do &#124;traininglog&#124; %&#062;
+&#060;tr&#062;
+  &#060;td&#062;&#060;%=h traininglog.duration %&#062;&#060;/td&#062;
+  &#060;td&#062;&#060;%= link_to &#039;Edit&#039;, {:controller =&#062; &#039;traininglogs&#039; , :action =&#062; :edit , :id =&#062; traininglog.id } %&#062;&#060;/td&#062;
+&#060;/tr&#062;
+&#060;% end %&#062;
+&#060; /filter:code&#062;
+
+I cannot for the life of me figure out how to &#034;correct&#034; this syntax.
+I tried
+
+&#060;filter:code attributes=lang=&#034;ruby&#034;&#062;
+  &#060;td&#062;&#060;%= link_to &#039;Edit&#039;, edit_traininglog_path  %&#062;&#060;/td&#062;
+&#060; /filter:code&#062;
+and 101 other combinations but I cannot get remove the error (same as above)
+
+Any ideas or thoughts?
+
+Good work on the code !]]></description>
+			<content:encoded><![CDATA[<p>Hi</p>
+<p> Unsure where else to post any questions about the OFC I figured I would try here. If I am wrong please point me to the correct location.</p>
+<p>I am a beginner but I have a basic test_it controller up and running. When I tried to integrate it into some existing code I came up against some issues.</p>
+<p>First all errors now see to result in</p>
+<p>&quot;undefined method `rewrite&#8217; for &quot;%2Fhome%2Fgraph_code&quot;:String&quot;</p>
+<p>It took me a while to figure out that the error was some where else but once I figured out that I was able to debug.</p>
+<p>It seems in my code I had some non-RESTful link_to statements which were previously working:</p>
+<p>&lt;filter:code attributes=lang=&quot;ruby&quot;&gt;<br />
+&lt;%= link_to &#8216;Add workout&#8217;, {:controller =&gt; &#8216;traininglogs&#8217; , :action =&gt; :new } %&gt;<br />
+&lt; /filter:code&gt;</p>
+<p>Once I changed this to :<br />
+&lt;filter:code attributes=lang=&quot;ruby&quot;&gt;<br />
+&lt;%= link_to &#8216;Add workout&#8217;, new_traininglog_path %&gt;<br />
+&lt; /filter:code&gt;</p>
+<p>This error disappeared. Why would the former syntax be an issue?</p>
+<p>Unfortunately this did not completely fix my code. I also had a similar syntax but inside a loop</p>
+<p>&lt;filter:code attributes=lang=&quot;ruby&quot;&gt;<br />
+&lt;% @traininglogs.sort_by{ |i| i[:dateandtime]}.reverse.each do |traininglog| %&gt;<br />
+&lt;tr&gt;<br />
+  &lt;td&gt;&lt;%=h traininglog.duration %&gt;&lt;/td&gt;<br />
+  &lt;td&gt;&lt;%= link_to &#8216;Edit&#8217;, {:controller =&gt; &#8216;traininglogs&#8217; , :action =&gt; :edit , :id =&gt; traininglog.id } %&gt;&lt;/td&gt;<br />
+&lt;/tr&gt;<br />
+&lt;% end %&gt;<br />
+&lt; /filter:code&gt;</p>
+<p>I cannot for the life of me figure out how to &quot;correct&quot; this syntax.<br />
+I tried</p>
+<p>&lt;filter:code attributes=lang=&quot;ruby&quot;&gt;<br />
+  &lt;td&gt;&lt;%= link_to &#8216;Edit&#8217;, edit_traininglog_path  %&gt;&lt;/td&gt;<br />
+&lt; /filter:code&gt;<br />
+and 101 other combinations but I cannot get remove the error (same as above)</p>
+<p>Any ideas or thoughts?</p>
+<p>Good work on the code !</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: charlie		</title>
+		<link>http://pullmonkey.com/2009/01/12/open-flash-chart-ii-ofc-object-creators/comment-page-1/#comment-906</link>
+
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Mon, 12 Jan 2009 17:50:00 +0000</pubDate>
+		<guid isPermaLink="false">/2009/01/12/open-flash-chart-ii-ofc-object-creators#comment-906</guid>
+
+					<description><![CDATA[@diarmuid - this is fine - I am not sure this is OFC related, but nevertheless -
+
+The basics:
+1) What version of rails ?
+2) Are you using the latest version of OFC II ?
+
+As for the edit_traininglog_path(), you need to pass in the object that will require editing - edit_traininglog_path(traininglog).
+
+I am not sure how the OFC plugin would be effecting this?  Can you post the output of rake routes?
+
+Also, when you use filter:code, make sure to remove the space between &#060; and /filter:code&#062; at the end of your code blocks ;)
+
+Good luck, let me know what you find.]]></description>
+			<content:encoded><![CDATA[<p>@diarmuid &#8211; this is fine &#8211; I am not sure this is OFC related, but nevertheless &#8211;</p>
+<p>The basics:<br />
+1) What version of rails ?<br />
+2) Are you using the latest version of OFC II ?</p>
+<p>As for the edit_traininglog_path(), you need to pass in the object that will require editing &#8211; edit_traininglog_path(traininglog).</p>
+<p>I am not sure how the OFC plugin would be effecting this?  Can you post the output of rake routes?</p>
+<p>Also, when you use filter:code, make sure to remove the space between &lt; and /filter:code&gt; at the end of your code blocks 😉</p>
+<p>Good luck, let me know what you find.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: diarmuid		</title>
+		<link>http://pullmonkey.com/2009/01/12/open-flash-chart-ii-ofc-object-creators/comment-page-1/#comment-907</link>
+
+		<dc:creator><![CDATA[diarmuid]]></dc:creator>
+		<pubDate>Mon, 12 Jan 2009 17:50:00 +0000</pubDate>
+		<guid isPermaLink="false">/2009/01/12/open-flash-chart-ii-ofc-object-creators#comment-907</guid>
+
+					<description><![CDATA[Charlie
+
+ I am using Rails 2.2.2 on Mac OSX 10.5.6. I installed OFC from git 2 days ago and according to the readme it&#039;s &#034;OpenFlashChart  Version 2.0.0  11/14/2008 &#034;
+
+I was passing the traininglog as an argument but that didn&#039;t work either.
+
+The routes is one area that I am not confident in so it&#039;s quite possible the error is there
+
+&#060;filter:code&#062;
+$ rake routes
+(in /Users/diarmuid/Documents/Rails/coachconnect)
+                      root        /                                {:controller=&#062;&#034;home&#034;, :action=&#062;&#034;index&#034;}
+                    logout        /logout                          {:controller=&#062;&#034;sessions&#034;, :action=&#062;&#034;destroy&#034;}
+                     login        /login                           {:controller=&#062;&#034;sessions&#034;, :action=&#062;&#034;new&#034;}
+                  register        /register                        {:controller=&#062;&#034;users&#034;, :action=&#062;&#034;create&#034;}
+                    signup        /signup                          {:controller=&#062;&#034;users&#034;, :action=&#062;&#034;new&#034;}
+                     users GET    /users                           {:controller=&#062;&#034;users&#034;, :action=&#062;&#034;index&#034;}
+           formatted_users GET    /users.:format                   {:controller=&#062;&#034;users&#034;, :action=&#062;&#034;index&#034;}
+                           POST   /users                           {:controller=&#062;&#034;users&#034;, :action=&#062;&#034;create&#034;}
+                           POST   /users.:format                   {:controller=&#062;&#034;users&#034;, :action=&#062;&#034;create&#034;}
+                  new_user GET    /users/new                       {:controller=&#062;&#034;users&#034;, :action=&#062;&#034;new&#034;}
+        formatted_new_user GET    /users/new.:format               {:controller=&#062;&#034;users&#034;, :action=&#062;&#034;new&#034;}
+                 edit_user GET    /users/:id/edit                  {:controller=&#062;&#034;users&#034;, :action=&#062;&#034;edit&#034;}
+       formatted_edit_user GET    /users/:id/edit.:format          {:controller=&#062;&#034;users&#034;, :action=&#062;&#034;edit&#034;}
+                      user GET    /users/:id                       {:controller=&#062;&#034;users&#034;, :action=&#062;&#034;show&#034;}
+            formatted_user GET    /users/:id.:format               {:controller=&#062;&#034;users&#034;, :action=&#062;&#034;show&#034;}
+                           PUT    /users/:id                       {:controller=&#062;&#034;users&#034;, :action=&#062;&#034;update&#034;}
+                           PUT    /users/:id.:format               {:controller=&#062;&#034;users&#034;, :action=&#062;&#034;update&#034;}
+                           DELETE /users/:id                       {:controller=&#062;&#034;users&#034;, :action=&#062;&#034;destroy&#034;}
+                           DELETE /users/:id.:format               {:controller=&#062;&#034;users&#034;, :action=&#062;&#034;destroy&#034;}
+                   session POST   /session                         {:controller=&#062;&#034;sessions&#034;, :action=&#062;&#034;create&#034;}
+         formatted_session POST   /session.:format                 {:controller=&#062;&#034;sessions&#034;, :action=&#062;&#034;create&#034;}
+               new_session GET    /session/new                     {:controller=&#062;&#034;sessions&#034;, :action=&#062;&#034;new&#034;}
+     formatted_new_session GET    /session/new.:format             {:controller=&#062;&#034;sessions&#034;, :action=&#062;&#034;new&#034;}
+              edit_session GET    /session/edit                    {:controller=&#062;&#034;sessions&#034;, :action=&#062;&#034;edit&#034;}
+    formatted_edit_session GET    /session/edit.:format            {:controller=&#062;&#034;sessions&#034;, :action=&#062;&#034;edit&#034;}
+                           GET    /session                         {:controller=&#062;&#034;sessions&#034;, :action=&#062;&#034;show&#034;}
+                           GET    /session.:format                 {:controller=&#062;&#034;sessions&#034;, :action=&#062;&#034;show&#034;}
+                           PUT    /session                         {:controller=&#062;&#034;sessions&#034;, :action=&#062;&#034;update&#034;}
+                           PUT    /session.:format                 {:controller=&#062;&#034;sessions&#034;, :action=&#062;&#034;update&#034;}
+                           DELETE /session                         {:controller=&#062;&#034;sessions&#034;, :action=&#062;&#034;destroy&#034;}
+                           DELETE /session.:format                 {:controller=&#062;&#034;sessions&#034;, :action=&#062;&#034;destroy&#034;}
+                  athletes GET    /athletes                        {:controller=&#062;&#034;athletes&#034;, :action=&#062;&#034;index&#034;}
+        formatted_athletes GET    /athletes.:format                {:controller=&#062;&#034;athletes&#034;, :action=&#062;&#034;index&#034;}
+                           POST   /athletes                        {:controller=&#062;&#034;athletes&#034;, :action=&#062;&#034;create&#034;}
+                           POST   /athletes.:format                {:controller=&#062;&#034;athletes&#034;, :action=&#062;&#034;create&#034;}
+               new_athlete GET    /athletes/new                    {:controller=&#062;&#034;athletes&#034;, :action=&#062;&#034;new&#034;}
+     formatted_new_athlete GET    /athletes/new.:format            {:controller=&#062;&#034;athletes&#034;, :action=&#062;&#034;new&#034;}
+              edit_athlete GET    /athletes/:id/edit               {:controller=&#062;&#034;athletes&#034;, :action=&#062;&#034;edit&#034;}
+    formatted_edit_athlete GET    /athletes/:id/edit.:format       {:controller=&#062;&#034;athletes&#034;, :action=&#062;&#034;edit&#034;}
+                   athlete GET    /athletes/:id                    {:controller=&#062;&#034;athletes&#034;, :action=&#062;&#034;show&#034;}
+         formatted_athlete GET    /athletes/:id.:format            {:controller=&#062;&#034;athletes&#034;, :action=&#062;&#034;show&#034;}
+                           PUT    /athletes/:id                    {:controller=&#062;&#034;athletes&#034;, :action=&#062;&#034;update&#034;}
+                           PUT    /athletes/:id.:format            {:controller=&#062;&#034;athletes&#034;, :action=&#062;&#034;update&#034;}
+                           DELETE /athletes/:id                    {:controller=&#062;&#034;athletes&#034;, :action=&#062;&#034;destroy&#034;}
+                           DELETE /athletes/:id.:format            {:controller=&#062;&#034;athletes&#034;, :action=&#062;&#034;destroy&#034;}
+              traininglogs GET    /traininglogs                    {:controller=&#062;&#034;traininglogs&#034;, :action=&#062;&#034;index&#034;}
+    formatted_traininglogs GET    /traininglogs.:format            {:controller=&#062;&#034;traininglogs&#034;, :action=&#062;&#034;index&#034;}
+                           POST   /traininglogs                    {:controller=&#062;&#034;traininglogs&#034;, :action=&#062;&#034;create&#034;}
+                           POST   /traininglogs.:format            {:controller=&#062;&#034;traininglogs&#034;, :action=&#062;&#034;create&#034;}
+           new_traininglog GET    /traininglogs/new                {:controller=&#062;&#034;traininglogs&#034;, :action=&#062;&#034;new&#034;}
+ formatted_new_traininglog GET    /traininglogs/new.:format        {:controller=&#062;&#034;traininglogs&#034;, :action=&#062;&#034;new&#034;}
+          edit_traininglog GET    /traininglogs/:id/edit           {:controller=&#062;&#034;traininglogs&#034;, :action=&#062;&#034;edit&#034;}
+formatted_edit_traininglog GET    /traininglogs/:id/edit.:format   {:controller=&#062;&#034;traininglogs&#034;, :action=&#062;&#034;edit&#034;}
+               traininglog GET    /traininglogs/:id                {:controller=&#062;&#034;traininglogs&#034;, :action=&#062;&#034;show&#034;}
+     formatted_traininglog GET    /traininglogs/:id.:format        {:controller=&#062;&#034;traininglogs&#034;, :action=&#062;&#034;show&#034;}
+                           PUT    /traininglogs/:id                {:controller=&#062;&#034;traininglogs&#034;, :action=&#062;&#034;update&#034;}
+                           PUT    /traininglogs/:id.:format        {:controller=&#062;&#034;traininglogs&#034;, :action=&#062;&#034;update&#034;}
+                           DELETE /traininglogs/:id                {:controller=&#062;&#034;traininglogs&#034;, :action=&#062;&#034;destroy&#034;}
+                           DELETE /traininglogs/:id.:format        {:controller=&#062;&#034;traininglogs&#034;, :action=&#062;&#034;destroy&#034;}
+                   coaches GET    /coaches                         {:controller=&#062;&#034;coaches&#034;, :action=&#062;&#034;index&#034;}
+         formatted_coaches GET    /coaches.:format                 {:controller=&#062;&#034;coaches&#034;, :action=&#062;&#034;index&#034;}
+                           POST   /coaches                         {:controller=&#062;&#034;coaches&#034;, :action=&#062;&#034;create&#034;}
+                           POST   /coaches.:format                 {:controller=&#062;&#034;coaches&#034;, :action=&#062;&#034;create&#034;}
+                 new_coach GET    /coaches/new                     {:controller=&#062;&#034;coaches&#034;, :action=&#062;&#034;new&#034;}
+       formatted_new_coach GET    /coaches/new.:format             {:controller=&#062;&#034;coaches&#034;, :action=&#062;&#034;new&#034;}
+                edit_coach GET    /coaches/:id/edit                {:controller=&#062;&#034;coaches&#034;, :action=&#062;&#034;edit&#034;}
+      formatted_edit_coach GET    /coaches/:id/edit.:format        {:controller=&#062;&#034;coaches&#034;, :action=&#062;&#034;edit&#034;}
+                     coach GET    /coaches/:id                     {:controller=&#062;&#034;coaches&#034;, :action=&#062;&#034;show&#034;}
+           formatted_coach GET    /coaches/:id.:format             {:controller=&#062;&#034;coaches&#034;, :action=&#062;&#034;show&#034;}
+                           PUT    /coaches/:id                     {:controller=&#062;&#034;coaches&#034;, :action=&#062;&#034;update&#034;}
+                           PUT    /coaches/:id.:format             {:controller=&#062;&#034;coaches&#034;, :action=&#062;&#034;update&#034;}
+                           DELETE /coaches/:id                     {:controller=&#062;&#034;coaches&#034;, :action=&#062;&#034;destroy&#034;}
+                           DELETE /coaches/:id.:format             {:controller=&#062;&#034;coaches&#034;, :action=&#062;&#034;destroy&#034;}
+                      home        /                                {:controller=&#062;&#034;home&#034;, :action=&#062;&#034;index&#034;}
+                                  /:controller/:action/:id
+                                  /:controller/:action/:id.:format
+
+&#060;/filter:code&#062;
+
+and just for completeness, here is the error :
+
+&#060;filter:code&#062;
+ NoMethodError in Home#index
+
+Showing app/views/home/index.html.erb where line #46 raised:
+
+undefined method `rewrite&#039; for &#034;%2Fhome%2Fgraph_code&#034;:String
+
+Extracted source (around line #46):
+
+43:   &#060;td&#062;&#060;%=h traininglog.activity %&#062;&#060;/td&#062;
+44:   &#060;td&#062;&#060;%=h traininglog.length %&#062;&#060;/td&#062;
+45:   &#060;td&#062;&#060;%=h traininglog.duration %&#062;&#060;/td&#062;
+46:   &#060;td&#062;&#060;%= link_to &#039;Edit&#039;, edit_traininglog_path  %&#062;&#060;/td&#062;
+47: &#060;/tr&#062;
+48: &#060;% end %&#062;
+49: &#060;/table&#062;
+
+RAILS_ROOT: /Users/diarmuid/Documents/Rails/coachconnect
+Application Trace &#124; Framework Trace &#124; Full Trace
+
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:626:in `url_for&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/helpers/url_helper.rb:85:in `send&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/helpers/url_helper.rb:85:in `url_for&#039;
+(eval):16:in `edit_traininglog_path&#039;
+app/views/home/index.html.erb:46
+app/views/home/index.html.erb:40:in `each&#039;
+app/views/home/index.html.erb:40
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:39:in `send&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:39:in `render&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/template.rb:73:in `render_template&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:256:in `render&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1174:in `render_for_file&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:896:in `render_without_benchmark&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render&#039;
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:868:in `render_without_benchmark&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render&#039;
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1248:in `default_render&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1254:in `perform_action_without_filters&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action&#039;
+/Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache&#039;
+/Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process&#039;
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking&#039;
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load&#039;
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in&#039;
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load&#039;
+/Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require&#039;
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in&#039;
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require&#039;
+/Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:76:in `process&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `synchronize&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `process&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require&#039;
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require&#039;
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require&#039;
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require&#039;
+script/server:3
+
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:626:in `url_for&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/helpers/url_helper.rb:85:in `send&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/helpers/url_helper.rb:85:in `url_for&#039;
+(eval):16:in `edit_traininglog_path&#039;
+app/views/home/index.html.erb:46
+app/views/home/index.html.erb:40:in `each&#039;
+app/views/home/index.html.erb:40
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:39:in `send&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:39:in `render&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/template.rb:73:in `render_template&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:256:in `render&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1174:in `render_for_file&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:896:in `render_without_benchmark&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render&#039;
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:868:in `render_without_benchmark&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render&#039;
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1248:in `default_render&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1254:in `perform_action_without_filters&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action&#039;
+/Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache&#039;
+/Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi&#039;
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:76:in `process&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `synchronize&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `process&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run&#039;
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking&#039;
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load&#039;
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in&#039;
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load&#039;
+/Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require&#039;
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require&#039;
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require&#039;
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in&#039;
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require&#039;
+/Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require&#039;
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require&#039;
+script/server:3
+
+Request
+
+Parameters:
+
+None
+
+Show session dump
+
+---
+:return_to:
+:user_id: 9
+:csrf_id: 9260c4aabafa1933eb7be31c1ca026f2
+flash: !map:ActionController::Flash::FlashHash {}
+
+
+Response
+
+Headers:
+
+{&#034;cookie&#034;=&#062;[],
+ &#034;Content-Type&#034;=&#062;&#034;text/html&#034;,
+ &#034;Cache-Control&#034;=&#062;&#034;no-cache&#034;}
+&#060;/filter:code&#062;]]></description>
+			<content:encoded><![CDATA[<p>Charlie</p>
+<p> I am using Rails 2.2.2 on Mac OSX 10.5.6. I installed OFC from git 2 days ago and according to the readme it&#8217;s &quot;OpenFlashChart  Version 2.0.0  11/14/2008 &quot;</p>
+<p>I was passing the traininglog as an argument but that didn&#8217;t work either.</p>
+<p>The routes is one area that I am not confident in so it&#8217;s quite possible the error is there</p>
+<p>&lt;filter:code&gt;<br />
+$ rake routes<br />
+(in /Users/diarmuid/Documents/Rails/coachconnect)<br />
+                      root        /                                {:controller=&gt;&quot;home&quot;, :action=&gt;&quot;index&quot;}<br />
+                    logout        /logout                          {:controller=&gt;&quot;sessions&quot;, :action=&gt;&quot;destroy&quot;}<br />
+                     login        /login                           {:controller=&gt;&quot;sessions&quot;, :action=&gt;&quot;new&quot;}<br />
+                  register        /register                        {:controller=&gt;&quot;users&quot;, :action=&gt;&quot;create&quot;}<br />
+                    signup        /signup                          {:controller=&gt;&quot;users&quot;, :action=&gt;&quot;new&quot;}<br />
+                     users GET    /users                           {:controller=&gt;&quot;users&quot;, :action=&gt;&quot;index&quot;}<br />
+           formatted_users GET    /users.:format                   {:controller=&gt;&quot;users&quot;, :action=&gt;&quot;index&quot;}<br />
+                           POST   /users                           {:controller=&gt;&quot;users&quot;, :action=&gt;&quot;create&quot;}<br />
+                           POST   /users.:format                   {:controller=&gt;&quot;users&quot;, :action=&gt;&quot;create&quot;}<br />
+                  new_user GET    /users/new                       {:controller=&gt;&quot;users&quot;, :action=&gt;&quot;new&quot;}<br />
+        formatted_new_user GET    /users/new.:format               {:controller=&gt;&quot;users&quot;, :action=&gt;&quot;new&quot;}<br />
+                 edit_user GET    /users/:id/edit                  {:controller=&gt;&quot;users&quot;, :action=&gt;&quot;edit&quot;}<br />
+       formatted_edit_user GET    /users/:id/edit.:format          {:controller=&gt;&quot;users&quot;, :action=&gt;&quot;edit&quot;}<br />
+                      user GET    /users/:id                       {:controller=&gt;&quot;users&quot;, :action=&gt;&quot;show&quot;}<br />
+            formatted_user GET    /users/:id.:format               {:controller=&gt;&quot;users&quot;, :action=&gt;&quot;show&quot;}<br />
+                           PUT    /users/:id                       {:controller=&gt;&quot;users&quot;, :action=&gt;&quot;update&quot;}<br />
+                           PUT    /users/:id.:format               {:controller=&gt;&quot;users&quot;, :action=&gt;&quot;update&quot;}<br />
+                           DELETE /users/:id                       {:controller=&gt;&quot;users&quot;, :action=&gt;&quot;destroy&quot;}<br />
+                           DELETE /users/:id.:format               {:controller=&gt;&quot;users&quot;, :action=&gt;&quot;destroy&quot;}<br />
+                   session POST   /session                         {:controller=&gt;&quot;sessions&quot;, :action=&gt;&quot;create&quot;}<br />
+         formatted_session POST   /session.:format                 {:controller=&gt;&quot;sessions&quot;, :action=&gt;&quot;create&quot;}<br />
+               new_session GET    /session/new                     {:controller=&gt;&quot;sessions&quot;, :action=&gt;&quot;new&quot;}<br />
+     formatted_new_session GET    /session/new.:format             {:controller=&gt;&quot;sessions&quot;, :action=&gt;&quot;new&quot;}<br />
+              edit_session GET    /session/edit                    {:controller=&gt;&quot;sessions&quot;, :action=&gt;&quot;edit&quot;}<br />
+    formatted_edit_session GET    /session/edit.:format            {:controller=&gt;&quot;sessions&quot;, :action=&gt;&quot;edit&quot;}<br />
+                           GET    /session                         {:controller=&gt;&quot;sessions&quot;, :action=&gt;&quot;show&quot;}<br />
+                           GET    /session.:format                 {:controller=&gt;&quot;sessions&quot;, :action=&gt;&quot;show&quot;}<br />
+                           PUT    /session                         {:controller=&gt;&quot;sessions&quot;, :action=&gt;&quot;update&quot;}<br />
+                           PUT    /session.:format                 {:controller=&gt;&quot;sessions&quot;, :action=&gt;&quot;update&quot;}<br />
+                           DELETE /session                         {:controller=&gt;&quot;sessions&quot;, :action=&gt;&quot;destroy&quot;}<br />
+                           DELETE /session.:format                 {:controller=&gt;&quot;sessions&quot;, :action=&gt;&quot;destroy&quot;}<br />
+                  athletes GET    /athletes                        {:controller=&gt;&quot;athletes&quot;, :action=&gt;&quot;index&quot;}<br />
+        formatted_athletes GET    /athletes.:format                {:controller=&gt;&quot;athletes&quot;, :action=&gt;&quot;index&quot;}<br />
+                           POST   /athletes                        {:controller=&gt;&quot;athletes&quot;, :action=&gt;&quot;create&quot;}<br />
+                           POST   /athletes.:format                {:controller=&gt;&quot;athletes&quot;, :action=&gt;&quot;create&quot;}<br />
+               new_athlete GET    /athletes/new                    {:controller=&gt;&quot;athletes&quot;, :action=&gt;&quot;new&quot;}<br />
+     formatted_new_athlete GET    /athletes/new.:format            {:controller=&gt;&quot;athletes&quot;, :action=&gt;&quot;new&quot;}<br />
+              edit_athlete GET    /athletes/:id/edit               {:controller=&gt;&quot;athletes&quot;, :action=&gt;&quot;edit&quot;}<br />
+    formatted_edit_athlete GET    /athletes/:id/edit.:format       {:controller=&gt;&quot;athletes&quot;, :action=&gt;&quot;edit&quot;}<br />
+                   athlete GET    /athletes/:id                    {:controller=&gt;&quot;athletes&quot;, :action=&gt;&quot;show&quot;}<br />
+         formatted_athlete GET    /athletes/:id.:format            {:controller=&gt;&quot;athletes&quot;, :action=&gt;&quot;show&quot;}<br />
+                           PUT    /athletes/:id                    {:controller=&gt;&quot;athletes&quot;, :action=&gt;&quot;update&quot;}<br />
+                           PUT    /athletes/:id.:format            {:controller=&gt;&quot;athletes&quot;, :action=&gt;&quot;update&quot;}<br />
+                           DELETE /athletes/:id                    {:controller=&gt;&quot;athletes&quot;, :action=&gt;&quot;destroy&quot;}<br />
+                           DELETE /athletes/:id.:format            {:controller=&gt;&quot;athletes&quot;, :action=&gt;&quot;destroy&quot;}<br />
+              traininglogs GET    /traininglogs                    {:controller=&gt;&quot;traininglogs&quot;, :action=&gt;&quot;index&quot;}<br />
+    formatted_traininglogs GET    /traininglogs.:format            {:controller=&gt;&quot;traininglogs&quot;, :action=&gt;&quot;index&quot;}<br />
+                           POST   /traininglogs                    {:controller=&gt;&quot;traininglogs&quot;, :action=&gt;&quot;create&quot;}<br />
+                           POST   /traininglogs.:format            {:controller=&gt;&quot;traininglogs&quot;, :action=&gt;&quot;create&quot;}<br />
+           new_traininglog GET    /traininglogs/new                {:controller=&gt;&quot;traininglogs&quot;, :action=&gt;&quot;new&quot;}<br />
+ formatted_new_traininglog GET    /traininglogs/new.:format        {:controller=&gt;&quot;traininglogs&quot;, :action=&gt;&quot;new&quot;}<br />
+          edit_traininglog GET    /traininglogs/:id/edit           {:controller=&gt;&quot;traininglogs&quot;, :action=&gt;&quot;edit&quot;}<br />
+formatted_edit_traininglog GET    /traininglogs/:id/edit.:format   {:controller=&gt;&quot;traininglogs&quot;, :action=&gt;&quot;edit&quot;}<br />
+               traininglog GET    /traininglogs/:id                {:controller=&gt;&quot;traininglogs&quot;, :action=&gt;&quot;show&quot;}<br />
+     formatted_traininglog GET    /traininglogs/:id.:format        {:controller=&gt;&quot;traininglogs&quot;, :action=&gt;&quot;show&quot;}<br />
+                           PUT    /traininglogs/:id                {:controller=&gt;&quot;traininglogs&quot;, :action=&gt;&quot;update&quot;}<br />
+                           PUT    /traininglogs/:id.:format        {:controller=&gt;&quot;traininglogs&quot;, :action=&gt;&quot;update&quot;}<br />
+                           DELETE /traininglogs/:id                {:controller=&gt;&quot;traininglogs&quot;, :action=&gt;&quot;destroy&quot;}<br />
+                           DELETE /traininglogs/:id.:format        {:controller=&gt;&quot;traininglogs&quot;, :action=&gt;&quot;destroy&quot;}<br />
+                   coaches GET    /coaches                         {:controller=&gt;&quot;coaches&quot;, :action=&gt;&quot;index&quot;}<br />
+         formatted_coaches GET    /coaches.:format                 {:controller=&gt;&quot;coaches&quot;, :action=&gt;&quot;index&quot;}<br />
+                           POST   /coaches                         {:controller=&gt;&quot;coaches&quot;, :action=&gt;&quot;create&quot;}<br />
+                           POST   /coaches.:format                 {:controller=&gt;&quot;coaches&quot;, :action=&gt;&quot;create&quot;}<br />
+                 new_coach GET    /coaches/new                     {:controller=&gt;&quot;coaches&quot;, :action=&gt;&quot;new&quot;}<br />
+       formatted_new_coach GET    /coaches/new.:format             {:controller=&gt;&quot;coaches&quot;, :action=&gt;&quot;new&quot;}<br />
+                edit_coach GET    /coaches/:id/edit                {:controller=&gt;&quot;coaches&quot;, :action=&gt;&quot;edit&quot;}<br />
+      formatted_edit_coach GET    /coaches/:id/edit.:format        {:controller=&gt;&quot;coaches&quot;, :action=&gt;&quot;edit&quot;}<br />
+                     coach GET    /coaches/:id                     {:controller=&gt;&quot;coaches&quot;, :action=&gt;&quot;show&quot;}<br />
+           formatted_coach GET    /coaches/:id.:format             {:controller=&gt;&quot;coaches&quot;, :action=&gt;&quot;show&quot;}<br />
+                           PUT    /coaches/:id                     {:controller=&gt;&quot;coaches&quot;, :action=&gt;&quot;update&quot;}<br />
+                           PUT    /coaches/:id.:format             {:controller=&gt;&quot;coaches&quot;, :action=&gt;&quot;update&quot;}<br />
+                           DELETE /coaches/:id                     {:controller=&gt;&quot;coaches&quot;, :action=&gt;&quot;destroy&quot;}<br />
+                           DELETE /coaches/:id.:format             {:controller=&gt;&quot;coaches&quot;, :action=&gt;&quot;destroy&quot;}<br />
+                      home        /                                {:controller=&gt;&quot;home&quot;, :action=&gt;&quot;index&quot;}<br />
+                                  /:controller/:action/:id<br />
+                                  /:controller/:action/:id.:format</p>
+<p>&lt;/filter:code&gt;</p>
+<p>and just for completeness, here is the error :</p>
+<p>&lt;filter:code&gt;<br />
+ NoMethodError in Home#index</p>
+<p>Showing app/views/home/index.html.erb where line #46 raised:</p>
+<p>undefined method `rewrite&#8217; for &quot;%2Fhome%2Fgraph_code&quot;:String</p>
+<p>Extracted source (around line #46):</p>
+<p>43:   &lt;td&gt;&lt;%=h traininglog.activity %&gt;&lt;/td&gt;<br />
+44:   &lt;td&gt;&lt;%=h traininglog.length %&gt;&lt;/td&gt;<br />
+45:   &lt;td&gt;&lt;%=h traininglog.duration %&gt;&lt;/td&gt;<br />
+46:   &lt;td&gt;&lt;%= link_to &#8216;Edit&#8217;, edit_traininglog_path  %&gt;&lt;/td&gt;<br />
+47: &lt;/tr&gt;<br />
+48: &lt;% end %&gt;<br />
+49: &lt;/table&gt;</p>
+<p>RAILS_ROOT: /Users/diarmuid/Documents/Rails/coachconnect<br />
+Application Trace | Framework Trace | Full Trace</p>
+<p>/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:626:in `url_for&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/helpers/url_helper.rb:85:in `send&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/helpers/url_helper.rb:85:in `url_for&#8217;<br />
+(eval):16:in `edit_traininglog_path&#8217;<br />
+app/views/home/index.html.erb:46<br />
+app/views/home/index.html.erb:40:in `each&#8217;<br />
+app/views/home/index.html.erb:40<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:39:in `send&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:39:in `render&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/template.rb:73:in `render_template&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:256:in `render&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1174:in `render_for_file&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:896:in `render_without_benchmark&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:868:in `render_without_benchmark&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1248:in `default_render&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1254:in `perform_action_without_filters&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64<br />
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49</p>
+<p>/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:76:in `process&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `synchronize&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `process&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281<br />
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require&#8217;<br />
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require&#8217;<br />
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require&#8217;<br />
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require&#8217;<br />
+script/server:3</p>
+<p>/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:626:in `url_for&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/helpers/url_helper.rb:85:in `send&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/helpers/url_helper.rb:85:in `url_for&#8217;<br />
+(eval):16:in `edit_traininglog_path&#8217;<br />
+app/views/home/index.html.erb:46<br />
+app/views/home/index.html.erb:40:in `each&#8217;<br />
+app/views/home/index.html.erb:40<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:39:in `send&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:39:in `render&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/template.rb:73:in `render_template&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:256:in `render&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1174:in `render_for_file&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:896:in `render_without_benchmark&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:868:in `render_without_benchmark&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1248:in `default_render&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1254:in `perform_action_without_filters&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:76:in `process&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `synchronize&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `process&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run&#8217;<br />
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281<br />
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64<br />
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require&#8217;<br />
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require&#8217;<br />
+/Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49<br />
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require&#8217;<br />
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require&#8217;<br />
+script/server:3</p>
+<p>Request</p>
+<p>Parameters:</p>
+<p>None</p>
+<p>Show session dump</p>
+<p>&#8212;<br />
+:return_to:<br />
+:user_id: 9<br />
+:csrf_id: 9260c4aabafa1933eb7be31c1ca026f2<br />
+flash: !map:ActionController::Flash::FlashHash {}</p>
+<p>Response</p>
+<p>Headers:</p>
+<p>{&quot;cookie&quot;=&gt;[],<br />
+ &quot;Content-Type&quot;=&gt;&quot;text/html&quot;,<br />
+ &quot;Cache-Control&quot;=&gt;&quot;no-cache&quot;}<br />
+&lt;/filter:code&gt;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Imanel		</title>
+		<link>http://pullmonkey.com/2009/01/12/open-flash-chart-ii-ofc-object-creators/comment-page-1/#comment-908</link>
+
+		<dc:creator><![CDATA[Imanel]]></dc:creator>
+		<pubDate>Mon, 12 Jan 2009 17:50:00 +0000</pubDate>
+		<guid isPermaLink="false">/2009/01/12/open-flash-chart-ii-ofc-object-creators#comment-908</guid>
+
+					<description><![CDATA[It&#039;s because of newest commit (afb727753d4895730ec24220ca831f73122251cf) - new creators use @url instance variable that&#039;s restricted for rails. Just revert this commit and wait until it&#039;s repaired.]]></description>
+			<content:encoded><![CDATA[<p>It&#8217;s because of newest commit (afb727753d4895730ec24220ca831f73122251cf) &#8211; new creators use @url instance variable that&#8217;s restricted for rails. Just revert this commit and wait until it&#8217;s repaired.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: diarmuid		</title>
+		<link>http://pullmonkey.com/2009/01/12/open-flash-chart-ii-ofc-object-creators/comment-page-1/#comment-909</link>
+
+		<dc:creator><![CDATA[diarmuid]]></dc:creator>
+		<pubDate>Mon, 12 Jan 2009 17:50:00 +0000</pubDate>
+		<guid isPermaLink="false">/2009/01/12/open-flash-chart-ii-ofc-object-creators#comment-909</guid>
+
+					<description><![CDATA[Charlie
+
+ It seems there is either some problem with the the mac os version of rails or more likely , with my installation.
+
+I setup rails on my linux machine and ran the server there and I get more sensible errors. I will work from there.
+
+thanks and I&#039;ll let you know how I get on
+
+D]]></description>
+			<content:encoded><![CDATA[<p>Charlie</p>
+<p> It seems there is either some problem with the the mac os version of rails or more likely , with my installation.</p>
+<p>I setup rails on my linux machine and ran the server there and I get more sensible errors. I will work from there.</p>
+<p>thanks and I&#8217;ll let you know how I get on</p>
+<p>D</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: diarmuid		</title>
+		<link>http://pullmonkey.com/2009/01/12/open-flash-chart-ii-ofc-object-creators/comment-page-1/#comment-910</link>
+
+		<dc:creator><![CDATA[diarmuid]]></dc:creator>
+		<pubDate>Mon, 12 Jan 2009 17:50:00 +0000</pubDate>
+		<guid isPermaLink="false">/2009/01/12/open-flash-chart-ii-ofc-object-creators#comment-910</guid>
+
+					<description><![CDATA[Spoke too soon. Problem remains on the linux machine
+
+I&#039;ll try Imanel&#039;s recommendations]]></description>
+			<content:encoded><![CDATA[<p>Spoke too soon. Problem remains on the linux machine</p>
+<p>I&#8217;ll try Imanel&#8217;s recommendations</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Imanel		</title>
+		<link>http://pullmonkey.com/2009/01/12/open-flash-chart-ii-ofc-object-creators/comment-page-1/#comment-911</link>
+
+		<dc:creator><![CDATA[Imanel]]></dc:creator>
+		<pubDate>Mon, 12 Jan 2009 17:50:00 +0000</pubDate>
+		<guid isPermaLink="false">/2009/01/12/open-flash-chart-ii-ofc-object-creators#comment-911</guid>
+
+					<description><![CDATA[Or create evil twin of plugin with modified name of @url in &#034;/vendor/plugins/open_flash_chart/lib/open_flash_chart/open_flash_chart_object.rb&#034; (just tested with @c_url and everything works fine now)]]></description>
+			<content:encoded><![CDATA[<p>Or create evil twin of plugin with modified name of @url in &quot;/vendor/plugins/open_flash_chart/lib/open_flash_chart/open_flash_chart_object.rb&quot; (just tested with @c_url and everything works fine now)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Imanel		</title>
+		<link>http://pullmonkey.com/2009/01/12/open-flash-chart-ii-ofc-object-creators/comment-page-1/#comment-912</link>
+
+		<dc:creator><![CDATA[Imanel]]></dc:creator>
+		<pubDate>Mon, 12 Jan 2009 17:50:00 +0000</pubDate>
+		<guid isPermaLink="false">/2009/01/12/open-flash-chart-ii-ofc-object-creators#comment-912</guid>
+
+					<description><![CDATA[Sorry for spam - there are no &#034;edit&#034; option and I&#039;m in work so thinking about 3 other things ;)
+
+diff --git a/vendor/plugins/open_flash_chart/lib/open_flash_chart/open_flash_chart_object.rb b/vendor/plugins/open_flash_cha
+index 6c94cfd..7efe7c0 100644
+--- a/vendor/plugins/open_flash_chart/lib/open_flash_chart/open_flash_chart_object.rb
++++ b/vendor/plugins/open_flash_chart/lib/open_flash_chart/open_flash_chart_object.rb
+@@ -4,19 +4,19 @@ module OpenFlashChart
+   module Controller
+     def open_flash_chart_object(width, height, url, use_swfobject=true, base=&#034;/&#034;, swf_file_name=&#034;open-flash-chart.swf&#034;)
+       get_object_values(url)
+-      get_html(@url, @div_name, base, swf_file_name, width, height, @protocol, @obj_id)
++      get_html(@c_url, @div_name, base, swf_file_name, width, height, @protocol, @obj_id)
+     end
+
+     # if you want the div name back for working with js, this is the ticket
+     def open_flash_chart_object_and_div_name(width, height, url, use_swfobject=true, base=&#034;/&#034;, swf_file_name=&#034;open-flash-ch
+       get_object_values(url)
+-      html = get_html(@url, @div_name, base, swf_file_name, width, height, @protocol, @obj_id)
++      html = get_html(@c_url, @div_name, base, swf_file_name, width, height, @protocol, @obj_id)
+       return [html, @div_name]
+     end
+
+     def open_flash_chart_object_from_hash(url, options={})
+       get_object_values(url)
+-      get_html(@url,
++      get_html(@c_url,
+                options[:div_name]      &#124;&#124; @div_name,
+                options[:base]          &#124;&#124; &#034;/&#034;,
+                options[:swf_file_name] &#124;&#124; &#034;open-flash-chart.swf&#034;,
+@@ -27,9 +27,9 @@ module OpenFlashChart
+     end
+
+     def get_object_values(url)
+-      @url      = CGI::escape(url)
++      @c_url      = CGI::escape(url)
+       # need something that will not be repeated on the same request
+-      @special_hash = Base64.encode64(Digest::SHA1.digest(&#034;#{rand(1&#060;&#060;64)}/#{Time.now.to_f}/#{Process.pid}/#{@url}&#034;))[0..7]
++      @special_hash = Base64.encode64(Digest::SHA1.digest(&#034;#{rand(1&#060;&#060;64)}/#{Time.now.to_f}/#{Process.pid}/#{@c_url}&#034;))[0..7
+       # only good characters for our div
+       @special_hash = @special_hash.gsub(/[^a-zA-Z0-9]/,rand(10).to_s)
+       @obj_id   = &#034;chart_#{@special_hash}&#034;  # some sequencing without all the work of tracking it]]></description>
+			<content:encoded><![CDATA[<p>Sorry for spam &#8211; there are no &quot;edit&quot; option and I&#8217;m in work so thinking about 3 other things 😉</p>
+<p>diff &#8211;git a/vendor/plugins/open_flash_chart/lib/open_flash_chart/open_flash_chart_object.rb b/vendor/plugins/open_flash_cha<br />
+index 6c94cfd..7efe7c0 100644<br />
+&#8212; a/vendor/plugins/open_flash_chart/lib/open_flash_chart/open_flash_chart_object.rb<br />
++++ b/vendor/plugins/open_flash_chart/lib/open_flash_chart/open_flash_chart_object.rb<br />
+@@ -4,19 +4,19 @@ module OpenFlashChart<br />
+   module Controller<br />
+     def open_flash_chart_object(width, height, url, use_swfobject=true, base=&quot;/&quot;, swf_file_name=&quot;open-flash-chart.swf&quot;)<br />
+       get_object_values(url)<br />
+&#8211;      get_html(@url, @div_name, base, swf_file_name, width, height, @protocol, @obj_id)<br />
++      get_html(@c_url, @div_name, base, swf_file_name, width, height, @protocol, @obj_id)<br />
+     end</p>
+<p>     # if you want the div name back for working with js, this is the ticket<br />
+     def open_flash_chart_object_and_div_name(width, height, url, use_swfobject=true, base=&quot;/&quot;, swf_file_name=&quot;open-flash-ch<br />
+       get_object_values(url)<br />
+&#8211;      html = get_html(@url, @div_name, base, swf_file_name, width, height, @protocol, @obj_id)<br />
++      html = get_html(@c_url, @div_name, base, swf_file_name, width, height, @protocol, @obj_id)<br />
+       return [html, @div_name]<br />
+     end</p>
+<p>     def open_flash_chart_object_from_hash(url, options={})<br />
+       get_object_values(url)<br />
+&#8211;      get_html(@url,<br />
++      get_html(@c_url,<br />
+                options[:div_name]      || @div_name,<br />
+                options[:base]          || &quot;/&quot;,<br />
+                options[:swf_file_name] || &quot;open-flash-chart.swf&quot;,<br />
+@@ -27,9 +27,9 @@ module OpenFlashChart<br />
+     end</p>
+<p>     def get_object_values(url)<br />
+&#8211;      @url      = CGI::escape(url)<br />
++      @c_url      = CGI::escape(url)<br />
+       # need something that will not be repeated on the same request<br />
+&#8211;      @special_hash = Base64.encode64(Digest::SHA1.digest(&quot;#{rand(1&lt;&lt;64)}/#{Time.now.to_f}/#{Process.pid}/#{@url}&quot;))[0..7]<br />
++      @special_hash = Base64.encode64(Digest::SHA1.digest(&quot;#{rand(1&lt;&lt;64)}/#{Time.now.to_f}/#{Process.pid}/#{@c_url}&quot;))[0..7<br />
+       # only good characters for our div<br />
+       @special_hash = @special_hash.gsub(/[^a-zA-Z0-9]/,rand(10).to_s)<br />
+       @obj_id   = &quot;chart_#{@special_hash}&quot;  # some sequencing without all the work of tracking it</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: charlie		</title>
+		<link>http://pullmonkey.com/2009/01/12/open-flash-chart-ii-ofc-object-creators/comment-page-1/#comment-913</link>
+
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Mon, 12 Jan 2009 17:50:00 +0000</pubDate>
+		<guid isPermaLink="false">/2009/01/12/open-flash-chart-ii-ofc-object-creators#comment-913</guid>
+
+					<description><![CDATA[@Imanel - thanks for the help, I fixed with your suggestion and pushed to the repo.
+
+@diarmuid - Give it a shot with the latest commit.
+
+I changed @url to @ofc_url, hope it helps.]]></description>
+			<content:encoded><![CDATA[<p>@Imanel &#8211; thanks for the help, I fixed with your suggestion and pushed to the repo.</p>
+<p>@diarmuid &#8211; Give it a shot with the latest commit.</p>
+<p>I changed @url to @ofc_url, hope it helps.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

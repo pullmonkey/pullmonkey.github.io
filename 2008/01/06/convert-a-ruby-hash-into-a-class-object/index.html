@@ -1,0 +1,953 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>PullMonkey Blog  &raquo; Blog Archive   &raquo; Convert a Ruby hash into a class object</title>
+<meta name="generator" content="WordPress 5.6" /> <!-- leave this for stats -->
+<link rel="stylesheet" href="../../../../wp-content/themes/simple&#32;paper/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../../../../wp-content/themes/simple&#32;paper/code_highlighter.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="PullMonkey Blog RSS Feed" href="../../../../feed/index.html" />
+<link rel="pingback" href="http://pullmonkey.com/xmlrpc.php" />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="PullMonkey Blog &raquo; Convert a Ruby hash into a class object Comments Feed" href="feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/pullmonkey.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='../../../../wp-includes/css/dist/block-library/style.min.css?ver=5.6' type='text/css' media='all' />
+<link rel="https://api.w.org/" href="../../../../wp-json/index.html" /><link rel="alternate" type="application/json" href="../../../../wp-json/wp/v2/posts/111" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://pullmonkey.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../../../wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.6" />
+<link rel="canonical" href="../../../../index.html?p=111" />
+<link rel='shortlink' href='../../../../index.html?p=111' />
+<link rel="alternate" type="application/json+oembed" href="../../../../wp-json/oembed/1.0/embed?url=http:%252F%252Fpullmonkey.com%252F2008%252F01%252F06%252Fconvert-a-ruby-hash-into-a-class-object%252F" />
+<link rel="alternate" type="text/xml+oembed" href="../../../../wp-json/oembed/1.0/embed?url=http:%252F%252Fpullmonkey.com%252F2008%252F01%252F06%252Fconvert-a-ruby-hash-into-a-class-object%252F&amp;format=xml" />
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style></head>
+<body>
+
+<div id="container">
+
+<div id="menu">
+
+        <ul id="nav">
+        <li class="current_page_item"><a href="../../../../index.html">Home</a></li>
+                       	</ul>
+
+</div><!-- Menu -->
+
+<div id="wrapper">
+
+<div id="c1">
+
+<h1 id="logo"><a href="../../../../index.html">PullMonkey Blog</a></h1>
+<h2 id="description"></h2>
+
+<div id="content">
+
+
+<div class="post" id="post-111">
+
+<div class="date">06 <span>Jan</span></div>
+
+<h2><a href="../../../../index.html?p=111" rel="bookmark" title="Permanent Link to Convert a Ruby hash into a class object">Convert a Ruby hash into a class object</a></h2><br clear="all" />
+
+<p>I first saw the need to convert a hash object to a class when answering <a href="http://railsforum.com/viewtopic.php?pid=49768">this post</a>.<br />
+In the post, the user wanted to load a YAML object into his hash and then present the data from the hash in a form.  Needless to say it was not very DRY the way it had to be implemented.   So I started looking into it, I found <a href="http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-talk/93959">this</a>.  This solution was a great starting point for where I ended up, but it was not general enough, it was hard coded, plus it was missing the getters and setters.  So it turns out that in ruby it wasn't too much trouble to convert a hash into a class object.  So let's get started:<br />
+I have implemented this for use in Rails, so let's start with the model that does all the magic:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt>9<tt>
+</tt><strong>10</strong><tt>
+</tt>11<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt><span class="r">class</span> <span class="cl">Hashit</span><tt>
+</tt>  <span class="r">def</span> <span class="fu">initialize</span>(hash)<tt>
+</tt>    hash.each <span class="r">do</span> |k,v|<tt>
+</tt>      <span class="pc">self</span>.instance_variable_set(<span class="s"><span class="dl">&quot;</span><span class="k">@</span><span class="il"><span class="dl">#{</span>k<span class="dl">}</span></span><span class="dl">&quot;</span></span>, v)  <span class="c">## create and initialize an instance variable for this key/value pair</span><tt>
+</tt>      <span class="pc">self</span>.class.send(<span class="sy">:define_method</span>, k, proc{<span class="pc">self</span>.instance_variable_get(<span class="s"><span class="dl">&quot;</span><span class="k">@</span><span class="il"><span class="dl">#{</span>k<span class="dl">}</span></span><span class="dl">&quot;</span></span>)})  <span class="c">## create the getter that returns the instance variable</span><tt>
+</tt>      <span class="pc">self</span>.class.send(<span class="sy">:define_method</span>, <span class="s"><span class="dl">&quot;</span><span class="il"><span class="dl">#{</span>k<span class="dl">}</span></span><span class="k">=</span><span class="dl">&quot;</span></span>, proc{|v| <span class="pc">self</span>.instance_variable_set(<span class="s"><span class="dl">&quot;</span><span class="k">@</span><span class="il"><span class="dl">#{</span>k<span class="dl">}</span></span><span class="dl">&quot;</span></span>, v)})  <span class="c">## create the setter that sets the instance variable</span><tt>
+</tt>    <span class="r">end</span><tt>
+</tt>  <span class="r">end</span><tt>
+</tt><span class="r">end</span><tt>
+</tt><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>Notice the self.class.send(:define_method ...) rather than self.define_method, this is a hack to overcome the fact that define_method() is private. I had come across this when trying to figure out the post mentioned above.  Found the information to solve this <a href="http://www.ruby-doc.org/core/classes/Module.html#M001677">here</a>.<br />
+Ok, so on to the Controller that creates the Hashit object:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt>9<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt><span class="r">class</span> <span class="cl">TestItController</span> &lt; <span class="co">ApplicationController</span><tt>
+</tt>  <span class="r">def</span> <span class="fu">index</span><tt>
+</tt>    hashit = {<span class="sy">:support_email</span>  =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">test@test.com</span><span class="dl">&quot;</span></span>,<tt>
+</tt>              <span class="sy">:allow_comments</span> =&gt; <span class="i">0</span>}<tt>
+</tt>    <span class="iv">@hashit</span>  = <span class="co">Hashit</span>.new(hashit)<tt>
+</tt>  <span class="r">end</span><tt>
+</tt><span class="r">end</span><tt>
+</tt><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>Well that is easy, pass in a hash and get an object.  Here is what @hashit looks like at this point:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt><span class="c">#&lt;Hashit:0xb6a65110 @allow_comments=0, @support_email=&quot;test@test.com&quot;&gt;</span><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>And of course, now the view, what we wanted to clean up and make more elegant. Here is what the user started with:<br />
+Note: In this example @hashit is an actual hash, not a class object.</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt>&lt;% form_tag <span class="sy">:action</span> =&gt; <span class="s"><span class="dl">'</span><span class="k">config</span><span class="dl">'</span></span>, <span class="sy">:method</span> =&gt; <span class="sy">:post</span> <span class="r">do</span> <span class="s"><span class="dl">%&gt;</span><span class="k"><tt>
+</tt>  &lt;%= text_field 'settings',  'support_email', :size =</span><span class="dl">&gt;</span></span> <span class="i">20</span>, <span class="sy">:value</span> =&gt; <span class="iv">@hashit</span>[<span class="s"><span class="dl">'</span><span class="k">support_email</span><span class="dl">'</span></span>]%&gt;<tt>
+</tt>  ...<tt>
+</tt>&lt;% <span class="r">end</span> <span class="s"><span class="dl">%&gt;</span><span class="k"><tt>
+</tt><tt>
+</tt></span></span></pre>
+</td>
+</tr>
+</table>
+<p>And here is what our view code looks like now:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt>&lt;% form_for <span class="sy">:hashit</span>, <span class="sy">:url</span> =&gt; {<span class="sy">:action</span> =&gt; <span class="s"><span class="dl">'</span><span class="k">index</span><span class="dl">'</span></span>} <span class="r">do</span> |f| <span class="s"><span class="dl">%&gt;</span><span class="k"><tt>
+</tt>  &lt;%= f.text_field :support_email %</span><span class="dl">&gt;</span></span><tt>
+</tt>&lt;% <span class="r">end</span> <span class="s"><span class="dl">%&gt;</span><span class="k"><tt>
+</tt><tt>
+</tt></span></span></pre>
+</td>
+</tr>
+</table>
+<p>Much simpler, DRYer 🙂<br />
+Well that is pretty much it, I suppose the next step would be to have a save method that updates the hash?  This way we can do @hashit.save() and it will return a new hash that you can use.  Well actually, that probably isn't too hard, lets see if I can do it real quick, class object back to hash ... <br />
+Well, I am back and I was able to figure it out, here is the new class:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt>9<tt>
+</tt><strong>10</strong><tt>
+</tt>11<tt>
+</tt>12<tt>
+</tt>13<tt>
+</tt>14<tt>
+</tt><strong>15</strong><tt>
+</tt>16<tt>
+</tt>17<tt>
+</tt>18<tt>
+</tt>19<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt><span class="r">class</span> <span class="cl">Hashit</span><tt>
+</tt>  <span class="r">def</span> <span class="fu">initialize</span>(hash)<tt>
+</tt>    hash.each <span class="r">do</span> |k,v|<tt>
+</tt>      <span class="pc">self</span>.instance_variable_set(<span class="s"><span class="dl">&quot;</span><span class="k">@</span><span class="il"><span class="dl">#{</span>k<span class="dl">}</span></span><span class="dl">&quot;</span></span>, v)<tt>
+</tt>      <span class="pc">self</span>.class.send(<span class="sy">:define_method</span>, k, proc{<span class="pc">self</span>.instance_variable_get(<span class="s"><span class="dl">&quot;</span><span class="k">@</span><span class="il"><span class="dl">#{</span>k<span class="dl">}</span></span><span class="dl">&quot;</span></span>)})<tt>
+</tt>      <span class="pc">self</span>.class.send(<span class="sy">:define_method</span>, <span class="s"><span class="dl">&quot;</span><span class="il"><span class="dl">#{</span>k<span class="dl">}</span></span><span class="k">=</span><span class="dl">&quot;</span></span>, proc{|v| <span class="pc">self</span>.instance_variable_set(<span class="s"><span class="dl">&quot;</span><span class="k">@</span><span class="il"><span class="dl">#{</span>k<span class="dl">}</span></span><span class="dl">&quot;</span></span>, v)})<tt>
+</tt>    <span class="r">end</span><tt>
+</tt>  <span class="r">end</span><tt>
+</tt><tt>
+</tt>  <span class="r">def</span> <span class="fu">save</span><tt>
+</tt>    hash_to_return = {}<tt>
+</tt>    <span class="pc">self</span>.instance_variables.each <span class="r">do</span> |var|<tt>
+</tt>      hash_to_return[var.gsub(<span class="s"><span class="dl">&quot;</span><span class="k">@</span><span class="dl">&quot;</span></span>,<span class="s"><span class="dl">&quot;</span><span class="dl">&quot;</span></span>)] = <span class="pc">self</span>.instance_variable_get(var)<tt>
+</tt>    <span class="r">end</span><tt>
+</tt>    <span class="r">return</span> hash_to_return<tt>
+</tt>  <span class="r">end</span><tt>
+</tt><span class="r">end</span><tt>
+</tt><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>Just added the save() method, that takes all the instance variables and sets them as keys in our new hash. So here is the outcome of our save():</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt>{<span class="s"><span class="dl">&quot;</span><span class="k">support_email</span><span class="dl">&quot;</span></span>=&gt;<span class="s"><span class="dl">&quot;</span><span class="k">new@some_email</span><span class="dl">&quot;</span></span>, <span class="s"><span class="dl">&quot;</span><span class="k">allow_comments</span><span class="dl">&quot;</span></span>=&gt;<span class="i">0</span>}<tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+
+<br />
+
+<div class="meta">
+<span class="note">Filed under: <a href="../../../../category/development/index.html" rel="category tag">development</a>, <a href="../../../../category/home/index.html" rel="category tag">Home</a>, <a href="../../../../category/rails/index.html" rel="category tag">rails</a>, <a href="../../../../category/ruby/index.html" rel="category tag">ruby</a></span>
+<span class="tags">Tags: <a href="../../../../tag/ruby/index.html" rel="tag">ruby</a></span><br /></div><!--Meta -->
+
+
+<!-- You can start editing here. -->
+
+<div id="commentsbox">
+
+
+
+<h2 id="comments">
+	 <br /> 22 Responses 
+	  to &#8220;Convert a Ruby hash into a class object&#8221;</h2>
+	
+	<ol class="commentlist">
+		
+
+<li class="odd" id="comment-182">
+
+By <strong>Mikkel Riber</strong> on <a href="../../../../index.html?p=111#comment-182" title="">Jan 6, 2008</a> | <a href="../../../../index.html?p=111#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>That is really really cool&#8230; Wierd nobody else have leaved a message. I will bookmark this right away 🙂</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="mycomment" id="comment-183">
+
+By <strong>Winteen</strong> on <a href="../../../../index.html?p=111#comment-183" title="">Jan 6, 2008</a> | <a href="../../../../index.html?p=111#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Cool!<br />
+Bookmark it!</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="mycomment" id="comment-184">
+
+By <strong>NMZ</strong> on <a href="../../../../index.html?p=111#comment-184" title="">Jan 6, 2008</a> | <a href="../../../../index.html?p=111#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>At first I didn&#8217;t realize what you were trying to do, since I never thought of even doing it. Then the light bulb hit and I was just&#8230;wow.</p>
+<p>Definitely a bookmark.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-185">
+
+By <strong>Dr_J</strong> on <a href="../../../../index.html?p=111#comment-185" title="">Jan 6, 2008</a> | <a href="../../../../index.html?p=111#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Excellent &#8230; as a Ruby novice, I bookmarked this one quickly, too.</p>
+<p>In my case, I needed something slightly different. I have a model object that contains a hash, and wanted to easily present/modify the contents of the hash. So, as a method on my model object, I used:</p>
+<p>  def build_get_set(hash)<br />
+    hash.each do |k,v|<br />
+      self.class.send(:define_method, k, proc { @values[k] } )  ## create the getter that returns the hashmap value<br />
+      self.class.send(:define_method, &quot;#{k}=&quot;, proc { |v| @values[k]=v } )  ## create the setter that sets the hashmap value<br />
+    end<br />
+  end</p>
+<p>This doesn&#8217;t create the attributes, but creates accessors/mutators that act on the hash itself. The only catch is that loading the object from somewhere (in my case, from my session), you have to ensure that this method is invoked (which I haven&#8217;t figured out how to do quite yet, so it&#8217;s very manual for now &#8212; not good).</p>
+<p>Thanks!!</p>
+<p>j</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-186">
+
+By <strong><a href='http://www.dimax.com' rel='external nofollow ugc' class='url'>Richard Luck</a></strong> on <a href="../../../../index.html?p=111#comment-186" title="">Jan 6, 2008</a> | <a href="../../../../index.html?p=111#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Any suggestions on how to extend this to work on nested hashes?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-187">
+
+By <strong><a href='../../../../index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="../../../../index.html?p=111#comment-187" title="">Jan 6, 2008</a> | <a href="../../../../index.html?p=111#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Richard &#8211; Good question.  Here is what I have came up with.  Let&#8217;s say that you have a a hash like this (using the example in this article):&lt;filter:code attributes=lang=&quot;ruby&quot;&gt;hashit = {:support_email    =&gt; &quot;test@test.com&quot;,<br />
+          :allow_comments   =&gt; 0,<br />
+          :some_random_hash =&gt; {:name   =&gt; &quot;PullMonkey&quot;,<br />
+                                :skills =&gt; {:ruby  =&gt; 5,<br />
+                                            :rails =&gt; 6}}}&lt;/filter:code&gt;We can modify the Hashit initialize() method just a tiny bit to have it turn all hashes in to classes:&lt;filter:code attributes=lang=&quot;ruby&quot;&gt;class Hashit<br />
+  def initialize(hash)<br />
+    hash.each do |k,v|<br />
+      v = Hashit.new(v) if v.is_a?(Hash)<br />
+      self.instance_variable_set(&quot;@#{k}&quot;, v)  ## create and initialize an instance variable for this key/value pair<br />
+      self.class.send(:define_method, k, proc{self.instance_variable_get(&quot;@#{k}&quot;)})  ## create the getter that returns the instance variable<br />
+      self.class.send(:define_method, &quot;#{k}=&quot;, proc{|v| self.instance_variable_set(&quot;@#{k}&quot;, v)})  ## create the setter that sets the instance variable<br />
+    end<br />
+  end<br />
+end&lt;/filter:code&gt;The line I added was this one:&lt;filter:code attributes=lang=&quot;ruby&quot;&gt;v = Hashit.new(v) if v.is_a?(Hash)&lt;/filter:code&gt;The result is this:&lt;filter:code attributes=lang=&quot;ruby&quot;&gt;#&lt;Hashit:0xf7f8f0b4 @allow_comments=0, @support_email=&quot;test@test.com&quot;, @some_random_hash=#&lt;Hashit:0xf7f8edbc @skills=#&lt;Hashit:0xf7f8ec04 @rails=6, @ruby=5&gt;, @name=&quot;PullMonkey&quot;&gt;&gt;&lt;/filter:code&gt;Hope that helps.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="mycomment" id="comment-188">
+
+By <strong>sark</strong> on <a href="../../../../index.html?p=111#comment-188" title="">Jan 6, 2008</a> | <a href="../../../../index.html?p=111#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>You might also want to check out the ruby OpenStruct object. It seems to accomplish everything you want and it was included with Ruby a while ago.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-189">
+
+By <strong>stuart</strong> on <a href="../../../../index.html?p=111#comment-189" title="">Jan 6, 2008</a> | <a href="../../../../index.html?p=111#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>OpenStruct is interesting, and does seem to cover the initial iteration of Hashit here, but unfortunately doesn&#8217;t handle nested hashes.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-190">
+
+By <strong><a href='http://mike.aski.free.fr/blog' rel='external nofollow ugc' class='url'>Mike</a></strong> on <a href="../../../../index.html?p=111#comment-190" title="">Jan 6, 2008</a> | <a href="../../../../index.html?p=111#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>It is also possible to support Array members of Hashit &#8211; just add the following line to initialize method:</p>
+<p>v = v.map { |item| Hashit.new(item) } if v.is_a?(Array)</p>
+<p>Thank you for this excellent article.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-191">
+
+By <strong><a href='http://www.kirkbushell.com' rel='external nofollow ugc' class='url'>Kirk Bushell</a></strong> on <a href="../../../../index.html?p=111#comment-191" title="">Jan 6, 2008</a> | <a href="../../../../index.html?p=111#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Stuart, very true that OpenStruct doesn&#8217;t iterate over child hashes, but that is easily implemented within your own class 🙂</p>
+<p>Great job!</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+			
+
+<li class="odd" id="comment-8790">
+
+By <strong><a href='http://shakuro.com' rel='external nofollow ugc' class='url'>Yuriy</a></strong> on <a href="../../../../index.html?p=111#comment-8790" title="">May 21, 2010</a> | <a href="../../../../index.html?p=111#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Great job,  exactly what I was looking for!</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-11566">
+
+By <strong><a href='http://EmmanuelOga.com' rel='external nofollow ugc' class='url'>Emmanuel</a></strong> on <a href="../../../../index.html?p=111#comment-11566" title="">Jul 21, 2010</a> | <a href="../../../../index.html?p=111#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>how about:</p>
+<p>require &#8216;ostruct&#8217;<br />
+class Hashit &lt; OpenStruct<br />
+  def save<br />
+    self.class.new(@table)<br />
+  end<br />
+end</p>
+<p>Although it has the annoying property of returning nil to all methods that are not defined. You could &#8220;fix&#8221; that like this:</p>
+<p>require &#8216;ostruct&#8217;</p>
+<p>class Hashit &lt; OpenStruct<br />
+  module DummyMethodMissing<br />
+    def method_missing(*args, &amp;block)<br />
+      raise NoMethodError<br />
+    end<br />
+  end</p>
+<p>  def initialize(*args)<br />
+    super(*args)<br />
+    extend DummyMethodMissing<br />
+  end<br />
+end</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-13499">
+
+By <strong><a href='http://www.taobao30.com' rel='external nofollow ugc' class='url'>taobao</a></strong> on <a href="../../../../index.html?p=111#comment-13499" title="">Sep 8, 2010</a> | <a href="../../../../index.html?p=111#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>class Hashit &lt; OpenStruct<br />
+module DummyMethodMissing<br />
+def method_missing(*args, &amp;block)<br />
+raise NoMethodError<br />
+end<br />
+end</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-15604">
+
+By <strong>zx12r</strong> on <a href="../../../../index.html?p=111#comment-15604" title="">Oct 22, 2010</a> | <a href="../../../../index.html?p=111#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>made a small change in the save method for address nested ones too</p>
+<p>def save(object = self)<br />
+        hash_to_return = {}<br />
+        object.instance_variables.each do |var|<br />
+            instance_variable_value = object.instance_variable_get(var)<br />
+            if instance_variable_value.is_a?(HashToObject)<br />
+                hash_value = get_hash(instance_variable_value)<br />
+                hash_to_return[var.gsub(&#8220;@&#8221;,&#8221;&#8221;)] = hash_value<br />
+            else<br />
+                hash_to_return[var.gsub(&#8220;@&#8221;,&#8221;&#8221;)] = instance_variable_value<br />
+            end<br />
+        end<br />
+        return hash_to_return<br />
+    end</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18262">
+
+By <strong>Avram</strong> on <a href="../../../../index.html?p=111#comment-18262" title="">Dec 17, 2010</a> | <a href="../../../../index.html?p=111#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hello,</p>
+<p>I didn&#8217;t read this in too much detail because I found another solution. Perhaps this misses the point, if so I apologize.</p>
+<p>ActiveResource can actually do this for you. This is essentially what ARes already does when it gets a hash back from a ReST interface. You just need a dummy ARes-based model (or you can use a legit one if you have it). All you do is call #new on it, and pas the hash in. self.site is a required setting for ARes classes, but it can be empty.</p>
+<p>&gt;&gt; class Foo &gt; Foo.new(:a=&gt;1,:b=&gt;2,:c=&gt;{:d=&gt;3,:e=&gt;4})<br />
+=&gt; #1, &#8220;b&#8221;=&gt;2, &#8220;c&#8221;=&gt;#3, &#8220;e&#8221;=&gt;4}&gt;}&gt;<br />
+&gt;&gt; f.c.d<br />
+=&gt; 3<br />
+&gt;&gt;</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18263">
+
+By <strong>Avram</strong> on <a href="../../../../index.html?p=111#comment-18263" title="">Dec 17, 2010</a> | <a href="../../../../index.html?p=111#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Somehow that code snippet got frotzed. Here it is again, without the prompts, and with &lt; instead of a less-than sign for for class inheritance, in opes that the server doesn&#8217;t digest it:</p>
+<p>class Foo &lt; ActiveResource::Base<br />
+  self.site = &#8221;<br />
+end<br />
+f = Foo.new(:a=&gt;1,:b=&gt;2,:c=&gt;{:d=&gt;3,:e=&gt;4})<br />
+(returns ruby object)<br />
+f.c.d<br />
+(returns 3)</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18578">
+
+By <strong><a href='http://starjuice.net/' rel='external nofollow ugc' class='url'>Sheldon Hearn</a></strong> on <a href="../../../../index.html?p=111#comment-18578" title="">Sep 27, 2011</a> | <a href="../../../../index.html?p=111#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>I&#8217;m keen to steal your idea of combining option splatting with accessor definition, into magic_options:</p>
+<p><a href="http://github.com/sheldonh/magic_options" rel="nofollow ugc">http://github.com/sheldonh/magic_options</a></p>
+<p>So instead of</p>
+<p>class Cow<br />
+  include MagicOptions<br />
+  magic_initialize :only =&gt; respond_to?<br />
+  attr_accessor :name, :color, :gender<br />
+end</p>
+<p>we could support</p>
+<p>class Cow<br />
+  include MagicOptions<br />
+  magic_initialize :accessors =&gt; [:name, :color, :gender]<br />
+end</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18620">
+
+By <strong><a href='http://twitter.com/laserpez' rel='external nofollow ugc' class='url'>Simone</a></strong> on <a href="../../../../index.html?p=111#comment-18620" title="">Oct 27, 2011</a> | <a href="../../../../index.html?p=111#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hello,<br />
+this is how I changed initialize() method to make it recurse on value that are hash themselves:</p>
+<p>class HashIt<br />
+  def initialize(hash)<br />
+    hash.each do |k,v|<br />
+      case v<br />
+      when Hash; self.instance_variable_set(&#8220;@#{k}&#8221;, HashIt.new(v))<br />
+      else; self.instance_variable_set(&#8220;@#{k}&#8221;, v)<br />
+      end<br />
+      self.class.send(:define_method, k, proc{ self.instance_variable_get(&#8220;@#{k}&#8221;) })<br />
+      self.class.send(:define_method, &#8220;#{k}=&#8221;, proc{ |v| self.instance_variable_set(&#8220;@#{k}&#8221;, v)})<br />
+    end<br />
+  end<br />
+end</p>
+<p>thank you for your post 🙂</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18805">
+
+By <strong>.jpg</strong> on <a href="../../../../index.html?p=111#comment-18805" title="">Feb 17, 2012</a> | <a href="../../../../index.html?p=111#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Can this be accomplished with ActiveModel? It looks like you&#8217;re already in rails.</p>
+<p>Thanks so much for these ideas! I took them and modified them a little to make them slightly more extendible/useable.</p>
+<p><a href="https://gist.github.com/1855631" rel="nofollow ugc">https://gist.github.com/1855631</a></p>
+<p>Thoughts? Please comment on the gist&#8230;</p>
+<p>.jpg</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18890">
+
+By <strong><a href='http://github.com/tcocca' rel='external nofollow ugc' class='url'>Tom Cocca</a></strong> on <a href="../../../../index.html?p=111#comment-18890" title="">May 3, 2012</a> | <a href="../../../../index.html?p=111#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>I found a much faster way to accomplish the same thing as your initialize method.  I was seeing very slow times initializing a set of objects so I re-wrote the #initialize method as follows:</p>
+<p>def initialize(hash)<br />
+    hash.each do |key, value|<br />
+        self.instance_variable_set(&#8220;@#{key}&#8221;, value)<br />
+        self.class.send(:attr_reader, key)<br />
+    end<br />
+end</p>
+<p>That creates attr_reader methods to access the instance variables.  If you want to be able to read and write to those methods just use an attr_accessor:</p>
+<p>def initialize(hash)<br />
+    hash.each do |key, value|<br />
+        self.instance_variable_set(&#8220;@#{key}&#8221;, value)<br />
+        self.class.send(:attr_accessor, key)<br />
+    end<br />
+end</p>
+<p>I found this code to run much faster than the:<br />
+self.class.send(:define_method, k, proc{self.instance_variable_get(&#8220;@#{k}&#8221;)})<br />
+self.class.send(:define_method, &#8220;#{k}=&#8221;, proc{|v| self.instance_variable_set(&#8220;@#{k}&#8221;, v)})</p>
+<p>Thanks,<br />
+~ Tom</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18935">
+
+By <strong>zx12r</strong> on <a href="../../../../index.html?p=111#comment-18935" title="">May 25, 2012</a> | <a href="../../../../index.html?p=111#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Found a class inside hashie gem called &#8220;mash&#8221; which does exactly this</p>
+<p><a href="https://github.com/intridea/hashie#mash" rel="nofollow ugc">https://github.com/intridea/hashie#mash</a></p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		</ol>
+	
+	
+
+	<ol class="tblist" style="list-style:none;">
+
+<li><h2>1 Trackback(s)</h2></li>
+	
+
+	<li id="comment-5128">
+	<small class="commentmetadata">Feb 7, 2010:</small> <font style="font-size:11px;"><a href='http://www.goodercode.com/wp/?p=31' rel='external nofollow ugc' class='url'>Convert your Hash keys to object properties in Ruby &laquo; Gooder Code - web development blog, php, java, asp.net, html, javascript</a></font>
+			</li>
+	
+		
+
+	</ol>
+
+	
+
+	<p id="comments-closed">Sorry, comments for this entry are closed at this time.</p>
+</div>
+</div><!-- Post -->
+
+		        
+  
+
+	
+</div><!-- Content -->
+
+</div><!-- LeftColumn -->
+
+<div id="c2">
+
+   
+    <div id="sidebar">
+
+<div id="subscribe">
+<a href="../../../../feed/index.html"><img src="../../../../wp-content/themes/simple&#32;paper/images/rss.gif" alt="RSS-FEED" border="0" id="rss" /></a>
+<a href="../../../../feed/index.html">subscribe to the feed</a><br clear="all" />
+</div><!-- subscribe rss -->
+
+<div id="topsearch">
+<form action="../../../../index.html" method="post">
+<input type="text" value="Search..." name="s" id="ls" class="searchfield" onfocus="if (this.value == 'Search...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search...';}" />
+<input type="image" src="../../../../wp-content/themes/simple&#32;paper/images/click.gif" id="submit" />
+</form>
+<br clear="all" />
+<br clear="all" />
+</div>
+    
+    	<ul>
+	<li id="tag_cloud-2" class="widget widget_tag_cloud"><h2 class="widgettitle">Tags</h2>
+<div class="tagcloud"><a href="../../../../tag/net/index.html" class="tag-cloud-link tag-link-166 tag-link-position-1" style="font-size: 8pt;" aria-label=".net (2 items)">.net</a>
+<a href="../../../../tag/activerecord/index.html" class="tag-cloud-link tag-link-54 tag-link-position-2" style="font-size: 8pt;" aria-label="activerecord (2 items)">activerecord</a>
+<a href="../../../../tag/api/index.html" class="tag-cloud-link tag-link-220 tag-link-position-3" style="font-size: 10.40625pt;" aria-label="api (4 items)">api</a>
+<a href="../../../../tag/biking/index.html" class="tag-cloud-link tag-link-219 tag-link-position-4" style="font-size: 10.40625pt;" aria-label="biking (4 items)">biking</a>
+<a href="../../../../tag/business/index.html" class="tag-cloud-link tag-link-213 tag-link-position-5" style="font-size: 8pt;" aria-label="business (2 items)">business</a>
+<a href="../../../../tag/c/index.html" class="tag-cloud-link tag-link-33 tag-link-position-6" style="font-size: 10.40625pt;" aria-label="c++ (4 items)">c++</a>
+<a href="../../../../tag/charts/index.html" class="tag-cloud-link tag-link-42 tag-link-position-7" style="font-size: 18.171875pt;" aria-label="charts (25 items)">charts</a>
+<a href="../../../../tag/cms/index.html" class="tag-cloud-link tag-link-60 tag-link-position-8" style="font-size: 12.046875pt;" aria-label="CMS (6 items)">CMS</a>
+<a href="../../../../tag/curb/index.html" class="tag-cloud-link tag-link-190 tag-link-position-9" style="font-size: 8pt;" aria-label="curb (2 items)">curb</a>
+<a href="../../../../tag/curl/index.html" class="tag-cloud-link tag-link-120 tag-link-position-10" style="font-size: 8pt;" aria-label="curl (2 items)">curl</a>
+<a href="../../../../tag/dynamic/index.html" class="tag-cloud-link tag-link-56 tag-link-position-11" style="font-size: 8pt;" aria-label="dynamic (2 items)">dynamic</a>
+<a href="../../../../tag/ece231/index.html" class="tag-cloud-link tag-link-34 tag-link-position-12" style="font-size: 10.40625pt;" aria-label="ece231 (4 items)">ece231</a>
+<a href="../../../../tag/editor/index.html" class="tag-cloud-link tag-link-61 tag-link-position-13" style="font-size: 11.28125pt;" aria-label="editor (5 items)">editor</a>
+<a href="../../../../tag/error/index.html" class="tag-cloud-link tag-link-46 tag-link-position-14" style="font-size: 9.3125pt;" aria-label="error (3 items)">error</a>
+<a href="../../../../tag/flash/index.html" class="tag-cloud-link tag-link-41 tag-link-position-15" style="font-size: 17.84375pt;" aria-label="flash (23 items)">flash</a>
+<a href="../../../../tag/fun/index.html" class="tag-cloud-link tag-link-23 tag-link-position-16" style="font-size: 11.28125pt;" aria-label="fun (5 items)">fun</a>
+<a href="../../../../tag/gems/index.html" class="tag-cloud-link tag-link-44 tag-link-position-17" style="font-size: 8pt;" aria-label="gems (2 items)">gems</a>
+<a href="../../../../tag/graphs/index.html" class="tag-cloud-link tag-link-52 tag-link-position-18" style="font-size: 18.390625pt;" aria-label="graphs (26 items)">graphs</a>
+<a href="../../../../tag/httpi/index.html" class="tag-cloud-link tag-link-191 tag-link-position-19" style="font-size: 8pt;" aria-label="httpi (2 items)">httpi</a>
+<a href="../../../../tag/java/index.html" class="tag-cloud-link tag-link-177 tag-link-position-20" style="font-size: 9.3125pt;" aria-label="java (3 items)">java</a>
+<a href="../../../../tag/javascript/index.html" class="tag-cloud-link tag-link-215 tag-link-position-21" style="font-size: 10.40625pt;" aria-label="Javascript (4 items)">Javascript</a>
+<a href="../../../../tag/linux/index.html" class="tag-cloud-link tag-link-221 tag-link-position-22" style="font-size: 8pt;" aria-label="Linux (2 items)">Linux</a>
+<a href="../../../../tag/macromovers/index.html" class="tag-cloud-link tag-link-66 tag-link-position-23" style="font-size: 8pt;" aria-label="macromovers (2 items)">macromovers</a>
+<a href="../../../../tag/mirah/index.html" class="tag-cloud-link tag-link-176 tag-link-position-24" style="font-size: 8pt;" aria-label="mirah (2 items)">mirah</a>
+<a href="../../../../tag/ofc/index.html" class="tag-cloud-link tag-link-105 tag-link-position-25" style="font-size: 8pt;" aria-label="OFC (2 items)">OFC</a>
+<a href="../../../../tag/open-flash-chart/index.html" class="tag-cloud-link tag-link-40 tag-link-position-26" style="font-size: 18.609375pt;" aria-label="open flash chart (27 items)">open flash chart</a>
+<a href="../../../../tag/php/index.html" class="tag-cloud-link tag-link-216 tag-link-position-27" style="font-size: 9.3125pt;" aria-label="php (3 items)">php</a>
+<a href="../../../../tag/plugin/index.html" class="tag-cloud-link tag-link-65 tag-link-position-28" style="font-size: 12.59375pt;" aria-label="plugin (7 items)">plugin</a>
+<a href="../../../../tag/plugins/index.html" class="tag-cloud-link tag-link-218 tag-link-position-29" style="font-size: 9.3125pt;" aria-label="plugins (3 items)">plugins</a>
+<a href="../../../../tag/prog/index.html" class="tag-cloud-link tag-link-35 tag-link-position-30" style="font-size: 9.3125pt;" aria-label="prog (3 items)">prog</a>
+<a href="../../../../tag/project/index.html" class="tag-cloud-link tag-link-47 tag-link-position-31" style="font-size: 10.40625pt;" aria-label="project (4 items)">project</a>
+<a href="../../../../tag/rails/index.html" class="tag-cloud-link tag-link-210 tag-link-position-32" style="font-size: 20.90625pt;" aria-label="rails (45 items)">rails</a>
+<a href="../../../../tag/ruby/index.html" class="tag-cloud-link tag-link-211 tag-link-position-33" style="font-size: 22pt;" aria-label="ruby (57 items)">ruby</a>
+<a href="../../../../tag/ruby-on-rails/index.html" class="tag-cloud-link tag-link-43 tag-link-position-34" style="font-size: 20.359375pt;" aria-label="ruby on rails (40 items)">ruby on rails</a>
+<a href="../../../../tag/select-boxes/index.html" class="tag-cloud-link tag-link-57 tag-link-position-35" style="font-size: 8pt;" aria-label="select boxes (2 items)">select boxes</a>
+<a href="../../../../tag/simple/index.html" class="tag-cloud-link tag-link-62 tag-link-position-36" style="font-size: 10.40625pt;" aria-label="simple (4 items)">simple</a>
+<a href="../../../../tag/simplecms/index.html" class="tag-cloud-link tag-link-214 tag-link-position-37" style="font-size: 11.28125pt;" aria-label="SimpleCMS (5 items)">SimpleCMS</a>
+<a href="../../../../tag/skizmo/index.html" class="tag-cloud-link tag-link-102 tag-link-position-38" style="font-size: 10.40625pt;" aria-label="skizmo (4 items)">skizmo</a>
+<a href="../../../../tag/software/index.html" class="tag-cloud-link tag-link-48 tag-link-position-39" style="font-size: 8pt;" aria-label="software (2 items)">software</a>
+<a href="../../../../tag/spreadsheet/index.html" class="tag-cloud-link tag-link-45 tag-link-position-40" style="font-size: 8pt;" aria-label="spreadsheet (2 items)">spreadsheet</a>
+<a href="../../../../tag/tutorial/index.html" class="tag-cloud-link tag-link-50 tag-link-position-41" style="font-size: 16.75pt;" aria-label="tutorial (18 items)">tutorial</a>
+<a href="../../../../tag/ubuntu/index.html" class="tag-cloud-link tag-link-150 tag-link-position-42" style="font-size: 8pt;" aria-label="ubuntu (2 items)">ubuntu</a>
+<a href="../../../../tag/vin/index.html" class="tag-cloud-link tag-link-119 tag-link-position-43" style="font-size: 12.59375pt;" aria-label="VIN (7 items)">VIN</a>
+<a href="../../../../tag/vin-api/index.html" class="tag-cloud-link tag-link-159 tag-link-position-44" style="font-size: 12.046875pt;" aria-label="vin api (6 items)">vin api</a>
+<a href="../../../../tag/xml/index.html" class="tag-cloud-link tag-link-165 tag-link-position-45" style="font-size: 9.3125pt;" aria-label="xml (3 items)">xml</a></div>
+</li>
+<li id="categories-524386351" class="widget widget_categories"><h2 class="widgettitle">Topics</h2>
+
+			<ul>
+					<li class="cat-item cat-item-179"><a href="../../../../category/android/index.html">Android</a>
+</li>
+	<li class="cat-item cat-item-118"><a href="../../../../category/api/index.html">api</a>
+</li>
+	<li class="cat-item cat-item-67"><a href="../../../../category/biking/index.html">biking</a>
+</li>
+	<li class="cat-item cat-item-37"><a href="../../../../category/blog/index.html">blog</a>
+</li>
+	<li class="cat-item cat-item-27"><a href="../../../../category/business/index.html">business</a>
+</li>
+	<li class="cat-item cat-item-32"><a href="../../../../category/c-c/index.html">C / C++</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="../../../../category/development/index.html">development</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="../../../../category/games/index.html">games</a>
+</li>
+	<li class="cat-item cat-item-139"><a href="../../../../category/graphics/index.html">Graphics</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="../../../../category/home/index.html">Home</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="../../../../category/ie-hacks/index.html">IE hacks</a>
+</li>
+	<li class="cat-item cat-item-31"><a href="../../../../category/javascript/index.html">Javascript</a>
+</li>
+	<li class="cat-item cat-item-149"><a href="../../../../category/linux/index.html">Linux</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="../../../../category/me/index.html">me</a>
+</li>
+	<li class="cat-item cat-item-26"><a href="../../../../category/open-flash-chart-graphs/index.html">Open Flash Chart Graphs</a>
+</li>
+	<li class="cat-item cat-item-29"><a href="../../../../category/opengl/index.html">opengl</a>
+</li>
+	<li class="cat-item cat-item-36"><a href="../../../../category/php/index.html">php</a>
+</li>
+	<li class="cat-item cat-item-51"><a href="../../../../category/plugins/index.html">plugins</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="../../../../category/projects/index.html">projects</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="../../../../category/rails/index.html">rails</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="../../../../category/railsconf/index.html">railsconf</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="../../../../category/ruby/index.html">ruby</a>
+</li>
+	<li class="cat-item cat-item-28"><a href="../../../../category/simplecms/index.html">SimpleCMS</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="../../../../category/tutorials/index.html">tutorials</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="../../../../category/uncategorized/index.html">Uncategorized</a>
+</li>
+			</ul>
+
+			</li>
+
+		<li id="recent-posts-2" class="widget widget_recent_entries">
+		<h2 class="widgettitle">Recent Posts</h2>
+
+		<ul>
+											<li>
+					<a href="../../../../index.html?p=57726">Dynamic Select Boxes &#8211; Ruby on Rails 3</a>
+									</li>
+											<li>
+					<a href="../../../../index.html?p=57715">VIN API &#8211; Do you know about the complete data set?</a>
+									</li>
+											<li>
+					<a href="../../../../index.html?p=57712">Using Ruby to read from a MagTek USB Card Reader</a>
+									</li>
+											<li>
+					<a href="../../../../index.html?p=57708">Signature Pad in Linux</a>
+									</li>
+											<li>
+					<a href="../../../../index.html?p=57705">Using HTTPI with Curb to do multipart file uploads with spnego</a>
+									</li>
+					</ul>
+
+		</li>
+<li id="recent-comments-2" class="widget widget_recent_comments"><h2 class="widgettitle">Recent Comments</h2>
+<ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">`Drew</span> on <a href="../../../../2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/index.html#comment-24291">Dynamic Select Boxes &#8211; Ruby on Rails 3</a></li><li class="recentcomments"><span class="comment-author-link">Bardach</span> on <a href="../../../../2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/index.html#comment-24290">Dynamic Select Boxes &#8211; Ruby on Rails 3</a></li><li class="recentcomments"><span class="comment-author-link">Bardach</span> on <a href="../../../../2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/index.html#comment-24289">Dynamic Select Boxes &#8211; Ruby on Rails 3</a></li><li class="recentcomments"><span class="comment-author-link">Dar_bok</span> on <a href="../../../../2007/04/30/how-i-got-gta-san-andreas-to-work-with-a-crappy-os-vista/comment-page-2/index.html#comment-20844">How I got GTA San Andreas to Work with (a crappy OS) Vista</a></li><li class="recentcomments"><span class="comment-author-link">Anirudha Pendakur</span> on <a href="../../../../2012/07/25/using-httpi-with-curb-to-do-multipart-file-uploads-with-spnego/comment-page-1/index.html#comment-19583">Using HTTPI with Curb to do multipart file uploads with spnego</a></li></ul></li>
+<li id="archives-2" class="widget widget_archive"><h2 class="widgettitle">Archives</h2>
+
+			<ul>
+					<li><a href='../../../../2012/08/index.html'>August 2012</a></li>
+	<li><a href='../../../../2012/07/index.html'>July 2012</a></li>
+	<li><a href='../../../../2012/05/index.html'>May 2012</a></li>
+	<li><a href='../../../../2012/04/index.html'>April 2012</a></li>
+	<li><a href='../../../../2012/03/index.html'>March 2012</a></li>
+	<li><a href='../../../../2011/11/index.html'>November 2011</a></li>
+	<li><a href='../../../../2011/10/index.html'>October 2011</a></li>
+	<li><a href='../../../../2011/05/index.html'>May 2011</a></li>
+	<li><a href='../../../../2011/03/index.html'>March 2011</a></li>
+	<li><a href='../../../../2011/02/index.html'>February 2011</a></li>
+	<li><a href='../../../../2011/01/index.html'>January 2011</a></li>
+	<li><a href='../../../../2010/11/index.html'>November 2010</a></li>
+	<li><a href='../../../../2010/09/index.html'>September 2010</a></li>
+	<li><a href='../../../../2010/04/index.html'>April 2010</a></li>
+	<li><a href='../../../../2010/02/index.html'>February 2010</a></li>
+	<li><a href='../../../../2010/01/index.html'>January 2010</a></li>
+	<li><a href='../../../../2009/12/index.html'>December 2009</a></li>
+	<li><a href='../../../../2009/10/index.html'>October 2009</a></li>
+	<li><a href='../../../../2009/09/index.html'>September 2009</a></li>
+	<li><a href='../../../../2009/08/index.html'>August 2009</a></li>
+	<li><a href='../../../../2009/04/index.html'>April 2009</a></li>
+	<li><a href='../../../../2009/03/index.html'>March 2009</a></li>
+	<li><a href='../../../../2009/02/index.html'>February 2009</a></li>
+	<li><a href='../../../../2009/01/index.html'>January 2009</a></li>
+	<li><a href='../../../10/index.html'>October 2008</a></li>
+	<li><a href='../../../09/index.html'>September 2008</a></li>
+	<li><a href='../../../08/index.html'>August 2008</a></li>
+	<li><a href='../../../07/index.html'>July 2008</a></li>
+	<li><a href='../../../04/index.html'>April 2008</a></li>
+	<li><a href='../../../03/index.html'>March 2008</a></li>
+	<li><a href='../../../02/index.html'>February 2008</a></li>
+	<li><a href='../../index.html'>January 2008</a></li>
+	<li><a href='../../../../2007/12/index.html'>December 2007</a></li>
+	<li><a href='../../../../2007/10/index.html'>October 2007</a></li>
+	<li><a href='../../../../2007/09/index.html'>September 2007</a></li>
+	<li><a href='../../../../2007/08/index.html'>August 2007</a></li>
+	<li><a href='../../../../2007/06/index.html'>June 2007</a></li>
+	<li><a href='../../../../2007/05/index.html'>May 2007</a></li>
+	<li><a href='../../../../2007/04/index.html'>April 2007</a></li>
+			</ul>
+
+			</li>
+	</ul>
+    
+    </div><!-- Sidebar -->
+
+</div><!-- Rightcolumn -->
+
+
+
+<br clear="all" />
+
+<div id="footer">
+<p>Copyright 2009, powered by <a href="http://www.wordpress.org/">WordPress</a></p>
+</div><!-- Footer -->
+
+</div><!-- Wrapper -->
+
+<br clear="all" />
+</div><!-- Container -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3308745-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

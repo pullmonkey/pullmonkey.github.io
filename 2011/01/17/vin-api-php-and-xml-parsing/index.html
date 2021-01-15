@@ -1,0 +1,707 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>PullMonkey Blog  &raquo; Blog Archive   &raquo; VIN API &#8211; PHP and XML Parsing</title>
+<meta name="generator" content="WordPress 5.6" /> <!-- leave this for stats -->
+<link rel="stylesheet" href="../../../../wp-content/themes/simple&#32;paper/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../../../../wp-content/themes/simple&#32;paper/code_highlighter.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="PullMonkey Blog RSS Feed" href="../../../../feed/index.html" />
+<link rel="pingback" href="http://pullmonkey.com/xmlrpc.php" />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="PullMonkey Blog &raquo; VIN API &#8211; PHP and XML Parsing Comments Feed" href="feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/pullmonkey.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='../../../../wp-includes/css/dist/block-library/style.min.css?ver=5.6' type='text/css' media='all' />
+<link rel="https://api.w.org/" href="../../../../wp-json/index.html" /><link rel="alternate" type="application/json" href="../../../../wp-json/wp/v2/posts/57568" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://pullmonkey.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../../../wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.6" />
+<link rel="canonical" href="../../../../index.html?p=57568" />
+<link rel='shortlink' href='../../../../index.html?p=57568' />
+<link rel="alternate" type="application/json+oembed" href="../../../../wp-json/oembed/1.0/embed?url=http:%252F%252Fpullmonkey.com%252F2011%252F01%252F17%252Fvin-api-php-and-xml-parsing%252F" />
+<link rel="alternate" type="text/xml+oembed" href="../../../../wp-json/oembed/1.0/embed?url=http:%252F%252Fpullmonkey.com%252F2011%252F01%252F17%252Fvin-api-php-and-xml-parsing%252F&amp;format=xml" />
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style></head>
+<body>
+
+<div id="container">
+
+<div id="menu">
+
+        <ul id="nav">
+        <li class="current_page_item"><a href="../../../../index.html">Home</a></li>
+                       	</ul>
+
+</div><!-- Menu -->
+
+<div id="wrapper">
+
+<div id="c1">
+
+<h1 id="logo"><a href="../../../../index.html">PullMonkey Blog</a></h1>
+<h2 id="description"></h2>
+
+<div id="content">
+
+
+<div class="post" id="post-57568">
+
+<div class="date">17 <span>Jan</span></div>
+
+<h2><a href="../../../../index.html?p=57568" rel="bookmark" title="Permanent Link to VIN API &#8211; PHP and XML Parsing">VIN API &#8211; PHP and XML Parsing</a></h2><br clear="all" />
+
+<p>Thanks go to Michael for sharing his hard work with the rest of you VIN API and PHP developers 🙂<br />
+I hope this helps -</p>
+<p><script src="https://gist.github.com/783562.js?file=gistfile1.php"></script></p>
+
+<br />
+
+<div class="meta">
+<span class="note">Filed under: <a href="../../../../category/api/index.html" rel="category tag">api</a>, <a href="../../../../category/development/index.html" rel="category tag">development</a>, <a href="../../../../category/php/index.html" rel="category tag">php</a>, <a href="../../../../category/projects/index.html" rel="category tag">projects</a>, <a href="../../../../category/tutorials/index.html" rel="category tag">tutorials</a></span>
+<span class="tags">Tags: <a href="../../../../tag/api/index.html" rel="tag">api</a>, <a href="../../../../tag/parsing/index.html" rel="tag">parsing</a>, <a href="../../../../tag/php/index.html" rel="tag">php</a>, <a href="../../../../tag/tutorial/index.html" rel="tag">tutorial</a>, <a href="../../../../tag/vin/index.html" rel="tag">VIN</a>, <a href="../../../../tag/vin-api/index.html" rel="tag">vin api</a>, <a href="../../../../tag/vin-decoder/index.html" rel="tag">vin decoder</a>, <a href="../../../../tag/vin-decoding/index.html" rel="tag">vin decoding</a>, <a href="../../../../tag/xml/index.html" rel="tag">xml</a></span><br /></div><!--Meta -->
+
+
+<!-- You can start editing here. -->
+
+<div id="commentsbox">
+
+
+
+<h2 id="comments">
+	 <br /> 22 Responses 
+	  to &#8220;VIN API &#8211; PHP and XML Parsing&#8221;</h2>
+	
+	<ol class="commentlist">
+		
+
+<li class="odd" id="comment-18306">
+
+By <strong><a href='http://www.pagesmithdesign.com' rel='external nofollow ugc' class='url'>Page Smith</a></strong> on <a href="../../../../index.html?p=57568#comment-18306" title="">Mar 21, 2011</a> | <a href="../../../../index.html?p=57568#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hi Guys, this is fantastic stuff! Could you please show where in the above PHP implementation I would indicate the &#8220;complete = true;&#8221; option? Would I need to remove the array for this to work? </p>
+<p>Sorry I just saw examples of how to return all variables in Ruby and Windows Server implementations, but didn&#8217;t catch a PHP way to return ALL xml variables available.</p>
+<p>Also, one other question, I did get a working test going and tried multiple very popular manufacturers and models of cars but basic things like the &#8220;Transmission:&#8221; type never came back for me, even though they were listed in the above code example. Do you find this common or perhaps was there a code issue?</p>
+<p>Thanks in advance! If I can get this running well I will have someone willing to continually buy VINs from you haha.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18307">
+
+By <strong>charlie</strong> on <a href="../../../../index.html?p=57568#comment-18307" title="">Mar 21, 2011</a> | <a href="../../../../index.html?p=57568#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>1) add ?complete=true, like this:<br />
+curl_setopt ($curl, CURLOPT_URL, &#8216;http://vinapi.skizmo.com/vins/&#8217;.$vin.&#8217;.xml?complete=true&#8217;);</p>
+<p>2) Interesting, I&#8217;d like to take a look, please send me an email with the VINs that did not return transmission data &#8211; support at mrquotey dot com</p>
+<p>Great 🙂</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18308">
+
+By <strong>Robin Daugherty</strong> on <a href="../../../../index.html?p=57568#comment-18308" title="">Mar 28, 2011</a> | <a href="../../../../index.html?p=57568#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Page, to go through all of the items returned in the XML, you&#8217;ll need to parse it. There are a few libraries to do this. I use SimpleXMLElement:</p>
+<p>	$e = new SimpleXMLElement($this-&gt;xml);</p>
+<p>	foreach($e-&gt;children() as $item) {<br />
+		$name = $item-&gt;getName();<br />
+		$value = (string)$item;<br />
+	}</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18309">
+
+By <strong><a href='http://www.pagesmithdesign.com' rel='external nofollow ugc' class='url'>Page Smith</a></strong> on <a href="../../../../index.html?p=57568#comment-18309" title="">Mar 28, 2011</a> | <a href="../../../../index.html?p=57568#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Thank you both, that is a great help in understanding this a bit more!</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18593">
+
+By <strong><a href='http://advauto.ro' rel='external nofollow ugc' class='url'>vlad</a></strong> on <a href="../../../../index.html?p=57568#comment-18593" title="">Oct 9, 2011</a> | <a href="../../../../index.html?p=57568#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>I want to use vinapi on my site. Can anyone help me?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18594">
+
+By <strong>charlie</strong> on <a href="../../../../index.html?p=57568#comment-18594" title="">Oct 9, 2011</a> | <a href="../../../../index.html?p=57568#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Sure &#8211; are you having a specific problem?  What language are you working with?  Are you a developer?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18595">
+
+By <strong><a href='http://advauto.ro' rel='external nofollow ugc' class='url'>vlad</a></strong> on <a href="../../../../index.html?p=57568#comment-18595" title="">Oct 9, 2011</a> | <a href="../../../../index.html?p=57568#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>I want to use php. I&#8217;m a not a developer. I dont know how can I start this script. I want to buy vin packages and use on my site to decode vins for check auto parts compatibility.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18596">
+
+By <strong>charlie</strong> on <a href="../../../../index.html?p=57568#comment-18596" title="">Oct 9, 2011</a> | <a href="../../../../index.html?p=57568#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>You can find a php example here &#8211; <a href="http://vinapi.skizmo.com/examples" rel="nofollow ugc">http://vinapi.skizmo.com/examples</a></p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18787">
+
+By <strong><a href='http://www.roneskinder.com' rel='external nofollow ugc' class='url'>Ron Eskinder</a></strong> on <a href="../../../../index.html?p=57568#comment-18787" title="">Jan 21, 2012</a> | <a href="../../../../index.html?p=57568#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hi,</p>
+<p> i need to get an API key to be able to use the VIN decoder, what do i have to do to get one<br />
+Thanks</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18788">
+
+By <strong>charlie</strong> on <a href="../../../../index.html?p=57568#comment-18788" title="">Jan 21, 2012</a> | <a href="../../../../index.html?p=57568#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hey Ron &#8211;</p>
+<p>Starting from <a href="http://vinapi.skizmo.com" rel="nofollow ugc">http://vinapi.skizmo.com</a>, there is a signup link in the upper-right of the page.<br />
+This link will take you here &#8211; <a href="http://vinapi.skizmo.com/signup" rel="nofollow ugc">http://vinapi.skizmo.com/signup</a><br />
+After signing up, you&#8217;ll get your API key and 20 free VINs with which to test.<br />
+After that, you can take a look at the packages and prices of what we offer &#8211; <a href="http://vinapi.skizmo.com/packages_and_pricing" rel="nofollow ugc">http://vinapi.skizmo.com/packages_and_pricing</a></p>
+<p>If you have any questions, just let me know,</p>
+<p>&#8211; Charlie</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18947">
+
+By <strong>just J</strong> on <a href="../../../../index.html?p=57568#comment-18947" title="">Jun 13, 2012</a> | <a href="../../../../index.html?p=57568#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hey,</p>
+<p>I just coded this up in C# and it isn&#8217;t returning a &#8220;complete&#8221; decode.  Below is the code so you can clearly see I have complete set to true and all I get is the basic info.  Anything that I should do different?</p>
+<p>private string ReturnXML()<br />
+{<br />
+            string vin = &#8220;VIN_GOES_HERE&#8221;;</p>
+<p>            WebClient wc = new WebClient();<br />
+            wc.Headers.Add(&#8220;X-VinApiKey&#8221;, &#8220;THIS_IS_MY_KEY&#8221;);</p>
+<p>            Stream data = wc.OpenRead(&#8220;http://vinapi.skizmo.com/vins/&#8221; + vin + &#8220;.xml?complete=true&#8221;);<br />
+            StreamReader reader = new StreamReader(data);<br />
+            string s = reader.ReadToEnd();</p>
+<p>            return s;<br />
+}</p>
+<p>I&#8217;d like to purchase your service if I can get this working.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18949">
+
+By <strong>charlie</strong> on <a href="../../../../index.html?p=57568#comment-18949" title="">Jun 13, 2012</a> | <a href="../../../../index.html?p=57568#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>just J &#8211;</p>
+<p>Let me see if I can help &#8211; can you give me some VINs that you&#8217;d like complete datasets for?<br />
+I&#8217;ll see if it is your code, our code or our data.</p>
+<p>It&#8217;s not saying much, but I&#8217;m getting complete datasets when requested via API, see below:</p>
+<p># getting the basic set:<br />
+>> VinApi.get(&#8220;1HGCM82633A004352&#8221;)<br />
+=> {&#8220;model&#8221;=>&#8221;ACCORD EX&#8221;, &#8220;body_style&#8221;=>&#8221;Coupe&#8221;, &#8220;country&#8221;=>&#8221;USA&#8221;, &#8220;world_region&#8221;=>&#8221;North America&#8221;, &#8220;vin&#8221;=>&#8221;1HGCM82633A004352&#8221;, &#8220;engine_type&#8221;=>&#8221;FWD&#8221;, &#8220;transmission&#8221;=>&#8221;Automatic&#8221;, &#8220;make&#8221;=>&#8221;Honda&#8221;, &#8220;year&#8221;=>&#8221;2003&#8221;}</p>
+<p># getting the complete set<br />
+>> VinApi.get(&#8220;1HGCM82633A004352&#8221;, :complete => true)<br />
+=> {&#8220;front_split_bench_seat&#8221;=>&#8221;N/A&#8221;, &#8220;telescopic_steering_column&#8221;=>&#8221;Std.&#8221;, &#8220;powertrain_warranty_distance&#8221;=>&#8221;36,000 mile&#8221;, &#8220;leather_seat&#8221;=>&#8221;Std.&#8221;, &#8220;automatic_load_leveling&#8221;=>&#8221;N/A&#8221;, &#8220;load_bearing_exterior_rack&#8221;=>&#8221;N/A&#8221;, &#8220;front_spring_type&#8221;=>&#8221;Coil&#8221;, &#8220;steel_wheels&#8221;=>&#8221;N/A&#8221;, &#8220;maximum_gvwr&#8221;=>&#8221;No data lbs&#8221;, &#8220;rear_wiper&#8221;=>&#8221;N/A&#8221;, &#8220;leather_steering_wheel&#8221;=>&#8221;Std.&#8221;, &#8220;front_brake_type&#8221;=>&#8221;Disc&#8221;, &#8220;rear_brake_type&#8221;=>&#8221;Disc&#8221;, &#8220;vehicle_anti_theft&#8221;=>&#8221;Std.&#8221;, &#8220;overall_length&#8221;=>&#8221;187.60 in.&#8221;, &#8220;pickup_truck_bed_liner&#8221;=>&#8221;N/A&#8221;, &#8220;front_side_airbag_with_head_protection&#8221;=>&#8221;N/A&#8221;, &#8220;second_row_side_airbag_with_head_protection&#8221;=>&#8221;N/A&#8221;, &#8220;cd_changer&#8221;=>&#8221;Std.&#8221;, &#8220;second_row_folding_seat&#8221;=>&#8221;Std.&#8221;, &#8220;am_fm_radio&#8221;=>&#8221;Std.&#8221;, &#8220;locking_pickup_truck_tailgate&#8221;=>&#8221;N/A&#8221;, &#8220;fog_lights&#8221;=>&#8221;Opt.&#8221;, &#8220;maximum_towing&#8221;=>&#8221;1000 lbs&#8221;, &#8220;msrp&#8221;=>&#8221;$25,900 USD&#8221;, &#8220;genuine_wood_trim&#8221;=>&#8221;N/A&#8221;, &#8220;powertrain_warranty_duration&#8221;=>&#8221;36 month&#8221;, &#8220;cruise_control&#8221;=>&#8221;Std.&#8221;, &#8220;front_power_lumbar_support&#8221;=>&#8221;N/A&#8221;, &#8220;power_sunroof&#8221;=>&#8221;Std.&#8221;, &#8220;towing_preparation_package&#8221;=>&#8221;N/A&#8221;, &#8220;city_mpg&#8221;=>&#8221;21 miles/gallon&#8221;, &#8220;pickup_truck_cargo_box_light&#8221;=>&#8221;N/A&#8221;, &#8220;front_legroom&#8221;=>&#8221;43.10 in.&#8221;, &#8220;first_aid_kit&#8221;=>&#8221;N/A&#8221;, &#8220;mpg_hwy&#8221;=>&#8221;30 miles/gallon&#8221;, &#8220;sliding_rear_pickup_truck_window&#8221;=>&#8221;N/A&#8221;, &#8220;cargo_area_tiedowns&#8221;=>&#8221;Std.&#8221;, &#8220;wheelbase&#8221;=>&#8221;105.10 in.&#8221;, &#8220;electronic_parking_aid&#8221;=>&#8221;N/A&#8221;, &#8220;second_row_side_airbag&#8221;=>&#8221;N/A&#8221;, &#8220;rear_spring_type&#8221;=>&#8221;Coil&#8221;, &#8220;driveline&#8221;=>&#8221;FWD&#8221;, &#8220;driver_multi_adjustable_power_seat&#8221;=>&#8221;Std.&#8221;, &#8220;dvd_player&#8221;=>&#8221;Opt.&#8221;, &#8220;tow_hitch_receiver&#8221;=>&#8221;N/A&#8221;, &#8220;track_rear&#8221;=>&#8221;61.20 in.&#8221;, &#8220;deep_tinted_glass&#8221;=>&#8221;N/A&#8221;, &#8220;maximum_payload&#8221;=>&#8221;No data lbs&#8221;, &#8220;model_year&#8221;=>&#8221;2003&#8221;, &#8220;abs_brakes&#8221;=>&#8221;Std.&#8221;, &#8220;standard_gvwr&#8221;=>&#8221;No data lbs&#8221;, &#8220;power_adjustable_exterior_mirror&#8221;=>&#8221;Std.&#8221;, &#8220;keyless_entry&#8221;=>&#8221;Std.&#8221;, &#8220;standard_seating&#8221;=>&#8221;5&#8221;, &#8220;heated_exterior_mirror&#8221;=>&#8221;N/A&#8221;, &#8220;cassette_player&#8221;=>&#8221;Opt.&#8221;, &#8220;rust_duration&#8221;=>&#8221;60 month&#8221;, &#8220;tilt_steering_column&#8221;=>&#8221;Std.&#8221;, &#8220;limited_slip_differential&#8221;=>&#8221;N/A&#8221;, &#8220;transmission&#8221;=>&#8221;5-Speed Automatic Overdrive&#8221;, &#8220;depth&#8221;=>&#8221;No data in.&#8221;, &#8220;highway_mpg&#8221;=>&#8221;30 miles/gallon&#8221;, &#8220;cargo_net&#8221;=>&#8221;Std.&#8221;, &#8220;dealer_invoice&#8221;=>&#8221;$23,305 USD&#8221;, &#8220;passenger_volume&#8221;=>&#8221;88.00 cu.ft.&#8221;, &#8220;engine_type&#8221;=>&#8221;3.0L V6 SOHC 24V&#8221;, &#8220;rear_shoulder_room&#8221;=>&#8221;55.40 in.&#8221;, &#8220;warranty_duration&#8221;=>&#8221;36 month&#8221;, &#8220;rain_sensing_wipers&#8221;=>&#8221;N/A&#8221;, &#8220;driver_airbag&#8221;=>&#8221;Std.&#8221;, &#8220;interval_wipers&#8221;=>&#8221;Std.&#8221;, &#8220;tank&#8221;=>&#8221;17.10 gallon&#8221;, &#8220;remote_ignition&#8221;=>&#8221;N/A&#8221;, &#8220;wind_deflector_for_convertibles&#8221;=>&#8221;N/A&#8221;, &#8220;second_row_multi_adjustable_power_seat&#8221;=>&#8221;N/A&#8221;, &#8220;warranty_distance&#8221;=>&#8221;36,000 mile&#8221;, &#8220;optional_seating&#8221;=>&#8221;No data&#8221;, &#8220;front_headroom&#8221;=>&#8221;37.50 in.&#8221;, &#8220;exterior_color&#8221;=>&#8221;Taffeta White&#8221;, &#8220;destination_charge&#8221;=>&#8221;No data USD&#8221;, &#8220;voice_activated_telephone&#8221;=>&#8221;Opt.&#8221;, &#8220;air_conditioning&#8221;=>&#8221;Std.&#8221;, &#8220;interior_trim&#8221;=>&#8221;Ivory Leather Interior&#8221;, &#8220;chrome_wheels&#8221;=>&#8221;Opt.&#8221;, &#8220;child_safety_door_locks&#8221;=>&#8221;N/A&#8221;, &#8220;second_row_sound_controls&#8221;=>&#8221;N/A&#8221;, &#8220;front_suspension&#8221;=>&#8221;Ind&#8221;, &#8220;electronic_brake_assistance&#8221;=>&#8221;N/A&#8221;, &#8220;cd_player&#8221;=>&#8221;Std.&#8221;, &#8220;overall_height&#8221;=>&#8221;55.70 in.&#8221;, &#8220;front_heated_seat&#8221;=>&#8221;Std.&#8221;, &#8220;track_front&#8221;=>&#8221;61.10 in.&#8221;, &#8220;year&#8221;=>&#8221;2003&#8221;, &#8220;splash_guards&#8221;=>&#8221;Opt.&#8221;, &#8220;locking_differential&#8221;=>&#8221;N/A&#8221;, &#8220;cargo_length&#8221;=>&#8221;No data in.&#8221;, &#8220;navigation_aid&#8221;=>&#8221;N/A&#8221;, &#8220;anti_brake_system&#8221;=>&#8221;4-Wheel ABS&#8221;, &#8220;model&#8221;=>&#8221;Accord&#8221;, &#8220;adjustable_foot_pedals&#8221;=>&#8221;N/A&#8221;, &#8220;front_power_memory_seat&#8221;=>&#8221;N/A&#8221;, &#8220;front_hip_room&#8221;=>&#8221;54.20 in.&#8221;, &#8220;run_flat_tires&#8221;=>&#8221;N/A&#8221;, &#8220;passenger_multi_adjustable_power_seat&#8221;=>&#8221;Std.&#8221;, &#8220;power_windows&#8221;=>&#8221;Std.&#8221;, &#8220;second_row_removable_seat&#8221;=>&#8221;N/A&#8221;, &#8220;alloy_wheels&#8221;=>&#8221;Std.&#8221;, &#8220;glass_rear_window_on_convertible&#8221;=>&#8221;N/A&#8221;, &#8220;rear_spoiler&#8221;=>&#8221;Opt.&#8221;, &#8220;rust_distance&#8221;=>&#8221;Unlimited mile&#8221;, &#8220;heated_steering_wheel&#8221;=>&#8221;N/A&#8221;, &#8220;tire_pressure_monitor&#8221;=>&#8221;N/A&#8221;, &#8220;electrochromic_exterior_rearview_mirror&#8221;=>&#8221;N/A&#8221;, &#8220;cargo_volume&#8221;=>&#8221;12.80 cu.ft.&#8221;, &#8220;separate_driver_front_passenger_climate_controls&#8221;=>&#8221;Std.&#8221;, &#8220;rear_hip_room&#8221;=>&#8221;46.10 in.&#8221;, &#8220;removable_top&#8221;=>&#8221;N/A&#8221;, &#8220;subwoofer&#8221;=>&#8221;N/A&#8221;, &#8220;cargo_area_cover&#8221;=>&#8221;N/A&#8221;, &#8220;ground_clearance&#8221;=>&#8221;No data in.&#8221;, &#8220;rear_suspension&#8221;=>&#8221;Ind&#8221;, &#8220;power_trunk_lid&#8221;=>&#8221;N/A&#8221;, &#8220;running_boards&#8221;=>&#8221;N/A&#8221;, &#8220;third_row_removable_seat&#8221;=>&#8221;N/A&#8221;, &#8220;manual_sunroof&#8221;=>&#8221;Std.&#8221;, &#8220;side_head_curtain_airbag&#8221;=>&#8221;Std.&#8221;, &#8220;trip_computer&#8221;=>&#8221;N/A&#8221;, &#8220;rear_headroom&#8221;=>&#8221;36.10 in.&#8221;, &#8220;standard_payload&#8221;=>&#8221;No data lbs&#8221;, &#8220;overall_width&#8221;=>&#8221;71.30 in.&#8221;, &#8220;steering_wheel_mounted_controls&#8221;=>&#8221;Std.&#8221;, &#8220;turning_diameter&#8221;=>&#8221;35.40 in.&#8221;, &#8220;body_style&#8221;=>&#8221;COUPE 2-DR&#8221;, &#8220;front_shoulder_room&#8221;=>&#8221;56.10 in.&#8221;, &#8220;second_row_heated_seat&#8221;=>&#8221;N/A&#8221;, &#8220;telematics_system&#8221;=>&#8221;N/A&#8221;, &#8220;vehicle_stability_control_system&#8221;=>&#8221;N/A&#8221;, &#8220;width_at_wheelwell&#8221;=>&#8221;No data in.&#8221;, &#8220;tachometer&#8221;=>&#8221;Std.&#8221;, &#8220;make&#8221;=>&#8221;Honda&#8221;, &#8220;electrochromic_interior_rearview_mirror&#8221;=>&#8221;Opt.&#8221;, &#8220;daytime_running_lights&#8221;=>&#8221;N/A&#8221;, &#8220;automatic_headlights&#8221;=>&#8221;Std.&#8221;, &#8220;manufactured_in&#8221;=>&#8221;UNITED STATES&#8221;, &#8220;tires&#8221;=>&#8221;205/60R16&#8221;, &#8220;front_air_dam&#8221;=>&#8221;Std.&#8221;, &#8220;power_door_locks&#8221;=>&#8221;Std.&#8221;, &#8220;power_sliding_side_van_door&#8221;=>&#8221;N/A&#8221;, &#8220;standard_towing&#8221;=>&#8221;1000 lbs&#8221;, &#8220;front_side_airbag&#8221;=>&#8221;Std.&#8221;, &#8220;curb_weight&#8221;=>&#8221;No data lbs&#8221;, &#8220;trim_level&#8221;=>&#8221;EX V6 coupe AT&#8221;, &#8220;rear_legroom&#8221;=>&#8221;31.90 in.&#8221;, &#8220;width_at_wall&#8221;=>&#8221;No data in.&#8221;, &#8220;steering_type&#8221;=>&#8221;R&#038;P&#8221;, &#8220;mpg_city&#8221;=>&#8221;21 miles/gallon&#8221;, &#8220;traction_control&#8221;=>&#8221;Std.&#8221;, &#8220;high_intensity_discharge_headlights&#8221;=>&#8221;N/A&#8221;, &#8220;rear_window_defogger&#8221;=>&#8221;Std.&#8221;, &#8220;skid_plate&#8221;=>&#8221;N/A&#8221;, &#8220;full_size_spare_tire&#8221;=>&#8221;N/A&#8221;, &#8220;passenger_airbag&#8221;=>&#8221;Std.&#8221;, &#8220;tilt_steering&#8221;=>&#8221;Std.&#8221;, &#8220;trunk_anti_trap_device&#8221;=>&#8221;Std.&#8221;, &#8220;four_wd_awd&#8221;=>&#8221;N/A&#8221;, &#8220;front_cooled_seat&#8221;=>&#8221;N/A&#8221;}</p>
+<p>&#8211; Charlie</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18950">
+
+By <strong>just J</strong> on <a href="../../../../index.html?p=57568#comment-18950" title="">Jun 14, 2012</a> | <a href="../../../../index.html?p=57568#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hey,</p>
+<p>Thanks for the quick reply.  I tried the same VIN you have and it was a full dataset, so I know it isn&#8217;t my code.  I tried the below VINs from my database, which are current vehicles on the market today from multiple dealerships and all of them returned a short dataset.</p>
+<p>1FTRW07L43KD01241<br />
+1FMFU17L94LB60432<br />
+1FTRW12W65KC97784<br />
+JM1NC25F160114359<br />
+JTDBT4K38A4067275<br />
+3VWRW3AL0AM011110<br />
+JA3AJ26E35U053323</p>
+<p>Not sure what the issue is but anyway I can help you to resolve it, just let me know.</p>
+<p>Regards,<br />
+Jacob</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18951">
+
+By <strong>charlie</strong> on <a href="../../../../index.html?p=57568#comment-18951" title="">Jun 15, 2012</a> | <a href="../../../../index.html?p=57568#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Thanks for the test VINs Jacob &#8211; I&#8217;ll see what we can figure out and get back to you asap.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18952">
+
+By <strong>charlie</strong> on <a href="../../../../index.html?p=57568#comment-18952" title="">Jun 15, 2012</a> | <a href="../../../../index.html?p=57568#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Jacob &#8211; let&#8217;s see how these changes hold up &#8211; let me know how it goes.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18953">
+
+By <strong>just J</strong> on <a href="../../../../index.html?p=57568#comment-18953" title="">Jun 15, 2012</a> | <a href="../../../../index.html?p=57568#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hey, </p>
+<p>I tried a few of them and they worked.  I then went to my database and pulled out a small list to check and only the last one I tried worked.  Now, I get the &#8220;out of credits&#8221; error.  I don&#8217;t want to buy credits until I know your service will work for me.  Below is the list of the new list I tried.</p>
+<p>2G1WC5EM2B1192127<br />
+1D4RD4GGXBC698496<br />
+2G1WG5EK2B1210242<br />
+1G6DW6ED3B0160975<br />
+3GNBABFW5BS547555<br />
+JHMGE8H48AS000967<br />
+5FNRL5H47BB015649<br />
+1FTRW07L43KD01241  &#8211;  worked.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18954">
+
+By <strong>charlie</strong> on <a href="../../../../index.html?p=57568#comment-18954" title="">Jun 15, 2012</a> | <a href="../../../../index.html?p=57568#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hey Jacob &#8211; I credited you with 200 VIN requests.   So please verify and make sure I have the right Jacob 🙂  You can do the equivalent of VinApi.get(&#8220;account_information&#8221;) to check.<br />
+Strangely enough, those VINs all work for me (again, not saying much).  I&#8217;ve added a ton more loggers and we&#8217;ll get to the bottom of this.  It has to do with our caching of data sets, for which I&#8217;ve fixed a few areas of overlap.<br />
+Initially, everything was just the &#8220;basic&#8221; data set and we have some stubborn VINs in there that we&#8217;ve been washing out.<br />
+Thanks again for the help.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18956">
+
+By <strong>just J</strong> on <a href="../../../../index.html?p=57568#comment-18956" title="">Jun 15, 2012</a> | <a href="../../../../index.html?p=57568#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>I tried the 10 and 1 came back with a full dataset, 1 was invalid check-sum (guessing the dealer input the vin wrong) and the rest were all short datasets.  </p>
+<p>I want to get at least 50% working, that way I can charge dealers per full dataset only and still come out with a little profit.</p>
+<p>Now this is weird&#8230; I just ran the same 10 VINs again and 6 of 10 (minus one for invalid VIN) came back with a full dataset.   Not sure if you are updating one database with another on the fly or using JOIN but something isn&#8217;t working right on your end.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18958">
+
+By <strong>just J</strong> on <a href="../../../../index.html?p=57568#comment-18958" title="">Jun 18, 2012</a> | <a href="../../../../index.html?p=57568#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hey,</p>
+<p>Not sure what you changed, but thanks!  I ran 5 and they all came back with full datasets, ran 5 more and they all came back good.  I then tried 10 and 100% full datasets.  I logged into my account to see how many remaining credits I had and noticed you bumped it up (thanks for that) so I ran 75 VINs at once and guess what?  That&#8217;s right, 100% full datasets!  I&#8217;m very pleased and now writing a class to parse the info that I need from it.   Just made my day!  It was pretty quick, too.  I ran each VIN single threaded and it was finished in under 2 minutes.</p>
+<p>Regards,<br />
+Jacob</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18959">
+
+By <strong>charlie</strong> on <a href="../../../../index.html?p=57568#comment-18959" title="">Jun 19, 2012</a> | <a href="../../../../index.html?p=57568#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hey Jacob &#8211; worked a bit over the weekend, found a couple places that were of issue and refactored them.    Thanks for the update and thanks again for the help troubleshooting.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-19021">
+
+By <strong><a href='http://galtech.org' rel='external nofollow ugc' class='url'>thas</a></strong> on <a href="../../../../index.html?p=57568#comment-19021" title="">Aug 18, 2012</a> | <a href="../../../../index.html?p=57568#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>how to get api key ?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-19023">
+
+By <strong>charlie</strong> on <a href="../../../../index.html?p=57568#comment-19023" title="">Aug 19, 2012</a> | <a href="../../../../index.html?p=57568#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>thas &#8211;</p>
+<p>You get an api key from vinapi.skizmo.com here &#8211; <a href="http://vinapi.skizmo.com/signup" rel="nofollow">http://vinapi.skizmo.com/signup</a>. When you sign up, you&#8217;ll get an api key good for 20 VIN decodings.  After that, you pick from the packages available here &#8211; <a href="http://vinapi.skizmo.com/packages_and_pricing" rel="nofollow">http://vinapi.skizmo.com/packages_and_pricing</a>.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		</ol>
+	
+	
+	
+
+	<p id="comments-closed">Sorry, comments for this entry are closed at this time.</p>
+</div>
+</div><!-- Post -->
+
+		        
+  
+
+	
+</div><!-- Content -->
+
+</div><!-- LeftColumn -->
+
+<div id="c2">
+
+   
+    <div id="sidebar">
+
+<div id="subscribe">
+<a href="../../../../feed/index.html"><img src="../../../../wp-content/themes/simple&#32;paper/images/rss.gif" alt="RSS-FEED" border="0" id="rss" /></a>
+<a href="../../../../feed/index.html">subscribe to the feed</a><br clear="all" />
+</div><!-- subscribe rss -->
+
+<div id="topsearch">
+<form action="../../../../index.html" method="post">
+<input type="text" value="Search..." name="s" id="ls" class="searchfield" onfocus="if (this.value == 'Search...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search...';}" />
+<input type="image" src="../../../../wp-content/themes/simple&#32;paper/images/click.gif" id="submit" />
+</form>
+<br clear="all" />
+<br clear="all" />
+</div>
+    
+    	<ul>
+	<li id="tag_cloud-2" class="widget widget_tag_cloud"><h2 class="widgettitle">Tags</h2>
+<div class="tagcloud"><a href="../../../../tag/net/index.html" class="tag-cloud-link tag-link-166 tag-link-position-1" style="font-size: 8pt;" aria-label=".net (2 items)">.net</a>
+<a href="../../../../tag/activerecord/index.html" class="tag-cloud-link tag-link-54 tag-link-position-2" style="font-size: 8pt;" aria-label="activerecord (2 items)">activerecord</a>
+<a href="../../../../tag/api/index.html" class="tag-cloud-link tag-link-220 tag-link-position-3" style="font-size: 10.40625pt;" aria-label="api (4 items)">api</a>
+<a href="../../../../tag/biking/index.html" class="tag-cloud-link tag-link-219 tag-link-position-4" style="font-size: 10.40625pt;" aria-label="biking (4 items)">biking</a>
+<a href="../../../../tag/business/index.html" class="tag-cloud-link tag-link-213 tag-link-position-5" style="font-size: 8pt;" aria-label="business (2 items)">business</a>
+<a href="../../../../tag/c/index.html" class="tag-cloud-link tag-link-33 tag-link-position-6" style="font-size: 10.40625pt;" aria-label="c++ (4 items)">c++</a>
+<a href="../../../../tag/charts/index.html" class="tag-cloud-link tag-link-42 tag-link-position-7" style="font-size: 18.171875pt;" aria-label="charts (25 items)">charts</a>
+<a href="../../../../tag/cms/index.html" class="tag-cloud-link tag-link-60 tag-link-position-8" style="font-size: 12.046875pt;" aria-label="CMS (6 items)">CMS</a>
+<a href="../../../../tag/curb/index.html" class="tag-cloud-link tag-link-190 tag-link-position-9" style="font-size: 8pt;" aria-label="curb (2 items)">curb</a>
+<a href="../../../../tag/curl/index.html" class="tag-cloud-link tag-link-120 tag-link-position-10" style="font-size: 8pt;" aria-label="curl (2 items)">curl</a>
+<a href="../../../../tag/dynamic/index.html" class="tag-cloud-link tag-link-56 tag-link-position-11" style="font-size: 8pt;" aria-label="dynamic (2 items)">dynamic</a>
+<a href="../../../../tag/ece231/index.html" class="tag-cloud-link tag-link-34 tag-link-position-12" style="font-size: 10.40625pt;" aria-label="ece231 (4 items)">ece231</a>
+<a href="../../../../tag/editor/index.html" class="tag-cloud-link tag-link-61 tag-link-position-13" style="font-size: 11.28125pt;" aria-label="editor (5 items)">editor</a>
+<a href="../../../../tag/error/index.html" class="tag-cloud-link tag-link-46 tag-link-position-14" style="font-size: 9.3125pt;" aria-label="error (3 items)">error</a>
+<a href="../../../../tag/flash/index.html" class="tag-cloud-link tag-link-41 tag-link-position-15" style="font-size: 17.84375pt;" aria-label="flash (23 items)">flash</a>
+<a href="../../../../tag/fun/index.html" class="tag-cloud-link tag-link-23 tag-link-position-16" style="font-size: 11.28125pt;" aria-label="fun (5 items)">fun</a>
+<a href="../../../../tag/gems/index.html" class="tag-cloud-link tag-link-44 tag-link-position-17" style="font-size: 8pt;" aria-label="gems (2 items)">gems</a>
+<a href="../../../../tag/graphs/index.html" class="tag-cloud-link tag-link-52 tag-link-position-18" style="font-size: 18.390625pt;" aria-label="graphs (26 items)">graphs</a>
+<a href="../../../../tag/httpi/index.html" class="tag-cloud-link tag-link-191 tag-link-position-19" style="font-size: 8pt;" aria-label="httpi (2 items)">httpi</a>
+<a href="../../../../tag/java/index.html" class="tag-cloud-link tag-link-177 tag-link-position-20" style="font-size: 9.3125pt;" aria-label="java (3 items)">java</a>
+<a href="../../../../tag/javascript/index.html" class="tag-cloud-link tag-link-215 tag-link-position-21" style="font-size: 10.40625pt;" aria-label="Javascript (4 items)">Javascript</a>
+<a href="../../../../tag/linux/index.html" class="tag-cloud-link tag-link-221 tag-link-position-22" style="font-size: 8pt;" aria-label="Linux (2 items)">Linux</a>
+<a href="../../../../tag/macromovers/index.html" class="tag-cloud-link tag-link-66 tag-link-position-23" style="font-size: 8pt;" aria-label="macromovers (2 items)">macromovers</a>
+<a href="../../../../tag/mirah/index.html" class="tag-cloud-link tag-link-176 tag-link-position-24" style="font-size: 8pt;" aria-label="mirah (2 items)">mirah</a>
+<a href="../../../../tag/ofc/index.html" class="tag-cloud-link tag-link-105 tag-link-position-25" style="font-size: 8pt;" aria-label="OFC (2 items)">OFC</a>
+<a href="../../../../tag/open-flash-chart/index.html" class="tag-cloud-link tag-link-40 tag-link-position-26" style="font-size: 18.609375pt;" aria-label="open flash chart (27 items)">open flash chart</a>
+<a href="../../../../tag/php/index.html" class="tag-cloud-link tag-link-216 tag-link-position-27" style="font-size: 9.3125pt;" aria-label="php (3 items)">php</a>
+<a href="../../../../tag/plugin/index.html" class="tag-cloud-link tag-link-65 tag-link-position-28" style="font-size: 12.59375pt;" aria-label="plugin (7 items)">plugin</a>
+<a href="../../../../tag/plugins/index.html" class="tag-cloud-link tag-link-218 tag-link-position-29" style="font-size: 9.3125pt;" aria-label="plugins (3 items)">plugins</a>
+<a href="../../../../tag/prog/index.html" class="tag-cloud-link tag-link-35 tag-link-position-30" style="font-size: 9.3125pt;" aria-label="prog (3 items)">prog</a>
+<a href="../../../../tag/project/index.html" class="tag-cloud-link tag-link-47 tag-link-position-31" style="font-size: 10.40625pt;" aria-label="project (4 items)">project</a>
+<a href="../../../../tag/rails/index.html" class="tag-cloud-link tag-link-210 tag-link-position-32" style="font-size: 20.90625pt;" aria-label="rails (45 items)">rails</a>
+<a href="../../../../tag/ruby/index.html" class="tag-cloud-link tag-link-211 tag-link-position-33" style="font-size: 22pt;" aria-label="ruby (57 items)">ruby</a>
+<a href="../../../../tag/ruby-on-rails/index.html" class="tag-cloud-link tag-link-43 tag-link-position-34" style="font-size: 20.359375pt;" aria-label="ruby on rails (40 items)">ruby on rails</a>
+<a href="../../../../tag/select-boxes/index.html" class="tag-cloud-link tag-link-57 tag-link-position-35" style="font-size: 8pt;" aria-label="select boxes (2 items)">select boxes</a>
+<a href="../../../../tag/simple/index.html" class="tag-cloud-link tag-link-62 tag-link-position-36" style="font-size: 10.40625pt;" aria-label="simple (4 items)">simple</a>
+<a href="../../../../tag/simplecms/index.html" class="tag-cloud-link tag-link-214 tag-link-position-37" style="font-size: 11.28125pt;" aria-label="SimpleCMS (5 items)">SimpleCMS</a>
+<a href="../../../../tag/skizmo/index.html" class="tag-cloud-link tag-link-102 tag-link-position-38" style="font-size: 10.40625pt;" aria-label="skizmo (4 items)">skizmo</a>
+<a href="../../../../tag/software/index.html" class="tag-cloud-link tag-link-48 tag-link-position-39" style="font-size: 8pt;" aria-label="software (2 items)">software</a>
+<a href="../../../../tag/spreadsheet/index.html" class="tag-cloud-link tag-link-45 tag-link-position-40" style="font-size: 8pt;" aria-label="spreadsheet (2 items)">spreadsheet</a>
+<a href="../../../../tag/tutorial/index.html" class="tag-cloud-link tag-link-50 tag-link-position-41" style="font-size: 16.75pt;" aria-label="tutorial (18 items)">tutorial</a>
+<a href="../../../../tag/ubuntu/index.html" class="tag-cloud-link tag-link-150 tag-link-position-42" style="font-size: 8pt;" aria-label="ubuntu (2 items)">ubuntu</a>
+<a href="../../../../tag/vin/index.html" class="tag-cloud-link tag-link-119 tag-link-position-43" style="font-size: 12.59375pt;" aria-label="VIN (7 items)">VIN</a>
+<a href="../../../../tag/vin-api/index.html" class="tag-cloud-link tag-link-159 tag-link-position-44" style="font-size: 12.046875pt;" aria-label="vin api (6 items)">vin api</a>
+<a href="../../../../tag/xml/index.html" class="tag-cloud-link tag-link-165 tag-link-position-45" style="font-size: 9.3125pt;" aria-label="xml (3 items)">xml</a></div>
+</li>
+<li id="categories-524386351" class="widget widget_categories"><h2 class="widgettitle">Topics</h2>
+
+			<ul>
+					<li class="cat-item cat-item-179"><a href="../../../../category/android/index.html">Android</a>
+</li>
+	<li class="cat-item cat-item-118"><a href="../../../../category/api/index.html">api</a>
+</li>
+	<li class="cat-item cat-item-67"><a href="../../../../category/biking/index.html">biking</a>
+</li>
+	<li class="cat-item cat-item-37"><a href="../../../../category/blog/index.html">blog</a>
+</li>
+	<li class="cat-item cat-item-27"><a href="../../../../category/business/index.html">business</a>
+</li>
+	<li class="cat-item cat-item-32"><a href="../../../../category/c-c/index.html">C / C++</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="../../../../category/development/index.html">development</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="../../../../category/games/index.html">games</a>
+</li>
+	<li class="cat-item cat-item-139"><a href="../../../../category/graphics/index.html">Graphics</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="../../../../category/home/index.html">Home</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="../../../../category/ie-hacks/index.html">IE hacks</a>
+</li>
+	<li class="cat-item cat-item-31"><a href="../../../../category/javascript/index.html">Javascript</a>
+</li>
+	<li class="cat-item cat-item-149"><a href="../../../../category/linux/index.html">Linux</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="../../../../category/me/index.html">me</a>
+</li>
+	<li class="cat-item cat-item-26"><a href="../../../../category/open-flash-chart-graphs/index.html">Open Flash Chart Graphs</a>
+</li>
+	<li class="cat-item cat-item-29"><a href="../../../../category/opengl/index.html">opengl</a>
+</li>
+	<li class="cat-item cat-item-36"><a href="../../../../category/php/index.html">php</a>
+</li>
+	<li class="cat-item cat-item-51"><a href="../../../../category/plugins/index.html">plugins</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="../../../../category/projects/index.html">projects</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="../../../../category/rails/index.html">rails</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="../../../../category/railsconf/index.html">railsconf</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="../../../../category/ruby/index.html">ruby</a>
+</li>
+	<li class="cat-item cat-item-28"><a href="../../../../category/simplecms/index.html">SimpleCMS</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="../../../../category/tutorials/index.html">tutorials</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="../../../../category/uncategorized/index.html">Uncategorized</a>
+</li>
+			</ul>
+
+			</li>
+
+		<li id="recent-posts-2" class="widget widget_recent_entries">
+		<h2 class="widgettitle">Recent Posts</h2>
+
+		<ul>
+											<li>
+					<a href="../../../../index.html?p=57726">Dynamic Select Boxes &#8211; Ruby on Rails 3</a>
+									</li>
+											<li>
+					<a href="../../../../index.html?p=57715">VIN API &#8211; Do you know about the complete data set?</a>
+									</li>
+											<li>
+					<a href="../../../../index.html?p=57712">Using Ruby to read from a MagTek USB Card Reader</a>
+									</li>
+											<li>
+					<a href="../../../../index.html?p=57708">Signature Pad in Linux</a>
+									</li>
+											<li>
+					<a href="../../../../index.html?p=57705">Using HTTPI with Curb to do multipart file uploads with spnego</a>
+									</li>
+					</ul>
+
+		</li>
+<li id="recent-comments-2" class="widget widget_recent_comments"><h2 class="widgettitle">Recent Comments</h2>
+<ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">`Drew</span> on <a href="../../../../2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/index.html#comment-24291">Dynamic Select Boxes &#8211; Ruby on Rails 3</a></li><li class="recentcomments"><span class="comment-author-link">Bardach</span> on <a href="../../../../2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/index.html#comment-24290">Dynamic Select Boxes &#8211; Ruby on Rails 3</a></li><li class="recentcomments"><span class="comment-author-link">Bardach</span> on <a href="../../../../2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/index.html#comment-24289">Dynamic Select Boxes &#8211; Ruby on Rails 3</a></li><li class="recentcomments"><span class="comment-author-link">Dar_bok</span> on <a href="../../../../2007/04/30/how-i-got-gta-san-andreas-to-work-with-a-crappy-os-vista/comment-page-2/index.html#comment-20844">How I got GTA San Andreas to Work with (a crappy OS) Vista</a></li><li class="recentcomments"><span class="comment-author-link">Anirudha Pendakur</span> on <a href="../../../../2012/07/25/using-httpi-with-curb-to-do-multipart-file-uploads-with-spnego/comment-page-1/index.html#comment-19583">Using HTTPI with Curb to do multipart file uploads with spnego</a></li></ul></li>
+<li id="archives-2" class="widget widget_archive"><h2 class="widgettitle">Archives</h2>
+
+			<ul>
+					<li><a href='../../../../2012/08/index.html'>August 2012</a></li>
+	<li><a href='../../../../2012/07/index.html'>July 2012</a></li>
+	<li><a href='../../../../2012/05/index.html'>May 2012</a></li>
+	<li><a href='../../../../2012/04/index.html'>April 2012</a></li>
+	<li><a href='../../../../2012/03/index.html'>March 2012</a></li>
+	<li><a href='../../../11/index.html'>November 2011</a></li>
+	<li><a href='../../../10/index.html'>October 2011</a></li>
+	<li><a href='../../../05/index.html'>May 2011</a></li>
+	<li><a href='../../../03/index.html'>March 2011</a></li>
+	<li><a href='../../../02/index.html'>February 2011</a></li>
+	<li><a href='../../index.html'>January 2011</a></li>
+	<li><a href='../../../../2010/11/index.html'>November 2010</a></li>
+	<li><a href='../../../../2010/09/index.html'>September 2010</a></li>
+	<li><a href='../../../../2010/04/index.html'>April 2010</a></li>
+	<li><a href='../../../../2010/02/index.html'>February 2010</a></li>
+	<li><a href='../../../../2010/01/index.html'>January 2010</a></li>
+	<li><a href='../../../../2009/12/index.html'>December 2009</a></li>
+	<li><a href='../../../../2009/10/index.html'>October 2009</a></li>
+	<li><a href='../../../../2009/09/index.html'>September 2009</a></li>
+	<li><a href='../../../../2009/08/index.html'>August 2009</a></li>
+	<li><a href='../../../../2009/04/index.html'>April 2009</a></li>
+	<li><a href='../../../../2009/03/index.html'>March 2009</a></li>
+	<li><a href='../../../../2009/02/index.html'>February 2009</a></li>
+	<li><a href='../../../../2009/01/index.html'>January 2009</a></li>
+	<li><a href='../../../../2008/10/index.html'>October 2008</a></li>
+	<li><a href='../../../../2008/09/index.html'>September 2008</a></li>
+	<li><a href='../../../../2008/08/index.html'>August 2008</a></li>
+	<li><a href='../../../../2008/07/index.html'>July 2008</a></li>
+	<li><a href='../../../../2008/04/index.html'>April 2008</a></li>
+	<li><a href='../../../../2008/03/index.html'>March 2008</a></li>
+	<li><a href='../../../../2008/02/index.html'>February 2008</a></li>
+	<li><a href='../../../../2008/01/index.html'>January 2008</a></li>
+	<li><a href='../../../../2007/12/index.html'>December 2007</a></li>
+	<li><a href='../../../../2007/10/index.html'>October 2007</a></li>
+	<li><a href='../../../../2007/09/index.html'>September 2007</a></li>
+	<li><a href='../../../../2007/08/index.html'>August 2007</a></li>
+	<li><a href='../../../../2007/06/index.html'>June 2007</a></li>
+	<li><a href='../../../../2007/05/index.html'>May 2007</a></li>
+	<li><a href='../../../../2007/04/index.html'>April 2007</a></li>
+			</ul>
+
+			</li>
+	</ul>
+    
+    </div><!-- Sidebar -->
+
+</div><!-- Rightcolumn -->
+
+
+
+<br clear="all" />
+
+<div id="footer">
+<p>Copyright 2009, powered by <a href="http://www.wordpress.org/">WordPress</a></p>
+</div><!-- Footer -->
+
+</div><!-- Wrapper -->
+
+<br clear="all" />
+</div><!-- Container -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3308745-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

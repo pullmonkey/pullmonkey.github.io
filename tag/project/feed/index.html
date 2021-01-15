@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>project &#8211; PullMonkey Blog</title>
+	<atom:link href="http://pullmonkey.com/tag/project/feed/" rel="self" type="application/rss+xml" />
+	<link>http://pullmonkey.com</link>
+	<description></description>
+	<lastBuildDate>Fri, 28 Oct 2011 15:57:16 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6</generator>
+	<item>
+		<title>VIN API &#8211; ignore checksum validation</title>
+		<link>http://pullmonkey.com/2011/10/28/vin-api-ignore-checksum-validation/</link>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Fri, 28 Oct 2011 15:55:35 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[project]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[ruby on rails]]></category>
+		<category><![CDATA[simple]]></category>
+		<category><![CDATA[skizmo]]></category>
+		<category><![CDATA[software]]></category>
+		<category><![CDATA[VIN]]></category>
+		<category><![CDATA[vin api]]></category>
+		<category><![CDATA[xml]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57615</guid>
+
+					<description><![CDATA[It's been mentioned a few times that there should be a way to skip the checksum validation. This means if the check digit calculation generally fails, VIN API will continue to process the VIN to see if there is a "like" VIN match. So here it is:]]></description>
+										<content:encoded><![CDATA[<p>It's been mentioned a few times that there should be a way to skip the checksum validation.   This means if the <a href="http://en.wikipedia.org/wiki/Vehicle_Identification_Number#Check_digit_calculation">check digit calculation</a> generally fails, <a href="http://vinapi.skizmo.com">VIN API</a> will continue to process the VIN to see if there is a "like" VIN match.  So here it is: </p>
+<p><script src="https://gist.github.com/1322591.js?file=gistfile1.rb"></script></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>VIN API &#8211; fair pricing model</title>
+		<link>http://pullmonkey.com/2011/01/24/vin-api-fair-pricing-model/</link>
+					<comments>http://pullmonkey.com/2011/01/24/vin-api-fair-pricing-model/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Mon, 24 Jan 2011 22:02:39 +0000</pubDate>
+				<category><![CDATA[api]]></category>
+		<category><![CDATA[biking]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[me]]></category>
+		<category><![CDATA[Open Flash Chart Graphs]]></category>
+		<category><![CDATA[projects]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[SimpleCMS]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[project]]></category>
+		<category><![CDATA[ruby on rails]]></category>
+		<category><![CDATA[tutorial]]></category>
+		<category><![CDATA[VIN]]></category>
+		<category><![CDATA[vin api]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57570</guid>
+
+					<description><![CDATA[It can't be a shock to any of you that after many months (wait - more like a full year) of running VIN API completely free and out-of-pocket, it is time to monetize. As I am sure most of you know, the back-end data is quite pricey. For example, a monthly subscription for a "lite" [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>It can't be a shock to any of you that after many months (wait - more like <a href="http://pullmonkey.com/2010/02/19/vin-api-vin-decoder-for-anyone/">a full year</a>) of running <a href="http://vinapi.skizmo.com">VIN API</a> completely free and out-of-pocket, it is time to monetize.  As I am sure most of you know, the back-end data is quite pricey. For example, a monthly subscription for a "lite" data set (your typical year, make, model, engine type, etc) at one of the better known distributors would run you about $260.00 a month for ~800 VIN decodings.  This is some <strong>very</strong> expensive data at 32.5 cents a VIN.  Some of you that use our API are running 50,000+ VINs through in a weekend, that is $16,000!  Wow!  </p>
+<p> Ok, so what did we decide to do?  Well first, and most importantly, we decided to keep the service up and running; for a while there it was looking pretty bleak and if you take a second to look at the numbers (financially) you can understand why.  Anyway, to be as fair as possible, we did not feel this could be monetized as a subscription-based product, some months you need 500,000 VINs and some only a 1,000.  Looking at the data for year, we had many questions - what plan would you pick?  should the plan rollover it's unused decodings?  </p>
+<p> We discovered a lot of complexity in the subscription model, so we decided to setup the pay as you go plan, where you buy your decodings at various bulk levels.  For instance, you could buy in groups of 1,000 or 10,000 or 100,000 such that you would realize savings on a price-per-VIN basis the larger the group you purchase.  There is no use policy either, so you can sit on the VINs for as long as you want, or you can even buy decodings the day (even the minute) before you need them.  No monthly credit card bill, no rollovers, just simple "buy what you need," and if you buy in bulk, you save. </p>
+<p>Another consideration in doing this was having to maintain soft limits. For example, if the user purchases the 5,000 VINs per month plan, and the their site does well this month and they need 6000 VINs, should they have chosen the 10,000 VIN plan?  We didn't think so, we figured no hard limit, just soft limits, and after the soft limit is hit, we would charge the additional VINs at the current rate per VIN to the user's next month's bill.  We tried to explain this to a few current users that are helping us come up with reasonable rates and they were not all that thrilled about it.  So we had a problem, we did not want users to pay for what they did not need, but at the same time we did not want to cut users off in the middle of a month when they hit their limit.  That entire idea had to be scrapped and along with it went the idea behind the subscription plan itself.  We like it though, it's simple now - buy your decodings and use your decodings, we will email you if you are getting low and may want to add decodings to your account.</p>
+<p>Subscription models are great for static resources and static services, but not a single one of our customers decodes the same number of VINs each month, so it just won't work.  So onward and upward, pay as you go and regardless of how the other API providers offer their service, we are excited to be a little different and lot cheaper as you will soon find out.</p>
+<p>Enjoy!</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2011/01/24/vin-api-fair-pricing-model/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Open Flash Chart II and Rails 3</title>
+		<link>http://pullmonkey.com/2010/09/07/open-flash-chart-ii-and-rails-3/</link>
+					<comments>http://pullmonkey.com/2010/09/07/open-flash-chart-ii-and-rails-3/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Tue, 07 Sep 2010 17:06:49 +0000</pubDate>
+				<category><![CDATA[development]]></category>
+		<category><![CDATA[Open Flash Chart Graphs]]></category>
+		<category><![CDATA[projects]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[open flash chart]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[project]]></category>
+		<category><![CDATA[ruby on rails]]></category>
+		<category><![CDATA[tutorial]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57537</guid>
+
+					<description><![CDATA[Just a quick note about the Open Flash Chart II plugin for Rails and Rails 3.  Rails 3 did a 180 with regards to ERB tags and security.  Everything is now considered unsafe HTML.  So where we used to be able to do &#60;%= @graph %&#62;, we have to now do &#60;%= @graph.html_safe %&#62;. Thanks [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Just a quick note about the Open Flash Chart II plugin for Rails and Rails 3.  Rails 3 did a 180 with regards to ERB tags and security.  Everything is now considered unsafe HTML.  So where we used to be able to do &lt;%= @graph %&gt;, we have to now do &lt;%= @graph.html_safe %&gt;.</p>
+<p>Thanks go to <a href="http://github.com/pullmonkey/open_flash_chart/issues#issue/12">kendagriff</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2010/09/07/open-flash-chart-ii-and-rails-3/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Can you read this?</title>
+		<link>http://pullmonkey.com/2009/04/17/can-you-read-this/</link>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Fri, 17 Apr 2009 01:41:00 +0000</pubDate>
+				<category><![CDATA[Home]]></category>
+		<category><![CDATA[projects]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[project]]></category>
+		<category><![CDATA[ruby on rails]]></category>
+		<guid isPermaLink="false">/2009/04/17/can-you-read-this</guid>
+
+					<description><![CDATA[Got an email today, I have seen it before and I am sure it has been going around for years. This time, I thought that I would do an exercise and create a plugin that duplicates what I found in this email. See for yourself. Here is the email I got: What I gathered was [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Got an email today, I have seen it before and I am sure it has been going around for years.  This time, I thought that I would do an exercise and create a plugin that duplicates what I found in this email.  See for yourself.</p>
+<p>Here is the email I got:<br />
+<center><img src="/assets/2009/4/17/can_you_read_this.png" /></center></p>
+<p>What I gathered was that the only important letters are the first and last letter of each word, those have to be in the right order.  So the rest of the letters can be in any random order.  That is what I did - I created <a href="http://github.com/pullmonkey/can_you_read_this/tree/master">a plugin and put it out on github</a>.  You can install it like this:</p>
+<pre><code>
+./script/plugin install http://github.com/pullmonkey/can_you_read_this.git
+
+</code></pre>
+<p>And use it like this:</p>
+<pre><code>
+#in your views
+<%= can_you_read_this("hello, can you read this?") %>
+
+</code></pre>
+<p>Have fun.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

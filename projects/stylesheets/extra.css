@@ -1,0 +1,45 @@
+#header img {
+ 	border: 0px;
+}
+pre.code {
+ 	background-color: #ffc;
+	border: 1px solid #aa9;
+	padding: 0px;
+}
+
+xmp {
+ 	padding: 0px;
+	margin: 0px;
+}
+
+* html div#pullmonkey_logo_ie {
+	position:relative; 
+	height:78px; 
+	width:353px;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/pullmonkey_logo.png');
+}
+
+* html div#pullmonkey_projects_logo_ie {
+	position:relative; 
+	height:111px; 
+	width:353px;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/pullmonkey_projects_logo.png');
+}
+
+* html #header img {
+  	display: none;
+	padding:0px;
+	margin:0px;
+}
+* html #header_demo img {
+ 	display: none;
+}
+			
+#header_demo img {
+ 	border: 0px;
+}
+
+div#header_demo {
+ 	padding:0px;
+	margin:0px;
+}

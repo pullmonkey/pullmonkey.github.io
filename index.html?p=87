@@ -1,0 +1,1298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>PullMonkey Blog  &raquo; Blog Archive   &raquo; Simple CMS Plugin for Ruby on Rails Tutorial</title>
+<meta name="generator" content="WordPress 5.6" /> <!-- leave this for stats -->
+<link rel="stylesheet" href="wp-content/themes/simple&#32;paper/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="wp-content/themes/simple&#32;paper/code_highlighter.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="PullMonkey Blog RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="http://pullmonkey.com/xmlrpc.php" />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="PullMonkey Blog &raquo; Simple CMS Plugin for Ruby on Rails Tutorial Comments Feed" href="http://pullmonkey.com/2007/12/23/simple-cms-plugin-for-ruby-on-rails/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/pullmonkey.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='wp-includes/css/dist/block-library/style.min.css?ver=5.6' type='text/css' media='all' />
+<link rel="https://api.w.org/" href="wp-json/index.html" /><link rel="alternate" type="application/json" href="wp-json/wp/v2/posts/87" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://pullmonkey.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.6" />
+<link rel="canonical" href="index.html?p=87" />
+<link rel='shortlink' href='index.html?p=87' />
+<link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed?url=http:%252F%252Fpullmonkey.com%252F2007%252F12%252F23%252Fsimple-cms-plugin-for-ruby-on-rails%252F" />
+<link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed?url=http:%252F%252Fpullmonkey.com%252F2007%252F12%252F23%252Fsimple-cms-plugin-for-ruby-on-rails%252F&amp;format=xml" />
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style></head>
+<body>
+
+<div id="container">
+
+<div id="menu">
+
+        <ul id="nav">
+        <li class="current_page_item"><a href="index.html">Home</a></li>
+                       	</ul>
+
+</div><!-- Menu -->
+
+<div id="wrapper">
+
+<div id="c1">
+
+<h1 id="logo"><a href="index.html">PullMonkey Blog</a></h1>
+<h2 id="description"></h2>
+
+<div id="content">
+
+
+<div class="post" id="post-87">
+
+<div class="date">23 <span>Dec</span></div>
+
+<h2><a href="index.html?p=87" rel="bookmark" title="Permanent Link to Simple CMS Plugin for Ruby on Rails Tutorial">Simple CMS Plugin for Ruby on Rails Tutorial</a></h2><br clear="all" />
+
+<h1>The SimpleCMS Plugin</h1>
+<p>Created by Slaive and PullMonkey (December 2007)</p>
+<p><a href="http://pullmonkey.com/projects/simple_cms">Check out the demo</a> - <a href="http://pullmonkey.com/projects/simple_cms">http://pullmonkey.com/projects/simple_cms</a></p>
+<p>This is still a work in progress so feel free to notify me of any bugs, problems, or suggestions of how to make it better.</p>
+<p>This plugin is built for rails 2.0.2. So if you are using an older version of rails then you will need to edit each of the controllers</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt><span class="co">From</span>:<tt>
+</tt>  <span class="pc">self</span>.view_paths &lt;&lt; <span class="co">File</span>.join(<span class="co">File</span>.dirname(<span class="pc">__FILE__</span>), <span class="s"><span class="dl">'</span><span class="k">..</span><span class="dl">'</span></span>, <span class="s"><span class="dl">'</span><span class="k">views</span><span class="dl">'</span></span>)<tt>
+</tt><tt>
+</tt><span class="co">To</span>:<tt>
+</tt>  <span class="pc">self</span>.template_root = <span class="co">File</span>.join(<span class="co">File</span>.dirname(<span class="pc">__FILE__</span>), <span class="s"><span class="dl">'</span><span class="k">..</span><span class="dl">'</span></span>, <span class="s"><span class="dl">'</span><span class="k">views</span><span class="dl">'</span></span>)<tt>
+</tt><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<h2>Imaging Processor</h2>
+<p>For this plugin to be fully functional you will need to install one of the following Image Processing gems:</p>
+<ul>
+<li>ImageScience - A light inline-Ruby library that only resizes images.</li>
+<li>RMagick - The grand-daddy, both in terms of advanced image processing features and memory usage.</li>
+<li>minimagick - It's much easier on memory than RMagick because it runs the ImageMagick command in a shell.</li>
+</ul>
+<p>Any one of these gems will work.</p>
+<p></p>
+<h2>Install SimpleCMS and Dependencies</h2>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt>ruby script/plugin install http://svn.pullmonkey.com/plugins/trunk/simple_cms/<tt>
+</tt><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>The simple_cms plugin requires the attachment_fu, responds_to_parent, acts_as_versioned, and coderay plugins as well. To make this easier I there is a built-in rake process</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt>rake simple_cms:install_dependencies<tt>
+</tt><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>However if this doesn't work then you can do it the normal way:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt>ruby script/plugin install http://svn.pullmonkey.com/plugins/trunk/attachment_fu/<tt>
+</tt>ruby script/plugin install http://svn.pullmonkey.com/plugins/trunk/responds_to_parent/<tt>
+</tt>ruby script/plugin install http://svn.pullmonkey.com/plugins/trunk/acts_as_versioned/<tt>
+</tt>ruby script/plugin install http://svn.pullmonkey.com/plugins/trunk/coderay/<tt>
+</tt><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p></p>
+<h2>The Javascript/css Files</h2>
+<p>This plugin requires a great deal of javascript and css files that will need to be copied to the corresponding folder in your <i>public/</i> directory. These files are located in the <i>simple_cms/assets/</i> directory.</p>
+<p>These files should have been copied over when you install the plugin. However, I built in a couple rake task commands to help you out installing and uninstalling these files if you need to.</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt>rake simple_cms:install<tt>
+</tt>rake simple_cms:uninstall<tt>
+</tt><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p></p>
+<h2>Creating the Tables</h2>
+<p>You will need to create 3 tables in your database.</p>
+<ul>
+<li>simple_cms_items</li>
+<li>simple_cms_images</li>
+<li>simple_cms_media</li>
+</ul>
+<p>To have the migration tables generated for you use this command:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt>ruby script/generate simple_cms_migrations<tt>
+</tt><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>The tables should look like this:</p>
+<h3>create_simple_cms_items.rb</h3>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt>9<tt>
+</tt><strong>10</strong><tt>
+</tt>11<tt>
+</tt>12<tt>
+</tt>13<tt>
+</tt>14<tt>
+</tt><strong>15</strong><tt>
+</tt>16<tt>
+</tt>17<tt>
+</tt>18<tt>
+</tt>19<tt>
+</tt><strong>20</strong><tt>
+</tt>21<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt><span class="r">class</span> <span class="cl">CreateSimpleCmsItems</span> &lt; <span class="co">ActiveRecord</span>::<span class="co">Migration</span><tt>
+</tt>  <span class="r">def</span> <span class="pc">self</span>.up<tt>
+</tt>    create_table <span class="sy">:simple_cms_items</span> <span class="r">do</span> |t|<tt>
+</tt>      t.column <span class="sy">:params</span>,     <span class="sy">:string</span><tt>
+</tt>      t.column <span class="sy">:data</span>,       <span class="sy">:text</span><tt>
+</tt>      t.column <span class="sy">:position</span>,   <span class="sy">:integer</span><tt>
+</tt>      t.column <span class="sy">:created_at</span>, <span class="sy">:datetime</span><tt>
+</tt>      t.column <span class="sy">:updated_at</span>, <span class="sy">:datetime</span><tt>
+</tt>      t.column <span class="sy">:created_by</span>, <span class="sy">:string</span><tt>
+</tt>      t.column <span class="sy">:updated_by</span>, <span class="sy">:string</span><tt>
+</tt>    <span class="r">end</span><tt>
+</tt>    <span class="co">SimpleCmsItem</span>.create_versioned_table<tt>
+</tt>  <span class="r">end</span><tt>
+</tt><tt>
+</tt>  <span class="r">def</span> <span class="pc">self</span>.down<tt>
+</tt>    <span class="co">SimpleCmsItem</span>.drop_versioned_table<tt>
+</tt>    drop_table <span class="sy">:simple_cms_items</span><tt>
+</tt>  <span class="r">end</span><tt>
+</tt><span class="r">end</span><tt>
+</tt><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<h3>create_simple_cms_images.rb</h3>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt>9<tt>
+</tt><strong>10</strong><tt>
+</tt>11<tt>
+</tt>12<tt>
+</tt>13<tt>
+</tt>14<tt>
+</tt><strong>15</strong><tt>
+</tt>16<tt>
+</tt>17<tt>
+</tt>18<tt>
+</tt>19<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt><span class="r">class</span> <span class="cl">CreateSimpleCmsImages</span> &lt; <span class="co">ActiveRecord</span>::<span class="co">Migration</span><tt>
+</tt>  <span class="r">def</span> <span class="pc">self</span>.up<tt>
+</tt>    create_table <span class="sy">:simple_cms_images</span> <span class="r">do</span> |t|<tt>
+</tt>      t.column <span class="sy">:parent_id</span>,    <span class="sy">:integer</span><tt>
+</tt>      t.column <span class="sy">:content_type</span>, <span class="sy">:string</span><tt>
+</tt>      t.column <span class="sy">:filename</span>,     <span class="sy">:string</span><tt>
+</tt>      t.column <span class="sy">:thumbnail</span>,    <span class="sy">:string</span><tt>
+</tt>      t.column <span class="sy">:size</span>,         <span class="sy">:integer</span><tt>
+</tt>      t.column <span class="sy">:width</span>,        <span class="sy">:integer</span><tt>
+</tt>      t.column <span class="sy">:height</span>,       <span class="sy">:integer</span><tt>
+</tt>    <span class="r">end</span><tt>
+</tt>  <span class="r">end</span><tt>
+</tt><tt>
+</tt>  <span class="r">def</span> <span class="pc">self</span>.down<tt>
+</tt>    drop_table <span class="sy">:simple_cms_images</span><tt>
+</tt>  <span class="r">end</span><tt>
+</tt><span class="r">end</span><tt>
+</tt><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<h3>create_simple_cms_medias.rb</h3>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt>9<tt>
+</tt><strong>10</strong><tt>
+</tt>11<tt>
+</tt>12<tt>
+</tt>13<tt>
+</tt>14<tt>
+</tt><strong>15</strong><tt>
+</tt>16<tt>
+</tt>17<tt>
+</tt>18<tt>
+</tt>19<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt><span class="r">class</span> <span class="cl">CreateSimpleCmsMedias</span> &lt; <span class="co">ActiveRecord</span>::<span class="co">Migration</span><tt>
+</tt>  <span class="r">def</span> <span class="pc">self</span>.up<tt>
+</tt>    create_table <span class="sy">:simple_cms_medias</span> <span class="r">do</span> |t|<tt>
+</tt>      t.column <span class="sy">:parent_id</span>,    <span class="sy">:integer</span><tt>
+</tt>      t.column <span class="sy">:content_type</span>, <span class="sy">:string</span><tt>
+</tt>      t.column <span class="sy">:filename</span>,     <span class="sy">:string</span><tt>
+</tt>      t.column <span class="sy">:thumbnail</span>,    <span class="sy">:string</span><tt>
+</tt>      t.column <span class="sy">:size</span>,         <span class="sy">:integer</span><tt>
+</tt>      t.column <span class="sy">:width</span>,        <span class="sy">:integer</span><tt>
+</tt>      t.column <span class="sy">:height</span>,       <span class="sy">:integer</span><tt>
+</tt>    <span class="r">end</span><tt>
+</tt>  <span class="r">end</span><tt>
+</tt><tt>
+</tt>  <span class="r">def</span> <span class="pc">self</span>.down<tt>
+</tt>    drop_table <span class="sy">:simple_cms_medias</span><tt>
+</tt>  <span class="r">end</span><tt>
+</tt><span class="r">end</span><tt>
+</tt><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>There is one more migration file you should have. It's called <b>change_items_data_colmn</b> and it looks like this:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt>9<tt>
+</tt><strong>10</strong><tt>
+</tt>11<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt><span class="r">class</span> <span class="cl">ChangeItemsDataColumn</span> &lt; <span class="co">ActiveRecord</span>::<span class="co">Migration</span><tt>
+</tt>  <span class="r">def</span> <span class="pc">self</span>.up<tt>
+</tt>    change_column <span class="sy">:simple_cms_items</span>, <span class="sy">:data</span>, <span class="sy">:text</span>, <span class="sy">:limit</span> =&gt; <span class="i">10000000</span><tt>
+</tt>  <span class="r">end</span><tt>
+</tt><tt>
+</tt>  <span class="r">def</span> <span class="pc">self</span>.down<tt>
+</tt>    change_column <span class="sy">:simple_cms_items</span>, <span class="sy">:data</span>, <span class="sy">:text</span><tt>
+</tt>  <span class="r">end</span><tt>
+</tt><span class="r">end</span><tt>
+</tt><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>This is a change to the <b>simple_cms_items</b> table <b>data</b> column. This allows you to store up to 10 megabytes of text instead of the 65 kilobytes it defaulted to.</p>
+<p></p>
+<p>Remember to rake your tables into your databases once you have generated them.</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt>rake db:migrate<tt>
+</tt><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<h2>Javascript and css Include Tags</h2>
+<p>You will need to make sure you have javascript include tags for your defaults and simple_cms and stylesheet link tags for the simple_cms and coderay stylesheets. Your <i>app/views/layouts/application.rhtml</i> should look something like this:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt>9<tt>
+</tt><strong>10</strong><tt>
+</tt>11<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt><span class="ta">&lt;html&gt;</span><tt>
+</tt>  <span class="ta">&lt;head&gt;</span><tt>
+</tt>    <span class="c">&lt;%= javascript_include_tag :defaults, &quot;simple_cms&quot; %&gt;</span><tt>
+</tt>    <span class="c">&lt;%= stylesheet_link_tag &quot;simple_cms&quot;, &quot;coderay&quot; %&gt;</span><tt>
+</tt>  <span class="ta">&lt;/head&gt;</span><tt>
+</tt>  <span class="ta">&lt;body&gt;</span><tt>
+</tt>    <span class="c">&lt;%= yield %&gt;</span><tt>
+</tt>  <span class="ta">&lt;/body&gt;</span><tt>
+</tt><span class="ta">&lt;/html&gt;</span><tt>
+</tt><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<h2>In Your View</h2>
+<p>Having the simple_cms plugin show up is really pretty simple. Anywhere you want to have the simple_cms to show up you put one line as simple as this:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt><span class="il"><span class="dl">&lt;%=</span> render <span class="sy">:simpleCMS</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">YourLabel</span><span class="dl">&quot;</span></span>, <span class="sy">:admin</span> =&gt; <span class="pc">true</span> <span class="dl">%&gt;</span></span><tt>
+</tt><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>Here is another example with more options:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt><span class="il"><span class="dl">&lt;%=</span> render <span class="sy">:simpleCMS</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">label</span><span class="dl">&quot;</span></span>, <span class="sy">:admin</span> =&gt; <span class="pc">true</span>,<tt>
+</tt>                                  <span class="sy">:user</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">UserName</span><span class="dl">&quot;</span></span>,<tt>
+</tt>                                  <span class="sy">:prefix</span> =&gt; <span class="s"><span class="dl">&quot;</span><span class="k">/whatever/your/prefix/is</span><span class="dl">&quot;</span></span>,<tt>
+</tt>                                  <span class="sy">:reusable</span> =&gt; <span class="pc">true</span> <span class="dl">%&gt;</span></span><tt>
+</tt><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<ul>
+<li><i>:simpleCMS</i> takes a label. Changing this label means losing all your current content and creating a new one. However, you can always change it back.</li>
+<li><i>:admin</i> takes true or false. The default is false. If you pass true then when you run your mouse over the content a blue highlight box will appear and you will be able to click on the box and edit the content. If you pass false then you will only be able to see the content but not edit any of it.</li>
+<li><i>:user</i> is optional and it takes any string you pass it.</li>
+<li><i>:prefix</i> is optional. This is where you pass your prefix if you have one.</li>
+<li><i>:reusable</i> takes true or false. Default is false. Set this true if you want to use this same content on multiple pages. The label must be the same on all pages you are using this content. *NOTE* you will lose all current data for this content if you change this as it gives the content a different id and changes the params of how it is called.</li>
+</ul>
+
+<br />
+
+<div class="meta">
+<span class="note">Filed under: <a href="category/development/index.html" rel="category tag">development</a>, <a href="category/home/index.html" rel="category tag">Home</a>, <a href="category/projects/index.html" rel="category tag">projects</a>, <a href="category/rails/index.html" rel="category tag">rails</a>, <a href="category/ruby/index.html" rel="category tag">ruby</a>, <a href="category/simplecms/index.html" rel="category tag">SimpleCMS</a></span>
+<span class="tags">Tags: <a href="tag/cms/index.html" rel="tag">CMS</a>, <a href="tag/editor/index.html" rel="tag">editor</a>, <a href="tag/plugin/index.html" rel="tag">plugin</a>, <a href="tag/rails/index.html" rel="tag">rails</a>, <a href="tag/ruby/index.html" rel="tag">ruby</a>, <a href="tag/ruby-on-rails/index.html" rel="tag">ruby on rails</a>, <a href="tag/simplecms/index.html" rel="tag">SimpleCMS</a></span><br /></div><!--Meta -->
+
+
+<!-- You can start editing here. -->
+
+<div id="commentsbox">
+
+
+
+<h2 id="comments">
+	 <br /> 31 Responses 
+	  to &#8220;Simple CMS Plugin for Ruby on Rails Tutorial&#8221;</h2>
+	
+	<ol class="commentlist">
+		
+
+<li class="odd" id="comment-119">
+
+By <strong><a href='http://sophiekile.678host.com/jewelry3910.html' rel='external nofollow ugc' class='url'>celpjefscycle</a></strong> on <a href="index.html?p=87#comment-119" title="">Dec 23, 2007</a> | <a href="index.html?p=87#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Thanks for information. &lt;br/&gt;many interesting things &lt;br/&gt;Celpjefscylc</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="mycomment" id="comment-120">
+
+By <strong>aka</strong> on <a href="index.html?p=87#comment-120" title="">Dec 23, 2007</a> | <a href="index.html?p=87#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>This is a good thing. thanks</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="mycomment" id="comment-121">
+
+By <strong>anonymous</strong> on <a href="index.html?p=87#comment-121" title="">Dec 23, 2007</a> | <a href="index.html?p=87#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Does simple cms do any caching?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-122">
+
+By <strong><a href='index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="index.html?p=87#comment-122" title="">Dec 23, 2007</a> | <a href="index.html?p=87#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>No, but that is a good idea. Hopefully in the next release.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="mycomment" id="comment-123">
+
+By <strong>jagdish</strong> on <a href="index.html?p=87#comment-123" title="">Dec 23, 2007</a> | <a href="index.html?p=87#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hey I have installed this plugin in my application. I followed all the as stated here. But in my application view file it comes only like this:</p>
+<p>Admin: enable disable<br />
+Click to add content here.</p>
+<p>And nothing more than this.</p>
+<p>Plz let me know how to use it&#8230;&#8230;</p>
+<p>Waiting for reply&#8230;&#8230;&#8230;&#8230;..</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-124">
+
+By <strong><a href='index.html' rel='external nofollow ugc' class='url'>slaive</a></strong> on <a href="index.html?p=87#comment-124" title="">Dec 23, 2007</a> | <a href="index.html?p=87#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@jagdish</p>
+<p>Well the first thing to do would be to check that the simple_cms.css file is in your public/stylesheets folder.</p>
+<p>Are you using IE or Firefox?</p>
+<p>If you are using Firefox use firebug and see if there are any errors when you load the page.</p>
+<p>If you are using IE there will be a yellow triangle in the bottom left corner that you can click on if there are any errors.</p>
+<p>Let me know what you find. There might be javascript errors in IE with the Admin enable/disable.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-125">
+
+By <strong><a href='http://www.view-ukraine.com' rel='external nofollow ugc' class='url'>Simon Jones</a></strong> on <a href="index.html?p=87#comment-125" title="">Dec 23, 2007</a> | <a href="index.html?p=87#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hi,</p>
+<p>I downloaded and tried to install this, this evening, but am having problems with the usage. I followed the guide and everything appears to have set up OK, the JS &amp; CSS files have been copied into place, and included in the application.rhtml layout view. I have then included a simpleCMS field on my home page.</p>
+<p>I get a link that appears to be working, but when I click on it I am forwarded to an error page showing:</p>
+<p>Routing Error</p>
+<p>no route found to match &quot;/simple_cms_items/edit/1&quot; with {:method=&gt;:get}</p>
+<p>Any ideas? I thought maybe the controllers/models/views etc might need to be copied in to my main applications folders, but this didn&#8217;t work so I got rid of those and just left them in plugins folder.</p>
+<p>I also thought maybe the routes folder might need changing but had no idea what to change it to&#8230;</p>
+<p>Not seeing any errors on firebug.</p>
+<p>Any help much appreciated!</p>
+<p>Thanks,</p>
+<p>Simon</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-126">
+
+By <strong><a href='index.html' rel='external nofollow ugc' class='url'>slaive</a></strong> on <a href="index.html?p=87#comment-126" title="">Dec 23, 2007</a> | <a href="index.html?p=87#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Simon Jones</p>
+<p>You shouldn&#8217;t have to change anything in the routes file or move the views over or anything.</p>
+<p>The problem could be that you have a prefix for your webpage that you need to pass to the simple_cms in the render using the :prefix option.</p>
+<p>Play around with that a bit and let me know if it still doesn&#8217;t work.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-127">
+
+By <strong>Avram</strong> on <a href="index.html?p=87#comment-127" title="">Dec 23, 2007</a> | <a href="index.html?p=87#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hey, this plugin is really nice, thanks.</p>
+<p>Is it possible to organize uploaded assets into folders, so there isn&#8217;t a huge list of say photos to choose from?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-128">
+
+By <strong><a href='index.html' rel='external nofollow ugc' class='url'>slaive</a></strong> on <a href="index.html?p=87#comment-128" title="">Dec 23, 2007</a> | <a href="index.html?p=87#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>As of right now, no there isn&#8217;t, but I will keep that in mind for future versions. Thanks for the comment!</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-129">
+
+By <strong>Avram</strong> on <a href="index.html?p=87#comment-129" title="">Dec 23, 2007</a> | <a href="index.html?p=87#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>slaive,</p>
+<p>Ok, after an exhaustive review of Rails CMS&#8217;s, I&#8217;ve selected SimpleCMS for a development effort I&#8217;m pretty deep into. I&#8217;m going to need to be adding a little bit of functionality to it on my side. If you like what I&#8217;m doing, I&#8217;d be happy to contribute it back to the main project.</p>
+<p>Would you mind emailing me out of band for a little chat about my intentions? I&#8217;d like your feedback.</p>
+<p>Thanks,<br />
+Avram</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-130">
+
+By <strong>Peter</strong> on <a href="index.html?p=87#comment-130" title="">Dec 23, 2007</a> | <a href="index.html?p=87#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hi,<br />
+Thanks for this wonderful and useful plugin!<br />
+This evening i&#8217;ve played around a bit trying to get rails page-caching to work with the simple_cms plugin. The idea is to render both the admin version of the cms_item and the public version of the cms_item on a page and based on a cookie decide what version to show. I ran into some problems with this, probably because of all the the session variables which get set when the render method gets invoked. I wondered did you ever try  to cache pages with simple cms items on it? Do you have a suggestion of i could proceed and implement it?</p>
+<p>Thanks!<br />
+Cheers,<br />
+Peter</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-131">
+
+By <strong><a href='index.html' rel='external nofollow ugc' class='url'>slaive</a></strong> on <a href="index.html?p=87#comment-131" title="">Dec 23, 2007</a> | <a href="index.html?p=87#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Peter,</p>
+<p>I have not yet gotten a chance to really do much with caching yet. It is on my list though. Let me know if you figure it out before I do. 😉</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-132">
+
+By <strong>Peter</strong> on <a href="index.html?p=87#comment-132" title="">Dec 23, 2007</a> | <a href="index.html?p=87#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Thanks I&#8217;ll let you know, although i don&#8217;t think i&#8217;ll get far with my limited ruby and rails knowledge.</p>
+<p>Today i installed simple_cms for a rails 2.1 site. I had to tweak a bit to get it to work, let me tell what i did:<br />
+-the version of acts_as_versioned that is installed with the rake task doesn&#8217;t work with rails 2.1, i installed a version from github instead.<br />
+-in all simple_cms i had to use the append_view_path method:   self.append_view_path (File.join(File.dirname(__FILE__), &#8216;..&#8217;, &#8216;views&#8217;))<br />
+-rails couldn&#8217;t find the _simple_cms_item.rhtml partial, i ended up copying it to the view folder of my own app.<br />
+-in simple_cms.rb i had to add a unless text.nil? in line 82. after the text.scan block.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-133">
+
+By <strong><a href='index.html' rel='external nofollow ugc' class='url'>slaive</a></strong> on <a href="index.html?p=87#comment-133" title="">Dec 23, 2007</a> | <a href="index.html?p=87#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Peter,</p>
+<p>I have not yet upgraded to rails 2.1 so thanks for the update on what needs to be changed.</p>
+<p>However, in lib/simple_cms.rb in the shared_path method is where we set a path to the _simple_cms_item.rhtml partial so you might want to look at that.</p>
+<p>The other thing is that I believe you would want to use &quot;fragment caching&quot; for the simple_cms plugin. Although I haven&#8217;t had a chance to make it work myself yet.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-134">
+
+By <strong><a href='index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="index.html?p=87#comment-134" title="">Dec 23, 2007</a> | <a href="index.html?p=87#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Peter,Slaive &#8211; Made a couple changes for simple cms and 2.1, I will share them here and Slaive can take a crack at them.<br />
+1) in plugins/simple_cms/lib/simple_cms.rb you can replaced the shared_path method with this:<br />
+  def shared_path(partial_path)<br />
+    return &quot;shared/#{partial_path}&quot;<br />
+  end<br />
+2) in plugins/simple_cms/init.rb you can append the view paths for simple cms like this (this way you DO NOT have to take the simple_cms_item partial out of the plugin and place it in your view path):</p>
+<p>class ActionController::Base<br />
+  def self.inherited(klass)<br />
+  klass.append_view_path(File.join(File.dirname(__FILE__), &#8216;app&#8217;, &#8216;views&#8217;))<br />
+    super<br />
+  end<br />
+end</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="mycomment" id="comment-135">
+
+By <strong>chawei</strong> on <a href="index.html?p=87#comment-135" title="">Dec 23, 2007</a> | <a href="index.html?p=87#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>When I tried to add an item, I got this error:</p>
+<p>ActionView::TemplateError (You have a nil object when you didn&#8217;t expect it!<br />
+You might have expected an instance of Array.<br />
+The error occurred while evaluating nil.include?) on line #1 of cms/index.html.erb:<br />
+1: &lt;%= render :simpleCMS =&gt; &quot;YourLabel&quot;, :admin =&gt; true %&gt;</p>
+<p>I found out this was a bug of &quot;acts_as_versioned&quot;, and this can be fixed according to this issue: <a href="http://groups.google.com/group/rubyonrails-talk/browse_thread/thread/125555dab7852bb2" rel="nofollow ugc">http://groups.google.com/group/rubyonrails-talk/browse_thread/thread/125555dab7852bb2</a></p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-136">
+
+By <strong><a href='index.html' rel='external nofollow ugc' class='url'>Charlie</a></strong> on <a href="index.html?p=87#comment-136" title="">Dec 23, 2007</a> | <a href="index.html?p=87#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@chawei &#8211; thanks for the information.  I assume it is all working now?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-137">
+
+By <strong>Avram</strong> on <a href="index.html?p=87#comment-137" title="">Dec 23, 2007</a> | <a href="index.html?p=87#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hey Guys,</p>
+<p>I&#8217;ve run into a bug in SimpleCMS, and I&#8217;ve developed a fix. I believe the bug would only trigger when changing rails versions; the issues is that when SimpleCMS generates the value for the params field of an item, the conversion to yaml results in a hash&#8217;s element order becoming significant. Hash element order isn&#8217;t guaranteed, and I ran into a case where a minor rails version change caused all of my simple_cms_items to fail to be found b/c the underlying rails implementation happened to flip the order of the {:label =&gt; &#8230;, :domain =&gt; &#8230;} params hash.</p>
+<p>If you haven&#8217;t run into this yet, email me offline, I have a fix for you ready-to-go.</p>
+<p>-Avram</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-138">
+
+By <strong><a href='index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="index.html?p=87#comment-138" title="">Dec 23, 2007</a> | <a href="index.html?p=87#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Avram &#8211; great, I would like to see the fix.  You could always throw it up on a github fork and have us pull it.<br />
+If you don&#8217;t want to do that, no big deal, I will send you an email shortly and you can respond there.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-139">
+
+By <strong>Richard</strong> on <a href="index.html?p=87#comment-139" title="">Dec 23, 2007</a> | <a href="index.html?p=87#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hi there</p>
+<p>I&#8217;ve got SimpleCMS working OK except I can&#8217;t get my head around the admin and user options. At this stage I can either have the whole world edit a section or noone.</p>
+<p>How do I restrict which users can edit a page?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-140">
+
+By <strong><a href='index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="index.html?p=87#comment-140" title="">Dec 23, 2007</a> | <a href="index.html?p=87#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Richard &#8211; Are you tracking the logged in user?  With most user auth plugins this will be &quot;current_user.&quot;</p>
+<p>:admin accepts true or false and does not have to be hardset, thus can be derived &#8211; so for :admin, you could use:<br />
+:admin =&gt; current_user.is_admin?</p>
+<p>For :user, you could use<br />
+:user =&gt; current_user.username</p>
+<p>The is_admin? method would be an instance method for the user model and it could look something like this (all depends on your setup):&lt;filter:code attributes=lang=&quot;ruby&quot;&gt;class User &lt; ActiveRecord::Base<br />
+  &#8230;<br />
+  def is_admin?<br />
+    return true if roles.include?(admin_role))<br />
+    return true if [&quot;pullmonkey&quot;, &quot;admin&quot;].include?(username)<br />
+    return false<br />
+  end<br />
+end&lt;/filter:code&gt;</p>
+<p>Make sense?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-141">
+
+By <strong>Richard</strong> on <a href="index.html?p=87#comment-141" title="">Dec 23, 2007</a> | <a href="index.html?p=87#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Thanks charlie for your help</p>
+<p>I&#8217;m using acts_as_authenticated and that all seems fine.</p>
+<p>However I think I&#8217;m running into some session issues as everything works fine on my development machine but I notice that content will appear or disappear depending on whether I access <a href="http://www.domain.com" rel="nofollow ugc">http://www.domain.com</a> or just domain.com in production.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-142">
+
+By <strong><a href='index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="index.html?p=87#comment-142" title="">Dec 23, 2007</a> | <a href="index.html?p=87#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Richard &#8211; I&#8217;ve just fixed this by letting the user specify :domain.  If it is not specified it will be the domain from the web server (like normal).</p>
+<p>Checkout the latest (from svn.pullmonkey.com) and you should be able to say:<br />
+:domain =&gt; &quot;idontcare&quot;  #&#8212; for example 🙂</p>
+<p>So it was not a problem with your sessions or anything (but thanks for not just assuming it was us 🙂 )</p>
+<p>Let me know how it goes.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-143">
+
+By <strong>Richard</strong> on <a href="index.html?p=87#comment-143" title="">Dec 23, 2007</a> | <a href="index.html?p=87#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Ah, excellent. Many thanks for that. It&#8217;s now working fine. Greatly appreciated.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-144">
+
+By <strong>Loris</strong> on <a href="index.html?p=87#comment-144" title="">Dec 23, 2007</a> | <a href="index.html?p=87#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>&quot;ActionView::TemplateError (You have a nil object when you didn&#8217;t expect it!<br />
+You might have expected an instance of Array.&quot;</p>
+<p>&#8230; occurs under Passenger (Mongrel/Webricks works fine) and Rails 2.3.2</p>
+<p>I had to change:<br />
+in render.rb</p>
+<p>request_path = controller.request.env[&quot;REQUEST_PATH&quot;]<br />
+request_path = controller.request.env[&quot;REQUEST_URI&quot;] if request_path.empty?<br />
+request_path = controller.request.env[&quot;SCRIPT_NAME&quot;] if request_path.empty?</p>
+<p>to..</p>
+<p>request_path = request.env[&quot;REQUEST_PATH&quot;]<br />
+request_path = request.env[&quot;REQUEST_URI&quot;] if request_path.empty?<br />
+request_path = request.env[&quot;SCRIPT_NAME&quot;] if request_path.empty?</p>
+<p>don&#8217;t know why but now it works&#8230;.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-145">
+
+By <strong><a href='http://steflewandowski.com' rel='external nofollow ugc' class='url'>Stef</a></strong> on <a href="index.html?p=87#comment-145" title="">Dec 23, 2007</a> | <a href="index.html?p=87#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>I had the same issue but had to change those lines to:</p>
+<p>request_path = request.env[&quot;REQUEST_PATH&quot;]<br />
+request_path = request.env[&quot;REQUEST_URI&quot;] if request_path.blank?<br />
+request_path = request.env[&quot;SCRIPT_NAME&quot;] if request_path.blank?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-146">
+
+By <strong>Luke</strong> on <a href="index.html?p=87#comment-146" title="">Dec 23, 2007</a> | <a href="index.html?p=87#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hi All, am having no problems displaying content via the CMS but when I try to edit an item it always returns</p>
+<p>Failed to load source for: <a href="http://localhost:3000/simple_cms_items/edit/5" rel="nofollow ugc">http://localhost:3000/simple_cms_items/edit/5</a><br />
+(If trying to edit item 5 for instance)</p>
+<p>I have set everything up as specified above, using Rails 2.3.3, not sure what the problem could be<br />
+Thanks<br />
+Luke</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-2347">
+
+By <strong><a href='http://none' rel='external nofollow ugc' class='url'>Chris K</a></strong> on <a href="index.html?p=87#comment-2347" title="">Nov 13, 2009</a> | <a href="index.html?p=87#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Wow&#8230;. This is PLAIN AMAZING! My jaw just dropped. You guys are extra-awesome, no words to describe it. Just saved me a TON of work (or embarrassment!)</p>
+<p>Thank you lots!</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-2349">
+
+By <strong><a href='http://none' rel='external nofollow ugc' class='url'>Chris K</a></strong> on <a href="index.html?p=87#comment-2349" title="">Nov 13, 2009</a> | <a href="index.html?p=87#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>This is truly great! Just one question, though, the domain fix 5 posts above is not working for me (at least in 0.0.0.0:3000 dev mode). I use rails 2.3.4, is this a problem? It keeps stubbornly appending the full 0.0&#8230; URL to my images (Ideally I&#8217;d like to use :domain =&gt; &#8220;/&#8221;)</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-2448">
+
+By <strong><a href='index.html' rel='external nofollow ugc' class='url'>slaive</a></strong> on <a href="index.html?p=87#comment-2448" title="">Nov 16, 2009</a> | <a href="index.html?p=87#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>So what I am getting is that you want the images you upload inside simple_cms to use relative URLs correct?</p>
+<p>If that is so then the easiest way to fix that is to edit the public/javascripts/tiny_mce_init.js file. In there is all of the configuration options for tiny_mce. Unless you have made any changes to this file already then on line 25 you will see:<br />
+    relative_urls : false,<br />
+This will need to be changed to<br />
+   relative_urls : true,<br />
+and you should have the functionality that you are looking for.</p>
+<p>&#8211;slaive</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		</ol>
+	
+	
+	
+
+	<p id="comments-closed">Sorry, comments for this entry are closed at this time.</p>
+</div>
+</div><!-- Post -->
+
+		        
+  
+
+	
+</div><!-- Content -->
+
+</div><!-- LeftColumn -->
+
+<div id="c2">
+
+   
+    <div id="sidebar">
+
+<div id="subscribe">
+<a href="feed/index.html"><img src="wp-content/themes/simple&#32;paper/images/rss.gif" alt="RSS-FEED" border="0" id="rss" /></a>
+<a href="feed/index.html">subscribe to the feed</a><br clear="all" />
+</div><!-- subscribe rss -->
+
+<div id="topsearch">
+<form action="index.html" method="post">
+<input type="text" value="Search..." name="s" id="ls" class="searchfield" onfocus="if (this.value == 'Search...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search...';}" />
+<input type="image" src="wp-content/themes/simple&#32;paper/images/click.gif" id="submit" />
+</form>
+<br clear="all" />
+<br clear="all" />
+</div>
+    
+    	<ul>
+	<li id="tag_cloud-2" class="widget widget_tag_cloud"><h2 class="widgettitle">Tags</h2>
+<div class="tagcloud"><a href="tag/net/index.html" class="tag-cloud-link tag-link-166 tag-link-position-1" style="font-size: 8pt;" aria-label=".net (2 items)">.net</a>
+<a href="tag/activerecord/index.html" class="tag-cloud-link tag-link-54 tag-link-position-2" style="font-size: 8pt;" aria-label="activerecord (2 items)">activerecord</a>
+<a href="tag/api/index.html" class="tag-cloud-link tag-link-220 tag-link-position-3" style="font-size: 10.40625pt;" aria-label="api (4 items)">api</a>
+<a href="tag/biking/index.html" class="tag-cloud-link tag-link-219 tag-link-position-4" style="font-size: 10.40625pt;" aria-label="biking (4 items)">biking</a>
+<a href="tag/business/index.html" class="tag-cloud-link tag-link-213 tag-link-position-5" style="font-size: 8pt;" aria-label="business (2 items)">business</a>
+<a href="tag/c/index.html" class="tag-cloud-link tag-link-33 tag-link-position-6" style="font-size: 10.40625pt;" aria-label="c++ (4 items)">c++</a>
+<a href="tag/charts/index.html" class="tag-cloud-link tag-link-42 tag-link-position-7" style="font-size: 18.171875pt;" aria-label="charts (25 items)">charts</a>
+<a href="tag/cms/index.html" class="tag-cloud-link tag-link-60 tag-link-position-8" style="font-size: 12.046875pt;" aria-label="CMS (6 items)">CMS</a>
+<a href="tag/curb/index.html" class="tag-cloud-link tag-link-190 tag-link-position-9" style="font-size: 8pt;" aria-label="curb (2 items)">curb</a>
+<a href="tag/curl/index.html" class="tag-cloud-link tag-link-120 tag-link-position-10" style="font-size: 8pt;" aria-label="curl (2 items)">curl</a>
+<a href="tag/dynamic/index.html" class="tag-cloud-link tag-link-56 tag-link-position-11" style="font-size: 8pt;" aria-label="dynamic (2 items)">dynamic</a>
+<a href="tag/ece231/index.html" class="tag-cloud-link tag-link-34 tag-link-position-12" style="font-size: 10.40625pt;" aria-label="ece231 (4 items)">ece231</a>
+<a href="tag/editor/index.html" class="tag-cloud-link tag-link-61 tag-link-position-13" style="font-size: 11.28125pt;" aria-label="editor (5 items)">editor</a>
+<a href="tag/error/index.html" class="tag-cloud-link tag-link-46 tag-link-position-14" style="font-size: 9.3125pt;" aria-label="error (3 items)">error</a>
+<a href="tag/flash/index.html" class="tag-cloud-link tag-link-41 tag-link-position-15" style="font-size: 17.84375pt;" aria-label="flash (23 items)">flash</a>
+<a href="tag/fun/index.html" class="tag-cloud-link tag-link-23 tag-link-position-16" style="font-size: 11.28125pt;" aria-label="fun (5 items)">fun</a>
+<a href="tag/gems/index.html" class="tag-cloud-link tag-link-44 tag-link-position-17" style="font-size: 8pt;" aria-label="gems (2 items)">gems</a>
+<a href="tag/graphs/index.html" class="tag-cloud-link tag-link-52 tag-link-position-18" style="font-size: 18.390625pt;" aria-label="graphs (26 items)">graphs</a>
+<a href="tag/httpi/index.html" class="tag-cloud-link tag-link-191 tag-link-position-19" style="font-size: 8pt;" aria-label="httpi (2 items)">httpi</a>
+<a href="tag/java/index.html" class="tag-cloud-link tag-link-177 tag-link-position-20" style="font-size: 9.3125pt;" aria-label="java (3 items)">java</a>
+<a href="tag/javascript/index.html" class="tag-cloud-link tag-link-215 tag-link-position-21" style="font-size: 10.40625pt;" aria-label="Javascript (4 items)">Javascript</a>
+<a href="tag/linux/index.html" class="tag-cloud-link tag-link-221 tag-link-position-22" style="font-size: 8pt;" aria-label="Linux (2 items)">Linux</a>
+<a href="tag/macromovers/index.html" class="tag-cloud-link tag-link-66 tag-link-position-23" style="font-size: 8pt;" aria-label="macromovers (2 items)">macromovers</a>
+<a href="tag/mirah/index.html" class="tag-cloud-link tag-link-176 tag-link-position-24" style="font-size: 8pt;" aria-label="mirah (2 items)">mirah</a>
+<a href="tag/ofc/index.html" class="tag-cloud-link tag-link-105 tag-link-position-25" style="font-size: 8pt;" aria-label="OFC (2 items)">OFC</a>
+<a href="tag/open-flash-chart/index.html" class="tag-cloud-link tag-link-40 tag-link-position-26" style="font-size: 18.609375pt;" aria-label="open flash chart (27 items)">open flash chart</a>
+<a href="tag/php/index.html" class="tag-cloud-link tag-link-216 tag-link-position-27" style="font-size: 9.3125pt;" aria-label="php (3 items)">php</a>
+<a href="tag/plugin/index.html" class="tag-cloud-link tag-link-65 tag-link-position-28" style="font-size: 12.59375pt;" aria-label="plugin (7 items)">plugin</a>
+<a href="tag/plugins/index.html" class="tag-cloud-link tag-link-218 tag-link-position-29" style="font-size: 9.3125pt;" aria-label="plugins (3 items)">plugins</a>
+<a href="tag/prog/index.html" class="tag-cloud-link tag-link-35 tag-link-position-30" style="font-size: 9.3125pt;" aria-label="prog (3 items)">prog</a>
+<a href="tag/project/index.html" class="tag-cloud-link tag-link-47 tag-link-position-31" style="font-size: 10.40625pt;" aria-label="project (4 items)">project</a>
+<a href="tag/rails/index.html" class="tag-cloud-link tag-link-210 tag-link-position-32" style="font-size: 20.90625pt;" aria-label="rails (45 items)">rails</a>
+<a href="tag/ruby/index.html" class="tag-cloud-link tag-link-211 tag-link-position-33" style="font-size: 22pt;" aria-label="ruby (57 items)">ruby</a>
+<a href="tag/ruby-on-rails/index.html" class="tag-cloud-link tag-link-43 tag-link-position-34" style="font-size: 20.359375pt;" aria-label="ruby on rails (40 items)">ruby on rails</a>
+<a href="tag/select-boxes/index.html" class="tag-cloud-link tag-link-57 tag-link-position-35" style="font-size: 8pt;" aria-label="select boxes (2 items)">select boxes</a>
+<a href="tag/simple/index.html" class="tag-cloud-link tag-link-62 tag-link-position-36" style="font-size: 10.40625pt;" aria-label="simple (4 items)">simple</a>
+<a href="tag/simplecms/index.html" class="tag-cloud-link tag-link-214 tag-link-position-37" style="font-size: 11.28125pt;" aria-label="SimpleCMS (5 items)">SimpleCMS</a>
+<a href="tag/skizmo/index.html" class="tag-cloud-link tag-link-102 tag-link-position-38" style="font-size: 10.40625pt;" aria-label="skizmo (4 items)">skizmo</a>
+<a href="tag/software/index.html" class="tag-cloud-link tag-link-48 tag-link-position-39" style="font-size: 8pt;" aria-label="software (2 items)">software</a>
+<a href="tag/spreadsheet/index.html" class="tag-cloud-link tag-link-45 tag-link-position-40" style="font-size: 8pt;" aria-label="spreadsheet (2 items)">spreadsheet</a>
+<a href="tag/tutorial/index.html" class="tag-cloud-link tag-link-50 tag-link-position-41" style="font-size: 16.75pt;" aria-label="tutorial (18 items)">tutorial</a>
+<a href="tag/ubuntu/index.html" class="tag-cloud-link tag-link-150 tag-link-position-42" style="font-size: 8pt;" aria-label="ubuntu (2 items)">ubuntu</a>
+<a href="tag/vin/index.html" class="tag-cloud-link tag-link-119 tag-link-position-43" style="font-size: 12.59375pt;" aria-label="VIN (7 items)">VIN</a>
+<a href="tag/vin-api/index.html" class="tag-cloud-link tag-link-159 tag-link-position-44" style="font-size: 12.046875pt;" aria-label="vin api (6 items)">vin api</a>
+<a href="tag/xml/index.html" class="tag-cloud-link tag-link-165 tag-link-position-45" style="font-size: 9.3125pt;" aria-label="xml (3 items)">xml</a></div>
+</li>
+<li id="categories-524386351" class="widget widget_categories"><h2 class="widgettitle">Topics</h2>
+
+			<ul>
+					<li class="cat-item cat-item-179"><a href="category/android/index.html">Android</a>
+</li>
+	<li class="cat-item cat-item-118"><a href="category/api/index.html">api</a>
+</li>
+	<li class="cat-item cat-item-67"><a href="category/biking/index.html">biking</a>
+</li>
+	<li class="cat-item cat-item-37"><a href="category/blog/index.html">blog</a>
+</li>
+	<li class="cat-item cat-item-27"><a href="category/business/index.html">business</a>
+</li>
+	<li class="cat-item cat-item-32"><a href="category/c-c/index.html">C / C++</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="category/development/index.html">development</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="category/games/index.html">games</a>
+</li>
+	<li class="cat-item cat-item-139"><a href="category/graphics/index.html">Graphics</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="category/home/index.html">Home</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="category/ie-hacks/index.html">IE hacks</a>
+</li>
+	<li class="cat-item cat-item-31"><a href="category/javascript/index.html">Javascript</a>
+</li>
+	<li class="cat-item cat-item-149"><a href="category/linux/index.html">Linux</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="category/me/index.html">me</a>
+</li>
+	<li class="cat-item cat-item-26"><a href="category/open-flash-chart-graphs/index.html">Open Flash Chart Graphs</a>
+</li>
+	<li class="cat-item cat-item-29"><a href="category/opengl/index.html">opengl</a>
+</li>
+	<li class="cat-item cat-item-36"><a href="category/php/index.html">php</a>
+</li>
+	<li class="cat-item cat-item-51"><a href="category/plugins/index.html">plugins</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="category/projects/index.html">projects</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="category/rails/index.html">rails</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="category/railsconf/index.html">railsconf</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="category/ruby/index.html">ruby</a>
+</li>
+	<li class="cat-item cat-item-28"><a href="category/simplecms/index.html">SimpleCMS</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="category/tutorials/index.html">tutorials</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="category/uncategorized/index.html">Uncategorized</a>
+</li>
+			</ul>
+
+			</li>
+
+		<li id="recent-posts-2" class="widget widget_recent_entries">
+		<h2 class="widgettitle">Recent Posts</h2>
+
+		<ul>
+											<li>
+					<a href="index.html?p=57726">Dynamic Select Boxes &#8211; Ruby on Rails 3</a>
+									</li>
+											<li>
+					<a href="index.html?p=57715">VIN API &#8211; Do you know about the complete data set?</a>
+									</li>
+											<li>
+					<a href="index.html?p=57712">Using Ruby to read from a MagTek USB Card Reader</a>
+									</li>
+											<li>
+					<a href="index.html?p=57708">Signature Pad in Linux</a>
+									</li>
+											<li>
+					<a href="index.html?p=57705">Using HTTPI with Curb to do multipart file uploads with spnego</a>
+									</li>
+					</ul>
+
+		</li>
+<li id="recent-comments-2" class="widget widget_recent_comments"><h2 class="widgettitle">Recent Comments</h2>
+<ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">`Drew</span> on <a href="2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/index.html#comment-24291">Dynamic Select Boxes &#8211; Ruby on Rails 3</a></li><li class="recentcomments"><span class="comment-author-link">Bardach</span> on <a href="2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/index.html#comment-24290">Dynamic Select Boxes &#8211; Ruby on Rails 3</a></li><li class="recentcomments"><span class="comment-author-link">Bardach</span> on <a href="2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/index.html#comment-24289">Dynamic Select Boxes &#8211; Ruby on Rails 3</a></li><li class="recentcomments"><span class="comment-author-link">Dar_bok</span> on <a href="2007/04/30/how-i-got-gta-san-andreas-to-work-with-a-crappy-os-vista/comment-page-2/index.html#comment-20844">How I got GTA San Andreas to Work with (a crappy OS) Vista</a></li><li class="recentcomments"><span class="comment-author-link">Anirudha Pendakur</span> on <a href="2012/07/25/using-httpi-with-curb-to-do-multipart-file-uploads-with-spnego/comment-page-1/index.html#comment-19583">Using HTTPI with Curb to do multipart file uploads with spnego</a></li></ul></li>
+<li id="archives-2" class="widget widget_archive"><h2 class="widgettitle">Archives</h2>
+
+			<ul>
+					<li><a href='2012/08/index.html'>August 2012</a></li>
+	<li><a href='2012/07/index.html'>July 2012</a></li>
+	<li><a href='2012/05/index.html'>May 2012</a></li>
+	<li><a href='2012/04/index.html'>April 2012</a></li>
+	<li><a href='2012/03/index.html'>March 2012</a></li>
+	<li><a href='2011/11/index.html'>November 2011</a></li>
+	<li><a href='2011/10/index.html'>October 2011</a></li>
+	<li><a href='2011/05/index.html'>May 2011</a></li>
+	<li><a href='2011/03/index.html'>March 2011</a></li>
+	<li><a href='2011/02/index.html'>February 2011</a></li>
+	<li><a href='2011/01/index.html'>January 2011</a></li>
+	<li><a href='2010/11/index.html'>November 2010</a></li>
+	<li><a href='2010/09/index.html'>September 2010</a></li>
+	<li><a href='2010/04/index.html'>April 2010</a></li>
+	<li><a href='2010/02/index.html'>February 2010</a></li>
+	<li><a href='2010/01/index.html'>January 2010</a></li>
+	<li><a href='2009/12/index.html'>December 2009</a></li>
+	<li><a href='2009/10/index.html'>October 2009</a></li>
+	<li><a href='2009/09/index.html'>September 2009</a></li>
+	<li><a href='2009/08/index.html'>August 2009</a></li>
+	<li><a href='2009/04/index.html'>April 2009</a></li>
+	<li><a href='2009/03/index.html'>March 2009</a></li>
+	<li><a href='2009/02/index.html'>February 2009</a></li>
+	<li><a href='2009/01/index.html'>January 2009</a></li>
+	<li><a href='2008/10/index.html'>October 2008</a></li>
+	<li><a href='2008/09/index.html'>September 2008</a></li>
+	<li><a href='2008/08/index.html'>August 2008</a></li>
+	<li><a href='2008/07/index.html'>July 2008</a></li>
+	<li><a href='2008/04/index.html'>April 2008</a></li>
+	<li><a href='2008/03/index.html'>March 2008</a></li>
+	<li><a href='2008/02/index.html'>February 2008</a></li>
+	<li><a href='2008/01/index.html'>January 2008</a></li>
+	<li><a href='2007/12/index.html'>December 2007</a></li>
+	<li><a href='2007/10/index.html'>October 2007</a></li>
+	<li><a href='2007/09/index.html'>September 2007</a></li>
+	<li><a href='2007/08/index.html'>August 2007</a></li>
+	<li><a href='2007/06/index.html'>June 2007</a></li>
+	<li><a href='2007/05/index.html'>May 2007</a></li>
+	<li><a href='2007/04/index.html'>April 2007</a></li>
+			</ul>
+
+			</li>
+	</ul>
+    
+    </div><!-- Sidebar -->
+
+</div><!-- Rightcolumn -->
+
+
+
+<br clear="all" />
+
+<div id="footer">
+<p>Copyright 2009, powered by <a href="http://www.wordpress.org/">WordPress</a></p>
+</div><!-- Footer -->
+
+</div><!-- Wrapper -->
+
+<br clear="all" />
+</div><!-- Container -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3308745-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

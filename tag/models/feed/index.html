@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>models &#8211; PullMonkey Blog</title>
+	<atom:link href="http://pullmonkey.com/tag/models/feed/" rel="self" type="application/rss+xml" />
+	<link>http://pullmonkey.com</link>
+	<description></description>
+	<lastBuildDate>Sun, 30 Aug 2009 04:40:03 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6</generator>
+	<item>
+		<title>Modularized Models and Associations in ActiveRecord</title>
+		<link>http://pullmonkey.com/2008/08/13/modularized-models-and-associations-in-activerecord/</link>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Wed, 13 Aug 2008 19:15:00 +0000</pubDate>
+				<category><![CDATA[development]]></category>
+		<category><![CDATA[Home]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[activerecord]]></category>
+		<category><![CDATA[associations]]></category>
+		<category><![CDATA[models]]></category>
+		<category><![CDATA[ruby on rails]]></category>
+		<guid isPermaLink="false">/2008/08/13/modularized-models-and-associations-in-activerecord</guid>
+
+					<description><![CDATA[Have you ever encountered this error? wrong constant name X::YAssociationExtension I found this error when dealing with acts_as_versioned for one my models. I would have found it eventually with any association I would have setup in this case, so it is not acts_as_versioned's fault. I have an application with various parts so I create some [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Have you ever encountered this error?</p>
+<h2>wrong constant name X::YAssociationExtension</h2>
+<p>I found this error when dealing with acts_as_versioned for one my models.  I would have found it eventually with any association I would have setup in this case, so it is not acts_as_versioned's fault.<br />
+I have an application with various parts so I create some of my models like this:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }">./script/generate model module_name::model_name<tt>
+</tt><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>
+So the fix is pretty simple, instead of winding up with ModuleName::ModelAssociationExtension or whatever, you want your extention module name to be ModelAssociationExtension. <br />
+Here is the method where the code breaks for me:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt>9<tt>
+</tt><strong>10</strong><tt>
+</tt>11<tt>
+</tt>12<tt>
+</tt>13<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><span class="r">def</span> <span class="fu">create_extension_modules</span>(association_id, block_extension, extensions)<tt>
+</tt>  <span class="r">if</span> block_extension<tt>
+</tt>    extension_module_name = <span class="s"><span class="dl">&quot;</span><span class="il"><span class="dl">#{</span><span class="pc">self</span>.to_s<span class="dl">}</span></span><span class="il"><span class="dl">#{</span>association_id.to_s.camelize<span class="dl">}</span></span><span class="k">AssociationExtension</span><span class="dl">&quot;</span></span><tt>
+</tt><tt>
+</tt>    silence_warnings <span class="r">do</span><tt>
+</tt>      <span class="co">Object</span>.const_set(extension_module_name, <span class="co">Module</span>.new(&amp;block_extension))<tt>
+</tt>    <span class="r">end</span><tt>
+</tt>    Array(extensions).push(extension_module_name.constantize)<tt>
+</tt>  <span class="r">else</span><tt>
+</tt>    Array(extensions)<tt>
+</tt>  <span class="r">end</span><tt>
+</tt><span class="r">end</span><tt>
+</tt><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>Here is the fix, on line 3, you will note the demodulize addition:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt>9<tt>
+</tt><strong>10</strong><tt>
+</tt>11<tt>
+</tt>12<tt>
+</tt>13<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><span class="r">def</span> <span class="fu">create_extension_modules</span>(association_id, block_extension, extensions)<tt>
+</tt>  <span class="r">if</span> block_extension<tt>
+</tt>    extension_module_name = <span class="s"><span class="dl">&quot;</span><span class="il"><span class="dl">#{</span><span class="pc">self</span>.to_s.demodulize<span class="dl">}</span></span><span class="il"><span class="dl">#{</span>association_id.to_s.camelize<span class="dl">}</span></span><span class="k">AssociationExtension</span><span class="dl">&quot;</span></span><tt>
+</tt><tt>
+</tt>    silence_warnings <span class="r">do</span><tt>
+</tt>      <span class="co">Object</span>.const_set(extension_module_name, <span class="co">Module</span>.new(&amp;block_extension))<tt>
+</tt>    <span class="r">end</span><tt>
+</tt>    Array(extensions).push(extension_module_name.constantize)<tt>
+</tt>  <span class="r">else</span><tt>
+</tt>    Array(extensions)<tt>
+</tt>  <span class="r">end</span><tt>
+</tt><span class="r">end</span><tt>
+</tt><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>I threw the corrected code into a library - RAILS_ROOT/lib/fix_active_record_create_extension_for_modules.rb.  Make sure to open up the necessary modules to overwrite the method itself, I.e., like this:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><span class="r">module</span> <span class="cl">ActiveRecord</span><tt>
+</tt>  <span class="r">module</span> <span class="cl">Associations</span><tt>
+</tt>    <span class="r">module</span> <span class="cl">ClassMethods</span><tt>
+</tt>      <span class="c"># the code above fits right here</span><tt>
+</tt>    <span class="r">end</span><tt>
+</tt>  <span class="r">end</span><tt>
+</tt><span class="r">end</span><tt>
+</tt><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>Short and sweet, let me know if you have a better method for handling this.  </p>
+<p></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

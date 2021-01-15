@@ -1,0 +1,19 @@
+div.simple_cms_item {
+  padding: 2px;
+}
+
+div.simple_cms_item_admin {	
+  padding: 2px;
+}
+
+div.over_simple_cms {	
+  padding: 1px;
+  background-color: #ccf;
+  border: 1px solid #99a;
+  cursor: pointer;
+}
+div.simple_cms_form textarea {
+	font-size: 15px;
+	height: 30em;
+	width: 50em;
+}

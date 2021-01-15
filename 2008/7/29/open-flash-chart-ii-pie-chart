@@ -1,0 +1,1067 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>PullMonkey Blog  &raquo; Blog Archive   &raquo; Open Flash Chart II &#8211; Pie Chart</title>
+<meta name="generator" content="WordPress 5.6" /> <!-- leave this for stats -->
+<link rel="stylesheet" href="../../../wp-content/themes/simple&#32;paper/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../../../wp-content/themes/simple&#32;paper/code_highlighter.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="PullMonkey Blog RSS Feed" href="../../../feed/index.html" />
+<link rel="pingback" href="http://pullmonkey.com/xmlrpc.php" />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="PullMonkey Blog &raquo; Open Flash Chart II &#8211; Pie Chart Comments Feed" href="../../07/29/open-flash-chart-ii-pie-chart/feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/pullmonkey.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='../../../wp-includes/css/dist/block-library/style.min.css?ver=5.6' type='text/css' media='all' />
+<link rel="https://api.w.org/" href="../../../wp-json/index.html" /><link rel="alternate" type="application/json" href="../../../wp-json/wp/v2/posts/46223" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://pullmonkey.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../../wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.6" />
+<link rel="canonical" href="../../../index.html?p=46223" />
+<link rel='shortlink' href='../../../index.html?p=46223' />
+<link rel="alternate" type="application/json+oembed" href="../../../wp-json/oembed/1.0/embed?url=http:%252F%252Fpullmonkey.com%252F2008%252F07%252F29%252Fopen-flash-chart-ii-pie-chart%252F" />
+<link rel="alternate" type="text/xml+oembed" href="../../../wp-json/oembed/1.0/embed?url=http:%252F%252Fpullmonkey.com%252F2008%252F07%252F29%252Fopen-flash-chart-ii-pie-chart%252F&amp;format=xml" />
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style></head>
+<body>
+
+<div id="container">
+
+<div id="menu">
+
+        <ul id="nav">
+        <li class="current_page_item"><a href="../../../index.html">Home</a></li>
+                       	</ul>
+
+</div><!-- Menu -->
+
+<div id="wrapper">
+
+<div id="c1">
+
+<h1 id="logo"><a href="../../../index.html">PullMonkey Blog</a></h1>
+<h2 id="description"></h2>
+
+<div id="content">
+
+
+<div class="post" id="post-46223">
+
+<div class="date">29 <span>Jul</span></div>
+
+<h2><a href="../../../index.html?p=46223" rel="bookmark" title="Permanent Link to Open Flash Chart II &#8211; Pie Chart">Open Flash Chart II &#8211; Pie Chart</a></h2><br clear="all" />
+
+<p>Just got a <a href="../23/open-flash-chart-ii-plugin-for-ruby-on-rails-ofc2#comment-46222">comment asking for a pie chart example</a>, so here is an example.  This example is based on <a href="http://teethgrinder.co.uk/open-flash-chart-2/pie-chart.php">teethgrinder's pie chart example for php</a>.  </p>
+<p>Here is the graph we are after in this example:</p>
+<p><script type="text/javascript" src="../../../projects/javascripts/swfobject.js"></script></p>
+<div id="flash_content_1217006545.4450331"></div>
+<p>    <script type="text/javascript">
+      swfobject.embedSWF("/projects/open-flash-chart.swf", "flash_content_1217006545.4450331", "600", "300", "9.0.0", "expressInstall.swf",{"data-file":"%2Fprojects%2Fopen_flash_chart2%2Fpie_graph"});
+    </script><br />
+    <noscript><br />
+      <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="600" height="300" id="chart_1217006545.4450331" align="middle"><param name="allowScriptAccess" value="sameDomain" /><param name="movie" value="/projects/open-flash-chart.swf?data=%2Fprojects%2Fopen_flash_chart2%2Fpie_graph" /><param name="quality" value="high" /><param name="bgcolor" value="#FFFFFF" /><embed src="../../../projects/open-flash-chart.swf?data=%252Fprojects%252Fopen_flash_chart2%252Fpie_graph" quality="high" bgcolor="#FFFFFF" width="600" height="300" name="chart_1217006545.4450331" align="middle"  allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" id="chart_1217006545.4450331" /></object><br />
+    </noscript></p>
+<p><a href="http://pullmonkey.com/projects/open_flash_chart2">More Open Flash Chart II examples.</a></p>
+<p>And here is the code (the controller):</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt><strong>5</strong><tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt>9<tt>
+</tt><strong>10</strong><tt>
+</tt>11<tt>
+</tt>12<tt>
+</tt>13<tt>
+</tt>14<tt>
+</tt><strong>15</strong><tt>
+</tt>16<tt>
+</tt>17<tt>
+</tt>18<tt>
+</tt>19<tt>
+</tt><strong>20</strong><tt>
+</tt>21<tt>
+</tt>22<tt>
+</tt>23<tt>
+</tt>24<tt>
+</tt><strong>25</strong><tt>
+</tt>26<tt>
+</tt>27<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt><span class="r">class</span> <span class="cl">TestItController</span> &lt; <span class="co">ApplicationController</span><tt>
+</tt>  <span class="r">def</span> <span class="fu">index</span><tt>
+</tt>    <span class="iv">@graph</span> = open_flash_chart_object(<span class="i">600</span>,<span class="i">300</span>,<span class="s"><span class="dl">&quot;</span><span class="k">/test_it/graph_code</span><span class="dl">&quot;</span></span>)<tt>
+</tt>  <span class="r">end</span><tt>
+</tt><tt>
+</tt>  <span class="r">def</span> <span class="fu">graph_code</span><tt>
+</tt>    <span class="c"># based on this example - http://teethgrinder.co.uk/open-flash-chart-2/pie-chart.php</span><tt>
+</tt>    title = <span class="co">Title</span>.new(<span class="s"><span class="dl">&quot;</span><span class="k">Pie Chart Example For Chipster</span><span class="dl">&quot;</span></span>)<tt>
+</tt><tt>
+</tt>    pie = <span class="co">Pie</span>.new<tt>
+</tt>    pie.start_angle = <span class="i">35</span><tt>
+</tt>    pie.animate = <span class="pc">true</span><tt>
+</tt>    pie.tooltip = <span class="s"><span class="dl">'</span><span class="k">#val# of #total#&lt;br&gt;#percent# of 100%</span><span class="dl">'</span></span><tt>
+</tt>    pie.colours = [<span class="s"><span class="dl">&quot;</span><span class="k">#d01f3c</span><span class="dl">&quot;</span></span>, <span class="s"><span class="dl">&quot;</span><span class="k">#356aa0</span><span class="dl">&quot;</span></span>, <span class="s"><span class="dl">&quot;</span><span class="k">#C79810</span><span class="dl">&quot;</span></span>]<tt>
+</tt>    pie.values  = [<span class="i">2</span>,<span class="i">3</span>, <span class="co">PieValue</span>.new(<span class="fl">6.5</span>,<span class="s"><span class="dl">&quot;</span><span class="k">Hello (6.5)</span><span class="dl">&quot;</span></span>)]<tt>
+</tt><tt>
+</tt>    chart = <span class="co">OpenFlashChart</span>.new<tt>
+</tt>    chart.title = title<tt>
+</tt>    chart.add_element(pie)<tt>
+</tt><tt>
+</tt>    chart.x_axis = <span class="pc">nil</span><tt>
+</tt><tt>
+</tt>    render <span class="sy">:text</span> =&gt; chart.to_s<tt>
+</tt>  <span class="r">end</span><tt>
+</tt><span class="r">end</span><tt>
+</tt><tt>
+</tt></pre>
+</td>
+</tr>
+</table>
+<p>
+And in your view (index.html.erb):</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt>&lt;script type=<span class="s"><span class="dl">&quot;</span><span class="k">text/javascript</span><span class="dl">&quot;</span></span> src=<span class="s"><span class="dl">&quot;</span><span class="k">/javascripts/swfobject.js</span><span class="dl">&quot;</span></span>&gt;&lt;<span class="rx"><span class="dl">/</span><span class="k">script&gt;<tt>
+</tt>&lt;%= @graph %&gt;<tt>
+</tt><tt>
+</tt></span></span></pre>
+</td>
+</tr>
+</table>
+<p>Good Luck!</p>
+<p></p>
+
+<br />
+
+<div class="meta">
+<span class="note">Filed under: <a href="../../../category/development/index.html" rel="category tag">development</a>, <a href="../../../category/home/index.html" rel="category tag">Home</a>, <a href="../../../category/open-flash-chart-graphs/index.html" rel="category tag">Open Flash Chart Graphs</a>, <a href="../../../category/projects/index.html" rel="category tag">projects</a>, <a href="../../../category/rails/index.html" rel="category tag">rails</a>, <a href="../../../category/ruby/index.html" rel="category tag">ruby</a>, <a href="../../../category/tutorials/index.html" rel="category tag">tutorials</a></span>
+<span class="tags">Tags: <a href="../../../tag/charts/index.html" rel="tag">charts</a>, <a href="../../../tag/flash/index.html" rel="tag">flash</a>, <a href="../../../tag/graphs/index.html" rel="tag">graphs</a>, <a href="../../../tag/open-flash-chart/index.html" rel="tag">open flash chart</a>, <a href="../../../tag/rails/index.html" rel="tag">rails</a>, <a href="../../../tag/ruby/index.html" rel="tag">ruby</a>, <a href="../../../tag/ruby-on-rails/index.html" rel="tag">ruby on rails</a></span><br /></div><!--Meta -->
+
+
+<!-- You can start editing here. -->
+
+<div id="commentsbox">
+
+
+
+<h2 id="comments">
+	 <br /> 37 Responses 
+	  to &#8220;Open Flash Chart II &#8211; Pie Chart&#8221;</h2>
+	
+	<ol class="commentlist">
+		
+
+<li class="mycomment" id="comment-668">
+
+By <strong>Chipster</strong> on <a href="open-flash-chart-ii-pie-chart#comment-668" title="">Jul 29, 2008</a> | <a href="open-flash-chart-ii-pie-chart#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Yeah :p Thanks a lot !</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-669">
+
+By <strong>blindgaenger</strong> on <a href="open-flash-chart-ii-pie-chart#comment-669" title="">Jul 29, 2008</a> | <a href="open-flash-chart-ii-pie-chart#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Yesterday evening I tried to figure out by my own, how to use the pie chart. And this morning all I had to do was to reload the webpage to get a clean example. Like you knew it 🙂 Thanks!</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="mycomment" id="comment-670">
+
+By <strong>Chipster</strong> on <a href="open-flash-chart-ii-pie-chart#comment-670" title="">Jul 29, 2008</a> | <a href="open-flash-chart-ii-pie-chart#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>BTW, tooltip generate error for me ( #2032 ) on any of the example.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-671">
+
+By <strong><a href='../../../index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="open-flash-chart-ii-pie-chart#comment-671" title="">Jul 29, 2008</a> | <a href="open-flash-chart-ii-pie-chart#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Chipster &#8211; browse to the actual graph_code action to see the json that it is producing.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="mycomment" id="comment-672">
+
+By <strong>Chipster</strong> on <a href="open-flash-chart-ii-pie-chart#comment-672" title="">Jul 29, 2008</a> | <a href="open-flash-chart-ii-pie-chart#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>No json produced. I have a error ( only with the tooltip line ) :</p>
+<p>&quot; Plugins::Pullmonkey-openFlashChart&#8230;..::Lib&quot; is no a valid constant name !</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-673">
+
+By <strong><a href='../../../index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="open-flash-chart-ii-pie-chart#comment-673" title="">Jul 29, 2008</a> | <a href="open-flash-chart-ii-pie-chart#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Chipster &#8211; can I get the stack trace.  I am not seeing this behavior.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-674">
+
+By <strong>Cecci</strong> on <a href="open-flash-chart-ii-pie-chart#comment-674" title="">Jul 29, 2008</a> | <a href="open-flash-chart-ii-pie-chart#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Charlie &#8211; How can I do to be able in an alone project, to work with several types of graphs?<br />
+I do two controllers, error message is displayed<br />
+&quot;Open Flash Chart<br />
+IO ERROR<br />
+Loading test data<br />
+Error #2032&quot;</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-675">
+
+By <strong><a href='../../../index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="open-flash-chart-ii-pie-chart#comment-675" title="">Jul 29, 2008</a> | <a href="open-flash-chart-ii-pie-chart#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Cecci &#8211; you can use one controller to display multiple graphs on the same page.  See this example &#8211; <a href="../../8/4/open-flash-chart-ii-multiple-graphs-on-the-same-page" rel="nofollow ugc">http://pullmonkey.com/2008/8/4/open-flash-chart-ii-multiple-graphs-on-the-same-page</a></p>
+<p>Also, you usually get the 2032 error if the action you are calling has an error.  So for example if you call this:<br />
+open_flash_chart_object(300, 300, &quot;/controller/action&quot;)<br />
+Then you can actually navigate the browser to <a href="http://yourdomain.com/controller/action" rel="nofollow ugc">http://yourdomain.com/controller/action</a> and see if the JSON you are expecting is making its way out.  Otherwise, you will most likely be presented with an error.  That should help with troubleshooting.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-676">
+
+By <strong>Raj</strong> on <a href="open-flash-chart-ii-pie-chart#comment-676" title="">Jul 29, 2008</a> | <a href="open-flash-chart-ii-pie-chart#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>I set the background to black but the lables, as you might guess, are also black. How would I change that? There seems to be no documentation on this?</p>
+<p>Please help</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-677">
+
+By <strong><a href='../../../index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="open-flash-chart-ii-pie-chart#comment-677" title="">Jul 29, 2008</a> | <a href="open-flash-chart-ii-pie-chart#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Raj &#8211; Pie chart label colors &#8230; hmm, that does not  actually seem possible right now &#8211; I would ask in the OFC forums &#8211; <a href="http://sourceforge.net/forum/?group_id=201148" rel="nofollow ugc">http://sourceforge.net/forum/?group_id=201148</a> and see if monk.e.boy has a solution.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="mycomment" id="comment-678">
+
+By <strong>Raj</strong> on <a href="open-flash-chart-ii-pie-chart#comment-678" title="">Jul 29, 2008</a> | <a href="open-flash-chart-ii-pie-chart#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Yes, it also seems alpha is not configurable either? Am I correct?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-679">
+
+By <strong><a href='../../../index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="open-flash-chart-ii-pie-chart#comment-679" title="">Jul 29, 2008</a> | <a href="open-flash-chart-ii-pie-chart#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Raj &#8211; pie.set_alpha(0.6) or pie.alpha = 0.6 or whatever  is supposed to work.  What have you tried?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="mycomment" id="comment-680">
+
+By <strong>Raj</strong> on <a href="open-flash-chart-ii-pie-chart#comment-680" title="">Jul 29, 2008</a> | <a href="open-flash-chart-ii-pie-chart#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Weird, I tried that:</p>
+<p>  pie = Pie.new<br />
+    pie.alpha = 0.9<br />
+    pie.start_angle = 35<br />
+    pie.animate = true</p>
+<p>It still appears faded. I am using a black bacground. Here is my entire code:</p>
+<p>    pie = Pie.new<br />
+    pie.alpha = 0.9<br />
+    pie.start_angle = 35<br />
+    pie.animate = true<br />
+    pie.tooltip = &#8216;#val# of #total#&lt;br&gt;#percent# of 100%&#8217;<br />
+    pie.colours = [&quot;#d01f3c&quot;, &quot;#356aa0&quot;, &quot;#C79810&quot;]<br />
+    pie.values  = [2,3, poo]</p>
+<p>    chart = OpenFlashChart.new<br />
+    chart.title = title<br />
+    chart.add_element(pie)<br />
+    chart.set_bg_colour(&#8216;#000000&#8217;)<br />
+    chart.x_axis = nil</p>
+<p>    render :text =&gt; chart.to_s</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="mycomment" id="comment-681">
+
+By <strong>Raj</strong> on <a href="open-flash-chart-ii-pie-chart#comment-681" title="">Jul 29, 2008</a> | <a href="open-flash-chart-ii-pie-chart#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>the pie label color change function made it in:</p>
+<p><a href="http://sourceforge.net/forum/forum.php?thread_id=2175765&#038;forum_id=716572" rel="nofollow ugc">http://sourceforge.net/forum/forum.php?thread_id=2175765&#038;forum_id=716572</a></p>
+<p>It&#8217;s in svn now, would love to see that option documented in your framework.</p>
+<p>Have a great weekend.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-682">
+
+By <strong><a href='../../../index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="open-flash-chart-ii-pie-chart#comment-682" title="">Jul 29, 2008</a> | <a href="open-flash-chart-ii-pie-chart#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Raj &#8211; will do, just have to wait for monk.e.boy to release the new swf file.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-683">
+
+By <strong>terry</strong> on <a href="open-flash-chart-ii-pie-chart#comment-683" title="">Jul 29, 2008</a> | <a href="open-flash-chart-ii-pie-chart#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>thanks for this great project.</p>
+<p>did there any solution if two label are to close to overlap ?</p>
+<p>thanks.</p>
+<p>terry</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-684">
+
+By <strong><a href='../../../index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="open-flash-chart-ii-pie-chart#comment-684" title="">Jul 29, 2008</a> | <a href="open-flash-chart-ii-pie-chart#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@terry &#8211; not that I have found &#8230; I would ask in the OFC forums &#8211; <a href="http://sourceforge.net/forum/?group_id=201148" rel="nofollow ugc">http://sourceforge.net/forum/?group_id=201148</a> and see what monk.e.boy has for a solution.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-685">
+
+By <strong>terry</strong> on <a href="open-flash-chart-ii-pie-chart#comment-685" title="">Jul 29, 2008</a> | <a href="open-flash-chart-ii-pie-chart#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>thank charlie. and i find another problem that my project works on firefox but IE7 can&#8217;t.  <a href="http://calculator.redirectme.net/genchart/play_topic/79091c5a880faf" rel="nofollow ugc">http://calculator.redirectme.net/genchart/play_topic/79091c5a880faf</a>     any suggestion if appreciative , thanks.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-686">
+
+By <strong>terry</strong> on <a href="open-flash-chart-ii-pie-chart#comment-686" title="">Jul 29, 2008</a> | <a href="open-flash-chart-ii-pie-chart#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>i found the problem that works on firefox but IE7 can&#8217;t. I recover an empty line on view (index.html.erb) before<br />
+[quote]<br />
+&lt;script type=&quot;text/javascript&quot; src=&quot;/javascripts/swfobject.js&quot;&gt;&lt;/script&gt;<br />
+&lt;%= @graph %&gt; [/quote]<br />
+than everything is ok (althrough i even don&#8217;t know why ), thank anyway.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-687">
+
+By <strong>terry</strong> on <a href="open-flash-chart-ii-pie-chart#comment-687" title="">Jul 29, 2008</a> | <a href="open-flash-chart-ii-pie-chart#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>sorry for my bad post,  (continued) below (quote)<br />
+script type=&quot;text/javascript&quot; src=&quot;/javascripts/swfobject.js&quot; /script<br />
+%= @graph %<br />
+(quote) (i remove these angle in post), then everything is works. Even i don&#8217;t know why. thanks anyway.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-688">
+
+By <strong>terry</strong> on <a href="open-flash-chart-ii-pie-chart#comment-688" title="">Jul 29, 2008</a> | <a href="open-flash-chart-ii-pie-chart#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>ok i know how to solve the problem. (not why). sometime when i refresh in IE7 , my pie chart may appear.  why i change my controller name to test_it, then everything look fine. However, when i press refresh 7 time, there maybe be a time nothing appear.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-689">
+
+By <strong><a href='../../../index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="open-flash-chart-ii-pie-chart#comment-689" title="">Jul 29, 2008</a> | <a href="open-flash-chart-ii-pie-chart#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@terry &#8211; next time you get the blank page in IE, post the HTML from that page (view source).  Thanks.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-690">
+
+By <strong>Bob</strong> on <a href="open-flash-chart-ii-pie-chart#comment-690" title="">Jul 29, 2008</a> | <a href="open-flash-chart-ii-pie-chart#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>How do you add custom tooltips to the pie chart?</p>
+<p>for example:</p>
+<p>pie.values = [PieValue.new(3, &#8216;test1&#8217;), PieValue.new(5, &#8216;test2&#8217;), PieValue.new(10, &#8216;test3&#8217;)]</p>
+<p>now for the labels (the ones that are displayed outside the slice)&#8230; i just want to show the values (3, 5, 10).</p>
+<p>For the tooltip, i want to show the label in addition to extra information (#val#, #percent#, and maybe some more custom info).</p>
+<p>#x_label# shows up as &quot;null&quot; in the tooltip. and the label (not the number) shows up outside the slice (&#8216;test1&#8217;, &#8216;test2&#8217;, etc&#8230;).</p>
+<p>please help!</p>
+<p>btw: if i use the previous version of OFC, i can get something close&#8230; but #percent# doesn&#8217;t work in the tooltip (just shows up as &quot;#percent#&quot;)</p>
+<p>thanks!</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-691">
+
+By <strong><a href='../../../index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="open-flash-chart-ii-pie-chart#comment-691" title="">Jul 29, 2008</a> | <a href="open-flash-chart-ii-pie-chart#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Bob &#8211; Check here &#8211; <a href="http://teethgrinder.co.uk/open-flash-chart-2/pie-chart.php" rel="nofollow ugc">http://teethgrinder.co.uk/open-flash-chart-2/pie-chart.php</a></p>
+<p>There are 4 variables for the pie chart tooltips:<br />
+1) #val#<br />
+2) #total#<br />
+3) #percent#<br />
+4) #label#</p>
+<p>Hope that helps.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="mycomment" id="comment-692">
+
+By <strong>Jaikishan Jalan</strong> on <a href="open-flash-chart-ii-pie-chart#comment-692" title="">Jul 29, 2008</a> | <a href="open-flash-chart-ii-pie-chart#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Today, after downloading the latest version from github, my pie chart stops displaying. No error Nothing. Earlier it was working fine.</p>
+<p>{&quot;elements&quot;: [{&quot;border&quot;: 2, &quot;tip&quot;: &quot;#percent#&quot;, &quot;type&quot;: &quot;pie&quot;, &quot;colours&quot;: [&quot;#d01f3c&quot;, &quot;#356aa0&quot;, &quot;#C79810&quot;], &quot;start-angle&quot;: 20, &quot;values&quot;: [{&quot;label&quot;: &quot;Quarterly (20.0)&quot;, &quot;value&quot;: 20.0}, {&quot;label&quot;: &quot;Half Yearly (20.0)&quot;, &quot;value&quot;: 20.0}], &quot;animate&quot;: true}], &quot;bg_colour&quot;: &quot;#FFFFFF&quot;, &quot;tooltip&quot;: {&quot;background&quot;: &quot;#FFFFFF&quot;, &quot;colour&quot;: &quot;#000000&quot;, &quot;body&quot;: &quot;{font-size: 10px; color: #006666;}&quot;, &quot;title&quot;: &quot;{font-size: 10px; color: #006666;}&quot;, &quot;stroke&quot;: 1, &quot;shadow&quot;: true}, &quot;x_axis&quot;: null, &quot;title&quot;: {&quot;text&quot;: &quot;&quot;}}</p>
+<p>Any help will be greatly appreicated.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-693">
+
+By <strong><a href='../../../index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="open-flash-chart-ii-pie-chart#comment-693" title="">Jul 29, 2008</a> | <a href="open-flash-chart-ii-pie-chart#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Jaikishan &#8211; What version of flash player do you have on your linux box &#8211; <a href="http://www.adobe.com/products/flash/about/" rel="nofollow ugc">http://www.adobe.com/products/flash/about/</a> ?</p>
+<p>Also, can you see the chart on this page &#8211; <a href="http://teethgrinder.co.uk/open-flash-chart-2/adv-pie-chart.php" rel="nofollow ugc">http://teethgrinder.co.uk/open-flash-chart-2/adv-pie-chart.php</a></p>
+<p>Or any of the charts listed under &quot;Charts&quot; here &#8211; <a href="http://teethgrinder.co.uk/open-flash-chart-2/area-hollow.php" rel="nofollow ugc">http://teethgrinder.co.uk/open-flash-chart-2/area-hollow.php</a></p>
+<p>At the top of each of those chart pages should display a flash chart.</p>
+<p>Depending on the flash version you have, I would upgrade it.  The latest release comes with a new version of the swf file, so that is most likely the problem.</p>
+<p>Let me know how it goes.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-694">
+
+By <strong>Adam</strong> on <a href="open-flash-chart-ii-pie-chart#comment-694" title="">Jul 29, 2008</a> | <a href="open-flash-chart-ii-pie-chart#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@terry: I also had a similar problem where OFC2 would not display in IE7. Worked fine in Firefox 3. The problem appeared in production after I started using asset_packager Rails plugin. I removed swfobject.js from the assets_packages.yml and included swjobject.js using a normal HTML script tag. Things were fine after that.</p>
+<p>Maybe it has something to do with swfobject.js already being minified. Or maybe the IE7 parser has a bug.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-695">
+
+By <strong>Mitja</strong> on <a href="open-flash-chart-ii-pie-chart#comment-695" title="">Jul 29, 2008</a> | <a href="open-flash-chart-ii-pie-chart#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hi to everyone,</p>
+<p>for few days i am trying to show labels on my pie charts, but with no success at all.</p>
+<p>I have really really tried everything possible and impossible :).</p>
+<p>The only way to get my pie chart working is to have no labels at all, so, only the values.<br />
+When i add the labels, my chart doesn&#8217;t show. Can&#8217;t understand why as i think everything is just fine.</p>
+<p>This is for example a repsonse:<br />
+{&quot;title&quot;: {&quot;text&quot;: &quot;Currently defined alerts&quot;}, &quot;elements&quot;: [{&quot;start-angle&quot;: 35, &quot;type&quot;: &quot;pie&quot;, &quot;border&quot;<br />
+: 0, &quot;tip&quot;: &quot;#val# of #total#&lt;br&gt;#percent# of 100% for #label#&quot;, &quot;animate&quot;: true, &quot;values&quot;: [{&quot;value&quot;<br />
+: 3, &quot;label&quot;: &quot;test1&quot;}, {&quot;value&quot;: 5, &quot;label&quot;: &quot;test2&quot;}, {&quot;value&quot;: 10, &quot;label&quot;: &quot;test3&quot;}], &quot;colours&quot;:<br />
+ [&quot;#FA0081&quot;, &quot;#E400000&quot;, &quot;#FFA800&quot;, &quot;#8000FF&quot;, &quot;#9DFF00&quot;, &quot;#00FFFF&quot;, &quot;#0054FF&quot;, &quot;#FF00FF&quot;, &quot;#FF0070&quot;<br />
+, &quot;#000000&quot;, &quot;#00A2FF&quot;]}], &quot;x_axis&quot;: null}</p>
+<p>I am out of ideas an am left in the blank here. If anyone can help me, please&#8230;.i really need this pie chart to be working.</p>
+<p>Thanks!</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-696">
+
+By <strong>Mitja</strong> on <a href="open-flash-chart-ii-pie-chart#comment-696" title="">Jul 29, 2008</a> | <a href="open-flash-chart-ii-pie-chart#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>I have always been trying to show my chart page in Chrome or FF etc&#8230;.except IE. Just because of curiosity i have at last tried it in IE also. In all other browsers there is no errors shown, but in IE this is what i get:</p>
+<p>TypeError: Error #2007: Parameter text must be non-null.<br />
+	at flash.text::TextField/set text()<br />
+	at ChartObjects.Elements::PieLabel()[C:\Users\John\Documents\flex\svn\version-2\open-flash-chart\ChartObjects\Elements\PieLabel.as:12]<br />
+	at ChartObjects.Elements::PieSliceContainer()[C:\Users\John\Documents\flex\svn\version-2\open-flash-chart\ChartObjects\Elements\PieSliceContainer.as:14]<br />
+	at ChartObjects::Pie/add_values()[C:\Users\John\Documents\flex\svn\version-2\open-flash-chart\ChartObjects\Pie.as:107]<br />
+	at ChartObjects::Pie()[C:\Users\John\Documents\flex\svn\version-2\open-flash-chart\ChartObjects\Pie.as:59]<br />
+	at ChartObjects::Factory$/MakeChart()[C:\Users\John\Documents\flex\svn\version-2\open-flash-chart\ChartObjects\Factory.as:48]<br />
+	at main/build_chart()[C:\Users\John\Documents\flex\svn\version-2\open-flash-chart\main.as:463]<br />
+	at main/parse_json()[C:\Users\John\Documents\flex\svn\version-2\open-flash-chart\main.as:441]<br />
+	at main/xmlLoaded()[C:\Users\John\Documents\flex\svn\version-2\open-flash-chart\main.as:412]<br />
+	at flash.events::EventDispatcher/dispatchEventFunction()<br />
+	at flash.events::EventDispatcher/dispatchEvent()<br />
+	at flash.net::URLLoader/onComplete()</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-697">
+
+By <strong><a href='../../../index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="open-flash-chart-ii-pie-chart#comment-697" title="">Jul 29, 2008</a> | <a href="open-flash-chart-ii-pie-chart#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Mitja &#8211; looks like we have different JSON for specifying labels.</p>
+<p>The line I use in the example above:<br />
+pie.values  = [2,3, PieValue.new(6.5,&quot;Hello (6.5)&quot;)]<br />
+produces the following JSON:<br />
+&quot;values&quot;: [2, 3, {&quot;text&quot;: &quot;Hello (6.5)&quot;, &quot;value&quot;: 6.5}</p>
+<p>How are you getting this:<br />
+&quot;values&quot;: [{&quot;value&quot;: 3, &quot;label&quot;: &quot;test1&quot;}, {&quot;value&quot;: 5, &quot;label&quot;: &quot;test2&quot;}, {&quot;value&quot;: 10, &quot;label&quot;: &quot;test3&quot;}</p>
+<p>Should it not look like this:<br />
+&quot;values&quot;: [{&quot;value&quot;: 3, &quot;text&quot;: &quot;test1&quot;}, {&quot;value&quot;: 5, &quot;text&quot;: &quot;test2&quot;}, {&quot;value&quot;: 10, &quot;text&quot;: &quot;test3&quot;}</p>
+<p>Where &quot;text&quot; replaces &quot;label&quot;.</p>
+<p>Well, post the code that generates your JSON, so that I may take a look.</p>
+<p>The IE error &#8211; is it the same code as above?  Maybe fixing the first problem you mention with the labels will fix this IE error, so we will start there.  So post the code.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-698">
+
+By <strong>Mitja</strong> on <a href="open-flash-chart-ii-pie-chart#comment-698" title="">Jul 29, 2008</a> | <a href="open-flash-chart-ii-pie-chart#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Thanks for the reply Charlie.</p>
+<p>After many hours of trying to figure out what the problem is, i than went to the basics and copied latest code from github, replaced the swf files and swfobject.js (so, everything), and form than on it just worked. I guess the problem was in swf file!</p>
+<p>Of course other problems arrised (like vertical labels nsot working anymore), but i have found a workarround for all of them, so everything is just perfect now 🙂</p>
+<p>I have a two questions though.</p>
+<p>1. Is it possible to open urls in same window on on_click events? Currently i think it is possible only to do some JS alerts or open a link in a new window. If there is a possibility to do it in current window, i would really appreciate it.</p>
+<p>2. This one is a little bit harder :).<br />
+I am extensively using OFC with JS calls, so the async way with link_to_remote_ofc_load &#8230; but i have come to an idea that user would fill in the form with desired parameters for the chart and this parameters would than be posted to the controller action &#8211; async. Currently i am trying to hard code the link in link_to_ofc_load, but would somehow like to be dynamically generated from the user input.</p>
+<p>Is there any example with such a behaveour?<br />
+Maybe for starters a simple example without JS call would be a great way to see how it could be done, but i think the problem is not in passing the parameters and dynamically generate the chart, but to dynamically generate such a request for JS call.</p>
+<p>Thanks for any hint, tip&#8230;</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-699">
+
+By <strong>Frank</strong> on <a href="open-flash-chart-ii-pie-chart#comment-699" title="">Jul 29, 2008</a> | <a href="open-flash-chart-ii-pie-chart#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>This looks great!  Any chance you could advise me as to how to solve a small prbolem?  I&#8217;m trying to label a pie chart (like your Hello 6.5 example), but when I use the PieValue.new syntax no chart is created.  Here are my JSON outputs; the 2nd one doesn&#8217;t generate a graph.</p>
+<p>Thanks!</p>
+<p>{&quot;title&quot;: {&quot;text&quot;: &quot;Performance: All Multiple Choice Questions&quot;}, &quot;elements&quot;: [{&quot;start-angle&quot;: 35, &quot;animate&quot;: true, &quot;border&quot;: 2, &quot;tip&quot;: &quot;#val# (#percent#) of #total# questions&quot;, &quot;colours&quot;: [&quot;#d01f3c&quot;, &quot;#356aa0&quot;, &quot;#C79810&quot;], &quot;values&quot;: [9, 9, 702], &quot;type&quot;: &quot;pie&quot;}], &quot;x_axis&quot;: null}</p>
+<p>{&quot;title&quot;: {&quot;text&quot;: &quot;Performance: All Multiple Choice Questions&quot;}, &quot;elements&quot;: [{&quot;start-angle&quot;: 35, &quot;animate&quot;: true, &quot;border&quot;: 2, &quot;tip&quot;: &quot;#val# (#percent#) of #total# questions&quot;, &quot;colours&quot;: [&quot;#d01f3c&quot;, &quot;#356aa0&quot;, &quot;#C79810&quot;], &quot;values&quot;: [{&quot;label&quot;: &quot;Correct Questions&quot;, &quot;value&quot;: 9}, {&quot;label&quot;: &quot;Incorrect Questions&quot;, &quot;value&quot;: 9}, {&quot;label&quot;: &quot;Unanswered Questions&quot;, &quot;value&quot;: 702}], &quot;type&quot;: &quot;pie&quot;}], &quot;x_axis&quot;: null}</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-700">
+
+By <strong>Frank</strong> on <a href="open-flash-chart-ii-pie-chart#comment-700" title="">Jul 29, 2008</a> | <a href="open-flash-chart-ii-pie-chart#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>I read Mitja&#8217;s post and reloaded the .swf and .js files from a fresh download, but still not working.  The code I use to generate the values/labels is:</p>
+<p>    pie.values = [PieValue.new(correct_questions.size, &quot;Correct Questions&quot;),<br />
+      PieValue.new(incorrect_questions.size, &quot;Incorrect Questions&quot;),<br />
+      PieValue.new(unanswered_questions.size,&quot;Unanswered Questions&quot;)]</p>
+<p>Thanks again!</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-701">
+
+By <strong><a href='../../../index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="open-flash-chart-ii-pie-chart#comment-701" title="">Jul 29, 2008</a> | <a href="open-flash-chart-ii-pie-chart#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Frank &#8211; which swf file are you using?  The one that came with the plugin or a newer/older one?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-702">
+
+By <strong>salil</strong> on <a href="open-flash-chart-ii-pie-chart#comment-702" title="">Jul 29, 2008</a> | <a href="open-flash-chart-ii-pie-chart#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>I have a vertical label problem.</p>
+<p>i am using following values</p>
+<p>pie.values  = [2,3,4,5,6,7,8,9,10,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,11, PieValue.new(6.5,&quot;Hello (6.5)&quot;), PieValue.new(1.5,&quot;Hello (1.5)&quot;),PieValue.new(1.5,&quot;Hello (1.5)&quot;),PieValue.new(1.5,&quot;Hello (1.5)&quot;),PieValue.new(1.5,&quot;Hello (1.5)&quot;),PieValue.new(1.5,&quot;Hello (1.5)&quot;),PieValue.new(1.5,&quot;Hello (1.5)&quot;),PieValue.new(1.5,&quot;Hello (1.5)&quot;),PieValue.new(1.5,&quot;Hello (1.5)&quot;),PieValue.new(1.5,&quot;Hello (1.5)&quot;),PieValue.new(1.5,&quot;Hello (1.5)&quot;),PieValue.new(1.5,&quot;Hello (1.5)&quot;),PieValue.new(1.5,&quot;Hello (1.5)&quot;),PieValue.new(1.5,&quot;Hello (1.5)&quot;),PieValue.new(1.5,&quot;Hello (1.5)&quot;),PieValue.new(1.5,&quot;Hello (1.5)&quot;),PieValue.new(1.5,&quot;Hello (1.5)&quot;),PieValue.new(1.5,&quot;Hello (1.5)&quot;),PieValue.new(1.5,&quot;Hello (1.5)&quot;),PieValue.new(1.5,&quot;Hello (1.5)&quot;),PieValue.new(1.5,&quot;Hello (1.5)&quot;),PieValue.new(1.5,&quot;Hello (1.5)&quot;),PieValue.new(1.5,&quot;Hello (1.5)&quot;),PieValue.new(1.5,&quot;Hello (1.5)&quot;),PieValue.new(1.5,&quot;Hello (1.5)&quot;),PieValue.new(1.5,&quot;Hello (1.5)&quot;)]</p>
+<p>i want something like in the following link ( i don&#8217;t know how to do it with Rails)</p>
+<p><a href="http://www.ofc2dz.com/OFC2/examples/Pies.html" rel="nofollow ugc">http://www.ofc2dz.com/OFC2/examples/Pies.html</a></p>
+<p>Thanks</p>
+<p>Salil<br />
+<a href="mailto:salil@cipher-tech.com">salil@cipher-tech.com</a></p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-703">
+
+By <strong>salil</strong> on <a href="open-flash-chart-ii-pie-chart#comment-703" title="">Jul 29, 2008</a> | <a href="open-flash-chart-ii-pie-chart#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hi All,<br />
+   Also i would like to know how to set the radius of a pie chart.</p>
+<p>Regards,</p>
+<p>Salil</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-704">
+
+By <strong><a href='../../../index.html' rel='external nofollow ugc' class='url'>charlie</a></strong> on <a href="open-flash-chart-ii-pie-chart#comment-704" title="">Jul 29, 2008</a> | <a href="open-flash-chart-ii-pie-chart#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Salil &#8211; which OFC swf version do you have?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		</ol>
+	
+	
+	
+
+	<p id="comments-closed">Sorry, comments for this entry are closed at this time.</p>
+</div>
+</div><!-- Post -->
+
+		        
+  
+
+	
+</div><!-- Content -->
+
+</div><!-- LeftColumn -->
+
+<div id="c2">
+
+   
+    <div id="sidebar">
+
+<div id="subscribe">
+<a href="../../../feed/index.html"><img src="../../../wp-content/themes/simple&#32;paper/images/rss.gif" alt="RSS-FEED" border="0" id="rss" /></a>
+<a href="../../../feed/index.html">subscribe to the feed</a><br clear="all" />
+</div><!-- subscribe rss -->
+
+<div id="topsearch">
+<form action="../../../index.html" method="post">
+<input type="text" value="Search..." name="s" id="ls" class="searchfield" onfocus="if (this.value == 'Search...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search...';}" />
+<input type="image" src="../../../wp-content/themes/simple&#32;paper/images/click.gif" id="submit" />
+</form>
+<br clear="all" />
+<br clear="all" />
+</div>
+    
+    	<ul>
+	<li id="tag_cloud-2" class="widget widget_tag_cloud"><h2 class="widgettitle">Tags</h2>
+<div class="tagcloud"><a href="../../../tag/net/index.html" class="tag-cloud-link tag-link-166 tag-link-position-1" style="font-size: 8pt;" aria-label=".net (2 items)">.net</a>
+<a href="../../../tag/activerecord/index.html" class="tag-cloud-link tag-link-54 tag-link-position-2" style="font-size: 8pt;" aria-label="activerecord (2 items)">activerecord</a>
+<a href="../../../tag/api/index.html" class="tag-cloud-link tag-link-220 tag-link-position-3" style="font-size: 10.40625pt;" aria-label="api (4 items)">api</a>
+<a href="../../../tag/biking/index.html" class="tag-cloud-link tag-link-219 tag-link-position-4" style="font-size: 10.40625pt;" aria-label="biking (4 items)">biking</a>
+<a href="../../../tag/business/index.html" class="tag-cloud-link tag-link-213 tag-link-position-5" style="font-size: 8pt;" aria-label="business (2 items)">business</a>
+<a href="../../../tag/c/index.html" class="tag-cloud-link tag-link-33 tag-link-position-6" style="font-size: 10.40625pt;" aria-label="c++ (4 items)">c++</a>
+<a href="../../../tag/charts/index.html" class="tag-cloud-link tag-link-42 tag-link-position-7" style="font-size: 18.171875pt;" aria-label="charts (25 items)">charts</a>
+<a href="../../../tag/cms/index.html" class="tag-cloud-link tag-link-60 tag-link-position-8" style="font-size: 12.046875pt;" aria-label="CMS (6 items)">CMS</a>
+<a href="../../../tag/curb/index.html" class="tag-cloud-link tag-link-190 tag-link-position-9" style="font-size: 8pt;" aria-label="curb (2 items)">curb</a>
+<a href="../../../tag/curl/index.html" class="tag-cloud-link tag-link-120 tag-link-position-10" style="font-size: 8pt;" aria-label="curl (2 items)">curl</a>
+<a href="../../../tag/dynamic/index.html" class="tag-cloud-link tag-link-56 tag-link-position-11" style="font-size: 8pt;" aria-label="dynamic (2 items)">dynamic</a>
+<a href="../../../tag/ece231/index.html" class="tag-cloud-link tag-link-34 tag-link-position-12" style="font-size: 10.40625pt;" aria-label="ece231 (4 items)">ece231</a>
+<a href="../../../tag/editor/index.html" class="tag-cloud-link tag-link-61 tag-link-position-13" style="font-size: 11.28125pt;" aria-label="editor (5 items)">editor</a>
+<a href="../../../tag/error/index.html" class="tag-cloud-link tag-link-46 tag-link-position-14" style="font-size: 9.3125pt;" aria-label="error (3 items)">error</a>
+<a href="../../../tag/flash/index.html" class="tag-cloud-link tag-link-41 tag-link-position-15" style="font-size: 17.84375pt;" aria-label="flash (23 items)">flash</a>
+<a href="../../../tag/fun/index.html" class="tag-cloud-link tag-link-23 tag-link-position-16" style="font-size: 11.28125pt;" aria-label="fun (5 items)">fun</a>
+<a href="../../../tag/gems/index.html" class="tag-cloud-link tag-link-44 tag-link-position-17" style="font-size: 8pt;" aria-label="gems (2 items)">gems</a>
+<a href="../../../tag/graphs/index.html" class="tag-cloud-link tag-link-52 tag-link-position-18" style="font-size: 18.390625pt;" aria-label="graphs (26 items)">graphs</a>
+<a href="../../../tag/httpi/index.html" class="tag-cloud-link tag-link-191 tag-link-position-19" style="font-size: 8pt;" aria-label="httpi (2 items)">httpi</a>
+<a href="../../../tag/java/index.html" class="tag-cloud-link tag-link-177 tag-link-position-20" style="font-size: 9.3125pt;" aria-label="java (3 items)">java</a>
+<a href="../../../tag/javascript/index.html" class="tag-cloud-link tag-link-215 tag-link-position-21" style="font-size: 10.40625pt;" aria-label="Javascript (4 items)">Javascript</a>
+<a href="../../../tag/linux/index.html" class="tag-cloud-link tag-link-221 tag-link-position-22" style="font-size: 8pt;" aria-label="Linux (2 items)">Linux</a>
+<a href="../../../tag/macromovers/index.html" class="tag-cloud-link tag-link-66 tag-link-position-23" style="font-size: 8pt;" aria-label="macromovers (2 items)">macromovers</a>
+<a href="../../../tag/mirah/index.html" class="tag-cloud-link tag-link-176 tag-link-position-24" style="font-size: 8pt;" aria-label="mirah (2 items)">mirah</a>
+<a href="../../../tag/ofc/index.html" class="tag-cloud-link tag-link-105 tag-link-position-25" style="font-size: 8pt;" aria-label="OFC (2 items)">OFC</a>
+<a href="../../../tag/open-flash-chart/index.html" class="tag-cloud-link tag-link-40 tag-link-position-26" style="font-size: 18.609375pt;" aria-label="open flash chart (27 items)">open flash chart</a>
+<a href="../../../tag/php/index.html" class="tag-cloud-link tag-link-216 tag-link-position-27" style="font-size: 9.3125pt;" aria-label="php (3 items)">php</a>
+<a href="../../../tag/plugin/index.html" class="tag-cloud-link tag-link-65 tag-link-position-28" style="font-size: 12.59375pt;" aria-label="plugin (7 items)">plugin</a>
+<a href="../../../tag/plugins/index.html" class="tag-cloud-link tag-link-218 tag-link-position-29" style="font-size: 9.3125pt;" aria-label="plugins (3 items)">plugins</a>
+<a href="../../../tag/prog/index.html" class="tag-cloud-link tag-link-35 tag-link-position-30" style="font-size: 9.3125pt;" aria-label="prog (3 items)">prog</a>
+<a href="../../../tag/project/index.html" class="tag-cloud-link tag-link-47 tag-link-position-31" style="font-size: 10.40625pt;" aria-label="project (4 items)">project</a>
+<a href="../../../tag/rails/index.html" class="tag-cloud-link tag-link-210 tag-link-position-32" style="font-size: 20.90625pt;" aria-label="rails (45 items)">rails</a>
+<a href="../../../tag/ruby/index.html" class="tag-cloud-link tag-link-211 tag-link-position-33" style="font-size: 22pt;" aria-label="ruby (57 items)">ruby</a>
+<a href="../../../tag/ruby-on-rails/index.html" class="tag-cloud-link tag-link-43 tag-link-position-34" style="font-size: 20.359375pt;" aria-label="ruby on rails (40 items)">ruby on rails</a>
+<a href="../../../tag/select-boxes/index.html" class="tag-cloud-link tag-link-57 tag-link-position-35" style="font-size: 8pt;" aria-label="select boxes (2 items)">select boxes</a>
+<a href="../../../tag/simple/index.html" class="tag-cloud-link tag-link-62 tag-link-position-36" style="font-size: 10.40625pt;" aria-label="simple (4 items)">simple</a>
+<a href="../../../tag/simplecms/index.html" class="tag-cloud-link tag-link-214 tag-link-position-37" style="font-size: 11.28125pt;" aria-label="SimpleCMS (5 items)">SimpleCMS</a>
+<a href="../../../tag/skizmo/index.html" class="tag-cloud-link tag-link-102 tag-link-position-38" style="font-size: 10.40625pt;" aria-label="skizmo (4 items)">skizmo</a>
+<a href="../../../tag/software/index.html" class="tag-cloud-link tag-link-48 tag-link-position-39" style="font-size: 8pt;" aria-label="software (2 items)">software</a>
+<a href="../../../tag/spreadsheet/index.html" class="tag-cloud-link tag-link-45 tag-link-position-40" style="font-size: 8pt;" aria-label="spreadsheet (2 items)">spreadsheet</a>
+<a href="../../../tag/tutorial/index.html" class="tag-cloud-link tag-link-50 tag-link-position-41" style="font-size: 16.75pt;" aria-label="tutorial (18 items)">tutorial</a>
+<a href="../../../tag/ubuntu/index.html" class="tag-cloud-link tag-link-150 tag-link-position-42" style="font-size: 8pt;" aria-label="ubuntu (2 items)">ubuntu</a>
+<a href="../../../tag/vin/index.html" class="tag-cloud-link tag-link-119 tag-link-position-43" style="font-size: 12.59375pt;" aria-label="VIN (7 items)">VIN</a>
+<a href="../../../tag/vin-api/index.html" class="tag-cloud-link tag-link-159 tag-link-position-44" style="font-size: 12.046875pt;" aria-label="vin api (6 items)">vin api</a>
+<a href="../../../tag/xml/index.html" class="tag-cloud-link tag-link-165 tag-link-position-45" style="font-size: 9.3125pt;" aria-label="xml (3 items)">xml</a></div>
+</li>
+<li id="categories-524386351" class="widget widget_categories"><h2 class="widgettitle">Topics</h2>
+
+			<ul>
+					<li class="cat-item cat-item-179"><a href="../../../category/android/index.html">Android</a>
+</li>
+	<li class="cat-item cat-item-118"><a href="../../../category/api/index.html">api</a>
+</li>
+	<li class="cat-item cat-item-67"><a href="../../../category/biking/index.html">biking</a>
+</li>
+	<li class="cat-item cat-item-37"><a href="../../../category/blog/index.html">blog</a>
+</li>
+	<li class="cat-item cat-item-27"><a href="../../../category/business/index.html">business</a>
+</li>
+	<li class="cat-item cat-item-32"><a href="../../../category/c-c/index.html">C / C++</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="../../../category/development/index.html">development</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="../../../category/games/index.html">games</a>
+</li>
+	<li class="cat-item cat-item-139"><a href="../../../category/graphics/index.html">Graphics</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="../../../category/home/index.html">Home</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="../../../category/ie-hacks/index.html">IE hacks</a>
+</li>
+	<li class="cat-item cat-item-31"><a href="../../../category/javascript/index.html">Javascript</a>
+</li>
+	<li class="cat-item cat-item-149"><a href="../../../category/linux/index.html">Linux</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="../../../category/me/index.html">me</a>
+</li>
+	<li class="cat-item cat-item-26"><a href="../../../category/open-flash-chart-graphs/index.html">Open Flash Chart Graphs</a>
+</li>
+	<li class="cat-item cat-item-29"><a href="../../../category/opengl/index.html">opengl</a>
+</li>
+	<li class="cat-item cat-item-36"><a href="../../../category/php/index.html">php</a>
+</li>
+	<li class="cat-item cat-item-51"><a href="../../../category/plugins/index.html">plugins</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="../../../category/projects/index.html">projects</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="../../../category/rails/index.html">rails</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="../../../category/railsconf/index.html">railsconf</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="../../../category/ruby/index.html">ruby</a>
+</li>
+	<li class="cat-item cat-item-28"><a href="../../../category/simplecms/index.html">SimpleCMS</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="../../../category/tutorials/index.html">tutorials</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="../../../category/uncategorized/index.html">Uncategorized</a>
+</li>
+			</ul>
+
+			</li>
+
+		<li id="recent-posts-2" class="widget widget_recent_entries">
+		<h2 class="widgettitle">Recent Posts</h2>
+
+		<ul>
+											<li>
+					<a href="../../../index.html?p=57726">Dynamic Select Boxes &#8211; Ruby on Rails 3</a>
+									</li>
+											<li>
+					<a href="../../../index.html?p=57715">VIN API &#8211; Do you know about the complete data set?</a>
+									</li>
+											<li>
+					<a href="../../../index.html?p=57712">Using Ruby to read from a MagTek USB Card Reader</a>
+									</li>
+											<li>
+					<a href="../../../index.html?p=57708">Signature Pad in Linux</a>
+									</li>
+											<li>
+					<a href="../../../index.html?p=57705">Using HTTPI with Curb to do multipart file uploads with spnego</a>
+									</li>
+					</ul>
+
+		</li>
+<li id="recent-comments-2" class="widget widget_recent_comments"><h2 class="widgettitle">Recent Comments</h2>
+<ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">`Drew</span> on <a href="../../../2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/index.html#comment-24291">Dynamic Select Boxes &#8211; Ruby on Rails 3</a></li><li class="recentcomments"><span class="comment-author-link">Bardach</span> on <a href="../../../2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/index.html#comment-24290">Dynamic Select Boxes &#8211; Ruby on Rails 3</a></li><li class="recentcomments"><span class="comment-author-link">Bardach</span> on <a href="../../../2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/index.html#comment-24289">Dynamic Select Boxes &#8211; Ruby on Rails 3</a></li><li class="recentcomments"><span class="comment-author-link">Dar_bok</span> on <a href="../../../2007/04/30/how-i-got-gta-san-andreas-to-work-with-a-crappy-os-vista/comment-page-2/index.html#comment-20844">How I got GTA San Andreas to Work with (a crappy OS) Vista</a></li><li class="recentcomments"><span class="comment-author-link">Anirudha Pendakur</span> on <a href="../../../2012/07/25/using-httpi-with-curb-to-do-multipart-file-uploads-with-spnego/comment-page-1/index.html#comment-19583">Using HTTPI with Curb to do multipart file uploads with spnego</a></li></ul></li>
+<li id="archives-2" class="widget widget_archive"><h2 class="widgettitle">Archives</h2>
+
+			<ul>
+					<li><a href='../../../2012/08/index.html'>August 2012</a></li>
+	<li><a href='../../../2012/07/index.html'>July 2012</a></li>
+	<li><a href='../../../2012/05/index.html'>May 2012</a></li>
+	<li><a href='../../../2012/04/index.html'>April 2012</a></li>
+	<li><a href='../../../2012/03/index.html'>March 2012</a></li>
+	<li><a href='../../../2011/11/index.html'>November 2011</a></li>
+	<li><a href='../../../2011/10/index.html'>October 2011</a></li>
+	<li><a href='../../../2011/05/index.html'>May 2011</a></li>
+	<li><a href='../../../2011/03/index.html'>March 2011</a></li>
+	<li><a href='../../../2011/02/index.html'>February 2011</a></li>
+	<li><a href='../../../2011/01/index.html'>January 2011</a></li>
+	<li><a href='../../../2010/11/index.html'>November 2010</a></li>
+	<li><a href='../../../2010/09/index.html'>September 2010</a></li>
+	<li><a href='../../../2010/04/index.html'>April 2010</a></li>
+	<li><a href='../../../2010/02/index.html'>February 2010</a></li>
+	<li><a href='../../../2010/01/index.html'>January 2010</a></li>
+	<li><a href='../../../2009/12/index.html'>December 2009</a></li>
+	<li><a href='../../../2009/10/index.html'>October 2009</a></li>
+	<li><a href='../../../2009/09/index.html'>September 2009</a></li>
+	<li><a href='../../../2009/08/index.html'>August 2009</a></li>
+	<li><a href='../../../2009/04/index.html'>April 2009</a></li>
+	<li><a href='../../../2009/03/index.html'>March 2009</a></li>
+	<li><a href='../../../2009/02/index.html'>February 2009</a></li>
+	<li><a href='../../../2009/01/index.html'>January 2009</a></li>
+	<li><a href='../../10/index.html'>October 2008</a></li>
+	<li><a href='../../09/index.html'>September 2008</a></li>
+	<li><a href='../../08/index.html'>August 2008</a></li>
+	<li><a href='../../07/index.html'>July 2008</a></li>
+	<li><a href='../../04/index.html'>April 2008</a></li>
+	<li><a href='../../03/index.html'>March 2008</a></li>
+	<li><a href='../../02/index.html'>February 2008</a></li>
+	<li><a href='../../01/index.html'>January 2008</a></li>
+	<li><a href='../../../2007/12/index.html'>December 2007</a></li>
+	<li><a href='../../../2007/10/index.html'>October 2007</a></li>
+	<li><a href='../../../2007/09/index.html'>September 2007</a></li>
+	<li><a href='../../../2007/08/index.html'>August 2007</a></li>
+	<li><a href='../../../2007/06/index.html'>June 2007</a></li>
+	<li><a href='../../../2007/05/index.html'>May 2007</a></li>
+	<li><a href='../../../2007/04/index.html'>April 2007</a></li>
+			</ul>
+
+			</li>
+	</ul>
+    
+    </div><!-- Sidebar -->
+
+</div><!-- Rightcolumn -->
+
+
+
+<br clear="all" />
+
+<div id="footer">
+<p>Copyright 2009, powered by <a href="http://www.wordpress.org/">WordPress</a></p>
+</div><!-- Footer -->
+
+</div><!-- Wrapper -->
+
+<br clear="all" />
+</div><!-- Container -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3308745-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

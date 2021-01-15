@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ubuntu &#8211; PullMonkey Blog</title>
+	<atom:link href="http://pullmonkey.com/tag/ubuntu/feed/" rel="self" type="application/rss+xml" />
+	<link>http://pullmonkey.com</link>
+	<description></description>
+	<lastBuildDate>Tue, 29 Nov 2011 03:53:36 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6</generator>
+	<item>
+		<title>Ubuntu &#8211; The disk drive for X is not ready yet or not present</title>
+		<link>http://pullmonkey.com/2011/05/19/ubuntu-the-disk-drive-for-x-is-not-ready-yet-or-not-present/</link>
+					<comments>http://pullmonkey.com/2011/05/19/ubuntu-the-disk-drive-for-x-is-not-ready-yet-or-not-present/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Thu, 19 May 2011 03:33:12 +0000</pubDate>
+				<category><![CDATA[Linux]]></category>
+		<category><![CDATA[disk drive]]></category>
+		<category><![CDATA[error]]></category>
+		<category><![CDATA[install]]></category>
+		<category><![CDATA[mount]]></category>
+		<category><![CDATA[partition]]></category>
+		<category><![CDATA[ubuntu]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57603</guid>
+
+					<description><![CDATA[After an Ubuntu install go wrong my laptop started coming up with this error message: The disk drive for X is not ready yet or not present In my case, the laptop was having trouble with /dev/sda1, my root partition. The Solution: The error message above is met with two solutions, press S to skip [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>After an Ubuntu install go wrong my laptop started coming up with this error message:<br />
+<strong>The disk drive for X is not ready yet or not present</strong><br />
+In my case, the laptop was having trouble with /dev/sda1, my root partition.<br />
+<strong>The Solution:</strong><br />
+The error message above is met with two solutions, press S to skip or M to do a manual install.  Press "M" for manual install.<br />
+Once you are the command prompt, your drive will have been mounted as read-only, change that like this:</p>
+<pre>mount /dev/sda1 -o rw,remount</pre>
+<p>Now that the drive is in read-write again (test with a simple touch /tmp/test), continue the installation with this:</p>
+<pre>dpkg --configure -a</pre>
+<p></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2011/05/19/ubuntu-the-disk-drive-for-x-is-not-ready-yet-or-not-present/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>USB drive disconnecting and reconnecting randomly</title>
+		<link>http://pullmonkey.com/2011/01/05/usb-drive-disconnecting-and-reconnecting-randomly/</link>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Wed, 05 Jan 2011 00:27:26 +0000</pubDate>
+				<category><![CDATA[biking]]></category>
+		<category><![CDATA[Home]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[projects]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[2tb drive]]></category>
+		<category><![CDATA[2TB seagate drive]]></category>
+		<category><![CDATA[disconnecting]]></category>
+		<category><![CDATA[external drive]]></category>
+		<category><![CDATA[reconnecting]]></category>
+		<category><![CDATA[sdparm]]></category>
+		<category><![CDATA[STANDBY]]></category>
+		<category><![CDATA[ubuntu]]></category>
+		<category><![CDATA[usb drive]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57559</guid>
+
+					<description><![CDATA[It was very strange, I got a new 2 TB external USB drive for Christmas and I noticed a number of windows (nautilus windows) opening up throughout the night.  So I would wake up to find 20 - 30 windows opened to the media mount directory (/media).  Overtime and watching the logs, I noticed that [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>It was very strange, I got a new 2 TB external USB drive for Christmas and I noticed a number of windows (nautilus windows) opening up throughout the night.  So I would wake up to find 20 - 30 windows opened to the media mount directory (/media).  Overtime and watching the logs, I noticed that the new USB drive was disconnecting itself and then reconnecting.  As it would reconnect and mount, the new mount point /media/&lt;some long character string&gt; would pop open in a  nautilus window.  When the drive would eventually disconnect, the opened nautilus window would no longer have access to the data and would display contents from one directory up (/media).  After a couple days I finally found the answer and tried it and it worked as advertised.</p>
+<p>For those having the same problem, <a href="http://efreedom.com/Question/3-153381/NTFS-Partition-Keeps-Becoming-Unusable-Ubuntu-Ideas" target="_blank">this</a> is where I found the solution you see below.</p>
+<pre>$ <strong>sudo sdparm --clear STANDBY -6 /dev/sdb</strong>
+# note that your device could be something else, for example - /dev/sd&lt;something&gt;</pre>
+<p>
+And if you get an error, something like this:</p>
+<pre>change_mode_page: failed fetching page: Power condition</pre>
+<p>Then you should be able to use hdparm instead, like this:</p>
+<pre>sudo hdparm -S 0 /dev/sdb</pre>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

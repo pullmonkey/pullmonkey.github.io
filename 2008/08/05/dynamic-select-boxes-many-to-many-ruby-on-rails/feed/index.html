@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Dynamic Select Boxes (many to many) &#8211; Ruby on Rails	</title>
+	<atom:link href="http://pullmonkey.com/2008/08/05/dynamic-select-boxes-many-to-many-ruby-on-rails/feed/" rel="self" type="application/rss+xml" />
+	<link>http://pullmonkey.com/2008/08/05/dynamic-select-boxes-many-to-many-ruby-on-rails/</link>
+	<description></description>
+	<lastBuildDate>Sun, 30 Aug 2009 04:40:55 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6</generator>
+	<item>
+		<title>
+		By: Hilman Zaky		</title>
+		<link>http://pullmonkey.com/2008/08/05/dynamic-select-boxes-many-to-many-ruby-on-rails/comment-page-1/#comment-744</link>
+
+		<dc:creator><![CDATA[Hilman Zaky]]></dc:creator>
+		<pubDate>Tue, 05 Aug 2008 04:59:00 +0000</pubDate>
+		<guid isPermaLink="false">/2008/08/05/dynamic-select-boxes-many-to-many-ruby-on-rails#comment-744</guid>
+
+					<description><![CDATA[Thanks Charlie
+am I right if I said :
+&#060;filter:code attributes=lang=&#034;ruby&#034;&#062;
+class Artist &#060; ActiveRecord::Base
+  has_many :artist_associations
+  has_many :genres, :through =&#062; :artist_associations
+  has_many :songs
+end
+&#060; /filter:code&#062;
+codes means Artist has many Genres with artist_associations as a weak entity between Genres and Artists?
+and is that &#034;through&#034; also mean dependent?]]></description>
+			<content:encoded><![CDATA[<p>Thanks Charlie<br />
+am I right if I said :<br />
+&lt;filter:code attributes=lang=&quot;ruby&quot;&gt;<br />
+class Artist &lt; ActiveRecord::Base<br />
+  has_many :artist_associations<br />
+  has_many :genres, :through =&gt; :artist_associations<br />
+  has_many :songs<br />
+end<br />
+&lt; /filter:code&gt;<br />
+codes means Artist has many Genres with artist_associations as a weak entity between Genres and Artists?<br />
+and is that &quot;through&quot; also mean dependent?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: charlie		</title>
+		<link>http://pullmonkey.com/2008/08/05/dynamic-select-boxes-many-to-many-ruby-on-rails/comment-page-1/#comment-745</link>
+
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Tue, 05 Aug 2008 04:59:00 +0000</pubDate>
+		<guid isPermaLink="false">/2008/08/05/dynamic-select-boxes-many-to-many-ruby-on-rails#comment-745</guid>
+
+					<description><![CDATA[@Hilman - artist_associations is a join table between genre and artist. And through does not mean dependent - I missed that in this example, but you bring up a good point. You will want to specify the :dependent =&#062; :destroy in the join table association, like this:&#060;filter:code attributes=lang=&#034;ruby&#034;&#062;has_many :artist_associations, :dependent =&#062; :destroy&#060;/filter:code&#062; This will remove the association when an artist is deleted.
+
+Hope this helps.]]></description>
+			<content:encoded><![CDATA[<p>@Hilman &#8211; artist_associations is a join table between genre and artist. And through does not mean dependent &#8211; I missed that in this example, but you bring up a good point. You will want to specify the :dependent =&gt; :destroy in the join table association, like this:&lt;filter:code attributes=lang=&quot;ruby&quot;&gt;has_many :artist_associations, :dependent =&gt; :destroy&lt;/filter:code&gt; This will remove the association when an artist is deleted.</p>
+<p>Hope this helps.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hilman Zaky		</title>
+		<link>http://pullmonkey.com/2008/08/05/dynamic-select-boxes-many-to-many-ruby-on-rails/comment-page-1/#comment-746</link>
+
+		<dc:creator><![CDATA[Hilman Zaky]]></dc:creator>
+		<pubDate>Tue, 05 Aug 2008 04:59:00 +0000</pubDate>
+		<guid isPermaLink="false">/2008/08/05/dynamic-select-boxes-many-to-many-ruby-on-rails#comment-746</guid>
+
+					<description><![CDATA[Okay.. once again thanks.. that&#039;s helped me a lot..]]></description>
+			<content:encoded><![CDATA[<p>Okay.. once again thanks.. that&#8217;s helped me a lot..</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

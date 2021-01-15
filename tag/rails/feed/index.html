@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>rails &#8211; PullMonkey Blog</title>
+	<atom:link href="http://pullmonkey.com/tag/rails/feed/" rel="self" type="application/rss+xml" />
+	<link>http://pullmonkey.com</link>
+	<description></description>
+	<lastBuildDate>Thu, 16 Aug 2012 23:40:41 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6</generator>
+	<item>
+		<title>Dynamic Select Boxes &#8211; Ruby on Rails 3</title>
+		<link>http://pullmonkey.com/2012/08/11/dynamic-select-boxes-ruby-on-rails-3/</link>
+					<comments>http://pullmonkey.com/2012/08/11/dynamic-select-boxes-ruby-on-rails-3/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Sat, 11 Aug 2012 01:11:51 +0000</pubDate>
+				<category><![CDATA[development]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[cascading select boxes]]></category>
+		<category><![CDATA[dynamic]]></category>
+		<category><![CDATA[dynamic select boxes]]></category>
+		<category><![CDATA[jquery]]></category>
+		<category><![CDATA[rails 3]]></category>
+		<category><![CDATA[select boxes]]></category>
+		<category><![CDATA[unobtrusive javascript]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57726</guid>
+
+					<description><![CDATA[Over 4 years ago, I wrote a tutorial for doing dynamic (cascading) select boxes. Still getting comments and emails to this day. Mostly asking how to get this working with rails 3, which has moved from prototype to jquery. So here's a tutorial for getting 3 select boxes to trigger updates for each other. First [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Over 4 years ago, I wrote <a href="http://pullmonkey.com/2008/03/30/dynamic-select-boxes-ruby-on-rails/">a tutorial for doing dynamic (cascading) select boxes</a>.<br />
+Still getting comments and emails to this day.  Mostly asking how to get this working with rails 3, which has moved from prototype to jquery.<br />
+So here's a tutorial for getting 3 select boxes to trigger updates for each other.</p>
+<p>First set things up:<br />
+<script src="https://gist.github.com/3319671.js?file=gistfile1.sh"></script></p>
+<p>I just used the html5 haml twitter bootstrap, etc template.  Really useful.</p>
+<p>If you need data, here's what I used - put this in your db/seeds.rb file:<br />
+<script src="https://gist.github.com/3319679.js?file=gistfile1.rb"></script></p>
+<p>Next, setup your model associations:<br />
+<script src="https://gist.github.com/3319683.js?file=gistfile1.rb"></script></p>
+<p>Genres have many artists.<br />
+Artists have many songs.<br />
+Genres have many songs through artists.</p>
+<p>I'm just using a home controller to setup variables for the index page as well as setup variables for use in the dynamic updating:<br />
+<script src="https://gist.github.com/3319690.js?file=gistfile1.rb"></script></p>
+<p>Now the view just has the 3 select boxes and the unobtrusive javascript (triggered onchange) to make the ajax calls for updating:<br />
+<script src="https://gist.github.com/3319691.js?file=gistfile1.rb"></script></p>
+<p>We need our rjs files for updating the select boxes, one for the songs (when artist changes) and one for the artists and songs (when genre changes):<br />
+<script src="https://gist.github.com/3319706.js?file=gistfile1.rb"></script></p>
+<p>Our routes are simple:<br />
+<script src="https://gist.github.com/3319709.js?file=gistfile1.rb"></script></p>
+<p>That's it.  </p>
+<p><strong>UPDATE:</strong>  Here's an erb alternative for index.html.<br />
+<script src="https://gist.github.com/3366572.js?file=gistfile1.rhtml"></script></p>
+<p>And the js.haml can be converted to js.erb by taking #{...} and converting to <%= ... %> :<br />
+<script src="https://gist.github.com/3374533.js?file=gistfile1.rhtml"></script></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2012/08/11/dynamic-select-boxes-ruby-on-rails-3/feed/</wfw:commentRss>
+			<slash:comments>12</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Rubygem version incompatability with older Rails versions</title>
+		<link>http://pullmonkey.com/2012/05/30/rubygem-version-incompatability-with-older-rails-versions/</link>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Wed, 30 May 2012 15:35:39 +0000</pubDate>
+				<category><![CDATA[development]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[incompatability]]></category>
+		<category><![CDATA[ruby on rails]]></category>
+		<category><![CDATA[rubygems]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57701</guid>
+
+					<description><![CDATA[We maintain a rails 2.3.8 application and haven't had to touch it in quite some time. But when we did, we came across this error: uninitialized constant ActiveSupport::Dependencies::Mutex (NameError) Then after applying the solution found here, we started getting this error: undefined method `name' for "actionmailer":String (NoMethodError) Both errors were resolved by using RVM to [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>We maintain a rails 2.3.8 application and haven't had to touch it in quite some time.  But when we did, we came across this error:</p>
+<pre>uninitialized constant ActiveSupport::Dependencies::Mutex (NameError)</pre>
+<p>Then after applying the solution found <a href="http://stackoverflow.com/questions/5176782/uninitialized-constant-activesupportdependenciesmutex-nameerror">here</a>, we started getting this error:</p>
+<pre>undefined method `name' for "actionmailer":String (NoMethodError)</pre>
+<p>Both errors were resolved by using RVM to specify the rubygem version best suited for this application.</p>
+<pre>rvm rubygems 1.3.7</pre>
+<p>So our .rvmrc file now looks like this:</p>
+<pre>rvm use <ruby>@<gemset>
+rvm rubygems 1.3.7</pre>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Headers and Footers in ruby&#8217;s Spreadsheet gem</title>
+		<link>http://pullmonkey.com/2012/04/26/headers-and-footers-in-rubys-spreadsheet-gem/</link>
+					<comments>http://pullmonkey.com/2012/04/26/headers-and-footers-in-rubys-spreadsheet-gem/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Thu, 26 Apr 2012 19:17:20 +0000</pubDate>
+				<category><![CDATA[api]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[plugins]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[excel]]></category>
+		<category><![CDATA[footer]]></category>
+		<category><![CDATA[gem]]></category>
+		<category><![CDATA[hack]]></category>
+		<category><![CDATA[header]]></category>
+		<category><![CDATA[spreadsheet]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57696</guid>
+
+					<description><![CDATA[Have you ever needed to add a header or footer to your spreadsheets in ruby? Yah, well, we have 🙁 Yes, you can do this with the Write Excel gem. But we've already written years worth of spreadsheet code with the spreadsheet gem and don't want to rewrite it all. Anyway, we thought we'd share [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Have you ever needed to add a header or footer to your spreadsheets in ruby?<br />
+Yah, well, we have <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /><br />
+Yes, you can do this with the <a href="https://rubygems.org/gems/writeexcel">Write Excel gem</a>.<br />
+But we've already written years worth of spreadsheet code with the <a href="https://rubygems.org/gems/spreadsheet">spreadsheet gem</a> and don't want to rewrite it all.</p>
+<p>Anyway, we thought we'd share our little trick to get page headers using the spreadsheet gem.</p>
+<p><script src="https://gist.github.com/2502027.js?file=gistfile1.rb"></script></p>
+<p>So what you see here (above) goes into a config/initializer, something like RAILS_ROOT/config/initializer/enable_headers_in_spreadsheet_gem.rb.  Here's what's going on:</p>
+<p>1) We know that the <em>write_from_scratch</em> method is called when everything is said and done and the data is ready to be written to the spreadsheet file.  So we make use of this and alias that method to <em>write_from_scratch_without_header</em>.  Which opens us up to call our <em>write_header</em> method inside our <em>write_from_scratch</em> method which, of course, will call the original <em>write_from_scratch</em> method.</p>
+<p>2) Our <em>write_header</em> method makes use of the already existing opcode for Header in the spreadsheet gem.  It's not being used, so my guess is the developers intend on solving this issue at some point.  We have to send the opcode, the length info and the string we want to write out.  This was the trickiest part to figure out.</p>
+<p>3) We expose an add_header method that simply takes a string and stores it in the header accessor.  This means, to set the header, you simply say <em>sheet.add_header("foo header")</em>.</p>
+<p>To implement the footer, you'd just do the same thing, create a footer accessor, add a method to update it.  Then build the <em>writer_footer</em> method with <em>opcode(:footer)</em> and append <em>write_footer</em> at the end of <em>write_from_scratch</em>.</p>
+<p>Well, that took us some time to figure out, so enjoy and let me know if you have any questions.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2012/04/26/headers-and-footers-in-rubys-spreadsheet-gem/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>VIN API &#8211; ignore checksum validation</title>
+		<link>http://pullmonkey.com/2011/10/28/vin-api-ignore-checksum-validation/</link>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Fri, 28 Oct 2011 15:55:35 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[project]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[ruby on rails]]></category>
+		<category><![CDATA[simple]]></category>
+		<category><![CDATA[skizmo]]></category>
+		<category><![CDATA[software]]></category>
+		<category><![CDATA[VIN]]></category>
+		<category><![CDATA[vin api]]></category>
+		<category><![CDATA[xml]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57615</guid>
+
+					<description><![CDATA[It's been mentioned a few times that there should be a way to skip the checksum validation. This means if the check digit calculation generally fails, VIN API will continue to process the VIN to see if there is a "like" VIN match. So here it is:]]></description>
+										<content:encoded><![CDATA[<p>It's been mentioned a few times that there should be a way to skip the checksum validation.   This means if the <a href="http://en.wikipedia.org/wiki/Vehicle_Identification_Number#Check_digit_calculation">check digit calculation</a> generally fails, <a href="http://vinapi.skizmo.com">VIN API</a> will continue to process the VIN to see if there is a "like" VIN match.  So here it is: </p>
+<p><script src="https://gist.github.com/1322591.js?file=gistfile1.rb"></script></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>VIN API &#8211; fair pricing model</title>
+		<link>http://pullmonkey.com/2011/01/24/vin-api-fair-pricing-model/</link>
+					<comments>http://pullmonkey.com/2011/01/24/vin-api-fair-pricing-model/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Mon, 24 Jan 2011 22:02:39 +0000</pubDate>
+				<category><![CDATA[api]]></category>
+		<category><![CDATA[biking]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[me]]></category>
+		<category><![CDATA[Open Flash Chart Graphs]]></category>
+		<category><![CDATA[projects]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[SimpleCMS]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[project]]></category>
+		<category><![CDATA[ruby on rails]]></category>
+		<category><![CDATA[tutorial]]></category>
+		<category><![CDATA[VIN]]></category>
+		<category><![CDATA[vin api]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57570</guid>
+
+					<description><![CDATA[It can't be a shock to any of you that after many months (wait - more like a full year) of running VIN API completely free and out-of-pocket, it is time to monetize. As I am sure most of you know, the back-end data is quite pricey. For example, a monthly subscription for a "lite" [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>It can't be a shock to any of you that after many months (wait - more like <a href="http://pullmonkey.com/2010/02/19/vin-api-vin-decoder-for-anyone/">a full year</a>) of running <a href="http://vinapi.skizmo.com">VIN API</a> completely free and out-of-pocket, it is time to monetize.  As I am sure most of you know, the back-end data is quite pricey. For example, a monthly subscription for a "lite" data set (your typical year, make, model, engine type, etc) at one of the better known distributors would run you about $260.00 a month for ~800 VIN decodings.  This is some <strong>very</strong> expensive data at 32.5 cents a VIN.  Some of you that use our API are running 50,000+ VINs through in a weekend, that is $16,000!  Wow!  </p>
+<p> Ok, so what did we decide to do?  Well first, and most importantly, we decided to keep the service up and running; for a while there it was looking pretty bleak and if you take a second to look at the numbers (financially) you can understand why.  Anyway, to be as fair as possible, we did not feel this could be monetized as a subscription-based product, some months you need 500,000 VINs and some only a 1,000.  Looking at the data for year, we had many questions - what plan would you pick?  should the plan rollover it's unused decodings?  </p>
+<p> We discovered a lot of complexity in the subscription model, so we decided to setup the pay as you go plan, where you buy your decodings at various bulk levels.  For instance, you could buy in groups of 1,000 or 10,000 or 100,000 such that you would realize savings on a price-per-VIN basis the larger the group you purchase.  There is no use policy either, so you can sit on the VINs for as long as you want, or you can even buy decodings the day (even the minute) before you need them.  No monthly credit card bill, no rollovers, just simple "buy what you need," and if you buy in bulk, you save. </p>
+<p>Another consideration in doing this was having to maintain soft limits. For example, if the user purchases the 5,000 VINs per month plan, and the their site does well this month and they need 6000 VINs, should they have chosen the 10,000 VIN plan?  We didn't think so, we figured no hard limit, just soft limits, and after the soft limit is hit, we would charge the additional VINs at the current rate per VIN to the user's next month's bill.  We tried to explain this to a few current users that are helping us come up with reasonable rates and they were not all that thrilled about it.  So we had a problem, we did not want users to pay for what they did not need, but at the same time we did not want to cut users off in the middle of a month when they hit their limit.  That entire idea had to be scrapped and along with it went the idea behind the subscription plan itself.  We like it though, it's simple now - buy your decodings and use your decodings, we will email you if you are getting low and may want to add decodings to your account.</p>
+<p>Subscription models are great for static resources and static services, but not a single one of our customers decodes the same number of VINs each month, so it just won't work.  So onward and upward, pay as you go and regardless of how the other API providers offer their service, we are excited to be a little different and lot cheaper as you will soon find out.</p>
+<p>Enjoy!</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2011/01/24/vin-api-fair-pricing-model/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>POST OFC Graph as Image</title>
+		<link>http://pullmonkey.com/2010/01/06/post_ofc_graph_as_image/</link>
+					<comments>http://pullmonkey.com/2010/01/06/post_ofc_graph_as_image/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Wed, 06 Jan 2010 21:17:57 +0000</pubDate>
+				<category><![CDATA[development]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[me]]></category>
+		<category><![CDATA[Open Flash Chart Graphs]]></category>
+		<category><![CDATA[plugins]]></category>
+		<category><![CDATA[projects]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[SimpleCMS]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[charts]]></category>
+		<category><![CDATA[graphs]]></category>
+		<category><![CDATA[image]]></category>
+		<category><![CDATA[open flash chart]]></category>
+		<category><![CDATA[png]]></category>
+		<category><![CDATA[ruby on rails]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57469</guid>
+
+					<description><![CDATA[I was asked recently (well sort of) to give an example of saving an image to the server. If you look at teethgrinder's example for this, you will see that he has made available an external interface to do just that - POST your graph as png raw data to your server for storage. This [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I was <a href="http://github.com/inbox/365812#reply">asked recently (well sort of) to give an example of saving an image to the server</a>.  If you look at <a href="http://teethgrinder.co.uk/open-flash-chart-2/adv-upload-image.php">teethgrinder's example for this</a>, you will see that he has made available an external interface to do just that - POST your graph as png raw data to your server for storage.  This has many benefits such as saving the image for use in a PDF report or for printing, since we know at times it is a bit troublesome to print the embedded flash object.<br />
+I think the main problem people are having with this is the receiving of the image data post - see the upload_image method below.  Also, teethgrinder's example never really says where to make the post_image() call.  So I touch on both in the code below.<br />
+Here is an example of the png that is saved when I did this for the chart in the previous example:<br />
+<img loading="lazy" src="http://pullmonkey.com/wp-content/uploads/2010/01/tmp_image.png" alt="OFC Saved Image" title="OFC Saved Image" width="550" height="300" class="aligncenter size-full wp-image-57468" srcset="http://pullmonkey.com/wp-content/uploads/2010/01/tmp_image.png 550w, http://pullmonkey.com/wp-content/uploads/2010/01/tmp_image-300x163.png 300w" sizes="(max-width: 550px) 100vw, 550px" /></p>
+<p>Well, let's just get right in to the code.<br />
+The controller contains the same code as <a href="http://pullmonkey.com/2010/01/05/open-flash-chart-ii-x-axis-date-and-time/">my last post</a> with only a few minor changes to the index method and the addition of the upload_image method.<br />
+In the <b>controller</b>, I have this:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt>5<tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt>9<tt>
+</tt><strong>10</strong><tt>
+</tt>11<tt>
+</tt>12<tt>
+</tt>13<tt>
+</tt>14<tt>
+</tt>15<tt>
+</tt>16<tt>
+</tt>17<tt>
+</tt>18<tt>
+</tt>19<tt>
+</tt><strong>20</strong><tt>
+</tt>21<tt>
+</tt>22<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">TestItController</span> &lt; <span style="color:#036;font-weight:bold">ApplicationController</span><tt>
+</tt>  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">index</span><tt>
+</tt>    <span style="color:#888"># note the user of open_flash_chart_object_from_hash instead of just open_flash_chart_object</span><tt>
+</tt>    <span style="color:#888"># this allows you to pass in the id of the div you want the the chart to be in</span><tt>
+</tt>    <span style="color:#888"># this is useful for when we need to findSWF by this id</span><tt>
+</tt>    <span style="color:#33B">@graph</span> = open_flash_chart_object_from_hash(<span style="background-color:#fff0f0;color:#D20"><span style="color:#710">&quot;</span><span style="">/test_it/chart</span><span style="color:#710">&quot;</span></span>, <span style="color:#A60">:div_name</span> =&gt; <span style="background-color:#fff0f0;color:#D20"><span style="color:#710">&quot;</span><span style="">my_chart</span><span style="color:#710">&quot;</span></span>)<tt>
+</tt>  <span style="color:#080;font-weight:bold">end</span><tt>
+</tt><tt>
+</tt>  <span style="color:#888"># added to recieve the post data for the OFC png image of the OFC graph</span><tt>
+</tt>  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">upload_image</span><tt>
+</tt>    name = <span style="background-color:#fff0f0;color:#D20"><span style="color:#710">&quot;</span><span style="">tmp_image.png</span><span style="color:#710">&quot;</span></span> || params[<span style="color:#A60">:name</span>]<tt>
+</tt>    <span style="color:#888"># the save_image method that is provided by the OFC swf file sends raw post data, so get to it like this</span><tt>
+</tt>    data = request.raw_post<tt>
+</tt>    <span style="color:#036;font-weight:bold">File</span>.open(<span style="background-color:#fff0f0;color:#D20"><span style="color:#710">&quot;</span><span style="background:#ddd;color:black"><span style="background:#ddd;font-weight:bold;color:#666">#{</span><span style="color:#036;font-weight:bold">RAILS_ROOT</span><span style="background:#ddd;font-weight:bold;color:#666">}</span></span><span style="">/tmp/</span><span style="background:#ddd;color:black"><span style="background:#ddd;font-weight:bold;color:#666">#{</span>name<span style="background:#ddd;font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>, <span style="background-color:#fff0f0;color:#D20"><span style="color:#710">&quot;</span><span style="">wb</span><span style="color:#710">&quot;</span></span>) { |f| f.write(data) } <span style="color:#080;font-weight:bold">if</span> data<tt>
+</tt>    render <span style="color:#A60">:nothing</span> =&gt; <span style="color:#038;font-weight:bold">true</span><tt>
+</tt>  <span style="color:#080;font-weight:bold">end</span><tt>
+</tt><tt>
+</tt>  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">chart</span><tt>
+</tt>    <span style="color:#888"># same code from here - http://pullmonkey.com/2010/01/05/open-flash-chart-ii-x-axis-date-and-time/ </span><tt>
+</tt>    ...<tt>
+</tt>  <span style="color:#080;font-weight:bold">end</span><tt>
+</tt><span style="color:#080;font-weight:bold">end</span></pre>
+</td>
+</tr>
+</table>
+<p>So just <b>note</b> the use of open_flash_chart_object_from_hash() in the index method, this way we can pass in the id of the div.<br />
+In the <b>view</b>, I have this:</p>
+<table class="CodeRay">
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt>5<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }">&lt;<span style="background-color:#fff0f0;color:#D20"><span style="color:#710">%=</span><span style=""> javascript_include_tag 'swfobject.js' %&gt;<tt>
+</tt>&lt;%</span><span style="color:#710">=</span></span> <span style="color:#33B">@graph</span> %&gt;<tt>
+</tt>&lt;<span style="background-color:#fff0f0;color:#D20"><span style="color:#710">%=</span><span style=""> save_as_image(&quot;http://localhost:3000/test_it/upload_image?name</span><span style="color:#710">=</span></span>tmp.png<span style="background-color:#fff0f0;color:#D20"><span style="color:#710">&quot;</span><span style="">, :id =&gt; </span><span style="color:#710">&quot;</span></span>my_chart<span style="background-color:#fff0f0;color:#D20"><span style="color:#710">&quot;</span><span style="">) %&gt;<tt>
+</tt>&lt;br/&gt;<tt>
+</tt>&lt;%= button_to_function </span><span style="color:#710">&quot;</span></span><span style="color:#036;font-weight:bold">Save</span> <span style="color:#036;font-weight:bold">Image</span><span style="background-color:#fff0f0;color:#D20"><span style="color:#710">&quot;</span><span style="">, </span><span style="color:#710">&quot;</span></span>post_image()<span style="background-color:#fff0f0;color:#D20"><span style="color:#710">&quot;</span><span style=""> %&gt;</span></span></pre>
+</td>
+</tr>
+</table>
+<p>
+Really the only difference from what we would normally have in our view is that I am using the save image setup method that was added to the <a href="http://github.com/pullmonkey/open_flash_chart/commit/14ff9735c67e9b424caa129e8e06dc910e73681f">open flash chart ruby on rails plugin</a> in the last couple hours (as of this post).  The save_image method takes some arguments, mainly the url to post the image data to and the id of the chart we setup in the controller.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2010/01/06/post_ofc_graph_as_image/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Open Flash Chart II &#8211; X Axis Date and Time</title>
+		<link>http://pullmonkey.com/2010/01/05/open-flash-chart-ii-x-axis-date-and-time/</link>
+					<comments>http://pullmonkey.com/2010/01/05/open-flash-chart-ii-x-axis-date-and-time/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Tue, 05 Jan 2010 02:09:16 +0000</pubDate>
+				<category><![CDATA[development]]></category>
+		<category><![CDATA[Open Flash Chart Graphs]]></category>
+		<category><![CDATA[plugins]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[charts]]></category>
+		<category><![CDATA[Date and Time]]></category>
+		<category><![CDATA[example]]></category>
+		<category><![CDATA[graphs]]></category>
+		<category><![CDATA[OFC]]></category>
+		<category><![CDATA[OFC II]]></category>
+		<category><![CDATA[open flash chart]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[X Axis]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57443</guid>
+
+					<description><![CDATA[I was asked how to display date and time for the x axis as seen in this teethgrinder example - So here it goes. Here is the graph we are after in this example: More Open Flash Chart II examples. And here is the code (the controller): 1 2 3 4 5 6 7 8 [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I was <a href="http://github.com/pullmonkey/open_flash_chart/issues#issue/3">asked how to display date and time for the x axis</a> as seen in <a href="http://teethgrinder.co.uk/open-flash-chart-2/x-axis-date.php">this teethgrinder example</a> - So here it goes.</p>
+<p>Here is the graph we are after in this example:<br />
+<script src="/projects/javascripts/swfobject.js" type="text/javascript"></script></p>
+<p><script type="text/javascript"><!--
+      swfobject.embedSWF("/projects/open-flash-chart-lwc.swf", "flash_content_x_axis_date_and_time", "600", "300", "9.0.0", "expressInstall.swf",{"data-file":"/projects/open_flash_chart2/x_axis_date_and_time"});
+
+// --></script></p>
+<p><a href="http://pullmonkey.com/projects/open_flash_chart2">More Open Flash Chart II examples.</a></p>
+<p>And here is the code (the controller):</p>
+<table class="CodeRay" border="0">
+<tbody>
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt>5<tt>
+</tt>6<tt>
+</tt>7<tt>
+</tt>8<tt>
+</tt>9<tt>
+</tt><strong>10</strong><tt>
+</tt>11<tt>
+</tt>12<tt>
+</tt>13<tt>
+</tt>14<tt>
+</tt>15<tt>
+</tt>16<tt>
+</tt>17<tt>
+</tt>18<tt>
+</tt>19<tt>
+</tt><strong>20</strong><tt>
+</tt>21<tt>
+</tt>22<tt>
+</tt>23<tt>
+</tt>24<tt>
+</tt>25<tt>
+</tt>26<tt>
+</tt>27<tt>
+</tt>28<tt>
+</tt>29<tt>
+</tt><strong>30</strong><tt>
+</tt>31<tt>
+</tt>32<tt>
+</tt>33<tt>
+</tt>34<tt>
+</tt>35<tt>
+</tt>36<tt>
+</tt>37<tt>
+</tt>38<tt>
+</tt>39<tt>
+</tt><strong>40</strong><tt>
+</tt>41<tt>
+</tt>42<tt>
+</tt>43<tt>
+</tt>44<tt>
+</tt>45<tt>
+</tt>46<tt>
+</tt>47<tt>
+</tt>48<tt>
+</tt>49<tt>
+</tt><strong>50</strong><tt>
+</tt>51<tt>
+</tt>52<tt>
+</tt>53<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt><span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">TestItController</span> &lt; <span style="color:#036;font-weight:bold">ApplicationController</span><tt>
+</tt>  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">index</span><tt>
+</tt>    <span style="color:#33B">@graph</span> = open_flash_chart_object(<span style="color:#00D;font-weight:bold">550</span>,<span style="color:#00D;font-weight:bold">300</span>,<span style="background-color:#fff0f0;color:#D20"><span style="color:#710">"</span><span>/test_it/chart</span><span style="color:#710">"</span></span>)<tt>
+</tt>  <span style="color:#080;font-weight:bold">end</span><tt>
+</tt>  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">chart</span><tt>
+</tt>    data1 = []<tt>
+</tt>    data2 = []<tt>
+</tt>    year = <span style="color:#036;font-weight:bold">Time</span>.now.year<tt>
+</tt><tt>
+</tt>    <span style="color:#00D;font-weight:bold">31</span>.times <span style="color:#080;font-weight:bold">do</span> |i|<tt>
+</tt>      x = <span style="background-color:#fff0f0;color:#D20"><span style="color:#710">"</span><span style="background:#eee;color:black"><span style="font-weight:bold;color:#777">#{</span>year<span style="font-weight:bold;color:#777">}</span></span><span>-1-</span><span style="background:#eee;color:black"><span style="font-weight:bold;color:#777">#{</span>i+<span style="color:#00D;font-weight:bold">1</span><span style="font-weight:bold;color:#777">}</span></span><span style="color:#710">"</span></span>.to_time.to_i<tt>
+</tt>      y = (<span style="color:#036;font-weight:bold">Math</span>.sin(i+<span style="color:#00D;font-weight:bold">1</span>) * <span style="color:#60E;font-weight:bold">2.5</span>) + <span style="color:#00D;font-weight:bold">10</span><tt>
+</tt><tt>
+</tt>      data1 &lt;&lt; <span style="color:#036;font-weight:bold">ScatterValue</span>.new(x,y)<tt>
+</tt>      data2 &lt;&lt; (<span style="color:#036;font-weight:bold">Math</span>.cos(i+<span style="color:#00D;font-weight:bold">1</span>) * <span style="color:#60E;font-weight:bold">1.9</span>) + <span style="color:#00D;font-weight:bold">4</span><tt>
+</tt>    <span style="color:#080;font-weight:bold">end</span><tt>
+</tt><tt>
+</tt>    dot = <span style="color:#036;font-weight:bold">HollowDot</span>.new<tt>
+</tt>    dot.size = <span style="color:#00D;font-weight:bold">3</span><tt>
+</tt>    dot.halo_size = <span style="color:#00D;font-weight:bold">2</span><tt>
+</tt>    dot.tooltip = <span style="background-color:#fff0f0;color:#D20"><span style="color:#710">"</span><span>#date:d M y#&lt;br&gt;Value: #val#</span><span style="color:#710">"</span></span><tt>
+</tt><tt>
+</tt>    line = <span style="color:#036;font-weight:bold">ScatterLine</span>.new(<span style="background-color:#fff0f0;color:#D20"><span style="color:#710">"</span><span>#DB1750</span><span style="color:#710">"</span></span>, <span style="color:#00D;font-weight:bold">3</span>)<tt>
+</tt>    line.values = data1<tt>
+</tt>    line.default_dot_style = dot<tt>
+</tt><tt>
+</tt>    x = <span style="color:#036;font-weight:bold">XAxis</span>.new<tt>
+</tt>    x.set_range(<span style="background-color:#fff0f0;color:#D20"><span style="color:#710">"</span><span style="background:#eee;color:black"><span style="font-weight:bold;color:#777">#{</span>year<span style="font-weight:bold;color:#777">}</span></span><span>-1-1</span><span style="color:#710">"</span></span>.to_time.to_i, <span style="background-color:#fff0f0;color:#D20"><span style="color:#710">"</span><span style="background:#eee;color:black"><span style="font-weight:bold;color:#777">#{</span>year<span style="font-weight:bold;color:#777">}</span></span><span>-1-31</span><span style="color:#710">"</span></span>.to_time.to_i)<tt>
+</tt>    x.steps = <span style="color:#00D;font-weight:bold">86400</span><tt>
+</tt><tt>
+</tt>    labels = <span style="color:#036;font-weight:bold">XAxisLabels</span>.new<tt>
+</tt>    labels.text = <span style="background-color:#fff0f0;color:#D20"><span style="color:#710">"</span><span>#date: l jS, M Y#</span><span style="color:#710">"</span></span><tt>
+</tt>    labels.steps = <span style="color:#00D;font-weight:bold">86400</span><tt>
+</tt>    labels.visible_steps = <span style="color:#00D;font-weight:bold">2</span><tt>
+</tt>    labels.rotate = <span style="color:#00D;font-weight:bold">90</span><tt>
+</tt><tt>
+</tt>    x.labels = labels<tt>
+</tt><tt>
+</tt>    y = <span style="color:#036;font-weight:bold">YAxis</span>.new<tt>
+</tt>    y.set_range(<span style="color:#00D;font-weight:bold">0</span>,<span style="color:#00D;font-weight:bold">15</span>,<span style="color:#00D;font-weight:bold">5</span>)<tt>
+</tt><tt>
+</tt>    chart = <span style="color:#036;font-weight:bold">OpenFlashChart</span>.new<tt>
+</tt>    title = <span style="color:#036;font-weight:bold">Title</span>.new(data2.size)<tt>
+</tt><tt>
+</tt>    chart.title = title<tt>
+</tt>    chart.add_element(line)<tt>
+</tt>    chart.x_axis = x<tt>
+</tt>    chart.y_axis = y<tt>
+</tt><tt>
+</tt>    render <span style="color:#A60">:text</span> =&gt; chart, <span style="color:#A60">:layout</span> =&gt; <span style="color:#038;font-weight:bold">false</span><tt>
+</tt>  <span style="color:#080;font-weight:bold">end</span><tt>
+</tt><span style="color:#080;font-weight:bold">end</span></pre>
+</td>
+</tr>
+</tbody>
+</table>
+<p>And in your view (index.html.erb):</p>
+<table class="CodeRay" border="0">
+<tbody>
+<tr>
+<td class="line_numbers" title="click to toggle" onclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }">
+<pre>1<tt>
+</tt>2<tt>
+</tt>3<tt>
+</tt>4<tt>
+</tt></pre>
+</td>
+<td class="code">
+<pre ondblclick="with (this.style) { overflow = (overflow == 'auto' || overflow == '') ? 'visible' : 'auto' }"><tt>
+</tt>&lt;script type=<span class="s"><span class="dl">"</span><span class="k">text/javascript</span><span class="dl">"</span></span> src=<span class="s"><span class="dl">"</span><span class="k">/javascripts/swfobject.js</span><span class="dl">"</span></span>&gt;&lt;<span class="rx"><span class="dl">/</span><span class="k">script&gt;<tt>
+</tt>&lt;%= @graph %&gt;<tt>
+</tt><tt>
+</tt></span></span></pre>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Good Luck!</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2010/01/05/open-flash-chart-ii-x-axis-date-and-time/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Open Flash Chart II for Ruby on Rails &#8211; Lug Wyrm Charmer</title>
+		<link>http://pullmonkey.com/2010/01/04/open-flash-chart-ii-for-ruby-on-rails-lug-wyrm-charmer-version/</link>
+					<comments>http://pullmonkey.com/2010/01/04/open-flash-chart-ii-for-ruby-on-rails-lug-wyrm-charmer-version/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Mon, 04 Jan 2010 17:26:43 +0000</pubDate>
+				<category><![CDATA[development]]></category>
+		<category><![CDATA[Open Flash Chart Graphs]]></category>
+		<category><![CDATA[plugins]]></category>
+		<category><![CDATA[projects]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[charting]]></category>
+		<category><![CDATA[graphs]]></category>
+		<category><![CDATA[OFC]]></category>
+		<category><![CDATA[OFCII]]></category>
+		<category><![CDATA[open flash chart]]></category>
+		<category><![CDATA[open flash chart II]]></category>
+		<category><![CDATA[openflashchart]]></category>
+		<category><![CDATA[plugin]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57440</guid>
+
+					<description><![CDATA[A long time overdue, but I've managed to get everything updated to the new version of Teethgrinder's open flash chart. I've also started tagging everything, so if you notice any problems trying to do anything from Teethgrinder's examples, then first check that you are using the latest (as of now, that is Lug Wyrm Charmer) [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>A long time overdue, but I've managed to get everything updated to the new version of <a href="http://teethgrinder.co.uk/open-flash-chart-2/">Teethgrinder's open flash chart</a>.</p>
+<p>I've also started tagging everything, so if you notice any problems trying to do anything from <a href="http://teethgrinder.co.uk/open-flash-chart-2/tutorial.php">Teethgrinder's examples</a>, then first check that you are using the latest (as of now, that is Lug Wyrm Charmer) - <a href="http://github.com/pullmonkey/open_flash_chart/tree/LugWyrmCharmer">http://github.com/pullmonkey/open_flash_chart/tree/LugWyrmCharmer</a>.</p>
+<p>Make sure you are using the latest swf either from the plugin assets directory or from <a href="http://teethgrinder.co.uk/open-flash-chart-2/downloads.php">Teethgrinder's downloads</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2010/01/04/open-flash-chart-ii-for-ruby-on-rails-lug-wyrm-charmer-version/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Using Tumblr as a CMS</title>
+		<link>http://pullmonkey.com/2009/12/30/using-tumblr-as-a-cms/</link>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Wed, 30 Dec 2009 20:39:31 +0000</pubDate>
+				<category><![CDATA[development]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[SimpleCMS]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[CMS]]></category>
+		<category><![CDATA[content]]></category>
+		<category><![CDATA[data access]]></category>
+		<category><![CDATA[management]]></category>
+		<category><![CDATA[skizmo]]></category>
+		<category><![CDATA[tumblr]]></category>
+		<category><![CDATA[tumblr as cms]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57438</guid>
+
+					<description><![CDATA[Thought you all might like this - http://blog.skizmo.com/post/308406755/use-tumblr-as-your-cms It is something we sort of dreamed up and it works great as a partial CMS - very much like SimpleCMS where you can specify what exactly on the page needs to be managed by a CMS. This allows you to mix your CMS static content with [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Thought you all might like this - <a href="http://blog.skizmo.com/post/308406755/use-tumblr-as-your-cms">http://blog.skizmo.com/post/308406755/use-tumblr-as-your-cms</a></p>
+<p>It is something we sort of dreamed up and it works great as a partial CMS - very much like <a href="http://pullmonkey.com/tag/simplecms/">SimpleCMS</a> where you can specify what exactly on the page needs to be managed by a CMS.  This allows you to mix your CMS static content with your dynamic content.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>THINning it out</title>
+		<link>http://pullmonkey.com/2009/09/14/thinning-it-out/</link>
+					<comments>http://pullmonkey.com/2009/09/14/thinning-it-out/#comments</comments>
+		
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Mon, 14 Sep 2009 21:02:13 +0000</pubDate>
+				<category><![CDATA[development]]></category>
+		<category><![CDATA[rails]]></category>
+		<category><![CDATA[ruby]]></category>
+		<category><![CDATA[tutorials]]></category>
+		<category><![CDATA[capistrano]]></category>
+		<category><![CDATA[mongrel]]></category>
+		<category><![CDATA[ruby on rails]]></category>
+		<category><![CDATA[thin]]></category>
+		<guid isPermaLink="false">http://pullmonkey.com/?p=57393</guid>
+
+					<description><![CDATA[Been having problems with swap space and memory on my slicehost servers.  And it is all apache's and mongrel's fault.  That used to be the cool combination and now it is an ugly, sluggish beast.  Just recently, I switched to nginx (to replace apache) and thin (to replace mongrel).  So far so good, major speed [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Been having problems with swap space and memory on my slicehost servers.  And it is all apache's and mongrel's fault.  That used to be the cool combination and now it is an ugly, sluggish beast.  Just recently, I switched to nginx (to replace apache) and thin (to replace mongrel).  So far so good, major speed improvements and definitely memory consumption improvements.</p>
+<p>I started out by switching everything over the nginx while keeping the mongrels alive, that was actually pretty easy.  Information was available everywhere.</p>
+<p>Thinning everything via capistrano took a while, that wasn't as well documented.  Thin was documented, capistrano was documented, but easy solutions as to how to combine the two were difficult to find.</p>
+<p>Here's the solution I was able to come up with -</p>
+<h2>Capistrano</h2>
+<p>My config for using mongrel used to look something like this -</p>
+<p>[code lang="ruby"]<br />
+set :stages, %w(staging production)<br />
+set :default_stage, "production"</p>
+<p>require "capistrano/ext/multistage"<br />
+require "mongrel_cluster/recipes"</p>
+<p>set :application, "myapplication.com"<br />
+set :user, "appuser"set :repository,  "http://svn.myapplication.com/myapp/trunk"<br />
+set :deploy_to, "/var/www/#{application}"</p>
+<p>role :app, application<br />
+role :web, application<br />
+role :db,  application, :primary => true</p>
+<p>set :runner, user<br />
+set :keep_releases, 3<br />
+set(:mongrel_conf) { "#{current_path}/config/mongrel_cluster.yml" }</p>
+<p>deploy.task :after_update_code, :roles => [:web] do<br />
+desc "Copying the right mongrel cluster config for the current stage environment."<br />
+run "cp -f #{release_path}/config/mongrel_#{stage}.yml #{release_path}/config/mongrel_cluster.yml"<br />
+end</p>
+<p>... <other things like symlinks><br />
+[/code]</p>
+<p>Now that we are moving from mongrel to thin, no need for two lines in particular, one being the line that requires mongrel_cluster recipes and the other that sets the mongrel_cluster yaml config path.  A third line changes from mongrel_cluster.yml to thin_cluster.yml.  You get something like this:</p>
+<p>[code lang="ruby"]<br />
+set :stages, %w(staging production)<br />
+set :default_stage, "production"</p>
+<p>require "capistrano/ext/multistage"</p>
+<p>set :application, "myapplication.com"<br />
+set :user, "appuser"</p>
+<p>set :repository,  "http://svn.myapplication.com/myapp/trunk"<br />
+set :deploy_to, "/var/www/#{application}"</p>
+<p>role :app, application<br />
+role :web, application<br />
+role :db,  application, :primary => true</p>
+<p>set :runner, user<br />
+set :keep_releases, 3</p>
+<p>deploy.task :after_update_code, :roles => [:web] do<br />
+desc "Copying the right mongrel cluster config for the current stage environment."<br />
+run "cp -f #{release_path}/config/thin_#{stage}.yml #{release_path}/config/thin_cluster.yml"<br />
+end<br />
+... <other things like symlinks><br />
+[/code]</p>
+<p>Now we need to implement what mongrel recipes was doing for us, start, stop and restart but in terms of thin (added this to the bottom of my deploy.rb):</p>
+<p>[code lang="ruby"]<br />
+namespace :deploy do<br />
+desc "Restart the Thin processes on the app server."<br />
+task :restart do<br />
+run "thin restart -C #{release_path}/config/thin_cluster.yml"<br />
+end<br />
+desc "Start the Thin processes on the app server."<br />
+task :start do<br />
+run "thin start -C #{release_path}/config/thin_cluster.yml"<br />
+end<br />
+desc "Stop the Thin processes on the app server."<br />
+task :stop do<br />
+run "thin stop -C #{release_path}/config/thin_cluster.yml"<br />
+end<br />
+end<br />
+[/code]</p>
+<p>Here's what my thin_cluster.yml looks like:</p>
+<p>[code lang="ruby"]</p>
+<p>---<br />
+log: log/thin.log<br />
+address: 127.0.0.1<br />
+port: 9000<br />
+chdir: /var/www/myapp.com/current<br />
+environment: production<br />
+pid: tmp/pids/thin.pid<br />
+user: www-user<br />
+group: www-data<br />
+servers: 3<br />
+[/code]</p>
+<p>That's it and it has worked out nicely so far.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://pullmonkey.com/2009/09/14/thinning-it-out/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

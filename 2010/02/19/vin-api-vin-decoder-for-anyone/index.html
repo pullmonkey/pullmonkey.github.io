@@ -1,0 +1,808 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>PullMonkey Blog  &raquo; Blog Archive   &raquo; VIN API &#8211; VIN Decoder for anyone</title>
+<meta name="generator" content="WordPress 5.6" /> <!-- leave this for stats -->
+<link rel="stylesheet" href="../../../../wp-content/themes/simple&#32;paper/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../../../../wp-content/themes/simple&#32;paper/code_highlighter.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="PullMonkey Blog RSS Feed" href="../../../../feed/index.html" />
+<link rel="pingback" href="http://pullmonkey.com/xmlrpc.php" />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="PullMonkey Blog &raquo; VIN API &#8211; VIN Decoder for anyone Comments Feed" href="feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/pullmonkey.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='../../../../wp-includes/css/dist/block-library/style.min.css?ver=5.6' type='text/css' media='all' />
+<link rel="https://api.w.org/" href="../../../../wp-json/index.html" /><link rel="alternate" type="application/json" href="../../../../wp-json/wp/v2/posts/57516" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://pullmonkey.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../../../wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.6" />
+<link rel="canonical" href="../../../../index.html?p=57516" />
+<link rel='shortlink' href='../../../../index.html?p=57516' />
+<link rel="alternate" type="application/json+oembed" href="../../../../wp-json/oembed/1.0/embed?url=http:%252F%252Fpullmonkey.com%252F2010%252F02%252F19%252Fvin-api-vin-decoder-for-anyone%252F" />
+<link rel="alternate" type="text/xml+oembed" href="../../../../wp-json/oembed/1.0/embed?url=http:%252F%252Fpullmonkey.com%252F2010%252F02%252F19%252Fvin-api-vin-decoder-for-anyone%252F&amp;format=xml" />
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style></head>
+<body>
+
+<div id="container">
+
+<div id="menu">
+
+        <ul id="nav">
+        <li class="current_page_item"><a href="../../../../index.html">Home</a></li>
+                       	</ul>
+
+</div><!-- Menu -->
+
+<div id="wrapper">
+
+<div id="c1">
+
+<h1 id="logo"><a href="../../../../index.html">PullMonkey Blog</a></h1>
+<h2 id="description"></h2>
+
+<div id="content">
+
+
+<div class="post" id="post-57516">
+
+<div class="date">19 <span>Feb</span></div>
+
+<h2><a href="../../../../index.html?p=57516" rel="bookmark" title="Permanent Link to VIN API &#8211; VIN Decoder for anyone">VIN API &#8211; VIN Decoder for anyone</a></h2><br clear="all" />
+
+<p><b>UPDATES:</b><br />
+See <a href="../../../../index.html?p=57563">Phase II details</a> for complete dataset information.<br />
+Take a look at the <a href="../../../../index.html?p=57568">PHP examples</a> and the <a href="../../../../index.html?p=57566">.NET examples</a>.<br />
+And ... while it's been great being able to give this information away freely for about a year now, we have to share some of the cost with our users, so please read about <a href="../../../../index.html?p=57570">our pricing model</a>.<br />
+<b>END UPDATES</b><br />
+<br /><a title="VIN API" href="http://vinapi.skizmo.com">VIN API</a> came about through lots of work on a current project of ours - <a title="Mr. Quotey" href="http://mrquotey.com">Mr. Quotey</a>.  We are dealing with auto insurance and wanted a way to decode VINs.  The other solutions we found (API-wise) were too expensive for our small, unfunded startup.  So like the way most great things come about, we decided to build <a title="VIN API" href="http://vinapi.skizmo.com">our own VIN decoding API</a>.</p>
+<h2>Using VIN API:</h2>
+<p>This is explained in detail at <a title="VIN API" href="http://vinapi.skizmo.com">VIN API's site</a>, but I will give you a look at what it does here.</p>
+<p>If you use Ruby on Rails like I do, then you have the option to use ActiveResource:</p>
+<p><script src="http://gist.github.com/308952.js?file=gistfile1.rb"></script> Then you can use it like this:  <script src="http://gist.github.com/308951.js?file=gistfile1.rb&gt;&lt;/mce:script&gt;&lt;/p&gt; &lt;p&gt;If you need to use curl or some alternative like curl then refer to &lt;a href="><!--
+VIN API's site.
+// --></script></p>
+<h2>Current Limitations:</h2>
+<p>Right now each account is limited to 20 VIN requests a month, we are looking to take it slow and prevent abuse.  If you do need more VIN decodings a month, feel free to let us know at <a title="Mr. Quotey" href="http://mrquotey.com">Mr. Quotey</a>, we'd be happy to up the max for your account.</p>
+<h2>Where to next?:</h2>
+<p>It is too soon to really tell.  We'd like your feedback and to know if this service is useful.  If it gets enough buzz, we would probably pursue it a bit more and drop the monthly limitations.</p>
+
+<br />
+
+<div class="meta">
+<span class="note">Filed under: <a href="../../../../category/api/index.html" rel="category tag">api</a>, <a href="../../../../category/development/index.html" rel="category tag">development</a>, <a href="../../../../category/projects/index.html" rel="category tag">projects</a>, <a href="../../../../category/rails/index.html" rel="category tag">rails</a>, <a href="../../../../category/ruby/index.html" rel="category tag">ruby</a></span>
+<span class="tags">Tags: <a href="../../../../tag/activeresource/index.html" rel="tag">ActiveResource</a>, <a href="../../../../tag/api/index.html" rel="tag">api</a>, <a href="../../../../tag/curl/index.html" rel="tag">curl</a>, <a href="../../../../tag/make/index.html" rel="tag">Make</a>, <a href="../../../../tag/model/index.html" rel="tag">Model</a>, <a href="../../../../tag/ruby/index.html" rel="tag">ruby</a>, <a href="../../../../tag/skizmo/index.html" rel="tag">skizmo</a>, <a href="../../../../tag/vehicle/index.html" rel="tag">vehicle</a>, <a href="../../../../tag/vehicle-identification-number/index.html" rel="tag">vehicle identification number</a>, <a href="../../../../tag/vin/index.html" rel="tag">VIN</a>, <a href="../../../../tag/year/index.html" rel="tag">Year</a>, <a href="../../../../tag/year-make-model/index.html" rel="tag">Year Make Model</a></span><br /></div><!--Meta -->
+
+
+<!-- You can start editing here. -->
+
+<div id="commentsbox">
+
+
+
+<h2 id="comments">
+	 <br /> 31 Responses 
+	  to &#8220;VIN API &#8211; VIN Decoder for anyone&#8221;</h2>
+	
+	<ol class="commentlist">
+		
+
+<li class="odd" id="comment-5761">
+
+By <strong><a href='http://www.goodercode.com' rel='external nofollow ugc' class='url'>Kerry Wilson</a></strong> on <a href="../../../../index.html?p=57516#comment-5761" title="">Feb 24, 2010</a> | <a href="../../../../index.html?p=57516#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Nicely done, not sure I would ever use it, but outstanding nonetheless.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-5805">
+
+By <strong>charlie</strong> on <a href="../../../../index.html?p=57516#comment-5805" title="">Feb 25, 2010</a> | <a href="../../../../index.html?p=57516#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Thanks Mr. Wilson &#8212; it is sort of one of those niche needs isn&#8217;t it?  It is picking up a little interest though.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+			
+
+<li class="odd" id="comment-7193">
+
+By <strong><a href='http://mosautoinfo.ru' rel='external nofollow ugc' class='url'>Marat</a></strong> on <a href="../../../../index.html?p=57516#comment-7193" title="">Apr 10, 2010</a> | <a href="../../../../index.html?p=57516#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>I can&#8217;t login, there is some error 🙁</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-7292">
+
+By <strong>charlie</strong> on <a href="../../../../index.html?p=57516#comment-7292" title="">Apr 13, 2010</a> | <a href="../../../../index.html?p=57516#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>I see your account.   I&#8217;ll email you.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-7297">
+
+By <strong>charlie</strong> on <a href="../../../../index.html?p=57516#comment-7297" title="">Apr 14, 2010</a> | <a href="../../../../index.html?p=57516#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Actually, I just added a &#8220;reset password&#8221; page for you off of the login page.<br />
+<a href="http://vinapi.skizmo.com/forgot" rel="nofollow ugc">http://vinapi.skizmo.com/forgot</a></p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-7477">
+
+By <strong>Matthew</strong> on <a href="../../../../index.html?p=57516#comment-7477" title="">Apr 20, 2010</a> | <a href="../../../../index.html?p=57516#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>This is an awesome solution for a lot of companys, actually.  Can&#8217;t thank you enough for providing this.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-7533">
+
+By <strong>charlie</strong> on <a href="../../../../index.html?p=57516#comment-7533" title="">Apr 22, 2010</a> | <a href="../../../../index.html?p=57516#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>@Matthew &#8211; glad you like it, spread the word 🙂</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-7478">
+
+By <strong>Matthew</strong> on <a href="../../../../index.html?p=57516#comment-7478" title="">Apr 20, 2010</a> | <a href="../../../../index.html?p=57516#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Super duper impressed with this API.  I&#8217;ll definitely be using it.  Couple of questions:</p>
+<p>1) Do you have a rate limit?<br />
+2) Do the results come through in all-caps because that is how it is in your data? If you are capping it before sending it through the API, it is more useful for *some* (meaning me) to have the data in its original form (hopefully proper case).</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-7532">
+
+By <strong>charlie</strong> on <a href="../../../../index.html?p=57516#comment-7532" title="">Apr 22, 2010</a> | <a href="../../../../index.html?p=57516#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>1) It&#8217;s limited to 20 free, unique requests per month right now, since I am still getting feedback.<br />
+2) I don&#8217;t change any of the data, I send it in original form.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-7750">
+
+By <strong>Matthew</strong> on <a href="../../../../index.html?p=57516#comment-7750" title="">Apr 30, 2010</a> | <a href="../../../../index.html?p=57516#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hi Charlie.  I sent an email about possibly getting a larger rate limit in exchange for writing a C# library and never heard back from your team.  Should I take that as a &#8220;no&#8221;?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-7767">
+
+By <strong>charlie</strong> on <a href="../../../../index.html?p=57516#comment-7767" title="">May 1, 2010</a> | <a href="../../../../index.html?p=57516#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Matthew &#8211; sorry about taking so long to get back to your email.  It&#8217;s definitely not a &#8220;no&#8221; and we look forward to working with you.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-8454">
+
+By <strong>Jeremy Randolph</strong> on <a href="../../../../index.html?p=57516#comment-8454" title="">May 15, 2010</a> | <a href="../../../../index.html?p=57516#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>I emailed a few days ago and haven&#8217;t received a reply back. I&#8217;d also like to know about changing the rate.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-8502">
+
+By <strong>charlie</strong> on <a href="../../../../index.html?p=57516#comment-8502" title="">May 17, 2010</a> | <a href="../../../../index.html?p=57516#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>We are a few days behind on email with regards to VIN API and its 20 requests a month limit.  A lot more interest than we anticipated 🙂</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-16282">
+
+By <strong>John Sig</strong> on <a href="../../../../index.html?p=57516#comment-16282" title="">Nov 3, 2010</a> | <a href="../../../../index.html?p=57516#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>DO you have an example of using this with<br />
+PHP 5 and curl?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-16284">
+
+By <strong>charlie</strong> on <a href="../../../../index.html?p=57516#comment-16284" title="">Nov 3, 2010</a> | <a href="../../../../index.html?p=57516#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hey John,</p>
+<p>I can help you come up with one, but other than the curl example at the bottom of vinapi.skizmo.com, I don&#8217;t have anything for you.<br />
+I know that vinapi has been used with php, hopefully one of those users can offer up an example for you.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-16808">
+
+By <strong>Vitalik</strong> on <a href="../../../../index.html?p=57516#comment-16808" title="">Nov 16, 2010</a> | <a href="../../../../index.html?p=57516#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Here is an example of how to use this with php:</p>
+<p>##SCRIPT##</p>
+<p>##END OF SCRIPT##</p>
+<p>In this instance I have this script triggered when a vin is set in the url (example.com/vin.php?vin=VIN_NUMBER_HERE)</p>
+<p>You can just remove the if statement and set your own way to retrieve the vin and just use ## echo decodeVIN($vin); ## to trigger the function.</p>
+<p>BTW DONT FORGET TO CHANGE THE &#8220;YOUR_API_KEY_GOES_HERE&#8221; WITH YOUR API KEY</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-16809">
+
+By <strong>Vitalik</strong> on <a href="../../../../index.html?p=57516#comment-16809" title="">Nov 16, 2010</a> | <a href="../../../../index.html?p=57516#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Apparently the PHP script was cut out from above, so here it is below (hope it works this time).</p>
+<p>##SCRIPT##</p>
+<p><script src="https://gist.github.com/701379.js?file=vinapi.php"></script></p>
+<p>##END OF SCRIPT##</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18277">
+
+By <strong>Mike</strong> on <a href="../../../../index.html?p=57516#comment-18277" title="">Jan 14, 2011</a> | <a href="../../../../index.html?p=57516#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Anyone having success with the PHP implementation? </p>
+<p>I&#8217;m getting &#8220;The XML page cannot be displayed&#8221; (IE8), &#8220;Invalid at the top level of the document. Error processing resource&#8230;&#8221; (FF3.5 always returns &#8220;1&#8221;).</p>
+<p>Suggestions?</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18278">
+
+By <strong>charlie</strong> on <a href="../../../../index.html?p=57516#comment-18278" title="">Jan 14, 2011</a> | <a href="../../../../index.html?p=57516#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Maybe we have some invalid XML?   I&#8217;ll try the PHP version tonight and see what I get.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18279">
+
+By <strong>charlie</strong> on <a href="../../../../index.html?p=57516#comment-18279" title="">Jan 15, 2011</a> | <a href="../../../../index.html?p=57516#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Ok, so I think I figured it out.</p>
+<p>curl_exec return true or false, not what we want, we want it to return the result set if it is works and false if it fails.</p>
+<p>To do this, we need to set the return transfer option, so I added this line:<br />
+curl_setopt ($curl, CURLOPT_RETURNTRANSFER, 1);</p>
+<p>The php example has been updated to reflect this change.  </p>
+<p>@Mike &#8211; Let me know how it goes for you.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18280">
+
+By <strong>Mike</strong> on <a href="../../../../index.html?p=57516#comment-18280" title="">Jan 17, 2011</a> | <a href="../../../../index.html?p=57516#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>That worked like a charm! Thanks!</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18281">
+
+By <strong><a href='http://www.CinetixCRM.com' rel='external nofollow ugc' class='url'>Ruben Kazantsev</a></strong> on <a href="../../../../index.html?p=57516#comment-18281" title="">Jan 18, 2011</a> | <a href="../../../../index.html?p=57516#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>We are about to launch a Automotive CRM/ILM software and wanted to know if you would be able to support unlimited vin decode? I know currently you only support 20. Or would you know where I can get past and current vin decoder download where we can upload to our data base?</p>
+<p>Regards,<br />
+Ruben</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18282">
+
+By <strong>charlie</strong> on <a href="../../../../index.html?p=57516#comment-18282" title="">Jan 19, 2011</a> | <a href="../../../../index.html?p=57516#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>We have been bumping people to 2000 VINs per month, since we don&#8217;t have a pricing plan.   Legally there is no way to offer <em>unlimited</em> VIN decodings, unless you want to sign a lot of contracts and pay some non-trivial amount of money.  Sorry about that, but give me a solid estimate of VINs per month and we will work something out.  I&#8217;ll tell you this though, our pricing plans will only have soft limits, meaning you will be charged the monthly rate for some number of VINs then charged for any additional VINs (based on whatever plan you pick), so it may work out, such that it seems unlimited 🙂</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18283">
+
+By <strong>charlie</strong> on <a href="../../../../index.html?p=57516#comment-18283" title="">Jan 19, 2011</a> | <a href="../../../../index.html?p=57516#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Oh and btw &#8211; I&#8217;ve upped your account to the 2000 VINs per month, so you can at least do something while we work out merchant account issues and pricing plans 🙁</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18807">
+
+By <strong><a href='http://arslanstudios.com' rel='external nofollow ugc' class='url'>Sage</a></strong> on <a href="../../../../index.html?p=57516#comment-18807" title="">Feb 26, 2012</a> | <a href="../../../../index.html?p=57516#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Looks like not much discussion on this as of late. I&#8217;m wondering if this is still being worked on, and if, eventually, the api will be able to provide more detailed returns &#8212; like base and trim-package features like antilock brakes, sunroof, etc, etc&#8230;</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18808">
+
+By <strong>charlie</strong> on <a href="../../../../index.html?p=57516#comment-18808" title="">Feb 26, 2012</a> | <a href="../../../../index.html?p=57516#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hey Sage &#8211; VIN API is still running solid.  Right now, we are still limited on the data we are allowed to provide.  We are working on those issues and will let you know.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18883">
+
+By <strong><a href='http://www.RenPromotorsports.com' rel='external nofollow ugc' class='url'>RenPro Motorsports</a></strong> on <a href="../../../../index.html?p=57516#comment-18883" title="">Apr 24, 2012</a> | <a href="../../../../index.html?p=57516#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hey guys, just got done taking a beating with a competitor who decided we should upgrade even though we were not close to being maxed out, so we decided to &#8220;move on.&#8221; As I try to absorb all that is written, I guess I&#8217;d like to ask, is there a &#8220;no charge&#8221; trial period we could try to see if it&#8217;s a fit for us? If not, it&#8217;s ok but, how do we go about starting out on a small scale and then adding/expanding if we think this is a good fit for us?</p>
+<p>So far, everything looks and sounds good and it appears that you are trying to offer a needed service without the customer taking a bath trying to utilize it. I can see why it is something that you should charge for, as it is a lot of work but, some of the fee&#8217;s that some competitors are getting is nothing short of highway robbery.</p>
+<p>Look forward to hearing back as I will continue to wade through all of the info to try and resolve/get started.</p>
+<p>Ren w/RenPro Motorsports</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18884">
+
+By <strong>charlie</strong> on <a href="../../../../index.html?p=57516#comment-18884" title="">Apr 24, 2012</a> | <a href="../../../../index.html?p=57516#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Hiya Ren &#8211;</p>
+<p>There isn&#8217;t a credit card requirement, just <a href="http://vinapi.skizmo.com/signup" rel="nofollow">sign up</a> and you&#8217;ll get 20 free VIN requests.<br />
+Then when you&#8217;re ready, purchase a VIN package from <a href="http://vinapi.skizmo.com/packages_and_pricing" rel="nofollow">our pricing page</a>.<br />
+And if you need more trial VIN requests before making a purchase, just let me know and I&#8217;ll get you squared away.</p>
+<p>And there are no fees, taxes, or anything like that, just the price you see on our pricing page.</p>
+<p>&#8211; Charlie</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18931">
+
+By <strong><a href='http://www.CarWizard.net' rel='external nofollow ugc' class='url'>Alex</a></strong> on <a href="../../../../index.html?p=57516#comment-18931" title="">May 21, 2012</a> | <a href="../../../../index.html?p=57516#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Your VIN API is exactly what we need. The problem is that we need complete set of data but most VINs still return basic info even if “complete” is set to true. Only small percent of VINs return complete data even for a few years old popular brands such Toyota, Subaru, BMW, GMC etc. Do you have any set target date when every VIN would return complete set of data? Your API works great, your pricing model is great too. It is ideal for us to buy number of decodes and use them over any period of time and not to worry about monthly payments. But we really need the complete data. Please let us know when it will be available for all VINs. Thank you.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		
+
+<li class="odd" id="comment-18932">
+
+By <strong>charlie</strong> on <a href="../../../../index.html?p=57516#comment-18932" title="">May 21, 2012</a> | <a href="../../../../index.html?p=57516#respond">Reply</a>		        <div id="comdiv">
+<div id="comtp">
+		<p>Good morning Alex &#8211; thanks for the feedback and concern.  The complete dataset is not rolling out as quickly as we had hoped, mainly b/c of licensing issues around terms of usage and cost.  At this time, I&#8217;m not sure of the ETA, I&#8217;ll be the first to let everyone know.</p>
+        </div>
+        
+        <div id="combt"><!-- --></div>
+        </div>	
+	</li>
+	
+		
+		</ol>
+	
+	
+
+	<ol class="tblist" style="list-style:none;">
+
+<li><h2>1 Trackback(s)</h2></li>
+	
+
+	<li id="comment-5839">
+	<small class="commentmetadata">Feb 26, 2010:</small> <font style="font-size:11px;"><a href='http://www.goodercode.com/wp/?p=52' rel='external nofollow ugc' class='url'>Simple VIN API for decoding Vehicle Identification Numbers &laquo; Gooder Code - web development blog, php, java, asp.net, html, javascript</a></font>
+			</li>
+	
+		
+
+	</ol>
+
+	
+
+	<p id="comments-closed">Sorry, comments for this entry are closed at this time.</p>
+</div>
+</div><!-- Post -->
+
+		        
+  
+
+	
+</div><!-- Content -->
+
+</div><!-- LeftColumn -->
+
+<div id="c2">
+
+   
+    <div id="sidebar">
+
+<div id="subscribe">
+<a href="../../../../feed/index.html"><img src="../../../../wp-content/themes/simple&#32;paper/images/rss.gif" alt="RSS-FEED" border="0" id="rss" /></a>
+<a href="../../../../feed/index.html">subscribe to the feed</a><br clear="all" />
+</div><!-- subscribe rss -->
+
+<div id="topsearch">
+<form action="../../../../index.html" method="post">
+<input type="text" value="Search..." name="s" id="ls" class="searchfield" onfocus="if (this.value == 'Search...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search...';}" />
+<input type="image" src="../../../../wp-content/themes/simple&#32;paper/images/click.gif" id="submit" />
+</form>
+<br clear="all" />
+<br clear="all" />
+</div>
+    
+    	<ul>
+	<li id="tag_cloud-2" class="widget widget_tag_cloud"><h2 class="widgettitle">Tags</h2>
+<div class="tagcloud"><a href="../../../../tag/net/index.html" class="tag-cloud-link tag-link-166 tag-link-position-1" style="font-size: 8pt;" aria-label=".net (2 items)">.net</a>
+<a href="../../../../tag/activerecord/index.html" class="tag-cloud-link tag-link-54 tag-link-position-2" style="font-size: 8pt;" aria-label="activerecord (2 items)">activerecord</a>
+<a href="../../../../tag/api/index.html" class="tag-cloud-link tag-link-220 tag-link-position-3" style="font-size: 10.40625pt;" aria-label="api (4 items)">api</a>
+<a href="../../../../tag/biking/index.html" class="tag-cloud-link tag-link-219 tag-link-position-4" style="font-size: 10.40625pt;" aria-label="biking (4 items)">biking</a>
+<a href="../../../../tag/business/index.html" class="tag-cloud-link tag-link-213 tag-link-position-5" style="font-size: 8pt;" aria-label="business (2 items)">business</a>
+<a href="../../../../tag/c/index.html" class="tag-cloud-link tag-link-33 tag-link-position-6" style="font-size: 10.40625pt;" aria-label="c++ (4 items)">c++</a>
+<a href="../../../../tag/charts/index.html" class="tag-cloud-link tag-link-42 tag-link-position-7" style="font-size: 18.171875pt;" aria-label="charts (25 items)">charts</a>
+<a href="../../../../tag/cms/index.html" class="tag-cloud-link tag-link-60 tag-link-position-8" style="font-size: 12.046875pt;" aria-label="CMS (6 items)">CMS</a>
+<a href="../../../../tag/curb/index.html" class="tag-cloud-link tag-link-190 tag-link-position-9" style="font-size: 8pt;" aria-label="curb (2 items)">curb</a>
+<a href="../../../../tag/curl/index.html" class="tag-cloud-link tag-link-120 tag-link-position-10" style="font-size: 8pt;" aria-label="curl (2 items)">curl</a>
+<a href="../../../../tag/dynamic/index.html" class="tag-cloud-link tag-link-56 tag-link-position-11" style="font-size: 8pt;" aria-label="dynamic (2 items)">dynamic</a>
+<a href="../../../../tag/ece231/index.html" class="tag-cloud-link tag-link-34 tag-link-position-12" style="font-size: 10.40625pt;" aria-label="ece231 (4 items)">ece231</a>
+<a href="../../../../tag/editor/index.html" class="tag-cloud-link tag-link-61 tag-link-position-13" style="font-size: 11.28125pt;" aria-label="editor (5 items)">editor</a>
+<a href="../../../../tag/error/index.html" class="tag-cloud-link tag-link-46 tag-link-position-14" style="font-size: 9.3125pt;" aria-label="error (3 items)">error</a>
+<a href="../../../../tag/flash/index.html" class="tag-cloud-link tag-link-41 tag-link-position-15" style="font-size: 17.84375pt;" aria-label="flash (23 items)">flash</a>
+<a href="../../../../tag/fun/index.html" class="tag-cloud-link tag-link-23 tag-link-position-16" style="font-size: 11.28125pt;" aria-label="fun (5 items)">fun</a>
+<a href="../../../../tag/gems/index.html" class="tag-cloud-link tag-link-44 tag-link-position-17" style="font-size: 8pt;" aria-label="gems (2 items)">gems</a>
+<a href="../../../../tag/graphs/index.html" class="tag-cloud-link tag-link-52 tag-link-position-18" style="font-size: 18.390625pt;" aria-label="graphs (26 items)">graphs</a>
+<a href="../../../../tag/httpi/index.html" class="tag-cloud-link tag-link-191 tag-link-position-19" style="font-size: 8pt;" aria-label="httpi (2 items)">httpi</a>
+<a href="../../../../tag/java/index.html" class="tag-cloud-link tag-link-177 tag-link-position-20" style="font-size: 9.3125pt;" aria-label="java (3 items)">java</a>
+<a href="../../../../tag/javascript/index.html" class="tag-cloud-link tag-link-215 tag-link-position-21" style="font-size: 10.40625pt;" aria-label="Javascript (4 items)">Javascript</a>
+<a href="../../../../tag/linux/index.html" class="tag-cloud-link tag-link-221 tag-link-position-22" style="font-size: 8pt;" aria-label="Linux (2 items)">Linux</a>
+<a href="../../../../tag/macromovers/index.html" class="tag-cloud-link tag-link-66 tag-link-position-23" style="font-size: 8pt;" aria-label="macromovers (2 items)">macromovers</a>
+<a href="../../../../tag/mirah/index.html" class="tag-cloud-link tag-link-176 tag-link-position-24" style="font-size: 8pt;" aria-label="mirah (2 items)">mirah</a>
+<a href="../../../../tag/ofc/index.html" class="tag-cloud-link tag-link-105 tag-link-position-25" style="font-size: 8pt;" aria-label="OFC (2 items)">OFC</a>
+<a href="../../../../tag/open-flash-chart/index.html" class="tag-cloud-link tag-link-40 tag-link-position-26" style="font-size: 18.609375pt;" aria-label="open flash chart (27 items)">open flash chart</a>
+<a href="../../../../tag/php/index.html" class="tag-cloud-link tag-link-216 tag-link-position-27" style="font-size: 9.3125pt;" aria-label="php (3 items)">php</a>
+<a href="../../../../tag/plugin/index.html" class="tag-cloud-link tag-link-65 tag-link-position-28" style="font-size: 12.59375pt;" aria-label="plugin (7 items)">plugin</a>
+<a href="../../../../tag/plugins/index.html" class="tag-cloud-link tag-link-218 tag-link-position-29" style="font-size: 9.3125pt;" aria-label="plugins (3 items)">plugins</a>
+<a href="../../../../tag/prog/index.html" class="tag-cloud-link tag-link-35 tag-link-position-30" style="font-size: 9.3125pt;" aria-label="prog (3 items)">prog</a>
+<a href="../../../../tag/project/index.html" class="tag-cloud-link tag-link-47 tag-link-position-31" style="font-size: 10.40625pt;" aria-label="project (4 items)">project</a>
+<a href="../../../../tag/rails/index.html" class="tag-cloud-link tag-link-210 tag-link-position-32" style="font-size: 20.90625pt;" aria-label="rails (45 items)">rails</a>
+<a href="../../../../tag/ruby/index.html" class="tag-cloud-link tag-link-211 tag-link-position-33" style="font-size: 22pt;" aria-label="ruby (57 items)">ruby</a>
+<a href="../../../../tag/ruby-on-rails/index.html" class="tag-cloud-link tag-link-43 tag-link-position-34" style="font-size: 20.359375pt;" aria-label="ruby on rails (40 items)">ruby on rails</a>
+<a href="../../../../tag/select-boxes/index.html" class="tag-cloud-link tag-link-57 tag-link-position-35" style="font-size: 8pt;" aria-label="select boxes (2 items)">select boxes</a>
+<a href="../../../../tag/simple/index.html" class="tag-cloud-link tag-link-62 tag-link-position-36" style="font-size: 10.40625pt;" aria-label="simple (4 items)">simple</a>
+<a href="../../../../tag/simplecms/index.html" class="tag-cloud-link tag-link-214 tag-link-position-37" style="font-size: 11.28125pt;" aria-label="SimpleCMS (5 items)">SimpleCMS</a>
+<a href="../../../../tag/skizmo/index.html" class="tag-cloud-link tag-link-102 tag-link-position-38" style="font-size: 10.40625pt;" aria-label="skizmo (4 items)">skizmo</a>
+<a href="../../../../tag/software/index.html" class="tag-cloud-link tag-link-48 tag-link-position-39" style="font-size: 8pt;" aria-label="software (2 items)">software</a>
+<a href="../../../../tag/spreadsheet/index.html" class="tag-cloud-link tag-link-45 tag-link-position-40" style="font-size: 8pt;" aria-label="spreadsheet (2 items)">spreadsheet</a>
+<a href="../../../../tag/tutorial/index.html" class="tag-cloud-link tag-link-50 tag-link-position-41" style="font-size: 16.75pt;" aria-label="tutorial (18 items)">tutorial</a>
+<a href="../../../../tag/ubuntu/index.html" class="tag-cloud-link tag-link-150 tag-link-position-42" style="font-size: 8pt;" aria-label="ubuntu (2 items)">ubuntu</a>
+<a href="../../../../tag/vin/index.html" class="tag-cloud-link tag-link-119 tag-link-position-43" style="font-size: 12.59375pt;" aria-label="VIN (7 items)">VIN</a>
+<a href="../../../../tag/vin-api/index.html" class="tag-cloud-link tag-link-159 tag-link-position-44" style="font-size: 12.046875pt;" aria-label="vin api (6 items)">vin api</a>
+<a href="../../../../tag/xml/index.html" class="tag-cloud-link tag-link-165 tag-link-position-45" style="font-size: 9.3125pt;" aria-label="xml (3 items)">xml</a></div>
+</li>
+<li id="categories-524386351" class="widget widget_categories"><h2 class="widgettitle">Topics</h2>
+
+			<ul>
+					<li class="cat-item cat-item-179"><a href="../../../../category/android/index.html">Android</a>
+</li>
+	<li class="cat-item cat-item-118"><a href="../../../../category/api/index.html">api</a>
+</li>
+	<li class="cat-item cat-item-67"><a href="../../../../category/biking/index.html">biking</a>
+</li>
+	<li class="cat-item cat-item-37"><a href="../../../../category/blog/index.html">blog</a>
+</li>
+	<li class="cat-item cat-item-27"><a href="../../../../category/business/index.html">business</a>
+</li>
+	<li class="cat-item cat-item-32"><a href="../../../../category/c-c/index.html">C / C++</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="../../../../category/development/index.html">development</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="../../../../category/games/index.html">games</a>
+</li>
+	<li class="cat-item cat-item-139"><a href="../../../../category/graphics/index.html">Graphics</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="../../../../category/home/index.html">Home</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="../../../../category/ie-hacks/index.html">IE hacks</a>
+</li>
+	<li class="cat-item cat-item-31"><a href="../../../../category/javascript/index.html">Javascript</a>
+</li>
+	<li class="cat-item cat-item-149"><a href="../../../../category/linux/index.html">Linux</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="../../../../category/me/index.html">me</a>
+</li>
+	<li class="cat-item cat-item-26"><a href="../../../../category/open-flash-chart-graphs/index.html">Open Flash Chart Graphs</a>
+</li>
+	<li class="cat-item cat-item-29"><a href="../../../../category/opengl/index.html">opengl</a>
+</li>
+	<li class="cat-item cat-item-36"><a href="../../../../category/php/index.html">php</a>
+</li>
+	<li class="cat-item cat-item-51"><a href="../../../../category/plugins/index.html">plugins</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="../../../../category/projects/index.html">projects</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="../../../../category/rails/index.html">rails</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="../../../../category/railsconf/index.html">railsconf</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="../../../../category/ruby/index.html">ruby</a>
+</li>
+	<li class="cat-item cat-item-28"><a href="../../../../category/simplecms/index.html">SimpleCMS</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="../../../../category/tutorials/index.html">tutorials</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="../../../../category/uncategorized/index.html">Uncategorized</a>
+</li>
+			</ul>
+
+			</li>
+
+		<li id="recent-posts-2" class="widget widget_recent_entries">
+		<h2 class="widgettitle">Recent Posts</h2>
+
+		<ul>
+											<li>
+					<a href="../../../../index.html?p=57726">Dynamic Select Boxes &#8211; Ruby on Rails 3</a>
+									</li>
+											<li>
+					<a href="../../../../index.html?p=57715">VIN API &#8211; Do you know about the complete data set?</a>
+									</li>
+											<li>
+					<a href="../../../../index.html?p=57712">Using Ruby to read from a MagTek USB Card Reader</a>
+									</li>
+											<li>
+					<a href="../../../../index.html?p=57708">Signature Pad in Linux</a>
+									</li>
+											<li>
+					<a href="../../../../index.html?p=57705">Using HTTPI with Curb to do multipart file uploads with spnego</a>
+									</li>
+					</ul>
+
+		</li>
+<li id="recent-comments-2" class="widget widget_recent_comments"><h2 class="widgettitle">Recent Comments</h2>
+<ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">`Drew</span> on <a href="../../../../2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/index.html#comment-24291">Dynamic Select Boxes &#8211; Ruby on Rails 3</a></li><li class="recentcomments"><span class="comment-author-link">Bardach</span> on <a href="../../../../2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/index.html#comment-24290">Dynamic Select Boxes &#8211; Ruby on Rails 3</a></li><li class="recentcomments"><span class="comment-author-link">Bardach</span> on <a href="../../../../2012/08/11/dynamic-select-boxes-ruby-on-rails-3/comment-page-1/index.html#comment-24289">Dynamic Select Boxes &#8211; Ruby on Rails 3</a></li><li class="recentcomments"><span class="comment-author-link">Dar_bok</span> on <a href="../../../../2007/04/30/how-i-got-gta-san-andreas-to-work-with-a-crappy-os-vista/comment-page-2/index.html#comment-20844">How I got GTA San Andreas to Work with (a crappy OS) Vista</a></li><li class="recentcomments"><span class="comment-author-link">Anirudha Pendakur</span> on <a href="../../../../2012/07/25/using-httpi-with-curb-to-do-multipart-file-uploads-with-spnego/comment-page-1/index.html#comment-19583">Using HTTPI with Curb to do multipart file uploads with spnego</a></li></ul></li>
+<li id="archives-2" class="widget widget_archive"><h2 class="widgettitle">Archives</h2>
+
+			<ul>
+					<li><a href='../../../../2012/08/index.html'>August 2012</a></li>
+	<li><a href='../../../../2012/07/index.html'>July 2012</a></li>
+	<li><a href='../../../../2012/05/index.html'>May 2012</a></li>
+	<li><a href='../../../../2012/04/index.html'>April 2012</a></li>
+	<li><a href='../../../../2012/03/index.html'>March 2012</a></li>
+	<li><a href='../../../../2011/11/index.html'>November 2011</a></li>
+	<li><a href='../../../../2011/10/index.html'>October 2011</a></li>
+	<li><a href='../../../../2011/05/index.html'>May 2011</a></li>
+	<li><a href='../../../../2011/03/index.html'>March 2011</a></li>
+	<li><a href='../../../../2011/02/index.html'>February 2011</a></li>
+	<li><a href='../../../../2011/01/index.html'>January 2011</a></li>
+	<li><a href='../../../11/index.html'>November 2010</a></li>
+	<li><a href='../../../09/index.html'>September 2010</a></li>
+	<li><a href='../../../04/index.html'>April 2010</a></li>
+	<li><a href='../../index.html'>February 2010</a></li>
+	<li><a href='../../../01/index.html'>January 2010</a></li>
+	<li><a href='../../../../2009/12/index.html'>December 2009</a></li>
+	<li><a href='../../../../2009/10/index.html'>October 2009</a></li>
+	<li><a href='../../../../2009/09/index.html'>September 2009</a></li>
+	<li><a href='../../../../2009/08/index.html'>August 2009</a></li>
+	<li><a href='../../../../2009/04/index.html'>April 2009</a></li>
+	<li><a href='../../../../2009/03/index.html'>March 2009</a></li>
+	<li><a href='../../../../2009/02/index.html'>February 2009</a></li>
+	<li><a href='../../../../2009/01/index.html'>January 2009</a></li>
+	<li><a href='../../../../2008/10/index.html'>October 2008</a></li>
+	<li><a href='../../../../2008/09/index.html'>September 2008</a></li>
+	<li><a href='../../../../2008/08/index.html'>August 2008</a></li>
+	<li><a href='../../../../2008/07/index.html'>July 2008</a></li>
+	<li><a href='../../../../2008/04/index.html'>April 2008</a></li>
+	<li><a href='../../../../2008/03/index.html'>March 2008</a></li>
+	<li><a href='../../../../2008/02/index.html'>February 2008</a></li>
+	<li><a href='../../../../2008/01/index.html'>January 2008</a></li>
+	<li><a href='../../../../2007/12/index.html'>December 2007</a></li>
+	<li><a href='../../../../2007/10/index.html'>October 2007</a></li>
+	<li><a href='../../../../2007/09/index.html'>September 2007</a></li>
+	<li><a href='../../../../2007/08/index.html'>August 2007</a></li>
+	<li><a href='../../../../2007/06/index.html'>June 2007</a></li>
+	<li><a href='../../../../2007/05/index.html'>May 2007</a></li>
+	<li><a href='../../../../2007/04/index.html'>April 2007</a></li>
+			</ul>
+
+			</li>
+	</ul>
+    
+    </div><!-- Sidebar -->
+
+</div><!-- Rightcolumn -->
+
+
+
+<br clear="all" />
+
+<div id="footer">
+<p>Copyright 2009, powered by <a href="http://www.wordpress.org/">WordPress</a></p>
+</div><!-- Footer -->
+
+</div><!-- Wrapper -->
+
+<br clear="all" />
+</div><!-- Container -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3308745-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>
